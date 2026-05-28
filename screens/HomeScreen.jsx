@@ -1,13 +1,14 @@
 /* global React, BAG_DATA, HeroArticle, ArticleCard, SplitArticle, SmallArticleCard, ProductPreviewCard, SectionRule */
 
 function HomeScreen({ navigate }) {
-  const articles = BAG_DATA.articles;
-  const hero = articles[0];
-  const secondary = articles.slice(1, 5);
-  const wide = articles[5];
-  const small = articles.slice(2, 6);
+  const count = (BAG_DATA.config && BAG_DATA.config.homepageArticleCount) || 8;
+  const articles = BAG_DATA.articles.slice(0, count);
 
-  // Catalog preview: take first 4 products across brands
+  const hero      = articles[0];
+  const secondary = articles.slice(1, 5);
+  const wide      = articles[5];
+  const small     = articles.slice(2, 6);
+
   const catalogPreview = [];
   Object.entries(BAG_DATA.products).forEach(([key, list]) => {
     if (catalogPreview.length < 4 && list.length) {
@@ -18,30 +19,28 @@ function HomeScreen({ navigate }) {
 
   return (
     <main className="bag-home">
-      {/* BLOQUE 1 — Hero */}
-      <HeroArticle article={hero} onClick={() => navigate(`/lanzamientos/${hero.slug}`)} />
+      {hero && <HeroArticle article={hero} onClick={() => navigate(`/lanzamientos/${hero.slug}`)} />}
 
-      {/* BLOQUE 2 — Grid 4 secundarios */}
-      <section className="bag-grid-4">
-        {secondary.map(a => (
-          <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-        ))}
-      </section>
+      {secondary.length > 0 && (
+        <section className="bag-grid-4">
+          {secondary.map(a => (
+            <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+          ))}
+        </section>
+      )}
 
-      {/* BLOQUE 3 — Split article */}
       {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
 
-      {/* BLOQUE 4 — Grid 4 small cards */}
-      <section className="bag-grid-4 bag-grid-4--small">
-        {small.map(a => (
-          <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-        ))}
-      </section>
+      {small.length > 0 && (
+        <section className="bag-grid-4 bag-grid-4--small">
+          {small.map(a => (
+            <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+          ))}
+        </section>
+      )}
 
-      {/* BLOQUE 5 — Section rule */}
       <SectionRule label="CATÁLOGO" />
 
-      {/* BLOQUE 6 — Catalog preview */}
       <section className="bag-catalog-preview">
         <div className="bag-grid-4">
           {catalogPreview.map(({ product, brand, model }) => (

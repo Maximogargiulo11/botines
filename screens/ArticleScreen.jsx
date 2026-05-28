@@ -12,16 +12,100 @@ function ArticleScreen({ slug, navigate }) {
     setTimeout(() => setCopied(false), 1800);
   };
 
-  // Build product reference if any
   let relProductObj = null;
   if (article.relatedProduct) {
     const list = BAG_DATA.products[`${article.relatedProduct.brand.toLowerCase()}/${article.relatedProduct.model}`] || [];
     relProductObj = list.find(p => p.id === article.relatedProduct.id) || list[0];
   }
 
+  // Render the related product aside
+  const RelatedProduct = relProductObj ? (
+    <aside className="bag-related-product">
+      <div className="bag-related-product__media">
+        <img src={relProductObj.images?.[0]} alt="" />
+      </div>
+      <div className="bag-related-product__body">
+        <div className="bag-eyebrow bag-eyebrow--muted">{article.brand?.toUpperCase()}</div>
+        <div className="bag-related-product__name">{relProductObj.name}</div>
+        <div className="bag-related-product__colorway">{relProductObj.colorway}</div>
+        <div className="bag-related-product__price">{window.formatPrice(relProductObj.price)}</div>
+        <button className="bag-btn bag-btn--primary" onClick={() => navigate(`/marcas/${article.relatedProduct.brand.toLowerCase()}/${article.relatedProduct.model}`)}>
+          VER EN CATÁLOGO
+        </button>
+      </div>
+    </aside>
+  ) : null;
+
+  // Render body: use contentBlocks if available, else fall back to legacy body/gallery
+  function renderBody() {
+    if (article.contentBlocks && article.contentBlocks.length > 0) {
+      let textCount = 0;
+      return article.contentBlocks.map((block, i) => {
+        if (block.type === 'text') {
+          textCount++;
+          return (
+            <React.Fragment key={block.id || i}>
+              <p>{block.content}</p>
+              {textCount === 2 && RelatedProduct}
+            </React.Fragment>
+          );
+        }
+        if (block.type === 'image') {
+          const style = {};
+          if (block.width && block.height) {
+            style.aspectRatio = `${block.width} / ${block.height}`;
+          }
+          return (
+            <figure key={block.id || i} className="bag-article-figure" style={style}>
+              <img src={block.src} alt="" />
+              {block.width && block.height && (
+                <figcaption className="bag-article-figure__dim">{block.width}×{block.height}</figcaption>
+              )}
+            </figure>
+          );
+        }
+        if (block.type === 'instagram') {
+          return (
+            <div key={block.id || i} className="bag-instagram-embed">
+              <div className="bag-eyebrow bag-eyebrow--muted">VER EN INSTAGRAM</div>
+              <div className="bag-instagram-embed__frame">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="4"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
+                </svg>
+                <a className="bag-instagram-embed__link" href={block.url} target="_blank" rel="noreferrer">
+                  @botinesaltagamacba
+                </a>
+              </div>
+            </div>
+          );
+        }
+        return null;
+      });
+    }
+
+    // Legacy format fallback
+    return (article.body || []).map((p, i) => (
+      <React.Fragment key={i}>
+        <p>{p}</p>
+        {i === 0 && article.gallery && article.gallery[0] && (
+          <figure className="bag-article-figure">
+            <img src={article.gallery[0]} alt="" />
+          </figure>
+        )}
+        {i === 1 && RelatedProduct}
+        {i === 2 && article.gallery && article.gallery[1] && (
+          <figure className="bag-article-figure">
+            <img src={article.gallery[1]} alt="" />
+          </figure>
+        )}
+      </React.Fragment>
+    ));
+  }
+
   return (
     <main className="bag-article-page">
-      {/* Hero with blur backdrop */}
       <div className="bag-article-hero">
         <div className="bag-article-hero__blur" style={{ backgroundImage: `url(${article.cover})` }} />
         <div className="bag-article-hero__image">
@@ -29,7 +113,6 @@ function ArticleScreen({ slug, navigate }) {
         </div>
       </div>
 
-      {/* Breadcrumb + title block */}
       <div className="bag-article-head">
         <nav className="bag-breadcrumb">
           <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Inicio</a>
@@ -60,51 +143,10 @@ function ArticleScreen({ slug, navigate }) {
         </div>
       </div>
 
-      {/* Body */}
       <article className="bag-article-body">
-        {article.body && article.body.map((p, i) => (
-          <React.Fragment key={i}>
-            <p>{p}</p>
-            {i === 0 && article.gallery && article.gallery[0] && (
-              <figure className="bag-article-figure">
-                <img src={article.gallery[0]} alt="" />
-              </figure>
-            )}
-            {i === 1 && relProductObj && (
-              <aside className="bag-related-product">
-                <div className="bag-related-product__media">
-                  <img src={relProductObj.images?.[0]} alt="" />
-                </div>
-                <div className="bag-related-product__body">
-                  <div className="bag-eyebrow bag-eyebrow--muted">{article.brand?.toUpperCase()}</div>
-                  <div className="bag-related-product__name">{relProductObj.name}</div>
-                  <div className="bag-related-product__colorway">{relProductObj.colorway}</div>
-                  <div className="bag-related-product__price">{window.formatPrice(relProductObj.price)}</div>
-                  <button className="bag-btn bag-btn--primary" onClick={() => navigate(`/marcas/${article.relatedProduct.brand.toLowerCase()}/${article.relatedProduct.model}`)}>VER EN CATÁLOGO</button>
-                </div>
-              </aside>
-            )}
-            {i === 2 && article.gallery && article.gallery[1] && (
-              <figure className="bag-article-figure">
-                <img src={article.gallery[1]} alt="" />
-              </figure>
-            )}
-          </React.Fragment>
-        ))}
-
-        {/* Instagram embed placeholder */}
-        {article.instagramUrl && (
-          <div className="bag-instagram-embed">
-            <div className="bag-eyebrow bag-eyebrow--muted">VER EN INSTAGRAM</div>
-            <div className="bag-instagram-embed__frame">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
-              <a className="bag-instagram-embed__link" href={article.instagramUrl} target="_blank" rel="noreferrer">@botinesaltagamacba</a>
-            </div>
-          </div>
-        )}
+        {renderBody()}
       </article>
 
-      {/* Section rule + related */}
       <SectionRule label="MÁS LANZAMIENTOS" />
       <section className="bag-grid-3">
         {related.map(a => (
