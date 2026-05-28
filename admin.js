@@ -72,8 +72,21 @@ function rawUrl(path) {
 // DATA PARSING / GENERATION
 // ─────────────────────────────────────────
 function parseDataJs(code) {
+  // Primary: extract JSON directly (works even under strict CSP that blocks eval/new Function)
+  try {
+    const s = 'window.BAG_DATA = ';
+    const si = code.indexOf(s);
+    if (si >= 0) {
+      const e = code.indexOf('\n\nwindow.formatPrice', si);
+      const raw = (e >= 0 ? code.slice(si + s.length, e) : code.slice(si + s.length))
+        .replace(/;\s*$/, '').trim();
+      const result = JSON.parse(raw);
+      if (result && typeof result === 'object') return result;
+    }
+  } catch (_) {}
+  // Fallback: eval via new Function
   const w = {};
-  try { (new Function('window', code))(w); } catch (e) { console.error('parseDataJs error', e); }
+  try { (new Function('window', code))(w); } catch (e) { console.warn('parseDataJs fallback failed:', e.message); }
   return w.BAG_DATA || null;
 }
 
@@ -735,6 +748,39 @@ function SettingsSection({ token, onTokenChange }) {
 }
 
 // ─────────────────────────────────────────
+// SETUP TOKEN (primera vez / token no guardado)
+// ─────────────────────────────────────────
+function SetupToken({ onConnect }) {
+  const [draft, setDraft] = useState('');
+  const handle = () => {
+    const t = draft.trim();
+    if (!t) return;
+    localStorage.setItem(TOKEN_KEY, t);
+    onConnect(t);
+  };
+  return (
+    <div className="adm-setup">
+      <div className="adm-setup__box">
+        <h1>Conectar con GitHub</h1>
+        <p className="adm-text">Necesitás un Personal Access Token de GitHub con permisos <code>repo</code> para que el admin pueda guardar cambios.</p>
+        <a className="adm-link" href="https://github.com/settings/tokens/new?description=botines-admin&scopes=repo" target="_blank" rel="noreferrer">
+          Crear token en GitHub →
+        </a>
+        <TextInput
+          label="Token"
+          value={draft}
+          onChange={setDraft}
+          type="password"
+          placeholder="ghp_..."
+          hint="Se guarda en este navegador. Solo necesitás hacerlo una vez."
+        />
+        <Btn onClick={handle} disabled={!draft.trim()}>Continuar</Btn>
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
 // LOGIN
 // ─────────────────────────────────────────
 function Login({ onLogin }) {
@@ -774,21 +820,24 @@ const NAV = [
 ];
 
 function AdminApp() {
-  const [authed, setAuthed]   = useState(() => localStorage.getItem(AUTH_KEY) === '1');
-  const [token, setToken]     = useState(() => localStorage.getItem(TOKEN_KEY) || '');
-  const [section, setSection] = useState('articles');
-  const [data, setData]       = useState(null);
-  const [sha, setSha]         = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [saving, setSaving]   = useState(false);
-  const [dirty, setDirty]     = useState(false);
-  const [toast, setToast]     = useState(null);
+  const [authed, setAuthed]     = useState(() => localStorage.getItem(AUTH_KEY) === '1');
+  const [token, setToken]       = useState(() => localStorage.getItem(TOKEN_KEY) || '');
+  const [section, setSection]   = useState('articles');
+  const [data, setData]         = useState(null);
+  const [sha, setSha]           = useState(null);
+  const [loading, setLoading]   = useState(false);
+  const [saving, setSaving]     = useState(false);
+  const [dirty, setDirty]       = useState(false);
+  const [toast, setToast]       = useState(null);
+  const [loadError, setLoadError] = useState(null);
+  const [retryCount, setRetryCount] = useState(0);
 
   const notify = (message, type = 'success') => setToast({ message, type });
 
   useEffect(() => {
     if (!authed || !token) return;
     setLoading(true);
+    setLoadError(null);
     ghGet('data.js', token)
       .then(file => {
         const content = decodeURIComponent(escape(atob(file.content.replace(/\n/g, ''))));
@@ -798,12 +847,19 @@ function AdminApp() {
           setData(parsed);
           setSha(file.sha);
         } else {
-          notify('No se pudo cargar data.js', 'error');
+          setLoadError('No se pudo parsear data.js. El archivo podría estar malformado. Verificá el contenido en GitHub.');
         }
       })
-      .catch(e => notify(`Error cargando datos: ${e.message}`, 'error'))
+      .catch(e => {
+        const msg = e.message || 'Error desconocido';
+        if (msg.toLowerCase().includes('bad credentials') || msg.includes('401')) {
+          setLoadError('Token de GitHub inválido o expirado. Actualizá el token en Ajustes.');
+        } else {
+          setLoadError(`Error al conectar con GitHub: ${msg}`);
+        }
+      })
       .finally(() => setLoading(false));
-  }, [authed, token]);
+  }, [authed, token, retryCount]);
 
   const handleDataChange = d => { setData(d); setDirty(true); };
 
@@ -824,21 +880,7 @@ function AdminApp() {
 
   if (!authed) return <Login onLogin={() => setAuthed(true)} />;
 
-  if (!token) {
-    return (
-      <div className="adm-setup">
-        <div className="adm-setup__box">
-          <h1>Conectar con GitHub</h1>
-          <p className="adm-text">Necesitás un Personal Access Token de GitHub con permisos <code>repo</code> para que el admin pueda guardar cambios.</p>
-          <a className="adm-link" href="https://github.com/settings/tokens/new?description=botines-admin&scopes=repo" target="_blank" rel="noreferrer">
-            Crear token en GitHub →
-          </a>
-          <TextInput label="Token" value={token} onChange={v => { setToken(v); localStorage.setItem(TOKEN_KEY, v); }} type="password" placeholder="ghp_..." />
-          <Btn onClick={() => window.location.reload()} disabled={!token}>Continuar</Btn>
-        </div>
-      </div>
-    );
-  }
+  if (!token) return <SetupToken onConnect={t => setToken(t)} />;
 
   const homepageCount = (data?.config || {}).homepageArticleCount || 8;
   const setHomepageCount = n => handleDataChange({ ...data, config: { ...(data?.config || {}), homepageArticleCount: n } });
@@ -883,6 +925,16 @@ function AdminApp() {
 
         <div className="adm-content">
           {loading && <div className="adm-loading"><div className="adm-spinner" /><span>Cargando datos desde GitHub...</span></div>}
+
+          {!loading && loadError && (
+            <div className="adm-load-error">
+              <p className="adm-load-error__msg">{loadError}</p>
+              <div className="adm-load-error__actions">
+                <Btn onClick={() => setRetryCount(c => c + 1)}>Reintentar</Btn>
+                <Btn variant="ghost" onClick={() => { localStorage.removeItem(TOKEN_KEY); setToken(''); }}>Cambiar token</Btn>
+              </div>
+            </div>
+          )}
 
           {!loading && data && section === 'articles' && (
             <ArticlesSection data={data} onDataChange={handleDataChange} token={token}
