@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" role="img" aria-label="Imagen editorial pendiente">
+  <rect width="1080" height="1350" fill="#0a0a0a"></rect>
+  <g fill="none" stroke="#222222" stroke-width="1.6" stroke-dasharray="6 10">
+    <rect x="48" y="48" width="984" height="1254"></rect>
+  </g>
+  <g font-family="&#39;Inter&#39;,&#39;Helvetica Neue&#39;,Arial,sans-serif" fill="#555555" text-anchor="middle">
+    <text x="540" y="680" font-size="22" font-weight="600" letter-spacing="6" fill="#444">EDITORIAL</text>
+    <text x="540" y="720" font-size="14" font-weight="500" letter-spacing="4" fill="#666">IMAGEN PENDIENTE · 1080 × 1350</text>
+    <line x1="440" y1="745" x2="640" y2="745" stroke="#333" stroke-width="1"></line>
+    <text x="540" y="785" font-size="12" font-weight="400" letter-spacing="2" fill="#444">Subir imagen editorial del lanzamiento</text>
+  </g>
+</svg>
