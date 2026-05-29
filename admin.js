@@ -810,6 +810,38 @@ function Login({ onLogin }) {
 }
 
 // ─────────────────────────────────────────
+// TOKEN MODAL (se muestra al publicar sin token guardado)
+// ─────────────────────────────────────────
+function TokenModal({ onSave, onCancel }) {
+  const [draft, setDraft] = useState('');
+  const handle = () => {
+    const t = draft.trim();
+    if (!t) return;
+    localStorage.setItem(TOKEN_KEY, t);
+    onSave(t);
+  };
+  return (
+    <div className="adm-modal-overlay" onClick={onCancel}>
+      <div className="adm-modal-box" onClick={e => e.stopPropagation()}>
+        <div className="adm-modal-head">
+          <h3>Token de GitHub</h3>
+          <button onClick={onCancel}>×</button>
+        </div>
+        <p className="adm-text">Para publicar necesitás un Personal Access Token con permisos <code>repo</code>. Se guarda en este navegador — solo lo pedimos una vez.</p>
+        <a className="adm-link" href="https://github.com/settings/tokens/new?description=botines-admin&scopes=repo" target="_blank" rel="noreferrer">
+          Crear token en GitHub →
+        </a>
+        <TextInput label="Token" value={draft} onChange={setDraft} type="password" placeholder="ghp_..." />
+        <div className="adm-modal-actions">
+          <Btn variant="ghost" onClick={onCancel}>Cancelar</Btn>
+          <Btn onClick={handle} disabled={!draft.trim()}>Guardar y publicar</Btn>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
 // MAIN APP
 // ─────────────────────────────────────────
 const NAV = [
@@ -820,67 +852,73 @@ const NAV = [
 ];
 
 function AdminApp() {
-  const [authed, setAuthed]     = useState(() => localStorage.getItem(AUTH_KEY) === '1');
-  const [token, setToken]       = useState(() => localStorage.getItem(TOKEN_KEY) || '');
-  const [section, setSection]   = useState('articles');
-  const [data, setData]         = useState(null);
-  const [sha, setSha]           = useState(null);
-  const [loading, setLoading]   = useState(false);
-  const [saving, setSaving]     = useState(false);
-  const [dirty, setDirty]       = useState(false);
-  const [toast, setToast]       = useState(null);
-  const [loadError, setLoadError] = useState(null);
-  const [retryCount, setRetryCount] = useState(0);
+  const [authed, setAuthed]           = useState(() => localStorage.getItem(AUTH_KEY) === '1');
+  const [token, setToken]             = useState(() => localStorage.getItem(TOKEN_KEY) || '');
+  const [section, setSection]         = useState('articles');
+  const [data, setData]               = useState(null);
+  const [loading, setLoading]         = useState(false);
+  const [saving, setSaving]           = useState(false);
+  const [dirty, setDirty]             = useState(false);
+  const [toast, setToast]             = useState(null);
+  const [loadError, setLoadError]     = useState(null);
+  const [retryCount, setRetryCount]   = useState(0);
+  const [showTokenModal, setShowTokenModal] = useState(false);
 
   const notify = (message, type = 'success') => setToast({ message, type });
 
+  // Carga datos directamente desde raw.githubusercontent.com — no requiere token
   useEffect(() => {
-    if (!authed || !token) return;
+    if (!authed) return;
     setLoading(true);
     setLoadError(null);
-    ghGet('data.js', token)
-      .then(file => {
-        const content = decodeURIComponent(escape(atob(file.content.replace(/\n/g, ''))));
-        const parsed = parseDataJs(content);
+    fetch(rawUrl('data.js') + '?t=' + Date.now())
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.text();
+      })
+      .then(code => {
+        const parsed = parseDataJs(code);
         if (parsed) {
           if (!parsed.config) parsed.config = { homepageArticleCount: 8 };
           setData(parsed);
-          setSha(file.sha);
         } else {
-          setLoadError('No se pudo parsear data.js. El archivo podría estar malformado. Verificá el contenido en GitHub.');
+          setLoadError('No se pudo parsear data.js. Verificá el archivo en GitHub.');
         }
       })
-      .catch(e => {
-        const msg = e.message || 'Error desconocido';
-        if (msg.toLowerCase().includes('bad credentials') || msg.includes('401')) {
-          setLoadError('Token de GitHub inválido o expirado. Actualizá el token en Ajustes.');
-        } else {
-          setLoadError(`Error al conectar con GitHub: ${msg}`);
-        }
-      })
+      .catch(e => setLoadError(`Error al cargar datos: ${e.message}`))
       .finally(() => setLoading(false));
-  }, [authed, token, retryCount]);
+  }, [authed, retryCount]);
 
   const handleDataChange = d => { setData(d); setDirty(true); };
 
-  const handlePublish = async () => {
-    if (!dirty || !token) return;
+  const doPublish = async (tkn) => {
     setSaving(true);
     try {
+      const fileInfo = await ghGet('data.js', tkn);
       const content = generateDataJs(data);
-      const result = await ghPut('data.js', token, content, sha, 'admin: actualizar datos del sitio');
-      setSha(result.content.sha);
+      await ghPut('data.js', tkn, content, fileInfo.sha, 'admin: actualizar datos del sitio');
       setDirty(false);
       notify('¡Publicado! Vercel redeploya automáticamente.');
     } catch (e) {
-      notify(`Error al publicar: ${e.message}`, 'error');
+      const msg = e.message || '';
+      if (msg.toLowerCase().includes('bad credentials') || msg.includes('401')) {
+        localStorage.removeItem(TOKEN_KEY);
+        setToken('');
+        notify('Token inválido. Actualizá el token en Ajustes.', 'error');
+      } else {
+        notify(`Error al publicar: ${msg}`, 'error');
+      }
     }
     setSaving(false);
   };
 
-  if (!authed) return <Login onLogin={() => setAuthed(true)} />;
+  const handlePublish = () => {
+    if (!dirty) return;
+    if (!token) { setShowTokenModal(true); return; }
+    doPublish(token);
+  };
 
-  if (!token) return <SetupToken onConnect={t => setToken(t)} />;
+  if (!authed) return <Login onLogin={() => setAuthed(true)} />;
 
   const homepageCount = (data?.config || {}).homepageArticleCount || 8;
   const setHomepageCount = n => handleDataChange({ ...data, config: { ...(data?.config || {}), homepageArticleCount: n } });
@@ -947,11 +985,17 @@ function AdminApp() {
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
           )}
           {section === 'settings' && (
-            <SettingsSection token={token} onTokenChange={t => { setToken(t); if (!data) window.location.reload(); }} />
+            <SettingsSection token={token} onTokenChange={t => setToken(t)} />
           )}
         </div>
       </div>
 
+      {showTokenModal && (
+        <TokenModal
+          onCancel={() => setShowTokenModal(false)}
+          onSave={t => { setToken(t); setShowTokenModal(false); doPublish(t); }}
+        />
+      )}
       {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
     </div>
   );

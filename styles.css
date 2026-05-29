@@ -918,3 +918,57 @@
   .bag-faq__q { grid-template-columns: 40px 1fr 20px; }
   .bag-faq__a { padding-left: calc(40px + var(--bag-s-4)); }
 }
+
+/* ============ MOBILE FINE-TUNING (≤ 560px) ============ */
+@media (max-width: 560px) {
+  /* Hero: reducir altura mínima */
+  .bag-hero { min-height: 380px; }
+  .bag-hero__body { padding: 28px var(--bag-gutter-mob); gap: 12px; }
+
+  /* Article hero */
+  .bag-article-hero { min-height: 260px; }
+
+  /* Article head: reducir overlap y padding */
+  .bag-article-head { margin-top: -40px; padding: 24px var(--bag-gutter-mob); gap: 12px; }
+  .bag-article-head__title { font-size: clamp(22px, 7vw, 36px); }
+
+  /* Article body */
+  .bag-article-body { padding: 16px var(--bag-gutter-mob) 32px; gap: 24px; }
+
+  /* Grids: reducir padding vertical */
+  .bag-grid-4, .bag-grid-3 { padding: 24px var(--bag-gutter-mob); gap: 20px; }
+  .bag-grid-4--small { padding-top: 0; }
+
+  /* Section rule */
+  .bag-section-rule { margin: 32px auto 8px; }
+
+  /* Split article */
+  .bag-split { padding: 24px var(--bag-gutter-mob); }
+
+  /* Footer: reducir margen superior */
+  .bag-footer { margin-top: 56px; padding: 40px var(--bag-gutter-mob) 24px; }
+
+  /* Product page */
+  .bag-product-page__grid { padding: 0 var(--bag-gutter-mob); }
+  .bag-product-gallery__main { min-height: 280px; }
+  .bag-product-gallery__thumbs { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .bag-product-info__price { font-size: var(--bag-fs-2xl); }
+
+  /* Brands/Models pages */
+  .bag-brands-page__head,
+  .bag-brand-page__head,
+  .bag-model-page__head { padding: 0 var(--bag-gutter-mob); margin: 20px auto; }
+  .bag-brands-grid,
+  .bag-models-grid,
+  .bag-products-grid { padding: 16px var(--bag-gutter-mob) 40px; gap: 16px; }
+
+  /* Cart: full width en mobile */
+  .bag-cart { width: 100%; }
+
+  /* Modal: sin padding lateral en mobile */
+  .bag-modal { padding: 12px; }
+  .bag-modal__card { padding: 20px 16px; }
+
+  /* Breadcrumb */
+  .bag-breadcrumb--page { padding: 0 var(--bag-gutter-mob); margin: 16px auto; }
+}
