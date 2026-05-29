@@ -51,17 +51,33 @@ body {
 .adm-sidebar__brand {
   padding: 20px 18px 14px;
   border-bottom: 1px solid var(--a-border);
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
 }
-.adm-sidebar__brand > span:first-child {
+.adm-sidebar__brand-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.adm-sidebar__brand-row > div { display: flex; flex-direction: column; gap: 1px; }
+.adm-sidebar__brand-row > div > span:first-child {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: .12em;
   color: var(--a-accent);
 }
 .adm-sidebar__sub { font-size: 11px; color: var(--a-fg3); letter-spacing: .06em; }
+.adm-sidebar__close {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--a-fg3);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px 4px;
+  margin-top: -2px;
+}
+.adm-sidebar__close:hover { color: var(--a-fg); }
 
 .adm-nav { flex: 1; padding: 8px 0; }
 .adm-sidebar__footer { padding: 8px 0; border-top: 1px solid var(--a-border); }
@@ -746,6 +762,9 @@ code { font-family: monospace; background: var(--a-surface2); padding: 1px 5px; 
 .adm-modal-head > button:hover { color: var(--a-fg); }
 .adm-modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
 
+/* ── SIDEBAR BACKDROP (solo mobile) ─────────────────────────────── */
+.adm-sidebar-backdrop { display: none; }
+
 /* ── MENU BUTTON (solo mobile) ─────────────────────────────── */
 .adm-menu-btn {
   display: none;
@@ -790,10 +809,16 @@ code { font-family: monospace; background: var(--a-surface2); padding: 1px 5px; 
     overflow-y: auto;
     box-shadow: 4px 0 24px rgba(0,0,0,.5);
   }
-  .adm-sidebar.is-open { transform: translateX(0); }
+  .adm-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  /* Botón cerrar visible en mobile */
+  .adm-sidebar__close { display: block; }
 
   /* Backdrop detrás del sidebar */
   .adm-sidebar-backdrop {
+    display: block;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,.6);

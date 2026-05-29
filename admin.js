@@ -963,7 +963,7 @@ function AdminApp() {
   const [loadError, setLoadError]     = useState(null);
   const [retryCount, setRetryCount]   = useState(0);
   const [showTokenModal, setShowTokenModal] = useState(false);
-  const [sidebarOpen, setSidebarOpen]       = useState(false);
+  const [sidebarOpen, setSidebarOpen]       = useState(true);
 
   const notify = (message, type = 'success') => setToast({ message, type });
 
@@ -1029,8 +1029,13 @@ function AdminApp() {
       {sidebarOpen && <div className="adm-sidebar-backdrop" onClick={() => setSidebarOpen(false)} />}
       <aside className={`adm-sidebar${sidebarOpen ? ' is-open' : ''}`}>
         <div className="adm-sidebar__brand">
-          <span>BAG</span>
-          <span className="adm-sidebar__sub">Admin Panel</span>
+          <div className="adm-sidebar__brand-row">
+            <div>
+              <span>BAG</span>
+              <span className="adm-sidebar__sub">Admin Panel</span>
+            </div>
+            <button className="adm-sidebar__close" onClick={() => setSidebarOpen(false)} aria-label="Cerrar menú">✕</button>
+          </div>
         </div>
         <nav className="adm-nav">
           {NAV.map(n => (
