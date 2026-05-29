@@ -8,6 +8,31 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "8t4daly",
+      "slug": "nike-presenta-la-nueva-generacion-de-mercurial-superfly-11-y-vapor-17",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike presenta la nueva generación de Mercurial: Superfly 11 y Vapor 17",
+      "excerpt": "La marca del swoosh lanza una actualización del silo de velocidad de cara a la final de la UEFA Champions League y del comienzo de la Copa del Mundo 2026.",
+      "date": "25 de Mayo de 2026",
+      "cover": "assets/1780094573615-IMG_1719.jpeg",
+      "coverVideo": "assets/1780094612306-AQPlGyMT-zRnfKZUz6wvvbSECuBMmnIx4WavdDZyhc7XHCar0X1ijDCQ5UpVFI_zmtxx9vtAokaGiOIdIDjQfzrQ2dLR6CL2hXdbX6k.mp4",
+      "featured": false,
+      "contentBlocks": [
+        {
+          "type": "image-pair",
+          "id": "0loxmp6",
+          "left": {
+            "src": "assets/1780094636232-Sin_ti_tulo_-_26_de_mayo_de_2026_a_las_20.37.30-1.png"
+          },
+          "right": {
+            "src": "assets/1780094647966-Sin_ti_tulo_-_26_de_mayo_de_2026_a_las_20.37.30-2.png"
+          }
+        }
+      ],
+      "relatedProduct": null
+    },
+    {
       "id": "puma-showtime-pack",
       "slug": "puma-showtime-pack-future-ultra",
       "brand": "Puma",
