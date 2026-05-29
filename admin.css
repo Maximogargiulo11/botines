@@ -683,6 +683,39 @@ body {
 .adm-info-grid strong { color: var(--a-fg); }
 code { font-family: monospace; background: var(--a-surface2); padding: 1px 5px; border-radius: 3px; font-size: 12px; color: var(--a-accent); }
 
+/* ── BLOCK: imagen dúo ─────────────────────────────── */
+.adm-block__pair-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.adm-block__pair-side { display: flex; flex-direction: column; gap: 6px; }
+.adm-block__pair-side .adm-label { font-size: 11px; margin-bottom: 0; }
+.adm-block__pair-preview {
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--a-surface2);
+  border: 1px solid var(--a-border);
+}
+.adm-block__pair-preview img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ── BLOCK/FIELD: video ─────────────────────────────── */
+.adm-block__video-fields { display: flex; flex-direction: column; gap: 8px; }
+.adm-video-preview { margin-top: 4px; }
+.adm-video-preview__url {
+  font-size: 12px;
+  color: var(--a-fg3);
+  padding: 8px 10px;
+  background: var(--a-surface2);
+  border-radius: 4px;
+  word-break: break-all;
+}
+.adm-video-preview__player {
+  width: 100%;
+  max-height: 160px;
+  border-radius: 4px;
+  background: #000;
+  display: block;
+}
+
 /* ── TOKEN MODAL ─────────────────────────────── */
 .adm-modal-overlay {
   position: fixed;
@@ -835,6 +868,7 @@ code { font-family: monospace; background: var(--a-surface2); padding: 1px 5px; 
 
   /* Bloques de contenido */
   .adm-content-blocks__add { flex-wrap: wrap; }
+  .adm-block__pair-fields { grid-template-columns: 1fr; }
 
   /* Grilla de imágenes: thumbs más grandes en touch */
   .adm-thumb { width: 76px; height: 76px; }

@@ -1,6 +1,15 @@
 /* global React, BAG_DATA, SmallArticleCard, SectionRule */
 const { useState: useState_art } = React;
 
+function getVideoEmbedUrl(url) {
+  if (!url) return null;
+  const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+  const vim = url.match(/vimeo\.com\/(\d+)/);
+  if (vim) return `https://player.vimeo.com/video/${vim[1]}`;
+  return null;
+}
+
 function ArticleScreen({ slug, navigate }) {
   const article = BAG_DATA.articles.find(a => a.slug === slug) || BAG_DATA.articles[0];
   const related = BAG_DATA.articles.filter(a => a.id !== article.id).slice(0, 6);
@@ -81,6 +90,36 @@ function ArticleScreen({ slug, navigate }) {
             </div>
           );
         }
+        if (block.type === 'image-pair') {
+          return (
+            <div key={block.id || i} className="bag-article-figure-pair">
+              {block.left?.src && (
+                <figure className="bag-article-figure bag-article-figure--half">
+                  <img src={block.left.src} alt="" />
+                </figure>
+              )}
+              {block.right?.src && (
+                <figure className="bag-article-figure bag-article-figure--half">
+                  <img src={block.right.src} alt="" />
+                </figure>
+              )}
+            </div>
+          );
+        }
+        if (block.type === 'video') {
+          const embedUrl = getVideoEmbedUrl(block.src);
+          return (
+            <div key={block.id || i} className="bag-article-video-wrap">
+              {embedUrl ? (
+                <div className="bag-article-video-embed">
+                  <iframe src={embedUrl} allowFullScreen title="video" />
+                </div>
+              ) : block.src ? (
+                <video src={block.src} controls playsInline className="bag-article-video" />
+              ) : null}
+            </div>
+          );
+        }
         return null;
       });
     }
@@ -108,9 +147,21 @@ function ArticleScreen({ slug, navigate }) {
     <main className="bag-article-page">
       <div className="bag-article-hero">
         <div className="bag-article-hero__blur" style={{ backgroundImage: `url(${article.cover})` }} />
-        <div className="bag-article-hero__image">
-          <img src={article.cover} alt="" />
-        </div>
+        {article.coverVideo ? (
+          <div className="bag-article-hero__video">
+            {getVideoEmbedUrl(article.coverVideo) ? (
+              <div className="bag-article-hero__video-embed">
+                <iframe src={getVideoEmbedUrl(article.coverVideo)} allowFullScreen title="video portada" />
+              </div>
+            ) : (
+              <video src={article.coverVideo} controls playsInline className="bag-article-hero__video-player" />
+            )}
+          </div>
+        ) : (
+          <div className="bag-article-hero__image">
+            <img src={article.cover} alt="" />
+          </div>
+        )}
       </div>
 
       <div className="bag-article-head">

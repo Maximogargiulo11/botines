@@ -218,6 +218,39 @@ function ImageField({ label, value, onChange, token, hint }) {
   );
 }
 
+function VideoField({ label, value, onChange, token, hint }) {
+  const { upload, uploading } = useUpload(token);
+  const ref = useRef();
+  return (
+    <Field label={label} hint={hint}>
+      <div className="adm-image-field">
+        <div className="adm-image-controls">
+          <input className="adm-input" value={value} onChange={e => onChange(e.target.value)}
+            placeholder="https://youtube.com/watch?v=... o assets/video.mp4" />
+          <input type="file" ref={ref} style={{ display: 'none' }} accept="video/*"
+            onChange={async e => {
+              const f = e.target.files[0]; if (!f) return;
+              try { onChange(await upload(f)); } catch (err) { alert('Error: ' + err.message); }
+              e.target.value = '';
+            }} />
+          <Btn variant="ghost" size="sm" onClick={() => ref.current?.click()} disabled={uploading}>
+            {uploading ? '...' : 'Subir'}
+          </Btn>
+        </div>
+        {value && (
+          <div className="adm-video-preview">
+            {value.startsWith('http') ? (
+              <div className="adm-video-preview__url">▶ {value.slice(0, 60)}{value.length > 60 ? '…' : ''}</div>
+            ) : (
+              <video src={rawUrl(value)} className="adm-video-preview__player" controls />
+            )}
+          </div>
+        )}
+      </div>
+    </Field>
+  );
+}
+
 function Toast({ message, type, onClose }) {
   useEffect(() => { const t = setTimeout(onClose, 4000); return () => clearTimeout(t); }, [onClose]);
   return (
@@ -236,11 +269,12 @@ function ContentBlocks({ blocks, onChange, token }) {
   const fileRefs = useRef({});
 
   const add = (type) => {
-    const b = type === 'text'
-      ? { type, id: genId(), content: '' }
-      : type === 'image'
-      ? { type, id: genId(), src: '', width: '', height: '' }
-      : { type, id: genId(), url: '' };
+    let b;
+    if      (type === 'text')       b = { type, id: genId(), content: '' };
+    else if (type === 'image')      b = { type, id: genId(), src: '', width: '', height: '' };
+    else if (type === 'image-pair') b = { type, id: genId(), left: { src: '' }, right: { src: '' } };
+    else if (type === 'video')      b = { type, id: genId(), src: '' };
+    else                            b = { type, id: genId(), url: '' }; // instagram
     onChange([...blocks, b]);
   };
 
@@ -260,7 +294,9 @@ function ContentBlocks({ blocks, onChange, token }) {
         {blocks.map((b, i) => (
           <div key={b.id} className={`adm-block adm-block--${b.type}`}>
             <div className="adm-block__handle">
-              <span className="adm-block__type">{b.type === 'text' ? 'T' : b.type === 'image' ? '▣' : 'IG'}</span>
+              <span className="adm-block__type">
+                {b.type === 'text' ? 'T' : b.type === 'image' ? '▣' : b.type === 'image-pair' ? '▣▣' : b.type === 'video' ? '▶' : 'IG'}
+              </span>
               <div className="adm-block__move">
                 <button onClick={() => move(b.id, -1)} disabled={i === 0}>↑</button>
                 <button onClick={() => move(b.id, 1)} disabled={i === blocks.length - 1}>↓</button>
@@ -299,6 +335,66 @@ function ContentBlocks({ blocks, onChange, token }) {
                   </div>}
                 </div>
               )}
+              {b.type === 'image-pair' && (
+                <div className="adm-block__pair-fields">
+                  {['left', 'right'].map(side => (
+                    <div key={side} className="adm-block__pair-side">
+                      <span className="adm-label">{side === 'left' ? 'Izquierda' : 'Derecha'}</span>
+                      {b[side].src && (
+                        <div className="adm-block__pair-preview">
+                          <img src={rawUrl(b[side].src)} alt="" onError={e => e.target.style.display='none'} />
+                        </div>
+                      )}
+                      <div className="adm-row">
+                        <input className="adm-input" value={b[side].src}
+                          onChange={e => upd(b.id, { [side]: { ...b[side], src: e.target.value } })}
+                          placeholder="assets/imagen.jpg" />
+                        <input type="file" ref={el => fileRefs.current[`${b.id}-${side}`] = el}
+                          style={{ display: 'none' }} accept="image/*"
+                          onChange={async e => {
+                            const f = e.target.files[0]; if (!f) return;
+                            try { upd(b.id, { [side]: { ...b[side], src: await upload(f) } }); }
+                            catch (err) { alert('Error: ' + err.message); }
+                            e.target.value = '';
+                          }} />
+                        <Btn variant="ghost" size="sm" onClick={() => fileRefs.current[`${b.id}-${side}`]?.click()} disabled={uploading}>
+                          Subir
+                        </Btn>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {b.type === 'video' && (
+                <div className="adm-block__video-fields">
+                  <div className="adm-row">
+                    <input className="adm-input" value={b.src}
+                      onChange={e => upd(b.id, { src: e.target.value })}
+                      placeholder="https://youtube.com/watch?v=... o assets/video.mp4" />
+                    <input type="file" ref={el => fileRefs.current[`${b.id}-vid`] = el}
+                      style={{ display: 'none' }} accept="video/*"
+                      onChange={async e => {
+                        const f = e.target.files[0]; if (!f) return;
+                        try { upd(b.id, { src: await upload(f) }); }
+                        catch (err) { alert('Error: ' + err.message); }
+                        e.target.value = '';
+                      }} />
+                    <Btn variant="ghost" size="sm" onClick={() => fileRefs.current[`${b.id}-vid`]?.click()} disabled={uploading}>
+                      Subir
+                    </Btn>
+                  </div>
+                  {b.src && (
+                    <div className="adm-video-preview">
+                      {b.src.startsWith('http') ? (
+                        <div className="adm-video-preview__url">▶ {b.src.slice(0, 60)}{b.src.length > 60 ? '…' : ''}</div>
+                      ) : (
+                        <video src={rawUrl(b.src)} className="adm-video-preview__player" controls />
+                      )}
+                    </div>
+                  )}
+                  <span className="adm-hint">YouTube, Vimeo, o archivo MP4/WebM subido a assets/</span>
+                </div>
+              )}
             </div>
             <button className="adm-block__remove" onClick={() => del(b.id)}>×</button>
           </div>
@@ -307,6 +403,8 @@ function ContentBlocks({ blocks, onChange, token }) {
       <div className="adm-content-blocks__add">
         <Btn variant="ghost" size="sm" onClick={() => add('text')}>+ Párrafo</Btn>
         <Btn variant="ghost" size="sm" onClick={() => add('image')}>+ Imagen</Btn>
+        <Btn variant="ghost" size="sm" onClick={() => add('image-pair')}>+ Dúo</Btn>
+        <Btn variant="ghost" size="sm" onClick={() => add('video')}>+ Video</Btn>
         <Btn variant="ghost" size="sm" onClick={() => add('instagram')}>+ Instagram</Btn>
       </div>
     </div>
@@ -352,6 +450,7 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
       excerpt: a.excerpt || '',
       date: a.date || '',
       cover: a.cover || '',
+      coverVideo: a.coverVideo || '',
       featured: !!a.featured,
       contentBlocks: a.contentBlocks || [],
       relatedProduct: a.relatedProduct || null,
@@ -392,7 +491,8 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
           </div>
           <TextInput label="Fecha" value={f.date} onChange={v => set('date', v)} placeholder="24 MAY 2026" />
           <Textarea label="Bajada / Excerpt" value={f.excerpt} onChange={v => set('excerpt', v)} rows={3} placeholder="Resumen del artículo que aparece en las tarjetas..." />
-          <ImageField label="Imagen de portada" value={f.cover} onChange={v => set('cover', v)} token={token} />
+          <ImageField label="Imagen de portada" value={f.cover} onChange={v => set('cover', v)} token={token} hint="Imagen que aparece en tarjetas. Obligatoria." />
+          <VideoField label="Video de portada (opcional)" value={f.coverVideo} onChange={v => set('coverVideo', v)} token={token} hint="YouTube, Vimeo o archivo. Se muestra en el hero del artículo en lugar de la imagen." />
           <Field>
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.featured} onChange={e => set('featured', e.target.checked)} />
