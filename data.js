@@ -394,6 +394,54 @@ window.BAG_DATA = {
           "peso": "232 g",
           "coleccion": "Academy"
         }
+      },
+      {
+        "id": "9sp0jm1",
+        "name": "Mercurial Vapor",
+        "colorway": "Pink and white",
+        "color": "#dd0e7c",
+        "price": 439999,
+        "availableSizes": [
+          "40",
+          "39.5",
+          "39",
+          "38.5",
+          "38",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780092326743-IMG_0314.AVIF"
+        ],
+        "spec": {
+          "suela": "FG",
+          "peso": "186g",
+          "terreno": "Cespwed natural",
+          "coleccion": "Mad Bullet Pack"
+        }
       }
     ],
     "adidas/f50": [
