@@ -126,7 +126,21 @@ function genId() { return Math.random().toString(36).slice(2, 9); }
 // ─────────────────────────────────────────
 function useUpload(token) {
   const [uploading, setUploading] = useState(false);
+  const tokenRef = useRef(token);
+  useEffect(() => { tokenRef.current = token; }, [token]);
+
   const upload = useCallback(async (file) => {
+    let tkn = tokenRef.current;
+    if (!tkn) {
+      // Pedir token via modal si no está guardado aún
+      if (window.__admRequestToken) {
+        tkn = await new Promise((res, rej) => {
+          window.__admRequestToken(t => t ? res(t) : rej(new Error('Cancelado')));
+        });
+      } else {
+        throw new Error('Token no configurado. Andá a Ajustes para guardarlo.');
+      }
+    }
     setUploading(true);
     try {
       const base64 = await new Promise((res, rej) => {
@@ -139,15 +153,15 @@ function useUpload(token) {
       const filename = `${Date.now()}-${safeName}`;
       const path = `assets/${filename}`;
       let sha;
-      try { sha = (await ghGet(path, token)).sha; } catch {}
-      await ghPutBinary(path, token, base64, sha, `admin: subir ${filename}`);
+      try { sha = (await ghGet(path, tkn)).sha; } catch {}
+      await ghPutBinary(path, tkn, base64, sha, `admin: subir ${filename}`);
       setUploading(false);
       return path;
     } catch (e) {
       setUploading(false);
       throw e;
     }
-  }, [token]);
+  }, []);
   return { upload, uploading };
 }
 
@@ -964,8 +978,18 @@ function AdminApp() {
   const [retryCount, setRetryCount]   = useState(0);
   const [showTokenModal, setShowTokenModal] = useState(false);
   const [sidebarOpen, setSidebarOpen]       = useState(true);
+  const [tokenCallback, setTokenCallback]   = useState(null);
 
   const notify = (message, type = 'success') => setToast({ message, type });
+
+  // Expone función global para que useUpload pueda pedir el token desde cualquier componente
+  useEffect(() => {
+    window.__admRequestToken = (cb) => {
+      setTokenCallback(() => cb);
+      setShowTokenModal(true);
+    };
+    return () => { delete window.__admRequestToken; };
+  }, []);
 
   // Carga datos directamente desde raw.githubusercontent.com — no requiere token
   useEffect(() => {
@@ -1100,8 +1124,20 @@ function AdminApp() {
 
       {showTokenModal && (
         <TokenModal
-          onCancel={() => setShowTokenModal(false)}
-          onSave={t => { setToken(t); setShowTokenModal(false); doPublish(t); }}
+          onCancel={() => {
+            setShowTokenModal(false);
+            if (tokenCallback) { tokenCallback(null); setTokenCallback(null); }
+          }}
+          onSave={t => {
+            setToken(t);
+            setShowTokenModal(false);
+            if (tokenCallback) {
+              tokenCallback(t);
+              setTokenCallback(null);
+            } else {
+              doPublish(t);
+            }
+          }}
         />
       )}
       {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
