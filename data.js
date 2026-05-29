@@ -257,15 +257,7 @@ window.BAG_DATA = {
         "id": "merc-001",
         "name": "Mercurial Vapor 16 Elite FG",
         "colorway": "Mad Bullet",
-        "color": "#ffffff",
         "price": 529990,
-        "availableSizes": [
-          "40",
-          "41",
-          "42",
-          "42.5",
-          "43"
-        ],
         "sizes": {
           "eu": [
             "40",
@@ -295,8 +287,17 @@ window.BAG_DATA = {
             "9.5"
           ]
         },
+        "availableSizes": [
+          "40",
+          "41",
+          "42",
+          "42.5",
+          "43"
+        ],
         "images": [
-          "assets/1780092998566-IMG_2125.jpeg"
+          "assets/placeholder-product.svg",
+          "assets/placeholder-product.svg",
+          "assets/placeholder-product.svg"
         ],
         "spec": {
           "suela": "FG (Firm Ground)",
@@ -340,8 +341,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/placeholder-product.svg",
-          "assets/1780093063590-IMG_0314.avif"
+          "assets/1780093112259-IMG_2125.jpeg"
         ],
         "spec": {
           "suela": "FG",
