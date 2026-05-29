@@ -963,6 +963,7 @@ function AdminApp() {
   const [loadError, setLoadError]     = useState(null);
   const [retryCount, setRetryCount]   = useState(0);
   const [showTokenModal, setShowTokenModal] = useState(false);
+  const [sidebarOpen, setSidebarOpen]       = useState(false);
 
   const notify = (message, type = 'success') => setToast({ message, type });
 
@@ -1025,14 +1026,15 @@ function AdminApp() {
 
   return (
     <div className="adm-app">
-      <aside className="adm-sidebar">
+      {sidebarOpen && <div className="adm-sidebar-backdrop" onClick={() => setSidebarOpen(false)} />}
+      <aside className={`adm-sidebar${sidebarOpen ? ' is-open' : ''}`}>
         <div className="adm-sidebar__brand">
           <span>BAG</span>
           <span className="adm-sidebar__sub">Admin Panel</span>
         </div>
         <nav className="adm-nav">
           {NAV.map(n => (
-            <button key={n.id} className={`adm-nav__item ${section === n.id ? 'is-active' : ''}`} onClick={() => setSection(n.id)}>
+            <button key={n.id} className={`adm-nav__item ${section === n.id ? 'is-active' : ''}`} onClick={() => { setSection(n.id); setSidebarOpen(false); }}>
               <span className="adm-nav__icon">{n.icon}</span>
               <span className="adm-nav__label">{n.label}</span>
             </button>
@@ -1052,6 +1054,7 @@ function AdminApp() {
 
       <div className="adm-main">
         <header className="adm-topbar">
+          <button className="adm-menu-btn" onClick={() => setSidebarOpen(o => !o)}>☰</button>
           <h1 className="adm-topbar__title">{NAV.find(n => n.id === section)?.label}</h1>
           <div className="adm-topbar__right">
             {dirty && <span className="adm-dirty-badge">Cambios sin publicar</span>}
