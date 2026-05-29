@@ -309,7 +309,13 @@ window.BAG_DATA = {
         "id": "merc-002",
         "name": "Mercurial Superfly 10 Elite FG",
         "colorway": "Stealth Black",
+        "color": "#ffffff",
         "price": 549990,
+        "availableSizes": [
+          "41",
+          "42",
+          "43"
+        ],
         "sizes": {
           "eu": [
             "40",
@@ -333,13 +339,9 @@ window.BAG_DATA = {
             "10"
           ]
         },
-        "availableSizes": [
-          "41",
-          "42",
-          "43"
-        ],
         "images": [
-          "assets/placeholder-product.svg"
+          "assets/placeholder-product.svg",
+          "assets/1780093063590-IMG_0314.avif"
         ],
         "spec": {
           "suela": "FG",
