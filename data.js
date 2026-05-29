@@ -443,6 +443,55 @@ window.BAG_DATA = {
           "terreno": "Cespwed natural",
           "coleccion": "Mad Bullet Pack"
         }
+      },
+      {
+        "id": "2z7wjk8",
+        "name": "Nike Mercurial Vapor 17",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 509999,
+        "availableSizes": [
+          "38",
+          "39.5",
+          "40.5",
+          "39",
+          "40",
+          "38.5",
+          "41",
+          "44.5",
+          "42.5",
+          "43",
+          "42",
+          "44",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780093689659-IMG_0297.jpeg"
+        ],
+        "spec": {
+          "coleccion": "Breakout Pack"
+        }
       }
     ],
     "adidas/f50": [
