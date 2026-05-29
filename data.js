@@ -58,93 +58,6 @@ window.BAG_DATA = {
         "model": "future",
         "id": "fut-001"
       }
-    },
-    {
-      "id": "mercurial-mad-bullet",
-      "slug": "nike-mercurial-vapor-16-mad-bullet",
-      "brand": "Nike",
-      "category": "LANZAMIENTO",
-      "title": "Nike presenta el Mercurial Vapor 16 ‘Mad Bullet’",
-      "excerpt": "La nueva silueta del speed boot de Nike vuelve a apostar por la velocidad pura, con una placa de carbono rediseñada y el upper Vaporposite+ mejorado.",
-      "date": "22 MAY 2026",
-      "cover": "assets/placeholder-hero.svg",
-      "featured": false,
-      "body": [
-        "Nike Football vuelve a poner el pie en el acelerador con el Mercurial Vapor 16 Mad Bullet, una evolución que se construye sobre la herencia de velocidad de la silueta y suma refinamientos técnicos en cada milímetro del botín.",
-        "El upper Vaporposite+ se rediseña con un patrón de microtacos más profundo, pensado para mejorar el control en superficies húmedas. La placa de carbono, ahora más liviana, redistribuye la presión del antepié para potenciar la aceleración en los primeros tres pasos.",
-        "El colorway Mad Bullet recupera la paleta amarillo-volt clásica de la línea Mercurial pero con un acabado metalizado más denso, casi cromado, en la zona del swoosh y los talones."
-      ],
-      "gallery": [
-        "assets/placeholder-editorial.svg",
-        "assets/placeholder-editorial.svg"
-      ],
-      "relatedProduct": {
-        "brand": "Nike",
-        "model": "mercurial",
-        "id": "merc-001"
-      },
-      "instagramUrl": "https://instagram.com/p/example/"
-    },
-    {
-      "id": "predator-citrus-energy",
-      "slug": "adidas-predator-elite-citrus-energy",
-      "brand": "Adidas",
-      "category": "CAMPAÑA",
-      "title": "Adidas Predator Elite FG ‘Citrus Energy’",
-      "excerpt": "El control vuelve a la cancha. Adidas relanza la línea Predator con un colorway que enciende la atención: amarillo solar y coral eléctrico.",
-      "date": "20 MAY 2026",
-      "cover": "assets/placeholder-editorial.svg",
-      "featured": false
-    },
-    {
-      "id": "puma-future-7-ultra",
-      "slug": "puma-future-7-ultra-pack",
-      "brand": "Puma",
-      "category": "CAMPAÑA",
-      "title": "Detalle: el upper FUZIONFIT360 del Future 8",
-      "excerpt": "Una mirada técnica al sistema de ajuste adaptable que define a la línea Future de Puma.",
-      "date": "18 MAY 2026",
-      "cover": "assets/showtime-7.jpg"
-    },
-    {
-      "id": "new-balance-furon-v8",
-      "slug": "new-balance-furon-v8-revealed",
-      "brand": "New Balance",
-      "category": "NOVEDAD",
-      "title": "New Balance Furon v8: el speed boot del año",
-      "excerpt": "NB sigue afilando su división de fútbol con una iteración más liviana del Furon.",
-      "date": "15 MAY 2026",
-      "cover": "assets/showtime-2.jpg"
-    },
-    {
-      "id": "nike-phantom-2026",
-      "slug": "nike-phantom-gx-ii-elite",
-      "brand": "Nike",
-      "category": "LANZAMIENTO",
-      "title": "Nike Phantom GX II Elite: pegada y precisión",
-      "excerpt": "El silo de control de Nike recibe una actualización completa.",
-      "date": "12 MAY 2026",
-      "cover": "assets/showtime-4.jpg"
-    },
-    {
-      "id": "copa-pure-3",
-      "slug": "adidas-copa-pure-iii",
-      "brand": "Adidas",
-      "category": "CAMPAÑA",
-      "title": "Adidas Copa Pure III: el cuero canguro vuelve",
-      "excerpt": "El clásico del touch se reinventa con materiales premium y construcción artesanal.",
-      "date": "10 MAY 2026",
-      "cover": "assets/showtime-6.jpg"
-    },
-    {
-      "id": "tiempo-emerald",
-      "slug": "nike-tiempo-legend-emerald",
-      "brand": "Nike",
-      "category": "NOVEDAD",
-      "title": "Tiempo Legend 10 Emerald: tradición renovada",
-      "excerpt": "La silueta más clásica de Nike adopta un acabado verde profundo.",
-      "date": "8 MAY 2026",
-      "cover": "assets/showtime-5.jpg"
     }
   ],
   "brands": [
@@ -341,6 +254,55 @@ window.BAG_DATA = {
         },
         "images": [
           "assets/1780093689659-IMG_0297.jpeg"
+        ],
+        "spec": {
+          "coleccion": "Breakout Pack"
+        }
+      },
+      {
+        "id": "ki25jw7",
+        "name": "Nike Tiempo Maestro ",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 489999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780093985172-IMG_1755.jpeg"
         ],
         "spec": {
           "coleccion": "Breakout Pack"
