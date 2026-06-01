@@ -645,7 +645,11 @@ window.BAG_DATA = {
           "coleccion": "Eclipse Pack"
         }
       }
-    ]
+    ],
+    "nike/phantom": [],
+    "nike/tiempo": [],
+    "adidas/copa": [],
+    "new-balance/tekela": []
   }
 };
 
