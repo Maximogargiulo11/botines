@@ -154,7 +154,7 @@ function ArticleScreen({ slug, navigate }) {
                 <iframe src={getVideoEmbedUrl(article.coverVideo)} allowFullScreen title="video portada" />
               </div>
             ) : (
-              <video src={article.coverVideo} controls playsInline className="bag-article-hero__video-player" />
+              <video src={article.coverVideo} autoPlay muted playsInline loop className="bag-article-hero__video-player" />
             )}
           </div>
         ) : (
