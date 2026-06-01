@@ -39,9 +39,7 @@ function Navbar({ route, navigate, cartCount, onCartClick }) {
       <div className="bag-nav__inner">
         {/* Logo — uses the official uploaded PNG */}
         <a className="bag-nav__brand" href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} aria-label="Botines Alta Gama CBA">
-          <img className="bag-nav__brand-img" src="assets/logo-wordmark.svg" alt="Botines Alta Gama" />
-          <span className="bag-nav__brand-divider" />
-          <span className="bag-nav__brand-meta">CBA</span>
+          <img className="bag-nav__brand-img" src="assets/logopagina.JPG" alt="Botines Alta Gama" />
         </a>
 
         {/* Mobile burger */}
