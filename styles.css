@@ -981,6 +981,26 @@
   height: 100%;
   border: 0;
 }
+.bag-video-mute-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.2s;
+  z-index: 10;
+}
+.bag-video-mute-btn:hover { background: rgba(0, 0, 0, 0.8); }
 
 /* ============ MOBILE FINE-TUNING (≤ 560px) ============ */
 @media (max-width: 560px) {

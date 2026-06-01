@@ -1,5 +1,5 @@
 /* global React, BAG_DATA, SmallArticleCard, SectionRule */
-const { useState: useState_art } = React;
+const { useState: useState_art, useRef: useRef_art } = React;
 
 function getVideoEmbedUrl(url) {
   if (!url) return null;
@@ -15,6 +15,15 @@ function ArticleScreen({ slug, navigate }) {
   const related = BAG_DATA.articles.filter(a => a.id !== article.id).slice(0, 6);
 
   const [copied, setCopied] = useState_art(false);
+  const [videoMuted, setVideoMuted] = useState_art(true);
+  const videoRef = useRef_art(null);
+
+  const toggleMute = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = !v.muted;
+    setVideoMuted(v.muted);
+  };
   const copyLink = () => {
     navigator.clipboard?.writeText(window.location.href);
     setCopied(true);
@@ -154,7 +163,24 @@ function ArticleScreen({ slug, navigate }) {
                 <iframe src={getVideoEmbedUrl(article.coverVideo)} allowFullScreen title="video portada" />
               </div>
             ) : (
-              <video src={article.coverVideo} autoPlay muted playsInline loop className="bag-article-hero__video-player" />
+              <>
+                <video ref={videoRef} src={article.coverVideo} autoPlay muted playsInline loop className="bag-article-hero__video-player" />
+                <button className="bag-video-mute-btn" onClick={toggleMute} aria-label={videoMuted ? 'Activar sonido' : 'Silenciar'}>
+                  {videoMuted ? (
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                      <line x1="23" y1="9" x2="17" y2="15"/>
+                      <line x1="17" y1="9" x2="23" y2="15"/>
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                    </svg>
+                  )}
+                </button>
+              </>
             )}
           </div>
         ) : (
