@@ -334,6 +334,8 @@ window.BAG_DATA = {
         }
       }
     ],
+    "nike/phantom": [],
+    "nike/tiempo": [],
     "adidas/f50": [
       {
         "id": "f50-001",
@@ -466,6 +468,7 @@ window.BAG_DATA = {
         }
       }
     ],
+    "adidas/copa": [],
     "puma/future": [
       {
         "id": "fut-001",
@@ -646,9 +649,6 @@ window.BAG_DATA = {
         }
       }
     ],
-    "nike/phantom": [],
-    "nike/tiempo": [],
-    "adidas/copa": [],
     "new-balance/tekela": []
   }
 };
