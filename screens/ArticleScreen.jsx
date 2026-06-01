@@ -15,8 +15,19 @@ function ArticleScreen({ slug, navigate }) {
   const related = BAG_DATA.articles.filter(a => a.id !== article.id).slice(0, 6);
 
   const [copied, setCopied] = useState_art(false);
-  const [videoMuted, setVideoMuted] = useState_art(true);
+  const [videoMuted, setVideoMuted] = useState_art(false);
   const videoRef = useRef_art(null);
+
+  React.useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = false;
+    v.play().catch(() => {
+      v.muted = true;
+      setVideoMuted(true);
+      v.play().catch(() => {});
+    });
+  }, []);
 
   const toggleMute = () => {
     const v = videoRef.current;
@@ -164,7 +175,7 @@ function ArticleScreen({ slug, navigate }) {
               </div>
             ) : (
               <>
-                <video ref={videoRef} src={article.coverVideo} autoPlay muted playsInline loop className="bag-article-hero__video-player" />
+                <video ref={videoRef} src={article.coverVideo} playsInline loop className="bag-article-hero__video-player" />
                 <button className="bag-video-mute-btn" onClick={toggleMute} aria-label={videoMuted ? 'Activar sonido' : 'Silenciar'}>
                   {videoMuted ? (
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
