@@ -125,29 +125,29 @@ window.BAG_DATA = {
     {
       "slug": "nike",
       "name": "Nike",
-      "tagline": "El padre del speed boot moderno.",
-      "cover": "assets/placeholder-editorial.svg",
+      "tagline": "Swoosh",
+      "cover": "assets/1780440859607-IMG_0066.jpeg",
       "models": [
         {
           "slug": "mercurial",
           "name": "Mercurial",
-          "tagline": "Speed",
+          "tagline": "Velocidad",
           "stock": 12,
-          "image": "assets/placeholder-product.svg"
+          "image": "assets/1780440875366-IMG_0067.jpeg"
         },
         {
           "slug": "phantom",
           "name": "Phantom",
-          "tagline": "Control",
+          "tagline": "Precisión",
           "stock": 8,
-          "image": "assets/placeholder-product.svg"
+          "image": "assets/1780440897584-IMG_1015.png"
         },
         {
           "slug": "tiempo",
           "name": "Tiempo",
-          "tagline": "Heritage",
+          "tagline": "Toque",
           "stock": 5,
-          "image": "assets/placeholder-product.svg"
+          "image": "assets/1780440916149-IMG_0099.jpeg"
         }
       ]
     },
