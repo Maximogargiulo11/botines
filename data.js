@@ -16,8 +16,8 @@ window.BAG_DATA = {
       "excerpt": "La marca del swoosh lanza una actualización del silo de velocidad de cara a la final de la UEFA Champions League y del comienzo de la Copa del Mundo 2026.",
       "date": "25 de Mayo de 2026",
       "cover": "assets/1780094573615-IMG_1719.jpeg",
-      "coverVideo": "assets/1780094612306-AQPlGyMT-zRnfKZUz6wvvbSECuBMmnIx4WavdDZyhc7XHCar0X1ijDCQ5UpVFI_zmtxx9vtAokaGiOIdIDjQfzrQ2dLR6CL2hXdbX6k.mp4",
-      "featured": true,
+      "coverVideo": "",
+      "featured": false,
       "contentBlocks": [
         {
           "type": "image-pair",
