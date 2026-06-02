@@ -17,7 +17,7 @@ window.BAG_DATA = {
       "date": "02 de Junio de 2026",
       "cover": "assets/1780440206556-IMG_1809.jpeg",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "contentBlocks": [
         {
           "type": "image-pair",
@@ -76,7 +76,8 @@ window.BAG_DATA = {
       "excerpt": "La línea de fútbol de Puma se reordena. Future y Ultra adoptan una identidad cromática compartida — magenta eléctrico, naranja solar y violeta metálico — para la temporada 26/27.",
       "date": "24 MAY 2026",
       "cover": "assets/showtime-1.jpg",
-      "featured": true,
+      "coverVideo": "",
+      "featured": false,
       "contentBlocks": [
         {
           "type": "text",
