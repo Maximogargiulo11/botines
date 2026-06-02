@@ -183,22 +183,22 @@ window.BAG_DATA = {
     {
       "slug": "puma",
       "name": "Puma",
-      "tagline": "El felino vuelve a la cancha.",
-      "cover": "assets/showtime-1.jpg",
+      "tagline": "",
+      "cover": "assets/1780441119804-IMG_1110.png",
       "models": [
         {
           "slug": "future",
           "name": "Future",
-          "tagline": "Adapt",
+          "tagline": "Adaptabilidad ",
           "stock": 9,
-          "image": "assets/showtime-7.jpg"
+          "image": ""
         },
         {
           "slug": "ultra",
           "name": "Ultra",
-          "tagline": "Speed",
+          "tagline": "Velocidad",
           "stock": 6,
-          "image": "assets/showtime-5.jpg"
+          "image": ""
         }
       ]
     },
