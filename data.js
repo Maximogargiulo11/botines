@@ -205,20 +205,20 @@ window.BAG_DATA = {
     {
       "slug": "new-balance",
       "name": "New Balance",
-      "tagline": "Hecho en Inglaterra. Pensado para la cancha.",
-      "cover": "assets/placeholder-editorial.svg",
+      "tagline": "",
+      "cover": "",
       "models": [
         {
           "slug": "furon",
           "name": "Furon",
-          "tagline": "Speed",
+          "tagline": "Velocidad",
           "stock": 4,
           "image": "assets/placeholder-product.svg"
         },
         {
           "slug": "tekela",
           "name": "Tekela",
-          "tagline": "Creator",
+          "tagline": "Creador",
           "stock": 3,
           "image": "assets/placeholder-product.svg"
         }
