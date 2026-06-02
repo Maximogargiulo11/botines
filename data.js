@@ -154,27 +154,27 @@ window.BAG_DATA = {
     {
       "slug": "adidas",
       "name": "Adidas",
-      "tagline": "Tres rayas, tres siluetas icónicas.",
-      "cover": "assets/placeholder-editorial.svg",
+      "tagline": "Las tres líneas ",
+      "cover": "assets/1780440959629-IMG_0075.jpeg",
       "models": [
         {
           "slug": "f50",
           "name": "F50",
-          "tagline": "Speed",
+          "tagline": "Velocidad",
           "stock": 10,
           "image": "assets/placeholder-product.svg"
         },
         {
           "slug": "predator",
           "name": "Predator",
-          "tagline": "Power",
+          "tagline": "Control",
           "stock": 14,
           "image": "assets/placeholder-product.svg"
         },
         {
           "slug": "copa",
           "name": "Copa",
-          "tagline": "Touch",
+          "tagline": "Elegancia",
           "stock": 7,
           "image": "assets/placeholder-product.svg"
         }
