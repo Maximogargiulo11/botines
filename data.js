@@ -52,7 +52,7 @@ window.BAG_DATA = {
       "date": "25 de Mayo de 2026",
       "cover": "assets/1780094573615-IMG_1719.jpeg",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "contentBlocks": [
         {
           "type": "image-pair",
