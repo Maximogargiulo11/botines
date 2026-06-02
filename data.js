@@ -8,6 +8,41 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "z44j34s",
+      "slug": "adidas-presenta-el-nuevo-pack-road-to-glory-para-la-copa-del-mundo",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas presenta el nuevo pack ‘Road To Glory’ para la Copa del Mundo.",
+      "excerpt": "",
+      "date": "02 de Junio de 2026",
+      "cover": "assets/1780440206556-IMG_1809.jpeg",
+      "coverVideo": "",
+      "featured": false,
+      "contentBlocks": [
+        {
+          "type": "image-pair",
+          "id": "sghh67c",
+          "left": {
+            "src": "assets/1780440248670-IMG_1813.jpeg"
+          },
+          "right": {
+            "src": "assets/1780440256554-IMG_1814.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "6su7uig",
+          "left": {
+            "src": "assets/1780440269474-IMG_1808.jpeg"
+          },
+          "right": {
+            "src": "assets/1780440284639-IMG_1815.jpeg"
+          }
+        }
+      ],
+      "relatedProduct": null
+    },
+    {
       "id": "8t4daly",
       "slug": "nike-presenta-la-nueva-generacion-de-mercurial-superfly-11-y-vapor-17",
       "brand": "Nike",
