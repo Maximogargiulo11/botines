@@ -77,7 +77,7 @@ window.BAG_DATA = {
       "date": "24 MAY 2026",
       "cover": "assets/showtime-1.jpg",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "contentBlocks": [
         {
           "type": "text",
