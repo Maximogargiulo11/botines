@@ -184,7 +184,7 @@ window.BAG_DATA = {
       "slug": "puma",
       "name": "Puma",
       "tagline": "",
-      "cover": "assets/1780441119804-IMG_1110.png",
+      "cover": "assets/1780445529434-IMG_1838.png",
       "models": [
         {
           "slug": "future",
