@@ -742,7 +742,60 @@ window.BAG_DATA = {
         }
       }
     ],
-    "adidas/copa": [],
+    "adidas/copa": [
+      {
+        "id": "ejg9xh5",
+        "name": "Copa Pure 4 Elite",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 439999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780446334089-IMG_0436.jpeg"
+        ],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Road To Glory’ Pack"
+        }
+      }
+    ],
     "puma/future": [
       {
         "id": "fut-001",
