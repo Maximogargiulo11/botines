@@ -582,6 +582,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’"
         }
+      },
+      {
+        "id": "n8w7zrf",
+        "name": "F50 Hyperfast Elite LL",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 459999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "45",
+          "46",
+          "44.5",
+          "44"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780446118271-IMG_0435.jpeg"
+        ],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Road To Glory’ Pack"
+        }
       }
     ],
     "adidas/predator": [
