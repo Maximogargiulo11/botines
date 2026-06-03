@@ -125,7 +125,7 @@ window.BAG_DATA = {
     {
       "slug": "nike",
       "name": "Nike",
-      "tagline": "Swoosh",
+      "tagline": "",
       "cover": "assets/1780440859607-IMG_0066.jpeg",
       "models": [
         {
@@ -154,7 +154,7 @@ window.BAG_DATA = {
     {
       "slug": "adidas",
       "name": "Adidas",
-      "tagline": "Las tres líneas ",
+      "tagline": "",
       "cover": "assets/1780440959629-IMG_0075.jpeg",
       "models": [
         {
