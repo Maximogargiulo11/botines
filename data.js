@@ -638,47 +638,107 @@ window.BAG_DATA = {
     ],
     "adidas/predator": [
       {
-        "id": "pred-001",
-        "name": "Predator Elite FG",
-        "colorway": "Citrus Energy",
-        "price": 559990,
-        "sizes": {
-          "eu": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
-          ],
-          "us": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
-          ],
-          "uk": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
-          ]
-        },
+        "id": "7f30ff8",
+        "name": "Predator Elite",
+        "colorway": "Rosa / Negro",
+        "color": "#e63b7a",
+        "price": 379999,
         "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
           "41",
           "42",
           "42.5",
-          "43"
+          "43",
+          "44",
+          "46",
+          "45",
+          "44.5"
         ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
         "images": [
-          "assets/placeholder-product.svg"
+          "assets/1780446190523-IMG_0346.jpeg"
         ],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped firme",
-          "peso": "202 g",
-          "coleccion": "Citrus Energy"
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Road To Glory’ Pack"
+        }
+      },
+      {
+        "id": "1pc6em5",
+        "name": "Predator Elite FT",
+        "colorway": "Rosa / Negro",
+        "color": "#e63b7a",
+        "price": 459999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "40.5",
+          "40",
+          "39.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "46",
+          "45"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780446273238-IMG_0437.jpeg"
+        ],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Road To Glory’ Pack"
         }
       }
     ],
