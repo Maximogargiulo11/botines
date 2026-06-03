@@ -5,17 +5,14 @@ function HomeScreen({ navigate }) {
   const count    = (BAG_DATA.config && BAG_DATA.config.homepageArticleCount) || 8;
   const all      = BAG_DATA.articles.slice(0, count);
 
-  // Featured articles go to the hero carousel; the rest fill the grids below
-  const heroList = all.filter(a => a.featured);
-  const restList = all.filter(a => !a.featured);
+  // Carousel: featured articles (fallback: first article)
+  const heroList  = all.filter(a => a.featured);
+  const slides    = heroList.length > 0 ? heroList : all.slice(0, 1);
 
-  // Fallback: no featured articles → first article as hero
-  const slides   = heroList.length > 0 ? heroList : all.slice(0, 1);
-  const grid     = heroList.length > 0 ? restList : all.slice(1);
-
-  const secondary = grid.slice(0, 4);
-  const wide      = grid[4];
-  const small     = grid.slice(5);
+  // Grids below: always all articles
+  const secondary = all.slice(0, 4);
+  const wide      = all[4];
+  const small     = all.slice(5);
 
   // ── Carousel ──────────────────────────────────────────────────
   const [slide, setSlide]   = useState(0);
