@@ -206,7 +206,7 @@ window.BAG_DATA = {
       "slug": "new-balance",
       "name": "New Balance",
       "tagline": "",
-      "cover": "",
+      "cover": "assets/1780445578293-IMG_1839.jpeg",
       "models": [
         {
           "slug": "furon",
