@@ -422,6 +422,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
+      },
+      {
+        "id": "eduhd1g",
+        "name": "Phantom 6 High Elite",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 549999,
+        "availableSizes": [
+          "38",
+          "39.5",
+          "40",
+          "38.5",
+          "39",
+          "40.5",
+          "41",
+          "43",
+          "42",
+          "42.5",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780445726995-IMG_1754.jpeg"
+        ],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
       }
     ],
     "nike/tiempo": [],
