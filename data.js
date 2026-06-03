@@ -370,7 +370,60 @@ window.BAG_DATA = {
         }
       }
     ],
-    "nike/phantom": [],
+    "nike/phantom": [
+      {
+        "id": "kmlj212",
+        "name": "Phantom 6 Low Elite",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 509999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "44",
+          "42.5",
+          "43",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780445643396-IMG_1753.jpeg"
+        ],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
+      }
+    ],
     "nike/tiempo": [],
     "adidas/f50": [
       {
