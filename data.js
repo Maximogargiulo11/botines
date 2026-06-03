@@ -476,7 +476,60 @@ window.BAG_DATA = {
         }
       }
     ],
-    "nike/tiempo": [],
+    "nike/tiempo": [
+      {
+        "id": "4nhm4z5",
+        "name": "Tiempo Maestro Elite",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 489999,
+        "availableSizes": [
+          "38",
+          "39.5",
+          "39",
+          "38.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "46",
+          "45"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780445791997-IMG_1755.jpeg"
+        ],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
+      }
+    ],
     "adidas/f50": [
       {
         "id": "f50-001",
