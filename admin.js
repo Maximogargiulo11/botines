@@ -956,12 +956,116 @@ function TokenModal({ onSave, onCancel }) {
 }
 
 // ─────────────────────────────────────────
+// PAGES SECTION (Política + FAQ)
+// ─────────────────────────────────────────
+function PagesSection({ data, onDataChange }) {
+  const [tab, setTab] = useState('politica');
+
+  const pages    = data.pages || { politica: { intro: '', sections: [] }, faq: { intro: '', items: [] } };
+  const politica = pages.politica || { intro: '', sections: [] };
+  const faq      = pages.faq      || { intro: '', items: [] };
+
+  const updPolitica = (patch) => onDataChange({ ...data, pages: { ...pages, politica: { ...politica, ...patch } } });
+  const updFaq      = (patch) => onDataChange({ ...data, pages: { ...pages, faq:      { ...faq,      ...patch } } });
+
+  // ── Política helpers ──────────────────────────────────────────
+  const updSection = (id, patch) =>
+    updPolitica({ sections: politica.sections.map(s => s.id === id ? { ...s, ...patch } : s) });
+  const delSection = (id) =>
+    updPolitica({ sections: politica.sections.filter(s => s.id !== id) });
+  const addSection = () =>
+    updPolitica({ sections: [...politica.sections, { id: genId(), title: '', content: '' }] });
+  const moveSection = (id, dir) => {
+    const arr = [...politica.sections];
+    const i = arr.findIndex(s => s.id === id);
+    if (i + dir < 0 || i + dir >= arr.length) return;
+    [arr[i], arr[i + dir]] = [arr[i + dir], arr[i]];
+    updPolitica({ sections: arr });
+  };
+
+  // ── FAQ helpers ───────────────────────────────────────────────
+  const updItem = (id, patch) =>
+    updFaq({ items: faq.items.map(it => it.id === id ? { ...it, ...patch } : it) });
+  const delItem = (id) =>
+    updFaq({ items: faq.items.filter(it => it.id !== id) });
+  const addItem = () =>
+    updFaq({ items: [...faq.items, { id: genId(), q: '', a: '' }] });
+  const moveItem = (id, dir) => {
+    const arr = [...faq.items];
+    const i = arr.findIndex(it => it.id === id);
+    if (i + dir < 0 || i + dir >= arr.length) return;
+    [arr[i], arr[i + dir]] = [arr[i + dir], arr[i]];
+    updFaq({ items: arr });
+  };
+
+  return (
+    <div>
+      <div className="adm-section-header"><h2>Páginas</h2></div>
+
+      <div className="adm-pages-tabs">
+        <button className={`adm-pages-tab${tab === 'politica' ? ' is-active' : ''}`} onClick={() => setTab('politica')}>
+          Política de devoluciones
+        </button>
+        <button className={`adm-pages-tab${tab === 'faq' ? ' is-active' : ''}`} onClick={() => setTab('faq')}>
+          Preguntas frecuentes
+        </button>
+      </div>
+
+      {tab === 'politica' && (
+        <div className="adm-section">
+          <Textarea label="Introducción" value={politica.intro} onChange={v => updPolitica({ intro: v })} rows={3}
+            placeholder="Texto introductorio de la página..." />
+          <div className="adm-subsection-title" style={{ marginTop: 24 }}>Secciones</div>
+          {politica.sections.map((s, i) => (
+            <div key={s.id} className="adm-page-item">
+              <div className="adm-page-item__move">
+                <button onClick={() => moveSection(s.id, -1)} disabled={i === 0}>↑</button>
+                <button onClick={() => moveSection(s.id, 1)} disabled={i === politica.sections.length - 1}>↓</button>
+              </div>
+              <div className="adm-page-item__fields">
+                <TextInput label="Título" value={s.title} onChange={v => updSection(s.id, { title: v })} placeholder="Plazo de cambio" />
+                <Textarea label="Contenido" value={s.content} onChange={v => updSection(s.id, { content: v })} rows={3} placeholder="Descripción de la política..." />
+              </div>
+              <button className="adm-page-item__remove" onClick={() => delSection(s.id)}>×</button>
+            </div>
+          ))}
+          <Btn variant="ghost" size="sm" onClick={addSection} style={{ marginTop: 12 }}>+ Agregar sección</Btn>
+        </div>
+      )}
+
+      {tab === 'faq' && (
+        <div className="adm-section">
+          <Textarea label="Introducción" value={faq.intro} onChange={v => updFaq({ intro: v })} rows={2}
+            placeholder="Texto introductorio del FAQ..." />
+          <div className="adm-subsection-title" style={{ marginTop: 24 }}>Preguntas</div>
+          {faq.items.map((it, i) => (
+            <div key={it.id} className="adm-page-item">
+              <div className="adm-page-item__move">
+                <button onClick={() => moveItem(it.id, -1)} disabled={i === 0}>↑</button>
+                <button onClick={() => moveItem(it.id, 1)} disabled={i === faq.items.length - 1}>↓</button>
+              </div>
+              <div className="adm-page-item__fields">
+                <TextInput label="Pregunta" value={it.q} onChange={v => updItem(it.id, { q: v })} placeholder="¿Los botines son originales?" />
+                <Textarea label="Respuesta" value={it.a} onChange={v => updItem(it.id, { a: v })} rows={3} placeholder="Respuesta..." />
+              </div>
+              <button className="adm-page-item__remove" onClick={() => delItem(it.id)}>×</button>
+            </div>
+          ))}
+          <Btn variant="ghost" size="sm" onClick={addItem} style={{ marginTop: 12 }}>+ Agregar pregunta</Btn>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
 // MAIN APP
 // ─────────────────────────────────────────
 const NAV = [
   { id: 'articles', label: 'Lanzamientos', icon: '◈' },
   { id: 'brands',   label: 'Marcas',        icon: '◉' },
   { id: 'products', label: 'Catálogo',       icon: '▣' },
+  { id: 'pages',    label: 'Páginas',        icon: '◧' },
   { id: 'settings', label: 'Ajustes',        icon: '◎' },
 ];
 
@@ -1115,6 +1219,9 @@ function AdminApp() {
           )}
           {!loading && data && section === 'products' && (
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
+          )}
+          {!loading && data && section === 'pages' && (
+            <PagesSection data={data} onDataChange={handleDataChange} />
           )}
           {section === 'settings' && (
             <SettingsSection token={token} onTokenChange={t => setToken(t)} />
