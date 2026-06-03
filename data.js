@@ -532,87 +532,55 @@ window.BAG_DATA = {
     ],
     "adidas/f50": [
       {
-        "id": "f50-001",
-        "name": "F50 Elite FG",
-        "colorway": "Solar Yellow",
-        "price": 489990,
-        "sizes": {
-          "eu": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
-          ],
-          "us": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
-          ],
-          "uk": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
-          ]
-        },
+        "id": "wqhmnpz",
+        "name": "F50 Hyperfas Elite",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 439999,
         "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
           "41",
           "42",
+          "42.5",
           "43",
-          "44"
+          "44",
+          "44.5",
+          "45",
+          "46"
         ],
-        "images": [
-          "assets/placeholder-product.svg"
-        ],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped firme",
-          "peso": "167 g",
-          "coleccion": "Solar Pack"
-        }
-      },
-      {
-        "id": "f50-002",
-        "name": "F50 Pro FG",
-        "colorway": "Cloud White",
-        "price": 379990,
         "sizes": {
           "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
             "40",
+            "40.5",
             "41",
             "42",
-            "43"
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
           ],
-          "us": [
-            "7",
-            "8",
-            "9",
-            "10"
-          ],
-          "uk": [
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
+          "us": [],
+          "uk": []
         },
-        "availableSizes": [
-          "40",
-          "41",
-          "42"
-        ],
         "images": [
-          "assets/placeholder-product.svg"
+          "assets/1780445945958-IMG_0347.jpeg"
         ],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped firme",
-          "peso": "178 g",
-          "coleccion": "Cloud Pack"
+          "terreno": "Césped natural",
+          "peso": "186 gr.",
+          "coleccion": "‘Road To Glory’"
         }
       }
     ],
