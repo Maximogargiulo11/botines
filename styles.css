@@ -717,6 +717,34 @@
 .bag-cart__subtotal { display: flex; justify-content: space-between; align-items: baseline; }
 .bag-cart__subtotal-value { font-size: var(--bag-fs-2xl); font-weight: 600; font-variant-numeric: tabular-nums; }
 .bag-cart__note { font-size: 10px; letter-spacing: var(--bag-ls-wide); text-transform: uppercase; color: var(--bag-fg-faint); line-height: 1.5; }
+.bag-cart__error { font-size: 12px; color: #ff4455; margin-bottom: 8px; line-height: 1.4; }
+.bag-cart__wa-btn { margin-top: 8px; }
+
+/* ============ PAYMENT RESULT ============ */
+.bag-payment-result {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 60vh; padding: 60px 20px;
+}
+.bag-payment-result__box {
+  max-width: 460px; width: 100%;
+  text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+}
+.bag-payment-result__icon {
+  font-size: 52px; line-height: 1; font-weight: 700;
+}
+.bag-payment-result__title {
+  font-size: clamp(22px, 4vw, 30px);
+  font-family: var(--bag-font-serif);
+}
+.bag-payment-result__body {
+  color: var(--bag-fg2, #888);
+  line-height: 1.65;
+  font-size: 15px;
+}
+.bag-payment-result__actions {
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 8px;
+}
 
 /* ============ ROUTE BAR (UI kit aid — devbar to switch screens) ============ */
 .bag-routebar {

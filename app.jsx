@@ -47,6 +47,7 @@ function App() {
     const next = cart.filter((_, i) => i !== idx);
     setCart(next); saveCart(next);
   };
+  const clearCart = () => { setCart([]); saveCart([]); };
 
   /* Apply accent + serif to :root via inline style */
   const accentMap = {
@@ -71,6 +72,9 @@ function App() {
   else if (parts[0] === 'marcas' && parts[3]) screen = <ProductScreen brandSlug={parts[1]} modelSlug={parts[2]} productId={parts[3]} navigate={navigate} addToCart={addToCart} />;
   else if (parts[0] === 'politica-cambios') screen = <PoliticaScreen navigate={navigate} />;
   else if (parts[0] === 'faq') screen = <FaqScreen navigate={navigate} />;
+  else if (parts[0] === 'pago-exitoso')  screen = <PaymentResultScreen status="exitoso"  navigate={navigate} clearCart={clearCart} />;
+  else if (parts[0] === 'pago-fallido')  screen = <PaymentResultScreen status="fallido"  navigate={navigate} />;
+  else if (parts[0] === 'pago-pendiente') screen = <PaymentResultScreen status="pendiente" navigate={navigate} />;
   else screen = <HomeScreen navigate={navigate} />;
 
   return (
@@ -78,7 +82,7 @@ function App() {
       <Navbar route={route} navigate={navigate} cartCount={cart.length} onCartClick={() => setCartOpen(true)} />
       {screen}
       <Footer navigate={navigate} />
-      <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} items={cart} onRemove={removeFromCart} navigate={navigate} />
+      <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} items={cart} onRemove={removeFromCart} navigate={navigate} clearCart={clearCart} />
 
       {/* Route bar for previewing all screens */}
       <RouteBar route={route} navigate={navigate} />
@@ -139,6 +143,49 @@ function RouteBar({ route, navigate }) {
         <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4 L12 12 M12 4 L4 12"/></svg>
       </button>
     </div>
+  );
+}
+
+function PaymentResultScreen({ status, navigate, clearCart }) {
+  useEffect(() => {
+    if (status === 'exitoso' && clearCart) clearCart();
+  }, []);
+
+  const cfg = {
+    exitoso: {
+      icon: '✓',
+      title: '¡Pago aprobado!',
+      body: 'Tu compra fue procesada con éxito. En breve te contactamos por WhatsApp para coordinar el envío.',
+      color: '#22c55e',
+    },
+    pendiente: {
+      icon: '⏳',
+      title: 'Pago pendiente',
+      body: 'Tu pago está siendo procesado. Te avisamos cuando se confirme. Si tenés dudas escribinos por WhatsApp.',
+      color: '#f59e0b',
+    },
+    fallido: {
+      icon: '✕',
+      title: 'Pago fallido',
+      body: 'No pudimos procesar tu pago. Podés intentar nuevamente o contactarnos por WhatsApp.',
+      color: '#ff4455',
+    },
+  }[status] || { icon: '?', title: 'Estado desconocido', body: '', color: '#888' };
+
+  return (
+    <main className="bag-payment-result">
+      <div className="bag-payment-result__box">
+        <div className="bag-payment-result__icon" style={{ color: cfg.color }}>{cfg.icon}</div>
+        <h1 className="bag-payment-result__title">{cfg.title}</h1>
+        <p className="bag-payment-result__body">{cfg.body}</p>
+        <div className="bag-payment-result__actions">
+          {status !== 'exitoso' && (
+            <a className="bag-btn bag-btn--ghost" href="https://wa.me/5493516836569" target="_blank" rel="noreferrer">Consultar por WhatsApp</a>
+          )}
+          <button className="bag-btn bag-btn--primary" onClick={() => navigate('/')}>Volver al inicio</button>
+        </div>
+      </div>
+    </main>
   );
 }
 

@@ -956,6 +956,76 @@ function TokenModal({ onSave, onCancel }) {
 }
 
 // ─────────────────────────────────────────
+// ORDERS SECTION
+// ─────────────────────────────────────────
+function OrdersSection() {
+  const [orders, setOrders] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError]     = useState(null);
+
+  useEffect(() => {
+    fetch(rawUrl('orders.json') + '?t=' + Date.now())
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(d => { setOrders(Array.isArray(d) ? d : []); setLoading(false); })
+      .catch(e => { setError(e.message); setLoading(false); });
+  }, []);
+
+  const fmt = n => '$ ' + Number(n).toLocaleString('es-AR');
+
+  const STATUS = {
+    approved:  { label: 'Pagado',     cls: 'success' },
+    pending:   { label: 'Pendiente',  cls: 'warn'    },
+    rejected:  { label: 'Rechazado',  cls: 'danger'  },
+    cancelled: { label: 'Cancelado',  cls: 'muted'   },
+  };
+
+  return (
+    <div>
+      <div className="adm-section-header">
+        <h2>Órdenes</h2>
+        <Btn variant="ghost" size="sm" onClick={() => { setLoading(true); setError(null);
+          fetch(rawUrl('orders.json') + '?t=' + Date.now())
+            .then(r => r.json()).then(d => { setOrders(Array.isArray(d) ? d : []); setLoading(false); })
+            .catch(e => { setError(e.message); setLoading(false); });
+        }}>↺ Actualizar</Btn>
+      </div>
+
+      {loading && <div className="adm-loading"><div className="adm-spinner" /><span>Cargando órdenes...</span></div>}
+      {!loading && error && <p className="adm-text" style={{ color: 'var(--a-danger)' }}>Error: {error}</p>}
+      {!loading && !error && orders.length === 0 && (
+        <div className="adm-section">
+          <p className="adm-text">Todavía no hay órdenes. Aparecerán acá una vez que se realice el primer pago con MercadoPago.</p>
+        </div>
+      )}
+      {!loading && orders.length > 0 && (
+        <div className="adm-orders-list">
+          {orders.map(o => {
+            const st = STATUS[o.status] || { label: o.status, cls: 'muted' };
+            return (
+              <div key={o.id} className="adm-order-row">
+                <span className={`adm-status adm-status--${st.cls}`}>{st.label}</span>
+                <div className="adm-order-row__info">
+                  <div className="adm-order-row__name">{o.payer_name || o.payer_email || '—'}</div>
+                  {o.payer_email && <div className="adm-order-row__email">{o.payer_email}</div>}
+                  <div className="adm-order-row__items">
+                    {(o.items || []).map((it, i) => <span key={i}>{it.title}{i < o.items.length - 1 ? ' / ' : ''}</span>)}
+                  </div>
+                </div>
+                <div className="adm-order-row__meta">
+                  <div className="adm-order-row__amount">{fmt(o.amount)}</div>
+                  <div className="adm-order-row__date">{o.date ? new Date(o.date).toLocaleDateString('es-AR') : '—'}</div>
+                  <div className="adm-order-row__id">MP #{o.mp_payment_id}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
 // PAGES SECTION (Política + FAQ)
 // ─────────────────────────────────────────
 function PagesSection({ data, onDataChange }) {
@@ -1065,6 +1135,7 @@ const NAV = [
   { id: 'articles', label: 'Lanzamientos', icon: '◈' },
   { id: 'brands',   label: 'Marcas',        icon: '◉' },
   { id: 'products', label: 'Catálogo',       icon: '▣' },
+  { id: 'orders',   label: 'Órdenes',        icon: '◍' },
   { id: 'pages',    label: 'Páginas',        icon: '◧' },
   { id: 'settings', label: 'Ajustes',        icon: '◎' },
 ];
@@ -1220,6 +1291,7 @@ function AdminApp() {
           {!loading && data && section === 'products' && (
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
           )}
+          {section === 'orders' && <OrdersSection />}
           {!loading && data && section === 'pages' && (
             <PagesSection data={data} onDataChange={handleDataChange} />
           )}
