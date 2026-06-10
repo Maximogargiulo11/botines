@@ -2,8 +2,8 @@
 const { useState: useState_prod, useEffect: useEffect_prod } = React;
 
 const PROD_SIZE_CHART = {
-  nike:   'assets/tabla de talles nike.jpg',
-  adidas: 'assets/tabla de talles adidas.JPG',
+  nike:   'assets/tabla-de-talles-nike.jpg',
+  adidas: 'assets/tabla-de-talles-adidas.jpg',
 };
 
 function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart }) {
