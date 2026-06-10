@@ -262,7 +262,10 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1780093112259-IMG_2125.jpeg"
+          "assets/1780093112259-IMG_2125.jpeg",
+          "assets/1781127185340-ZM_SUPERFLY_11_ELITE_FG_T__1_.avif",
+          "assets/1781127195696-ZM_SUPERFLY_11_ELITE_FG_T.avif",
+          "assets/1781127230615-ZM_SUPERFLY_11_ELITE_FG_T__2_.avif"
         ],
         "spec": {
           "suela": "FG",
@@ -805,25 +808,81 @@ window.BAG_DATA = {
     "politica": {
       "intro": "Vendemos botines de alta gama originales, importados y con stock real. Estas son las condiciones bajo las que aceptamos cambios y devoluciones — diseñadas para protegerte a vos y al producto.",
       "sections": [
-        { "id": "p1", "title": "Plazo de cambio", "content": "Tenés siete (7) días corridos desde la recepción del paquete para solicitar un cambio de talle o modelo. El reclamo se inicia por WhatsApp al +54 9 351 683-6569." },
-        { "id": "p2", "title": "Estado del producto", "content": "El botín debe devolverse sin uso, sin marcas en la suela y con todos los herrajes y empaques originales: caja, bolsa interior, tarjetas y stickers. Productos con marcas de uso en césped, sintético o cancha no se aceptan." },
-        { "id": "p3", "title": "Cambios por talle", "content": "Si el modelo está disponible en otro talle al momento del reclamo, el cambio es directo. El costo de envío de retorno y el nuevo despacho corre por cuenta del comprador, salvo error nuestro al despachar." },
-        { "id": "p4", "title": "Devoluciones con reintegro", "content": "Devolvemos el 100% del valor pagado en la misma forma de pago original. Transferencias bancarias se acreditan en 48 a 72hs hábiles desde la recepción y verificación del producto en nuestro depósito." },
-        { "id": "p5", "title": "Defectos de fábrica", "content": "Todos nuestros botines tienen garantía oficial del fabricante. Si detectás un defecto de fábrica, contactanos con fotos y descripción del problema. El reemplazo o reintegro es total y los costos de envío los cubrimos nosotros." },
-        { "id": "p6", "title": "Productos en liquidación", "content": "Los modelos marcados como outlet o última unidad admiten cambio por talle dentro del mismo modelo, pero no admiten devolución con reintegro. Está aclarado en la ficha del producto." }
+        {
+          "id": "p1",
+          "title": "Plazo de cambio",
+          "content": "Tenés siete (7) días corridos desde la recepción del paquete para solicitar un cambio de talle o modelo. El reclamo se inicia por WhatsApp al +54 9 351 683-6569."
+        },
+        {
+          "id": "p2",
+          "title": "Estado del producto",
+          "content": "El botín debe devolverse sin uso, sin marcas en la suela y con todos los herrajes y empaques originales: caja, bolsa interior, tarjetas y stickers. Productos con marcas de uso en césped, sintético o cancha no se aceptan."
+        },
+        {
+          "id": "p3",
+          "title": "Cambios por talle",
+          "content": "Si el modelo está disponible en otro talle al momento del reclamo, el cambio es directo. El costo de envío de retorno y el nuevo despacho corre por cuenta del comprador, salvo error nuestro al despachar."
+        },
+        {
+          "id": "p4",
+          "title": "Devoluciones con reintegro",
+          "content": "Devolvemos el 100% del valor pagado en la misma forma de pago original. Transferencias bancarias se acreditan en 48 a 72hs hábiles desde la recepción y verificación del producto en nuestro depósito."
+        },
+        {
+          "id": "p5",
+          "title": "Defectos de fábrica",
+          "content": "Todos nuestros botines tienen garantía oficial del fabricante. Si detectás un defecto de fábrica, contactanos con fotos y descripción del problema. El reemplazo o reintegro es total y los costos de envío los cubrimos nosotros."
+        },
+        {
+          "id": "p6",
+          "title": "Productos en liquidación",
+          "content": "Los modelos marcados como outlet o última unidad admiten cambio por talle dentro del mismo modelo, pero no admiten devolución con reintegro. Está aclarado en la ficha del producto."
+        }
       ]
     },
     "faq": {
       "intro": "Lo que más nos consultan, ordenado para que lo resuelvas vos mismo. Si tu duda no está acá, escribinos por WhatsApp.",
       "items": [
-        { "id": "f1", "q": "¿Los botines son originales?", "a": "Sí, todos los productos son originales e importados directamente desde proveedores oficiales o mercados europeos y norteamericanos. Cada par viene con su caja, etiquetas y herrajes originales del fabricante." },
-        { "id": "f2", "q": "¿Cómo sé qué talle pedir?", "a": "En cada ficha de producto vas a encontrar un selector con equivalencias US, UK y EU. Si todavía tenés dudas, abrí la tabla universal completa con conversión en CM, o escribinos por WhatsApp con tu talle habitual y el modelo que querés." },
-        { "id": "f3", "q": "¿Hacen envíos a todo el país?", "a": "Sí. Despachamos por Andreani, Correo Argentino y Vía Cargo dentro de las 24hs hábiles posteriores al pago confirmado. Envíos a Córdoba Capital: misma tarde o día siguiente. El costo varía según destino y se calcula al cerrar el pedido." },
-        { "id": "f4", "q": "¿Qué formas de pago aceptan?", "a": "Transferencia bancaria (mejor precio), tarjetas de crédito con 3 y 6 cuotas sin interés, débito, MercadoPago y efectivo en sucursal Córdoba. Los precios mostrados son con transferencia; otras formas pueden tener recargo." },
-        { "id": "f5", "q": "¿Puedo retirar en una sucursal física?", "a": "Sí. Tenemos showroom en barrio General Paz, Córdoba Capital, con visita previa coordinada por WhatsApp. Ahí podés probar el botín antes de pagar y consultar por modelos que no estén en la web." },
-        { "id": "f6", "q": "¿Reservan stock?", "a": "Reservamos talle y modelo hasta por 24hs con seña del 30%. Sin seña, el stock se vende por orden de llegada — nuestro inventario es real y rota rápido." },
-        { "id": "f7", "q": "¿Tienen modelos para terreno sintético?", "a": "Sí. Trabajamos con FG (campo natural firme), AG (césped sintético de última generación), MG (multiground) e IC (futsal). El terreno recomendado figura en los detalles técnicos de cada producto." },
-        { "id": "f8", "q": "¿Qué pasa si llega un producto distinto al que pedí?", "a": "Lo solucionamos sin costo para vos. Coordinamos el retiro del producto erróneo y despachamos el correcto. Si no tenemos stock del modelo original, devolvemos el 100% del valor pagado." }
+        {
+          "id": "f1",
+          "q": "¿Los botines son originales?",
+          "a": "Sí, todos los productos son originales e importados directamente desde proveedores oficiales o mercados europeos y norteamericanos. Cada par viene con su caja, etiquetas y herrajes originales del fabricante."
+        },
+        {
+          "id": "f2",
+          "q": "¿Cómo sé qué talle pedir?",
+          "a": "En cada ficha de producto vas a encontrar un selector con equivalencias US, UK y EU. Si todavía tenés dudas, abrí la tabla universal completa con conversión en CM, o escribinos por WhatsApp con tu talle habitual y el modelo que querés."
+        },
+        {
+          "id": "f3",
+          "q": "¿Hacen envíos a todo el país?",
+          "a": "Sí. Despachamos por Andreani, Correo Argentino y Vía Cargo dentro de las 24hs hábiles posteriores al pago confirmado. Envíos a Córdoba Capital: misma tarde o día siguiente. El costo varía según destino y se calcula al cerrar el pedido."
+        },
+        {
+          "id": "f4",
+          "q": "¿Qué formas de pago aceptan?",
+          "a": "Transferencia bancaria (mejor precio), tarjetas de crédito con 3 y 6 cuotas sin interés, débito, MercadoPago y efectivo en sucursal Córdoba. Los precios mostrados son con transferencia; otras formas pueden tener recargo."
+        },
+        {
+          "id": "f5",
+          "q": "¿Puedo retirar en una sucursal física?",
+          "a": "Sí. Tenemos showroom en barrio General Paz, Córdoba Capital, con visita previa coordinada por WhatsApp. Ahí podés probar el botín antes de pagar y consultar por modelos que no estén en la web."
+        },
+        {
+          "id": "f6",
+          "q": "¿Reservan stock?",
+          "a": "Reservamos talle y modelo hasta por 24hs con seña del 30%. Sin seña, el stock se vende por orden de llegada — nuestro inventario es real y rota rápido."
+        },
+        {
+          "id": "f7",
+          "q": "¿Tienen modelos para terreno sintético?",
+          "a": "Sí. Trabajamos con FG (campo natural firme), AG (césped sintético de última generación), MG (multiground) e IC (futsal). El terreno recomendado figura en los detalles técnicos de cada producto."
+        },
+        {
+          "id": "f8",
+          "q": "¿Qué pasa si llega un producto distinto al que pedí?",
+          "a": "Lo solucionamos sin costo para vos. Coordinamos el retiro del producto erróneo y despachamos el correcto. Si no tenemos stock del modelo original, devolvemos el 100% del valor pagado."
+        }
       ]
     }
   }
