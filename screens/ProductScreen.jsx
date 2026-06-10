@@ -1,6 +1,11 @@
 /* global React, BAG_DATA */
 const { useState: useState_prod } = React;
 
+const PROD_SIZE_CHART = {
+  nike:   'assets/tabla de talles nike.jpg',
+  adidas: 'assets/tabla de talles adidas.JPG',
+};
+
 function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart }) {
   const brand = BAG_DATA.brands.find(b => b.slug === brandSlug) || BAG_DATA.brands[0];
   const model = brand.models.find(m => m.slug === modelSlug) || brand.models[0];
@@ -135,27 +140,35 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
         <div className="bag-modal" onClick={() => setShowSizeModal(false)}>
           <div className="bag-modal__card" onClick={(e) => e.stopPropagation()}>
             <header className="bag-modal__head">
-              <div className="bag-eyebrow">TABLA DE TALLES UNIVERSAL</div>
+              <div className="bag-eyebrow">TABLA DE TALLES · {brand.name.toUpperCase()}</div>
               <button className="bag-modal__close" onClick={() => setShowSizeModal(false)} aria-label="Cerrar">
                 <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
               </button>
             </header>
-            <table className="bag-size-table">
-              <thead>
-                <tr><th>US</th><th>UK</th><th>EU</th><th>CM</th></tr>
-              </thead>
-              <tbody>
-                {[
-                  ['6','5','38','24'],['6.5','5.5','39','24.5'],['7','6','40','25'],
-                  ['7.5','6.5','40.5','25.5'],['8','7','41','26'],['9','8','42','27'],
-                  ['9.5','8.5','42.5','27.5'],['10','9','43','28'],['10.5','9.5','44','28.5'],
-                  ['11','10','45','29'],
-                ].map(([u, k, e, cm]) => (
-                  <tr key={e}><td>{u}</td><td>{k}</td><td>{e}</td><td>{cm}</td></tr>
-                ))}
-              </tbody>
-            </table>
-            <p className="bag-modal__note">Tabla de referencia universal. Los talles disponibles pueden variar por modelo y colorway.</p>
+            {PROD_SIZE_CHART[brandSlug] ? (
+              <img
+                src={PROD_SIZE_CHART[brandSlug]}
+                alt={`Tabla de talles ${brand.name}`}
+                className="bag-modal__size-img"
+              />
+            ) : (
+              <table className="bag-size-table">
+                <thead>
+                  <tr><th>US</th><th>UK</th><th>EU</th><th>CM</th></tr>
+                </thead>
+                <tbody>
+                  {[
+                    ['6','5','38','24'],['6.5','5.5','39','24.5'],['7','6','40','25'],
+                    ['7.5','6.5','40.5','25.5'],['8','7','41','26'],['9','8','42','27'],
+                    ['9.5','8.5','42.5','27.5'],['10','9','43','28'],['10.5','9.5','44','28.5'],
+                    ['11','10','45','29'],
+                  ].map(([u, k, e, cm]) => (
+                    <tr key={e}><td>{u}</td><td>{k}</td><td>{e}</td><td>{cm}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+            <p className="bag-modal__note">Los talles indicados en el producto corresponden a la numeración EU. Usá esta tabla para encontrar tu talle.</p>
           </div>
         </div>
       )}
