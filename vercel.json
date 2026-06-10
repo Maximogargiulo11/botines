@@ -1,4 +1,5 @@
 {
+  "ignoreCommand": "git diff HEAD^ HEAD --name-only | grep -qvE '^(assets/|orders\\.json)'",
   "headers": [
     {
       "source": "/assets/(.*)",
