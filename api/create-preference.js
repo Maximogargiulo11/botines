@@ -1,4 +1,4 @@
-const SITE_URL = process.env.SITE_URL || 'https://botines-eta.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
