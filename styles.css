@@ -1146,3 +1146,54 @@
   /* Imagen dúo: gap más chico en mobile */
   .bag-article-figure-pair { gap: 2px; }
 }
+
+/* ============ TABLA DE TALLES ============ */
+.bag-size-chart {
+  margin-top: 20px;
+  border: 1px solid var(--bag-line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bag-size-chart__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: none;
+  border: none;
+  color: var(--bag-fg);
+  font-family: var(--bag-font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: var(--bag-ls-wide);
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--bag-dur);
+}
+.bag-size-chart__toggle:hover { background: var(--bag-surface); }
+.bag-size-chart__chevron {
+  margin-left: auto;
+  transition: transform 0.25s ease;
+}
+.bag-size-chart__toggle.is-open .bag-size-chart__chevron {
+  transform: rotate(180deg);
+}
+.bag-size-chart__body {
+  border-top: 1px solid var(--bag-line);
+  padding: 20px 18px;
+  background: var(--bag-surface);
+}
+.bag-size-chart__img {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 4px;
+}
+.bag-size-chart__note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--bag-fg-muted);
+  line-height: 1.5;
+}
