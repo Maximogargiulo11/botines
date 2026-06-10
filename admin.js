@@ -657,6 +657,7 @@ function BrandsSection({ data, onDataChange, token }) {
 function ProductEditor({ product, onSave, onCancel, token }) {
   const { upload, uploading } = useUpload(token);
   const fileRef = useRef();
+  const videoRef = useRef();
   const [f, setF] = useState({
     id: product.id || genId(),
     name: product.name || '',
@@ -666,6 +667,7 @@ function ProductEditor({ product, onSave, onCancel, token }) {
     availableSizes: product.availableSizes || [],
     sizes: product.sizes || { eu: ALL_EU, us: [], uk: [] },
     images: product.images || [],
+    videos: product.videos || [],
     spec: product.spec || { suela: 'FG (Firm Ground)', terreno: 'Césped natural firme', peso: '', coleccion: '' },
   });
   const set = (k, v) => setF(p => ({ ...p, [k]: v }));
@@ -722,6 +724,27 @@ function ProductEditor({ product, onSave, onCancel, token }) {
             </div>
           </div>
           <span className="adm-hint">Primera imagen = imagen principal.</span>
+        </div>
+        <div className="adm-section">
+          <div className="adm-section__title">Videos del producto</div>
+          <div className="adm-images-grid">
+            {f.videos.map((vid, i) => (
+              <div key={i} className="adm-thumb adm-thumb--video">
+                <video src={rawUrl(vid)} className="adm-thumb__video-preview" />
+                <button className="adm-thumb__remove" onClick={() => set('videos', f.videos.filter((_, j) => j !== i))}>×</button>
+              </div>
+            ))}
+            <div className="adm-thumb adm-thumb--add">
+              <input type="file" ref={videoRef} style={{ display: 'none' }} accept="video/*"
+                onChange={async e => {
+                  const file = e.target.files[0]; if (!file) return;
+                  try { set('videos', [...f.videos, await upload(file)]); } catch (err) { alert('Error: ' + err.message); }
+                  e.target.value = '';
+                }} />
+              <button onClick={() => videoRef.current?.click()} disabled={uploading}>{uploading ? '…' : '▶ +'}</button>
+            </div>
+          </div>
+          <span className="adm-hint">Los videos se muestran al final de la galería de imágenes del producto.</span>
         </div>
         <div className="adm-section">
           <div className="adm-section__title">Especificaciones técnicas</div>

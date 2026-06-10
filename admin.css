@@ -598,6 +598,8 @@ body {
   justify-content: center;
 }
 .adm-thumb--add button:hover { color: var(--a-fg); }
+.adm-thumb--video { background: #000; }
+.adm-thumb__video-preview { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ── COLOR INPUT ─────────────────────────────── */
 .adm-color-row { display: flex; gap: 8px; align-items: center; }

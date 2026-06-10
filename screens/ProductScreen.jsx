@@ -1,5 +1,5 @@
 /* global React, BAG_DATA */
-const { useState: useState_prod } = React;
+const { useState: useState_prod, useEffect: useEffect_prod } = React;
 
 const PROD_SIZE_CHART = {
   nike:   'assets/tabla de talles nike.jpg',
@@ -12,11 +12,26 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
   const products = BAG_DATA.products[`${brandSlug}/${modelSlug}`] || [];
   const product = products.find(p => p.id === productId) || products[0];
 
-  const [activeImage, setActiveImage] = useState_prod(0);
+  const [activeItem, setActiveItem] = useState_prod(0);
   const [unit, setUnit] = useState_prod('eu');
   const [size, setSize] = useState_prod(null);
   const [showSizeModal, setShowSizeModal] = useState_prod(false);
+  const [lightbox, setLightbox] = useState_prod(false);
   const [feedback, setFeedback] = useState_prod(null);
+
+  // Combine images and videos into a single gallery list
+  const galleryItems = [
+    ...(product ? product.images.map(src => ({ type: 'image', src })) : []),
+    ...(product && product.videos ? product.videos.map(src => ({ type: 'video', src })) : []),
+  ];
+  const current = galleryItems[activeItem] || galleryItems[0];
+
+  // Close lightbox on Escape
+  useEffect_prod(() => {
+    const onKey = (e) => { if (e.key === 'Escape') { setLightbox(false); setShowSizeModal(false); } };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   if (!product) return <div style={{ padding: 80 }}>Producto no encontrado.</div>;
 
@@ -55,23 +70,48 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
       <div className="bag-product-page__grid">
         {/* GALLERY */}
         <section className="bag-product-gallery">
-          <div className="bag-product-gallery__main">
-            <img src={product.images[activeImage]} alt="" />
-          </div>
-          {product.images.length > 1 && (
+          {/* Thumbs — left strip */}
+          {galleryItems.length > 1 && (
             <div className="bag-product-gallery__thumbs">
-              {product.images.map((src, i) => (
+              {galleryItems.map((item, i) => (
                 <button
                   key={i}
-                  className={`bag-product-gallery__thumb ${i === activeImage ? 'is-active' : ''}`}
-                  onClick={() => setActiveImage(i)}
-                  aria-label={`Imagen ${i + 1}`}
+                  className={`bag-product-gallery__thumb ${i === activeItem ? 'is-active' : ''} ${item.type === 'video' ? 'bag-product-gallery__thumb--video' : ''}`}
+                  onClick={() => setActiveItem(i)}
+                  aria-label={item.type === 'video' ? `Video ${i + 1}` : `Imagen ${i + 1}`}
                 >
-                  <img src={src} alt="" />
+                  {item.type === 'video' ? (
+                    <span className="bag-gallery-play-icon">
+                      <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor"><path d="M7 5l10 5-10 5V5z"/></svg>
+                    </span>
+                  ) : (
+                    <img src={item.src} alt="" />
+                  )}
                 </button>
               ))}
             </div>
           )}
+
+          {/* Main viewer */}
+          <div className="bag-product-gallery__main">
+            {current && current.type === 'video' ? (
+              <video
+                key={current.src}
+                src={current.src}
+                className="bag-product-gallery__video"
+                controls
+                autoPlay
+                playsInline
+              />
+            ) : current ? (
+              <img
+                src={current.src}
+                alt=""
+                onClick={() => setLightbox(true)}
+                className="bag-product-gallery__main-img"
+              />
+            ) : null}
+          </div>
         </section>
 
         {/* INFO */}
@@ -134,6 +174,26 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
           </table>
         </section>
       </div>
+
+      {/* Lightbox */}
+      {lightbox && current && current.type === 'image' && (
+        <div className="bag-lightbox" onClick={() => setLightbox(false)}>
+          <button className="bag-lightbox__close" onClick={() => setLightbox(false)} aria-label="Cerrar">
+            <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
+          </button>
+          <img src={current.src} alt="" className="bag-lightbox__img" onClick={(e) => e.stopPropagation()} />
+          {galleryItems.filter(i => i.type === 'image').length > 1 && (
+            <div className="bag-lightbox__nav">
+              <button className="bag-lightbox__arrow" onClick={(e) => { e.stopPropagation(); const images = galleryItems.map((it,i) => it.type==='image'?i:-1).filter(i=>i>=0); const pos = images.indexOf(activeItem); setActiveItem(images[(pos - 1 + images.length) % images.length]); }}>
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M10 4 L6 8 L10 12"/></svg>
+              </button>
+              <button className="bag-lightbox__arrow" onClick={(e) => { e.stopPropagation(); const images = galleryItems.map((it,i) => it.type==='image'?i:-1).filter(i=>i>=0); const pos = images.indexOf(activeItem); setActiveItem(images[(pos + 1) % images.length]); }}>
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 4 L10 8 L6 12"/></svg>
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Size modal */}
       {showSizeModal && (
