@@ -7,6 +7,11 @@ module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
+  if (!process.env.MP_ACCESS_TOKEN) {
+    console.error('MP_ACCESS_TOKEN no configurado');
+    return res.status(500).json({ error: 'Configuración de pago incompleta' });
+  }
+
   const { items } = req.body || {};
   if (!items || !items.length) return res.status(400).json({ error: 'El carrito está vacío' });
 
@@ -43,8 +48,9 @@ module.exports = async function handler(req, res) {
     const data = await response.json();
 
     if (!response.ok) {
-      console.error('MP error:', data);
-      return res.status(400).json({ error: data.message || 'Error al crear preferencia de pago' });
+      console.error('MP error status:', response.status, JSON.stringify(data));
+      const msg = data.message || (data.error === 'unauthorized' ? 'Token de pago inválido' : 'Error al crear preferencia de pago');
+      return res.status(400).json({ error: msg });
     }
 
     return res.status(200).json({ init_point: data.init_point, id: data.id });
