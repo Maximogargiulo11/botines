@@ -288,10 +288,10 @@ window.BAG_DATA = {
       },
       {
         "id": "2z7wjk8",
-        "name": "Nike Mercurial Vapor 17",
+        "name": "Nike Mercurial Vapor 17 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 509999,
+        "price": 549999,
         "availableSizes": [
           "38",
           "39.5",
@@ -331,16 +331,19 @@ window.BAG_DATA = {
         "images": [
           "assets/1780093689659-IMG_0297.jpeg"
         ],
+        "videos": [],
         "spec": {
-          "coleccion": "Breakout Pack"
+          "coleccion": "‘Breakout’ Pack",
+          "suela": "FG ",
+          "terreno": "Césped natural firme"
         }
       },
       {
         "id": "ki25jw7",
-        "name": "Nike Tiempo Maestro ",
+        "name": "Nike Tiempo Maestro FG",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 529999,
         "availableSizes": [
           "38",
           "38.5",
@@ -380,8 +383,11 @@ window.BAG_DATA = {
         "images": [
           "assets/1780093985172-IMG_1755.jpeg"
         ],
+        "videos": [],
         "spec": {
-          "coleccion": "Breakout Pack"
+          "coleccion": "‘Breakout’ Pack",
+          "suela": "FG",
+          "terreno": "Césped natural firme "
         }
       }
     ],
