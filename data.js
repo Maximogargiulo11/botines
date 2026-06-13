@@ -273,10 +273,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1780093112259-IMG_2125.jpeg",
-          "assets/1781127185340-ZM_SUPERFLY_11_ELITE_FG_T__1_.avif",
-          "assets/1781127195696-ZM_SUPERFLY_11_ELITE_FG_T.avif",
-          "assets/1781127230615-ZM_SUPERFLY_11_ELITE_FG_T__2_.avif"
+          "assets/1781384339219-IMG_1857.webp"
         ],
         "videos": [],
         "spec": {
