@@ -543,7 +543,7 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780445945958-IMG_0347.jpeg"
+          "assets/1781384541687-IMG_1843.webp"
         ],
         "videos": [],
         "spec": {
@@ -596,7 +596,7 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780446118271-IMG_0435.jpeg"
+          "assets/1781384522922-IMG_1842.webp"
         ],
         "videos": [],
         "spec": {
