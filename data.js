@@ -608,6 +608,111 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
+      },
+      {
+        "id": "lq33cn3",
+        "name": "F50 Hyperfast Evo FG",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 539999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "40",
+          "39.5",
+          "39",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "46",
+          "45",
+          "44.5"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781384135972-IMG_1841.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "coleccion": "‘Road To Glory’ Pack"
+        }
+      },
+      {
+        "id": "9d2qnlf",
+        "name": "F50 Messi Elite FG",
+        "colorway": "Crema / Celeste / Dorado",
+        "color": "#fefcdd",
+        "price": 549999,
+        "availableSizes": [
+          "39",
+          "38.5",
+          "38",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781384240690-IMG_0528.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘El Último Tango’"
+        }
       }
     ],
     "adidas/predator": [
