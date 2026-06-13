@@ -230,13 +230,24 @@ window.BAG_DATA = {
       {
         "id": "merc-002",
         "name": "Mercurial Superfly 10 Elite FG",
-        "colorway": "Stealth Black",
-        "color": "#ffffff",
-        "price": 10,
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 599999,
         "availableSizes": [
           "41",
           "42",
-          "43"
+          "43",
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "42.5",
+          "40.5",
+          "40",
+          "44",
+          "44.5",
+          "45",
+          "46"
         ],
         "sizes": {
           "eu": [
@@ -272,7 +283,7 @@ window.BAG_DATA = {
           "suela": "FG",
           "terreno": "Césped natural firme",
           "peso": "198 g",
-          "coleccion": "Stealth Pack"
+          "coleccion": "‘Breakout’ Pack"
         }
       },
       {
