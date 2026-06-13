@@ -126,7 +126,7 @@ window.BAG_DATA = {
       "slug": "nike",
       "name": "Nike",
       "tagline": "",
-      "cover": "assets/1780440859607-IMG_0066.jpeg",
+      "cover": "assets/1781384911824-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-1.png",
       "models": [
         {
           "slug": "mercurial",
@@ -155,7 +155,7 @@ window.BAG_DATA = {
       "slug": "adidas",
       "name": "Adidas",
       "tagline": "",
-      "cover": "assets/1780440959629-IMG_0075.jpeg",
+      "cover": "assets/1781384944295-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-2.png",
       "models": [
         {
           "slug": "f50",
@@ -184,7 +184,7 @@ window.BAG_DATA = {
       "slug": "puma",
       "name": "Puma",
       "tagline": "",
-      "cover": "assets/1780445529434-IMG_1838.png",
+      "cover": "assets/1781384961396-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-3.png",
       "models": [
         {
           "slug": "future",
@@ -206,7 +206,7 @@ window.BAG_DATA = {
       "slug": "new-balance",
       "name": "New Balance",
       "tagline": "",
-      "cover": "assets/1780445578293-IMG_1839.jpeg",
+      "cover": "assets/1781384977038-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-4.png",
       "models": [
         {
           "slug": "furon",
