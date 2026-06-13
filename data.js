@@ -337,67 +337,15 @@ window.BAG_DATA = {
           "suela": "FG ",
           "terreno": "Césped natural firme"
         }
-      },
-      {
-        "id": "ki25jw7",
-        "name": "Nike Tiempo Maestro FG",
-        "colorway": "Rosa",
-        "color": "#e63b7a",
-        "price": 529999,
-        "availableSizes": [
-          "38",
-          "38.5",
-          "39",
-          "39.5",
-          "40",
-          "40.5",
-          "41",
-          "42",
-          "42.5",
-          "43",
-          "44",
-          "44.5",
-          "45",
-          "46"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1780093985172-IMG_1755.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "coleccion": "‘Breakout’ Pack",
-          "suela": "FG",
-          "terreno": "Césped natural firme "
-        }
       }
     ],
     "nike/phantom": [
       {
         "id": "kmlj212",
-        "name": "Phantom 6 Low Elite",
+        "name": "Phantom 6 Low Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 509999,
+        "price": 549999,
         "availableSizes": [
           "38",
           "38.5",
@@ -437,6 +385,7 @@ window.BAG_DATA = {
         "images": [
           "assets/1780445643396-IMG_1753.jpeg"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural",
@@ -446,10 +395,10 @@ window.BAG_DATA = {
       },
       {
         "id": "eduhd1g",
-        "name": "Phantom 6 High Elite",
+        "name": "Phantom 6 High Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [
           "38",
           "39.5",
@@ -489,6 +438,7 @@ window.BAG_DATA = {
         "images": [
           "assets/1780445726995-IMG_1754.jpeg"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural",
