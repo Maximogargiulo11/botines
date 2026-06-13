@@ -505,7 +505,7 @@ window.BAG_DATA = {
     "adidas/f50": [
       {
         "id": "wqhmnpz",
-        "name": "F50 Hyperfas Elite",
+        "name": "F50 Hyperfas Elite FG",
         "colorway": "Rosa",
         "color": "#e63b7a",
         "price": 439999,
@@ -548,19 +548,20 @@ window.BAG_DATA = {
         "images": [
           "assets/1780445945958-IMG_0347.jpeg"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
-          "coleccion": "‘Road To Glory’"
+          "coleccion": "‘Road To Glory’ Pack"
         }
       },
       {
         "id": "n8w7zrf",
-        "name": "F50 Hyperfast Elite LL",
+        "name": "F50 Hyperfast Elite Laceless",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 459999,
+        "price": 489999,
         "availableSizes": [
           "38",
           "38.5",
@@ -600,9 +601,10 @@ window.BAG_DATA = {
         "images": [
           "assets/1780446118271-IMG_0435.jpeg"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
