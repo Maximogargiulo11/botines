@@ -326,7 +326,7 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780093689659-IMG_0297.jpeg"
+          "assets/1781384360709-IMG_1897.webp"
         ],
         "videos": [],
         "spec": {
