@@ -133,21 +133,21 @@ window.BAG_DATA = {
           "name": "Mercurial",
           "tagline": "Velocidad",
           "stock": 12,
-          "image": "assets/1780440875366-IMG_0067.jpeg"
+          "image": "assets/1781385804039-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-1.png"
         },
         {
           "slug": "phantom",
           "name": "Phantom",
           "tagline": "Precisión",
           "stock": 8,
-          "image": "assets/1780440897584-IMG_1015.png"
+          "image": "assets/1781385809372-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-2.png"
         },
         {
           "slug": "tiempo",
           "name": "Tiempo",
           "tagline": "Toque",
           "stock": 5,
-          "image": "assets/1780440916149-IMG_0099.jpeg"
+          "image": "assets/1781385815821-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-3.png"
         }
       ]
     },
