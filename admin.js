@@ -1268,7 +1268,7 @@ function AdminApp() {
           ))}
         </nav>
         <div className="adm-sidebar__footer">
-          <a href="index.html" target="_blank" rel="noreferrer" className="adm-nav__item">
+          <a href="https://botinesweb.vercel.app/#/" target="_blank" rel="noreferrer" className="adm-nav__item">
             <span className="adm-nav__icon">↗</span>
             <span className="adm-nav__label">Ver sitio</span>
           </a>
