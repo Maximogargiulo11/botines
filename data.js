@@ -162,21 +162,21 @@ window.BAG_DATA = {
           "name": "F50",
           "tagline": "Velocidad",
           "stock": 10,
-          "image": "assets/placeholder-product.svg"
+          "image": "assets/1781564905616-1781385575266-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.17.21-1.png"
         },
         {
           "slug": "predator",
           "name": "Predator",
           "tagline": "Control",
           "stock": 14,
-          "image": "assets/placeholder-product.svg"
+          "image": "assets/1781564851356-1781385582127-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.17.21-2.png"
         },
         {
           "slug": "copa",
           "name": "Copa",
           "tagline": "Elegancia",
           "stock": 7,
-          "image": "assets/placeholder-product.svg"
+          "image": "assets/1781564882293-1781385586957-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.17.21-3.png"
         }
       ]
     },
