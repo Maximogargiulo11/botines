@@ -191,14 +191,14 @@ window.BAG_DATA = {
           "name": "Future",
           "tagline": "Adaptabilidad ",
           "stock": 9,
-          "image": ""
+          "image": "assets/1781564941249-1781386167729-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.25.18-1.png"
         },
         {
           "slug": "ultra",
           "name": "Ultra",
           "tagline": "Velocidad",
           "stock": 6,
-          "image": ""
+          "image": "assets/1781564953959-1781386176437-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.25.18-2.png"
         }
       ]
     },
