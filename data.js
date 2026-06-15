@@ -323,55 +323,6 @@ window.BAG_DATA = {
         "spec": {
           "coleccion": "Breakout Pack"
         }
-      },
-      {
-        "id": "ki25jw7",
-        "name": "Nike Tiempo Maestro ",
-        "colorway": "Rosa",
-        "color": "#e63b7a",
-        "price": 489999,
-        "availableSizes": [
-          "38",
-          "38.5",
-          "39",
-          "39.5",
-          "40",
-          "40.5",
-          "41",
-          "42",
-          "42.5",
-          "43",
-          "44",
-          "44.5",
-          "45",
-          "46"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1780093985172-IMG_1755.jpeg"
-        ],
-        "spec": {
-          "coleccion": "Breakout Pack"
-        }
       }
     ],
     "nike/phantom": [
