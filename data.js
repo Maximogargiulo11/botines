@@ -126,28 +126,28 @@ window.BAG_DATA = {
       "slug": "nike",
       "name": "Nike",
       "tagline": "",
-      "cover": "assets/1781384911824-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-1.png",
+      "cover": "assets/1780440859607-IMG_0066.jpeg",
       "models": [
         {
           "slug": "mercurial",
           "name": "Mercurial",
           "tagline": "Velocidad",
           "stock": 12,
-          "image": "assets/1781385804039-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-1.png"
+          "image": "assets/1780440875366-IMG_0067.jpeg"
         },
         {
           "slug": "phantom",
           "name": "Phantom",
           "tagline": "Precisión",
           "stock": 8,
-          "image": "assets/1781385809372-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-2.png"
+          "image": "assets/1780440897584-IMG_1015.png"
         },
         {
           "slug": "tiempo",
           "name": "Tiempo",
           "tagline": "Toque",
           "stock": 5,
-          "image": "assets/1781385815821-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-3.png"
+          "image": "assets/1780440916149-IMG_0099.jpeg"
         }
       ]
     },
@@ -155,28 +155,28 @@ window.BAG_DATA = {
       "slug": "adidas",
       "name": "Adidas",
       "tagline": "",
-      "cover": "assets/1781384944295-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-2.png",
+      "cover": "assets/1780440959629-IMG_0075.jpeg",
       "models": [
         {
           "slug": "f50",
           "name": "F50",
           "tagline": "Velocidad",
           "stock": 10,
-          "image": "assets/1781385575266-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.17.21-1.png"
+          "image": "assets/placeholder-product.svg"
         },
         {
           "slug": "predator",
           "name": "Predator",
           "tagline": "Control",
           "stock": 14,
-          "image": "assets/1781385582127-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.17.21-2.png"
+          "image": "assets/placeholder-product.svg"
         },
         {
           "slug": "copa",
           "name": "Copa",
           "tagline": "Elegancia",
           "stock": 7,
-          "image": "assets/1781385586957-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.17.21-3.png"
+          "image": "assets/placeholder-product.svg"
         }
       ]
     },
@@ -184,21 +184,21 @@ window.BAG_DATA = {
       "slug": "puma",
       "name": "Puma",
       "tagline": "",
-      "cover": "assets/1781384961396-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-3.png",
+      "cover": "assets/1780445529434-IMG_1838.png",
       "models": [
         {
           "slug": "future",
           "name": "Future",
           "tagline": "Adaptabilidad ",
           "stock": 9,
-          "image": "assets/1781386167729-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.25.18-1.png"
+          "image": ""
         },
         {
           "slug": "ultra",
           "name": "Ultra",
           "tagline": "Velocidad",
           "stock": 6,
-          "image": "assets/1781386176437-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.25.18-2.png"
+          "image": ""
         }
       ]
     },
@@ -206,7 +206,7 @@ window.BAG_DATA = {
       "slug": "new-balance",
       "name": "New Balance",
       "tagline": "",
-      "cover": "assets/1781384977038-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-4.png",
+      "cover": "assets/1780445578293-IMG_1839.jpeg",
       "models": [
         {
           "slug": "furon",
@@ -230,24 +230,13 @@ window.BAG_DATA = {
       {
         "id": "merc-002",
         "name": "Mercurial Superfly 10 Elite FG",
-        "colorway": "Rosa / Blanco",
-        "color": "#e63b7a",
-        "price": 599999,
+        "colorway": "Stealth Black",
+        "color": "#ffffff",
+        "price": 549999,
         "availableSizes": [
           "41",
           "42",
-          "43",
-          "38",
-          "38.5",
-          "39",
-          "39.5",
-          "42.5",
-          "40.5",
-          "40",
-          "44",
-          "44.5",
-          "45",
-          "46"
+          "43"
         ],
         "sizes": {
           "eu": [
@@ -273,22 +262,25 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1781384339219-IMG_1857.webp"
+          "assets/1780093112259-IMG_2125.jpeg",
+          "assets/1781127185340-ZM_SUPERFLY_11_ELITE_FG_T__1_.avif",
+          "assets/1781127195696-ZM_SUPERFLY_11_ELITE_FG_T.avif",
+          "assets/1781127230615-ZM_SUPERFLY_11_ELITE_FG_T__2_.avif"
         ],
         "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural firme",
           "peso": "198 g",
-          "coleccion": "‘Breakout’ Pack"
+          "coleccion": "Stealth Pack"
         }
       },
       {
         "id": "2z7wjk8",
-        "name": "Nike Mercurial Vapor 17 Elite FG",
+        "name": "Nike Mercurial Vapor 17",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 549999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "39.5",
@@ -326,23 +318,69 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1781384360709-IMG_1897.webp"
+          "assets/1780093689659-IMG_0297.jpeg"
         ],
-        "videos": [],
         "spec": {
-          "coleccion": "‘Breakout’ Pack",
-          "suela": "FG ",
-          "terreno": "Césped natural firme"
+          "coleccion": "Breakout Pack"
+        }
+      },
+      {
+        "id": "ki25jw7",
+        "name": "Nike Tiempo Maestro ",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 489999,
+        "availableSizes": [
+          "38",
+          "38.5",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1780093985172-IMG_1755.jpeg"
+        ],
+        "spec": {
+          "coleccion": "Breakout Pack"
         }
       }
     ],
     "nike/phantom": [
       {
         "id": "kmlj212",
-        "name": "Phantom 6 Low Elite FG",
+        "name": "Phantom 6 Low Elite",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 549999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -380,9 +418,8 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1781384398186-IMG_1893.webp"
+          "assets/1780445643396-IMG_1753.jpeg"
         ],
-        "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural",
@@ -392,10 +429,10 @@ window.BAG_DATA = {
       },
       {
         "id": "eduhd1g",
-        "name": "Phantom 6 High Elite FG",
+        "name": "Phantom 6 High Elite",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 599999,
+        "price": 549999,
         "availableSizes": [
           "38",
           "39.5",
@@ -433,9 +470,8 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1781384419400-IMG_1898.webp"
+          "assets/1780445726995-IMG_1754.jpeg"
         ],
-        "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural",
@@ -447,10 +483,10 @@ window.BAG_DATA = {
     "nike/tiempo": [
       {
         "id": "4nhm4z5",
-        "name": "Tiempo Maestro Elite FG",
+        "name": "Tiempo Maestro Elite",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 529999,
+        "price": 489999,
         "availableSizes": [
           "38",
           "39.5",
@@ -488,12 +524,11 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1781384501589-IMG_1899.webp"
+          "assets/1780445791997-IMG_1755.jpeg"
         ],
-        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural firme",
+          "terreno": "Césped natural",
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
@@ -502,7 +537,7 @@ window.BAG_DATA = {
     "adidas/f50": [
       {
         "id": "wqhmnpz",
-        "name": "F50 Hyperfas Elite FG",
+        "name": "F50 Hyperfas Elite",
         "colorway": "Rosa",
         "color": "#e63b7a",
         "price": 439999,
@@ -543,22 +578,21 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1781384541687-IMG_1843.webp"
+          "assets/1780445945958-IMG_0347.jpeg"
         ],
-        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural firme",
+          "terreno": "Césped natural",
           "peso": "186 gr.",
-          "coleccion": "‘Road To Glory’ Pack"
+          "coleccion": "‘Road To Glory’"
         }
       },
       {
         "id": "n8w7zrf",
-        "name": "F50 Hyperfast Elite Laceless",
+        "name": "F50 Hyperfast Elite LL",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 459999,
         "availableSizes": [
           "38",
           "38.5",
@@ -596,119 +630,13 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1781384522922-IMG_1842.webp"
+          "assets/1780446118271-IMG_0435.jpeg"
         ],
-        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural firme",
+          "terreno": "Césped natural",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
-        }
-      },
-      {
-        "id": "lq33cn3",
-        "name": "F50 Hyperfast Evo FG",
-        "colorway": "Rosa",
-        "color": "#e63b7a",
-        "price": 539999,
-        "availableSizes": [
-          "38",
-          "38.5",
-          "40",
-          "39.5",
-          "39",
-          "40.5",
-          "41",
-          "42",
-          "42.5",
-          "43",
-          "44",
-          "46",
-          "45",
-          "44.5"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1781384135972-IMG_1841.webp"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "coleccion": "‘Road To Glory’ Pack"
-        }
-      },
-      {
-        "id": "9d2qnlf",
-        "name": "F50 Messi Elite FG",
-        "colorway": "Crema / Celeste / Dorado",
-        "color": "#fefcdd",
-        "price": 549999,
-        "availableSizes": [
-          "39",
-          "38.5",
-          "38",
-          "39.5",
-          "40",
-          "40.5",
-          "41",
-          "42",
-          "42.5",
-          "43",
-          "44",
-          "44.5",
-          "45",
-          "46"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1781384240690-IMG_0528.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘El Último Tango’"
         }
       }
     ],
