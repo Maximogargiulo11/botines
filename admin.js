@@ -932,7 +932,7 @@ function Login({ onLogin }) {
     <div className="adm-login">
       <div className="adm-login__box">
         <div className="adm-login__logo">
-          <span style={{ fontFamily: 'Georgia, serif', fontSize: 22, fontWeight: 700, letterSpacing: 4 }}>BOTINES</span>
+          <img src="assets/logo-altagama-transparent.png" alt="Botines Alta Gama" style={{ height: 60 }} />
         </div>
         <h1>Panel de administración</h1>
         <form onSubmit={submit}>
