@@ -38,12 +38,46 @@ module.exports = async function handler(req, res) {
     };
 
     await saveOrder(order);
+    if (payment.status === 'approved') {
+      await trackGA4Purchase(order);
+    }
   } catch (err) {
     console.error('webhook error:', err.message);
   }
 
   return res.status(200).end();
 };
+
+async function trackGA4Purchase(order) {
+  try {
+    await fetch(
+      'https://www.google-analytics.com/mp/collect?measurement_id=G-EY02HQBMZJ&api_secret=rB-0yIapRsW-xkMNpp3wvw',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          client_id: order.mp_payment_id,
+          events: [{
+            name: 'purchase',
+            params: {
+              transaction_id: order.mp_payment_id,
+              currency: 'ARS',
+              value: order.amount,
+              items: order.items.map(it => ({
+                item_id: it.id,
+                item_name: it.title,
+                price: it.unit_price,
+                quantity: it.quantity,
+              })),
+            },
+          }],
+        }),
+      }
+    );
+  } catch (err) {
+    console.error('ga4 track error:', err.message);
+  }
+}
 
 async function saveOrder(order) {
   const owner = process.env.GH_OWNER || 'Maximogargiulo11';
