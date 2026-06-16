@@ -16,6 +16,20 @@ function CartDrawer({ open, onClose, items, onRemove, navigate, clearCart }) {
   const checkoutMP = async () => {
     setLoading(true);
     setError(null);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'begin_checkout', {
+        currency: 'ARS',
+        value: subtotal,
+        items: items.map(it => ({ item_id: it.id, item_name: it.name, item_variant: it.colorway, price: it.price, quantity: it.qty || 1 })),
+      });
+    }
+    try {
+      sessionStorage.setItem('bag:checkout_snapshot', JSON.stringify({
+        transaction_id: Date.now().toString(),
+        value: subtotal,
+        items: items.map(it => ({ item_id: it.id, item_name: it.name, item_variant: it.colorway, price: it.price, quantity: it.qty || 1 })),
+      }));
+    } catch {}
     try {
       const res = await fetch('/api/create-preference', {
         method: 'POST',

@@ -26,6 +26,16 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
   ];
   const current = galleryItems[activeItem] || galleryItems[0];
 
+  useEffect_prod(() => {
+    if (product && typeof window.gtag === 'function') {
+      window.gtag('event', 'view_item', {
+        currency: 'ARS',
+        value: product.price,
+        items: [{ item_id: product.id, item_name: product.name, item_brand: brand.name, item_category: model.name, item_variant: product.colorway, price: product.price, quantity: 1 }],
+      });
+    }
+  }, [product && product.id]);
+
   // Close lightbox on Escape
   useEffect_prod(() => {
     const onKey = (e) => { if (e.key === 'Escape') { setLightbox(false); setShowSizeModal(false); } };

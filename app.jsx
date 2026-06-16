@@ -38,10 +38,23 @@ function App() {
   const [cartOpen, setCartOpen] = useState(false);
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
 
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', { page_path: route });
+    }
+  }, [route]);
+
   const addToCart = (item) => {
     const next = [...cart, { id: item.id, name: item.name, colorway: item.colorway, price: item.price, size: item.size, image: item.images?.[0], qty: 1 }];
     setCart(next); saveCart(next);
     setCartOpen(true);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'add_to_cart', {
+        currency: 'ARS',
+        value: item.price,
+        items: [{ item_id: item.id, item_name: item.name, item_brand: item.brand, item_variant: item.colorway, price: item.price, quantity: 1 }],
+      });
+    }
   };
   const removeFromCart = (idx) => {
     const next = cart.filter((_, i) => i !== idx);
@@ -148,7 +161,23 @@ function RouteBar({ route, navigate }) {
 
 function PaymentResultScreen({ status, navigate, clearCart }) {
   useEffect(() => {
-    if (status === 'exitoso' && clearCart) clearCart();
+    if (status === 'exitoso') {
+      if (clearCart) clearCart();
+      if (typeof window.gtag === 'function') {
+        try {
+          const snap = JSON.parse(sessionStorage.getItem('bag:checkout_snapshot') || 'null');
+          if (snap) {
+            window.gtag('event', 'purchase', {
+              transaction_id: snap.transaction_id,
+              currency: 'ARS',
+              value: snap.value,
+              items: snap.items,
+            });
+            sessionStorage.removeItem('bag:checkout_snapshot');
+          }
+        } catch {}
+      }
+    }
   }, []);
 
   const cfg = {
