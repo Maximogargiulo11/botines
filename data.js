@@ -249,7 +249,7 @@ window.BAG_DATA = {
         "name": "Mercurial Superfly 10 Elite FG",
         "colorway": "Stealth Black",
         "color": "#ffffff",
-        "price": 549999,
+        "price": 1,
         "availableSizes": [
           "41",
           "42",
