@@ -464,6 +464,8 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
       excerpt: a.excerpt || '',
       date: a.date || '',
       cover: a.cover || '',
+      coverWidth: a.coverWidth || '',
+      coverHeight: a.coverHeight || '',
       coverVideo: a.coverVideo || '',
       featured: !!a.featured,
       contentBlocks: a.contentBlocks || [],
@@ -506,6 +508,10 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
           <TextInput label="Fecha" value={f.date} onChange={v => set('date', v)} placeholder="24 MAY 2026" />
           <Textarea label="Bajada / Excerpt" value={f.excerpt} onChange={v => set('excerpt', v)} rows={3} placeholder="Resumen del artículo que aparece en las tarjetas..." />
           <ImageField label="Imagen de portada" value={f.cover} onChange={v => set('cover', v)} token={token} hint="Imagen que aparece en tarjetas. Obligatoria." />
+          <div className="adm-row adm-row--sm">
+            <input className="adm-input" value={f.coverWidth} onChange={e => set('coverWidth', e.target.value)} placeholder="Ancho px (ej: 1080)" style={{ flex: 1 }} />
+            <input className="adm-input" value={f.coverHeight} onChange={e => set('coverHeight', e.target.value)} placeholder="Alto px (ej: 1350)" style={{ flex: 1 }} />
+          </div>
           <VideoField label="Video de portada (opcional)" value={f.coverVideo} onChange={v => set('coverVideo', v)} token={token} hint="YouTube, Vimeo o archivo. Se muestra en el hero del artículo en lugar de la imagen." />
           <Field>
             <label className="adm-checkbox">
