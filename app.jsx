@@ -5,10 +5,10 @@
 
 const { useState, useEffect, useMemo } = React;
 
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "accent": "#ffffff",
-  "serif": "playfair"
-}/*EDITMODE-END*/;
+const TWEAK_DEFAULTS = (() => {
+  const t = (window.BAG_DATA && window.BAG_DATA.config && window.BAG_DATA.config.typography) || {};
+  return { accent: t.accent || '#ffffff', serif: t.serif || 'playfair' };
+})();
 
 /* Cart persistence */
 const CART_KEY = 'bag:cart:v1';

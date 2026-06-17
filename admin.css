@@ -875,6 +875,89 @@ code { font-family: monospace; background: var(--a-surface2); padding: 1px 5px; 
 }
 .adm-page-item__remove:hover { color: var(--a-danger); }
 
+/* ── TYPOGRAPHY SECTION ─────────────────────────────── */
+.adm-typo-opts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.adm-typo-opt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 20px 14px 16px;
+  background: var(--a-bg);
+  border: 2px solid var(--a-border);
+  border-radius: var(--a-radius);
+  cursor: pointer;
+  transition: border-color .15s;
+  font-family: var(--a-font);
+  text-align: center;
+}
+.adm-typo-opt:hover { border-color: var(--a-border2); }
+.adm-typo-opt.is-active { border-color: var(--a-accent); }
+.adm-typo-opt__preview { font-size: 52px; font-weight: 700; line-height: 1; color: var(--a-fg); display: block; }
+.adm-typo-opt__name    { font-size: 12px; font-weight: 600; color: var(--a-fg); display: block; }
+.adm-typo-opt__desc    { font-size: 11px; color: var(--a-fg3); display: block; }
+
+.adm-accent-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.adm-accent-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--a-bg);
+  border: 2px solid var(--a-border);
+  border-radius: var(--a-radius);
+  cursor: pointer;
+  transition: border-color .15s;
+  font-size: 13px;
+  color: var(--a-fg2);
+  font-family: var(--a-font);
+}
+.adm-accent-opt:hover { border-color: var(--a-border2); color: var(--a-fg); }
+.adm-accent-opt.is-active { border-color: var(--a-accent); color: var(--a-fg); }
+.adm-accent-opt__swatch {
+  width: 16px; height: 16px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.15); flex-shrink: 0; display: block;
+}
+.adm-accent-opt__check { color: var(--a-accent); font-weight: 700; }
+
+.adm-typo-preview {
+  background: #0a0a0a;
+  border: 1px solid #222;
+  border-radius: var(--a-radius);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adm-typo-preview__eyebrow {
+  font-size: 11px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: #666; display: block;
+}
+.adm-typo-preview__title {
+  font-size: 30px; font-weight: 800; line-height: 1.06;
+  letter-spacing: -.02em; color: #fff; display: block;
+}
+.adm-typo-preview__colorway {
+  font-size: 13px; color: #666; letter-spacing: .04em; display: block;
+}
+.adm-typo-preview__price {
+  font-size: 22px; font-weight: 600; color: #fff;
+  letter-spacing: -.01em; display: block; margin-top: 4px;
+}
+.adm-typo-preview__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; border: none; border-radius: 0;
+  margin-top: 6px; cursor: default;
+}
+
 /* ── RESPONSIVE MOBILE (≤ 680px) ─────────────────────────────── */
 @media (max-width: 680px) {
 

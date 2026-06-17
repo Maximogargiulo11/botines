@@ -1152,15 +1152,104 @@ function PagesSection({ data, onDataChange }) {
 }
 
 // ─────────────────────────────────────────
+// TYPOGRAPHY SECTION
+// ─────────────────────────────────────────
+function TypographySection({ data, onDataChange }) {
+  const typo   = (data.config && data.config.typography) || {};
+  const serif  = typo.serif  || 'playfair';
+  const accent = typo.accent || '#ffffff';
+
+  const update = (patch) => {
+    onDataChange({
+      ...data,
+      config: { ...(data.config || {}), typography: { ...typo, ...patch } },
+    });
+  };
+
+  const serifOpts = [
+    { value: 'playfair',  label: 'Playfair Display',   family: "'Playfair Display', Georgia, serif",  desc: 'Clásica y editorial' },
+    { value: 'cormorant', label: 'Cormorant Garamond',  family: "'Cormorant Garamond', Georgia, serif", desc: 'Elegante y ligera'   },
+  ];
+
+  const accentOpts = [
+    { value: '#ffffff', label: 'Blanco',  fg: '#0a0a0a' },
+    { value: '#e63946', label: 'Rojo',    fg: '#ffffff' },
+    { value: '#d4ff00', label: 'Lima',    fg: '#0a0a0a' },
+    { value: '#ff6b00', label: 'Naranja', fg: '#ffffff' },
+  ];
+
+  const previewSerif  = (serifOpts.find(o => o.value === serif)  || serifOpts[0]).family;
+  const previewAccent = accentOpts.find(o => o.value === accent) || accentOpts[0];
+
+  return (
+    <div>
+      <div className="adm-section-header"><h2>Tipografía</h2></div>
+
+      <div className="adm-section">
+        <div className="adm-section__title">Fuente de titulares</div>
+        <p className="adm-text">Afecta títulos principales, nombres de productos y encabezados del sitio.</p>
+        <div className="adm-typo-opts">
+          {serifOpts.map(opt => (
+            <button
+              key={opt.value}
+              className={`adm-typo-opt${serif === opt.value ? ' is-active' : ''}`}
+              onClick={() => update({ serif: opt.value })}
+            >
+              <span className="adm-typo-opt__preview" style={{ fontFamily: opt.family }}>Ag</span>
+              <span className="adm-typo-opt__name">{opt.label}</span>
+              <span className="adm-typo-opt__desc">{opt.desc}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="adm-section">
+        <div className="adm-section__title">Color de acento</div>
+        <p className="adm-text">Se aplica en botones de compra, estados activos y elementos interactivos.</p>
+        <div className="adm-accent-opts">
+          {accentOpts.map(opt => (
+            <button
+              key={opt.value}
+              className={`adm-accent-opt${accent === opt.value ? ' is-active' : ''}`}
+              onClick={() => update({ accent: opt.value })}
+            >
+              <span className="adm-accent-opt__swatch" style={{ background: opt.value }} />
+              <span>{opt.label}</span>
+              {accent === opt.value && <span className="adm-accent-opt__check">✓</span>}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="adm-section">
+        <div className="adm-section__title">Vista previa</div>
+        <div className="adm-typo-preview">
+          <span className="adm-typo-preview__eyebrow">LANZAMIENTO · ADIDAS</span>
+          <span className="adm-typo-preview__title" style={{ fontFamily: previewSerif }}>
+            Predator Elite SG<br />"Road to Glory"
+          </span>
+          <span className="adm-typo-preview__colorway">Colorway "Cloud White / Core Black"</span>
+          <span className="adm-typo-preview__price">$ 189.990</span>
+          <span className="adm-typo-preview__btn" style={{ background: previewAccent.value, color: previewAccent.fg }}>
+            AGREGAR AL CARRITO
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
 // MAIN APP
 // ─────────────────────────────────────────
 const NAV = [
-  { id: 'articles', label: 'Lanzamientos', icon: '◈' },
-  { id: 'brands',   label: 'Marcas',        icon: '◉' },
-  { id: 'products', label: 'Catálogo',       icon: '▣' },
-  { id: 'orders',   label: 'Órdenes',        icon: '◍' },
-  { id: 'pages',    label: 'Páginas',        icon: '◧' },
-  { id: 'settings', label: 'Ajustes',        icon: '◎' },
+  { id: 'articles',   label: 'Lanzamientos', icon: '◈' },
+  { id: 'brands',     label: 'Marcas',        icon: '◉' },
+  { id: 'products',   label: 'Catálogo',       icon: '▣' },
+  { id: 'orders',     label: 'Órdenes',        icon: '◍' },
+  { id: 'pages',      label: 'Páginas',        icon: '◧' },
+  { id: 'typography', label: 'Tipografía',     icon: '◑' },
+  { id: 'settings',   label: 'Ajustes',        icon: '◎' },
 ];
 
 function AdminApp() {
@@ -1317,6 +1406,9 @@ function AdminApp() {
           {section === 'orders' && <OrdersSection />}
           {!loading && data && section === 'pages' && (
             <PagesSection data={data} onDataChange={handleDataChange} />
+          )}
+          {!loading && data && section === 'typography' && (
+            <TypographySection data={data} onDataChange={handleDataChange} />
           )}
           {section === 'settings' && (
             <SettingsSection token={token} onTokenChange={t => setToken(t)} />
