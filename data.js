@@ -8,14 +8,14 @@ window.BAG_DATA = {
   },
   "articles": [
     {
-      "id": "2go6xvz",
+      "id": "ue3v5y5",
       "slug": "entrega-de-pedido-especial-a-enzo-fernandez",
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "Entrega de pedido especial a Enzo Fernández ",
       "excerpt": "",
       "date": "",
-      "cover": "assets/1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
+      "cover": "assets/1781734788568-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
       "coverVideo": "",
       "featured": false,
       "contentBlocks": [],
