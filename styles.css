@@ -376,13 +376,13 @@
 
 /* ============ ARTICLE PAGE ============ */
 .bag-article-page { padding-bottom: 80px; }
-.bag-article-hero { position: relative; line-height: 0; background: #000; }
+.bag-article-hero { position: relative; line-height: 0; }
 .bag-article-hero__blur { display: none; }
 .bag-article-hero__image {
   position: relative;
   width: 100%;
 }
-.bag-article-hero__image img { width: 100%; height: auto; max-height: 90vh; display: block; object-fit: contain; }
+.bag-article-hero__image img { width: 100%; height: auto; display: block; }
 
 .bag-article-head {
   max-width: var(--bag-article-max);
