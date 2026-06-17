@@ -268,7 +268,7 @@
 /* ============ ARTICLE CARDS ============ */
 .bag-article-card { cursor: pointer; display: flex; flex-direction: column; gap: 14px; }
 .bag-article-card__media { aspect-ratio: 4/3; overflow: hidden; background: #000; }
-.bag-article-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms var(--bag-ease); }
+.bag-article-card__media img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 400ms var(--bag-ease); }
 .bag-article-card:hover .bag-article-card__media img { transform: scale(1.03); }
 .bag-article-card__body { display: flex; flex-direction: column; gap: 8px; }
 .bag-article-card__title {
@@ -376,13 +376,13 @@
 
 /* ============ ARTICLE PAGE ============ */
 .bag-article-page { padding-bottom: 80px; }
-.bag-article-hero { position: relative; line-height: 0; }
+.bag-article-hero { position: relative; line-height: 0; background: #000; }
 .bag-article-hero__blur { display: none; }
 .bag-article-hero__image {
   position: relative;
   width: 100%;
 }
-.bag-article-hero__image img { width: 100%; height: auto; display: block; object-fit: cover; }
+.bag-article-hero__image img { width: 100%; height: auto; max-height: 90vh; display: block; object-fit: contain; }
 
 .bag-article-head {
   max-width: var(--bag-article-max);
