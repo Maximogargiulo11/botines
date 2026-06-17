@@ -8,6 +8,20 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "4zhfi4i",
+      "slug": "entrega-de-un-pedido-especial-a-enzo-fernandez",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Entrega de un pedido especial a Enzo Fernández ",
+      "excerpt": "",
+      "date": "",
+      "cover": "assets/1781734599047-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
+      "coverVideo": "",
+      "featured": false,
+      "contentBlocks": [],
+      "relatedProduct": null
+    },
+    {
       "id": "z44j34s",
       "slug": "adidas-presenta-el-nuevo-pack-road-to-glory-para-la-copa-del-mundo",
       "brand": "Adidas",
