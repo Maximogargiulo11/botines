@@ -4,18 +4,22 @@
 
 window.BAG_DATA = {
   "config": {
-    "homepageArticleCount": 8
+    "homepageArticleCount": 8,
+    "typography": {
+      "serif": "playfair",
+      "accent": "#ffffff"
+    }
   },
   "articles": [
     {
-      "id": "ue3v5y5",
+      "id": "2go6xvz",
       "slug": "entrega-de-pedido-especial-a-enzo-fernandez",
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "Entrega de pedido especial a Enzo Fernández ",
       "excerpt": "",
       "date": "",
-      "cover": "assets/1781734788568-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
+      "cover": "assets/1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
       "coverVideo": "",
       "featured": false,
       "contentBlocks": [],
@@ -140,28 +144,28 @@ window.BAG_DATA = {
       "slug": "nike",
       "name": "Nike",
       "tagline": "",
-      "cover": "assets/1780440859607-IMG_0066.jpeg",
+      "cover": "assets/1781735098987-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.04.14-1.png",
       "models": [
         {
           "slug": "mercurial",
           "name": "Mercurial",
           "tagline": "Velocidad",
           "stock": 12,
-          "image": "assets/1780440875366-IMG_0067.jpeg"
+          "image": "assets/1781735108156-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-1.png"
         },
         {
           "slug": "phantom",
           "name": "Phantom",
           "tagline": "Precisión",
           "stock": 8,
-          "image": "assets/1780440897584-IMG_1015.png"
+          "image": "assets/1781735121989-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-2.png"
         },
         {
           "slug": "tiempo",
           "name": "Tiempo",
           "tagline": "Toque",
           "stock": 5,
-          "image": "assets/1780440916149-IMG_0099.jpeg"
+          "image": "assets/1781735131376-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.20.02-3.png"
         }
       ]
     },
