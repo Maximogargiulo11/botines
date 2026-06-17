@@ -4,7 +4,10 @@
 
 window.BAG_DATA = {
   "config": {
-    "homepageArticleCount": 8
+    "homepageArticleCount": 8,
+    "typography": {
+      "serif": "playfair"
+    }
   },
   "articles": [
     {
@@ -15,7 +18,7 @@ window.BAG_DATA = {
       "title": "Entrega de pedido especial a Enzo Fernández ",
       "excerpt": "",
       "date": "",
-      "cover": "assets/1781734788568-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
+      "cover": "assets/1781735958470-IMG_0700.jpeg",
       "coverVideo": "",
       "featured": false,
       "contentBlocks": [],
