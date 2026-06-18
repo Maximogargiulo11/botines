@@ -762,7 +762,59 @@ window.BAG_DATA = {
         }
       }
     ],
-    "puma/future": [],
+    "puma/future": [
+      {
+        "id": "7flucqw",
+        "name": "Puma Future 9 Ultimate FG",
+        "colorway": "Rosa / Naranja / Violeta",
+        "color": "#982abc",
+        "price": 439999,
+        "availableSizes": [
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44.5",
+          "44",
+          "46",
+          "45"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781803473055-IMG_1359.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Showtime’ Pack"
+        }
+      }
+    ],
     "puma/ultra": []
   },
   "pages": {
