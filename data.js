@@ -441,12 +441,11 @@ window.BAG_DATA = {
     "adidas/f50": [
       {
         "id": "wqhmnpz",
-        "name": "F50 Hyperfas Elite",
+        "name": "Adidas F50 Hyperfast Elite FG",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 439999,
+        "price": 479999,
         "availableSizes": [
-          "38",
           "38.5",
           "39",
           "39.5",
@@ -459,7 +458,8 @@ window.BAG_DATA = {
           "44",
           "44.5",
           "45",
-          "46"
+          "46",
+          "38"
         ],
         "sizes": {
           "eu": [
@@ -482,21 +482,22 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780445945958-IMG_0347.jpeg"
+          "assets/1781803057241-IMG_1843.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
-          "coleccion": "‘Road To Glory’"
+          "coleccion": "‘Road To Glory’ Pack"
         }
       },
       {
         "id": "n8w7zrf",
-        "name": "F50 Hyperfast Elite LL",
+        "name": "Adidas F50 Hyperfast Elite LL FG ",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 459999,
+        "price": 489999,
         "availableSizes": [
           "38",
           "38.5",
@@ -534,11 +535,12 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780446118271-IMG_0435.jpeg"
+          "assets/1781803106056-IMG_1842.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
