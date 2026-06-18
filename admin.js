@@ -466,6 +466,7 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
       cover: a.cover || '',
       coverWidth: a.coverWidth || '',
       coverHeight: a.coverHeight || '',
+      imagenCard: a.imagenCard || '',
       coverVideo: a.coverVideo || '',
       featured: !!a.featured,
       contentBlocks: a.contentBlocks || [],
@@ -512,6 +513,7 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
             <input className="adm-input" value={f.coverWidth} onChange={e => set('coverWidth', e.target.value)} placeholder="Ancho px (ej: 1080)" style={{ flex: 1 }} />
             <input className="adm-input" value={f.coverHeight} onChange={e => set('coverHeight', e.target.value)} placeholder="Alto px (ej: 1350)" style={{ flex: 1 }} />
           </div>
+          <ImageField label="Imagen para Card (opcional)" value={f.imagenCard} onChange={v => set('imagenCard', v)} token={token} hint="Imagen que se muestra en las cards del listado. Si no se completa, se usa la imagen principal." />
           <VideoField label="Video de portada (opcional)" value={f.coverVideo} onChange={v => set('coverVideo', v)} token={token} hint="YouTube, Vimeo o archivo. Se muestra en el hero del artículo en lugar de la imagen." />
           <Field>
             <label className="adm-checkbox">

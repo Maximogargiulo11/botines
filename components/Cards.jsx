@@ -20,10 +20,11 @@ function HeroArticle({ article, onClick }) {
 
 /* Standard article card (image top, eyebrow, title, date) */
 function ArticleCard({ article, size = 'md', onClick }) {
+  const cardImg = article.imagenCard || article.cover;
   return (
     <article className={`bag-article-card bag-article-card--${size}`} onClick={onClick}>
       <div className="bag-article-card__media">
-        <img src={article.cover} alt="" />
+        <img src={cardImg} alt="" />
       </div>
       <div className="bag-article-card__body">
         <div className="bag-eyebrow bag-eyebrow--muted">{article.category}</div>
@@ -53,9 +54,10 @@ function SplitArticle({ article, onClick }) {
 
 /* Small article card — grid of 4 */
 function SmallArticleCard({ article, onClick }) {
+  const cardImg = article.imagenCard || article.cover;
   return (
     <article className="bag-small-card" onClick={onClick}>
-      <div className="bag-small-card__media"><img src={article.cover} alt="" /></div>
+      <div className="bag-small-card__media"><img src={cardImg} alt="" /></div>
       <div className="bag-eyebrow bag-eyebrow--muted">{article.category}</div>
       <h4 className="bag-small-card__title">{article.title}</h4>
     </article>
