@@ -330,6 +330,57 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
+      },
+      {
+        "id": "ujqtt4n",
+        "name": "Nike Mercurial Vapor 17 Elite SG-Pro Player Edition",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 659999,
+        "availableSizes": [
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "43",
+          "42.5",
+          "42",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781807897928-IMG_1895.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
       }
     ],
     "nike/phantom": [
