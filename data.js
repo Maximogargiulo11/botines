@@ -177,14 +177,23 @@ window.BAG_DATA = {
     "nike/mercurial": [
       {
         "id": "merc-002",
-        "name": "Mercurial Superfly 10 Elite FG",
-        "colorway": "Stealth Black",
-        "color": "#ffffff",
-        "price": 1,
+        "name": "Nike Mercurial Superfly 10 Elite FG",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 599999,
         "availableSizes": [
           "41",
           "42",
-          "43"
+          "43",
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "42.5",
+          "44",
+          "44.5",
+          "45",
+          "46"
         ],
         "sizes": {
           "eu": [
@@ -210,32 +219,27 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1780093112259-IMG_2125.jpeg",
-          "assets/1781127185340-ZM_SUPERFLY_11_ELITE_FG_T__1_.avif",
-          "assets/1781127195696-ZM_SUPERFLY_11_ELITE_FG_T.avif",
-          "assets/1781127230615-ZM_SUPERFLY_11_ELITE_FG_T__2_.avif"
+          "assets/1781802620669-IMG_1857.webp"
         ],
         "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural firme",
-          "peso": "198 g",
-          "coleccion": "Stealth Pack"
+          "peso": "198 gr.",
+          "coleccion": "‘Breakout’ Pack"
         }
       },
       {
         "id": "2z7wjk8",
-        "name": "Nike Mercurial Vapor 17",
+        "name": "Nike Mercurial Vapor 17 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 509999,
+        "price": 549999,
         "availableSizes": [
-          "38",
           "39.5",
           "40.5",
           "39",
           "40",
-          "38.5",
           "41",
           "44.5",
           "42.5",
@@ -266,10 +270,14 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780093689659-IMG_0297.jpeg"
+          "assets/1781802678126-IMG_1897.webp"
         ],
+        "videos": [],
         "spec": {
-          "coleccion": "Breakout Pack"
+          "coleccion": "‘Breakout’ Pack",
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr."
         }
       }
     ],
