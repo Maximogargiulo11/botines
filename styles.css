@@ -2,6 +2,15 @@
    BAG · UI Kit styles — built on top of colors_and_type.css tokens
    ==================================================================== */
 
+/* ============ FUENTES LOCALES ============ */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============ NAVBAR ============ */
 .bag-nav {
   position: sticky; top: 0; z-index: 50;
