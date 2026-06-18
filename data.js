@@ -16,18 +16,18 @@ window.BAG_DATA = {
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "Entrega de un pedido especial en Miami",
-      "excerpt": "",
+      "excerpt": "La nueva generación de Mercurial Vapor para Charly Alcaraz.",
       "date": "",
       "cover": "assets/1781810001343-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "assets/1781810012383-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "contentBlocks": [
         {
           "type": "text",
-          "id": "232h6we",
+          "id": "taxm5fx",
           "content": "📦Nike Mercurial Vapor 17 Elite SG-Pro Player Edition ‘Breakout’ para Charly Alcaraz, jugador de Everton.\n\n¡Agradecemos su confianza puesta en nuestro trabajo y servicio!\n\nBotines Alta Gama Córdoba. ✍️"
         }
       ],
