@@ -1177,6 +1177,7 @@ function TypographySection({ data, onDataChange }) {
   const serifOpts = [
     { value: 'playfair',  label: 'Playfair Display',   family: "'Playfair Display', Georgia, serif",  desc: 'Clásica y editorial' },
     { value: 'cormorant', label: 'Cormorant Garamond',  family: "'Cormorant Garamond', Georgia, serif", desc: 'Elegante y ligera'   },
+    { value: 'bebas',     label: 'Bebas Neue',          family: "'Bebas Neue', sans-serif",             desc: 'Deportiva y condensada' },
   ];
 
   const accentOpts = [

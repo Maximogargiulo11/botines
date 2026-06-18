@@ -72,6 +72,8 @@ function App() {
   const accent = accentMap[t.accent] || accentMap['#ffffff'];
   const serifFamily = t.serif === 'cormorant'
     ? `'Cormorant Garamond', 'Playfair Display', Georgia, serif`
+    : t.serif === 'bebas'
+    ? `'Bebas Neue', sans-serif`
     : `'Playfair Display', 'Cormorant Garamond', Georgia, serif`;
 
   /* Parse route */
