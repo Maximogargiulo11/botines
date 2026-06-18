@@ -222,28 +222,6 @@ window.BAG_DATA = {
         }
       ]
     },
-    {
-      "slug": "new-balance",
-      "name": "New Balance",
-      "tagline": "",
-      "cover": "assets/1780445578293-IMG_1839.jpeg",
-      "models": [
-        {
-          "slug": "furon",
-          "name": "Furon",
-          "tagline": "Velocidad",
-          "stock": 4,
-          "image": "assets/placeholder-product.svg"
-        },
-        {
-          "slug": "tekela",
-          "name": "Tekela",
-          "tagline": "Creador",
-          "stock": 3,
-          "image": "assets/placeholder-product.svg"
-        }
-      ]
-    }
   ],
   "products": {
     "nike/mercurial": [
@@ -772,9 +750,7 @@ window.BAG_DATA = {
       }
     ],
     "puma/future": [],
-    "puma/ultra": [],
-    "new-balance/furon": [],
-    "new-balance/tekela": []
+    "puma/ultra": []
   },
   "pages": {
     "politica": {
