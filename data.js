@@ -381,6 +381,46 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
+      },
+      {
+        "id": "1amrnth",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Azul / Rosa",
+        "color": "#000ef2",
+        "price": 549999,
+        "availableSizes": [
+          "41"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781808202320-IMG_1466.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Attack’ Pack"
+        }
       }
     ],
     "nike/phantom": [
@@ -586,6 +626,46 @@ window.BAG_DATA = {
           "terreno": "Césped natural blando ",
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
+        }
+      },
+      {
+        "id": "vsfp15y",
+        "name": "Nike Phantom 6 Low Elite FG",
+        "colorway": "Crema / Celeste",
+        "color": "#cbf0ff",
+        "price": 549999,
+        "availableSizes": [
+          "41"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781808130835-IMG_1251.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Showtime’ Pack"
         }
       }
     ],
