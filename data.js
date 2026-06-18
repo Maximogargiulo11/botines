@@ -602,10 +602,10 @@ window.BAG_DATA = {
     "adidas/predator": [
       {
         "id": "7f30ff8",
-        "name": "Predator Elite",
+        "name": "Adidas Predator Elite FG",
         "colorway": "Rosa / Negro",
         "color": "#e63b7a",
-        "price": 379999,
+        "price": 479999,
         "availableSizes": [
           "38",
           "38.5",
@@ -643,21 +643,22 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780446190523-IMG_0346.jpeg"
+          "assets/1781803228654-IMG_1850.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
       },
       {
         "id": "1pc6em5",
-        "name": "Predator Elite FT",
+        "name": "Adidas Predator Elite FT FG",
         "colorway": "Rosa / Negro",
         "color": "#e63b7a",
-        "price": 459999,
+        "price": 489999,
         "availableSizes": [
           "38",
           "38.5",
@@ -695,11 +696,12 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780446273238-IMG_0437.jpeg"
+          "assets/1781803276786-IMG_1848.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
