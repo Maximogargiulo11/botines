@@ -485,6 +485,108 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
+      },
+      {
+        "id": "7lr2piy",
+        "name": "Nike Phantom 6 High Elite SG-Pro Player Edition",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 669999,
+        "availableSizes": [
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781807986189-IMG_1892.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
+      },
+      {
+        "id": "pzsfdfm",
+        "name": "Nike Phantom 6 Low Elite SG-Pro Player Edition ",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 659999,
+        "availableSizes": [
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781808060079-IMG_1894.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando ",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
       }
     ],
     "nike/tiempo": [
