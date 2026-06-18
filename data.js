@@ -11,6 +11,23 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "cr1rymp",
+      "slug": "entrega-de-un-pedido-especial-en-miami",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Entrega de un pedido especial en Miami",
+      "excerpt": "",
+      "date": "",
+      "cover": "assets/1781810001343-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1781810012383-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
+      "coverVideo": "",
+      "featured": false,
+      "contentBlocks": [],
+      "relatedProduct": null
+    },
+    {
       "id": "ue3v5y5",
       "slug": "de-cordoba-a-kansas-sin-escalas",
       "brand": "Nike",
