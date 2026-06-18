@@ -23,7 +23,7 @@ window.BAG_DATA = {
       "coverHeight": "1080",
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "contentBlocks": [],
       "relatedProduct": null
     },
@@ -36,8 +36,11 @@ window.BAG_DATA = {
       "excerpt": "",
       "date": "02 de Junio de 2026",
       "cover": "assets/1780440206556-IMG_1809.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "contentBlocks": [
         {
           "type": "image-pair",
@@ -86,59 +89,6 @@ window.BAG_DATA = {
         }
       ],
       "relatedProduct": null
-    },
-    {
-      "id": "puma-showtime-pack",
-      "slug": "puma-showtime-pack-future-ultra",
-      "brand": "Puma",
-      "category": "LANZAMIENTO",
-      "title": "Puma lanza el ‘Showtime Pack’: Future y Ultra bajo una sola dirección",
-      "excerpt": "La línea de fútbol de Puma se reordena. Future y Ultra adoptan una identidad cromática compartida — magenta eléctrico, naranja solar y violeta metálico — para la temporada 26/27.",
-      "date": "24 MAY 2026",
-      "cover": "assets/showtime-1.jpg",
-      "coverVideo": "",
-      "featured": true,
-      "contentBlocks": [
-        {
-          "type": "text",
-          "id": "f3sqvsu",
-          "content": "Puma Football presenta el Showtime Pack, un drop unificado que pone a las dos siluetas estrella de la marca — Future y Ultra — bajo la misma identidad visual. Es la primera vez en cinco temporadas que la división de fútbol del felino consolida sus líneas creativa y de velocidad en un solo lanzamiento, una decisión que habla del nuevo rumbo de la marca."
-        },
-        {
-          "type": "image",
-          "id": "y3dggoc",
-          "src": "assets/showtime-3.jpg",
-          "width": "1080",
-          "height": "1350"
-        },
-        {
-          "type": "text",
-          "id": "opvws99",
-          "content": "El colorway combina magenta eléctrico, naranja solar y violeta metálico en degradés cromados que cambian según el ángulo de luz. La construcción se mantiene fiel: Future con el upper FUZIONFIT360 adaptable y Ultra con la placa de carbono ULTRAWEAVE — pero ambas siluetas reciben actualizaciones internas en la plantilla y el sistema de tracción."
-        },
-        {
-          "type": "image",
-          "id": "jgbyodx",
-          "src": "assets/showtime-5.jpg",
-          "width": "1080",
-          "height": "1350"
-        },
-        {
-          "type": "text",
-          "id": "654cdq6",
-          "content": "En Argentina llega con cupos limitados a través de tiendas seleccionadas. Botines Alta Gama recibe el pack completo en talles del 39 al 44 — disponibilidad real en catálogo, sin pre-órdenes ni listas de espera."
-        },
-        {
-          "type": "instagram",
-          "id": "tg1yf3p",
-          "url": "https://instagram.com/p/example/"
-        }
-      ],
-      "relatedProduct": {
-        "brand": "Puma",
-        "model": "future",
-        "id": "fut-001"
-      }
     }
   ],
   "brands": [
@@ -221,7 +171,7 @@ window.BAG_DATA = {
           "image": "assets/1781564953959-1781386176437-Sin_ti_tulo_-_13_de_junio_de_2026_a_las_18.25.18-2.png"
         }
       ]
-    },
+    }
   ],
   "products": {
     "nike/mercurial": [
