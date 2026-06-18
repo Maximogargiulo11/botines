@@ -388,15 +388,13 @@ window.BAG_DATA = {
     "nike/tiempo": [
       {
         "id": "4nhm4z5",
-        "name": "Tiempo Maestro Elite",
+        "name": "Nike Tiempo Maestro Elite FG",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 539999,
         "availableSizes": [
-          "38",
           "39.5",
           "39",
-          "38.5",
           "40",
           "40.5",
           "41",
@@ -429,11 +427,12 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780445791997-IMG_1755.jpeg"
+          "assets/1781802833915-IMG_1899.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
