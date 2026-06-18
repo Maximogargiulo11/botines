@@ -710,10 +710,10 @@ window.BAG_DATA = {
     "adidas/copa": [
       {
         "id": "ejg9xh5",
-        "name": "Copa Pure 4 Elite",
+        "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 439999,
+        "price": 479999,
         "availableSizes": [
           "38",
           "38.5",
@@ -751,11 +751,12 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780446334089-IMG_0436.jpeg"
+          "assets/1781803355042-IMG_1844.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
