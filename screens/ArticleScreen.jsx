@@ -195,8 +195,8 @@ function ArticleScreen({ slug, navigate }) {
             )}
           </div>
         ) : (
-          <div className="bag-article-hero__image" style={article.coverWidth && article.coverHeight ? { aspectRatio: `${article.coverWidth} / ${article.coverHeight}` } : {}}>
-            <img src={article.cover} alt="" />
+          <div className="bag-article-hero__image" style={article.coverWidth && article.coverHeight ? { aspectRatio: `${article.coverWidth} / ${article.coverHeight}`, overflow: 'hidden' } : {}}>
+            <img src={article.cover} alt="" style={article.coverWidth && article.coverHeight ? { width: '100%', height: '100%', objectFit: 'contain', display: 'block' } : {}} />
           </div>
         )}
       </div>
