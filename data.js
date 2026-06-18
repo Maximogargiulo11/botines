@@ -284,13 +284,11 @@ window.BAG_DATA = {
     "nike/phantom": [
       {
         "id": "kmlj212",
-        "name": "Phantom 6 Low Elite",
+        "name": "Nike Phantom 6 Low Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 509999,
+        "price": 549999,
         "availableSizes": [
-          "38",
-          "38.5",
           "39",
           "39.5",
           "40",
@@ -325,26 +323,25 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780445643396-IMG_1753.jpeg"
+          "assets/1781802744601-IMG_1893.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
       },
       {
         "id": "eduhd1g",
-        "name": "Phantom 6 High Elite",
+        "name": "Nike Phantom 6 High Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [
-          "38",
           "39.5",
           "40",
-          "38.5",
           "39",
           "40.5",
           "41",
@@ -377,11 +374,12 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1780445726995-IMG_1754.jpeg"
+          "assets/1781802784723-IMG_1898.webp"
         ],
+        "videos": [],
         "spec": {
           "suela": "FG",
-          "terreno": "Césped natural",
+          "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
