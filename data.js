@@ -12,11 +12,11 @@ window.BAG_DATA = {
   "articles": [
     {
       "id": "ue3v5y5",
-      "slug": "entrega-de-pedido-especial-a-enzo-fernandez",
+      "slug": "de-cordoba-a-kansas-sin-escalas",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Entrega de pedido especial a Enzo Fernández ",
-      "excerpt": "",
+      "title": "De Córdoba a Kansas ¡sin escalas!",
+      "excerpt": "16 de Mayo. Chelsea pierde la final de la FA Cup y post-partido recibimos el mensaje de Enzo Fernández con un pedido especial: 2 pares de Nike Mercurial Superfly 8 Elite FG ‘Rawdacious’ y el otro que esperamos verlo pronto en sus pies. (Y luego un par más que puede traer mucha nostalgia), con la posibilidad de entregarlos en Kansas, en el Hotel Origin donde la Selección Argentina hará como base de concentración y entrenamientos previo al comienzo del Mundial 🔜\n\nSe dió su convocatoria por parte de Scaloni al dar la lista de los 26, se termina la ansiedad 📋\nViaje a Kansas City, con ilusiones renovadas 🛫\nPrimer entrenamiento, puesta en marcha ⚽️\nÚltimos dos amistosos, enfocados en el próximo objetivo 🤝\n",
       "date": "",
       "cover": "assets/1781735958470-IMG_0700.jpeg",
       "coverWidth": "1580",
@@ -24,7 +24,20 @@ window.BAG_DATA = {
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
       "coverVideo": "",
       "featured": false,
-      "contentBlocks": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "dmekt8s",
+          "src": "assets/1781808889438-IMG_0699.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "qwv4hhh",
+          "content": "Antes de ayer, 10 de Junio, recibimos el mensaje de que había recibido en perfectas condiciones lo pedido. Al rato, pudimos ver el entrenamiento donde los usó y automáticamente nos generó una satisfacción indescriptible 🥹\n\nUna alegría inmensa y un sueño cumplido poder haber acompañado a un jugador elite en una instancia así. Nuevamente, decimos presentes en un torneo internacional nada más ni nada menos que como es la Copa del Mundo. Y más aún, para uno de los nuestros, quien nos representa. \n\nSólo queda decir, gracias una vez más. 💫\n¡Seguimos! \n\nBotines Alta Gama Córdoba. ✍️"
+        }
+      ],
       "relatedProduct": null
     },
     {
