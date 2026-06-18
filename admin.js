@@ -450,7 +450,7 @@ function SizesEditor({ availableSizes, onChange }) {
 // ARTICLE EDITOR
 // ─────────────────────────────────────────
 const CATEGORIES = ['LANZAMIENTO', 'CAMPAÑA', 'NOVEDAD', 'EDITORIAL'];
-const BRANDS_LIST = ['Nike', 'Adidas', 'Puma', 'New Balance'];
+const BRANDS_LIST = ['Nike', 'Adidas', 'Puma'];
 
 function ArticleEditor({ article, onSave, onCancel, token }) {
   const [f, setF] = useState(() => {

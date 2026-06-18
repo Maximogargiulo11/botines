@@ -31,7 +31,6 @@ function Navbar({ route, navigate, cartCount, onCartClick }) {
     { slug: 'adidas', name: 'Adidas' },
     { slug: 'nike', name: 'Nike' },
     { slug: 'puma', name: 'Puma' },
-    { slug: 'new-balance', name: 'New Balance' },
   ];
 
   return (
