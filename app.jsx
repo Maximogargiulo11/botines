@@ -101,9 +101,6 @@ function App() {
       <Footer navigate={navigate} />
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} items={cart} onRemove={removeFromCart} navigate={navigate} clearCart={clearCart} />
 
-      {/* Route bar for previewing all screens */}
-      <RouteBar route={route} navigate={navigate} />
-
       {/* Tweaks panel */}
       <TweaksPanel>
         <TweakSection label="Color de acento" />
@@ -125,43 +122,6 @@ function App() {
   );
 }
 
-/* Tiny route bar so reviewers can hop between screens without a real router */
-function RouteBar({ route, navigate }) {
-  const stops = [
-    { label: 'HOME', path: '/' },
-    { label: 'ARTÍCULO', path: '/lanzamientos/puma-showtime-pack-future-ultra' },
-    { label: 'MARCAS', path: '/marcas' },
-    { label: 'MARCA', path: '/marcas/puma' },
-    { label: 'MODELO', path: '/marcas/puma/future' },
-    { label: 'PRODUCTO', path: '/marcas/puma/future/fut-001' },
-    { label: 'POLÍTICA', path: '/politica-cambios' },
-    { label: 'FAQ', path: '/faq' },
-  ];
-  const [collapsed, setCollapsed] = useState(false);
-  if (collapsed) {
-    return (
-      <button className="bag-routebar bag-routebar--collapsed" onClick={() => setCollapsed(false)} title="Mostrar barra de navegación">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 5 L13 5 M3 8 L13 8 M3 11 L13 11"/></svg>
-      </button>
-    );
-  }
-  return (
-    <div className="bag-routebar" aria-label="Cambiar pantalla">
-      <span className="bag-routebar__label">VISTAS</span>
-      <span className="bag-routebar__sep" />
-      {stops.map(s => (
-        <button
-          key={s.path}
-          className={`bag-routebar__btn ${route === s.path ? 'is-active' : ''}`}
-          onClick={() => navigate(s.path)}
-        >{s.label}</button>
-      ))}
-      <button className="bag-routebar__close" onClick={() => setCollapsed(true)} aria-label="Ocultar">
-        <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4 L12 12 M12 4 L4 12"/></svg>
-      </button>
-    </div>
-  );
-}
 
 function PaymentResultScreen({ status, navigate, clearCart }) {
   useEffect(() => {
