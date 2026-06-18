@@ -74,6 +74,8 @@ function App() {
     ? `'Cormorant Garamond', 'Playfair Display', Georgia, serif`
     : t.serif === 'bebas'
     ? `'Bebas Neue', sans-serif`
+    : t.serif === 'unna'
+    ? `'Unna', Georgia, serif`
     : `'Playfair Display', 'Cormorant Garamond', Georgia, serif`;
 
   /* Parse route */
