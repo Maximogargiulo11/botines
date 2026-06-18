@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "De Córdoba a Kansas ¡sin escalas!",
       "excerpt": "\n",
       "date": "",
-      "cover": "assets/1781809157643-IMG_0714.jpeg",
+      "cover": "assets/1781809382771-IMG_0700.jpeg",
       "coverWidth": "1580",
       "coverHeight": "1080",
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
