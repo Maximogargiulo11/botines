@@ -19,7 +19,7 @@ window.BAG_DATA = {
       "excerpt": "",
       "date": "",
       "cover": "assets/1781735958470-IMG_0700.jpeg",
-      "coverWidth": "1980",
+      "coverWidth": "1580",
       "coverHeight": "1080",
       "coverVideo": "",
       "featured": true,
