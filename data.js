@@ -279,6 +279,57 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr."
         }
+      },
+      {
+        "id": "hca38su",
+        "name": "Nike Mercurial Superfly 11 Elite SG-Pro Player Edition",
+        "colorway": "Rosa / Blanco",
+        "color": "#e63b7a",
+        "price": 669999,
+        "availableSizes": [
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781807755211-IMG_1900.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
       }
     ],
     "nike/phantom": [
