@@ -815,7 +815,59 @@ window.BAG_DATA = {
         }
       }
     ],
-    "puma/ultra": []
+    "puma/ultra": [
+      {
+        "id": "phb4i4p",
+        "name": "Puma Ultra 6 Ultimate FG",
+        "colorway": "Rosa / Naranja / Violeta",
+        "color": "#982abc",
+        "price": 439999,
+        "availableSizes": [
+          "39",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "44.5",
+          "45",
+          "46"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781803569443-IMG_1384.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Showtime’ Pack"
+        }
+      }
+    ]
   },
   "pages": {
     "politica": {
