@@ -544,6 +544,59 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
+      },
+      {
+        "id": "8ytbn17",
+        "name": "Adidas F50 Hyperfast Evo FG",
+        "colorway": "Rosa",
+        "color": "#e63b7a",
+        "price": 589999,
+        "availableSizes": [
+          "39",
+          "38",
+          "38.5",
+          "39.5",
+          "40",
+          "40.5",
+          "41",
+          "42",
+          "42.5",
+          "43",
+          "44",
+          "46",
+          "45",
+          "44.5"
+        ],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [],
+          "uk": []
+        },
+        "images": [
+          "assets/1781803178746-IMG_1841.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Breakout’ Pack"
+        }
       }
     ],
     "adidas/predator": [
