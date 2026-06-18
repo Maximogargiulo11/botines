@@ -16,7 +16,7 @@ window.BAG_DATA = {
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "De Córdoba a Kansas ¡sin escalas!",
-      "excerpt": "16 de Mayo. Chelsea pierde la final de la FA Cup y post-partido recibimos el mensaje de Enzo Fernández con un pedido especial: 2 pares de Nike Mercurial Superfly 8 Elite FG ‘Rawdacious’ y el otro que esperamos verlo pronto en sus pies. (Y luego un par más que puede traer mucha nostalgia), con la posibilidad de entregarlos en Kansas, en el Hotel Origin donde la Selección Argentina hará como base de concentración y entrenamientos previo al comienzo del Mundial 🔜\n\nSe dió su convocatoria por parte de Scaloni al dar la lista de los 26, se termina la ansiedad 📋\nViaje a Kansas City, con ilusiones renovadas 🛫\nPrimer entrenamiento, puesta en marcha ⚽️\nÚltimos dos amistosos, enfocados en el próximo objetivo 🤝\n",
+      "excerpt": "\n",
       "date": "",
       "cover": "assets/1781735958470-IMG_0700.jpeg",
       "coverWidth": "1580",
@@ -26,16 +26,28 @@ window.BAG_DATA = {
       "featured": false,
       "contentBlocks": [
         {
+          "type": "text",
+          "id": "qwv4hhh",
+          "content": "16 de Mayo. Chelsea pierde la final de la FA Cup y post-partido recibimos el mensaje de Enzo Fernández con un pedido especial: 2 pares de Nike Mercurial Superfly 8 Elite FG ‘Rawdacious’ y el otro que esperamos verlo pronto en sus pies. (Y luego un par más que puede traer mucha nostalgia), con la posibilidad de entregarlos en Kansas, en el Hotel Origin donde la Selección Argentina hará como base de concentración y entrenamientos previo al comienzo del Mundial 🔜\n\nSe dió su convocatoria por parte de Scaloni al dar la lista de los 26, se termina la ansiedad 📋\nViaje a Kansas City, con ilusiones renovadas 🛫\nPrimer entrenamiento, puesta en marcha ⚽️\nÚltimos dos amistosos, enfocados en el próximo objetivo 🤝"
+        },
+        {
           "type": "image",
-          "id": "dmekt8s",
-          "src": "assets/1781808889438-IMG_0699.jpeg",
+          "id": "ts4mz4b",
+          "src": "assets/1781809069973-IMG_0699.jpeg",
           "width": "",
           "height": ""
         },
         {
           "type": "text",
-          "id": "qwv4hhh",
+          "id": "j58dzb9",
           "content": "Antes de ayer, 10 de Junio, recibimos el mensaje de que había recibido en perfectas condiciones lo pedido. Al rato, pudimos ver el entrenamiento donde los usó y automáticamente nos generó una satisfacción indescriptible 🥹\n\nUna alegría inmensa y un sueño cumplido poder haber acompañado a un jugador elite en una instancia así. Nuevamente, decimos presentes en un torneo internacional nada más ni nada menos que como es la Copa del Mundo. Y más aún, para uno de los nuestros, quien nos representa. \n\nSólo queda decir, gracias una vez más. 💫\n¡Seguimos! \n\nBotines Alta Gama Córdoba. ✍️"
+        },
+        {
+          "type": "image",
+          "id": "stf00x4",
+          "src": "assets/1781809105993-Sin_ti_tulo_-_12_de_junio_de_2026_a_las_01.27.25-2.png",
+          "width": "",
+          "height": ""
         }
       ],
       "relatedProduct": null
