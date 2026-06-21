@@ -465,6 +465,30 @@
   padding: 0 var(--bag-gutter);
 }
 
+.bag-article-sizes {
+  max-width: var(--bag-article-max);
+  margin: 0 auto;
+  padding: 0 var(--bag-gutter) 24px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.bag-article-sizes__row { display: flex; align-items: center; gap: 16px; }
+.bag-article-sizes__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--bag-fg2);
+  min-width: 28px;
+  text-transform: uppercase;
+}
+.bag-article-sizes__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.bag-article-sizes__chip {
+  border: 1px solid var(--bag-line);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
 .bag-article-body {
   max-width: var(--bag-article-max);
   margin: 0 auto;

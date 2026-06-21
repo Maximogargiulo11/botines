@@ -454,6 +454,44 @@ function SizesEditor({ availableSizes, onChange }) {
 }
 
 // ─────────────────────────────────────────
+// SIZES FIELD
+// ─────────────────────────────────────────
+function SizesField({ label, sizes, onChange }) {
+  const [input, setInput] = useState('');
+  const add = () => {
+    const v = input.trim();
+    if (!v || sizes.includes(v)) { setInput(''); return; }
+    onChange([...sizes, v]);
+    setInput('');
+  };
+  const remove = (s) => onChange(sizes.filter(x => x !== s));
+  return (
+    <Field label={label}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        <div className="adm-sizes" style={{ minHeight: 28 }}>
+          {sizes.map(s => (
+            <button key={s} className="adm-size-btn is-active" onClick={() => remove(s)} title="Quitar talle" type="button">
+              {s} ✕
+            </button>
+          ))}
+          {sizes.length === 0 && <span style={{ fontSize: 12, color: 'var(--a-fg3)' }}>Sin talles cargados</span>}
+        </div>
+        <div className="adm-row">
+          <input
+            className="adm-input"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter' || e.key === ',') { e.preventDefault(); add(); } }}
+            placeholder="Ej: 8.5 — Enter para agregar"
+          />
+          <Btn variant="ghost" size="sm" onClick={add}>+ Agregar</Btn>
+        </div>
+      </div>
+    </Field>
+  );
+}
+
+// ─────────────────────────────────────────
 // ARTICLE EDITOR
 // ─────────────────────────────────────────
 const CATEGORIES = ['LANZAMIENTO', 'CAMPAÑA', 'NOVEDAD', 'EDITORIAL'];
@@ -481,6 +519,8 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
       imagenCarruselHeight: a.imagenCarruselHeight || '',
       coverVideo: a.coverVideo || '',
       featured: !!a.featured,
+      sizesUS: a.sizesUS || [],
+      sizesUK: a.sizesUK || [],
       contentBlocks: a.contentBlocks || [],
       relatedProduct: a.relatedProduct || null,
     };
@@ -536,6 +576,11 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
               <span>Destacado (aparece como hero en el home)</span>
             </label>
           </Field>
+        </div>
+        <div className="adm-section">
+          <div className="adm-section__title">Talles disponibles</div>
+          <SizesField label="Talles US" sizes={f.sizesUS} onChange={v => set('sizesUS', v)} />
+          <SizesField label="Talles UK" sizes={f.sizesUK} onChange={v => set('sizesUK', v)} />
         </div>
         <div className="adm-section">
           <div className="adm-section__title">Contenido del artículo</div>

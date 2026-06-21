@@ -231,6 +231,27 @@ function ArticleScreen({ slug, navigate }) {
         </div>
       </div>
 
+      {((article.sizesUS && article.sizesUS.length > 0) || (article.sizesUK && article.sizesUK.length > 0)) && (
+        <div className="bag-article-sizes">
+          {article.sizesUS && article.sizesUS.length > 0 && (
+            <div className="bag-article-sizes__row">
+              <span className="bag-article-sizes__label">US</span>
+              <div className="bag-article-sizes__chips">
+                {article.sizesUS.map(s => <span key={s} className="bag-article-sizes__chip">{s}</span>)}
+              </div>
+            </div>
+          )}
+          {article.sizesUK && article.sizesUK.length > 0 && (
+            <div className="bag-article-sizes__row">
+              <span className="bag-article-sizes__label">UK</span>
+              <div className="bag-article-sizes__chips">
+                {article.sizesUK.map(s => <span key={s} className="bag-article-sizes__chip">{s}</span>)}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       <article className="bag-article-body">
         {renderBody()}
       </article>
