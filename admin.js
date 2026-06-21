@@ -208,9 +208,10 @@ function SelectInput({ label, value, onChange, options, hint, small }) {
   );
 }
 
-function ImageField({ label, value, onChange, token, hint }) {
+function ImageField({ label, value, onChange, token, hint, width, onWidthChange, height, onHeightChange }) {
   const { upload, uploading } = useUpload(token);
   const ref = useRef();
+  const showDims = onWidthChange !== undefined || onHeightChange !== undefined;
   return (
     <Field label={label} hint={hint}>
       <div className="adm-image-field">
@@ -227,6 +228,12 @@ function ImageField({ label, value, onChange, token, hint }) {
             {uploading ? '...' : 'Subir'}
           </Btn>
         </div>
+        {showDims && (
+          <div className="adm-row adm-row--sm" style={{ marginTop: 6 }}>
+            <input className="adm-input" value={width || ''} onChange={e => onWidthChange?.(e.target.value)} placeholder="Ancho px (ej: 1080)" style={{ flex: 1 }} />
+            <input className="adm-input" value={height || ''} onChange={e => onHeightChange?.(e.target.value)} placeholder="Alto px (ej: 1350)" style={{ flex: 1 }} />
+          </div>
+        )}
       </div>
     </Field>
   );
@@ -467,7 +474,11 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
       coverWidth: a.coverWidth || '',
       coverHeight: a.coverHeight || '',
       imagenCard: a.imagenCard || '',
+      imagenCardWidth: a.imagenCardWidth || '',
+      imagenCardHeight: a.imagenCardHeight || '',
       imagenCarrusel: a.imagenCarrusel || '',
+      imagenCarruselWidth: a.imagenCarruselWidth || '',
+      imagenCarruselHeight: a.imagenCarruselHeight || '',
       coverVideo: a.coverVideo || '',
       featured: !!a.featured,
       contentBlocks: a.contentBlocks || [],
@@ -509,13 +520,15 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
           </div>
           <TextInput label="Fecha" value={f.date} onChange={v => set('date', v)} placeholder="24 MAY 2026" />
           <Textarea label="Bajada / Excerpt" value={f.excerpt} onChange={v => set('excerpt', v)} rows={3} placeholder="Resumen del artículo que aparece en las tarjetas..." />
-          <ImageField label="Imagen de portada" value={f.cover} onChange={v => set('cover', v)} token={token} hint="Imagen que aparece en tarjetas. Obligatoria." />
-          <div className="adm-row adm-row--sm">
-            <input className="adm-input" value={f.coverWidth} onChange={e => set('coverWidth', e.target.value)} placeholder="Ancho px (ej: 1080)" style={{ flex: 1 }} />
-            <input className="adm-input" value={f.coverHeight} onChange={e => set('coverHeight', e.target.value)} placeholder="Alto px (ej: 1350)" style={{ flex: 1 }} />
-          </div>
-          <ImageField label="Imagen para Card (opcional)" value={f.imagenCard} onChange={v => set('imagenCard', v)} token={token} hint="Imagen que se muestra en las cards del listado. Si no se completa, se usa la imagen principal." />
-          <ImageField label="Imagen para Carrusel del Home (opcional)" value={f.imagenCarrusel} onChange={v => set('imagenCarrusel', v)} token={token} hint="Imagen que se muestra en el carrusel principal del home. Si no se completa, se usa la imagen de portada." />
+          <ImageField label="Imagen de portada" value={f.cover} onChange={v => set('cover', v)} token={token} hint="Imagen que aparece en el hero del artículo. Obligatoria."
+            width={f.coverWidth} onWidthChange={v => set('coverWidth', v)}
+            height={f.coverHeight} onHeightChange={v => set('coverHeight', v)} />
+          <ImageField label="Imagen para Card (opcional)" value={f.imagenCard} onChange={v => set('imagenCard', v)} token={token} hint="Imagen que se muestra en las cards del listado. Si no se completa, se usa la imagen principal."
+            width={f.imagenCardWidth} onWidthChange={v => set('imagenCardWidth', v)}
+            height={f.imagenCardHeight} onHeightChange={v => set('imagenCardHeight', v)} />
+          <ImageField label="Imagen para Carrusel del Home (opcional)" value={f.imagenCarrusel} onChange={v => set('imagenCarrusel', v)} token={token} hint="Imagen que se muestra en el carrusel principal del home. Si no se completa, se usa la imagen de portada."
+            width={f.imagenCarruselWidth} onWidthChange={v => set('imagenCarruselWidth', v)}
+            height={f.imagenCarruselHeight} onHeightChange={v => set('imagenCarruselHeight', v)} />
           <VideoField label="Video de portada (opcional)" value={f.coverVideo} onChange={v => set('coverVideo', v)} token={token} hint="YouTube, Vimeo o archivo. Se muestra en el hero del artículo en lugar de la imagen." />
           <Field>
             <label className="adm-checkbox">
