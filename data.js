@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "Entrega de un pedido especial en Miami",
       "excerpt": "La nueva generación de Mercurial Vapor para Charly Alcaraz.",
       "date": "",
-      "cover": "assets/1781810001343-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
+      "cover": "assets/1782068310866-Dise_o_sin_t_tulo__2_.png",
       "coverWidth": "1980",
       "coverHeight": "1080",
       "imagenCard": "assets/1781810012383-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
