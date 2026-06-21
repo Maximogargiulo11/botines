@@ -5,7 +5,7 @@ function HeroArticle({ article, onClick }) {
   return (
     <article className="bag-hero" onClick={onClick}>
       <div className="bag-hero__media">
-        <img src={article.cover} alt="" />
+        <img src={article.imagenCarrusel || article.cover} alt="" />
       </div>
       <div className="bag-hero__overlay">
         <div className="bag-hero__body">
