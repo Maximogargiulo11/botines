@@ -5,9 +5,9 @@ function HomeScreen({ navigate }) {
   const count    = (BAG_DATA.config && BAG_DATA.config.homepageArticleCount) || 8;
   const all      = BAG_DATA.articles.slice(0, count);
 
-  // Carousel: featured articles (fallback: first article)
-  const heroList  = all.filter(a => a.featured);
-  const slides    = heroList.length > 0 ? heroList : all.slice(0, 1);
+  // Carousel: all featured articles regardless of homepageArticleCount limit
+  const heroList  = BAG_DATA.articles.filter(a => a.featured);
+  const slides    = heroList.length > 0 ? heroList : BAG_DATA.articles.slice(0, 1);
 
   // Grids below: always all articles
   const secondary = all.slice(0, 4);
