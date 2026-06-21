@@ -436,20 +436,43 @@ function ContentBlocks({ blocks, onChange, token }) {
 // SIZES EDITOR
 // ─────────────────────────────────────────
 const ALL_EU = ['38','38.5','39','39.5','40','40.5','41','42','42.5','43','44','44.5','45','46'];
+const ALL_US = ['7','7.5','8','8.5','9','9.5','10','10.5','11','11.5','12','12.5','13'];
+const ALL_UK = ['6','6.5','7','7.5','8','8.5','9','9.5','10','10.5','11','11.5','12'];
 
-function SizesEditor({ availableSizes, onChange }) {
-  const toggle = (s) => {
+function SizesEditor({ availableSizes, onAvailableChange, sizes, onSizesChange }) {
+  const toggleEU = (s) => {
     const next = availableSizes.includes(s) ? availableSizes.filter(x => x !== s) : [...availableSizes, s];
-    onChange(next);
+    onAvailableChange(next);
+  };
+  const toggleUnit = (unit, all, s) => {
+    const cur = sizes[unit] || [];
+    const next = cur.includes(s) ? cur.filter(x => x !== s) : [...cur, s];
+    onSizesChange({ ...sizes, [unit]: next });
   };
   return (
-    <Field label="Talles disponibles (EU)" hint="Verde = disponible">
-      <div className="adm-sizes">
-        {ALL_EU.map(s => (
-          <button key={s} type="button" className={`adm-size-btn ${availableSizes.includes(s) ? 'is-active' : ''}`} onClick={() => toggle(s)}>{s}</button>
-        ))}
-      </div>
-    </Field>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <Field label="Talles EU" hint="Verde = disponible / con stock">
+        <div className="adm-sizes">
+          {ALL_EU.map(s => (
+            <button key={s} type="button" className={`adm-size-btn ${availableSizes.includes(s) ? 'is-active' : ''}`} onClick={() => toggleEU(s)}>{s}</button>
+          ))}
+        </div>
+      </Field>
+      <Field label="Talles US" hint="Seleccioná los talles US disponibles para este colorway">
+        <div className="adm-sizes">
+          {ALL_US.map(s => (
+            <button key={s} type="button" className={`adm-size-btn ${(sizes.us || []).includes(s) ? 'is-active' : ''}`} onClick={() => toggleUnit('us', ALL_US, s)}>{s}</button>
+          ))}
+        </div>
+      </Field>
+      <Field label="Talles UK" hint="Seleccioná los talles UK disponibles para este colorway">
+        <div className="adm-sizes">
+          {ALL_UK.map(s => (
+            <button key={s} type="button" className={`adm-size-btn ${(sizes.uk || []).includes(s) ? 'is-active' : ''}`} onClick={() => toggleUnit('uk', ALL_UK, s)}>{s}</button>
+          ))}
+        </div>
+      </Field>
+    </div>
   );
 }
 
@@ -770,7 +793,12 @@ function ProductEditor({ product, onSave, onCancel, token }) {
         </div>
         <div className="adm-section">
           <div className="adm-section__title">Talles disponibles</div>
-          <SizesEditor availableSizes={f.availableSizes} onChange={v => set('availableSizes', v)} />
+          <SizesEditor
+            availableSizes={f.availableSizes}
+            onAvailableChange={v => set('availableSizes', v)}
+            sizes={f.sizes}
+            onSizesChange={v => set('sizes', v)}
+          />
         </div>
         <div className="adm-section">
           <div className="adm-section__title">Imágenes</div>
