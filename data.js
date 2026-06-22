@@ -52,8 +52,15 @@ window.BAG_DATA = {
       "coverWidth": "1580",
       "coverHeight": "1080",
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
       "contentBlocks": [
         {
           "type": "text",
