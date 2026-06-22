@@ -22,9 +22,15 @@ window.BAG_DATA = {
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "assets/1781810012383-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
       "imagenCarrusel": "assets/1782073765885-Dise_o_sin_t_tulo__3_.png",
+      "imagenCarruselWidth": "1080",
+      "imagenCarruselHeight": "1150",
       "coverVideo": "",
       "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
       "contentBlocks": [
         {
           "type": "text",
