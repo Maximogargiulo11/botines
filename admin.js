@@ -515,12 +515,70 @@ function SizesField({ label, sizes, onChange }) {
 }
 
 // ─────────────────────────────────────────
+// RELATED PRODUCT PICKER
+// ─────────────────────────────────────────
+function RelatedProductPicker({ value, onChange, products }) {
+  const keys = Object.keys(products || {});
+  const brands = [...new Set(keys.map(k => k.split('/')[0]))];
+
+  const [brand, setBrand] = useState(() => value?.brand || '');
+  const [model, setModel] = useState(() => value?.model || '');
+  const [colorwayId, setColorwayId] = useState(() => value?.colorwayId || '');
+
+  const models = brand ? keys.filter(k => k.startsWith(brand + '/')).map(k => k.split('/')[1]) : [];
+  const colorways = (brand && model) ? (products[`${brand}/${model}`] || []) : [];
+  const selectedProduct = colorways.find(p => p.id === colorwayId);
+
+  const handleBrand = b => { setBrand(b); setModel(''); setColorwayId(''); onChange(null); };
+  const handleModel = m => { setModel(m); setColorwayId(''); onChange(null); };
+  const handleColorway = id => {
+    setColorwayId(id);
+    if (brand && model && id) onChange({ brand, model, colorwayId: id });
+    else onChange(null);
+  };
+  const clear = () => { setBrand(''); setModel(''); setColorwayId(''); onChange(null); };
+
+  const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <div style={{ display: 'flex', gap: 8 }}>
+        <div style={{ flex: 1 }}>
+          <SelectInput label="Marca" value={brand} onChange={handleBrand}
+            options={[{ value: '', label: '— Sin producto —' }, ...brands.map(b => ({ value: b, label: cap(b) }))]} />
+        </div>
+        <div style={{ flex: 1 }}>
+          <SelectInput label="Modelo" value={model} onChange={handleModel}
+            options={[{ value: '', label: brand ? '— Elegir modelo —' : '— Primero marca —' }, ...models.map(m => ({ value: m, label: m }))]} />
+        </div>
+        <div style={{ flex: 1 }}>
+          <SelectInput label="Colorway" value={colorwayId} onChange={handleColorway}
+            options={[{ value: '', label: model ? '— Elegir colorway —' : '— Primero modelo —' }, ...colorways.map(p => ({ value: p.id, label: p.colorway || p.name }))]} />
+        </div>
+      </div>
+      {selectedProduct && (
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center', background: 'var(--a-bg2)', borderRadius: 4, padding: '8px 12px' }}>
+          {selectedProduct.images?.[0] && (
+            <img src={rawUrl(selectedProduct.images[0])} alt="" style={{ width: 52, height: 52, objectFit: 'contain', borderRadius: 4, background: '#111' }} onError={e => e.target.style.display='none'} />
+          )}
+          <div style={{ flex: 1 }}>
+            <div style={{ fontWeight: 600, fontSize: 13 }}>{selectedProduct.name}</div>
+            <div style={{ color: 'var(--a-fg3)', fontSize: 12 }}>{selectedProduct.colorway} · $ {Number(selectedProduct.price).toLocaleString('es-AR')}</div>
+          </div>
+          <Btn variant="ghost" size="sm" onClick={clear}>✕ Quitar</Btn>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
 // ARTICLE EDITOR
 // ─────────────────────────────────────────
 const CATEGORIES = ['LANZAMIENTO', 'CAMPAÑA', 'NOVEDAD', 'EDITORIAL'];
 const BRANDS_LIST = ['Nike', 'Adidas', 'Puma'];
 
-function ArticleEditor({ article, onSave, onCancel, token }) {
+function ArticleEditor({ article, onSave, onCancel, token, data }) {
   const [f, setF] = useState(() => {
     const a = migrateArticle(article);
     return {
@@ -606,6 +664,17 @@ function ArticleEditor({ article, onSave, onCancel, token }) {
           <SizesField label="Talles UK" sizes={f.sizesUK} onChange={v => set('sizesUK', v)} />
         </div>
         <div className="adm-section">
+          <div className="adm-section__title">Producto relacionado (panel del carrusel)</div>
+          <p className="adm-text" style={{ marginBottom: 12, fontSize: 13 }}>
+            Elegí un colorway para mostrar como panel lateral cuando este lanzamiento aparezca en el carrusel del home.
+          </p>
+          <RelatedProductPicker
+            value={f.relatedProduct}
+            onChange={v => set('relatedProduct', v)}
+            products={(data && data.products) || {}}
+          />
+        </div>
+        <div className="adm-section">
           <div className="adm-section__title">Contenido del artículo</div>
           <ContentBlocks blocks={f.contentBlocks} onChange={v => set('contentBlocks', v)} token={token} />
         </div>
@@ -625,6 +694,7 @@ function ArticlesSection({ data, onDataChange, token, homepageCount, onHomepageC
       <ArticleEditor
         article={editing}
         token={token}
+        data={data}
         onCancel={() => setEditing(null)}
         onSave={updated => {
           const list = data.articles || [];

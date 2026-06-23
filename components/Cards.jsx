@@ -1,7 +1,17 @@
-/* global React */
+/* global React, BAG_DATA */
 
 /* Hero card (full-bleed, text overlay bottom-left) */
-function HeroArticle({ article, onClick }) {
+function HeroArticle({ article, onClick, onProductClick, slideIndex, totalSlides }) {
+  let relProduct = null, relBrand = null, relModel = null;
+  if (article.relatedProduct && BAG_DATA && BAG_DATA.products) {
+    const { brand, model, colorwayId } = article.relatedProduct;
+    const list = BAG_DATA.products[`${brand}/${model}`] || [];
+    relProduct = list.find(p => p.id === colorwayId) || null;
+    relBrand = brand;
+    relModel = model;
+  }
+  const pad = n => String(n).padStart(2, '0');
+
   return (
     <article className="bag-hero" onClick={onClick}>
       <div className="bag-hero__media">
@@ -14,6 +24,30 @@ function HeroArticle({ article, onClick }) {
           <p className="bag-hero__excerpt">{article.excerpt}</p>
         </div>
       </div>
+      {relProduct && (
+        <div className="bag-hero-drop" onClick={e => e.stopPropagation()}>
+          <div className="bag-hero-drop__head">
+            <span className="bag-hero-drop__badge">NUEVO DROP</span>
+            {totalSlides > 1 && (
+              <span className="bag-hero-drop__count">{pad(slideIndex + 1)} / {pad(totalSlides)}</span>
+            )}
+          </div>
+          <div className="bag-hero-drop__img">
+            <img src={relProduct.images?.[0] || ''} alt="" />
+          </div>
+          <div className="bag-hero-drop__info">
+            <div className="bag-hero-drop__eyebrow">{relBrand?.toUpperCase()} · {relModel?.toUpperCase()}</div>
+            <div className="bag-hero-drop__name">{relProduct.name}</div>
+            <div className="bag-hero-drop__price">{window.formatPrice(relProduct.price)}</div>
+            <button
+              className="bag-hero-drop__cta"
+              onClick={() => onProductClick && onProductClick(relBrand, relModel, relProduct.id)}
+            >
+              VER FICHA →
+            </button>
+          </div>
+        </div>
+      )}
     </article>
   );
 }

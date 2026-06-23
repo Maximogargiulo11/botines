@@ -52,9 +52,15 @@ function HomeScreen({ navigate }) {
           className="bag-hero-carousel__track"
           style={{ transform: `translateX(-${slide * 100}%)` }}
         >
-          {slides.map(a => (
+          {slides.map((a, i) => (
             <div key={a.id} className="bag-hero-carousel__slide">
-              <HeroArticle article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+              <HeroArticle
+                article={a}
+                onClick={() => navigate(`/lanzamientos/${a.slug}`)}
+                onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
+                slideIndex={i}
+                totalSlides={slides.length}
+              />
             </div>
           ))}
         </div>
