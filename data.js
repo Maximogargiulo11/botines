@@ -24,7 +24,7 @@ window.BAG_DATA = {
       "imagenCard": "assets/1781810012383-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
-      "imagenCarrusel": "assets/1782255223211-Dise_o_sin_t_tulo__18_.png",
+      "imagenCarrusel": "assets/1782255304894-Dise_o_sin_t_tulo__19_.png",
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
