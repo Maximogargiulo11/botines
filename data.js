@@ -28,7 +28,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "1366",
       "imagenCarruselHeight": "768",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
