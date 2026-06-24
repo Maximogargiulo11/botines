@@ -2,6 +2,10 @@
   "ignoreCommand": "git diff HEAD^ HEAD --name-only | grep -qvE '^(assets/|orders\\.json)' && exit 1 || exit 0",
   "headers": [
     {
+      "source": "/data.js",
+      "headers": [{ "key": "Cache-Control", "value": "no-store" }]
+    },
+    {
       "source": "/assets/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     },
