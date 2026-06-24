@@ -659,11 +659,6 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
           </Field>
         </div>
         <div className="adm-section">
-          <div className="adm-section__title">Talles disponibles</div>
-          <SizesField label="Talles US" sizes={f.sizesUS} onChange={v => set('sizesUS', v)} />
-          <SizesField label="Talles UK" sizes={f.sizesUK} onChange={v => set('sizesUK', v)} />
-        </div>
-        <div className="adm-section">
           <div className="adm-section__title">Producto relacionado (panel del carrusel)</div>
           <p className="adm-text" style={{ marginBottom: 12, fontSize: 13 }}>
             Elegí un colorway para mostrar como panel lateral cuando este lanzamiento aparezca en el carrusel del home.
