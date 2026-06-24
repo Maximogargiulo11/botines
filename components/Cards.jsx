@@ -115,6 +115,81 @@ function ProductPreviewCard({ product, brand, model, onClick }) {
   );
 }
 
+/* Featured launch — full-width card with article bg + related product panel */
+function FeaturedLaunch({ article, onClick, onProductClick }) {
+  let relProduct = null, relBrand = null, relModel = null;
+  if (article.relatedProduct && BAG_DATA && BAG_DATA.products) {
+    const { brand, model, colorwayId } = article.relatedProduct;
+    const list = BAG_DATA.products[`${brand}/${model}`] || [];
+    relProduct = list.find(p => p.id === colorwayId) || null;
+    relBrand = brand;
+    relModel = model;
+  }
+
+  const sizes = relProduct?.availableSizes || [];
+  const sizeRange = sizes.length > 1
+    ? `${sizes[0]} – ${sizes[sizes.length - 1]}`
+    : sizes[0] || '';
+
+  return (
+    <article className="bag-featured-launch" onClick={onClick}>
+      <div className="bag-featured-launch__bg">
+        <img src={article.imagenCarrusel || article.cover} alt="" />
+        <div className="bag-featured-launch__overlay" />
+      </div>
+
+      <div className="bag-featured-launch__content">
+        <div className="bag-eyebrow">{article.category} · {article.date}</div>
+        <h2 className="bag-featured-launch__title">{article.title}</h2>
+        {article.excerpt && <p className="bag-featured-launch__excerpt">{article.excerpt}</p>}
+        <div className="bag-featured-launch__actions">
+          <button
+            className="bag-btn"
+            onClick={onClick}
+          >
+            VER LANZAMIENTO →
+          </button>
+          {relProduct && (
+            <button
+              className="bag-btn bag-btn--ghost"
+              onClick={e => { e.stopPropagation(); onProductClick && onProductClick(relBrand, relModel, relProduct.id); }}
+            >
+              VER FICHA
+            </button>
+          )}
+        </div>
+        {relProduct && (
+          <div className="bag-featured-launch__meta">
+            {relProduct.colorway && <span>COLORWAY: {relProduct.colorway}</span>}
+            {sizeRange && <span>TALLES: {sizeRange}</span>}
+            <span>PRECIO: {window.formatPrice(relProduct.price)}</span>
+          </div>
+        )}
+      </div>
+
+      {relProduct && (
+        <div
+          className="bag-featured-launch__card"
+          onClick={e => { e.stopPropagation(); onProductClick && onProductClick(relBrand, relModel, relProduct.id); }}
+        >
+          <div className="bag-featured-launch__card-head">
+            <span className="bag-featured-launch__card-badge">NUEVO DROP</span>
+          </div>
+          <div className="bag-featured-launch__card-img">
+            <img src={relProduct.images?.[0] || ''} alt="" />
+          </div>
+          <div className="bag-featured-launch__card-info">
+            <div className="bag-featured-launch__card-eyebrow">{relBrand?.toUpperCase()} · {relModel?.toUpperCase()}</div>
+            <div className="bag-featured-launch__card-name">{relProduct.name}</div>
+            <div className="bag-featured-launch__card-price">{window.formatPrice(relProduct.price)}</div>
+            <span className="bag-featured-launch__card-cta">VER FICHA →</span>
+          </div>
+        </div>
+      )}
+    </article>
+  );
+}
+
 /* Section rule with title in the middle */
 function SectionRule({ label }) {
   return (
@@ -124,4 +199,4 @@ function SectionRule({ label }) {
   );
 }
 
-Object.assign(window, { HeroArticle, ArticleCard, SplitArticle, SmallArticleCard, ProductPreviewCard, SectionRule });
+Object.assign(window, { HeroArticle, ArticleCard, SplitArticle, SmallArticleCard, ProductPreviewCard, SectionRule, FeaturedLaunch });

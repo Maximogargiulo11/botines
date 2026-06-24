@@ -1,4 +1,4 @@
-/* global React, BAG_DATA, HeroArticle, ArticleCard, SplitArticle, SmallArticleCard, ProductPreviewCard, SectionRule */
+/* global React, BAG_DATA, HeroArticle, ArticleCard, SplitArticle, SmallArticleCard, ProductPreviewCard, SectionRule, FeaturedLaunch */
 const { useState, useEffect, useRef } = React;
 
 function HomeScreen({ navigate }) {
@@ -13,6 +13,9 @@ function HomeScreen({ navigate }) {
   const secondary = all.slice(0, 4);
   const wide      = all[4];
   const small     = all.slice(5);
+
+  // Featured launches with related product (shown below the 4-card grid)
+  const featuredLaunches = BAG_DATA.articles.filter(a => a.relatedProduct);
 
   // ── Carousel ──────────────────────────────────────────────────
   const [slide, setSlide]   = useState(0);
@@ -106,6 +109,15 @@ function HomeScreen({ navigate }) {
           ))}
         </section>
       )}
+
+      {featuredLaunches.map(a => (
+        <FeaturedLaunch
+          key={a.id}
+          article={a}
+          onClick={() => navigate(`/lanzamientos/${a.slug}`)}
+          onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
+        />
+      ))}
 
       {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
 
