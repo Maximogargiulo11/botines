@@ -101,8 +101,15 @@ window.BAG_DATA = {
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
       "contentBlocks": [
         {
           "type": "image-pair",
@@ -125,7 +132,11 @@ window.BAG_DATA = {
           }
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": {
+        "brand": "adidas",
+        "model": "f50",
+        "colorwayId": "wqhmnpz"
+      }
     },
     {
       "id": "8t4daly",
