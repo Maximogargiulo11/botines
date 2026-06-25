@@ -65,7 +65,7 @@ window.BAG_DATA = {
       "category": "CAMPAÑA",
       "title": "Entrega de un pedido especial en Miami",
       "excerpt": "La nueva generación de Mercurial Vapor para Charly Alcaraz.",
-      "date": "",
+      "date": "14 de Junio de 2026",
       "cover": "assets/1782068310866-Dise_o_sin_t_tulo__2_.png",
       "coverWidth": "",
       "coverHeight": "",
