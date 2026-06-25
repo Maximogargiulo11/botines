@@ -1734,7 +1734,7 @@ window.BAG_DATA = {
       ]
     },
     "faq": {
-      "intro": "Lo que más nos consultan, ordenado para que lo resuelvas vos mismo. Si tu duda no está acá, escribinos por WhatsApp.",
+      "intro": "Lo que más nos consultan, ordenado para que lo resuelvas vos mismo. Si tu duda no está acá, contactanos por e-mail o escribinos por WhatsApp.",
       "items": [
         {
           "id": "f1",
@@ -1754,27 +1754,22 @@ window.BAG_DATA = {
         {
           "id": "f4",
           "q": "¿Qué formas de pago aceptan?",
-          "a": "Transferencia bancaria (mejor precio), tarjetas de crédito con 3 y 6 cuotas sin interés, débito, MercadoPago y efectivo en sucursal Córdoba. Los precios mostrados son con transferencia; otras formas pueden tener recargo."
+          "a": "Transferencia bancaria (mejor precio, descuento del 10%), tarjetas de crédito con 3 y 6 cuotas sin interés, débito, MercadoPago y efectivo en la oficina de Córdoba. Los precios mostrados son con transferencia; otras formas pueden tener recargo."
         },
         {
           "id": "f5",
           "q": "¿Puedo retirar en una sucursal física?",
-          "a": "Sí. Tenemos showroom en barrio General Paz, Córdoba Capital, con visita previa coordinada por WhatsApp. Ahí podés probar el botín antes de pagar y consultar por modelos que no estén en la web."
+          "a": "Sí, con visita previamente coordinada. Aunque también podes recibirlos donde prefieras para mayor comodidad por medio de nuestro cadete de confianza."
         },
         {
           "id": "f6",
-          "q": "¿Reservan stock?",
-          "a": "Reservamos talle y modelo hasta por 24hs con seña del 30%. Sin seña, el stock se vende por orden de llegada — nuestro inventario es real y rota rápido."
-        },
-        {
-          "id": "f7",
-          "q": "¿Tienen modelos para terreno sintético?",
-          "a": "Sí. Trabajamos con FG (campo natural firme), AG (césped sintético de última generación), MG (multiground) e IC (futsal). El terreno recomendado figura en los detalles técnicos de cada producto."
+          "q": "¿Reservan con seña?",
+          "a": "Si, reservamos talle y modelo hasta por 48 hrs. con seña del 10%."
         },
         {
           "id": "f8",
           "q": "¿Qué pasa si llega un producto distinto al que pedí?",
-          "a": "Lo solucionamos sin costo para vos. Coordinamos el retiro del producto erróneo y despachamos el correcto. Si no tenemos stock del modelo original, devolvemos el 100% del valor pagado."
+          "a": "Lo solucionamos sin costo para vos. Coordinamos el retiro del producto erróneo y despachamos el correcto. Si no tenemos stock del modelo original, devolvemos el 100% del valor pagado hasta la solución del pedido."
         }
       ]
     }
