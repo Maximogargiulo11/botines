@@ -948,6 +948,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack (actualizado)"
         }
+      },
+      {
+        "id": "c4o2v2g",
+        "name": "Nike Phantom 6 Low Elite SG-Pro Player Edition",
+        "colorway": "Negro / Verde",
+        "color": "#000000",
+        "price": 659999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "13",
+            "12",
+            "12.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1782348534927-IMG_2188.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack (actualizado)"
+        }
       }
     ],
     "nike/tiempo": [
