@@ -649,6 +649,61 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack (actualizado)"
         }
+      },
+      {
+        "id": "lwtb4r6",
+        "name": "Nike Mercurial Superfly I RGN FG CR7",
+        "colorway": "Dorado",
+        "color": "#d38301",
+        "price": 659999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9.5",
+            "9",
+            "11",
+            "10",
+            "10.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1782349472854-IMG_2191.jpeg",
+          "assets/1782349482561-IMG_2192.jpeg",
+          "assets/1782349489089-IMG_2193.jpeg",
+          "assets/1782349495792-IMG_2194.jpeg",
+          "assets/1782349501613-IMG_2195.jpeg",
+          "assets/1782349507364-IMG_2196.jpeg",
+          "assets/1782349513295-IMG_2197.jpeg",
+          "assets/1782349518841-IMG_2198.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Gold Goat’"
+        }
       }
     ],
     "nike/phantom": [
@@ -1163,7 +1218,7 @@ window.BAG_DATA = {
         "name": "Nike Tiempo Maestro Elite FG ",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 529999,
+        "price": 539999,
         "availableSizes": [],
         "sizes": {
           "eu": [
