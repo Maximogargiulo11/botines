@@ -9,13 +9,15 @@ function HomeScreen({ navigate }) {
   const heroList  = BAG_DATA.articles.filter(a => a.featured);
   const slides    = heroList.length > 0 ? heroList : BAG_DATA.articles.slice(0, 1);
 
-  // Grids below: always all articles
-  const secondary = all.slice(0, 4);
-  const wide      = all[4];
-  const small     = all.slice(5);
-
-  // Featured launches with related product (shown below the 4-card grid)
+  // Featured launches with related product (separate section below grid)
   const featuredLaunches = BAG_DATA.articles.filter(a => a.relatedProduct);
+  const featuredIds      = new Set(featuredLaunches.map(a => a.id));
+
+  // Grids: exclude articles already shown in the featured launch section
+  const gridArticles = all.filter(a => !featuredIds.has(a.id));
+  const secondary = gridArticles.slice(0, 4);
+  const wide      = gridArticles[4];
+  const small     = gridArticles.slice(5);
 
   // ── Carousel ──────────────────────────────────────────────────
   const [slide, setSlide]   = useState(0);
