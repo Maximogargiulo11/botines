@@ -119,8 +119,8 @@ window.BAG_DATA = {
           "type": "image",
           "id": "ts4mz4b",
           "src": "assets/1781809069973-IMG_0699.jpeg",
-          "width": "",
-          "height": ""
+          "width": "1080",
+          "height": "1920"
         },
         {
           "type": "text",
@@ -131,8 +131,8 @@ window.BAG_DATA = {
           "type": "image",
           "id": "stf00x4",
           "src": "assets/1781809105993-Sin_ti_tulo_-_12_de_junio_de_2026_a_las_01.27.25-2.png",
-          "width": "",
-          "height": ""
+          "width": "1080",
+          "height": "1350"
         }
       ],
       "relatedProduct": null
