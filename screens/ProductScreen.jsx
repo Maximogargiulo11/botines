@@ -62,8 +62,16 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
     return `https://wa.me/5493516836569?text=${msg}`;
   };
 
-  const currentSizes = product.sizes[unit];
-  const eqAvailable = (idx) => product.availableSizes.includes(product.sizes.eu[idx]);
+  // EU: show all sizes.eu, available = in availableSizes
+  // US/UK: show sizes.us / sizes.uk (admin marks which are available), all enabled
+  const currentSizes = unit === 'eu'
+    ? (product.sizes.eu || [])
+    : (product.sizes[unit] || []);
+
+  const isAvailable = (sz, i) => {
+    if (unit === 'eu') return product.availableSizes.includes(sz);
+    return true;
+  };
 
   return (
     <main className="bag-product-page">
@@ -142,13 +150,12 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
           </div>
           <div className="bag-size-grid">
             {currentSizes.map((sz, i) => {
-              const available = eqAvailable(i);
-              const euSize = product.sizes.eu[i];
+              const available = isAvailable(sz, i);
               return (
                 <button
                   key={sz}
-                  className={`bag-size ${size === euSize ? 'is-active' : ''}`}
-                  onClick={() => available && setSize(euSize)}
+                  className={`bag-size ${size === sz ? 'is-active' : ''}`}
+                  onClick={() => available && setSize(sz)}
                   disabled={!available}
                 >{sz}</button>
               );
