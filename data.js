@@ -1699,22 +1699,22 @@ window.BAG_DATA = {
   },
   "pages": {
     "politica": {
-      "intro": "Vendemos botines de alta gama originales, importados y con stock real. Estas son las condiciones bajo las que aceptamos cambios y devoluciones — diseñadas para protegerte a vos y al producto.",
+      "intro": "Botines Alta Gama Córdoba es una tienda online de venta de botines de futbol para jugadores profesionales. Bajo éstas condiciones son las que aceptamos los cambios y las devoluciones, diseñadas para protegerte a vos y al producto.",
       "sections": [
         {
           "id": "p1",
           "title": "Plazo de cambio",
-          "content": "Tenés siete (7) días corridos desde la recepción del paquete para solicitar un cambio de talle o modelo. El reclamo se inicia por WhatsApp al +54 9 351 683-6569."
+          "content": "Tenés siete (30) días corridos desde la recepción del paquete para solicitar un cambio de talle o modelo. El reclamo se inicia por WhatsApp al +54 9 351 683-6569."
         },
         {
           "id": "p2",
           "title": "Estado del producto",
-          "content": "El botín debe devolverse sin uso, sin marcas en la suela y con todos los herrajes y empaques originales: caja, bolsa interior, tarjetas y stickers. Productos con marcas de uso en césped, sintético o cancha no se aceptan."
+          "content": "El botín debe devolverse sin uso ni marcas y con todos los empaques originales: caja, bolsa interior, tarjetas y stickers. Los productos que tengan marcas de uso no se aceptarán bajo ningún criterio."
         },
         {
           "id": "p3",
           "title": "Cambios por talle",
-          "content": "Si el modelo está disponible en otro talle al momento del reclamo, el cambio es directo. El costo de envío de retorno y el nuevo despacho corre por cuenta del comprador, salvo error nuestro al despachar."
+          "content": "Si el modelo está disponible en otro talle al momento del reclamo, el cambio es directo. El costo de envío de retorno y el nuevo despacho corre por cuenta del comprador, a excepción de error nuestro al despachar."
         },
         {
           "id": "p4",
@@ -1724,12 +1724,12 @@ window.BAG_DATA = {
         {
           "id": "p5",
           "title": "Defectos de fábrica",
-          "content": "Todos nuestros botines tienen garantía oficial del fabricante. Si detectás un defecto de fábrica, contactanos con fotos y descripción del problema. El reemplazo o reintegro es total y los costos de envío los cubrimos nosotros."
+          "content": "Todos nuestros botines tienen garantía oficial del fabricante. Si detectás un defecto de fábrica (al recibirlos o en su primer uso), contactanos con fotos y descripción del problema. El reemplazo o reintegro es total y los costos de envío están cubiertos por nosotros."
         },
         {
           "id": "p6",
           "title": "Productos en liquidación",
-          "content": "Los modelos marcados como outlet o última unidad admiten cambio por talle dentro del mismo modelo, pero no admiten devolución con reintegro. Está aclarado en la ficha del producto."
+          "content": "Los modelos marcados con rebaja o última unidad admiten cambio por talle dentro del mismo modelo, pero no admiten devolución con reintegro."
         }
       ]
     },
