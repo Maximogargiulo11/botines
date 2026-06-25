@@ -1157,6 +1157,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
+      },
+      {
+        "id": "4iqhx09",
+        "name": "Nike Tiempo Maestro Elite FG ",
+        "colorway": "Negro / Verde",
+        "color": "#000000",
+        "price": 529999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8.5",
+            "8",
+            "10",
+            "9.5",
+            "9",
+            "10.5",
+            "11",
+            "11.5",
+            "13",
+            "12",
+            "12.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1782349362081-IMG_2187.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack (actualizado)"
+        }
       }
     ],
     "adidas/f50": [
