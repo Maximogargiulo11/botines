@@ -95,7 +95,7 @@ window.BAG_DATA = {
       "category": "LANZAMIENTO",
       "title": "De Córdoba a Kansas ¡sin escalas!",
       "excerpt": "\n",
-      "date": "",
+      "date": "12 de Junio de 2026",
       "cover": "assets/1781809382771-IMG_0700.jpeg",
       "coverWidth": "1080",
       "coverHeight": "1920",
