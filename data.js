@@ -92,7 +92,7 @@ window.BAG_DATA = {
       "id": "ue3v5y5",
       "slug": "de-cordoba-a-kansas-sin-escalas",
       "brand": "Nike",
-      "category": "LANZAMIENTO",
+      "category": "CAMPAÑA",
       "title": "De Córdoba a Kansas ¡sin escalas!",
       "excerpt": "\n",
       "date": "12 de Junio de 2026",
