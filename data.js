@@ -895,6 +895,59 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Showtime’ Pack"
         }
+      },
+      {
+        "id": "uxwabi1",
+        "name": "Nike Phantom 6 Low Elite FG",
+        "colorway": "Negro / Verde",
+        "color": "#000000",
+        "price": 549999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1782348434544-69be2ddd-dec6-4d78-a5e3-66e93f0de591.jpeg",
+          "assets/1782348441458-c4771c2c-51c0-49cd-8d49-b0823e5f50a8.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack (actualizado)"
+        }
       }
     ],
     "nike/tiempo": [
