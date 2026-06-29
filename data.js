@@ -133,6 +133,16 @@ window.BAG_DATA = {
           "src": "assets/1781809105993-Sin_ti_tulo_-_12_de_junio_de_2026_a_las_01.27.25-2.png",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "instagram",
+          "id": "stp3jyb",
+          "url": "https://www.instagram.com/p/DZffwkEkU0C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        },
+        {
+          "type": "instagram",
+          "id": "8swrwtz",
+          "url": "https://www.instagram.com/p/DZffwkEkU0C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         }
       ],
       "relatedProduct": null
