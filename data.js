@@ -52,7 +52,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [],
