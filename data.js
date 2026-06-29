@@ -102,7 +102,7 @@ window.BAG_DATA = {
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
-      "imagenCarrusel": "",
+      "imagenCarrusel": "assets/1782770633024-1781809382771-IMG_0700.jpeg",
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
