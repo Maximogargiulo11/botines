@@ -1,6 +1,36 @@
 /* global React, BAG_DATA, SmallArticleCard, SectionRule */
 const { useState: useState_art, useRef: useRef_art } = React;
 
+function InstagramEmbed({ url }) {
+  React.useEffect(() => {
+    const process = () => window.instgrm && window.instgrm.Embeds.process();
+    if (window.instgrm) {
+      process();
+    } else if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+      const s = document.createElement('script');
+      s.src = 'https://www.instagram.com/embed.js';
+      s.async = true;
+      s.onload = process;
+      document.body.appendChild(s);
+    } else {
+      // script already loading, poll briefly
+      const t = setTimeout(process, 2000);
+      return () => clearTimeout(t);
+    }
+  }, [url]);
+
+  return (
+    <div className="bag-instagram-embed">
+      <blockquote
+        className="instagram-media"
+        data-instgrm-permalink={url}
+        data-instgrm-version="14"
+        style={{ background: '#fff', border: 0, borderRadius: 3, margin: '0 auto', maxWidth: 540, minWidth: 280, padding: 0, width: '100%' }}
+      />
+    </div>
+  );
+}
+
 function getVideoEmbedUrl(url) {
   if (!url) return null;
   const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
@@ -94,21 +124,7 @@ function ArticleScreen({ slug, navigate }) {
           );
         }
         if (block.type === 'instagram') {
-          return (
-            <div key={block.id || i} className="bag-instagram-embed">
-              <div className="bag-eyebrow bag-eyebrow--muted">VER EN INSTAGRAM</div>
-              <div className="bag-instagram-embed__frame">
-                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <rect x="3" y="3" width="18" height="18" rx="4"/>
-                  <circle cx="12" cy="12" r="4"/>
-                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
-                </svg>
-                <a className="bag-instagram-embed__link" href={block.url} target="_blank" rel="noreferrer">
-                  @botinesaltagamacba
-                </a>
-              </div>
-            </div>
-          );
+          return <InstagramEmbed key={block.id || i} url={block.url} />;
         }
         if (block.type === 'image-pair') {
           return (
