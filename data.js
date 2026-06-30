@@ -11,6 +11,38 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "bv1rjm6",
+      "slug": "nuevos-puma-future-9-para-neymar-jr",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Nuevos Puma Future 9 para Neymar Jr.",
+      "excerpt": "",
+      "date": "24 de Junio de 2026",
+      "cover": "assets/1782783279632-IMG_2201.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1782783308043-IMG_2202.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1782783322008-IMG_2203.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "og97dkf",
+          "src": "assets/1782783340494-IMG_2200.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null
+    },
+    {
       "id": "kavbn26",
       "slug": "oro-para-la-historia-legado-puro",
       "brand": "Nike",
