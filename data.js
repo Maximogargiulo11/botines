@@ -11,6 +11,38 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "j2ywn9r",
+      "slug": "nike-honra-a-cristiano-nuevamente",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike honra a Cristiano nuevamente ",
+      "excerpt": "",
+      "date": "25 de Junio de 2026",
+      "cover": "assets/1782858013036-IMG_1167.jpeg",
+      "coverWidth": "1080",
+      "coverHeight": "1350",
+      "imagenCard": "assets/1782858028149-IMG_1167.jpeg",
+      "imagenCardWidth": "1080",
+      "imagenCardHeight": "1350",
+      "imagenCarrusel": "assets/1782858085224-IMG_1164.jpeg",
+      "imagenCarruselWidth": "1080",
+      "imagenCarruselHeight": "1350",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "qqxu99d",
+          "src": "assets/1782858136549-IMG_1166.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null
+    },
+    {
       "id": "kavbn26",
       "slug": "oro-para-la-historia-legado-puro",
       "brand": "Nike",
