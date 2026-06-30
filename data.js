@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "Nike honra a Cristiano nuevamente ",
       "excerpt": "",
       "date": "25 de Junio de 2026",
-      "cover": "assets/1782858013036-IMG_1167.jpeg",
+      "cover": "assets/1782858158935-IMG_1167.jpeg",
       "coverWidth": "1080",
       "coverHeight": "1350",
       "imagenCard": "assets/1782858028149-IMG_1167.jpeg",
