@@ -11,38 +11,6 @@ window.BAG_DATA = {
   },
   "articles": [
     {
-      "id": "bv1rjm6",
-      "slug": "nuevos-puma-future-9-para-neymar-jr",
-      "brand": "Puma",
-      "category": "LANZAMIENTO",
-      "title": "Nuevos Puma Future 9 para Neymar Jr.",
-      "excerpt": "Puma honra su vuelta con esta edición especial de su silo.",
-      "date": "24 de Junio de 2026",
-      "cover": "assets/1782783279632-IMG_2201.jpeg",
-      "coverWidth": "",
-      "coverHeight": "",
-      "imagenCard": "assets/1782783308043-IMG_2202.jpeg",
-      "imagenCardWidth": "1080",
-      "imagenCardHeight": "1350",
-      "imagenCarrusel": "assets/1782783322008-IMG_2203.jpeg",
-      "imagenCarruselWidth": "",
-      "imagenCarruselHeight": "",
-      "coverVideo": "",
-      "featured": false,
-      "sizesUS": [],
-      "sizesUK": [],
-      "contentBlocks": [
-        {
-          "type": "image",
-          "id": "og97dkf",
-          "src": "assets/1782783340494-IMG_2200.jpeg",
-          "width": "",
-          "height": ""
-        }
-      ],
-      "relatedProduct": null
-    },
-    {
       "id": "kavbn26",
       "slug": "oro-para-la-historia-legado-puro",
       "brand": "Nike",
@@ -138,7 +106,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -165,16 +133,6 @@ window.BAG_DATA = {
           "src": "assets/1781809105993-Sin_ti_tulo_-_12_de_junio_de_2026_a_las_01.27.25-2.png",
           "width": "",
           "height": ""
-        },
-        {
-          "type": "instagram",
-          "id": "stp3jyb",
-          "url": "https://www.instagram.com/p/DZffwkEkU0C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-        },
-        {
-          "type": "instagram",
-          "id": "8swrwtz",
-          "url": "https://www.instagram.com/p/DZffwkEkU0C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         }
       ],
       "relatedProduct": null
