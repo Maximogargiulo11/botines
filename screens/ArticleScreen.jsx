@@ -110,13 +110,17 @@ function ArticleScreen({ slug, navigate }) {
           );
         }
         if (block.type === 'image') {
-          const style = {};
+          const figStyle = {};
+          const imgStyle = {};
           if (block.width && block.height) {
-            style.aspectRatio = `${block.width} / ${block.height}`;
+            figStyle.aspectRatio = `${block.width} / ${block.height}`;
+            figStyle.overflow = 'hidden';
+            imgStyle.height = '100%';
+            imgStyle.objectFit = 'cover';
           }
           return (
-            <figure key={block.id || i} className="bag-article-figure" style={style}>
-              <img src={block.src} alt="" />
+            <figure key={block.id || i} className="bag-article-figure" style={figStyle}>
+              <img src={block.src} alt="" style={imgStyle} />
               {block.width && block.height && (
                 <figcaption className="bag-article-figure__dim">{block.width}×{block.height}</figcaption>
               )}

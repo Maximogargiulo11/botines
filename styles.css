@@ -771,7 +771,7 @@
   margin: 24px 0;
   width: 100%;
 }
-.bag-article-figure img { width: 100%; height: auto; display: block; aspect-ratio: 1080/1350; object-fit: cover; }
+.bag-article-figure img { width: 100%; height: auto; display: block; object-fit: cover; }
 .bag-article-figure { position: relative; }
 .bag-article-figure__dim { position: absolute; bottom: 8px; right: 10px; font-size: 10px; color: rgba(255,255,255,.5); font-family: var(--bag-font-sans); letter-spacing: .04em; }
 
