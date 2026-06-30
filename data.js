@@ -43,7 +43,7 @@ window.BAG_DATA = {
       "excerpt": "",
       "date": "23 de Junio de 2026",
       "cover": "assets/1782786194518-1782346699579-IMG_2152.jpeg",
-      "coverWidth": "1920",
+      "coverWidth": "1300",
       "coverHeight": "1080",
       "imagenCard": "",
       "imagenCardWidth": "",
