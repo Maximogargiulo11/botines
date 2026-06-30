@@ -741,6 +741,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Gold Goat’"
         }
+      },
+      {
+        "id": "1zf0k9y",
+        "name": "Nike Mercurial Vapor 17 Elite FG ‘Scorpion’",
+        "colorway": "Negro / Rosa / Violeta",
+        "color": "#e63b7a",
+        "price": 549999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1782859029244-IMG_2322.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Scorpion’"
+        }
       }
     ],
     "nike/phantom": [
