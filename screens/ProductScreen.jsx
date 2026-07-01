@@ -1,10 +1,94 @@
 /* global React, BAG_DATA */
 const { useState: useState_prod, useEffect: useEffect_prod } = React;
 
-const PROD_SIZE_CHART = {
-  nike:   'assets/tabla-de-talles-nike.jpg',
-  adidas: 'assets/tabla-de-talles-adidas.jpg',
+const SIZE_DATA = {
+  hombre: [
+    { eu: '36',   us: '4',    uk: '3',    ar: '35',   cm: '22,5' },
+    { eu: '37',   us: '4½',   uk: '3½',   ar: '36',   cm: '23,0' },
+    { eu: '38',   us: '5½',   uk: '4½',   ar: '37',   cm: '24,0' },
+    { eu: '39',   us: '6½',   uk: '5½',   ar: '38',   cm: '24,5' },
+    { eu: '40',   us: '7',    uk: '6',    ar: '39',   cm: '25,0' },
+    { eu: '40,5', us: '7½',   uk: '6½',   ar: '39,5', cm: '25,5' },
+    { eu: '41',   us: '8',    uk: '7',    ar: '40',   cm: '26,0' },
+    { eu: '42',   us: '8½',   uk: '7½',   ar: '41',   cm: '26,5' },
+    { eu: '42,5', us: '9',    uk: '8',    ar: '41,5', cm: '27,0' },
+    { eu: '43',   us: '9½',   uk: '8½',   ar: '42',   cm: '27,5' },
+    { eu: '44',   us: '10',   uk: '9',    ar: '43',   cm: '28,0' },
+    { eu: '44,5', us: '10½',  uk: '9½',   ar: '43,5', cm: '28,5' },
+    { eu: '45',   us: '11',   uk: '10',   ar: '44',   cm: '29,0' },
+    { eu: '46',   us: '12',   uk: '11',   ar: '45',   cm: '30,0' },
+  ],
+  mujer: [
+    { eu: '35',   us: '5',    uk: '2½',   ar: '34',   cm: '22,5' },
+    { eu: '35,5', us: '5½',   uk: '3',    ar: '34,5', cm: '23,0' },
+    { eu: '36',   us: '6',    uk: '3½',   ar: '35',   cm: '23,5' },
+    { eu: '37',   us: '6½',   uk: '4',    ar: '36',   cm: '24,0' },
+    { eu: '38',   us: '7',    uk: '4½',   ar: '37',   cm: '24,5' },
+    { eu: '38,5', us: '7½',   uk: '5',    ar: '37,5', cm: '25,0' },
+    { eu: '39',   us: '8',    uk: '5½',   ar: '38',   cm: '25,5' },
+    { eu: '40',   us: '9',    uk: '6½',   ar: '39',   cm: '26,0' },
+    { eu: '41',   us: '9½',   uk: '7',    ar: '40',   cm: '26,5' },
+  ],
 };
+
+function SizeChart() {
+  const [tab, setTab] = React.useState('hombre');
+  const rows = SIZE_DATA[tab];
+  const ACCENT = '#CCFF00';
+  const thStyle = {
+    textAlign: 'left', padding: '16px 0 12px',
+    fontSize: 9, letterSpacing: '0.28em', textTransform: 'uppercase',
+    fontWeight: 700, borderBottom: '1px solid #1c1c1c', color: '#fff',
+  };
+  return (
+    <div style={{ background: '#0a0a0a', borderRadius: 8, padding: '24px 20px', fontFamily: 'var(--bag-font-sans)' }}>
+      <h2 style={{ margin: '0 0 20px', fontSize: 28, fontWeight: 700, letterSpacing: '-0.03em', color: '#fff' }}>Tabla de Talles</h2>
+      <div style={{ display: 'flex', borderBottom: '1px solid #1c1c1c', marginBottom: 0 }}>
+        {['hombre', 'mujer'].map(t => (
+          <button key={t} onClick={() => setTab(t)} style={{
+            background: 'none', border: 'none', cursor: 'pointer',
+            padding: '10px 0', marginRight: 24,
+            fontSize: 11, letterSpacing: '0.2em', textTransform: 'uppercase',
+            fontFamily: 'inherit', fontWeight: 600,
+            color: tab === t ? '#fff' : '#444',
+            borderBottom: tab === t ? `2px solid ${ACCENT}` : '2px solid transparent',
+            transition: 'all 0.15s',
+          }}>
+            {t.charAt(0).toUpperCase() + t.slice(1)}
+          </button>
+        ))}
+      </div>
+      <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 0 }}>
+        <thead>
+          <tr>
+            <th style={{ ...thStyle, width: '15%' }}>EU</th>
+            <th style={{ ...thStyle, width: '18%' }}>US</th>
+            <th style={{ ...thStyle, width: '18%' }}>UK</th>
+            <th style={{ ...thStyle, width: '18%', color: ACCENT }}>AR</th>
+            <th style={{ ...thStyle, width: '31%' }}>CM del pie</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(r => (
+            <tr key={r.eu} style={{ borderBottom: '1px solid #141414' }}>
+              <td style={{ padding: '13px 0', fontSize: 22, fontWeight: 700, color: '#fff', letterSpacing: '-0.02em', lineHeight: 1 }}>{r.eu}</td>
+              <td style={{ padding: '13px 0', fontSize: 15, fontWeight: 600, color: '#e8e8e8' }}>{r.us}</td>
+              <td style={{ padding: '13px 0', fontSize: 15, fontWeight: 600, color: '#e8e8e8' }}>{r.uk}</td>
+              <td style={{ padding: '13px 0', fontSize: 15, fontWeight: 600, color: ACCENT }}>{r.ar}</td>
+              <td style={{ padding: '13px 0' }}>
+                <span style={{ fontSize: 15, fontWeight: 600, color: '#fff' }}>{r.cm}</span>
+                <span style={{ fontSize: 11, color: '#888', marginLeft: 4 }}>cm</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p style={{ margin: '20px 0 0', fontSize: 10, color: '#555', textAlign: 'center', letterSpacing: '0.06em', lineHeight: 1.8 }}>
+        Los talles son orientativos · Pueden variar según fabricante y modelo
+      </p>
+    </div>
+  );
+}
 
 function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart }) {
   const brand = BAG_DATA.brands.find(b => b.slug === brandSlug) || BAG_DATA.brands[0];
@@ -222,30 +306,7 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
                 <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
               </button>
             </header>
-            {PROD_SIZE_CHART[brandSlug] ? (
-              <img
-                src={PROD_SIZE_CHART[brandSlug]}
-                alt={`Tabla de talles ${brand.name}`}
-                className="bag-modal__size-img"
-              />
-            ) : (
-              <table className="bag-size-table">
-                <thead>
-                  <tr><th>US</th><th>UK</th><th>EU</th><th>CM</th></tr>
-                </thead>
-                <tbody>
-                  {[
-                    ['6','5','38','24'],['6.5','5.5','39','24.5'],['7','6','40','25'],
-                    ['7.5','6.5','40.5','25.5'],['8','7','41','26'],['9','8','42','27'],
-                    ['9.5','8.5','42.5','27.5'],['10','9','43','28'],['10.5','9.5','44','28.5'],
-                    ['11','10','45','29'],
-                  ].map(([u, k, e, cm]) => (
-                    <tr key={e}><td>{u}</td><td>{k}</td><td>{e}</td><td>{cm}</td></tr>
-                  ))}
-                </tbody>
-              </table>
-            )}
-            <p className="bag-modal__note">Los talles indicados en el producto corresponden a la numeración EU. Usá esta tabla para encontrar tu talle.</p>
+            <SizeChart />
           </div>
         </div>
       )}
