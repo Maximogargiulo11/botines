@@ -100,6 +100,7 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
   const [unit, setUnit] = useState_prod('eu');
   const [size, setSize] = useState_prod(null);
   const [showSizeModal, setShowSizeModal] = useState_prod(false);
+  const [showSizeFull, setShowSizeFull] = useState_prod(false);
   const [lightbox, setLightbox] = useState_prod(false);
   const [feedback, setFeedback] = useState_prod(null);
 
@@ -122,7 +123,7 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
 
   // Close lightbox on Escape
   useEffect_prod(() => {
-    const onKey = (e) => { if (e.key === 'Escape') { setLightbox(false); setShowSizeModal(false); } };
+    const onKey = (e) => { if (e.key === 'Escape') { setLightbox(false); setShowSizeModal(false); setShowSizeFull(false); } };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
@@ -302,10 +303,29 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
           <div className="bag-modal__card" onClick={(e) => e.stopPropagation()}>
             <header className="bag-modal__head">
               <div className="bag-eyebrow">TABLA DE TALLES · {brand.name.toUpperCase()}</div>
-              <button className="bag-modal__close" onClick={() => setShowSizeModal(false)} aria-label="Cerrar">
-                <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
-              </button>
+              <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                <button className="bag-modal__close" onClick={() => setShowSizeFull(true)} aria-label="Pantalla completa" title="Ver en pantalla completa">
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M3 8V3h5M17 8V3h-5M3 12v5h5M17 12v5h-5"/></svg>
+                </button>
+                <button className="bag-modal__close" onClick={() => setShowSizeModal(false)} aria-label="Cerrar">
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
+                </button>
+              </div>
             </header>
+            <div style={{ cursor: 'zoom-in' }} onClick={() => setShowSizeFull(true)}>
+              <SizeChart />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Size chart fullscreen */}
+      {showSizeFull && (
+        <div className="bag-sizefull" onClick={() => setShowSizeFull(false)}>
+          <button className="bag-sizefull__close" onClick={() => setShowSizeFull(false)} aria-label="Cerrar">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
+          </button>
+          <div className="bag-sizefull__inner" onClick={(e) => e.stopPropagation()}>
             <SizeChart />
           </div>
         </div>
