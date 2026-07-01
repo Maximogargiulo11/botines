@@ -119,7 +119,9 @@ window.BAG_DATA = {
           "height": ""
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true
     },
     {
       "id": "j2ywn9r",
