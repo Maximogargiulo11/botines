@@ -745,7 +745,7 @@ function ArticlesSection({ data, onDataChange, token, homepageCount, onHomepageC
             <span className="adm-label">Mostrar en home:</span>
             <select className="adm-input adm-select adm-select--sm" value={homepageCount}
               onChange={e => onHomepageCountChange(Number(e.target.value))}>
-              {[1,2,3,4,5,6,7,8].map(n => <option key={n} value={n}>{n}</option>)}
+              {Array.from({ length: (data.articles || []).length }, (_, i) => i + 1).map(n => <option key={n} value={n}>{n}</option>)}
             </select>
           </div>
           <Btn size="sm" onClick={() => setEditing({ id: '', slug: '', title: '', excerpt: '', date: '', brand: 'Nike', category: 'LANZAMIENTO', cover: '', featured: false, contentBlocks: [] })}>
