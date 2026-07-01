@@ -604,6 +604,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
       sizesUK: a.sizesUK || [],
       contentBlocks: a.contentBlocks || [],
       relatedProduct: a.relatedProduct || null,
+      showFeaturedOnHome: !!a.showFeaturedOnHome,
     };
   });
   const set = (k, v) => setF(p => ({ ...p, [k]: v }));
@@ -659,15 +660,23 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
           </Field>
         </div>
         <div className="adm-section">
-          <div className="adm-section__title">Producto relacionado (panel del carrusel)</div>
+          <div className="adm-section__title">Card de colorway</div>
           <p className="adm-text" style={{ marginBottom: 12, fontSize: 13 }}>
-            Elegí un colorway para mostrar como panel lateral cuando este lanzamiento aparezca en el carrusel del home.
+            Elegí un colorway para asociar a este lanzamiento. Se mostrará como panel lateral cuando aparezca en el carrusel del home.
           </p>
           <RelatedProductPicker
             value={f.relatedProduct}
-            onChange={v => set('relatedProduct', v)}
+            onChange={v => { set('relatedProduct', v); if (!v) set('showFeaturedOnHome', false); }}
             products={(data && data.products) || {}}
           />
+          {f.relatedProduct && (
+            <Field>
+              <label className="adm-checkbox" style={{ marginTop: 12 }}>
+                <input type="checkbox" checked={!!f.showFeaturedOnHome} onChange={e => set('showFeaturedOnHome', e.target.checked)} />
+                <span>Mostrar como lanzamiento destacado en el home</span>
+              </label>
+            </Field>
+          )}
         </div>
         <div className="adm-section">
           <div className="adm-section__title">Contenido del artículo</div>

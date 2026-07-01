@@ -10,7 +10,7 @@ function HomeScreen({ navigate }) {
   const slides    = heroList.length > 0 ? heroList : BAG_DATA.articles.slice(0, 1);
 
   // Featured launches with related product (separate section below grid)
-  const featuredLaunches = BAG_DATA.articles.filter(a => a.relatedProduct);
+  const featuredLaunches = BAG_DATA.articles.filter(a => a.relatedProduct && a.showFeaturedOnHome);
   const featuredIds      = new Set(featuredLaunches.map(a => a.id));
 
   // Grids: exclude articles already shown in the featured launch section
