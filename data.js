@@ -170,7 +170,10 @@ window.BAG_DATA = {
           "height": ""
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": true
     },
     {
       "id": "kavbn26",
