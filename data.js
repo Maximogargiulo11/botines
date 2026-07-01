@@ -220,10 +220,10 @@ window.BAG_DATA = {
       "title": "Oro para la historia: legado puro.",
       "excerpt": "Nike lanza un edición especial de Mercurial para celebrar el récord de la Copa del Mundo de CR7.",
       "date": "23 de Junio de 2026",
-      "cover": "assets/1782864648272-IMG_2162.jpeg",
+      "cover": "assets/1782945683102-IMG_2160.jpeg",
       "coverWidth": "",
       "coverHeight": "",
-      "imagenCard": "assets/1782920685654-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
+      "imagenCard": "assets/1782945698821-IMG_2162.jpeg",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
       "imagenCarrusel": "assets/1782865075028-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
@@ -335,7 +335,10 @@ window.BAG_DATA = {
           "url": "https://www.instagram.com/p/DZ76oS7m4G0/?igsh=MXd0NTJkNG94b2l2MA=="
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "oxx26w4",
