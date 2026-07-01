@@ -74,20 +74,69 @@ window.BAG_DATA = {
       "title": "Oro para la historia: legado puro.",
       "excerpt": "",
       "date": "23 de Junio de 2026",
-      "cover": "assets/1782346976318-IMG_2160.jpeg",
-      "coverWidth": "1080",
-      "coverHeight": "1350",
-      "imagenCard": "assets/1782864235857-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
+      "cover": "assets/1782864648272-IMG_2162.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
-      "imagenCarrusel": "assets/1782351159960-IMG_2161.jpeg",
+      "imagenCarrusel": "",
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
       "featured": false,
       "sizesUS": [],
       "sizesUK": [],
-      "contentBlocks": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "cs72g1d",
+          "src": "assets/1782864675683-IMG_1136.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "fyqhz2b",
+          "left": {
+            "src": "assets/1782864693619-IMG_1137.jpeg"
+          },
+          "right": {
+            "src": "assets/1782864704087-IMG_1138.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "ezm3vj6",
+          "src": "assets/1782864720317-IMG_1139.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "sha4v13",
+          "src": "assets/1782864757760-IMG_2161.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "wncg6ek",
+          "left": {
+            "src": "assets/1782864801773-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg"
+          },
+          "right": {
+            "src": "assets/1782864815675-35C11A1D-67AC-4079-8806-E27E327C3647.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "bp2kj26",
+          "src": "assets/1782864855243-9E9C3DD7-AA4D-4CDD-907E-7E97E870BC50.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
       "relatedProduct": null
     },
     {
