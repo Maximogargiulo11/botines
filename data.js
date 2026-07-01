@@ -176,12 +176,12 @@ window.BAG_DATA = {
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "Oro para la historia: legado puro.",
-      "excerpt": "",
+      "excerpt": "Nike lanza un edición especial de Mercurial para celebrar el récord de la Copa del Mundo de CR7.",
       "date": "23 de Junio de 2026",
       "cover": "assets/1782864648272-IMG_2162.jpeg",
       "coverWidth": "",
       "coverHeight": "",
-      "imagenCard": "assets/1782865085989-35C11A1D-67AC-4079-8806-E27E327C3647.jpeg",
+      "imagenCard": "assets/1782920685654-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
       "imagenCarrusel": "assets/1782865075028-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
@@ -193,11 +193,21 @@ window.BAG_DATA = {
       "sizesUK": [],
       "contentBlocks": [
         {
+          "type": "text",
+          "id": "i2p8smt",
+          "content": "Mientras el debate de la Cabra continúa y la batalla por el goleador de todos los tiempos de la Copa del Mundo se calienta, Cristiano Ronaldo se ha convertido silenciosamente en el único jugador en anotar en seis torneos de la Copa del Mundo separados, y para honrar esa increíble hazaña, Nike ha lanzado un Gold Mercurial Superfly RGN especial."
+        },
+        {
           "type": "image",
           "id": "cs72g1d",
           "src": "assets/1782864675683-IMG_1136.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "mcmr1z2",
+          "content": "Cristiano Ronaldo sigue reescribiendo las reglas, ¿verdad? Con sus dos goles contra Uzbekistán, se ha convertido en el único jugador que ha anotado en seis torneos de la Copa del Mundo separados, una estadística ridícula que se siente muy \"CR7\". Y ahora, Nike ha intervenido para celebrar el momento con estilo, lanzando un homenaje muy llamativo: la edición Mercurial Superfly 1 RGN Gold."
         },
         {
           "type": "image-pair",
@@ -210,6 +220,11 @@ window.BAG_DATA = {
           }
         },
         {
+          "type": "text",
+          "id": "clbl45a",
+          "content": "La parte superior viene vestida con un rico acabado dorado metálico, lo que le da a toda la bota esa energía inconfundible \"personaje principal\" de la que se trata Ronaldo. No es ruidoso por el bien de ello, es audaz con un propósito. En capas de esa parte superior está la tecnología Flywire, una devolución sutil pero significativa de la construcción original del modelo de 2009, que refuerza el ángulo nostálgico."
+        },
+        {
           "type": "image",
           "id": "ezm3vj6",
           "src": "assets/1782864720317-IMG_1139.jpeg",
@@ -217,11 +232,38 @@ window.BAG_DATA = {
           "height": ""
         },
         {
+          "type": "text",
+          "id": "a4hhidw",
+          "content": "Cortando todo ese oro es un Swoosh blanco limpio, grande y sin disculpas. Es una característica simple, pero hace mucho trabajo pesado visualmente. El contraste hace que el diseño destaque, dando a la bota una sensación nítida y premium en lugar de dejarla a la deriva en territorio exagerado.\n\nTambién hay detalles más pequeños que sellan el trato. Alrededor del talón, encontrarás la marca \"CR7 Mercurial\", que confirma esto como un verdadero lanzamiento de la firma en lugar de solo una caída temática."
+        },
+        {
+          "type": "image",
+          "id": "3mtt9v4",
+          "src": "assets/1782921319733-IMG_2355.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "cmrqs6a",
+          "content": "Bajo los pies, Nike ha emparejado la parte superior con una moderna placa de suela Mercurial Vapor 16. Eso significa un rendimiento de vanguardia envuelto en una carcasa de inspiración tradicional. Y al estilo clásico de Ronaldo, está acabado con un efecto de cromo dorado metálico, por lo que incluso la parte inferior de la bota requiere atención cuando capta la luz."
+        },
+        {
+          "type": "text",
+          "id": "0bpbtni",
+          "content": "La combinación de colores oficial, \"Mtlc Gold Star / White\", te dice todo lo que necesitas saber. Esta no es una liberación sutil, y nunca estuvo destinada a serlo, pero entonces Ronaldo no lo hace sutil, ¿verdad? El oro domina, los acentos blancos lo agudizan, y todo el paquete se siente como una celebración en lugar de solo un producto.\n\nSin embargo, más que nada, esta bota tiene que ver con el legado. Ronaldo convertirse en el único jugador en anotar en seis Copas del Mundo diferentes no es solo otra estadística, es un reflejo de longevidad, disciplina y un nivel de consistencia casi inigualable. Estas botas aprovechan esa historia. Al hacer referencia a la Superfly 1, Nike está esencialmente conectando a un joven y explosivo Ronaldo con el icono que es hoy. Diferentes épocas, el mismo impulso implacable."
+        },
+        {
           "type": "image",
           "id": "sha4v13",
           "src": "assets/1782864757760-IMG_2161.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "og5gdll",
+          "content": "Las Nike Mercurial Superfly 1 RGN Gold terminan siendo exactamente lo que querrías de un tributo a CR7. Equilibre la nostalgia con la innovación, hace una declaración sin sentirse caótico y, lo más importante, se siente ganado.\n\nEl oro le sienta bien a Ronaldo. Siempre lo ha hecho."
         },
         {
           "type": "image-pair",
@@ -239,6 +281,16 @@ window.BAG_DATA = {
           "src": "assets/1782864855243-9E9C3DD7-AA4D-4CDD-907E-7E97E870BC50.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ugfchln",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "instagram",
+          "id": "kjfsxf8",
+          "url": "https://www.instagram.com/p/DZ76oS7m4G0/?igsh=MXd0NTJkNG94b2l2MA=="
         }
       ],
       "relatedProduct": null
