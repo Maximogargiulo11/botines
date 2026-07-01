@@ -575,11 +575,6 @@ window.BAG_DATA = {
           "type": "text",
           "id": "ywqnal9",
           "content": "Si bien el paquete Road to Glory está construido para destacar, comparte un esquema de color muy similar al Breakout Pack de Nike, lo que significa que no habrá mucha distinción visual entre las marcas. Prepárate para mucho rosa..."
-        },
-        {
-          "type": "text",
-          "id": "2hlmbir",
-          "content": "Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": {
