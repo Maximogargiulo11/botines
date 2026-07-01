@@ -317,7 +317,7 @@ window.BAG_DATA = {
       "brand": "Adidas",
       "category": "LANZAMIENTO",
       "title": "Adidas presenta el nuevo pack ‘Road To Glory’ para la Copa del Mundo.",
-      "excerpt": "",
+      "excerpt": "Preparándose para el verano, Adidas lanza el paquete ‘Road to Glory’, que abre nuevos caminos al ser el primer paquete de botines en presentar el trofeo de la Copa Mundial de la FIFA, con él apareciendo en el mostrador del talón de cada silo.",
       "date": "02 de Junio de 2026",
       "cover": "assets/1782915571945-IMG_1809.jpeg",
       "coverWidth": "",
@@ -333,6 +333,16 @@ window.BAG_DATA = {
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
+        {
+          "type": "text",
+          "id": "5dgmcje",
+          "content": "La Copa del Mundo está casi sobre nosotros, y Adidas equipa su lista con un aspecto audaz y destacado para los campos de México, Estados Unidos y Canadá. Une al Predator, F50 y Copa a través de una vibrante base roja rosada, complementada con detalles negros y dorados inspirados en el icónico Trofeo de la Copa del Mundo de la FIFA."
+        },
+        {
+          "type": "text",
+          "id": "bf3tfuj",
+          "content": "Probablemente el mayor punto de conversación en torno a esta caída es el hecho de que es la primera vez que el trofeo de la Copa Mundial de la FIFA aparece en un paquete de botas, con aparecer en el contador de talones de cada modelo, sirviendo como un recordatorio de para qué están en él (¡como si lo necesitaran!). El paquete Road to Glory se usará durante todo el torneo, con Ousmane Dembélé y Lamine Yamal atando el F50, Jude Bellingham y Pedri saliendo en Predator, y Declan Rice liderando la línea en Copa."
+        },
         {
           "type": "image-pair",
           "id": "sghh67c",
@@ -352,6 +362,40 @@ window.BAG_DATA = {
           "right": {
             "src": "assets/1780440284639-IMG_1815.jpeg"
           }
+        },
+        {
+          "type": "text",
+          "id": "radx2e1",
+          "content": "Liderando la carga, el F50 Hyperfast llega en un atrevido color \"Solar Turbo / Black / Gold Metallic\", que ofrece un aspecto de alta energía construido para el escenario global."
+        },
+        {
+          "type": "image",
+          "id": "o4pwdvf",
+          "src": "assets/1782917933953-IMG_1821.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "vmh8koq",
+          "content": "El Predator sigue en \"Solar Turbo / Thermal Chrome / Core Black\", con su parte superior recubierta en un llamativo rojo de alta visibilidad, un sello distintivo de la franquicia, ahora empujado a la máxima intensidad para una visibilidad destacada bajo las luces más brillantes."
+        },
+        {
+          "type": "image",
+          "id": "3i2blqs",
+          "src": "assets/1782917912741-IMG_1816.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yrf1opu",
+          "content": "Completando el paquete, el Copa aterriza en \"Solar Turbo / Ivory / Core Black\", combinando su parte superior de color rojo vivo con Three Stripes plateados metálicos para un contraste limpio y moderno.\n"
+        },
+        {
+          "type": "text",
+          "id": "ywqnal9",
+          "content": "Si bien el paquete Road to Glory está construido para destacar, comparte un esquema de color muy similar al Breakout Pack de Nike, lo que significa que no habrá mucha distinción visual entre las marcas. Prepárate para mucho rosa..."
         }
       ],
       "relatedProduct": {
