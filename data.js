@@ -191,10 +191,10 @@ window.BAG_DATA = {
       "cover": "assets/1782068310866-Dise_o_sin_t_tulo__2_.png",
       "coverWidth": "",
       "coverHeight": "",
-      "imagenCard": "assets/1781810012383-3b12c4c9-a188-4ee1-bd1f-5c1ebcb53ec0.jpeg",
+      "imagenCard": "",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
-      "imagenCarrusel": "assets/1782255451283-Dise_o_sin_t_tulo__20_.png",
+      "imagenCarrusel": "png",
       "imagenCarruselWidth": "1366",
       "imagenCarruselHeight": "768",
       "coverVideo": "",
@@ -206,6 +206,38 @@ window.BAG_DATA = {
           "type": "text",
           "id": "taxm5fx",
           "content": "📦Nike Mercurial Vapor 17 Elite SG-Pro Player Edition ‘Breakout’ para Charly Alcaraz, jugador de Everton.\n\n¡Agradecemos su confianza puesta en nuestro trabajo y servicio!\n\nBotines Alta Gama Córdoba. ✍️"
+        },
+        {
+          "type": "video",
+          "id": "uj2qvpy",
+          "src": "assets/1782865312857-b9cc5dc0-69f8-4c8f-99e8-63a47910269e.mp4"
+        },
+        {
+          "type": "video",
+          "id": "ofp07pe",
+          "src": "assets/1782865378786-9833f7c6-2a64-402c-b023-1165084b30bd.mp4"
+        },
+        {
+          "type": "video",
+          "id": "ixgng9d",
+          "src": "assets/1782865400867-b6c3ee0c-7fd5-4170-b220-d4644f066f3e.mp4"
+        },
+        {
+          "type": "image-pair",
+          "id": "tupl2mm",
+          "left": {
+            "src": "assets/1782865480529-9c6bb912-7efb-433b-baa8-7b6945ca7cd8.jpeg"
+          },
+          "right": {
+            "src": "assets/1782865494263-96a8f002-fb14-4288-bd18-7f2d5ca46304.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "tukhbhy",
+          "src": "assets/1782865517598-IMG_0925.png",
+          "width": "",
+          "height": ""
         }
       ],
       "relatedProduct": null
