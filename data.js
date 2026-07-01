@@ -16,22 +16,109 @@ window.BAG_DATA = {
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "Nike y Travis Scott se unen para una colaboración única.",
-      "excerpt": "",
+      "excerpt": "Nuevos Phantom 6 x ‘Cactus Jack’",
       "date": "29 de Junio 2026",
-      "cover": "assets/1782866385843-Sin_ti_tulo_-_30_de_junio_de_2026_a_las_19.26.09-6.png",
+      "cover": "assets/1782918438407-IMG_2248.jpeg",
       "coverWidth": "1080",
       "coverHeight": "1350",
-      "imagenCard": "",
+      "imagenCard": "assets/1782918449501-IMG_2250.jpeg",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
-      "imagenCarrusel": "",
+      "imagenCarrusel": "assets/1782918469301-IMG_2254.jpeg",
       "imagenCarruselWidth": "1080",
       "imagenCarruselHeight": "1350",
       "coverVideo": "",
       "featured": false,
       "sizesUS": [],
       "sizesUK": [],
-      "contentBlocks": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "60qp155",
+          "content": "Ha habido muchas pistas y pistas, pero ahora finalmente tenemos el lanzamiento oficial de las Nike Phantom 6 x ‘Cactus Jack’, que señala la primera incursia de Travis Scott en el mundo del calzado de alto rendimiento."
+        },
+        {
+          "type": "image",
+          "id": "4o0i62f",
+          "src": "assets/1782918609376-IMG_2257.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "wrcqsx0",
+          "content": "Además de ser una de las mayores superestrellas de la industria musical en este momento, Travis Scott también se ha convertido en una de las figuras más influyentes en la cultura de las zapatillas en la última década, en gran parte a través de su larga colaboración con Nike y Jordan Brand. Ahora, sin embargo, está llevando las cosas de la acera al lanzamiento con el lanzamiento de la edición limitada Phantom 6 x ‘Cactus Jack’."
+        },
+        {
+          "type": "image",
+          "id": "lrgt43u",
+          "src": "assets/1782919259726-IMG_2343.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ky8zeqb",
+          "content": "No es ningún secreto que Scott es un gran fanático del fútbol, y su creciente presencia en el juego ha sido difícil de ignorar. Desde acercarse a los eventos TOMA de Nike hasta mezclarse casualmente con la cultura del fútbol de nivel de élite, se ha estado acercando a un momento adecuado en el campo. El zumbido realmente llegó a otro nivel en Miami, donde salió con un par de botas Phantom 6 Indoor nunca antes vistas, estampadas con esa inconfundible marca Cactus Jack. Solo eso fue suficiente para enviar tanto a los fanáticos de las zapatillas como a los fanáticos del fútbol a un colapso."
+        },
+        {
+          "type": "text",
+          "id": "it1e6r0",
+          "content": "Luego de eso, quien hizo su estreno fue él mismo goleador noruego Erling Haaland, la principal cara de este silo, con su selección vs. Francia en el último partido de fase de grupos. Aunque no hubo debut en cancha y solo fue una entrada en calor…"
+        },
+        {
+          "type": "image-pair",
+          "id": "6a9f05n",
+          "left": {
+            "src": "assets/1782919530774-IMG_1232.jpeg"
+          },
+          "right": {
+            "src": "assets/1782919572078-IMG_1231.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "qcaocgw",
+          "left": {
+            "src": "assets/1782919594639-IMG_1228.jpeg"
+          },
+          "right": {
+            "src": "assets/1782919604238-IMG_1229.jpeg"
+          }
+        },
+        {
+          "type": "instagram",
+          "id": "nkffnvw",
+          "url": "https://www.instagram.com/p/DaIck4NxtZT/?igsh=MWd5amExbG0yaGkzZQ=="
+        },
+        {
+          "type": "text",
+          "id": "0tfbdle",
+          "content": "La parte superior llega en una combinación verde y marrón llamativo, con el verde más brillante tomando la sección inferior, mientras que un marrón intenso se envuelve alrededor del cuello para el contraste. Es terreso, pero sigue siendo ruidoso a esa manera inconfundible de Travis Scott."
+        },
+        {
+          "type": "text",
+          "id": "9buhdjc",
+          "content": "En general, esto parece un siguiente paso natural tanto para Nike como para Travis Scott. Ya ha conquistado la cultura de las zapatillas, ahora está trayendo esa misma energía disruptiva al campo."
+        },
+        {
+          "type": "image-pair",
+          "id": "d3zhy0p",
+          "left": {
+            "src": "assets/1782919716029-IMG_2259.jpeg"
+          },
+          "right": {
+            "src": "assets/1782919747695-IMG_2260.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "14aehxc",
+          "src": "assets/1782919761802-IMG_2258.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
       "relatedProduct": null
     },
     {
@@ -271,7 +358,7 @@ window.BAG_DATA = {
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
-      "imagenCarrusel": "assets/1782915947114-IMG_0701.jpeg",
+      "imagenCarrusel": "assets/1782918395918-IMG_1999.jpeg",
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
