@@ -167,18 +167,33 @@ window.BAG_DATA = {
       "cover": "assets/1782786194518-1782346699579-IMG_2152.jpeg",
       "coverWidth": "1920",
       "coverHeight": "1380",
-      "imagenCard": "",
+      "imagenCard": "assets/1782866715954-IMG_2153.jpeg",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
-      "imagenCarrusel": "",
+      "imagenCarrusel": "assets/1782866729145-Sin_ti_tulo_-_23_de_junio_de_2026_a_las_20.44.48-2.png",
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
       "featured": false,
       "sizesUS": [],
       "sizesUK": [],
-      "contentBlocks": [],
-      "relatedProduct": null
+      "contentBlocks": [
+        {
+          "type": "video",
+          "id": "upshr4m",
+          "src": "assets/1782866769883-bf2f442ce3d644bead64b4408d993cf4.mov"
+        },
+        {
+          "type": "video",
+          "id": "i0u450o",
+          "src": "assets/1782866782311-075521b92d1d4e599350119b0f4dc441.mov"
+        }
+      ],
+      "relatedProduct": {
+        "brand": "nike",
+        "model": "mercurial",
+        "colorwayId": "d4s9li3"
+      }
     },
     {
       "id": "cr1rymp",
