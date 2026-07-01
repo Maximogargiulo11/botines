@@ -606,6 +606,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
       relatedProduct: a.relatedProduct || null,
       showFeaturedOnHome: !!a.showFeaturedOnHome,
       showInHome: a.showInHome !== false,
+      featuredWide: !!a.featuredWide,
     };
   });
   const set = (k, v) => setF(p => ({ ...p, [k]: v }));
@@ -663,6 +664,12 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.featured} onChange={e => set('featured', e.target.checked)} />
               <span>Destacado (aparece como hero en el home)</span>
+            </label>
+          </Field>
+          <Field>
+            <label className="adm-checkbox">
+              <input type="checkbox" checked={f.featuredWide} onChange={e => set('featuredWide', e.target.checked)} />
+              <span>Mostrar como artículo grande en el home (slot central)</span>
             </label>
           </Field>
         </div>

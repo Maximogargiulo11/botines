@@ -14,11 +14,14 @@ function HomeScreen({ navigate }) {
   const featuredLaunches = homeArticles.filter(a => a.relatedProduct && a.showFeaturedOnHome);
   const featuredIds      = new Set(featuredLaunches.map(a => a.id));
 
-  // Grids: exclude articles already shown in the featured launch section
-  const gridArticles = all.filter(a => !featuredIds.has(a.id));
+  // Pinned wide article (SplitArticle slot)
+  const wideOverride = homeArticles.find(a => a.featuredWide);
+
+  // Grids: exclude featured launches and the pinned wide article
+  const gridArticles = all.filter(a => !featuredIds.has(a.id) && a.id !== wideOverride?.id);
   const secondary = gridArticles.slice(0, 4);
-  const wide      = gridArticles[4];
-  const small     = gridArticles.slice(5);
+  const wide      = wideOverride || gridArticles[4];
+  const small     = wideOverride ? gridArticles.slice(4) : gridArticles.slice(5);
 
   // ── Carousel ──────────────────────────────────────────────────
   const [slide, setSlide]   = useState(0);
