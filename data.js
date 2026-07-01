@@ -15,7 +15,7 @@ window.BAG_DATA = {
       "slug": "produccion-exclusiva-de-nike-en-montebelluna",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Producción exclusiva de Nike en Montebelluna",
+      "title": "Producción exclusiva de Nike en Montebelluna.",
       "excerpt": "Nos adentramos en la intimidad de la fábrica más prestigioso de la marca del swoosh en Venecia, Italia.",
       "date": "",
       "cover": "assets/1782940504327-IMG_0287.jpeg",
