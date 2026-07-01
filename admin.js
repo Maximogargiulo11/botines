@@ -605,6 +605,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
       contentBlocks: a.contentBlocks || [],
       relatedProduct: a.relatedProduct || null,
       showFeaturedOnHome: !!a.showFeaturedOnHome,
+      showInHome: a.showInHome !== false,
     };
   });
   const set = (k, v) => setF(p => ({ ...p, [k]: v }));
@@ -652,6 +653,12 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
             width={f.imagenCarruselWidth} onWidthChange={v => set('imagenCarruselWidth', v)}
             height={f.imagenCarruselHeight} onHeightChange={v => set('imagenCarruselHeight', v)} />
           <VideoField label="Video de portada (opcional)" value={f.coverVideo} onChange={v => set('coverVideo', v)} token={token} hint="YouTube, Vimeo o archivo. Se muestra en el hero del artículo en lugar de la imagen." />
+          <Field>
+            <label className="adm-checkbox">
+              <input type="checkbox" checked={f.showInHome} onChange={e => set('showInHome', e.target.checked)} />
+              <span>Mostrar en el home</span>
+            </label>
+          </Field>
           <Field>
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.featured} onChange={e => set('featured', e.target.checked)} />

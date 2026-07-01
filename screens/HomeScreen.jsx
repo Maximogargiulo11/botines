@@ -3,14 +3,15 @@ const { useState, useEffect, useRef } = React;
 
 function HomeScreen({ navigate }) {
   const count    = (BAG_DATA.config && BAG_DATA.config.homepageArticleCount) || 8;
-  const all      = BAG_DATA.articles.slice(0, count);
+  const homeArticles = BAG_DATA.articles.filter(a => a.showInHome !== false);
+  const all      = homeArticles.slice(0, count);
 
   // Carousel: all featured articles regardless of homepageArticleCount limit
-  const heroList  = BAG_DATA.articles.filter(a => a.featured);
-  const slides    = heroList.length > 0 ? heroList : BAG_DATA.articles.slice(0, 1);
+  const heroList  = homeArticles.filter(a => a.featured);
+  const slides    = heroList.length > 0 ? heroList : homeArticles.slice(0, 1);
 
   // Featured launches with related product (separate section below grid)
-  const featuredLaunches = BAG_DATA.articles.filter(a => a.relatedProduct && a.showFeaturedOnHome);
+  const featuredLaunches = homeArticles.filter(a => a.relatedProduct && a.showFeaturedOnHome);
   const featuredIds      = new Set(featuredLaunches.map(a => a.id));
 
   // Grids: exclude articles already shown in the featured launch section
