@@ -43,14 +43,18 @@ function HomeScreen({ navigate }) {
   const prev = ()  => goTo((slide - 1 + slides.length) % slides.length);
   const next = ()  => goTo((slide + 1) % slides.length);
 
-  // ── Catalog preview ───────────────────────────────────────────
-  const catalogPreview = [];
+  // ── Catalog carousel ──────────────────────────────────────────
+  const catalogItems = [];
   Object.entries(BAG_DATA.products).forEach(([key, list]) => {
-    if (catalogPreview.length < 4 && list.length) {
-      const [brand, model] = key.split('/');
-      catalogPreview.push({ product: list[0], brand, model });
-    }
+    const [brand, model] = key.split('/');
+    list.forEach(product => catalogItems.push({ product, brand, model }));
   });
+  const catalogRef = useRef(null);
+  const scrollCatalog = (dir) => {
+    const el = catalogRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * el.offsetWidth * 0.75, behavior: 'smooth' });
+  };
 
   return (
     <main className="bag-home">
@@ -138,16 +142,25 @@ function HomeScreen({ navigate }) {
       <SectionRule label="CATÁLOGO" />
 
       <section className="bag-catalog-preview">
-        <div className="bag-grid-4">
-          {catalogPreview.map(({ product, brand, model }) => (
-            <ProductPreviewCard
-              key={product.id}
-              product={product}
-              brand={brand.toUpperCase()}
-              model={model}
-              onClick={() => navigate(`/marcas/${brand}/${model}/${product.id}`)}
-            />
-          ))}
+        <div className="bag-catalog-carousel-wrap">
+          <button className="bag-catalog-carousel__arrow bag-catalog-carousel__arrow--prev" onClick={() => scrollCatalog(-1)} aria-label="Anterior">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div className="bag-catalog-carousel" ref={catalogRef}>
+            {catalogItems.map(({ product, brand, model }) => (
+              <div key={product.id} className="bag-catalog-carousel__item">
+                <ProductPreviewCard
+                  product={product}
+                  brand={brand.toUpperCase()}
+                  model={model}
+                  onClick={() => navigate(`/marcas/${brand}/${model}/${product.id}`)}
+                />
+              </div>
+            ))}
+          </div>
+          <button className="bag-catalog-carousel__arrow bag-catalog-carousel__arrow--next" onClick={() => scrollCatalog(1)} aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
         </div>
         <div className="bag-catalog-preview__cta">
           <button className="bag-btn bag-btn--ghost" onClick={() => navigate('/marcas')}>
