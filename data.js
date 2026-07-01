@@ -11,6 +11,43 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "d5ibj4d",
+      "slug": "produccion-exclusiva-de-nike-en-montebelluna",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Producción exclusiva de Nike en Montebelluna",
+      "excerpt": "Nos adentramos en la intimidad de la fábrica más prestigioso de la marca del swoosh en Venecia, Italia.",
+      "date": "",
+      "cover": "assets/1782940504327-IMG_0287.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1782940535187-74593F65-EF74-4C0D-B931-85222A2E1FB8.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1782940562300-IMG_0274.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "video",
+          "id": "zk6xwts",
+          "src": "https://youtu.be/geP0DipvW0o?si=WlUAkMDsDrV4Igre"
+        }
+      ],
+      "relatedProduct": {
+        "brand": "nike",
+        "model": "mercurial",
+        "colorwayId": "merc-002"
+      },
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "gbbmtbq",
       "slug": "nike-y-travis-scott-se-unen-para-una-colaboracion-unica",
       "brand": "Nike",
