@@ -394,7 +394,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "1366",
       "imagenCarruselHeight": "768",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -436,7 +436,9 @@ window.BAG_DATA = {
           "height": ""
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true
     },
     {
       "id": "ue3v5y5",
