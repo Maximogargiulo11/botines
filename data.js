@@ -48,7 +48,7 @@ window.BAG_DATA = {
       "imagenCard": "assets/1782863652180-IMG_1281.png",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
-      "imagenCarrusel": "assets/1782858085224-IMG_1164.jpeg",
+      "imagenCarrusel": "assets/1782865125621-IMG_1167.jpeg",
       "imagenCarruselWidth": "1080",
       "imagenCarruselHeight": "1350",
       "coverVideo": "",
@@ -60,6 +60,23 @@ window.BAG_DATA = {
           "type": "image",
           "id": "qqxu99d",
           "src": "assets/1782858136549-IMG_1166.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "r0ugt4u",
+          "left": {
+            "src": "assets/1782865166524-IMG_1226.jpeg"
+          },
+          "right": {
+            "src": "assets/1782865180301-IMG_1224.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "izksb02",
+          "src": "assets/1782865200385-IMG_1254.jpeg",
           "width": "",
           "height": ""
         }
