@@ -249,7 +249,7 @@ window.BAG_DATA = {
       "brand": "Nike",
       "category": "LANZAMIENTO",
       "title": "Nike actualiza el pack ‘Shadow’",
-      "excerpt": "",
+      "excerpt": "Nike re-lanza el pack ‘Shadow’ con las actualizaciones de Mercurial Vapor y Superfly.",
       "date": "23 de Junio de 2026",
       "cover": "assets/1782786194518-1782346699579-IMG_2152.jpeg",
       "coverWidth": "1920",
@@ -266,14 +266,54 @@ window.BAG_DATA = {
       "sizesUK": [],
       "contentBlocks": [
         {
-          "type": "video",
-          "id": "upshr4m",
-          "src": "assets/1782866769883-bf2f442ce3d644bead64b4408d993cf4.mov"
+          "type": "text",
+          "id": "ac32drp",
+          "content": "Como es de ser Nike, además de lanzar el pack de temporada que suele ser en colores llamativos y haciendo contraste con el campo de juego para resaltar, también presenta un pack alternativa para quienes buscan pasar de desapercibido dentro del mismo: este es el pack ‘Shadow’, bañado mayormente en color negro con detalles esta vez en color verde."
         },
         {
-          "type": "video",
-          "id": "i0u450o",
-          "src": "assets/1782866782311-075521b92d1d4e599350119b0f4dc441.mov"
+          "type": "image-pair",
+          "id": "sg9t0xh",
+          "left": {
+            "src": "assets/1782920594033-IMG_2347.jpeg"
+          },
+          "right": {
+            "src": "assets/1782920600085-IMG_2348.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "crqeavc",
+          "left": {
+            "src": "assets/1782920612695-IMG_2349.jpeg"
+          },
+          "right": {
+            "src": "assets/1782920618224-IMG_2350.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "nq9q8lg",
+          "left": {
+            "src": "assets/1782920626197-IMG_2351.jpeg"
+          },
+          "right": {
+            "src": "assets/1782920632112-IMG_2352.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "0m4j2kd",
+          "left": {
+            "src": "assets/1782920641876-IMG_2353.jpeg"
+          },
+          "right": {
+            "src": "assets/1782920648834-IMG_2354.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "gta326b",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": {
