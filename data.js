@@ -522,6 +522,13 @@ window.BAG_DATA = {
         },
         {
           "type": "image",
+          "id": "5nldcpu",
+          "src": "assets/1782945554132-IMG_0714.jpeg",
+          "width": "1080",
+          "height": "1350"
+        },
+        {
+          "type": "image",
           "id": "stf00x4",
           "src": "assets/1781809105993-Sin_ti_tulo_-_12_de_junio_de_2026_a_las_01.27.25-2.png",
           "width": "",
@@ -533,7 +540,10 @@ window.BAG_DATA = {
           "url": "https://www.instagram.com/p/DZffwkEkU0C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "z44j34s",
