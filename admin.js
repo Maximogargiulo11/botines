@@ -285,7 +285,7 @@ function Toast({ message, type, onClose }) {
 // ─────────────────────────────────────────
 // CONTENT BLOCKS EDITOR
 // ─────────────────────────────────────────
-function ContentBlocks({ blocks, onChange, token }) {
+function ContentBlocks({ blocks, onChange, token, products }) {
   const { upload, uploading } = useUpload(token);
   const fileRefs = useRef({});
 
@@ -295,6 +295,7 @@ function ContentBlocks({ blocks, onChange, token }) {
     else if (type === 'image')      b = { type, id: genId(), src: '', width: '', height: '' };
     else if (type === 'image-pair') b = { type, id: genId(), left: { src: '' }, right: { src: '' } };
     else if (type === 'video')      b = { type, id: genId(), src: '' };
+    else if (type === 'product-card') b = { type, id: genId(), brand: '', model: '', colorwayId: '' };
     else                            b = { type, id: genId(), url: '' }; // instagram
     onChange([...blocks, b]);
   };
@@ -316,7 +317,7 @@ function ContentBlocks({ blocks, onChange, token }) {
           <div key={b.id} className={`adm-block adm-block--${b.type}`}>
             <div className="adm-block__handle">
               <span className="adm-block__type">
-                {b.type === 'text' ? 'T' : b.type === 'image' ? '▣' : b.type === 'image-pair' ? '▣▣' : b.type === 'video' ? '▶' : 'IG'}
+                {b.type === 'text' ? 'T' : b.type === 'image' ? '▣' : b.type === 'image-pair' ? '▣▣' : b.type === 'video' ? '▶' : b.type === 'product-card' ? 'P' : 'IG'}
               </span>
               <div className="adm-block__move">
                 <button onClick={() => move(b.id, -1)} disabled={i === 0}>↑</button>
@@ -386,6 +387,15 @@ function ContentBlocks({ blocks, onChange, token }) {
                   ))}
                 </div>
               )}
+              {b.type === 'product-card' && (
+                <div className="adm-block__product-fields">
+                  <RelatedProductPicker
+                    value={b.colorwayId ? { brand: b.brand, model: b.model, colorwayId: b.colorwayId } : null}
+                    onChange={v => upd(b.id, v ? { brand: v.brand, model: v.model, colorwayId: v.colorwayId } : { brand: '', model: '', colorwayId: '' })}
+                    products={products || {}}
+                  />
+                </div>
+              )}
               {b.type === 'video' && (
                 <div className="adm-block__video-fields">
                   <div className="adm-row">
@@ -427,6 +437,7 @@ function ContentBlocks({ blocks, onChange, token }) {
         <Btn variant="ghost" size="sm" onClick={() => add('image-pair')}>+ Dúo</Btn>
         <Btn variant="ghost" size="sm" onClick={() => add('video')}>+ Video</Btn>
         <Btn variant="ghost" size="sm" onClick={() => add('instagram')}>+ Instagram</Btn>
+        <Btn variant="ghost" size="sm" onClick={() => add('product-card')}>+ Producto</Btn>
       </div>
     </div>
   );
@@ -694,7 +705,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
         </div>
         <div className="adm-section">
           <div className="adm-section__title">Contenido del artículo</div>
-          <ContentBlocks blocks={f.contentBlocks} onChange={v => set('contentBlocks', v)} token={token} />
+          <ContentBlocks blocks={f.contentBlocks} onChange={v => set('contentBlocks', v)} token={token} products={(data && data.products) || {}} />
         </div>
       </div>
     </div>

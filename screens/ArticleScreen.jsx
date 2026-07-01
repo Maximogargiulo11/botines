@@ -127,6 +127,28 @@ function ArticleScreen({ slug, navigate }) {
             </figure>
           );
         }
+        if (block.type === 'product-card') {
+          if (!block.brand || !block.model || !block.colorwayId) return null;
+          const list = (BAG_DATA.products[`${block.brand}/${block.model}`] || []);
+          const product = list.find(p => p.id === block.colorwayId);
+          if (!product) return null;
+          return (
+            <div key={block.id || i} className="bag-article-product-card">
+              <div className="bag-article-product-card__media">
+                <img src={product.images?.[0]} alt={product.name} />
+              </div>
+              <div className="bag-article-product-card__body">
+                <div className="bag-eyebrow bag-eyebrow--muted">{block.brand.toUpperCase()}</div>
+                <div className="bag-article-product-card__name">{product.name}</div>
+                <div className="bag-article-product-card__colorway">{product.colorway}</div>
+                <div className="bag-article-product-card__price">{window.formatPrice(product.price)}</div>
+                <button className="bag-btn bag-btn--primary" onClick={() => navigate(`/marcas/${block.brand}/${block.model}/${product.id}`)}>
+                  VER EN CATÁLOGO
+                </button>
+              </div>
+            </div>
+          );
+        }
         if (block.type === 'instagram') {
           return <InstagramEmbed key={block.id || i} url={block.url} />;
         }
