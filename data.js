@@ -383,6 +383,11 @@ window.BAG_DATA = {
       "sizesUK": [],
       "contentBlocks": [
         {
+          "type": "text",
+          "id": "huaqb5f",
+          "content": "El verano de la velocidad ha llegado. ¡Y está sobre nosotros! "
+        },
+        {
           "type": "image-pair",
           "id": "0loxmp6",
           "left": {
@@ -391,6 +396,53 @@ window.BAG_DATA = {
           "right": {
             "src": "assets/1780094647966-Sin_ti_tulo_-_26_de_mayo_de_2026_a_las_20.37.30-2.png"
           }
+        },
+        {
+          "type": "text",
+          "id": "dwbmfya",
+          "content": "Nike se reinventa tecnológicamente y se prepara la Copa Mundial de la FIFA 2026 con la nueva generación de Mercurial: Vapor 17 y Superfly 11."
+        },
+        {
+          "type": "text",
+          "id": "mf1en27",
+          "content": "Primero, echaremos un vistazo al nuevo Vapor 17. El Mercurial más ligero jamás hecho. Construido para el caos de espacios reducidos y momentos de ataque de fuego rápido. Mientras tanto, el Superfly 11 se apoya completamente en la aceleración sostenida y la velocidad de escapada de campo abierto, completa con lo que Nike está llamando el sistema de velocidad más receptivo de la franquicia hasta la fecha. Esa velocidad cruda.\n\nAmbos están moldeados por la innovación de running de Nike, lo cual tiene sentido, ¿verdad? Y con jugadores como Kylian Mbappé, Vini Jr, Cristiano Ronaldo y Sam Kerr todos listos para atarlos, ya sabes que sería imposible que estos se quedaran bajo el radar.\n\n\"En el fútbol, la velocidad no es una estadística, es separación\", explica James Molyneux, Director Senior de Innovación de Calzado de Fútbol en Nike. El juego moderno pide a los jugadores que sean rápidos de diferentes maneras. Es por eso que Mercurial son ahora dos herramientas, cada una construida para ayudar a los atletas a crear espacio cuando más importa\"."
+        },
+        {
+          "type": "image-pair",
+          "id": "34pdsi3",
+          "left": {
+            "src": "assets/1782917125804-IMG_1722.jpeg"
+          },
+          "right": {
+            "src": "assets/1782917143147-IMG_1723.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "1wsdq84",
+          "content": "En el otro lado, se encuentra el Superfly 11 que toma una ruta muy diferente para acelerar. Este está diseñado para jugadores que arman la hierba abierta. Piensa en ese gol de Gareth Bale contra el Barcelona en 2014. Ya sabes, en el que patea la pelota más allá del defensor, sale completamente del campo y aún así llega a la pelota primero y anota. Ese tipo de velocidad."
+        },
+        {
+          "type": "image-pair",
+          "id": "2a560ck",
+          "left": {
+            "src": "assets/1782917234378-IMG_1725.jpeg"
+          },
+          "right": {
+            "src": "assets/1782917254289-IMG_1724.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "o3hfixo",
+          "content": "En el corazón de todo esto hay una unidad Air Zoom externa visible colocada debajo del antepié, diseñada para comprimir y saltar hacia atrás bajo carga. Nike también ha reelaborado la estructura circundante para mejorar la estabilidad sin sacrificar la flexibilidad o la agilidad, mientras que la parte superior FlyWeave Ultra mantiene las cosas ligeras y bloqueadas. Lo que podría ser la diferencia más notable, es que el Superfly se deshace por completo del collar Dynamic Fit, volviendo a una configuración de corte bajo por primera vez desde 2014. Está trayendo de vuelta algo de nostalgia seria de los primeros días de CR7 Real Madrid.\n\n\"El sistema Air Zoom visible está ahí a propósito\", dice Molyneux. “Es la velocidad a la que puedes señalar, y está diseñada para ayudar a los atletas a sentirse seguros de volver a ir, especialmente al final del partido cuando se abre el juego\"."
+        },
+        {
+          "type": "image",
+          "id": "bhgyh9r",
+          "src": "assets/1782917342189-IMG_1727.jpeg",
+          "width": "",
+          "height": ""
         }
       ],
       "relatedProduct": null
