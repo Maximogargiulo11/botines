@@ -442,7 +442,7 @@ window.BAG_DATA = {
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": true
+      "featuredWide": false
     },
     {
       "id": "ue3v5y5",
