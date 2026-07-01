@@ -52,7 +52,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "1080",
       "imagenCarruselHeight": "1350",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -250,7 +250,7 @@ window.BAG_DATA = {
       "title": "De Córdoba a Kansas ¡sin escalas!",
       "excerpt": "\n",
       "date": "12 de Junio de 2026",
-      "cover": "assets/1782770982392-Dise_o_sin_t_tulo__5_.png",
+      "cover": "assets/1782866322804-IMG_0700.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "assets/1781748431139-1781734672334-Sin_ti_tulo_-_17_de_junio_de_2026_a_las_19.13.21.png",
@@ -260,7 +260,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
