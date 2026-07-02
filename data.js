@@ -81,6 +81,11 @@ window.BAG_DATA = {
           "height": ""
         },
         {
+          "type": "video",
+          "id": "8f382r7",
+          "src": "https://youtu.be/RzdgafwmQ34?si=KdGnktInCy1SVbdI"
+        },
+        {
           "type": "text",
           "id": "9o011ba",
           "content": "Disponibles en Botines Alta Gama Córdoba."
