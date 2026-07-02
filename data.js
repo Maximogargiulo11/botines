@@ -240,11 +240,17 @@ window.BAG_DATA = {
           "src": "assets/1782919761802-IMG_2258.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "67flg7s",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
       "showFeaturedOnHome": false,
-      "showInHome": true
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "j2ywn9r",
