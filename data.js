@@ -11,6 +11,41 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "w82a9r1",
+      "slug": "nike-lanza-el-breakout-pack-para-la-copa-mundial-de-la-fifa-2026",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike lanza el ‘Breakout’ Pack para la Copa Mundial de la FIFA 2026.",
+      "excerpt": "La marca del swoosh quiere inundar el campo de juego con un mar de botines rosas.",
+      "date": "28 de Mayo de 2026",
+      "cover": "assets/1783024448942-IMG_0306.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1783024473847-IMG_1739.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1783024487013-IMG_1739.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "nw7t7eo",
+          "src": "",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "8pc2i2k",
       "slug": "scorpion-pack-nike-presenta-una-edicion-especial-de-mercurial",
       "brand": "Nike",
