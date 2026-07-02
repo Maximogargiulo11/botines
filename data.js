@@ -11,6 +11,82 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "8pc2i2k",
+      "slug": "scorpion-pack-nike-presenta-una-edicion-especial-de-mercurial",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "‘Scorpion’ Pack: Nike presenta una edición especial de Mercurial",
+      "excerpt": "Nike prepara una edición especial de Vapor 17 y Superfly 11 haciendo honor al torneo memorable con grandes figuras de 2002: ‘Scorpion’ Pack.",
+      "date": "30 de Junio de 2026",
+      "cover": "assets/1783001794559-IMG_2292.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "u2nd8xo",
+          "src": "assets/1783001839435-IMG_2289.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "k0wfv1f",
+          "left": {
+            "src": "assets/1783001853860-IMG_2288.jpeg"
+          },
+          "right": {
+            "src": "assets/1783001904068-IMG_2290.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "i137oa7",
+          "src": "assets/1783002000920-IMG_2291.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "56k2786",
+          "src": "assets/1783001928610-IMG_2285.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "387da3a",
+          "left": {
+            "src": "assets/1783001940855-IMG_2286.jpeg"
+          },
+          "right": {
+            "src": "assets/1783001952319-IMG_2284.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "ne3dqos",
+          "src": "assets/1783002013212-IMG_2287.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "d5ibj4d",
       "slug": "produccion-exclusiva-de-nike-en-montebelluna",
       "brand": "Nike",
