@@ -35,9 +35,41 @@ window.BAG_DATA = {
         {
           "type": "image",
           "id": "nw7t7eo",
-          "src": "",
+          "src": "assets/1783024760599-B85AC77E-AFA6-4B10-B4CA-D5DC2C33FBB8.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "image",
+          "id": "zzm9d7z",
+          "src": "assets/1783024781126-F307D8B9-277D-4EB7-956B-245BCC412BF3.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "2g9q8if",
+          "left": {
+            "src": "assets/1783024812007-IMG_1743.jpeg"
+          },
+          "right": {
+            "src": "assets/1783024836339-IMG_1742.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "6ycsbc3",
+          "left": {
+            "src": "assets/1783024853305-IMG_1740.jpeg"
+          },
+          "right": {
+            "src": "assets/1783024890107-IMG_1741.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "gmojp8t",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
