@@ -836,6 +836,13 @@ window.BAG_DATA = {
           "content": "En el otro lado, se encuentra el Superfly 11 que toma una ruta muy diferente para acelerar. Este está diseñado para jugadores que arman la hierba abierta. Piensa en ese gol de Gareth Bale contra el Barcelona en 2014. Ya sabes, en el que patea la pelota más allá del defensor, sale completamente del campo y aún así llega a la pelota primero y anota. Ese tipo de velocidad."
         },
         {
+          "type": "image",
+          "id": "n18bdcw",
+          "src": "assets/1783024672179-E61A07DA-7C6F-4A2B-B0D3-1EAA12CF4640.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "image-pair",
           "id": "2a560ck",
           "left": {
@@ -853,12 +860,15 @@ window.BAG_DATA = {
         {
           "type": "image",
           "id": "bhgyh9r",
-          "src": "assets/1782917342189-IMG_1727.jpeg",
+          "src": "assets/1783024727080-E61A07DA-7C6F-4A2B-B0D3-1EAA12CF4640.jpeg",
           "width": "",
           "height": ""
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     }
   ],
   "brands": [
