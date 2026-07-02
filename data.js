@@ -286,6 +286,11 @@ window.BAG_DATA = {
           "src": "assets/1782865200385-IMG_1254.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "efuj2ve",
+          "content": "Sólo 2026 unidades disponibles en la aplicación Nike SNKRS."
         }
       ],
       "relatedProduct": null,
