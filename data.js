@@ -15,7 +15,7 @@ window.BAG_DATA = {
       "slug": "scorpion-pack-nike-presenta-una-edicion-especial-de-mercurial",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "‘Scorpion’ Pack: Nike presenta una edición especial de Mercurial",
+      "title": "‘Scorpion’ Pack: Nike presenta una edición especial de Mercurial.",
       "excerpt": "Nike prepara una edición especial de Vapor 17 y Superfly 11 haciendo honor al torneo memorable con grandes figuras de 2002: ‘Scorpion’ Pack.",
       "date": "30 de Junio de 2026",
       "cover": "assets/1783001794559-IMG_2292.jpeg",
@@ -79,6 +79,11 @@ window.BAG_DATA = {
           "src": "assets/1783002013212-IMG_2287.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9o011ba",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
