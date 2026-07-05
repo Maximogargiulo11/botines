@@ -4,7 +4,7 @@
 
 window.BAG_DATA = {
   "config": {
-    "homepageArticleCount": 10,
+    "homepageArticleCount": 12,
     "typography": {
       "serif": "bebas"
     }
