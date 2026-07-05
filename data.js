@@ -11,6 +11,98 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "o7wlm9h",
+      "slug": "adidas-presenta-el-caos-vs-control-pack-para-el-recorrido-final",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas presenta el ‘Caos vs Control’ Pack para el recorrido final.",
+      "excerpt": "Con la Copa Mundial de la FIFA 2026 en su recorrido final y una nueva temporada a la vuelta de la esquina, Adidas lanza un nuevo paquete diseñado para las etapas más importantes del fútbol.",
+      "date": "04 de Julio de 2026",
+      "cover": "assets/1783214589563-IMG_2408.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1783214611278-IMG_2400.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "4lzzd50",
+          "content": "Con la Copa Mundial de la FIFA 2026 en su recorrido final y una nueva temporada a la vuelta de la esquina, @adidasfootball lanza un nuevo paquete diseñado para las etapas más importantes del fútbol. El ‘Caos vs Control’, una colección que trae nuevos y audaces looks a los silos de la marca: el F50, Predator y Copa.\n\nEn el corazón de la liberación, hay una batalla familiar. Por un lado se encuentra el Predator, construido en torno a la precisión, el control y el dictado del juego. Por otro lado, está la F50: el arma centrada en la velocidad para los jugadores que prosperan en la imprevisibilidad y los momentos de puro caos."
+        },
+        {
+          "type": "image",
+          "id": "29wsbn7",
+          "src": "assets/1783214656515-IMG_2400.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "lmcrjug",
+          "left": {
+            "src": "assets/1783214680806-IMG_2411.jpeg"
+          },
+          "right": {
+            "src": "assets/1783214694568-IMG_2402.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "icj0td4",
+          "left": {
+            "src": "assets/1783214704215-IMG_2401.jpeg"
+          },
+          "right": {
+            "src": "assets/1783214711818-IMG_2409.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "vky9sze",
+          "content": "Más allá de la rivalidad principal, la marca de las tres líneas también lanza looks actualizados para los silos de F50 Sparkfusion y Copa. \n\nEn verdad, el Copa se siente un poco como el miembro olvidado de la familia acá. Toda la narrativa de marketing gira en torno a la batalla entre el caos y el control, con el F50 y el Predator naturalmente elegidos como los personajes principales. Incluso el nombre del paquete en sí refuerza esa historia, dejando a el Copa algo eclipsada a pesar de recibir su propia actualización fresca."
+        },
+        {
+          "type": "image-pair",
+          "id": "y8vaywc",
+          "left": {
+            "src": "assets/1783214821576-IMG_2413.jpeg"
+          },
+          "right": {
+            "src": "assets/1783214827229-IMG_2412.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "sg02x68",
+          "src": "assets/1783214835515-IMG_1469.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "3j1y7zd",
+          "content": "A medida que la Copa del Mundo llega a su cierre y los jugadores comienzan a prepararse para la nueva temporada, espere ver a muchos de los nombres más importantes del juego con este último pack."
+        },
+        {
+          "type": "text",
+          "id": "n2kr0vb",
+          "content": "Disponibles a partir del Miércoles 08 de Julio en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "w82a9r1",
       "slug": "nike-lanza-el-breakout-pack-para-la-copa-mundial-de-la-fifa-2026",
       "brand": "Nike",
