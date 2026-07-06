@@ -3929,6 +3929,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’ Pack"
         }
+      },
+      {
+        "id": "j1dvoh9",
+        "name": "Adidas Copa Pure 4 Elite LL FG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "11.5",
+            "11",
+            "10.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359952403-635ed2a6-88dc-4ad8-a69b-83e296becfe3.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’"
+        }
       }
     ],
     "puma/future": [
