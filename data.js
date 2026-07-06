@@ -3494,6 +3494,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Ice Cold Precision’"
         }
+      },
+      {
+        "id": "wd1fi7l",
+        "name": "Adidas Predator Elite FG",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "11",
+            "10.5",
+            "10",
+            "11.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359519274-5eca425d-d4d5-40b3-8bf0-83a0b403e931.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
       }
     ],
     "adidas/copa": [
