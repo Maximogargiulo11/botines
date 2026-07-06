@@ -1779,6 +1779,48 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Air Max 95’ Pack"
         }
+      },
+      {
+        "id": "yxkusk9",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Violeta / Naranja",
+        "color": "#99244f",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8.5",
+            "9",
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360973677-d7630abc-e6fe-4f48-9358-ae3be647b0d4.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Scary Good’ Pack"
+        }
       }
     ],
     "nike/phantom": [
