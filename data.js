@@ -2807,6 +2807,60 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
+      },
+      {
+        "id": "8zf1pgt",
+        "name": "Adidas F50 Hyperfast Elite LL SG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 539999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358226004-IMG_2365.jpeg",
+          "assets/1783358234493-IMG_2366.jpeg",
+          "assets/1783358242235-IMG_2367.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "adidas/predator": [
@@ -3070,6 +3124,59 @@ window.BAG_DATA = {
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "0ozmk3r",
+        "name": "Adidas Predator Elite LL FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 579999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358322655-IMG_2378.jpeg",
+          "assets/1783358335158-IMG_2379.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme ",
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
