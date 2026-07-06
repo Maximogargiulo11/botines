@@ -3981,6 +3981,46 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’"
         }
+      },
+      {
+        "id": "fu9ghr6",
+        "name": "Adidas Copa Pure 4 Elite SG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 539999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360088196-4751e904-d1a9-41ee-98f4-6a086a5deeac.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
       }
     ],
     "puma/future": [
