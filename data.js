@@ -3724,6 +3724,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Finisher Steel’ Pack"
         }
+      },
+      {
+        "id": "qqknisf",
+        "name": "Adidas Predator Elite FT FG ",
+        "colorway": "Negro / Rojo / Blanco",
+        "color": "#000000",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360467925-IMG_1542.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Inmortal DNA’ Pack"
+        }
       }
     ],
     "adidas/copa": [
