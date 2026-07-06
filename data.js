@@ -3678,6 +3678,52 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Jude Bellingham’ Pack"
         }
+      },
+      {
+        "id": "tyymirx",
+        "name": "Adidas Predator Elite FT FG ",
+        "colorway": "Gris / Rojo",
+        "color": "#333333",
+        "price": 0,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "11",
+            "10",
+            "9.5",
+            "9",
+            "7.5",
+            "8",
+            "8.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360337644-6240b043-d9fd-40d8-a804-1d662be198d7.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Finisher Steel’ Pack"
+        }
       }
     ],
     "adidas/copa": [
