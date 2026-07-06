@@ -1671,7 +1671,7 @@ window.BAG_DATA = {
           "suela": "FG",
           "terreno": "Césped natural firme ",
           "peso": "186 gr.",
-          "coleccion": "‘Shadow’ (actualizado)"
+          "coleccion": "‘Shadow’ Pack (actualizado)"
         }
       }
     ],
