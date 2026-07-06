@@ -3877,6 +3877,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Ice Cold Precision’ Pack"
         }
+      },
+      {
+        "id": "lssr1av",
+        "name": "Adidas Copa Pure 4 Elite FG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359845255-95f64e50-1872-45c6-badc-2ac03e29141f.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
       }
     ],
     "puma/future": [
