@@ -3390,6 +3390,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
+      },
+      {
+        "id": "kri9m6v",
+        "name": "Adidas Predator Elite FG",
+        "colorway": "Blanco / Azul",
+        "color": "#ffffff",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359255083-e759afab-9352-476e-b434-18adf63a7543.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
       }
     ],
     "adidas/copa": [
