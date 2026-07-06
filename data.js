@@ -2899,6 +2899,110 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
+      },
+      {
+        "id": "11ix4dj",
+        "name": "Adidas Copa Pure 4 Elite FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 549999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783345206491-IMG_2383.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "q8p8dau",
+        "name": "Adidas Copa Pure 4 Elite LL FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 569999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783345289172-IMG_2382.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "puma/future": [
