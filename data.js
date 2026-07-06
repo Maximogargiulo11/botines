@@ -2432,6 +2432,48 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Luxe’ Pack"
         }
+      },
+      {
+        "id": "vjysvmi",
+        "name": "Nike Tiempo Legend 10 Elite FG",
+        "colorway": "Gris / Rojo",
+        "color": "#858585",
+        "price": 429999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "10",
+            "10.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360876506-45ee21c6-5794-443b-9f7e-ff49f50318a7.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Scary Good’"
+        }
       }
     ],
     "adidas/f50": [
