@@ -2714,6 +2714,59 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
         }
+      },
+      {
+        "id": "y1dafn9",
+        "name": "Adidas Predator Elite FG",
+        "colorway": "Blanco ",
+        "color": "#ffffff",
+        "price": 479999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344842525-IMG_2380.jpeg",
+          "assets/1783344934518-IMG_2381.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "adidas/copa": [
