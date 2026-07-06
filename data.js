@@ -1865,6 +1865,50 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Déjà Vu’ Pack"
         }
+      },
+      {
+        "id": "489coyh",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Negro / Celeste",
+        "color": "#000000",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "10",
+            "11"
+          ],
+          "uk": [
+            "9",
+            "10"
+          ]
+        },
+        "images": [
+          "assets/1783361334710-98be79d7-a12e-49c2-b919-5271cc9d6958.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack"
+        }
       }
     ],
     "nike/phantom": [
