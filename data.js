@@ -2753,6 +2753,60 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
+      },
+      {
+        "id": "a5ng20z",
+        "name": "Adidas F50 Hyperfast Elite SG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 639999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358103436-IMG_2368.jpeg",
+          "assets/1783358114269-IMG_2369.jpeg",
+          "assets/1783358123885-IMG_2370.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG ",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "adidas/predator": [
