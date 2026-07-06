@@ -3546,6 +3546,46 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’ Pack"
         }
+      },
+      {
+        "id": "6mrpnve",
+        "name": "Adidas Predator Elite LL FG ",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359592782-b2759732-aa83-4294-9b38-07d15c395d22.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
       }
     ],
     "adidas/copa": [
