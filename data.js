@@ -2861,6 +2861,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
+      },
+      {
+        "id": "zmxndlc",
+        "name": "Adidas F50 Elite FG",
+        "colorway": "Azul / Amarillo",
+        "color": "#0045cd",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "8.5",
+            "8",
+            "7.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358872255-b5a044fd-73b4-4d58-b124-366b435d25e1.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
       }
     ],
     "adidas/predator": [
