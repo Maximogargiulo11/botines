@@ -2392,6 +2392,46 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack (actualizado)"
         }
+      },
+      {
+        "id": "oo511q6",
+        "name": "Nike Tiempo Legend X Elite FG Made In ITALY",
+        "colorway": "Gris",
+        "color": "#d6d6d6",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360772603-db09d980-6b79-499a-8108-835c0daf585a.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Luxe’ Pack"
+        }
       }
     ],
     "adidas/f50": [
