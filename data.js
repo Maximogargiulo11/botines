@@ -2913,6 +2913,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Ice Cold Precision’ Pack"
         }
+      },
+      {
+        "id": "xymdwgx",
+        "name": "Adidas F50 Elite LL FG",
+        "colorway": "Azul / Amarillo",
+        "color": "#006fe6",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358992962-01f67772-bbab-410e-a5ac-5694a03de6d6.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
       }
     ],
     "adidas/predator": [
