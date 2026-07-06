@@ -3017,6 +3017,52 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’ Pack"
         }
+      },
+      {
+        "id": "icw5ijd",
+        "name": "Adidas F50 Hyperfast Elite FG",
+        "colorway": "Amarillo / Naranja",
+        "color": "#fefb41",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7.5",
+            "8.5",
+            "9.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360559845-IMG_1218.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘To Light’ Pack"
+        }
       }
     ],
     "adidas/predator": [
