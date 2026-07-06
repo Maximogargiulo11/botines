@@ -2461,6 +2461,55 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
+      },
+      {
+        "id": "builiun",
+        "name": "Adidas F50 Hyperfast Elite LL FG",
+        "colorway": "Blanco ",
+        "color": "#ffffff",
+        "price": 489999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344475001-IMG_2373.jpeg",
+          "assets/1783344483019-IMG_2374.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "adidas/predator": [
