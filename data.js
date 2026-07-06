@@ -2394,6 +2394,73 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
         }
+      },
+      {
+        "id": "w5nniil",
+        "name": "Adidas F50 Hyperfast Elite FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 479999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "12",
+            "11.5",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1783344368652-IMG_2376.jpeg",
+          "assets/1783344377754-IMG_2377.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "adidas/predator": [
