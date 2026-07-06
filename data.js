@@ -2965,6 +2965,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Ice Cold Precision’ Pack"
         }
+      },
+      {
+        "id": "j85bjeb",
+        "name": "Adidas F50 Elite FG",
+        "colorway": "Amarillo",
+        "color": "#fbfb00",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359178338-3f1c0378-6248-4ad7-9a07-9507f39b1eb1.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
       }
     ],
     "adidas/predator": [
