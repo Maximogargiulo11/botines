@@ -2414,6 +2414,50 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’ Pack"
         }
+      },
+      {
+        "id": "7v11nwj",
+        "name": "Nike Phantom 6 Low Elite FG",
+        "colorway": "Negro / Celeste",
+        "color": "#000000",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9",
+            "11"
+          ],
+          "uk": [
+            "8",
+            "10"
+          ]
+        },
+        "images": [
+          "assets/1783361245631-4c7ec8e9-95bb-4e2d-a833-11417708c7f1.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack"
+        }
       }
     ],
     "nike/tiempo": [
