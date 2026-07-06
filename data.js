@@ -1536,6 +1536,77 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Scorpion’"
         }
+      },
+      {
+        "id": "7qkhu1y",
+        "name": "Nike Mercurial Superfly 11 Elite FG",
+        "colorway": "Rosa / Violeta",
+        "color": "#982abc",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1783357564121-IMG_1362.jpeg",
+          "assets/1783357577773-IMG_1363.jpeg",
+          "assets/1783357587510-IMG_1358.jpeg",
+          "assets/1783357624261-IMG_1359.jpeg",
+          "assets/1783357642876-IMG_1360.jpeg",
+          "assets/1783357652781-IMG_1361.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Scorpion’ Pack"
+        }
       }
     ],
     "nike/phantom": [
