@@ -2496,6 +2496,60 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Caos vs Control’ Pack"
         }
+      },
+      {
+        "id": "4fdhw7d",
+        "name": "Adidas F50 Hyperfast Evo FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 58999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "9.5",
+            "9",
+            "8.5",
+            "10",
+            "10.5",
+            "12",
+            "11.5",
+            "11",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344690706-IMG_2359.jpeg",
+          "assets/1783344706215-IMG_2364.jpeg",
+          "assets/1783344718950-IMG_2360.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
       }
     ],
     "adidas/predator": [
