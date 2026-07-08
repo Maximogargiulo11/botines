@@ -109,10 +109,10 @@ function CheckoutScreen({ cart, navigate }) {
             <form className="bag-checkout__form" onSubmit={handleNext}>
               <div className="bag-checkout__row">
                 <CheckoutField label="Nombre" error={errors.nombre}>
-                  <input value={form.nombre} onChange={e => updateField('nombre', e.target.value)} />
+                  <input value={form.nombre} onChange={e => updateField('nombre', e.target.value)} autoComplete="given-name" />
                 </CheckoutField>
                 <CheckoutField label="Apellido" error={errors.apellido}>
-                  <input value={form.apellido} onChange={e => updateField('apellido', e.target.value)} />
+                  <input value={form.apellido} onChange={e => updateField('apellido', e.target.value)} autoComplete="family-name" />
                 </CheckoutField>
               </div>
               <CheckoutField label="DNI" error={errors.dni}>
@@ -120,25 +120,25 @@ function CheckoutScreen({ cart, navigate }) {
               </CheckoutField>
               <div className="bag-checkout__row">
                 <CheckoutField label="Provincia" error={errors.provincia}>
-                  <select value={form.provincia} onChange={e => updateField('provincia', e.target.value)}>
+                  <select value={form.provincia} onChange={e => updateField('provincia', e.target.value)} autoComplete="address-level1">
                     <option value="">Elegí tu provincia</option>
                     {PROVINCIAS_AR.map(p => <option key={p} value={p}>{p}</option>)}
                   </select>
                 </CheckoutField>
                 <CheckoutField label="Localidad" error={errors.localidad}>
-                  <input value={form.localidad} onChange={e => updateField('localidad', e.target.value)} />
+                  <input value={form.localidad} onChange={e => updateField('localidad', e.target.value)} autoComplete="address-level2" />
                 </CheckoutField>
               </div>
               <div className="bag-checkout__row">
                 <CheckoutField label="Dirección" error={errors.direccion}>
-                  <input value={form.direccion} onChange={e => updateField('direccion', e.target.value)} placeholder="Calle y número" />
+                  <input value={form.direccion} onChange={e => updateField('direccion', e.target.value)} placeholder="Calle y número" autoComplete="street-address" />
                 </CheckoutField>
                 <CheckoutField label="Código Postal" error={errors.codigoPostal}>
-                  <input value={form.codigoPostal} onChange={e => updateField('codigoPostal', e.target.value)} inputMode="numeric" placeholder="Ej. 5000" />
+                  <input value={form.codigoPostal} onChange={e => updateField('codigoPostal', e.target.value)} inputMode="numeric" placeholder="Ej. 5000" autoComplete="postal-code" />
                 </CheckoutField>
               </div>
               <CheckoutField label="Celular" error={errors.celular}>
-                <input value={form.celular} onChange={e => updateField('celular', e.target.value)} type="tel" placeholder="Ej. 3511234567" />
+                <input value={form.celular} onChange={e => updateField('celular', e.target.value)} type="tel" placeholder="Ej. 3511234567" autoComplete="tel" />
               </CheckoutField>
               <CheckoutField label="Descripción (opcional)">
                 <textarea value={form.descripcion} onChange={e => updateField('descripcion', e.target.value)} rows={3} placeholder="Referencias de entrega, horarios, etc." />

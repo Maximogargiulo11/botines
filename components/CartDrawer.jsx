@@ -62,7 +62,7 @@ function CartDrawer({ open, onClose, items, onRemove, navigate, clearCart }) {
               <span className="bag-cart__subtotal-value">{window.formatPrice(subtotal)}</span>
             </div>
             <div className="bag-shipping-banner">🚚 Envío gratis</div>
-            <button className="bag-btn bag-btn--primary bag-btn--block" onClick={goToCheckout}>
+            <button className="bag-btn bag-btn--primary bag-btn--block" onClick={(e) => { e.currentTarget.blur(); goToCheckout(); }}>
               IR A PAGAR
             </button>
             <div className="bag-payopts">
