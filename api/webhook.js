@@ -21,6 +21,19 @@ module.exports = async function handler(req, res) {
 
     const payment = await mpRes.json();
 
+    const meta = payment.metadata || {};
+    const shipping = meta.nombre ? {
+      nombre: meta.nombre,
+      apellido: meta.apellido,
+      dni: meta.dni,
+      provincia: meta.provincia,
+      localidad: meta.localidad,
+      direccion: meta.direccion,
+      codigoPostal: meta.codigo_postal,
+      celular: meta.celular,
+      descripcion: meta.descripcion || '',
+    } : null;
+
     const order = {
       id: Math.random().toString(36).slice(2, 9),
       mp_payment_id: String(payment.id),
@@ -29,6 +42,7 @@ module.exports = async function handler(req, res) {
       date: new Date().toISOString(),
       payer_name: `${payment.payer?.first_name || ''} ${payment.payer?.last_name || ''}`.trim(),
       payer_email: payment.payer?.email || '',
+      shipping,
       items: (payment.additional_info?.items || []).map(it => ({
         id: it.id,
         title: it.title,
