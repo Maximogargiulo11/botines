@@ -3042,7 +3042,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Evo FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 58999,
+        "price": 589999,
         "availableSizes": [],
         "sizes": {
           "eu": [
