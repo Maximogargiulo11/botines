@@ -12,8 +12,14 @@ module.exports = async function handler(req, res) {
     return res.status(500).json({ error: 'Configuración de pago incompleta' });
   }
 
-  const { items } = req.body || {};
+  const { items, shipping } = req.body || {};
   if (!items || !items.length) return res.status(400).json({ error: 'El carrito está vacío' });
+
+  const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
+  const missingFields = REQUIRED_SHIPPING_FIELDS.filter(f => !shipping || !String(shipping[f] || '').trim());
+  if (missingFields.length) {
+    return res.status(400).json({ error: `Faltan datos de envío: ${missingFields.join(', ')}` });
+  }
 
   const preference = {
     items: items.map(item => ({
@@ -24,6 +30,17 @@ module.exports = async function handler(req, res) {
       currency_id: 'ARS',
       ...(item.image ? { picture_url: `${SITE_URL}/${item.image}` } : {}),
     })),
+    metadata: {
+      nombre: shipping.nombre,
+      apellido: shipping.apellido,
+      dni: shipping.dni,
+      provincia: shipping.provincia,
+      localidad: shipping.localidad,
+      direccion: shipping.direccion,
+      codigo_postal: shipping.codigoPostal,
+      celular: shipping.celular,
+      descripcion: shipping.descripcion || '',
+    },
     back_urls: {
       success: `${SITE_URL}/#/pago-exitoso`,
       failure: `${SITE_URL}/#/pago-fallido`,
