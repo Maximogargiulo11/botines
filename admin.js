@@ -1228,6 +1228,14 @@ function OrdersSection() {
                   <div className="adm-order-row__items">
                     {(o.items || []).map((it, i) => <span key={i}>{it.title}{i < o.items.length - 1 ? ' / ' : ''}</span>)}
                   </div>
+                  {o.shipping && (
+                    <div className="adm-order-row__shipping">
+                      <div>{o.shipping.nombre} {o.shipping.apellido} · DNI {o.shipping.dni}</div>
+                      <div>{o.shipping.direccion}, {o.shipping.localidad}, {o.shipping.provincia} (CP {o.shipping.codigoPostal})</div>
+                      <div>Cel: {o.shipping.celular}</div>
+                      {o.shipping.descripcion && <div>Nota: {o.shipping.descripcion}</div>}
+                    </div>
+                  )}
                 </div>
                 <div className="adm-order-row__meta">
                   <div className="adm-order-row__amount">{fmt(o.amount)}</div>

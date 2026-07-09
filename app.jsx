@@ -1,6 +1,6 @@
 /* global React, ReactDOM, BAG_DATA */
 /* global Navbar, Footer, CartDrawer */
-/* global HomeScreen, ArticleScreen, BrandsScreen, BrandScreen, ModelScreen, ProductScreen, PoliticaScreen, FaqScreen */
+/* global HomeScreen, ArticleScreen, BrandsScreen, BrandScreen, ModelScreen, ProductScreen, PoliticaScreen, FaqScreen, CheckoutScreen */
 /* global useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakColor */
 
 const { useState, useEffect, useMemo } = React;
@@ -89,6 +89,7 @@ function App() {
   else if (parts[0] === 'marcas' && parts[3]) screen = <ProductScreen brandSlug={parts[1]} modelSlug={parts[2]} productId={parts[3]} navigate={navigate} addToCart={addToCart} />;
   else if (parts[0] === 'politica-cambios') screen = <PoliticaScreen navigate={navigate} />;
   else if (parts[0] === 'faq') screen = <FaqScreen navigate={navigate} />;
+  else if (parts[0] === 'checkout') screen = <CheckoutScreen cart={cart} navigate={navigate} />;
   else if (parts[0] === 'pago-exitoso')  screen = <PaymentResultScreen status="exitoso"  navigate={navigate} clearCart={clearCart} />;
   else if (parts[0] === 'pago-fallido')  screen = <PaymentResultScreen status="fallido"  navigate={navigate} />;
   else if (parts[0] === 'pago-pendiente') screen = <PaymentResultScreen status="pendiente" navigate={navigate} />;
