@@ -4,12 +4,294 @@
 
 window.BAG_DATA = {
   "config": {
-    "homepageArticleCount": 8,
+    "homepageArticleCount": 12,
     "typography": {
       "serif": "bebas"
     }
   },
   "articles": [
+    {
+      "id": "o7wlm9h",
+      "slug": "adidas-presenta-el-caos-vs-control-pack-para-el-recorrido-final",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas presenta el ‘Caos vs Control’ Pack para el recorrido final.",
+      "excerpt": "Con la Copa Mundial de la FIFA 2026 en su recorrido final y una nueva temporada a la vuelta de la esquina, Adidas lanza un nuevo paquete diseñado para las etapas más importantes del fútbol.",
+      "date": "04 de Julio de 2026",
+      "cover": "assets/1783214589563-IMG_2408.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1783215383849-IMG_2400.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "4lzzd50",
+          "content": "Con la Copa Mundial de la FIFA 2026 en su recorrido final y una nueva temporada a la vuelta de la esquina, @adidasfootball lanza un nuevo paquete diseñado para las etapas más importantes del fútbol. El ‘Caos vs Control’, una colección que trae nuevos y audaces looks a los silos de la marca: el F50, Predator y Copa.\n\nEn el corazón de la liberación, hay una batalla familiar. Por un lado se encuentra el Predator, construido en torno a la precisión, el control y el dictado del juego. Por otro lado, está la F50: el arma centrada en la velocidad para los jugadores que prosperan en la imprevisibilidad y los momentos de puro caos."
+        },
+        {
+          "type": "image",
+          "id": "29wsbn7",
+          "src": "assets/1783214656515-IMG_2400.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "lmcrjug",
+          "left": {
+            "src": "assets/1783214680806-IMG_2411.jpeg"
+          },
+          "right": {
+            "src": "assets/1783214694568-IMG_2402.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "icj0td4",
+          "left": {
+            "src": "assets/1783214704215-IMG_2401.jpeg"
+          },
+          "right": {
+            "src": "assets/1783214711818-IMG_2409.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "vky9sze",
+          "content": "Más allá de la rivalidad principal, la marca de las tres líneas también lanza looks actualizados para los silos de F50 Sparkfusion y Copa. \n\nEn verdad, el Copa se siente un poco como el miembro olvidado de la familia acá. Toda la narrativa de marketing gira en torno a la batalla entre el caos y el control, con el F50 y el Predator naturalmente elegidos como los personajes principales. Incluso el nombre del paquete en sí refuerza esa historia, dejando a el Copa algo eclipsada a pesar de recibir su propia actualización fresca."
+        },
+        {
+          "type": "image-pair",
+          "id": "y8vaywc",
+          "left": {
+            "src": "assets/1783214821576-IMG_2413.jpeg"
+          },
+          "right": {
+            "src": "assets/1783214827229-IMG_2412.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "sg02x68",
+          "src": "assets/1783214835515-IMG_1469.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "3j1y7zd",
+          "content": "A medida que la Copa del Mundo llega a su cierre y los jugadores comienzan a prepararse para la nueva temporada, espere ver a muchos de los nombres más importantes del juego con este último pack."
+        },
+        {
+          "type": "text",
+          "id": "n2kr0vb",
+          "content": "Disponibles a partir del Miércoles 08 de Julio en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "w82a9r1",
+      "slug": "nike-lanza-el-breakout-pack-para-la-copa-mundial-de-la-fifa-2026",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike lanza el ‘Breakout’ Pack para la Copa Mundial de la FIFA 2026.",
+      "excerpt": "La marca del swoosh quiere inundar el campo de juego con un mar de botines rosas.",
+      "date": "28 de Mayo de 2026",
+      "cover": "assets/1783024448942-IMG_0306.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1783024473847-IMG_1739.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1783024487013-IMG_1739.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "nw7t7eo",
+          "src": "assets/1783024760599-B85AC77E-AFA6-4B10-B4CA-D5DC2C33FBB8.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "zzm9d7z",
+          "src": "assets/1783024781126-F307D8B9-277D-4EB7-956B-245BCC412BF3.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "2g9q8if",
+          "left": {
+            "src": "assets/1783024812007-IMG_1743.jpeg"
+          },
+          "right": {
+            "src": "assets/1783024836339-IMG_1742.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "6ycsbc3",
+          "left": {
+            "src": "assets/1783024853305-IMG_1740.jpeg"
+          },
+          "right": {
+            "src": "assets/1783024890107-IMG_1741.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "gmojp8t",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "8pc2i2k",
+      "slug": "scorpion-pack-nike-presenta-una-edicion-especial-de-mercurial",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "‘Scorpion’ Pack: Nike presenta una edición especial de Mercurial.",
+      "excerpt": "Nike prepara una edición especial de Vapor 17 y Superfly 11 haciendo honor al torneo memorable con grandes figuras de 2002: ‘Scorpion’ Pack.",
+      "date": "30 de Junio de 2026",
+      "cover": "assets/1783001794559-IMG_2292.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "u2nd8xo",
+          "src": "assets/1783001839435-IMG_2289.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "k0wfv1f",
+          "left": {
+            "src": "assets/1783001853860-IMG_2288.jpeg"
+          },
+          "right": {
+            "src": "assets/1783001904068-IMG_2290.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "i137oa7",
+          "src": "assets/1783002000920-IMG_2291.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "56k2786",
+          "src": "assets/1783001928610-IMG_2285.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "387da3a",
+          "left": {
+            "src": "assets/1783001940855-IMG_2286.jpeg"
+          },
+          "right": {
+            "src": "assets/1783001952319-IMG_2284.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "ne3dqos",
+          "src": "assets/1783002013212-IMG_2287.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "8f382r7",
+          "src": "https://youtu.be/RzdgafwmQ34?si=KdGnktInCy1SVbdI"
+        },
+        {
+          "type": "text",
+          "id": "9o011ba",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "d5ibj4d",
+      "slug": "produccion-exclusiva-de-nike-en-montebelluna",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Producción exclusiva de Nike en Montebelluna.",
+      "excerpt": "Nos adentramos en la intimidad de la fábrica más prestigioso de la marca del swoosh en Venecia, Italia.",
+      "date": "",
+      "cover": "assets/1782946053418-IMG_2086.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1782946096085-IMG_2095.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1782946107266-IMG_2090.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "video",
+          "id": "zk6xwts",
+          "src": "https://youtu.be/geP0DipvW0o?si=WlUAkMDsDrV4Igre"
+        }
+      ],
+      "relatedProduct": {
+        "brand": "nike",
+        "model": "mercurial",
+        "colorwayId": "merc-002"
+      },
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
     {
       "id": "gbbmtbq",
       "slug": "nike-y-travis-scott-se-unen-para-una-colaboracion-unica",
@@ -24,7 +306,7 @@ window.BAG_DATA = {
       "imagenCard": "assets/1782918449501-IMG_2250.jpeg",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
-      "imagenCarrusel": "assets/1782918469301-IMG_2254.jpeg",
+      "imagenCarrusel": "assets/1783216077111-IMG_2257.jpeg",
       "imagenCarruselWidth": "1080",
       "imagenCarruselHeight": "1350",
       "coverVideo": "",
@@ -117,11 +399,17 @@ window.BAG_DATA = {
           "src": "assets/1782919761802-IMG_2258.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "67flg7s",
+          "content": "Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
       "showFeaturedOnHome": false,
-      "showInHome": true
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "j2ywn9r",
@@ -168,9 +456,17 @@ window.BAG_DATA = {
           "src": "assets/1782865200385-IMG_1254.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "efuj2ve",
+          "content": "Sólo 2026 unidades disponibles en la aplicación Nike SNKRS."
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": true
     },
     {
       "id": "kavbn26",
@@ -180,10 +476,10 @@ window.BAG_DATA = {
       "title": "Oro para la historia: legado puro.",
       "excerpt": "Nike lanza un edición especial de Mercurial para celebrar el récord de la Copa del Mundo de CR7.",
       "date": "23 de Junio de 2026",
-      "cover": "assets/1782864648272-IMG_2162.jpeg",
+      "cover": "assets/1782945683102-IMG_2160.jpeg",
       "coverWidth": "",
       "coverHeight": "",
-      "imagenCard": "assets/1782920685654-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
+      "imagenCard": "assets/1782945698821-IMG_2162.jpeg",
       "imagenCardWidth": "1080",
       "imagenCardHeight": "1350",
       "imagenCarrusel": "assets/1782865075028-B374106B-5CFC-4DCE-9E74-73C58F976899.jpeg",
@@ -295,7 +591,10 @@ window.BAG_DATA = {
           "url": "https://www.instagram.com/p/DZ76oS7m4G0/?igsh=MXd0NTJkNG94b2l2MA=="
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "oxx26w4",
@@ -436,7 +735,10 @@ window.BAG_DATA = {
           "height": ""
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "ue3v5y5",
@@ -456,7 +758,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -479,6 +781,13 @@ window.BAG_DATA = {
         },
         {
           "type": "image",
+          "id": "5nldcpu",
+          "src": "assets/1782945554132-IMG_0714.jpeg",
+          "width": "1080",
+          "height": "1350"
+        },
+        {
+          "type": "image",
           "id": "stf00x4",
           "src": "assets/1781809105993-Sin_ti_tulo_-_12_de_junio_de_2026_a_las_01.27.25-2.png",
           "width": "",
@@ -490,7 +799,10 @@ window.BAG_DATA = {
           "url": "https://www.instagram.com/p/DZffwkEkU0C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "z44j34s",
@@ -648,6 +960,13 @@ window.BAG_DATA = {
           "content": "En el otro lado, se encuentra el Superfly 11 que toma una ruta muy diferente para acelerar. Este está diseñado para jugadores que arman la hierba abierta. Piensa en ese gol de Gareth Bale contra el Barcelona en 2014. Ya sabes, en el que patea la pelota más allá del defensor, sale completamente del campo y aún así llega a la pelota primero y anota. Ese tipo de velocidad."
         },
         {
+          "type": "image",
+          "id": "n18bdcw",
+          "src": "assets/1783024672179-E61A07DA-7C6F-4A2B-B0D3-1EAA12CF4640.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "image-pair",
           "id": "2a560ck",
           "left": {
@@ -665,12 +984,15 @@ window.BAG_DATA = {
         {
           "type": "image",
           "id": "bhgyh9r",
-          "src": "assets/1782917342189-IMG_1727.jpeg",
+          "src": "assets/1783024727080-E61A07DA-7C6F-4A2B-B0D3-1EAA12CF4640.jpeg",
           "width": "",
           "height": ""
         }
       ],
-      "relatedProduct": null
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     }
   ],
   "brands": [
@@ -1214,6 +1536,379 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Scorpion’"
         }
+      },
+      {
+        "id": "7qkhu1y",
+        "name": "Nike Mercurial Superfly 11 Elite FG",
+        "colorway": "Rosa / Violeta",
+        "color": "#982abc",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1783357564121-IMG_1362.jpeg",
+          "assets/1783357577773-IMG_1363.jpeg",
+          "assets/1783357587510-IMG_1358.jpeg",
+          "assets/1783357624261-IMG_1359.jpeg",
+          "assets/1783357642876-IMG_1360.jpeg",
+          "assets/1783357652781-IMG_1361.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Scorpion’ Pack"
+        }
+      },
+      {
+        "id": "z7n1eb9",
+        "name": "Nike Mercurial Superfly 11 Elite FG",
+        "colorway": "Negro / Verde",
+        "color": "#0eef00",
+        "price": 699999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1783357774071-IMG_2184.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack (actualizado)"
+        }
+      },
+      {
+        "id": "imltcr3",
+        "name": "Nike Mercurial Superfly 11 Elite SG-Pro Player Edition",
+        "colorway": "Negro / Verde",
+        "color": "#16df00",
+        "price": 729999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1783357908968-IMG_2183.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando ",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack (actualizado)"
+        }
+      },
+      {
+        "id": "3fymgtc",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360680407-6a0b896a-a2f5-411d-b4d8-fb367ce89c1f.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Air Max 95’ Pack"
+        }
+      },
+      {
+        "id": "yxkusk9",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Violeta / Naranja",
+        "color": "#99244f",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8.5",
+            "9",
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360973677-d7630abc-e6fe-4f48-9358-ae3be647b0d4.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Scary Good’ Pack"
+        }
+      },
+      {
+        "id": "zx3r7pd",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Naranja ",
+        "color": "#ff4015",
+        "price": 499999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "10",
+            "10.5"
+          ],
+          "uk": [
+            "9",
+            "9.5"
+          ]
+        },
+        "images": [
+          "assets/1783361178883-IMG_8029.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Déjà Vu’ Pack"
+        }
+      },
+      {
+        "id": "489coyh",
+        "name": "Nike Mercurial Vapor 16 Elite FG",
+        "colorway": "Negro / Celeste",
+        "color": "#000000",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "10",
+            "11"
+          ],
+          "uk": [
+            "9",
+            "10"
+          ]
+        },
+        "images": [
+          "assets/1783361334710-98be79d7-a12e-49c2-b919-5271cc9d6958.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack"
+        }
       }
     ],
     "nike/phantom": [
@@ -1722,6 +2417,91 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Cactus Jack’ "
         }
+      },
+      {
+        "id": "p4h419m",
+        "name": "Nike Phantom 6 Low Elite FG",
+        "colorway": "Naranja / Gris",
+        "color": "#ff4015",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783361072728-eb28ea61-899e-46bc-bb1c-8e61ce97b661.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Scary Good’ Pack"
+        }
+      },
+      {
+        "id": "7v11nwj",
+        "name": "Nike Phantom 6 Low Elite FG",
+        "colorway": "Negro / Celeste",
+        "color": "#000000",
+        "price": 459999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9",
+            "11"
+          ],
+          "uk": [
+            "8",
+            "10"
+          ]
+        },
+        "images": [
+          "assets/1783361245631-4c7ec8e9-95bb-4e2d-a833-11417708c7f1.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Shadow’ Pack"
+        }
       }
     ],
     "nike/tiempo": [
@@ -1827,6 +2607,88 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack (actualizado)"
         }
+      },
+      {
+        "id": "oo511q6",
+        "name": "Nike Tiempo Legend X Elite FG Made In ITALY",
+        "colorway": "Gris",
+        "color": "#d6d6d6",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360772603-db09d980-6b79-499a-8108-835c0daf585a.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Luxe’ Pack"
+        }
+      },
+      {
+        "id": "vjysvmi",
+        "name": "Nike Tiempo Legend 10 Elite FG",
+        "colorway": "Gris / Rojo",
+        "color": "#858585",
+        "price": 429999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "10",
+            "10.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360876506-45ee21c6-5794-443b-9f7e-ff49f50318a7.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Scary Good’"
+        }
       }
     ],
     "adidas/f50": [
@@ -1869,8 +2731,36 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7.5",
+            "7",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
         },
         "images": [
           "assets/1781803057241-IMG_1843.webp"
@@ -1922,8 +2812,36 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6.5",
+            "6",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
         },
         "images": [
           "assets/1781803106056-IMG_1842.webp"
@@ -1975,8 +2893,36 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
         },
         "images": [
           "assets/1781803178746-IMG_1841.webp"
@@ -1987,6 +2933,472 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Breakout’ Pack"
+        }
+      },
+      {
+        "id": "w5nniil",
+        "name": "Adidas F50 Hyperfast Elite FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 479999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "12",
+            "11.5",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344368652-IMG_2376.jpeg",
+          "assets/1783344377754-IMG_2377.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "builiun",
+        "name": "Adidas F50 Hyperfast Elite LL FG",
+        "colorway": "Blanco ",
+        "color": "#ffffff",
+        "price": 489999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344475001-IMG_2373.jpeg",
+          "assets/1783344483019-IMG_2374.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "4fdhw7d",
+        "name": "Adidas F50 Hyperfast Evo FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 589999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "9.5",
+            "9",
+            "8.5",
+            "10",
+            "10.5",
+            "12",
+            "11.5",
+            "11",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344690706-IMG_2359.jpeg",
+          "assets/1783344706215-IMG_2364.jpeg",
+          "assets/1783344718950-IMG_2360.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "a5ng20z",
+        "name": "Adidas F50 Hyperfast Elite SG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 639999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358103436-IMG_2368.jpeg",
+          "assets/1783358114269-IMG_2369.jpeg",
+          "assets/1783358123885-IMG_2370.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG ",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "8zf1pgt",
+        "name": "Adidas F50 Hyperfast Elite LL SG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 539999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358226004-IMG_2365.jpeg",
+          "assets/1783358234493-IMG_2366.jpeg",
+          "assets/1783358242235-IMG_2367.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "zmxndlc",
+        "name": "Adidas F50 Elite FG",
+        "colorway": "Azul / Amarillo",
+        "color": "#0045cd",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "8.5",
+            "8",
+            "7.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358872255-b5a044fd-73b4-4d58-b124-366b435d25e1.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
+      },
+      {
+        "id": "xymdwgx",
+        "name": "Adidas F50 Elite LL FG",
+        "colorway": "Azul / Amarillo",
+        "color": "#006fe6",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358992962-01f67772-bbab-410e-a5ac-5694a03de6d6.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
+      },
+      {
+        "id": "j85bjeb",
+        "name": "Adidas F50 Elite FG",
+        "colorway": "Amarillo",
+        "color": "#fbfb00",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359178338-3f1c0378-6248-4ad7-9a07-9507f39b1eb1.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
+      },
+      {
+        "id": "icw5ijd",
+        "name": "Adidas F50 Hyperfast Elite FG",
+        "colorway": "Amarillo / Naranja",
+        "color": "#fefb41",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7.5",
+            "8.5",
+            "9.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360559845-IMG_1218.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘To Light’ Pack"
         }
       }
     ],
@@ -2030,8 +3442,36 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
         },
         "images": [
           "assets/1781803228654-IMG_1850.webp"
@@ -2083,8 +3523,36 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
         },
         "images": [
           "assets/1781803276786-IMG_1848.webp"
@@ -2095,6 +3563,601 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
+        }
+      },
+      {
+        "id": "y1dafn9",
+        "name": "Adidas Predator Elite FG",
+        "colorway": "Blanco ",
+        "color": "#ffffff",
+        "price": 479999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783344842525-IMG_2380.jpeg",
+          "assets/1783344934518-IMG_2381.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "g2yru4u",
+        "name": "Adidas Predator Elite FT FG ",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 489999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783345001843-IMG_2371.jpeg",
+          "assets/1783345008773-IMG_2372.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "0ozmk3r",
+        "name": "Adidas Predator Elite LL FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 579999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358322655-IMG_2378.jpeg",
+          "assets/1783358335158-IMG_2379.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "e76c01n",
+        "name": "Adidas Predator Elite FT SG ",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 639999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "12.5",
+            "13",
+            "11.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783358413108-IMG_2361.jpeg",
+          "assets/1783358425481-IMG_2362.jpeg",
+          "assets/1783358434632-IMG_2363.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "kri9m6v",
+        "name": "Adidas Predator Elite FG",
+        "colorway": "Blanco / Azul",
+        "color": "#ffffff",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359255083-e759afab-9352-476e-b434-18adf63a7543.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
+      },
+      {
+        "id": "goufe2y",
+        "name": "Adidas Predator Elite FT FG",
+        "colorway": "Blanco / Azul",
+        "color": "#ffffff",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "13",
+            "12.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359355116-6d705196-5b82-4442-a245-bddb3d48fc13.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’"
+        }
+      },
+      {
+        "id": "wd1fi7l",
+        "name": "Adidas Predator Elite FG",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "11",
+            "10.5",
+            "10",
+            "11.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359519274-5eca425d-d4d5-40b3-8bf0-83a0b403e931.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
+      },
+      {
+        "id": "6mrpnve",
+        "name": "Adidas Predator Elite LL FG ",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359592782-b2759732-aa83-4294-9b38-07d15c395d22.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
+      },
+      {
+        "id": "i0t9mis",
+        "name": "Adidas Predator Elite FT FG",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359702992-IMG_0987.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
+      },
+      {
+        "id": "ye8xklx",
+        "name": "Adidas Predator Elite FT FG",
+        "colorway": "Blanco / Azul",
+        "color": "#ffffff",
+        "price": 549999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360172966-e1938269-5caf-4e49-9f9d-1111099a4a6d.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Jude Bellingham’ Pack"
+        }
+      },
+      {
+        "id": "tyymirx",
+        "name": "Adidas Predator Elite FT FG ",
+        "colorway": "Gris / Rojo",
+        "color": "#333333",
+        "price": 0,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "11",
+            "10",
+            "9.5",
+            "9",
+            "7.5",
+            "8",
+            "8.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360337644-6240b043-d9fd-40d8-a804-1d662be198d7.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Finisher Steel’ Pack"
+        }
+      },
+      {
+        "id": "qqknisf",
+        "name": "Adidas Predator Elite FT FG ",
+        "colorway": "Negro / Rojo / Blanco",
+        "color": "#000000",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360467925-IMG_1542.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Inmortal DNA’ Pack"
         }
       }
     ],
@@ -2138,8 +4201,36 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
         },
         "images": [
           "assets/1781803355042-IMG_1844.webp"
@@ -2150,6 +4241,306 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Road To Glory’ Pack"
+        }
+      },
+      {
+        "id": "11ix4dj",
+        "name": "Adidas Copa Pure 4 Elite FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 549999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783345206491-IMG_2383.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "q8p8dau",
+        "name": "Adidas Copa Pure 4 Elite LL FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 569999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783345289172-IMG_2382.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Caos vs Control’ Pack"
+        }
+      },
+      {
+        "id": "aw3lmxj",
+        "name": "Adidas Copa Pure 4 Elite FG",
+        "colorway": "Plateado",
+        "color": "#c2c2c2",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "10",
+            "9.5",
+            "9",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359773991-6537e846-cf07-4f09-83b7-031118fd53d4.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Ice Cold Precision’ Pack"
+        }
+      },
+      {
+        "id": "lssr1av",
+        "name": "Adidas Copa Pure 4 Elite FG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359845255-95f64e50-1872-45c6-badc-2ac03e29141f.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
+        }
+      },
+      {
+        "id": "j1dvoh9",
+        "name": "Adidas Copa Pure 4 Elite LL FG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 519999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "11.5",
+            "11",
+            "10.5",
+            "13",
+            "12.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783359952403-635ed2a6-88dc-4ad8-a69b-83e296becfe3.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG ",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’"
+        }
+      },
+      {
+        "id": "fu9ghr6",
+        "name": "Adidas Copa Pure 4 Elite SG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 539999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "9.5"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1783360088196-4751e904-d1a9-41ee-98f4-6a086a5deeac.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Born For Goals’ Pack"
         }
       }
     ],
@@ -2191,8 +4582,32 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "11",
+            "10.5",
+            "10",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
           "assets/1781803473055-IMG_1359.webp"
@@ -2244,8 +4659,32 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
           "assets/1781803569443-IMG_1384.webp"
