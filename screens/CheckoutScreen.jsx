@@ -163,7 +163,7 @@ function CheckoutScreen({ cart, navigate }) {
               <div className="bag-shipping-banner">🚚 Envío gratis</div>
               <div className="bag-payopts">
                 <span className="bag-eyebrow bag-eyebrow--muted">OPCIONES DE PAGO</span>
-                <img src="assets/logo-mercadopago.jpg" alt="MercadoPago" className="bag-payopts__logo" />
+                <img src="assets/logo-mercadopago-v2.jpg" alt="MercadoPago" className="bag-payopts__logo" />
               </div>
 
               {payError && <p className="bag-cart__error">{payError}</p>}
