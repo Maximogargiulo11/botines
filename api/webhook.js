@@ -1,3 +1,5 @@
+const { put } = require('@vercel/blob');
+
 module.exports = async function handler(req, res) {
   // MercadoPago also sends a GET to validate the endpoint
   if (req.method === 'GET') return res.status(200).end();
@@ -94,38 +96,12 @@ async function trackGA4Purchase(order) {
 }
 
 async function saveOrder(order) {
-  const owner = process.env.GH_OWNER || 'Maximogargiulo11';
-  const repo  = process.env.GH_REPO  || 'botines';
-  const token = process.env.GH_TOKEN;
-  if (!token) { console.error('GH_TOKEN no configurado'); return; }
-
-  const headers = {
-    'Authorization': `token ${token}`,
-    'Accept': 'application/vnd.github.v3+json',
-    'Content-Type': 'application/json',
-  };
-
-  let sha, current = [];
-  try {
-    const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/orders.json`, { headers });
-    if (r.ok) {
-      const f = await r.json();
-      sha = f.sha;
-      current = JSON.parse(Buffer.from(f.content, 'base64').toString('utf-8'));
-    }
-  } catch {}
-
-  const updated = [order, ...current];
-  const content = Buffer.from(JSON.stringify(updated, null, 2)).toString('base64');
-
-  await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/orders.json`, {
-    method: 'PUT',
-    headers,
-    body: JSON.stringify({
-      message: `orden: ${order.mp_payment_id} — ${order.status}`,
-      content,
-      branch: 'master',
-      ...(sha ? { sha } : {}),
-    }),
+  // Un blob privado por pago (indexado por mp_payment_id, sin duplicados si
+  // MercadoPago reenvía el mismo webhook). Nunca queda servido públicamente,
+  // a diferencia del viejo orders.json comiteado al repo.
+  await put(`orders/${order.mp_payment_id}.json`, JSON.stringify(order, null, 2), {
+    access: 'private',
+    contentType: 'application/json',
+    allowOverwrite: true,
   });
 }

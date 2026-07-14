@@ -10,6 +10,7 @@ const REPO_BRANCH = 'master';
 const ADMIN_PASSWORD = 'botines2026';
 const AUTH_KEY  = 'bag:admin:auth';
 const TOKEN_KEY = 'bag:admin:token';
+const ADMIN_SECRET_KEY = 'bag:admin:apisecret';
 
 // ─────────────────────────────────────────
 // GITHUB API
@@ -1044,10 +1045,15 @@ function ProductsSection({ data, onDataChange, token }) {
 // ─────────────────────────────────────────
 // SETTINGS SECTION
 // ─────────────────────────────────────────
-function SettingsSection({ token, onTokenChange }) {
+function SettingsSection({ token, onTokenChange, adminSecret, onAdminSecretChange }) {
   const [draft, setDraft] = useState(token || '');
   const [ok, setOk] = useState(false);
   const save = () => { onTokenChange(draft); localStorage.setItem(TOKEN_KEY, draft); setOk(true); setTimeout(() => setOk(false), 2000); };
+
+  const [secretDraft, setSecretDraft] = useState(adminSecret || '');
+  const [secretOk, setSecretOk] = useState(false);
+  const saveSecret = () => { onAdminSecretChange(secretDraft); localStorage.setItem(ADMIN_SECRET_KEY, secretDraft); setSecretOk(true); setTimeout(() => setSecretOk(false), 2000); };
+
   return (
     <div>
       <div className="adm-section-header"><h2>Ajustes</h2></div>
@@ -1059,6 +1065,12 @@ function SettingsSection({ token, onTokenChange }) {
         </a>
         <TextInput label="GitHub Personal Access Token" value={draft} onChange={setDraft} type="password" placeholder="ghp_..." hint="Guardado en localStorage de este navegador." />
         <Btn onClick={save}>{ok ? '✓ Guardado' : 'Guardar token'}</Btn>
+      </div>
+      <div className="adm-section">
+        <div className="adm-section__title">Pedidos (Vercel Blob)</div>
+        <p className="adm-text">Los pedidos se guardan en un almacenamiento privado, separado del código público del sitio. Este secreto tiene que ser igual a la variable de entorno <code>ADMIN_API_SECRET</code> configurada en Vercel para poder leerlos acá.</p>
+        <TextInput label="Admin API Secret" value={secretDraft} onChange={setSecretDraft} type="password" placeholder="mismo valor que ADMIN_API_SECRET en Vercel" hint="Guardado en localStorage de este navegador." />
+        <Btn onClick={saveSecret}>{secretOk ? '✓ Guardado' : 'Guardar secreto'}</Btn>
       </div>
       <div className="adm-section">
         <div className="adm-section__title">Repositorio</div>
@@ -1176,17 +1188,21 @@ function TokenModal({ onSave, onCancel }) {
 // ─────────────────────────────────────────
 // ORDERS SECTION
 // ─────────────────────────────────────────
-function OrdersSection() {
+function OrdersSection({ adminSecret }) {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState(null);
 
-  useEffect(() => {
-    fetch(rawUrl('orders.json') + '?t=' + Date.now())
-      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  const loadOrders = () => {
+    setLoading(true);
+    setError(null);
+    fetch('/api/orders', { headers: { 'X-Admin-Secret': adminSecret } })
+      .then(r => { if (!r.ok) throw new Error(r.status === 401 ? 'Falta configurar el secreto de admin en Ajustes' : `HTTP ${r.status}`); return r.json(); })
       .then(d => { setOrders(Array.isArray(d) ? d : []); setLoading(false); })
       .catch(e => { setError(e.message); setLoading(false); });
-  }, []);
+  };
+
+  useEffect(() => { loadOrders(); }, [adminSecret]);
 
   const fmt = n => '$ ' + Number(n).toLocaleString('es-AR');
 
@@ -1201,11 +1217,7 @@ function OrdersSection() {
     <div>
       <div className="adm-section-header">
         <h2>Órdenes</h2>
-        <Btn variant="ghost" size="sm" onClick={() => { setLoading(true); setError(null);
-          fetch(rawUrl('orders.json') + '?t=' + Date.now())
-            .then(r => r.json()).then(d => { setOrders(Array.isArray(d) ? d : []); setLoading(false); })
-            .catch(e => { setError(e.message); setLoading(false); });
-        }}>↺ Actualizar</Btn>
+        <Btn variant="ghost" size="sm" onClick={loadOrders}>↺ Actualizar</Btn>
       </div>
 
       {loading && <div className="adm-loading"><div className="adm-spinner" /><span>Cargando órdenes...</span></div>}
@@ -1460,6 +1472,7 @@ const NAV = [
 function AdminApp() {
   const [authed, setAuthed]           = useState(() => localStorage.getItem(AUTH_KEY) === '1');
   const [token, setToken]             = useState(() => localStorage.getItem(TOKEN_KEY) || '');
+  const [adminSecret, setAdminSecret] = useState(() => localStorage.getItem(ADMIN_SECRET_KEY) || '');
   const [section, setSection]         = useState('articles');
   const [data, setData]               = useState(null);
   const [loading, setLoading]         = useState(false);
@@ -1608,7 +1621,7 @@ function AdminApp() {
           {!loading && data && section === 'products' && (
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
           )}
-          {section === 'orders' && <OrdersSection />}
+          {section === 'orders' && <OrdersSection adminSecret={adminSecret} />}
           {!loading && data && section === 'pages' && (
             <PagesSection data={data} onDataChange={handleDataChange} />
           )}
@@ -1616,7 +1629,8 @@ function AdminApp() {
             <TypographySection data={data} onDataChange={handleDataChange} />
           )}
           {section === 'settings' && (
-            <SettingsSection token={token} onTokenChange={t => setToken(t)} />
+            <SettingsSection token={token} onTokenChange={t => setToken(t)}
+              adminSecret={adminSecret} onAdminSecretChange={s => setAdminSecret(s)} />
           )}
         </div>
       </div>
