@@ -4,5 +4,27 @@
   "private": true,
   "engines": {
     "node": ">=18"
+  },
+  "description": "",
+  "main": "admin.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maximogargiulo11/botines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maximogargiulo11/botines/issues"
+  },
+  "homepage": "https://github.com/Maximogargiulo11/botines#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
