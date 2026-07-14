@@ -1,4 +1,5 @@
 const { put } = require('@vercel/blob');
+const crypto = require('crypto');
 
 module.exports = async function handler(req, res) {
   // MercadoPago also sends a GET to validate the endpoint
@@ -13,6 +14,12 @@ module.exports = async function handler(req, res) {
 
   const paymentId = data && data.id;
   if (!paymentId) return res.status(200).end();
+
+  const signatureCheck = verifyMpSignature(req);
+  if (signatureCheck === false) {
+    console.error('webhook: firma de MercadoPago inválida, notificación ignorada');
+    return res.status(200).end();
+  }
 
   try {
     const mpRes = await fetch(`https://api.mercadopago.com/v1/payments/${paymentId}`, {
@@ -93,6 +100,37 @@ async function trackGA4Purchase(order) {
   } catch (err) {
     console.error('ga4 track error:', err.message);
   }
+}
+
+// Verifica la firma que MercadoPago manda en el header x-signature.
+// Devuelve true/false si MP_WEBHOOK_SECRET está configurado, o null si no
+// (en ese caso no se puede verificar y se sigue procesando, igual que antes
+// de tener este secreto configurado en Vercel).
+function verifyMpSignature(req) {
+  const secret = process.env.MP_WEBHOOK_SECRET;
+  if (!secret) return null;
+
+  const signatureHeader = req.headers['x-signature'];
+  const requestId = req.headers['x-request-id'];
+  const dataId = req.query && req.query['data.id'];
+  if (!signatureHeader || !requestId || !dataId) return false;
+
+  const parts = {};
+  for (const kv of signatureHeader.split(',')) {
+    const [k, v] = kv.split('=');
+    if (k) parts[k.trim()] = (v || '').trim();
+  }
+  const ts = parts.ts;
+  const v1 = parts.v1;
+  if (!ts || !v1) return false;
+
+  const manifest = `id:${dataId};request-id:${requestId};ts:${ts};`;
+  const expected = crypto.createHmac('sha256', secret).update(manifest).digest('hex');
+
+  const a = Buffer.from(expected);
+  const b = Buffer.from(v1);
+  if (a.length !== b.length) return false;
+  return crypto.timingSafeEqual(a, b);
 }
 
 async function saveOrder(order) {

@@ -1,3 +1,5 @@
+const { getTrustedPrice } = require('./_products');
+
 const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
 
 module.exports = async function handler(req, res) {
@@ -21,15 +23,30 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: `Faltan datos de envío: ${missingFields.join(', ')}` });
   }
 
-  const preference = {
-    items: items.map(item => ({
+  const unknownItems = [];
+  const preferenceItems = items.map(item => {
+    const trustedPrice = getTrustedPrice(item.id);
+    if (trustedPrice === undefined) {
+      unknownItems.push(item.id);
+      return null;
+    }
+    const qty = Math.max(1, Math.min(20, Math.floor(Number(item.qty)) || 1));
+    return {
       id: item.id,
       title: `${item.name} — ${item.colorway} — Talle ${item.size} EU`,
-      quantity: item.qty || 1,
-      unit_price: Number(item.price),
+      quantity: qty,
+      unit_price: trustedPrice,
       currency_id: 'ARS',
       ...(item.image ? { picture_url: `${SITE_URL}/${item.image}` } : {}),
-    })),
+    };
+  });
+
+  if (unknownItems.length) {
+    return res.status(400).json({ error: `Producto no encontrado en el catálogo: ${unknownItems.join(', ')}` });
+  }
+
+  const preference = {
+    items: preferenceItems,
     metadata: {
       nombre: shipping.nombre,
       apellido: shipping.apellido,
