@@ -1084,7 +1084,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 10 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 199000,
+        "price": 599000,
         "availableSizes": [
           "41",
           "42",
