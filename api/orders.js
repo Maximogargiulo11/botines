@@ -26,11 +26,8 @@ module.exports = async function handler(req, res) {
   }
 };
 
-function streamToString(stream) {
-  return new Promise((resolve, reject) => {
-    const chunks = [];
-    stream.on('data', (c) => chunks.push(c));
-    stream.on('end', () => resolve(Buffer.concat(chunks).toString('utf-8')));
-    stream.on('error', reject);
-  });
+// get() de @vercel/blob devuelve un ReadableStream (Web Streams API),
+// no un stream.Readable de Node — por eso no tiene .on().
+async function streamToString(stream) {
+  return new Response(stream).text();
 }
