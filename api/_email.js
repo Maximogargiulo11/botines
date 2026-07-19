@@ -21,6 +21,8 @@ async function sendConfirmationEmail(order) {
   const itemsHtml = (order.items || [])
     .map(it => `<li>${esc(it.title)} x${Number(it.quantity) || 0} — ${fmt(it.unit_price * it.quantity)}</li>`)
     .join('');
+  const subtotal = (order.items || []).reduce((sum, it) => sum + it.unit_price * (Number(it.quantity) || 0), 0);
+  const discount = subtotal - order.amount;
 
   try {
     const resend = new Resend(apiKey);
@@ -32,6 +34,7 @@ async function sendConfirmationEmail(order) {
         <h1>¡Gracias por tu compra, ${esc(order.shipping.nombre)}!</h1>
         <p>Confirmamos tu pedido:</p>
         <ul>${itemsHtml}</ul>
+        ${discount > 0 ? `<p>Descuento por transferencia (10%): -${fmt(discount)}</p>` : ''}
         <p><strong>Total: ${fmt(order.amount)}</strong></p>
         <p>Te lo enviamos a: ${esc(order.shipping.direccion)}, ${esc(order.shipping.localidad)}, ${esc(order.shipping.provincia)} (CP ${esc(order.shipping.codigoPostal)})</p>
         <p>Cualquier consulta, escribinos por WhatsApp: <a href="https://wa.me/5493516836569">+54 9 351 683-6569</a></p>
