@@ -18,7 +18,7 @@ async function sendConfirmationEmail(order) {
 
   try {
     const resend = new Resend(apiKey);
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Botines Alta Gama CBA <pedidos@botinesaltagamacba.com>',
       to: order.shipping.email,
       subject: '¡Tu compra fue confirmada! — Botines Alta Gama CBA',
@@ -31,6 +31,9 @@ async function sendConfirmationEmail(order) {
         <p>Cualquier consulta, escribinos por WhatsApp: <a href="https://wa.me/5493516836569">+54 9 351 683-6569</a></p>
       `,
     });
+    if (error) {
+      console.error('email send error:', error.message || error);
+    }
   } catch (err) {
     console.error('email send error:', err.message);
   }
