@@ -1192,6 +1192,25 @@ function OrdersSection({ adminSecret }) {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState(null);
+  const [confirming, setConfirming] = useState(null);
+
+  const confirmOrder = async (orderId) => {
+    setConfirming(orderId);
+    try {
+      const res = await fetch('/api/confirm-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
+        body: JSON.stringify({ orderId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error al confirmar el pedido');
+      loadOrders();
+    } catch (e) {
+      alert(`Error al confirmar el pedido: ${e.message}`);
+    } finally {
+      setConfirming(null);
+    }
+  };
 
   const loadOrders = () => {
     setLoading(true);
@@ -1207,10 +1226,11 @@ function OrdersSection({ adminSecret }) {
   const fmt = n => '$ ' + Number(n).toLocaleString('es-AR');
 
   const STATUS = {
-    approved:  { label: 'Pagado',     cls: 'success' },
-    pending:   { label: 'Pendiente',  cls: 'warn'    },
-    rejected:  { label: 'Rechazado',  cls: 'danger'  },
-    cancelled: { label: 'Cancelado',  cls: 'muted'   },
+    approved:  { label: 'Pagado',                        cls: 'success' },
+    pending:   { label: 'Pendiente',                      cls: 'warn'    },
+    pendiente: { label: 'Pendiente (transferencia)',      cls: 'warn'    },
+    rejected:  { label: 'Rechazado',                      cls: 'danger'  },
+    cancelled: { label: 'Cancelado',                      cls: 'muted'   },
   };
 
   return (
@@ -1252,7 +1272,12 @@ function OrdersSection({ adminSecret }) {
                 <div className="adm-order-row__meta">
                   <div className="adm-order-row__amount">{fmt(o.amount)}</div>
                   <div className="adm-order-row__date">{o.date ? new Date(o.date).toLocaleDateString('es-AR') : '—'}</div>
-                  <div className="adm-order-row__id">MP #{o.mp_payment_id}</div>
+                  <div className="adm-order-row__id">{o.payment_method === 'transferencia' ? 'Transferencia' : `MP #${o.mp_payment_id}`}</div>
+                  {o.status === 'pendiente' && (
+                    <Btn size="sm" onClick={() => confirmOrder(o.id)} disabled={confirming === o.id}>
+                      {confirming === o.id ? 'Confirmando...' : 'Confirmar pago'}
+                    </Btn>
+                  )}
                 </div>
               </div>
             );
