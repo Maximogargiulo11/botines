@@ -17,7 +17,7 @@ module.exports = async function handler(req, res) {
   const { items, shipping } = req.body || {};
   if (!items || !items.length) return res.status(400).json({ error: 'El carrito está vacío' });
 
-  const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
+  const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'email', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
   const missingFields = REQUIRED_SHIPPING_FIELDS.filter(f => !shipping || !String(shipping[f] || '').trim());
   if (missingFields.length) {
     return res.status(400).json({ error: `Faltan datos de envío: ${missingFields.join(', ')}` });
@@ -50,6 +50,7 @@ module.exports = async function handler(req, res) {
     metadata: {
       nombre: shipping.nombre,
       apellido: shipping.apellido,
+      email: shipping.email,
       dni: shipping.dni,
       provincia: shipping.provincia,
       localidad: shipping.localidad,

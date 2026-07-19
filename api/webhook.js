@@ -34,6 +34,7 @@ module.exports = async function handler(req, res) {
     const shipping = meta.nombre ? {
       nombre: meta.nombre,
       apellido: meta.apellido,
+      email: meta.email,
       dni: meta.dni,
       provincia: meta.provincia,
       localidad: meta.localidad,
