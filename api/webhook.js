@@ -1,5 +1,6 @@
-const { put } = require('@vercel/blob');
+const { put, list, get } = require('@vercel/blob');
 const crypto = require('crypto');
+const { sendConfirmationEmail } = require('./_email');
 
 module.exports = async function handler(req, res) {
   // MercadoPago also sends a GET to validate the endpoint
@@ -61,9 +62,13 @@ module.exports = async function handler(req, res) {
       })),
     };
 
-    await saveOrder(order);
-    if (payment.status === 'approved') {
-      await trackGA4Purchase(order);
+    if (shipping) {
+      await saveOrder(order);
+      if (payment.status === 'approved') {
+        await trackGA4Purchase(order);
+      }
+    } else if (payment.status === 'approved') {
+      await tryAutoMatchTransfer(payment);
     }
   } catch (err) {
     console.error('webhook error:', err.message);
@@ -143,4 +148,40 @@ async function saveOrder(order) {
     contentType: 'application/json',
     allowOverwrite: true,
   });
+}
+
+async function tryAutoMatchTransfer(payment) {
+  const amount = payment.transaction_amount;
+  if (!amount) return;
+
+  const cutoffMs = Date.now() - 72 * 60 * 60 * 1000;
+  const { blobs } = await list({ prefix: 'orders/transfer-' });
+
+  const candidates = [];
+  for (const b of blobs) {
+    const result = await get(b.pathname, { access: 'private' });
+    if (!result || result.statusCode !== 200) continue;
+    const text = await new Response(result.stream).text();
+    let order;
+    try { order = JSON.parse(text); } catch { continue; }
+    if (order.status !== 'pendiente') continue;
+    if (new Date(order.date).getTime() < cutoffMs) continue;
+    if (order.amount !== amount) continue;
+    candidates.push({ pathname: b.pathname, order });
+  }
+
+  if (candidates.length !== 1) {
+    console.log(`webhook: transferencia de $${amount} sin match único (${candidates.length} candidato(s) pendiente(s))`);
+    return;
+  }
+
+  const { pathname, order } = candidates[0];
+  order.status = 'approved';
+  order.mp_payment_id = String(payment.id);
+  await put(pathname, JSON.stringify(order, null, 2), {
+    access: 'private',
+    contentType: 'application/json',
+    allowOverwrite: true,
+  });
+  await sendConfirmationEmail(order);
 }
