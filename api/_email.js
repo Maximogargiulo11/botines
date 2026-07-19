@@ -12,8 +12,14 @@ async function sendConfirmationEmail(order) {
   }
 
   const fmt = (n) => '$ ' + Number(n).toLocaleString('es-AR');
+  const esc = (s) => String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
   const itemsHtml = (order.items || [])
-    .map(it => `<li>${it.title} x${it.quantity} — ${fmt(it.unit_price * it.quantity)}</li>`)
+    .map(it => `<li>${esc(it.title)} x${Number(it.quantity) || 0} — ${fmt(it.unit_price * it.quantity)}</li>`)
     .join('');
 
   try {
@@ -23,11 +29,11 @@ async function sendConfirmationEmail(order) {
       to: order.shipping.email,
       subject: '¡Tu compra fue confirmada! — Botines Alta Gama CBA',
       html: `
-        <h1>¡Gracias por tu compra, ${order.shipping.nombre}!</h1>
+        <h1>¡Gracias por tu compra, ${esc(order.shipping.nombre)}!</h1>
         <p>Confirmamos tu pedido:</p>
         <ul>${itemsHtml}</ul>
         <p><strong>Total: ${fmt(order.amount)}</strong></p>
-        <p>Te lo enviamos a: ${order.shipping.direccion}, ${order.shipping.localidad}, ${order.shipping.provincia} (CP ${order.shipping.codigoPostal})</p>
+        <p>Te lo enviamos a: ${esc(order.shipping.direccion)}, ${esc(order.shipping.localidad)}, ${esc(order.shipping.provincia)} (CP ${esc(order.shipping.codigoPostal)})</p>
         <p>Cualquier consulta, escribinos por WhatsApp: <a href="https://wa.me/5493516836569">+54 9 351 683-6569</a></p>
       `,
     });
