@@ -1752,6 +1752,36 @@
   background: #fff;
   padding: 3px 8px;
 }
+.bag-payopts__row {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.bag-payopts__discount {
+  font-size: var(--bag-fs-xs);
+  letter-spacing: var(--bag-ls-wide);
+  text-transform: uppercase;
+  color: var(--bag-success);
+}
+
+.bag-transfer-box {
+  border: 1px solid var(--bag-line);
+  padding: var(--bag-s-5);
+  display: flex; flex-direction: column; gap: var(--bag-s-3);
+}
+.bag-transfer-box__row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: var(--bag-fs-base);
+}
+.bag-transfer-box__row span {
+  color: var(--bag-fg-muted);
+  font-size: var(--bag-fs-xs);
+  letter-spacing: var(--bag-ls-wide);
+  text-transform: uppercase;
+}
+.bag-transfer-box__note {
+  font-size: var(--bag-fs-sm);
+  color: var(--bag-fg-muted);
+  line-height: 1.6;
+}
 
 /* ============ CHECKOUT SCREEN ============ */
 .bag-checkout {
