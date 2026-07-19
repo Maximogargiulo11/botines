@@ -41,9 +41,40 @@ function CheckoutScreen({ cart, navigate }) {
   const [errors, setErrors] = useState_checkout({});
   const [loading, setLoading] = useState_checkout(false);
   const [payError, setPayError] = useState_checkout(null);
+  const [showTransfer, setShowTransfer] = useState_checkout(false);
+  const [transferLoading, setTransferLoading] = useState_checkout(false);
+  const [transferError, setTransferError] = useState_checkout(null);
 
   const subtotal = cart.reduce((sum, it) => sum + (it.price || 0) * (it.qty || 1), 0);
+  const transferTotal = Math.round(subtotal * 0.9);
   const updateField = (key, value) => setForm(f => ({ ...f, [key]: value }));
+
+  const handleTransferConfirm = async () => {
+    setTransferLoading(true);
+    setTransferError(null);
+    const gaItems = cart.map(it => ({ item_id: it.id, item_name: it.name, item_variant: it.colorway, price: it.price, quantity: it.qty || 1 }));
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'begin_checkout', { currency: 'ARS', value: transferTotal, items: gaItems });
+    }
+    try {
+      sessionStorage.setItem('bag:checkout_snapshot', JSON.stringify({
+        transaction_id: Date.now().toString(), value: transferTotal, items: gaItems,
+      }));
+    } catch {}
+    try {
+      const res = await fetch('/api/create-transfer-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: cart, shipping: form }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error al registrar el pedido');
+      navigate('/pago-exitoso');
+    } catch (err) {
+      setTransferError(err.message);
+      setTransferLoading(false);
+    }
+  };
 
   const handleNext = (e) => {
     e.preventDefault();
@@ -168,13 +199,33 @@ function CheckoutScreen({ cart, navigate }) {
               <div className="bag-shipping-banner">🚚 Envío gratis</div>
               <div className="bag-payopts">
                 <span className="bag-eyebrow bag-eyebrow--muted">OPCIONES DE PAGO</span>
-                <img src="assets/logo-mercadopago-v2.jpg" alt="MercadoPago" className="bag-payopts__logo" />
+                <div className="bag-payopts__row">
+                  <img src="assets/logo-mercadopago-v2.jpg" alt="MercadoPago" className="bag-payopts__logo" />
+                  <span className="bag-payopts__discount">-10% pagando por transferencia</span>
+                </div>
               </div>
 
               {payError && <p className="bag-cart__error">{payError}</p>}
               <button className="bag-btn bag-btn--primary bag-btn--block" onClick={handlePay} disabled={loading}>
                 {loading ? 'Redirigiendo...' : 'PAGAR CON MERCADOPAGO'}
               </button>
+
+              {!showTransfer ? (
+                <button className="bag-btn bag-btn--ghost bag-btn--block" onClick={() => setShowTransfer(true)}>
+                  PAGAR POR TRANSFERENCIA (10% OFF)
+                </button>
+              ) : (
+                <div className="bag-transfer-box">
+                  <div className="bag-transfer-box__row"><span>Alias</span><strong>botinesaltagamacba</strong></div>
+                  <div className="bag-transfer-box__row"><span>CBU</span><strong>0000003100097898780738</strong></div>
+                  <div className="bag-transfer-box__row"><span>Monto a transferir</span><strong>{window.formatPrice(transferTotal)}</strong></div>
+                  <p className="bag-transfer-box__note">Enviá el comprobante a <strong>botinesaltagamacordoba@gmail.com</strong>.</p>
+                  {transferError && <p className="bag-cart__error">{transferError}</p>}
+                  <button className="bag-btn bag-btn--primary bag-btn--block" onClick={handleTransferConfirm} disabled={transferLoading}>
+                    {transferLoading ? 'Confirmando...' : 'YA TRANSFERÍ — CONFIRMAR PEDIDO'}
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </div>
