@@ -14,6 +14,10 @@ El formulario de envío actual (`CheckoutScreen.jsx`) no pide email — solo nom
 
 Esto implica dos cambios en código ya existente (no solo en el formulario): `api/create-preference.js` agrega `email` al objeto `metadata` que manda a MercadoPago, y `api/webhook.js` agrega `email: meta.email` al objeto `shipping` que reconstruye desde `payment.metadata`. Mismo patrón que los demás campos de `shipping` ya usan.
 
+## Aviso del descuento junto al logo de MercadoPago
+
+Tanto en el carrito (`components/CartDrawer.jsx`) como en el paso de confirmar y pagar (`CheckoutScreen.jsx`), donde ya aparece la fila "OPCIONES DE PAGO" con el logo de MercadoPago, se agrega un texto corto al lado: **"-10% pagando por transferencia"** (estilo simple, un `span` con color de acento, sin cuotas ni tabla de medios de pago — es solo un aviso, no un selector). Es puramente informativo en el carrito (ahí no se puede todavía elegir el método de pago, eso sigue pasando en el paso de confirmar). En el paso de confirmar, este mismo texto convive con el botón real de "PAGAR POR TRANSFERENCIA" descrito abajo.
+
 ## Flujo del cliente
 
 **Instancia 3 (confirmar y pagar) — `screens/CheckoutScreen.jsx`, paso `confirm`**
