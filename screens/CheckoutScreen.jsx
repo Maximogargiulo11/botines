@@ -12,6 +12,7 @@ function validateShipping(form) {
   const errors = {};
   if (!form.nombre.trim()) errors.nombre = 'Ingresá tu nombre.';
   if (!form.apellido.trim()) errors.apellido = 'Ingresá tu apellido.';
+  if (!/^\S+@\S+\.\S+$/.test(form.email.trim())) errors.email = 'Email inválido.';
   if (!/^\d{7,8}$/.test(form.dni.trim())) errors.dni = 'DNI inválido (7 u 8 dígitos, sin puntos).';
   if (!form.provincia) errors.provincia = 'Elegí tu provincia.';
   if (!form.localidad.trim()) errors.localidad = 'Ingresá tu localidad.';
@@ -34,7 +35,7 @@ function CheckoutField({ label, error, children }) {
 function CheckoutScreen({ cart, navigate }) {
   const [step, setStep] = useState_checkout('form');
   const [form, setForm] = useState_checkout({
-    nombre: '', apellido: '', dni: '', provincia: '', localidad: '',
+    nombre: '', apellido: '', email: '', dni: '', provincia: '', localidad: '',
     direccion: '', codigoPostal: '', celular: '', descripcion: '',
   });
   const [errors, setErrors] = useState_checkout({});
@@ -115,6 +116,9 @@ function CheckoutScreen({ cart, navigate }) {
                   <input value={form.apellido} onChange={e => updateField('apellido', e.target.value)} autoComplete="family-name" />
                 </CheckoutField>
               </div>
+              <CheckoutField label="Email" error={errors.email}>
+                <input value={form.email} onChange={e => updateField('email', e.target.value)} type="email" placeholder="tu@email.com" autoComplete="email" />
+              </CheckoutField>
               <CheckoutField label="DNI" error={errors.dni}>
                 <input value={form.dni} onChange={e => updateField('dni', e.target.value)} inputMode="numeric" placeholder="Ej. 30123456" />
               </CheckoutField>
@@ -154,6 +158,7 @@ function CheckoutScreen({ cart, navigate }) {
               </div>
               <dl className="bag-checkout__summary-list">
                 <div><dt>Nombre</dt><dd>{form.nombre} {form.apellido}</dd></div>
+                <div><dt>Email</dt><dd>{form.email}</dd></div>
                 <div><dt>DNI</dt><dd>{form.dni}</dd></div>
                 <div><dt>Dirección</dt><dd>{form.direccion}, {form.localidad}, {form.provincia} (CP {form.codigoPostal})</dd></div>
                 <div><dt>Celular</dt><dd>{form.celular}</dd></div>
