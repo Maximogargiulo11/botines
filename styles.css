@@ -227,9 +227,13 @@
 .bag-footer__legal a { font-size: 11px; color: var(--bag-fg-muted); }
 .bag-footer__sep { color: var(--bag-fg-faint); font-size: 11px; }
 .bag-footer__copy { font-size: 10px; letter-spacing: var(--bag-ls-wider); color: var(--bag-fg-faint); }
-.bag-footer__credit { font-size: 10px; letter-spacing: var(--bag-ls-wider); text-transform: uppercase; color: var(--bag-fg-faint); }
-.bag-footer__credit a { color: var(--bag-fg-muted); transition: color .15s ease; }
-.bag-footer__credit a:hover { color: var(--bag-fg); }
+.bag-footer__credit { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.bag-footer__credit-label { font-size: 9px; letter-spacing: var(--bag-ls-wider); text-transform: uppercase; color: var(--bag-fg-faint); }
+.bag-footer__credit > a { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.bag-footer__credit-logo { height: 22px; width: auto; display: block; opacity: .85; transition: opacity .15s ease; }
+.bag-footer__credit-url { font-size: 9px; letter-spacing: var(--bag-ls-wide); color: var(--bag-fg-muted); transition: color .15s ease; }
+.bag-footer__credit > a:hover .bag-footer__credit-logo { opacity: 1; }
+.bag-footer__credit > a:hover .bag-footer__credit-url { color: var(--bag-fg); }
 
 @media (max-width: 760px) {
   .bag-footer__top { grid-template-columns: 1fr; text-align: center; }
