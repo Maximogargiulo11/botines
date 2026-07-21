@@ -95,6 +95,8 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
   const model = brand.models.find(m => m.slug === modelSlug) || brand.models[0];
   const products = BAG_DATA.products[`${brandSlug}/${modelSlug}`] || [];
   const product = products.find(p => p.id === productId) || products[0];
+  // Guía de talles propia de la marca (misma imagen que usa la página del modelo).
+  const brandChart = (window.SIZE_CHART_IMAGES || {})[brandSlug];
 
   const [activeItem, setActiveItem] = useState_prod(0);
   const [unit, setUnit] = useState_prod(() => {
@@ -310,7 +312,9 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
               </div>
             </header>
             <div style={{ cursor: 'zoom-in' }} onClick={() => setShowSizeFull(true)}>
-              <SizeChart />
+              {brandChart
+                ? <img src={brandChart} alt={`Tabla de talles ${brand.name}`} className="bag-size-chart__img" />
+                : <SizeChart />}
             </div>
           </div>
         </div>
@@ -323,7 +327,9 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
             <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M4 4 L16 16 M16 4 L4 16"/></svg>
           </button>
           <div className="bag-sizefull__inner" onClick={(e) => e.stopPropagation()}>
-            <SizeChart />
+            {brandChart
+              ? <img src={brandChart} alt={`Tabla de talles ${brand.name}`} className="bag-size-chart__img" />
+              : <SizeChart />}
           </div>
         </div>
       )}

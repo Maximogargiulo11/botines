@@ -91,4 +91,4 @@ function ModelScreen({ brandSlug, modelSlug, navigate }) {
   );
 }
 
-Object.assign(window, { ModelScreen });
+Object.assign(window, { ModelScreen, SIZE_CHART_IMAGES });
