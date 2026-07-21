@@ -3,7 +3,7 @@ const { useState: useState_model } = React;
 
 const SIZE_CHART_IMAGES = {
   nike:   'assets/tabla-de-talles-nike.jpg',
-  adidas: 'assets/tabla-de-talles-adidas.jpg',
+  adidas: 'assets/tabla-de-talles-adidas.jpeg',
 };
 
 function ModelScreen({ brandSlug, modelSlug, navigate }) {
