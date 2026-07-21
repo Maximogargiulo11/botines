@@ -45,7 +45,7 @@ function App() {
   }, [route]);
 
   const addToCart = (item) => {
-    const next = [...cart, { id: item.id, name: item.name, colorway: item.colorway, price: item.price, size: item.size, image: item.images?.[0], qty: 1 }];
+    const next = [...cart, { id: item.id, name: item.name, colorway: item.colorway, price: item.price, size: item.size, unit: item.unit, image: item.images?.[0], qty: 1 }];
     setCart(next); saveCart(next);
     setCartOpen(true);
     if (typeof window.gtag === 'function') {

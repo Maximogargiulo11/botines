@@ -50,7 +50,7 @@ function ModelScreen({ brandSlug, modelSlug, navigate }) {
             {chartOpen && (
               <div className="bag-size-chart__body">
                 <img src={sizeChartSrc} alt={`Tabla de talles ${brand.name}`} className="bag-size-chart__img" />
-                <p className="bag-size-chart__note">Los talles indicados en los productos corresponden a la numeración EU. Usá esta tabla para convertir tu talle local.</p>
+                <p className="bag-size-chart__note">Usá esta tabla para encontrar tu equivalencia de talle (US / UK).</p>
               </div>
             )}
           </div>
@@ -76,10 +76,11 @@ function ModelScreen({ brandSlug, modelSlug, navigate }) {
               <div className="bag-product-grid-card__name">{p.name}</div>
               <div className="bag-product-grid-card__price">{window.formatPrice(p.price)}</div>
               <div className="bag-product-grid-card__sizes">
-                {p.sizes.eu.slice(0, 6).map(sz => (
-                  <span key={sz} className={`bag-size ${p.availableSizes.includes(sz) ? '' : 'is-disabled'}`}>{sz}</span>
-                ))}
-                <span className="bag-product-grid-card__size-more">+{p.sizes.eu.length - 6}</span>
+                {(() => {
+                  const list = (p.sizes && p.sizes.us && p.sizes.us.length) ? p.sizes.us : ((p.sizes && p.sizes.uk) || []);
+                  return list.slice(0, 6).map(sz => <span key={sz} className="bag-size">{sz}</span>)
+                    .concat(list.length > 6 ? [<span key="more" className="bag-product-grid-card__size-more">+{list.length - 6}</span>] : []);
+                })()}
               </div>
               <button className="bag-btn bag-btn--ghost bag-btn--block">VER DETALLE</button>
             </div>

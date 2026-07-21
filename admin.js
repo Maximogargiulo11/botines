@@ -451,11 +451,7 @@ const ALL_EU = ['38','38.5','39','39.5','40','40.5','41','42','42.5','43','44','
 const ALL_US = ['7','7.5','8','8.5','9','9.5','10','10.5','11','11.5','12','12.5','13'];
 const ALL_UK = ['6','6.5','7','7.5','8','8.5','9','9.5','10','10.5','11','11.5','12'];
 
-function SizesEditor({ availableSizes, onAvailableChange, sizes, onSizesChange }) {
-  const toggleEU = (s) => {
-    const next = availableSizes.includes(s) ? availableSizes.filter(x => x !== s) : [...availableSizes, s];
-    onAvailableChange(next);
-  };
+function SizesEditor({ sizes, onSizesChange }) {
   const toggleUnit = (unit, all, s) => {
     const cur = sizes[unit] || [];
     const next = cur.includes(s) ? cur.filter(x => x !== s) : [...cur, s];
@@ -463,13 +459,6 @@ function SizesEditor({ availableSizes, onAvailableChange, sizes, onSizesChange }
   };
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-      <Field label="Talles EU" hint="Verde = disponible / con stock">
-        <div className="adm-sizes">
-          {ALL_EU.map(s => (
-            <button key={s} type="button" className={`adm-size-btn ${availableSizes.includes(s) ? 'is-active' : ''}`} onClick={() => toggleEU(s)}>{s}</button>
-          ))}
-        </div>
-      </Field>
       <Field label="Talles US" hint="Seleccioná los talles US disponibles para este colorway">
         <div className="adm-sizes">
           {ALL_US.map(s => (
@@ -894,8 +883,6 @@ function ProductEditor({ product, onSave, onCancel, token }) {
         <div className="adm-section">
           <div className="adm-section__title">Talles disponibles</div>
           <SizesEditor
-            availableSizes={f.availableSizes}
-            onAvailableChange={v => set('availableSizes', v)}
             sizes={f.sizes}
             onSizesChange={v => set('sizes', v)}
           />
@@ -1021,7 +1008,7 @@ function ProductsSection({ data, onDataChange, token }) {
                       <div className="adm-product-card__name">{prod.name}</div>
                       <div className="adm-product-card__colorway">{prod.colorway}</div>
                       <div className="adm-product-card__price">{fmtPrice(prod.price)}</div>
-                      <div className="adm-product-card__sizes">{prod.availableSizes?.length || 0} talles disponibles</div>
+                      <div className="adm-product-card__sizes">{((prod.sizes?.us || []).length + (prod.sizes?.uk || []).length)} talles cargados</div>
                     </div>
                     <div className="adm-product-card__actions">
                       <Btn variant="ghost" size="sm" onClick={() => { setEditingKey(selected); setEditingProd(prod); }}>Editar</Btn>

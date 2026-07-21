@@ -33,7 +33,7 @@ module.exports = async function handler(req, res) {
     const qty = Math.max(1, Math.min(20, Math.floor(Number(item.qty)) || 1));
     return {
       id: item.id,
-      title: `${item.name} — ${item.colorway} — Talle ${item.size} EU`,
+      title: `${item.name} — ${item.colorway} — Talle ${item.size} ${String(item.unit || 'EU').toUpperCase()}`,
       quantity: qty,
       unit_price: trustedPrice,
       currency_id: 'ARS',

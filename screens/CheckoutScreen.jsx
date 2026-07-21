@@ -238,7 +238,7 @@ function CheckoutScreen({ cart, navigate }) {
                 <div className="bag-cart__item-media"><img src={it.image || 'assets/placeholder-product.svg'} alt="" /></div>
                 <div className="bag-cart__item-body">
                   <div className="bag-cart__item-name">{it.name}</div>
-                  <div className="bag-cart__item-meta">{it.colorway} · Talle {it.size} EU</div>
+                  <div className="bag-cart__item-meta">{it.colorway} · Talle {it.size} {(it.unit || 'eu').toUpperCase()}</div>
                   <div className="bag-cart__item-price">{window.formatPrice(it.price)}</div>
                 </div>
               </div>

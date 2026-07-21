@@ -97,7 +97,10 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
   const product = products.find(p => p.id === productId) || products[0];
 
   const [activeItem, setActiveItem] = useState_prod(0);
-  const [unit, setUnit] = useState_prod('eu');
+  const [unit, setUnit] = useState_prod(() => {
+    const s = (product && product.sizes) || {};
+    return (s.us && s.us.length) ? 'us' : ((s.uk && s.uk.length) ? 'uk' : 'us');
+  });
   const [size, setSize] = useState_prod(null);
   const [showSizeModal, setShowSizeModal] = useState_prod(false);
   const [showSizeFull, setShowSizeFull] = useState_prod(false);
@@ -136,23 +139,16 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
       setTimeout(() => setFeedback(null), 2400);
       return;
     }
-    addToCart({ ...product, size, brand: brand.name, model: model.name });
+    addToCart({ ...product, size, unit, brand: brand.name, model: model.name });
     setFeedback({ type: 'success', text: 'Agregado al carrito.' });
     setTimeout(() => setFeedback(null), 2400);
   };
 
   const instagramLink = 'https://ig.me/m/botinesaltagamacba';
 
-  // EU: show all sizes.eu, available = in availableSizes
-  // US/UK: show sizes.us / sizes.uk (admin marks which are available), all enabled
-  const currentSizes = unit === 'eu'
-    ? (product.sizes.eu || [])
-    : (product.sizes[unit] || []);
-
-  const isAvailable = (sz, i) => {
-    if (unit === 'eu') return product.availableSizes.includes(sz);
-    return true;
-  };
+  // US/UK: se muestran los talles cargados para la unidad elegida; todos disponibles.
+  const currentSizes = (product.sizes && product.sizes[unit]) || [];
+  const isAvailable = () => true;
 
   return (
     <main className="bag-product-page">
@@ -225,11 +221,16 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
           {/* Size selector */}
           <div className="bag-eyebrow">SELECCIONA TU TALLE</div>
           <div className="bag-unit-toggle">
-            {['us','uk','eu'].map(u => (
+            {['us','uk'].map(u => (
               <button key={u} className={`bag-unit-toggle__btn ${unit === u ? 'is-active' : ''}`} onClick={() => setUnit(u)}>{u.toUpperCase()}</button>
             ))}
           </div>
           <div className="bag-size-grid">
+            {currentSizes.length === 0 && (
+              <p style={{ fontSize: 'var(--bag-fs-sm)', color: 'var(--bag-fg-muted)', margin: 0 }}>
+                No hay talles {unit.toUpperCase()} cargados para este modelo. Consultanos por Instagram.
+              </p>
+            )}
             {currentSizes.map((sz, i) => {
               const available = isAvailable(sz, i);
               return (

@@ -126,7 +126,7 @@ function FeaturedLaunch({ article, onClick, onProductClick }) {
     relModel = model;
   }
 
-  const sizes = relProduct?.availableSizes || [];
+  const sizes = (relProduct?.sizes?.us?.length ? relProduct.sizes.us : relProduct?.sizes?.uk) || [];
   const sizeRange = sizes.length > 1
     ? `${sizes[0]} – ${sizes[sizes.length - 1]}`
     : sizes[0] || '';

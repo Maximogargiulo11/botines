@@ -13,12 +13,12 @@ const esc = (s) => String(s ?? '')
   .replace(/"/g, '&quot;')
   .replace(/'/g, '&#39;');
 
-// Los items se guardan con el título "Nombre — Colorway — Talle X EU".
-// Separamos el talle para poder mostrarlo en su propia línea.
+// Los items se guardan con el título "Nombre — Colorway — Talle X US".
+// Separamos el talle (con su unidad, ej. "9 US") para mostrarlo en su línea.
 function parseItem(title) {
   const parts = String(title ?? '').split(' — Talle ');
   if (parts.length === 2) {
-    return { producto: parts[0], talle: parts[1].replace(/\s*EU\s*$/i, '').trim() };
+    return { producto: parts[0], talle: parts[1].trim() };
   }
   return { producto: String(title ?? ''), talle: null };
 }
