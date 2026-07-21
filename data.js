@@ -4067,7 +4067,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG ",
         "colorway": "Gris / Rojo",
         "color": "#333333",
-        "price": 0,
+        "price": 519999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4086,7 +4086,21 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "13",
+            "12.5",
+            "12"
+          ],
           "uk": []
         },
         "images": [
@@ -4240,7 +4254,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4292,7 +4306,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite LL FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 569999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
