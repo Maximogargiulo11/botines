@@ -37,7 +37,7 @@ async function sendConfirmationEmail(order) {
         ${discount > 0 ? `<p>Descuento por transferencia (10%): -${fmt(discount)}</p>` : ''}
         <p><strong>Total: ${fmt(order.amount)}</strong></p>
         <p>Te lo enviamos a: ${esc(order.shipping.direccion)}, ${esc(order.shipping.localidad)}, ${esc(order.shipping.provincia)} (CP ${esc(order.shipping.codigoPostal)})</p>
-        <p>Cualquier consulta, escribinos por WhatsApp: <a href="https://wa.me/5493516836569">+54 9 351 683-6569</a></p>
+        <p>Cualquier consulta, escribinos por Instagram: <a href="https://ig.me/m/botinesaltagamacba">@botinesaltagamacba</a></p>
       `,
     });
     if (error) {

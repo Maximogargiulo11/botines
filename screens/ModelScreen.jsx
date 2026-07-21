@@ -60,8 +60,8 @@ function ModelScreen({ brandSlug, modelSlug, navigate }) {
       {products.length === 0 && (
         <div className="bag-empty-state">
           <div className="bag-eyebrow bag-eyebrow--muted">Sin stock</div>
-          <p>Estamos esperando reposición de este modelo. Consultá disponibilidad por WhatsApp.</p>
-          <a className="bag-btn bag-btn--ghost" href="https://wa.me/5493516836569" target="_blank" rel="noreferrer">CONSULTAR POR WHATSAPP</a>
+          <p>Estamos esperando reposición de este modelo. Consultá disponibilidad por Instagram.</p>
+          <a className="bag-btn bag-btn--ghost" href="https://ig.me/m/botinesaltagamacba" target="_blank" rel="noreferrer">CONSULTAR POR INSTAGRAM</a>
         </div>
       )}
 

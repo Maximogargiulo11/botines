@@ -141,11 +141,7 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
     setTimeout(() => setFeedback(null), 2400);
   };
 
-  const whatsappLink = () => {
-    const t = size || '—';
-    const msg = encodeURIComponent(`Hola! Me interesa el ${product.name} colorway ${product.colorway} en talle ${t} ${unit.toUpperCase()}. ¿Está disponible?`);
-    return `https://wa.me/5493516836569?text=${msg}`;
-  };
+  const instagramLink = 'https://ig.me/m/botinesaltagamacba';
 
   // EU: show all sizes.eu, available = in availableSizes
   // US/UK: show sizes.us / sizes.uk (admin marks which are available), all enabled
@@ -253,9 +249,9 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
           {/* CTA */}
           <div className="bag-product-info__ctas">
             <button className="bag-btn bag-btn--primary bag-btn--block" onClick={handleAdd}>AGREGAR AL CARRITO</button>
-            <a className="bag-btn bag-btn--ghost bag-btn--block" href={whatsappLink()} target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" style={{ marginRight: 6 }}><path d="M21 12a9 9 0 1 1-3.4-7.04L21 4l-.96 3.4A8.96 8.96 0 0 1 21 12z"/></svg>
-              CONSULTAR POR WHATSAPP
+            <a className="bag-btn bag-btn--ghost bag-btn--block" href={instagramLink} target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 6 }}><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+              CONSULTAR POR INSTAGRAM
             </a>
             {feedback && (
               <div className={`bag-feedback bag-feedback--${feedback.type}`}>{feedback.text}</div>

@@ -149,19 +149,19 @@ function PaymentResultScreen({ status, navigate, clearCart }) {
     exitoso: {
       icon: '✓',
       title: '¡Pago aprobado!',
-      body: 'Tu compra fue procesada con éxito. En breve te contactamos por WhatsApp para coordinar el envío.',
+      body: 'Tu compra fue procesada con éxito. En breve te contactamos por Instagram para coordinar el envío.',
       color: '#22c55e',
     },
     pendiente: {
       icon: '⏳',
       title: 'Pago pendiente',
-      body: 'Tu pago está siendo procesado. Te avisamos cuando se confirme. Si tenés dudas escribinos por WhatsApp.',
+      body: 'Tu pago está siendo procesado. Te avisamos cuando se confirme. Si tenés dudas escribinos por Instagram.',
       color: '#f59e0b',
     },
     fallido: {
       icon: '✕',
       title: 'Pago fallido',
-      body: 'No pudimos procesar tu pago. Podés intentar nuevamente o contactarnos por WhatsApp.',
+      body: 'No pudimos procesar tu pago. Podés intentar nuevamente o contactarnos por Instagram.',
       color: '#ff4455',
     },
   }[status] || { icon: '?', title: 'Estado desconocido', body: '', color: '#888' };
@@ -174,7 +174,7 @@ function PaymentResultScreen({ status, navigate, clearCart }) {
         <p className="bag-payment-result__body">{cfg.body}</p>
         <div className="bag-payment-result__actions">
           {status !== 'exitoso' && (
-            <a className="bag-btn bag-btn--ghost" href="https://wa.me/5493516836569" target="_blank" rel="noreferrer">Consultar por WhatsApp</a>
+            <a className="bag-btn bag-btn--ghost" href="https://ig.me/m/botinesaltagamacba" target="_blank" rel="noreferrer">Consultar por Instagram</a>
           )}
           <button className="bag-btn bag-btn--primary" onClick={() => navigate('/')}>Volver al inicio</button>
         </div>

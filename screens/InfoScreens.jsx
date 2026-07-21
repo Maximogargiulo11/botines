@@ -28,8 +28,8 @@ function PoliticaScreen({ navigate }) {
         ))}
 
         <div className="bag-info-page__cta">
-          <p className="bag-info-page__note">¿Tenés un caso particular? Escribinos por WhatsApp y lo resolvemos.</p>
-          <a className="bag-btn bag-btn--primary" href="https://wa.me/5493516836569" target="_blank" rel="noreferrer">CONSULTAR POR WHATSAPP</a>
+          <p className="bag-info-page__note">¿Tenés un caso particular? Escribinos por Instagram y lo resolvemos.</p>
+          <a className="bag-btn bag-btn--primary" href="https://ig.me/m/botinesaltagamacba" target="_blank" rel="noreferrer">CONSULTAR POR INSTAGRAM</a>
         </div>
       </section>
     </main>
@@ -78,7 +78,7 @@ function FaqScreen({ navigate }) {
 
         <div className="bag-info-page__cta">
           <p className="bag-info-page__note">¿No encontraste lo que buscabas?</p>
-          <a className="bag-btn bag-btn--primary" href="https://wa.me/5493516836569" target="_blank" rel="noreferrer">CONSULTAR POR WHATSAPP</a>
+          <a className="bag-btn bag-btn--primary" href="https://ig.me/m/botinesaltagamacba" target="_blank" rel="noreferrer">CONSULTAR POR INSTAGRAM</a>
         </div>
       </section>
     </main>
