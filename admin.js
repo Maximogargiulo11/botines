@@ -1188,11 +1188,12 @@ function TokenModal({ onSave, onCancel }) {
 // ─────────────────────────────────────────
 // ORDERS SECTION
 // ─────────────────────────────────────────
-function OrdersSection({ adminSecret }) {
+function OrdersSection({ adminSecret, notify }) {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState(null);
   const [confirming, setConfirming] = useState(null);
+  const [deleting, setDeleting] = useState(null);
 
   const confirmOrder = async (orderId) => {
     setConfirming(orderId);
@@ -1204,11 +1205,37 @@ function OrdersSection({ adminSecret }) {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Error al confirmar el pedido');
+      if (data.emailSent) {
+        notify('Pago confirmado. Mail de confirmación enviado al cliente ✓', 'success');
+      } else {
+        notify(`Pago confirmado, pero el mail NO se envió: ${data.emailReason || 'motivo desconocido'}`, 'warn');
+      }
       loadOrders();
     } catch (e) {
-      alert(`Error al confirmar el pedido: ${e.message}`);
+      notify(`Error al confirmar el pedido: ${e.message}`, 'error');
     } finally {
       setConfirming(null);
+    }
+  };
+
+  const deleteOrder = async (order) => {
+    const quien = order.payer_name || order.payer_email || order.id;
+    if (!window.confirm(`¿Eliminar el pedido de ${quien}?\n\nEsta acción no se puede deshacer.`)) return;
+    setDeleting(order.id);
+    try {
+      const res = await fetch('/api/delete-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
+        body: JSON.stringify({ orderId: order.id }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error al eliminar el pedido');
+      notify('Pedido eliminado.', 'success');
+      loadOrders();
+    } catch (e) {
+      notify(`Error al eliminar el pedido: ${e.message}`, 'error');
+    } finally {
+      setDeleting(null);
     }
   };
 
@@ -1274,10 +1301,13 @@ function OrdersSection({ adminSecret }) {
                   <div className="adm-order-row__date">{o.date ? new Date(o.date).toLocaleDateString('es-AR') : '—'}</div>
                   <div className="adm-order-row__id">{o.payment_method === 'transferencia' ? 'Transferencia' : `MP #${o.mp_payment_id}`}</div>
                   {o.status === 'pendiente' && (
-                    <Btn size="sm" onClick={() => confirmOrder(o.id)} disabled={confirming === o.id}>
+                    <Btn size="sm" onClick={() => confirmOrder(o.id)} disabled={confirming === o.id} style={{ marginTop: 6 }}>
                       {confirming === o.id ? 'Confirmando...' : 'Confirmar pago'}
                     </Btn>
                   )}
+                  <Btn variant="danger" size="sm" onClick={() => deleteOrder(o)} disabled={deleting === o.id} style={{ marginTop: 6 }}>
+                    {deleting === o.id ? 'Eliminando...' : 'Eliminar'}
+                  </Btn>
                 </div>
               </div>
             );
@@ -1646,7 +1676,7 @@ function AdminApp() {
           {!loading && data && section === 'products' && (
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
           )}
-          {section === 'orders' && <OrdersSection adminSecret={adminSecret} />}
+          {section === 'orders' && <OrdersSection adminSecret={adminSecret} notify={notify} />}
           {!loading && data && section === 'pages' && (
             <PagesSection data={data} onDataChange={handleDataChange} />
           )}

@@ -34,9 +34,9 @@ module.exports = async function handler(req, res) {
       allowOverwrite: true,
     });
 
-    await sendConfirmationEmail(order);
+    const emailResult = (await sendConfirmationEmail(order)) || { sent: false, reason: 'Motivo desconocido.' };
 
-    return res.status(200).json({ ok: true });
+    return res.status(200).json({ ok: true, emailSent: emailResult.sent, emailReason: emailResult.reason || null });
   } catch (err) {
     console.error('confirm-order error:', err);
     return res.status(500).json({ error: 'Error interno del servidor' });

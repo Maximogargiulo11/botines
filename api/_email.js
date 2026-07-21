@@ -27,11 +27,11 @@ async function sendConfirmationEmail(order) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error('RESEND_API_KEY no configurado, no se pudo enviar el mail de confirmación para', order.id);
-    return;
+    return { sent: false, reason: 'Resend no está configurado (falta RESEND_API_KEY en Vercel).' };
   }
   if (!order.shipping || !order.shipping.email) {
     console.error('Pedido sin email, no se pudo enviar el mail de confirmación:', order.id);
-    return;
+    return { sent: false, reason: 'El pedido no tiene email de contacto.' };
   }
 
   const itemsDetailsHtml = (order.items || []).map(it => {
@@ -75,9 +75,12 @@ async function sendConfirmationEmail(order) {
     });
     if (error) {
       console.error('email send error:', error.message || error);
+      return { sent: false, reason: error.message || 'Resend rechazó el envío (¿dominio sin verificar?).' };
     }
+    return { sent: true };
   } catch (err) {
     console.error('email send error:', err.message);
+    return { sent: false, reason: err.message || 'Error inesperado al enviar el mail.' };
   }
 }
 
