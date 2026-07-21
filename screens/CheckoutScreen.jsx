@@ -69,7 +69,7 @@ function CheckoutScreen({ cart, navigate }) {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Error al registrar el pedido');
-      navigate('/pago-exitoso');
+      navigate('/pago-transferencia');
     } catch (err) {
       setTransferError(err.message);
       setTransferLoading(false);

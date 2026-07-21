@@ -91,6 +91,7 @@ function App() {
   else if (parts[0] === 'faq') screen = <FaqScreen navigate={navigate} />;
   else if (parts[0] === 'checkout') screen = <CheckoutScreen cart={cart} navigate={navigate} />;
   else if (parts[0] === 'pago-exitoso')  screen = <PaymentResultScreen status="exitoso"  navigate={navigate} clearCart={clearCart} />;
+  else if (parts[0] === 'pago-transferencia') screen = <PaymentResultScreen status="transferencia" navigate={navigate} clearCart={clearCart} />;
   else if (parts[0] === 'pago-fallido')  screen = <PaymentResultScreen status="fallido"  navigate={navigate} />;
   else if (parts[0] === 'pago-pendiente') screen = <PaymentResultScreen status="pendiente" navigate={navigate} />;
   else screen = <HomeScreen navigate={navigate} />;
@@ -126,7 +127,7 @@ function App() {
 
 function PaymentResultScreen({ status, navigate, clearCart }) {
   useEffect(() => {
-    if (status === 'exitoso') {
+    if (status === 'exitoso' || status === 'transferencia') {
       if (clearCart) clearCart();
       if (typeof window.gtag === 'function') {
         try {
@@ -151,6 +152,12 @@ function PaymentResultScreen({ status, navigate, clearCart }) {
       title: '¡Pago aprobado!',
       body: 'Tu compra fue procesada con éxito. En breve te contactamos por Instagram para coordinar el envío.',
       color: '#22c55e',
+    },
+    transferencia: {
+      icon: '⏳',
+      title: '¡Pedido registrado!',
+      body: 'Tu pedido quedó registrado y está pendiente de aprobación. En cuanto verifiquemos tu transferencia, te enviaremos un mail confirmando tu compra.',
+      color: '#f59e0b',
     },
     pendiente: {
       icon: '⏳',
