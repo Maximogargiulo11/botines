@@ -36,6 +36,9 @@ function Footer({ navigate }) {
           <span className="bag-footer__sep">·</span>
           <a href="#" onClick={(e) => { e.preventDefault(); navigate('/faq'); }}>Preguntas frecuentes</a>
         </div>
+        <div className="bag-footer__credit">
+          Desarrollado por <a href="https://maga-agency.vercel.app/" target="_blank" rel="noreferrer">MAGA</a>
+        </div>
         <div className="bag-footer__copy">© 2026 BOTINES ALTA GAMA CBA · CÓRDOBA · ARGENTINA</div>
       </div>
     </footer>
