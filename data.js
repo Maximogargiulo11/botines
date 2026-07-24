@@ -11,6 +11,76 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "mf6daor",
+      "slug": "nike-cocina-unos-botines-dorados-para-mbappe-por-su-record",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Nike cocina unos Mercurial Superfly 1z dorados para Mbappé por su récord.",
+      "excerpt": "Récord de goles de todos los tiempos en las Copa del Mundo.",
+      "date": "20 de Julio de 2026",
+      "cover": "assets/1784913131716-IMG_2555.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "jazf5zh",
+          "content": "Nuevos Mercurial Superfly 11 dorados por Nike Football para el goleador francés Kyliam Mbappé luego de romper el récord de ser el jugador con más goles en todos los mundiales."
+        },
+        {
+          "type": "image",
+          "id": "23hed84",
+          "src": "assets/1784913259351-IMG_2724.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "yde9z11",
+          "left": {
+            "src": "assets/1784913274724-IMG_2725.jpeg"
+          },
+          "right": {
+            "src": "assets/1784913281142-IMG_2726.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "3qjokuj",
+          "content": "¡Imparable en las redes!"
+        },
+        {
+          "type": "image-pair",
+          "id": "1lxg3om",
+          "left": {
+            "src": "assets/1784913325501-IMG_2727.jpeg"
+          },
+          "right": {
+            "src": "assets/1784913330930-IMG_2728.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "hl17xch",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba. "
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "o7wlm9h",
       "slug": "adidas-presenta-el-caos-vs-control-pack-para-el-recorrido-final",
       "brand": "Adidas",
