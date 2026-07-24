@@ -11,6 +11,139 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "bemcabn",
+      "slug": "puma-presenta-el-paquete-arrival-para-el-comienzo-de-la-nueva-temporada",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma presenta el paquete ‘Arrival’ para el comienzo de la nueva temporada.",
+      "excerpt": "Nitrofam para Ultra 7. Nuevos colores para Future 9 y King 20.",
+      "date": "23 de Julio de 2026",
+      "cover": "assets/1784914072720-IMG_2602.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "u61v45a",
+          "content": "¡Listos para un nuevo comienzo de la temporada! 🙌\n\n@pumafootball ha presentado el paquete de llegada: ‘Arrival’, encabezado por el nuevo Ultra Nitro 7 💨 y respaldado por nuevas actualizaciones de color tanto para el Future 9 como para el King.\n\nEn general, este paquete hace exactamente lo que su nombre sugiere. Anuncia la llegada de una nueva era para Puma Fútbol, liderada por la introducción de la tecnología Nitro en el Ultra 7 y apoyada por dos actualizaciones bellamente ejecutadas para el Future y King. Queda por ver si Nitro demuestra ser un verdadero cambio de juego en el campo, pero es un movimiento sólido de Puma y pareciera no hay error."
+        },
+        {
+          "type": "image",
+          "id": "d3yh20g",
+          "src": "assets/1784916537526-IMG_2603.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "u1004zt",
+          "content": "En el corazón de la bota se encuentra NITROFOAM™ ELITE, integrado en la plantilla y la plantilla. Diseñado para comprimir y rebotar con cada zancada, proporciona amortiguación sensible y retorno de energía, ayudando a los jugadores a mantenerse explosivos desde el primer silbato hasta el último. Es una tecnología que ha construido su reputación en la carrera, y ahora PUMA está apostando a lo grande por su capacidad para mejorar la aceleración y la comodidad en el fútbol.\n\nEl resto del paquete es igual de impresionante. Con un peso de solo 180 g, el ULTRA NITRO 7 se mantiene firmemente enfocado en la velocidad. La parte superior ULTRAWEAVE actualizada ofrece un soporte ligero sin sacrificar el tacto, ofreciendo una sensación cercana y precisa en la pelota. PUMA también ha reelaborado el ajuste a través de un último rediseñado y un marco de soporte SPEEDBELT actualizado, con el objetivo de proporcionar un bloqueo más seguro durante los movimientos de alta velocidad y los cambios bruscos de dirección."
+        },
+        {
+          "type": "image-pair",
+          "id": "bye9ybh",
+          "left": {
+            "src": "assets/1784916592416-IMG_2519.jpeg"
+          },
+          "right": {
+            "src": "assets/1784916602724-IMG_2521.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "uvxn5m4",
+          "content": "Después de revolucionar la gama de carreras de PUMA durante los últimos cinco años, la tecnología NITRO finalmente hace su movimiento adecuado en el campo de fútbol. Si bien ya hemos visto destellos de él en el KING del año pasado y un lanzamiento de ULTRA de edición limitada, el ULTRA NITRO 7 marca la primera introducción a gran escala de la tecnología en el silo de velocidad de la marca."
+        },
+        {
+          "type": "image",
+          "id": "2f3kexk",
+          "src": "assets/1784916613414-IMG_2523.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "qthos12",
+          "src": "assets/1784916244964-Ready_when_they_aren_t.___Introducing_ULTRA_NITRO__7._Featuring_NITROFOAM__ELITE__PUMA_s_nitroge.mp4"
+        },
+        {
+          "type": "text",
+          "id": "7cawacp",
+          "content": "Bajo el pie, la nueva suela SPEEDSYSTEM 2.0 ha sido diseñada para transformar cada movimiento en impulso hacia adelante. Ligero, sensible y agresivamente enfocado en la tracción, está diseñado para ayudar a los jugadores a maximizar cada sprint, giro y ráfaga de aceleración. En conjunto, el paquete es un caso sólido para que la ULTRA NITRO 7 sea la bota de velocidad más completa que PUMA haya producido hasta la fecha."
+        },
+        {
+          "type": "video",
+          "id": "wy57yiy",
+          "src": "assets/1784916288635-Ready_when_they_aren_t.___Introducing_ULTRA_NITRO__7._Featuring_NITROFOAM__ELITE__PUMA_s_nitroge_2.mp4"
+        },
+        {
+          "type": "text",
+          "id": "g3h6mo3",
+          "content": "Otra primicia para el silo llega con la introducción de una opción ULTRA sin cordones, marcando la primera vez que la bota de velocidad se ofrece sin cordones. Para los jugadores que prefieren una zona de ataque más limpia y un ajuste más ágil, es una adición bienvenida a la alineación."
+        },
+        {
+          "type": "image",
+          "id": "u6toxex",
+          "src": "assets/1784916482987-IMG_2604.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yme6rbc",
+          "content": "Mientras que el ULTRA domina comprensiblemente la conversación, el FUTURO 9 y el REY no se han dejado fuera. Ambos reciben actualizaciones de color de buen gusto que unen la colección, al tiempo que permiten que la bota de velocidad insignia siga siendo el centro del escenario."
+        },
+        {
+          "type": "text",
+          "id": "nqiz8g1",
+          "content": "El FUTURE 9 llega en un elegante color \"Almendra azucarada/PUMA Blanco/Ultra Rojo/PUMA Negro\". Una base blanquecina se combina con sutiles patrones tejidos en la parte superior, mientras que los vibrantes elementos PWRTAPE rojo-naranja inyectan la cantidad justa de energía en el diseño. Es un equilibrio inteligente de discreto y llamativo."
+        },
+        {
+          "type": "image",
+          "id": "d69ndti",
+          "src": "assets/1784917028057-IMG_2605.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ilxm3nj",
+          "content": "Mientras tanto, el KING adopta un enfoque similar con su acabado \"Almendra azucarada/PUMA Negro/Ultra Rojo\". Hay una presencia más fuerte de los acentos rojos y negros aquí, particularmente alrededor de la marca Formstrip, lo que le da a la bota una identidad un poco más audaz mientras mantiene la estética premium y refinada por la que el KING se ha hecho conocido."
+        },
+        {
+          "type": "image",
+          "id": "eympb7r",
+          "src": "assets/1784917071906-IMG_2606.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "u3a78on",
+          "content": "En general, el paquete de llegada hace exactamente lo que su nombre sugiere. Anuncia la llegada de una nueva era para PUMA Football, liderada por la introducción de la tecnología NITRO en el ULTRA 7 y apoyada por dos actualizaciones bellamente ejecutadas para el FUTURE y KING. Queda por ver si NITRO demuestra ser un verdadero cambio de juego en el campo, pero es un movimiento sólido de PUMA y no hay error."
+        },
+        {
+          "type": "text",
+          "id": "91oq7w4",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "mf6daor",
       "slug": "nike-cocina-unos-botines-dorados-para-mbappe-por-su-record",
       "brand": "Nike",
