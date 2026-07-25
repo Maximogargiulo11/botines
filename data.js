@@ -3455,7 +3455,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Rosa / Negro",
         "color": "#e63b7a",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -3504,21 +3504,7 @@ window.BAG_DATA = {
             "12.5",
             "13"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803228654-IMG_1850.webp"
@@ -3536,7 +3522,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG",
         "colorway": "Rosa / Negro",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 519999,
         "availableSizes": [
           "38",
           "38.5",
@@ -3585,21 +3571,7 @@ window.BAG_DATA = {
             "12.5",
             "13"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803276786-IMG_1848.webp"
@@ -3617,7 +3589,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Blanco ",
         "color": "#ffffff",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3670,7 +3642,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG ",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 489999,
+        "price": 519999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3698,7 +3670,11 @@ window.BAG_DATA = {
             "9.5",
             "10",
             "10.5",
-            "11"
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
           ],
           "uk": []
         },
