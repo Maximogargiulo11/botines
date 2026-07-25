@@ -1490,46 +1490,6 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "1amrnth",
-        "name": "Nike Mercurial Vapor 16 Elite FG",
-        "colorway": "Azul / Rosa",
-        "color": "#000ef2",
-        "price": 549999,
-        "availableSizes": [
-          "41"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1781808202320-IMG_1466.webp"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Attack’ Pack"
-        }
-      },
-      {
         "id": "d4s9li3",
         "name": "Nike Mercurial Vapor 17 Elite FG",
         "colorway": "Negro / Verde",
@@ -1944,46 +1904,6 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "3fymgtc",
-        "name": "Nike Mercurial Vapor 16 Elite FG",
-        "colorway": "Blanco",
-        "color": "#ffffff",
-        "price": 599999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1783360680407-6a0b896a-a2f5-411d-b4d8-fb367ce89c1f.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Air Max 95’ Pack"
-        }
-      },
-      {
         "id": "yxkusk9",
         "name": "Nike Mercurial Vapor 16 Elite FG",
         "colorway": "Violeta / Naranja",
@@ -2008,9 +1928,12 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "8.5",
-            "9",
-            "9.5"
+            "9.5",
+            "10.5",
+            "7.5",
+            "7",
+            "12",
+            "13"
           ],
           "uk": []
         },
@@ -2023,50 +1946,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’ Pack"
-        }
-      },
-      {
-        "id": "zx3r7pd",
-        "name": "Nike Mercurial Vapor 16 Elite FG",
-        "colorway": "Naranja ",
-        "color": "#ff4015",
-        "price": 499999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "10",
-            "10.5"
-          ],
-          "uk": [
-            "9",
-            "9.5"
-          ]
-        },
-        "images": [
-          "assets/1783361178883-IMG_8029.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Déjà Vu’ Pack"
         }
       },
       {
@@ -2094,12 +1973,14 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "10",
-            "11"
+            "11",
+            "9",
+            "11.5"
           ],
           "uk": [
-            "9",
-            "10"
+            "10",
+            "8",
+            "10.5"
           ]
         },
         "images": [
