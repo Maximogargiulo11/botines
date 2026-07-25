@@ -2744,7 +2744,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite FG",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [
           "38.5",
           "39",
@@ -2825,7 +2825,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite LL FG ",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -2987,7 +2987,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3040,7 +3040,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite LL FG",
         "colorway": "Blanco ",
         "color": "#ffffff",
-        "price": 489999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3197,7 +3197,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite LL SG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 539999,
+        "price": 639999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3251,7 +3251,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG",
         "colorway": "Azul / Amarillo",
         "color": "#0045cd",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3303,7 +3303,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite LL FG",
         "colorway": "Azul / Amarillo",
         "color": "#006fe6",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3355,7 +3355,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG",
         "colorway": "Amarillo",
         "color": "#fbfb00",
-        "price": 509999,
+        "price": 4699999,
         "availableSizes": [],
         "sizes": {
           "eu": [
