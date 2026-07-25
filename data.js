@@ -1392,7 +1392,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 11 Elite SG-Pro Player Edition",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 669999,
+        "price": 699999,
         "availableSizes": [
           "39",
           "39.5",
@@ -1650,8 +1650,8 @@ window.BAG_DATA = {
         "id": "1zf0k9y",
         "name": "Nike Mercurial Vapor 17 Elite FG ‘Scorpion’",
         "colorway": "Negro / Rosa / Violeta",
-        "color": "#e63b7a",
-        "price": 549999,
+        "color": "#982abc",
+        "price": 649999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -1681,11 +1681,21 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11"
+          ]
         },
         "images": [
           "assets/1782859029244-IMG_2322.jpeg"
@@ -1703,7 +1713,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 11 Elite FG",
         "colorway": "Rosa / Violeta",
         "color": "#982abc",
-        "price": 599999,
+        "price": 699999,
         "availableSizes": [],
         "sizes": {
           "eu": [
