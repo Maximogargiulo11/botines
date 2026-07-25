@@ -11,6 +11,93 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "wshc6ec",
+      "slug": "hay-momentos-que-duran-90-minutos-y-hay-momentos-que-quedan-para-siempre",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Hay momentos que duran 90 minutos. Y hay momentos que quedan para siempre ✨",
+      "excerpt": "",
+      "date": "19 de Junio de 2019",
+      "cover": "assets/1785015967409-IMG_2175.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1785015982861-IMG_2185.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "tjcuqbl",
+          "content": "Después de todo lo que significó para nosotros poder acompañar nuevamente a @enzojfernandez en una competencia internacional, hoy queremos detenernos un segundo y compartir estas imágenes de una tarde muy especial más allá del resultado: estar presentes en una Final de la Copa del Mundo para representar a un jugador nuestro 🏆"
+        },
+        {
+          "type": "image",
+          "id": "2yrq6ch",
+          "src": "assets/1785016048639-IMG_2184.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "dgqmz8x",
+          "content": "Estos Nike Phantom GT 2 Elite FG de la colección ‘Generation’, más que un modelo para Enzo.\n\n\nDel recuerdo de Qatar a una nueva final. Un mismo modelo. Una nueva historia. Y nosotros, una vez más, orgullosos de haber sido parte.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "9pmonf2",
+          "left": {
+            "src": "assets/1785016151778-IMG_2180.jpeg"
+          },
+          "right": {
+            "src": "assets/1785016168644-IMG_2192.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "1qu26xo",
+          "content": "Y quizás ahí está lo más lindo de esta historia.\n\n\nPorque detrás de par de botines, hay algo mucho más grande que nosotros mismos. Hay confianza. Hay vínculos que se construyen con el tiempo. Hay personas que nos abren una puerta y nos permiten ser parte, aunque sea desde nuestro pequeño lugar, de momentos que quedarán guardados para siempre."
+        },
+        {
+          "type": "image-pair",
+          "id": "dydd9i3",
+          "left": {
+            "src": "assets/1785016218512-IMG_2188.jpeg"
+          },
+          "right": {
+            "src": "assets/1785016230622-IMG_2182.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "34m8s4k",
+          "content": "Para nosotros, poder mirar estas imágenes y saber que estuvimos ahí, acompañando una vez más a uno de los nuestros, es algo que nos llena de orgullo y nos hace mirar hacia atrás para valorar todo el camino recorrido."
+        },
+        {
+          "type": "image",
+          "id": "v3icw0t",
+          "src": "assets/1785016299759-IMG_2190.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "62kp15s",
+          "content": "No sabemos hasta dónde nos llevará este camino. Pero sí sabemos que queremos seguir recorriéndolo.\n\n\nMención muy especial para @konradborzy por capturar estos momentos únicos y compartirlos con nosotros. ¡Ha sido un gran trabajo a lo largo de esta competición! 👏\n\n\nSeguimos. \n¡Vamos Argentina! 🇦🇷 \n\n\nBotines Alta Gama Córdoba. ✍️"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "glm6tfu",
       "slug": "nike-lanza-el-break-em-para-el-comienzo-de-la-temporada",
       "brand": "Nike",
