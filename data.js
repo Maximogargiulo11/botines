@@ -3802,7 +3802,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Blanco / Azul",
         "color": "#ffffff",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3854,7 +3854,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG",
         "colorway": "Blanco / Azul",
         "color": "#ffffff",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3906,7 +3906,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Rojo",
         "color": "#e22400",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3998,7 +3998,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG",
         "colorway": "Rojo",
         "color": "#e22400",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4043,46 +4043,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’ Pack"
-        }
-      },
-      {
-        "id": "ye8xklx",
-        "name": "Adidas Predator Elite FT FG",
-        "colorway": "Blanco / Azul",
-        "color": "#ffffff",
-        "price": 549999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9.5"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1783360172966-e1938269-5caf-4e49-9f9d-1111099a4a6d.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Jude Bellingham’ Pack"
         }
       },
       {
