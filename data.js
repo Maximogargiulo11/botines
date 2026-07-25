@@ -1494,7 +1494,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Vapor 17 Elite FG",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -1524,9 +1524,7 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
           "uk": []
         },
