@@ -2624,7 +2624,7 @@ window.BAG_DATA = {
         "name": "Nike Tiempo Maestro Elite FG ",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 539999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2654,11 +2654,21 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "13",
-            "12",
-            "12.5"
+            "12"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "11",
+            "10.5",
+            "10"
+          ]
         },
         "images": [
           "assets/1782349362081-IMG_2187.webp"
@@ -2669,46 +2679,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack (actualizado)"
-        }
-      },
-      {
-        "id": "oo511q6",
-        "name": "Nike Tiempo Legend X Elite FG Made In ITALY",
-        "colorway": "Gris",
-        "color": "#d6d6d6",
-        "price": 599999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9.5"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1783360772603-db09d980-6b79-499a-8108-835c0daf585a.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme ",
-          "peso": "186 gr.",
-          "coleccion": "‘Luxe’ Pack"
         }
       },
       {
@@ -2737,10 +2707,24 @@ window.BAG_DATA = {
           ],
           "us": [
             "10",
-            "10.5",
-            "11"
+            "11",
+            "7",
+            "7.5",
+            "8",
+            "9.5",
+            "8.5",
+            "11.5"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8.5",
+            "9",
+            "10",
+            "10.5"
+          ]
         },
         "images": [
           "assets/1783360876506-45ee21c6-5794-443b-9f7e-ff49f50318a7.jpeg"
