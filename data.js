@@ -193,7 +193,7 @@ window.BAG_DATA = {
       "title": "Presentes en la Final de la Copa del Mundo 2026",
       "excerpt": "Enzo Fernández con nuestros Nike Phantom GT 2 ‘Generation’.",
       "date": "19 de Junio de 2026",
-      "cover": "assets/1784992730126-IMG_2075.jpeg",
+      "cover": "assets/1784996345850-IMG_2531.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "assets/1784992771182-IMG_2072.jpeg",
@@ -210,7 +210,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "lne4sdq",
-          "content": "Concluimos nuestra participación en la Copa Mundial de la FIFA 2026 🏆\n\nLuego de trabajar arduamente y a contrarreloj para lograr la entrega del pedido especial hecho por Enzo Fernández, queríamos agradecer explícitamente su confianza puesta en nuestro trabajo y servicio. "
+          "content": "Concluimos nuestra participación en la Copa Mundial de la FIFA 2026 🏆\n\n\nLuego de trabajar arduamente y a contrarreloj para lograr la entrega del pedido especial hecho por Enzo Fernández, queríamos agradecer explícitamente su confianza puesta en nuestro trabajo y servicio. "
         },
         {
           "type": "image-pair",
@@ -237,7 +237,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "xexd03o",
-          "content": "Más allá de que deseábamos otro final, somos conscientes y estamos felices de haber llegado hasta donde llegamos. \n\nPorque nos hicieron creer que todo es posible. Absolutamente todo. Puede ser difícil, pero nunca imposible. Dimos que hablar y le mostramos a todos que es así.\n\nPensar que comenzamos esto en Abril 2019 como un hobby, por pasión a los botines. "
+          "content": "Más allá de que deseábamos otro final, somos conscientes y estamos felices de haber llegado hasta donde llegamos. \n\n\nPorque nos hicieron creer que todo es posible. Absolutamente todo. Puede ser difícil, pero nunca imposible. Dimos que hablar y le mostramos a todos que es así.\n\nPensar que comenzamos esto en Abril 2019 como un hobby, por pasión a los botines. "
         },
         {
           "type": "image-pair",
@@ -252,7 +252,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "zv3vqdq",
-          "content": "Hay tantas personas detrás que aportaron su granito de arena para llegar ahí, el cual estamos tan agradecidos también porque sin ellos no hubiese sido posible.\n\nEste momento retracta lo que hemos recorrido juntos, y reafirma que vamos por buen camino. Pero esto es largo, y queda mucho por recorrer."
+          "content": "Hay tantas personas detrás que aportaron su granito de arena para llegar ahí, el cual estamos tan agradecidos también porque sin ellos no hubiese sido posible.\n\n\nEste momento retracta lo que hemos recorrido juntos, y reafirma que vamos por buen camino. Pero esto es largo, y queda mucho por recorrer."
         },
         {
           "type": "image",
@@ -264,7 +264,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "i04gihn",
-          "content": "Gracias, una vez más.\n\n📸 Guillermo Álvarez"
+          "content": "Gracias, una vez más.\n\n\n📸 Guillermo Álvarez"
         },
         {
           "type": "image-pair",
@@ -279,7 +279,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "4s7j18z",
-          "content": "Seguimos.\n¡Vamos Argentina! 🇦🇷 \n\nBotines Alta Gama Córdoba. ✍️"
+          "content": "Seguimos.\n¡Vamos Argentina! 🇦🇷 \n\n\nBotines Alta Gama Córdoba. ✍️"
         }
       ],
       "relatedProduct": null,
