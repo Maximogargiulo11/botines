@@ -2249,51 +2249,11 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "vsfp15y",
-        "name": "Nike Phantom 6 Low Elite FG",
-        "colorway": "Crema / Celeste",
-        "color": "#cbf0ff",
-        "price": 549999,
-        "availableSizes": [
-          "41"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1781808130835-IMG_1251.webp"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Showtime’ Pack"
-        }
-      },
-      {
         "id": "uxwabi1",
         "name": "Nike Phantom 6 Low Elite FG",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2323,15 +2283,24 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
-          "assets/1782348434544-69be2ddd-dec6-4d78-a5e3-66e93f0de591.jpeg",
-          "assets/1782348441458-c4771c2c-51c0-49cd-8d49-b0823e5f50a8.jpeg"
+          "assets/1784990658413-IMG_2580.webp"
         ],
         "videos": [],
         "spec": {
@@ -2502,7 +2471,7 @@ window.BAG_DATA = {
         "name": "Nike Phantom 6 Low Elite FG ",
         "colorway": "Verde",
         "color": "#76bb40",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2532,9 +2501,7 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
           "uk": []
         },
@@ -2589,50 +2556,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’ Pack"
-        }
-      },
-      {
-        "id": "7v11nwj",
-        "name": "Nike Phantom 6 Low Elite FG",
-        "colorway": "Negro / Celeste",
-        "color": "#000000",
-        "price": 459999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9",
-            "11"
-          ],
-          "uk": [
-            "8",
-            "10"
-          ]
-        },
-        "images": [
-          "assets/1783361245631-4c7ec8e9-95bb-4e2d-a833-11417708c7f1.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Shadow’ Pack"
         }
       }
     ],
