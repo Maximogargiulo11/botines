@@ -11,6 +11,181 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "glm6tfu",
+      "slug": "nike-lanza-el-break-em-para-el-comienzo-de-la-temporada",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike lanza el ‘Break ‘Em’ para el comienzo de la temporada",
+      "excerpt": "Diseñados para romper rivales y dominar cada acción del juego 🔥",
+      "date": "23 de Julio de 2026",
+      "cover": "assets/1784993840271-IMG_2646.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1784994353235-IMG_2636.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "wesbptk",
+          "content": "Construido para los jugadores que cambian los partidos en un sólo momento 🔥"
+        },
+        {
+          "type": "image",
+          "id": "nbv1ui1",
+          "src": "assets/1784994455803-IMG_2641.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ixpz23b",
+          "content": "El escenario internacional ha terminado. Ahora es el momento de la vuelta a la temporada. \n\nNike Football mira hacia la nueva temporada del club con el ‘Break ‘Em’, vistiendo el Mercurial, Phantom y Tiempo en nuevos y atrevidos colores construidos para causar una impresión instantánea."
+        },
+        {
+          "type": "video",
+          "id": "ejnn1u4",
+          "src": "assets/1784995437051-reelsvideo.io_1784777023858.mp4"
+        },
+        {
+          "type": "text",
+          "id": "81tpr6h",
+          "content": "Se acabó el verano europeo. Se han levantado trofeos, se han escrito historias y ahora es el momento de hacerlo todo de nuevo. Con la atención cambiando de la etapa internacional de vuelta al fútbol de club, Nike no está perdiendo el tiempo marcando el tono para la próxima temporada, sino que presenta el una colección intrépida construida para jugadores que buscan dejar a los defensores atrás antes de que el otoño se haya instalado.\n\nLo que une la colección es la confianza. Después de un verano dominado por los escenarios más grandes del mundo, la marca del Swoosh podría haber jugado a lo seguro de cara a la nueva campaña. En cambio, se ha duplicado, entregando un paquete que se siente audaz sin disculpas. Los colores brillantes, los acabados metálicos y el bloqueo limpio se combinan para crear una colección diseñada para destacar desde el silbato de apertura."
+        },
+        {
+          "type": "image",
+          "id": "oumy7jm",
+          "src": "assets/1784995797830-IMG_2646.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "589zhhl",
+          "content": "Liderando la carga está el nuevo Mercurial Superfly 11, que llega en una base blanca limpia que cobra vida por Swoos de oro metálico y destellos carmesí vibrantes. Es una mirada que se siente inequívocamente Mercurial: rápida, segura e imposible de ignorar. El bloqueo de color brillante solo refuerza lo que el silo siempre ha representado: velocidad pura."
+        },
+        {
+          "type": "image-pair",
+          "id": "x43yccb",
+          "left": {
+            "src": "assets/1784995827001-IMG_2642.jpeg"
+          },
+          "right": {
+            "src": "assets/1784995837790-IMG_2637.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "rdd337s",
+          "src": "assets/1784995894477-IMG_2129.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yvuaww2",
+          "content": "Seguido de cerca está el Mercurial Vapor 17, que opta por un aspecto aún más audaz que su compañero, llegando en una combinación de colores oficial de \"Brt Crimson/Blur\". De nuevo, velocidad pura. Esta bota es para aquellos que quieren destacar y no se arrepentirán. Y como la bota de fútbol más ligera de Nike hasta la fecha, definitivamente es la opción popular para los jugadores de pelota que no quieren que los sujeten."
+        },
+        {
+          "type": "image-pair",
+          "id": "hg8xot7",
+          "left": {
+            "src": "assets/1784995920150-IMG_2638.jpeg"
+          },
+          "right": {
+            "src": "assets/1784995935224-IMG_2643.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "gk9yxvy",
+          "src": "assets/1784996019965-IMG_2130.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "fz1a0d8",
+          "src": "assets/1784996036899-IMG_2128.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "gk17hka",
+          "src": "assets/1784996049769-AQMs_liqQO1NhO5DMuk6EH-iZc77FCJoHYTMf1GjwAKymZJxuEbfwZSIVbOh62hdxjJNEmIStGXstYZmMy-Ox7mIqjo___IeMgADx2s.mp4"
+        },
+        {
+          "type": "image-pair",
+          "id": "li2pjgj",
+          "left": {
+            "src": "assets/1784996064459-IMG_2634.jpeg"
+          },
+          "right": {
+            "src": "assets/1784996072861-IMG_2635.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "w01vv0c",
+          "content": "El Phantom 6 sigue su ejemplo, vestido con un llamativo acabado carmesí con detalles negros que inmediatamente captan su atención. Como bota de Nike para creadores, la Phantom siempre ha equilibrado el control con estilo, y esta última ejecución tiene esa misma actitud. Parece tan agresivo como los jugadores para los que está construido. Rodri, Foden, Kobbie Mainoo... La alineación está apilada."
+        },
+        {
+          "type": "image-pair",
+          "id": "8fkqy4h",
+          "left": {
+            "src": "assets/1784996119588-IMG_2639.jpeg"
+          },
+          "right": {
+            "src": "assets/1784996130494-IMG_2647.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "8msepgf",
+          "content": "Completando el paquete está el último Tiempo, demostrando una vez más que la herencia no tiene por qué significar ir a lo seguro. Cambiando el cuero negro tradicional por una atrevida ejecución blanca y carmesí, acabado con un Swoosh dorado metálico, el Tiempo continúa su evolución mientras mantiene la sensación premium que ha definido el silo durante décadas.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "0g5zvdk",
+          "left": {
+            "src": "assets/1784996167264-IMG_2640.jpeg"
+          },
+          "right": {
+            "src": "assets/1784996176393-IMG_2648.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "nqik2v2",
+          "content": "Lo que une la colección es la confianza. Después de un verano dominado por los escenarios más grandes del mundo, Nike podría haber jugado a lo seguro de cara a la nueva campaña. En cambio, el Swoosh se ha duplicado, entregando un paquete que se siente audaz sin disculpas. Los colores brillantes, los acabados metálicos y el bloqueo limpio se combinan para crear una colección diseñada para destacar desde el silbato de apertura."
+        },
+        {
+          "type": "image",
+          "id": "dc90kx8",
+          "src": "assets/1784996231373-IMG_2636.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "w4pn93i",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "bh4n5en",
       "slug": "presentes-en-la-final-de-la-copa-del-mundo-2026",
       "brand": "Nike",
