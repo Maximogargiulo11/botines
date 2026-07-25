@@ -139,7 +139,7 @@ window.BAG_DATA = {
       "imagenCard": "",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
-      "imagenCarrusel": "assets/1785015982861-IMG_2185.jpeg",
+      "imagenCarrusel": "",
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
