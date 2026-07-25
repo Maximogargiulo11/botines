@@ -11,6 +11,121 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "fcza1u9",
+      "slug": "un-gol-que-quedara-para-siempre",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Un gol que quedará para siempre 💫",
+      "excerpt": "En los pies de Enzo Fernández, nuestros botines fueron protagonistas de un momento inolvidable frente a Inglaterra 👟⚽️",
+      "date": "15 de Julio de 2026",
+      "cover": "assets/1785016811872-IMG_1864.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "fujlnq0",
+          "content": "Hay momentos que trascienden un partido. Momentos que quedan guardados para siempre en la memoria de quienes aman el fútbol."
+        },
+        {
+          "type": "image",
+          "id": "9s0oqfy",
+          "src": "assets/1785016939221-IMG_1879.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "27mwupg",
+          "content": "Esta vez, nuestros botines estuvieron presentes en los pies de Enzo Fernández durante una noche inolvidable, en la que el mediocampista argentino volvió a dejar su huella dentro de la cancha y fue protagonista de un gol que quedará para el recuerdo frente a Inglaterra."
+        },
+        {
+          "type": "image",
+          "id": "m6c8c6x",
+          "src": "assets/1785016982304-IMG_1865.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "bu2i9te",
+          "src": "assets/1785017002469-IMG_1866.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "lw3q6v6",
+          "src": "assets/1785017064325-IMG_1867.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "5i4jti2",
+          "src": "assets/1785017090754-IMG_1869.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "g8rg8mw",
+          "src": "https://youtu.be/RQ08NAwn6uc?si=giNwunRYIgun8ooN"
+        },
+        {
+          "type": "text",
+          "id": "71aimvg",
+          "content": "Desde Botines Alta Gama Córdoba, nos llena de orgullo acompañar a jugadores que representan la pasión, el esfuerzo y la excelencia que tanto admiramos en este deporte. Ser parte de estos momentos es mucho más que entregar un par de botines: es acompañar sueños, desafíos y noches que terminan convirtiéndose en historia."
+        },
+        {
+          "type": "image-pair",
+          "id": "4ld6p5h",
+          "left": {
+            "src": "assets/1785017205400-IMG_1871.jpeg"
+          },
+          "right": {
+            "src": "assets/1785017225973-IMG_1873.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "z63nnic",
+          "content": "Porque cuando el talento se encuentra con la pasión, nacen momentos que nunca se olvidan."
+        },
+        {
+          "type": "image",
+          "id": "0ijmcgp",
+          "src": "assets/1785017278953-IMG_1877.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "kduyjfc",
+          "content": "📸 Guillermo Álvarez\n\nSeguimos.\n¡Vamos Argentina! 🇦🇷\n\nBotines Alta Gama Córdoba. ✍️"
+        },
+        {
+          "type": "instagram",
+          "id": "sqj3szu",
+          "url": "https://www.instagram.com/p/Da1dxTujHk3/?img_index=8&igsh=bnBzdm16a2hnMm54"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "wshc6ec",
       "slug": "hay-momentos-que-duran-90-minutos-y-hay-momentos-que-quedan-para-siempre",
       "brand": "Nike",
