@@ -4156,7 +4156,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -4205,21 +4205,7 @@ window.BAG_DATA = {
             "12.5",
             "13"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803355042-IMG_1844.webp"
@@ -4237,7 +4223,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 599999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4393,7 +4379,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Blanco / Rojo",
         "color": "#ffffff",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4445,7 +4431,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite LL FG",
         "colorway": "Blanco / Rojo",
         "color": "#ffffff",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
