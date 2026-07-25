@@ -11,6 +11,108 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "bh4n5en",
+      "slug": "presentes-en-la-final-de-la-copa-del-mundo-2026",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Presentes en la Final de la Copa del Mundo 2026",
+      "excerpt": "Enzo Fernández con nuestros Nike Phantom GT 2 ‘Generation’.",
+      "date": "19 de Junio de 2026",
+      "cover": "assets/1784992730126-IMG_2075.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1784992771182-IMG_2072.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1784992787392-IMG_2071.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "lne4sdq",
+          "content": "Concluimos nuestra participación en la Copa Mundial de la FIFA 2026 🏆\n\nLuego de trabajar arduamente y a contrarreloj para lograr la entrega del pedido especial hecho por Enzo Fernández, queríamos agradecer explícitamente su confianza puesta en nuestro trabajo y servicio. "
+        },
+        {
+          "type": "image-pair",
+          "id": "ric0qx8",
+          "left": {
+            "src": "assets/1784993284350-IMG_2072.jpeg"
+          },
+          "right": {
+            "src": "assets/1784993296305-IMG_2071.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "xzgjr1s",
+          "content": "Ha sido un viaje increíble y mágico del cual nunca nos imaginamos haber logrado estar presente en otra competición internacional como lo es un Mundial de selecciones para representar a uno de los nuestros."
+        },
+        {
+          "type": "image",
+          "id": "xhjut0u",
+          "src": "assets/1784993334951-IMG_2075.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "xexd03o",
+          "content": "Más allá de que deseábamos otro final, somos conscientes y estamos felices de haber llegado hasta donde llegamos. \n\nPorque nos hicieron creer que todo es posible. Absolutamente todo. Puede ser difícil, pero nunca imposible. Dimos que hablar y le mostramos a todos que es así.\n\nPensar que comenzamos esto en Abril 2019 como un hobby, por pasión a los botines. "
+        },
+        {
+          "type": "image-pair",
+          "id": "v279x0m",
+          "left": {
+            "src": "assets/1784993393984-IMG_2707.jpeg"
+          },
+          "right": {
+            "src": "assets/1784993416976-IMG_2711.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "zv3vqdq",
+          "content": "Hay tantas personas detrás que aportaron su granito de arena para llegar ahí, el cual estamos tan agradecidos también porque sin ellos no hubiese sido posible.\n\nEste momento retracta lo que hemos recorrido juntos, y reafirma que vamos por buen camino. Pero esto es largo, y queda mucho por recorrer."
+        },
+        {
+          "type": "image",
+          "id": "2y67u12",
+          "src": "assets/1784993461621-IMG_2718.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "i04gihn",
+          "content": "Gracias, una vez más.\n\n📸 Guillermo Álvarez"
+        },
+        {
+          "type": "image-pair",
+          "id": "86z140b",
+          "left": {
+            "src": "assets/1784993537370-IMG_2715.jpeg"
+          },
+          "right": {
+            "src": "assets/1784993568157-IMG_2080.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4s7j18z",
+          "content": "Seguimos.\n¡Vamos Argentina! 🇦🇷 \n\nBotines Alta Gama Córdoba. ✍️"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "bemcabn",
       "slug": "puma-presenta-el-paquete-arrival-para-el-comienzo-de-la-nueva-temporada",
       "brand": "Puma",
