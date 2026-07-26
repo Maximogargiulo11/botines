@@ -3611,6 +3611,138 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’"
         }
+      },
+      {
+        "id": "ei7cgqu",
+        "name": "Nike Tiempo Maestro FG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 629999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9.5",
+            "9",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024456699-IMG_2625.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "7ioi2hc",
+        "name": "Nike Tiempo Maestro SG-Pro Player Edition",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 679999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024550593-IMG_2627.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
       }
     ],
     "adidas/f50": [
