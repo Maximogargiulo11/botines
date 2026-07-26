@@ -3242,6 +3242,138 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’ Pack"
         }
+      },
+      {
+        "id": "554a5qr",
+        "name": "Nike Phantom 6 Low Elite FG",
+        "colorway": "Negro / Rojo",
+        "color": "#000000",
+        "price": 649999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "10",
+            "9.5",
+            "9",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024140458-IMG_2631.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "niahqbf",
+        "name": "Nike Phantom 6 Low Elite SG-Pro Player Edition",
+        "colorway": "Negro / Rojo",
+        "color": "#000000",
+        "price": 699999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7",
+            "7.5",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6.5",
+            "6",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024235534-IMG_2629.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
       }
     ],
     "nike/tiempo": [
