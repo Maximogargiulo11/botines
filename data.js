@@ -2177,14 +2177,14 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1782859029244-IMG_2322.jpeg"
+          "assets/1785024919062-IMG_2507.webp"
         ],
         "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
-          "coleccion": "‘Scorpion’"
+          "coleccion": "‘Scorpion’ Pack"
         }
       },
       {
@@ -2243,12 +2243,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1783357564121-IMG_1362.jpeg",
-          "assets/1783357577773-IMG_1363.jpeg",
-          "assets/1783357587510-IMG_1358.jpeg",
-          "assets/1783357624261-IMG_1359.jpeg",
-          "assets/1783357642876-IMG_1360.jpeg",
-          "assets/1783357652781-IMG_1361.jpeg"
+          "assets/1785024947874-IMG_2508.webp"
         ],
         "videos": [],
         "spec": {
