@@ -2074,7 +2074,7 @@ window.BAG_DATA = {
         "id": "lwtb4r6",
         "name": "Nike Mercurial Superfly I RGN FG CR7",
         "colorway": "Dorado",
-        "color": "#d38301",
+        "color": "#e8e100",
         "price": 659999,
         "availableSizes": [],
         "sizes": {
@@ -2105,7 +2105,17 @@ window.BAG_DATA = {
             "10",
             "10.5"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10"
+          ]
         },
         "images": [
           "assets/1782349472854-IMG_2191.jpeg",
