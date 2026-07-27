@@ -78,11 +78,6 @@ window.BAG_DATA = {
           "height": ""
         },
         {
-          "type": "video",
-          "id": "g8rg8mw",
-          "src": "https://youtu.be/RQ08NAwn6uc?si=giNwunRYIgun8ooN"
-        },
-        {
           "type": "text",
           "id": "71aimvg",
           "content": "Desde Botines Alta Gama Córdoba, nos llena de orgullo acompañar a jugadores que representan la pasión, el esfuerzo y la excelencia que tanto admiramos en este deporte. Ser parte de estos momentos es mucho más que entregar un par de botines: es acompañar sueños, desafíos y noches que terminan convirtiéndose en historia."
