@@ -1181,6 +1181,7 @@ function OrdersSection({ adminSecret, notify, products }) {
   const [error, setError]     = useState(null);
   const [confirming, setConfirming] = useState(null);
   const [deleting, setDeleting] = useState(null);
+  const [expandedId, setExpandedId] = useState(null);
 
   const confirmOrder = async (orderId) => {
     setConfirming(orderId);
@@ -1273,11 +1274,21 @@ function OrdersSection({ adminSecret, notify, products }) {
         <div className="adm-orders-list">
           {orders.map(o => {
             const st = STATUS[o.status] || { label: o.status, cls: 'muted' };
+            const isPending = o.status === 'pendiente';
+            const isExpanded = expandedId === o.id;
+            const toggle = () => {
+              if (window.getSelection && String(window.getSelection())) return; // no togglear si está seleccionando texto
+              setExpandedId(id => id === o.id ? null : o.id);
+            };
             return (
-              <div key={o.id} className="adm-order-row">
+              <div key={o.id} className="adm-order">
+              <div className="adm-order-row" onClick={isPending ? toggle : undefined} style={isPending ? { cursor: 'pointer' } : undefined}>
                 <span className={`adm-status adm-status--${st.cls}`}>{st.label}</span>
                 <div className="adm-order-row__info">
-                  <div className="adm-order-row__name">{o.payer_name || o.payer_email || '—'}</div>
+                  <div className="adm-order-row__name">
+                    {isPending && <span style={{ display: 'inline-block', width: 12, marginRight: 6, color: 'var(--a-fg3)', transition: 'transform .15s', transform: isExpanded ? 'rotate(90deg)' : 'none' }}>▸</span>}
+                    {o.payer_name || o.payer_email || '—'}
+                  </div>
                   {o.payer_email && <div className="adm-order-row__email">{o.payer_email}</div>}
                   <div className="adm-order-row__items">
                     {(o.items || []).map((it, i) => {
@@ -1306,14 +1317,30 @@ function OrdersSection({ adminSecret, notify, products }) {
                   <div className="adm-order-row__date">{o.date ? new Date(o.date).toLocaleDateString('es-AR') : '—'}</div>
                   <div className="adm-order-row__id">{o.payment_method === 'transferencia' ? 'Transferencia' : `MP #${o.mp_payment_id}`}</div>
                   {o.status === 'pendiente' && (
-                    <Btn size="sm" onClick={() => confirmOrder(o.id)} disabled={confirming === o.id} style={{ marginTop: 6 }}>
+                    <Btn size="sm" onClick={(e) => { e.stopPropagation(); confirmOrder(o.id); }} disabled={confirming === o.id} style={{ marginTop: 6 }}>
                       {confirming === o.id ? 'Confirmando...' : 'Confirmar pago'}
                     </Btn>
                   )}
-                  <Btn variant="danger" size="sm" onClick={() => deleteOrder(o)} disabled={deleting === o.id} style={{ marginTop: 6 }}>
+                  <Btn variant="danger" size="sm" onClick={(e) => { e.stopPropagation(); deleteOrder(o); }} disabled={deleting === o.id} style={{ marginTop: 6 }}>
                     {deleting === o.id ? 'Eliminando...' : 'Eliminar'}
                   </Btn>
                 </div>
+              </div>
+              {isPending && isExpanded && (
+                <div style={{ marginTop: 8, background: 'var(--a-surface2)', border: '1px solid var(--a-border)', borderRadius: 8, padding: 16, display: 'flex', flexWrap: 'wrap', gap: 16 }}>
+                  {(o.items || []).map((it, i) => {
+                    const img = productImg[it.id];
+                    return (
+                      <div key={i} style={{ width: 220, maxWidth: '100%' }}>
+                        {img
+                          ? <img src={img} alt="" style={{ width: '100%', borderRadius: 8, display: 'block', background: '#111' }} />
+                          : <div style={{ width: '100%', height: 220, borderRadius: 8, background: 'rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 56 }}>👟</div>}
+                        <div style={{ marginTop: 8, fontSize: 13, lineHeight: 1.4 }}>{it.title}{Number(it.quantity) > 1 ? ` ×${it.quantity}` : ''}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
               </div>
             );
           })}
