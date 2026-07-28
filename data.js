@@ -11,6 +11,683 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "fcza1u9",
+      "slug": "un-gol-que-quedara-para-siempre",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Un gol que quedará para siempre 💫",
+      "excerpt": "En los pies de Enzo Fernández, nuestros botines fueron protagonistas de un momento inolvidable frente a Inglaterra 👟⚽️",
+      "date": "15 de Julio de 2026",
+      "cover": "assets/1785016811872-IMG_1864.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "fujlnq0",
+          "content": "Hay momentos que trascienden un partido. Momentos que quedan guardados para siempre en la memoria de quienes aman el fútbol."
+        },
+        {
+          "type": "image",
+          "id": "9s0oqfy",
+          "src": "assets/1785016939221-IMG_1879.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "27mwupg",
+          "content": "Esta vez, nuestros botines estuvieron presentes en los pies de Enzo Fernández durante una noche inolvidable, en la que el mediocampista argentino volvió a dejar su huella dentro de la cancha y fue protagonista de un gol que quedará para el recuerdo frente a Inglaterra."
+        },
+        {
+          "type": "image",
+          "id": "m6c8c6x",
+          "src": "assets/1785016982304-IMG_1865.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "bu2i9te",
+          "src": "assets/1785017002469-IMG_1866.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "lw3q6v6",
+          "src": "assets/1785017064325-IMG_1867.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "5i4jti2",
+          "src": "assets/1785017090754-IMG_1869.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "71aimvg",
+          "content": "Desde Botines Alta Gama Córdoba, nos llena de orgullo acompañar a jugadores que representan la pasión, el esfuerzo y la excelencia que tanto admiramos en este deporte. Ser parte de estos momentos es mucho más que entregar un par de botines: es acompañar sueños, desafíos y noches que terminan convirtiéndose en historia."
+        },
+        {
+          "type": "image-pair",
+          "id": "4ld6p5h",
+          "left": {
+            "src": "assets/1785017205400-IMG_1871.jpeg"
+          },
+          "right": {
+            "src": "assets/1785017225973-IMG_1873.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "z63nnic",
+          "content": "Porque cuando el talento se encuentra con la pasión, nacen momentos que nunca se olvidan."
+        },
+        {
+          "type": "image",
+          "id": "0ijmcgp",
+          "src": "assets/1785017278953-IMG_1877.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "kduyjfc",
+          "content": "📸 Guillermo Álvarez\n\nSeguimos.\n¡Vamos Argentina! 🇦🇷\n\nBotines Alta Gama Córdoba. ✍️"
+        },
+        {
+          "type": "instagram",
+          "id": "sqj3szu",
+          "url": "https://www.instagram.com/p/Da1dxTujHk3/?img_index=8&igsh=bnBzdm16a2hnMm54"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "wshc6ec",
+      "slug": "hay-momentos-que-duran-90-minutos-y-hay-momentos-que-quedan-para-siempre",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Hay momentos que duran 90 minutos. Y hay momentos que quedan para siempre ✨",
+      "excerpt": "",
+      "date": "19 de Junio de 2019",
+      "cover": "assets/1785015967409-IMG_2175.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "tjcuqbl",
+          "content": "Después de todo lo que significó para nosotros poder acompañar nuevamente a @enzojfernandez en una competencia internacional, hoy queremos detenernos un segundo y compartir estas imágenes de una tarde muy especial más allá del resultado: estar presentes en una Final de la Copa del Mundo para representar a un jugador nuestro 🏆"
+        },
+        {
+          "type": "image",
+          "id": "2yrq6ch",
+          "src": "assets/1785016048639-IMG_2184.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "dgqmz8x",
+          "content": "Estos Nike Phantom GT 2 Elite FG de la colección ‘Generation’, más que un modelo para Enzo.\n\n\nDel recuerdo de Qatar a una nueva final. Un mismo modelo. Una nueva historia. Y nosotros, una vez más, orgullosos de haber sido parte.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "9pmonf2",
+          "left": {
+            "src": "assets/1785016151778-IMG_2180.jpeg"
+          },
+          "right": {
+            "src": "assets/1785016168644-IMG_2192.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "1qu26xo",
+          "content": "Y quizás ahí está lo más lindo de esta historia.\n\n\nPorque detrás de par de botines, hay algo mucho más grande que nosotros mismos. Hay confianza. Hay vínculos que se construyen con el tiempo. Hay personas que nos abren una puerta y nos permiten ser parte, aunque sea desde nuestro pequeño lugar, de momentos que quedarán guardados para siempre."
+        },
+        {
+          "type": "image-pair",
+          "id": "dydd9i3",
+          "left": {
+            "src": "assets/1785016218512-IMG_2188.jpeg"
+          },
+          "right": {
+            "src": "assets/1785016230622-IMG_2182.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "34m8s4k",
+          "content": "Para nosotros, poder mirar estas imágenes y saber que estuvimos ahí, acompañando una vez más a uno de los nuestros, es algo que nos llena de orgullo y nos hace mirar hacia atrás para valorar todo el camino recorrido."
+        },
+        {
+          "type": "image",
+          "id": "v3icw0t",
+          "src": "assets/1785016299759-IMG_2190.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "62kp15s",
+          "content": "No sabemos hasta dónde nos llevará este camino. Pero sí sabemos que queremos seguir recorriéndolo.\n\n\nMención muy especial para @konradborzy por capturar estos momentos únicos y compartirlos con nosotros. ¡Ha sido un gran trabajo a lo largo de esta competición! 👏\n\n\nSeguimos. \n¡Vamos Argentina! 🇦🇷 \n\n\nBotines Alta Gama Córdoba. ✍️"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "glm6tfu",
+      "slug": "nike-lanza-el-break-em-para-el-comienzo-de-la-temporada",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike lanza el ‘Break ‘Em’ para el comienzo de la temporada",
+      "excerpt": "Diseñados para romper rivales y dominar cada acción del juego 🔥",
+      "date": "23 de Julio de 2026",
+      "cover": "assets/1784993840271-IMG_2646.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1784994353235-IMG_2636.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "wesbptk",
+          "content": "Construido para los jugadores que cambian los partidos en un sólo momento 🔥"
+        },
+        {
+          "type": "image",
+          "id": "nbv1ui1",
+          "src": "assets/1784994455803-IMG_2641.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ixpz23b",
+          "content": "El escenario internacional ha terminado. Ahora es el momento de la vuelta a la temporada. \n\nNike Football mira hacia la nueva temporada del club con el ‘Break ‘Em’, vistiendo el Mercurial, Phantom y Tiempo en nuevos y atrevidos colores construidos para causar una impresión instantánea."
+        },
+        {
+          "type": "video",
+          "id": "ejnn1u4",
+          "src": "assets/1784995437051-reelsvideo.io_1784777023858.mp4"
+        },
+        {
+          "type": "text",
+          "id": "81tpr6h",
+          "content": "Se acabó el verano europeo. Se han levantado trofeos, se han escrito historias y ahora es el momento de hacerlo todo de nuevo. Con la atención cambiando de la etapa internacional de vuelta al fútbol de club, Nike no está perdiendo el tiempo marcando el tono para la próxima temporada, sino que presenta el una colección intrépida construida para jugadores que buscan dejar a los defensores atrás antes de que el otoño se haya instalado.\n\nLo que une la colección es la confianza. Después de un verano dominado por los escenarios más grandes del mundo, la marca del Swoosh podría haber jugado a lo seguro de cara a la nueva campaña. En cambio, se ha duplicado, entregando un paquete que se siente audaz sin disculpas. Los colores brillantes, los acabados metálicos y el bloqueo limpio se combinan para crear una colección diseñada para destacar desde el silbato de apertura."
+        },
+        {
+          "type": "image",
+          "id": "oumy7jm",
+          "src": "assets/1784995797830-IMG_2646.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "589zhhl",
+          "content": "Liderando la carga está el nuevo Mercurial Superfly 11, que llega en una base blanca limpia que cobra vida por Swoos de oro metálico y destellos carmesí vibrantes. Es una mirada que se siente inequívocamente Mercurial: rápida, segura e imposible de ignorar. El bloqueo de color brillante solo refuerza lo que el silo siempre ha representado: velocidad pura."
+        },
+        {
+          "type": "image-pair",
+          "id": "x43yccb",
+          "left": {
+            "src": "assets/1784995827001-IMG_2642.jpeg"
+          },
+          "right": {
+            "src": "assets/1784995837790-IMG_2637.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "rdd337s",
+          "src": "assets/1784995894477-IMG_2129.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yvuaww2",
+          "content": "Seguido de cerca está el Mercurial Vapor 17, que opta por un aspecto aún más audaz que su compañero, llegando en una combinación de colores oficial de \"Brt Crimson/Blur\". De nuevo, velocidad pura. Esta bota es para aquellos que quieren destacar y no se arrepentirán. Y como la bota de fútbol más ligera de Nike hasta la fecha, definitivamente es la opción popular para los jugadores de pelota que no quieren que los sujeten."
+        },
+        {
+          "type": "image-pair",
+          "id": "hg8xot7",
+          "left": {
+            "src": "assets/1784995920150-IMG_2638.jpeg"
+          },
+          "right": {
+            "src": "assets/1784995935224-IMG_2643.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "gk9yxvy",
+          "src": "assets/1784996019965-IMG_2130.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "fz1a0d8",
+          "src": "assets/1784996036899-IMG_2128.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "gk17hka",
+          "src": "assets/1784996049769-AQMs_liqQO1NhO5DMuk6EH-iZc77FCJoHYTMf1GjwAKymZJxuEbfwZSIVbOh62hdxjJNEmIStGXstYZmMy-Ox7mIqjo___IeMgADx2s.mp4"
+        },
+        {
+          "type": "image-pair",
+          "id": "li2pjgj",
+          "left": {
+            "src": "assets/1784996064459-IMG_2634.jpeg"
+          },
+          "right": {
+            "src": "assets/1784996072861-IMG_2635.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "w01vv0c",
+          "content": "El Phantom 6 sigue su ejemplo, vestido con un llamativo acabado carmesí con detalles negros que inmediatamente captan su atención. Como bota de Nike para creadores, la Phantom siempre ha equilibrado el control con estilo, y esta última ejecución tiene esa misma actitud. Parece tan agresivo como los jugadores para los que está construido. Rodri, Foden, Kobbie Mainoo... La alineación está apilada."
+        },
+        {
+          "type": "image-pair",
+          "id": "8fkqy4h",
+          "left": {
+            "src": "assets/1784996119588-IMG_2639.jpeg"
+          },
+          "right": {
+            "src": "assets/1784996130494-IMG_2647.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "8msepgf",
+          "content": "Completando el paquete está el último Tiempo, demostrando una vez más que la herencia no tiene por qué significar ir a lo seguro. Cambiando el cuero negro tradicional por una atrevida ejecución blanca y carmesí, acabado con un Swoosh dorado metálico, el Tiempo continúa su evolución mientras mantiene la sensación premium que ha definido el silo durante décadas.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "0g5zvdk",
+          "left": {
+            "src": "assets/1784996167264-IMG_2640.jpeg"
+          },
+          "right": {
+            "src": "assets/1784996176393-IMG_2648.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "nqik2v2",
+          "content": "Lo que une la colección es la confianza. Después de un verano dominado por los escenarios más grandes del mundo, Nike podría haber jugado a lo seguro de cara a la nueva campaña. En cambio, el Swoosh se ha duplicado, entregando un paquete que se siente audaz sin disculpas. Los colores brillantes, los acabados metálicos y el bloqueo limpio se combinan para crear una colección diseñada para destacar desde el silbato de apertura."
+        },
+        {
+          "type": "image",
+          "id": "dc90kx8",
+          "src": "assets/1784996231373-IMG_2636.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "w4pn93i",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "bh4n5en",
+      "slug": "presentes-en-la-final-de-la-copa-del-mundo-2026",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Presentes en la Final de la Copa del Mundo 2026",
+      "excerpt": "Enzo Fernández con nuestros Nike Phantom GT 2 ‘Generation’.",
+      "date": "19 de Junio de 2026",
+      "cover": "assets/1784996345850-IMG_2531.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1785017475939-IMG_2077.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1785017536010-IMG_2078.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "lne4sdq",
+          "content": "Concluimos nuestra participación en la Copa Mundial de la FIFA 2026 🏆\n\n\nLuego de trabajar arduamente y a contrarreloj para lograr la entrega del pedido especial hecho por Enzo Fernández, queríamos agradecer explícitamente su confianza puesta en nuestro trabajo y servicio. "
+        },
+        {
+          "type": "image-pair",
+          "id": "ric0qx8",
+          "left": {
+            "src": "assets/1784993284350-IMG_2072.jpeg"
+          },
+          "right": {
+            "src": "assets/1784993296305-IMG_2071.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "xzgjr1s",
+          "content": "Ha sido un viaje increíble y mágico del cual nunca nos imaginamos haber logrado estar presente en otra competición internacional como lo es un Mundial de selecciones para representar a uno de los nuestros."
+        },
+        {
+          "type": "image",
+          "id": "xhjut0u",
+          "src": "assets/1784993334951-IMG_2075.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "xexd03o",
+          "content": "Más allá de que deseábamos otro final, somos conscientes y estamos felices de haber llegado hasta donde llegamos. \n\n\nPorque nos hicieron creer que todo es posible. Absolutamente todo. Puede ser difícil, pero nunca imposible. Dimos que hablar y le mostramos a todos que es así.\n\nPensar que comenzamos esto en Abril 2019 como un hobby, por pasión a los botines. "
+        },
+        {
+          "type": "image-pair",
+          "id": "v279x0m",
+          "left": {
+            "src": "assets/1784993393984-IMG_2707.jpeg"
+          },
+          "right": {
+            "src": "assets/1784993416976-IMG_2711.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "zv3vqdq",
+          "content": "Hay tantas personas detrás que aportaron su granito de arena para llegar ahí, el cual estamos tan agradecidos también porque sin ellos no hubiese sido posible.\n\n\nEste momento retracta lo que hemos recorrido juntos, y reafirma que vamos por buen camino. Pero esto es largo, y queda mucho por recorrer."
+        },
+        {
+          "type": "image",
+          "id": "2y67u12",
+          "src": "assets/1784993461621-IMG_2718.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "i04gihn",
+          "content": "Gracias, una vez más.\n\n\n📸 Guillermo Álvarez"
+        },
+        {
+          "type": "image-pair",
+          "id": "86z140b",
+          "left": {
+            "src": "assets/1784993537370-IMG_2715.jpeg"
+          },
+          "right": {
+            "src": "assets/1784993568157-IMG_2080.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4s7j18z",
+          "content": "Seguimos.\n¡Vamos Argentina! 🇦🇷 \n\n\nBotines Alta Gama Córdoba. ✍️"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "bemcabn",
+      "slug": "puma-presenta-el-paquete-arrival-para-el-comienzo-de-la-nueva-temporada",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma presenta el paquete ‘Arrival’ para el comienzo de la nueva temporada.",
+      "excerpt": "Nitrofam para Ultra 7. Nuevos colores para Future 9 y King 20.",
+      "date": "23 de Julio de 2026",
+      "cover": "assets/1784914072720-IMG_2602.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "u61v45a",
+          "content": "¡Listos para un nuevo comienzo de la temporada! 🙌\n\n@pumafootball ha presentado el paquete de llegada: ‘Arrival’, encabezado por el nuevo Ultra Nitro 7 💨 y respaldado por nuevas actualizaciones de color tanto para el Future 9 como para el King.\n\nEn general, este paquete hace exactamente lo que su nombre sugiere. Anuncia la llegada de una nueva era para Puma Fútbol, liderada por la introducción de la tecnología Nitro en el Ultra 7 y apoyada por dos actualizaciones bellamente ejecutadas para el Future y King. Queda por ver si Nitro demuestra ser un verdadero cambio de juego en el campo, pero es un movimiento sólido de Puma y pareciera no hay error."
+        },
+        {
+          "type": "image",
+          "id": "d3yh20g",
+          "src": "assets/1784916537526-IMG_2603.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "u1004zt",
+          "content": "En el corazón de la bota se encuentra NITROFOAM™ ELITE, integrado en la plantilla y la plantilla. Diseñado para comprimir y rebotar con cada zancada, proporciona amortiguación sensible y retorno de energía, ayudando a los jugadores a mantenerse explosivos desde el primer silbato hasta el último. Es una tecnología que ha construido su reputación en la carrera, y ahora PUMA está apostando a lo grande por su capacidad para mejorar la aceleración y la comodidad en el fútbol.\n\nEl resto del paquete es igual de impresionante. Con un peso de solo 180 g, el ULTRA NITRO 7 se mantiene firmemente enfocado en la velocidad. La parte superior ULTRAWEAVE actualizada ofrece un soporte ligero sin sacrificar el tacto, ofreciendo una sensación cercana y precisa en la pelota. PUMA también ha reelaborado el ajuste a través de un último rediseñado y un marco de soporte SPEEDBELT actualizado, con el objetivo de proporcionar un bloqueo más seguro durante los movimientos de alta velocidad y los cambios bruscos de dirección."
+        },
+        {
+          "type": "image-pair",
+          "id": "bye9ybh",
+          "left": {
+            "src": "assets/1784916592416-IMG_2519.jpeg"
+          },
+          "right": {
+            "src": "assets/1784916602724-IMG_2521.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "uvxn5m4",
+          "content": "Después de revolucionar la gama de carreras de PUMA durante los últimos cinco años, la tecnología NITRO finalmente hace su movimiento adecuado en el campo de fútbol. Si bien ya hemos visto destellos de él en el KING del año pasado y un lanzamiento de ULTRA de edición limitada, el ULTRA NITRO 7 marca la primera introducción a gran escala de la tecnología en el silo de velocidad de la marca."
+        },
+        {
+          "type": "image",
+          "id": "2f3kexk",
+          "src": "assets/1784916613414-IMG_2523.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "qthos12",
+          "src": "assets/1784916244964-Ready_when_they_aren_t.___Introducing_ULTRA_NITRO__7._Featuring_NITROFOAM__ELITE__PUMA_s_nitroge.mp4"
+        },
+        {
+          "type": "text",
+          "id": "7cawacp",
+          "content": "Bajo el pie, la nueva suela SPEEDSYSTEM 2.0 ha sido diseñada para transformar cada movimiento en impulso hacia adelante. Ligero, sensible y agresivamente enfocado en la tracción, está diseñado para ayudar a los jugadores a maximizar cada sprint, giro y ráfaga de aceleración. En conjunto, el paquete es un caso sólido para que la ULTRA NITRO 7 sea la bota de velocidad más completa que PUMA haya producido hasta la fecha."
+        },
+        {
+          "type": "video",
+          "id": "wy57yiy",
+          "src": "assets/1784916288635-Ready_when_they_aren_t.___Introducing_ULTRA_NITRO__7._Featuring_NITROFOAM__ELITE__PUMA_s_nitroge_2.mp4"
+        },
+        {
+          "type": "text",
+          "id": "g3h6mo3",
+          "content": "Otra primicia para el silo llega con la introducción de una opción ULTRA sin cordones, marcando la primera vez que la bota de velocidad se ofrece sin cordones. Para los jugadores que prefieren una zona de ataque más limpia y un ajuste más ágil, es una adición bienvenida a la alineación."
+        },
+        {
+          "type": "image",
+          "id": "u6toxex",
+          "src": "assets/1784916482987-IMG_2604.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yme6rbc",
+          "content": "Mientras que el ULTRA domina comprensiblemente la conversación, el FUTURO 9 y el REY no se han dejado fuera. Ambos reciben actualizaciones de color de buen gusto que unen la colección, al tiempo que permiten que la bota de velocidad insignia siga siendo el centro del escenario."
+        },
+        {
+          "type": "text",
+          "id": "nqiz8g1",
+          "content": "El FUTURE 9 llega en un elegante color \"Almendra azucarada/PUMA Blanco/Ultra Rojo/PUMA Negro\". Una base blanquecina se combina con sutiles patrones tejidos en la parte superior, mientras que los vibrantes elementos PWRTAPE rojo-naranja inyectan la cantidad justa de energía en el diseño. Es un equilibrio inteligente de discreto y llamativo."
+        },
+        {
+          "type": "image",
+          "id": "d69ndti",
+          "src": "assets/1784917028057-IMG_2605.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ilxm3nj",
+          "content": "Mientras tanto, el KING adopta un enfoque similar con su acabado \"Almendra azucarada/PUMA Negro/Ultra Rojo\". Hay una presencia más fuerte de los acentos rojos y negros aquí, particularmente alrededor de la marca Formstrip, lo que le da a la bota una identidad un poco más audaz mientras mantiene la estética premium y refinada por la que el KING se ha hecho conocido."
+        },
+        {
+          "type": "image",
+          "id": "eympb7r",
+          "src": "assets/1784917071906-IMG_2606.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "u3a78on",
+          "content": "En general, el paquete de llegada hace exactamente lo que su nombre sugiere. Anuncia la llegada de una nueva era para PUMA Football, liderada por la introducción de la tecnología NITRO en el ULTRA 7 y apoyada por dos actualizaciones bellamente ejecutadas para el FUTURE y KING. Queda por ver si NITRO demuestra ser un verdadero cambio de juego en el campo, pero es un movimiento sólido de PUMA y no hay error."
+        },
+        {
+          "type": "text",
+          "id": "91oq7w4",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "mf6daor",
+      "slug": "nike-cocina-unos-botines-dorados-para-mbappe-por-su-record",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Nike cocina unos Mercurial Superfly 1z dorados para Mbappé por su récord.",
+      "excerpt": "Récord de goles de todos los tiempos en las Copa del Mundo.",
+      "date": "20 de Julio de 2026",
+      "cover": "assets/1784913131716-IMG_2555.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "jazf5zh",
+          "content": "Nuevos Mercurial Superfly 11 dorados por Nike Football para el goleador francés Kyliam Mbappé luego de romper el récord de ser el jugador con más goles en todos los mundiales."
+        },
+        {
+          "type": "image",
+          "id": "23hed84",
+          "src": "assets/1784913259351-IMG_2724.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "yde9z11",
+          "left": {
+            "src": "assets/1784913274724-IMG_2725.jpeg"
+          },
+          "right": {
+            "src": "assets/1784913281142-IMG_2726.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "3qjokuj",
+          "content": "¡Imparable en las redes!"
+        },
+        {
+          "type": "image-pair",
+          "id": "1lxg3om",
+          "left": {
+            "src": "assets/1784913325501-IMG_2727.jpeg"
+          },
+          "right": {
+            "src": "assets/1784913330930-IMG_2728.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "hl17xch",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba. "
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "o7wlm9h",
       "slug": "adidas-presenta-el-caos-vs-control-pack-para-el-recorrido-final",
       "brand": "Adidas",
@@ -28,7 +705,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -187,7 +864,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -310,7 +987,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "1080",
       "imagenCarruselHeight": "1350",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -1189,7 +1866,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 11 Elite SG-Pro Player Edition",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 669999,
+        "price": 699999,
         "availableSizes": [
           "39",
           "39.5",
@@ -1287,51 +1964,11 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "1amrnth",
-        "name": "Nike Mercurial Vapor 16 Elite FG",
-        "colorway": "Azul / Rosa",
-        "color": "#000ef2",
-        "price": 549999,
-        "availableSizes": [
-          "41"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1781808202320-IMG_1466.webp"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Attack’ Pack"
-        }
-      },
-      {
         "id": "d4s9li3",
         "name": "Nike Mercurial Vapor 17 Elite FG",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -1361,9 +1998,7 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
           "uk": []
         },
@@ -1434,7 +2069,7 @@ window.BAG_DATA = {
         "id": "lwtb4r6",
         "name": "Nike Mercurial Superfly I RGN FG CR7",
         "colorway": "Dorado",
-        "color": "#d38301",
+        "color": "#e8e100",
         "price": 659999,
         "availableSizes": [],
         "sizes": {
@@ -1465,7 +2100,17 @@ window.BAG_DATA = {
             "10",
             "10.5"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10"
+          ]
         },
         "images": [
           "assets/1782349472854-IMG_2191.jpeg",
@@ -1489,8 +2134,8 @@ window.BAG_DATA = {
         "id": "1zf0k9y",
         "name": "Nike Mercurial Vapor 17 Elite FG ‘Scorpion’",
         "colorway": "Negro / Rosa / Violeta",
-        "color": "#e63b7a",
-        "price": 549999,
+        "color": "#982abc",
+        "price": 649999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -1520,21 +2165,31 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11"
+          ]
         },
         "images": [
-          "assets/1782859029244-IMG_2322.jpeg"
+          "assets/1785024919062-IMG_2507.webp"
         ],
         "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
-          "coleccion": "‘Scorpion’"
+          "coleccion": "‘Scorpion’ Pack"
         }
       },
       {
@@ -1542,7 +2197,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 11 Elite FG",
         "colorway": "Rosa / Violeta",
         "color": "#982abc",
-        "price": 599999,
+        "price": 699999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -1593,12 +2248,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1783357564121-IMG_1362.jpeg",
-          "assets/1783357577773-IMG_1363.jpeg",
-          "assets/1783357587510-IMG_1358.jpeg",
-          "assets/1783357624261-IMG_1359.jpeg",
-          "assets/1783357642876-IMG_1360.jpeg",
-          "assets/1783357652781-IMG_1361.jpeg"
+          "assets/1785024947874-IMG_2508.webp"
         ],
         "videos": [],
         "spec": {
@@ -1741,46 +2391,6 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "3fymgtc",
-        "name": "Nike Mercurial Vapor 16 Elite FG",
-        "colorway": "Blanco",
-        "color": "#ffffff",
-        "price": 599999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1783360680407-6a0b896a-a2f5-411d-b4d8-fb367ce89c1f.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Air Max 95’ Pack"
-        }
-      },
-      {
         "id": "yxkusk9",
         "name": "Nike Mercurial Vapor 16 Elite FG",
         "colorway": "Violeta / Naranja",
@@ -1805,9 +2415,12 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "8.5",
-            "9",
-            "9.5"
+            "9.5",
+            "10.5",
+            "7.5",
+            "7",
+            "12",
+            "13"
           ],
           "uk": []
         },
@@ -1820,50 +2433,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’ Pack"
-        }
-      },
-      {
-        "id": "zx3r7pd",
-        "name": "Nike Mercurial Vapor 16 Elite FG",
-        "colorway": "Naranja ",
-        "color": "#ff4015",
-        "price": 499999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "10",
-            "10.5"
-          ],
-          "uk": [
-            "9",
-            "9.5"
-          ]
-        },
-        "images": [
-          "assets/1783361178883-IMG_8029.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Déjà Vu’ Pack"
         }
       },
       {
@@ -1891,12 +2460,14 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "10",
-            "11"
+            "11",
+            "9",
+            "11.5"
           ],
           "uk": [
-            "9",
-            "10"
+            "10",
+            "8",
+            "10.5"
           ]
         },
         "images": [
@@ -1909,6 +2480,204 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack"
         }
+      },
+      {
+        "id": "z00xeuu",
+        "name": "Nike Mercurial Vapor 17 Elite FG",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 649999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7",
+            "7.5",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6.5",
+            "6",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785023845244-IMG_2630.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "8nj13je",
+        "name": "Nike Mercurial Vapor 17 Elite GS-Pro Player Edition",
+        "colorway": "Rojo",
+        "color": "#e22400",
+        "price": 699999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785023926332-IMG_2626.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "60z7fwr",
+        "name": "Nike Mercurial Superfly 11 Elite FG",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 699999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7.5",
+            "7",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024055127-IMG_2628.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
       }
     ],
     "nike/phantom": [
@@ -1917,7 +2686,7 @@ window.BAG_DATA = {
         "name": "Nike Phantom 6 Low Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [
           "39",
           "39.5",
@@ -1949,8 +2718,32 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
           "assets/1781802744601-IMG_1893.webp"
@@ -1968,7 +2761,7 @@ window.BAG_DATA = {
         "name": "Nike Phantom 6 High Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 599999,
+        "price": 649999,
         "availableSizes": [
           "39.5",
           "40",
@@ -2000,8 +2793,32 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
           "assets/1781802784723-IMG_1898.webp"
@@ -2117,51 +2934,11 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "vsfp15y",
-        "name": "Nike Phantom 6 Low Elite FG",
-        "colorway": "Crema / Celeste",
-        "color": "#cbf0ff",
-        "price": 549999,
-        "availableSizes": [
-          "41"
-        ],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [],
-          "uk": []
-        },
-        "images": [
-          "assets/1781808130835-IMG_1251.webp"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Showtime’ Pack"
-        }
-      },
-      {
         "id": "uxwabi1",
         "name": "Nike Phantom 6 Low Elite FG",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2191,15 +2968,24 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
-          "assets/1782348434544-69be2ddd-dec6-4d78-a5e3-66e93f0de591.jpeg",
-          "assets/1782348441458-c4771c2c-51c0-49cd-8d49-b0823e5f50a8.jpeg"
+          "assets/1784990658413-IMG_2580.webp"
         ],
         "videos": [],
         "spec": {
@@ -2370,7 +3156,7 @@ window.BAG_DATA = {
         "name": "Nike Phantom 6 Low Elite FG ",
         "colorway": "Verde",
         "color": "#76bb40",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2400,9 +3186,7 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "12",
-            "12.5",
-            "13"
+            "12"
           ],
           "uk": []
         },
@@ -2460,11 +3244,11 @@ window.BAG_DATA = {
         }
       },
       {
-        "id": "7v11nwj",
+        "id": "554a5qr",
         "name": "Nike Phantom 6 Low Elite FG",
-        "colorway": "Negro / Celeste",
+        "colorway": "Negro / Rojo",
         "color": "#000000",
-        "price": 459999,
+        "price": 649999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2484,23 +3268,177 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "10",
+            "9.5",
             "9",
-            "11"
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
           ],
           "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
             "8",
-            "10"
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
           ]
         },
         "images": [
-          "assets/1783361245631-4c7ec8e9-95bb-4e2d-a833-11417708c7f1.jpeg"
+          "assets/1785024140458-IMG_2631.webp"
         ],
         "videos": [],
         "spec": {
           "suela": "FG",
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
-          "coleccion": "‘Shadow’ Pack"
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "niahqbf",
+        "name": "Nike Phantom 6 Low Elite SG-Pro Player Edition",
+        "colorway": "Negro / Rojo",
+        "color": "#000000",
+        "price": 699999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7",
+            "7.5",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6.5",
+            "6",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024235534-IMG_2629.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "ys9qnut",
+        "name": "Nike Phantom 6 High Elite SG-Pro Player Edition",
+        "colorway": "Negro / Rojo",
+        "color": "#000000",
+        "price": 749999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "10",
+            "9.5",
+            "9",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "10",
+            "9.5",
+            "9",
+            "10.5",
+            "12",
+            "11.5",
+            "11"
+          ]
+        },
+        "images": [
+          "assets/1785024321124-IMG_2624.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
         }
       }
     ],
@@ -2561,7 +3499,7 @@ window.BAG_DATA = {
         "name": "Nike Tiempo Maestro Elite FG ",
         "colorway": "Negro / Verde",
         "color": "#000000",
-        "price": 539999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2591,11 +3529,21 @@ window.BAG_DATA = {
             "10.5",
             "11",
             "11.5",
-            "13",
-            "12",
-            "12.5"
+            "12"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "11",
+            "10.5",
+            "10"
+          ]
         },
         "images": [
           "assets/1782349362081-IMG_2187.webp"
@@ -2606,46 +3554,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Shadow’ Pack (actualizado)"
-        }
-      },
-      {
-        "id": "oo511q6",
-        "name": "Nike Tiempo Legend X Elite FG Made In ITALY",
-        "colorway": "Gris",
-        "color": "#d6d6d6",
-        "price": 599999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9.5"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1783360772603-db09d980-6b79-499a-8108-835c0daf585a.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme ",
-          "peso": "186 gr.",
-          "coleccion": "‘Luxe’ Pack"
         }
       },
       {
@@ -2674,10 +3582,24 @@ window.BAG_DATA = {
           ],
           "us": [
             "10",
-            "10.5",
-            "11"
+            "11",
+            "7",
+            "7.5",
+            "8",
+            "9.5",
+            "8.5",
+            "11.5"
           ],
-          "uk": []
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8.5",
+            "9",
+            "10",
+            "10.5"
+          ]
         },
         "images": [
           "assets/1783360876506-45ee21c6-5794-443b-9f7e-ff49f50318a7.jpeg"
@@ -2689,6 +3611,138 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Scary Good’"
         }
+      },
+      {
+        "id": "ei7cgqu",
+        "name": "Nike Tiempo Maestro FG",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 629999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9.5",
+            "9",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024456699-IMG_2625.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "7ioi2hc",
+        "name": "Nike Tiempo Maestro SG-Pro Player Edition",
+        "colorway": "Blanco / Rojo",
+        "color": "#ffffff",
+        "price": 679999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1785024550593-IMG_2627.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "SG",
+          "terreno": "Césped natural blando",
+          "peso": "186 gr.",
+          "coleccion": "‘Break ‘Em’ Pack"
+        }
       }
     ],
     "adidas/f50": [
@@ -2697,7 +3751,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite FG",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [
           "38.5",
           "39",
@@ -2778,7 +3832,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite LL FG ",
         "colorway": "Rosa",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -2940,7 +3994,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -2993,7 +4047,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite LL FG",
         "colorway": "Blanco ",
         "color": "#ffffff",
-        "price": 489999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3150,7 +4204,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite LL SG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 539999,
+        "price": 639999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3204,7 +4258,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG",
         "colorway": "Azul / Amarillo",
         "color": "#0045cd",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3256,7 +4310,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite LL FG",
         "colorway": "Azul / Amarillo",
         "color": "#006fe6",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3308,7 +4362,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG",
         "colorway": "Amarillo",
         "color": "#fbfb00",
-        "price": 509999,
+        "price": 4699999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3400,6 +4454,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘To Light’ Pack"
         }
+      },
+      {
+        "id": "1pfedu7",
+        "name": "Adidas F50 Hyperfast Elite FG",
+        "colorway": "Negro / Azul",
+        "color": "#000000",
+        "price": 509999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "10",
+            "11.5",
+            "11",
+            "10.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1785024750009-IMG_2217.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Inmortal DNA’ Pack"
+        }
       }
     ],
     "adidas/predator": [
@@ -3408,7 +4514,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Rosa / Negro",
         "color": "#e63b7a",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -3457,21 +4563,7 @@ window.BAG_DATA = {
             "12.5",
             "13"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803228654-IMG_1850.webp"
@@ -3489,7 +4581,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG",
         "colorway": "Rosa / Negro",
         "color": "#e63b7a",
-        "price": 489999,
+        "price": 519999,
         "availableSizes": [
           "38",
           "38.5",
@@ -3538,21 +4630,7 @@ window.BAG_DATA = {
             "12.5",
             "13"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803276786-IMG_1848.webp"
@@ -3570,7 +4648,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Blanco ",
         "color": "#ffffff",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3623,7 +4701,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG ",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 489999,
+        "price": 519999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3651,7 +4729,11 @@ window.BAG_DATA = {
             "9.5",
             "10",
             "10.5",
-            "11"
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
           ],
           "uk": []
         },
@@ -3779,7 +4861,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Blanco / Azul",
         "color": "#ffffff",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3831,7 +4913,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG",
         "colorway": "Blanco / Azul",
         "color": "#ffffff",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3883,7 +4965,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FG",
         "colorway": "Rojo",
         "color": "#e22400",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -3975,7 +5057,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG",
         "colorway": "Rojo",
         "color": "#e22400",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4020,46 +5102,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’ Pack"
-        }
-      },
-      {
-        "id": "ye8xklx",
-        "name": "Adidas Predator Elite FT FG",
-        "colorway": "Blanco / Azul",
-        "color": "#ffffff",
-        "price": 549999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "9.5"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1783360172966-e1938269-5caf-4e49-9f9d-1111099a4a6d.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme",
-          "peso": "186 gr.",
-          "coleccion": "‘Jude Bellingham’ Pack"
         }
       },
       {
@@ -4173,7 +5215,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 479999,
+        "price": 509999,
         "availableSizes": [
           "38",
           "38.5",
@@ -4222,21 +5264,7 @@ window.BAG_DATA = {
             "12.5",
             "13"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803355042-IMG_1844.webp"
@@ -4254,7 +5282,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Blanco",
         "color": "#ffffff",
-        "price": 599999,
+        "price": 509999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4410,7 +5438,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite FG",
         "colorway": "Blanco / Rojo",
         "color": "#ffffff",
-        "price": 509999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4462,7 +5490,7 @@ window.BAG_DATA = {
         "name": "Adidas Copa Pure 4 Elite LL FG",
         "colorway": "Blanco / Rojo",
         "color": "#ffffff",
-        "price": 519999,
+        "price": 479999,
         "availableSizes": [],
         "sizes": {
           "eu": [
