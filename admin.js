@@ -1175,7 +1175,7 @@ function TokenModal({ onSave, onCancel }) {
 // ─────────────────────────────────────────
 // ORDERS SECTION
 // ─────────────────────────────────────────
-function OrdersSection({ adminSecret, notify }) {
+function OrdersSection({ adminSecret, notify, products }) {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState(null);
@@ -1239,6 +1239,14 @@ function OrdersSection({ adminSecret, notify }) {
 
   const fmt = n => '$ ' + Number(n).toLocaleString('es-AR');
 
+  // Mapa id de producto -> primera foto del catálogo, para identificar el pedido de un vistazo.
+  const productImg = {};
+  for (const key of Object.keys(products || {})) {
+    for (const v of (products[key] || [])) {
+      if (v && v.id && v.images && v.images[0]) productImg[v.id] = v.images[0];
+    }
+  }
+
   const STATUS = {
     approved:  { label: 'Pagado',                        cls: 'success' },
     pending:   { label: 'Pendiente',                      cls: 'warn'    },
@@ -1272,7 +1280,17 @@ function OrdersSection({ adminSecret, notify }) {
                   <div className="adm-order-row__name">{o.payer_name || o.payer_email || '—'}</div>
                   {o.payer_email && <div className="adm-order-row__email">{o.payer_email}</div>}
                   <div className="adm-order-row__items">
-                    {(o.items || []).map((it, i) => <span key={i}>{it.title}{i < o.items.length - 1 ? ' / ' : ''}</span>)}
+                    {(o.items || []).map((it, i) => {
+                      const img = productImg[it.id];
+                      return (
+                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: i ? 6 : 0 }}>
+                          {img
+                            ? <img src={img} alt="" loading="lazy" style={{ width: 48, height: 48, objectFit: 'cover', borderRadius: 4, flexShrink: 0, background: '#111' }} />
+                            : <div style={{ width: 48, height: 48, borderRadius: 4, flexShrink: 0, background: 'rgba(255,255,255,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>👟</div>}
+                          <span>{it.title}{Number(it.quantity) > 1 ? ` ×${it.quantity}` : ''}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                   {o.shipping && (
                     <div className="adm-order-row__shipping">
@@ -1663,7 +1681,7 @@ function AdminApp() {
           {!loading && data && section === 'products' && (
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
           )}
-          {section === 'orders' && <OrdersSection adminSecret={adminSecret} notify={notify} />}
+          {section === 'orders' && <OrdersSection adminSecret={adminSecret} notify={notify} products={(data && data.products) || null} />}
           {!loading && data && section === 'pages' && (
             <PagesSection data={data} onDataChange={handleDataChange} />
           )}
