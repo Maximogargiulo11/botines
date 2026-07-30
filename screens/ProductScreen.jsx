@@ -192,13 +192,10 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
           {/* Main viewer */}
           <div className="bag-product-gallery__main">
             {current && current.type === 'video' ? (
-              <video
+              <AutoplayVideo
                 key={current.src}
                 src={current.src}
                 className="bag-product-gallery__video"
-                controls
-                autoPlay
-                playsInline
               />
             ) : current ? (
               <img

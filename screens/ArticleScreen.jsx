@@ -51,12 +51,23 @@ function ArticleScreen({ slug, navigate }) {
   React.useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
-    v.muted = false;
-    v.play().catch(() => {
-      v.muted = true;
-      setVideoMuted(true);
-      v.play().catch(() => {});
-    });
+    const tryPlay = () => {
+      v.play().catch(() => {           // autoplay con sonido bloqueado → muteamos y reintentamos
+        v.muted = true;
+        setVideoMuted(true);
+        v.play().catch(() => {});
+      });
+    };
+    if (typeof IntersectionObserver === 'undefined') { tryPlay(); return; }
+    // Reproducir al entrar en pantalla, pausar al salir.
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) tryPlay();
+        else v.pause();
+      });
+    }, { threshold: 0.25 });
+    io.observe(v);
+    return () => io.disconnect();
   }, []);
 
   const toggleMute = () => {
@@ -177,7 +188,7 @@ function ArticleScreen({ slug, navigate }) {
                   <iframe src={embedUrl} allowFullScreen title="video" />
                 </div>
               ) : block.src ? (
-                <video src={block.src} controls playsInline className="bag-article-video" />
+                <AutoplayVideo src={block.src} className="bag-article-video" />
               ) : null}
             </div>
           );
