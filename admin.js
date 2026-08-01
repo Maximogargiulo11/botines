@@ -1618,10 +1618,13 @@ function AdminApp() {
       notify('¡Publicado! Vercel redeploya automáticamente.');
     } catch (e) {
       const msg = e.message || '';
-      if (msg.toLowerCase().includes('bad credentials') || msg.includes('401')) {
+      const low = msg.toLowerCase();
+      if (low.includes('bad credentials') || msg.includes('401')) {
         localStorage.removeItem(TOKEN_KEY);
         setToken('');
         notify('Token inválido. Actualizá el token en Ajustes.', 'error');
+      } else if (low.includes('not found') || msg.includes('404')) {
+        notify('El token no tiene permiso de escritura sobre el repositorio. Creá un token clásico con el scope "repo" desde la cuenta dueña del repo (Maximogargiulo11) y guardalo en Ajustes.', 'error');
       } else {
         notify(`Error al publicar: ${msg}`, 'error');
       }
