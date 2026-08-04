@@ -11,6 +11,142 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "zlxdxh9",
+      "slug": "adidas-presenta-su-tradicional-paquete-de-cuero",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas presenta su tradicional paquete de cuero.",
+      "excerpt": "Lanza en sus silos F50 y Predator.",
+      "date": "04 de Agosto de 2026",
+      "cover": "assets/1785847372011-IMG_2843.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "2w21hox",
+          "content": "Los botines de fútbol pueden ser cada vez más ligeros .y rápidos con cada generación e implementando más y mejores tecnologías, pero todavía hay algo especial en la sensación que causa el cuero. Con el nuevo paquete ‘Leather Tech’, el Three Stripes combina la artesanía clásica con la innovación moderna, ofreciendo lo mejor de ambos mundos en el F50 Elite Hyperfast L-Tech y Predator Elite FT L-Tech.\n"
+        },
+        {
+          "type": "image",
+          "id": "ldodmxn",
+          "src": "assets/1785847560773-IMG_2853.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "hkpuay4",
+          "content": "Volviendo a un espacio más tradicional para la construcción de botines de fútbol, Adidas ha vuelto a poner el cuero de primera calidad en el centro de atención, combinando un antepié de cuero con un cuarto técnico ligero en dos de sus silos más icónicos. La idea es simple: mantener ese toque suave y amortiguado en la pelota donde más importa, mientras se beneficia del soporte ligero, el bloqueo y la comodidad que el fútbol moderno exige alrededor del talón y el mediopié. Es una combinación que se siente como una evolución natural en lugar de un paso atrás. Los jugadores tienen la sensación atemporal del cuero en la zona de golpe, junto con las características de rendimiento que han hecho que las botas de fútbol de hoy en día sean más rápidas y más receptivas que nunca. Y, como ventaja adicional, ambos se ven absolutamente magníficos."
+        },
+        {
+          "type": "text",
+          "id": "w8kwk10",
+          "content": "Liderando el paquete está el Predator Elite FT L-Tech, que llega con lo que podría decirse que es el aspecto más icónico de Predator: negro y rojo. Es una combinación de colores que evoca instantáneamente recuerdos de algunos de los mejores modelos Predator jamás fabricados, y Adidas se ha apoyado mucho en esa herencia."
+        },
+        {
+          "type": "image",
+          "id": "v7n78kx",
+          "src": "assets/1785847750475-IMG_2836.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "9ekhme6",
+          "left": {
+            "src": "assets/1785847759918-IMG_2837.jpeg"
+          },
+          "right": {
+            "src": "assets/1785847918216-IMG_2838.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "0vropkn",
+          "content": "El antepié de cuero de primera calidad ofrece ese toque clásico de Predator, mientras que la lengüeta plegable de la firma regresa en un acabado rojo vivo, completo con ojos Predator bordados para una estética inconfundible. Pero son los detalles más finos los que realmente hacen que este lanzamiento se destaque."
+        },
+        {
+          "type": "text",
+          "id": "3d2zsrm",
+          "content": "Un \"1994\" bordado aparece en el botín izquierdo, marcando el año en que el Predator original se lanzó y cambió el diseño del botín de fútbol para siempre. La nostalgia continúa con los ojos Predator originales que aparecen en el talón derecho, mientras que la icónica marca de palabra Predator aparece en el talón izquierdo, la correa elástica e incluso debajo de la lengua. Luego están las marcas de recuento: 13 en el botín derecho y 10 en el izquierdo. Juntos, representan el hecho de que este es el modelo 23 de Predator, un sutil pero inteligente guiño a la evolución del silo a lo largo de más de tres décadas."
+        },
+        {
+          "type": "image-pair",
+          "id": "gd43hln",
+          "left": {
+            "src": "assets/1785848085087-IMG_2848.jpeg"
+          },
+          "right": {
+            "src": "assets/1785848092768-IMG_2849.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "a7sz2x8",
+          "content": "Mientras que el Predator llama la atención con su atrevido estilo patrimonial, el F50 Elite Hyperfast L-Tech adopta un enfoque más discreto."
+        },
+        {
+          "type": "image",
+          "id": "desodi1",
+          "src": "assets/1785848144987-IMG_2840.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "tumd32c",
+          "content": "Presentado en un \"Zero Met. Color /Core Black/Solar Orange\", el diseño se inspira en una de las franquicias de botines de velocidad más reconocibles en la historia del fútbol. Su mezcla de blanco, plata y negro hace referencia directamente a la estética original del F50, mientras que los toques de naranja solar brillante inyectan un toque moderno."
+        },
+        {
+          "type": "image",
+          "id": "lurbw18",
+          "src": "assets/1785848257513-IMG_2841.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "i95tsj8",
+          "content": "Otros toques tradicionales llegan a través de los gráficos actualizados de Sprintweb, que ofrecen un aspecto claro inspirado en el archivo, mientras que la marca F50 en relieve refuerza la conexión entre el pasado y el presente. Es una ejecución reflexiva que logra celebrar las raíces de la franquicia mientras se siente completamente actualizado."
+        },
+        {
+          "type": "image-pair",
+          "id": "3lqolw2",
+          "left": {
+            "src": "assets/1785848268612-IMG_2846.jpeg"
+          },
+          "right": {
+            "src": "assets/1785848274101-IMG_2847.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "tdd7qwm",
+          "content": "Dos botines que abarcan las cualidades que los jugadores han amado sobre el cuero durante décadas, golpeando ese punto dulce entre el pasado y el presente del fútbol."
+        },
+        {
+          "type": "text",
+          "id": "jwkmd2v",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "fcza1u9",
       "slug": "un-gol-que-quedara-para-siempre",
       "brand": "Nike",
