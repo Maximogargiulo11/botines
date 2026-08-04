@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "Adidas presenta su tradicional paquete de cuero.",
       "excerpt": "Lanza en sus silos F50 y Predator.",
       "date": "04 de Agosto de 2026",
-      "cover": "assets/1785847372011-IMG_2843.jpeg",
+      "cover": "assets/1785848780909-IMG_2853.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "",
@@ -60,16 +60,6 @@ window.BAG_DATA = {
           "src": "assets/1785847750475-IMG_2836.jpeg",
           "width": "",
           "height": ""
-        },
-        {
-          "type": "image-pair",
-          "id": "9ekhme6",
-          "left": {
-            "src": "assets/1785847759918-IMG_2837.jpeg"
-          },
-          "right": {
-            "src": "assets/1785847918216-IMG_2838.jpeg"
-          }
         },
         {
           "type": "text",
