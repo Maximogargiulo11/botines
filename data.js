@@ -35,7 +35,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "2w21hox",
-          "content": "Los botines de fútbol pueden ser cada vez más ligeros .y rápidos con cada generación e implementando más y mejores tecnologías, pero todavía hay algo especial en la sensación que causa el cuero. Con el nuevo paquete ‘Leather Tech’, el Three Stripes combina la artesanía clásica con la innovación moderna, ofreciendo lo mejor de ambos mundos en el F50 Elite Hyperfast L-Tech y Predator Elite FT L-Tech.\n"
+          "content": "Los botines de fútbol pueden ser cada vez más ligeros y rápidos con cada generación e implementando más y mejores tecnologías, pero todavía hay algo especial en la sensación que causa el cuero. Con el nuevo paquete ‘Leather Tech’, el Three Stripes combina la artesanía clásica con la innovación moderna, ofreciendo lo mejor de ambos mundos en el F50 Elite Hyperfast L-Tech y Predator Elite FT L-Tech.\n"
         },
         {
           "type": "image",
