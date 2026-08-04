@@ -40,7 +40,7 @@ window.BAG_DATA = {
         {
           "type": "image",
           "id": "ldodmxn",
-          "src": "assets/1785847560773-IMG_2853.jpeg",
+          "src": "assets/1785849152505-IMG_2844.jpeg",
           "width": "",
           "height": ""
         },
