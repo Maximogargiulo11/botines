@@ -1404,7 +1404,7 @@ window.BAG_DATA = {
       "slug": "nike-actualiza-el-pack-shadow",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Nike actualiza el pack ‘Shadow’",
+      "title": "Nike actualiza el pack ‘Shadow’.",
       "excerpt": "Nike re-lanza el pack ‘Shadow’ con las actualizaciones de Mercurial Vapor y Superfly.",
       "date": "23 de Junio de 2026",
       "cover": "assets/1782786194518-1782346699579-IMG_2152.jpeg",
@@ -1476,7 +1476,10 @@ window.BAG_DATA = {
         "brand": "nike",
         "model": "mercurial",
         "colorwayId": "d4s9li3"
-      }
+      },
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "cr1rymp",
