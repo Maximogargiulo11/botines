@@ -1237,11 +1237,21 @@ window.BAG_DATA = {
       "sizesUK": [],
       "contentBlocks": [
         {
+          "type": "text",
+          "id": "aa9v2ky",
+          "content": "Velocidad diseñada para encontrar oro, hechos para Cristiano Ronaldo 🌟"
+        },
+        {
           "type": "image",
           "id": "qqxu99d",
           "src": "assets/1782858136549-IMG_1166.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "r9hjuxa",
+          "content": "Has escuchado el dicho sobre que el tren pasa una vez en la vida. Esperas años por uno. Pero luego vienen dos al mismo tiempo. Bueno, este es el caso de Cristiano Ronaldo y sus botines exclusivos con Nike, con la revelación de los Mercurial Superfly 11 ‘CR7 Gold Scorpion’, su segunda ‘signature’ en tan sólo unos días 👟"
         },
         {
           "type": "image-pair",
@@ -1254,6 +1264,11 @@ window.BAG_DATA = {
           }
         },
         {
+          "type": "text",
+          "id": "vnh5c9v",
+          "content": "Esta Copa del Mundo parece ser una para romper récords, y donde hay récords que romper en el fútbol, Cristiano nunca estará lejos. Efectivamente, con sus dos goles contra Uzbekistán, se convirtió en el primer y único jugador hasta la fecha en haber anotado en seis torneos diferentes de la Copa del Mundo. Una hazaña increíble, y una que Nike honró con una edición dorada Mercurial Superfly I RGN a principios de esta semana. Pero no terminaron allí…\n\n\nEntonces, ¿por qué dos? 🤔 Ese primero fue un verdadero retroceso, honrando el legado. ¿Este nuevo? Se trata de lo que está por venir. Como tal, no esperes ver a Ronaldo en el RGN: usará este nuevo Escorpión de Oro a partir de ahora durante y lo que resta Mundial 🔜\n\n\nJuntos, los dos lanzamientos, enmarcan el legado de Ronaldo no como algo que debe ser cuidadosamente empaquetado y archivado, sino como algo que aún se desarrolla en tiempo real. El RGN honró el viaje; el Escorpión de Oro está enfocado firmemente en el ahora, en la idea de que incluso después de seis Copas del Mundo, incluso después de reescribir los libros de récords una vez más, todavía quedan capítulos por escribir ✨\n\n\nY si la historia nos ha enseñado algo, es que no apostarías en contra de que agregue algunas líneas más antes de que esta historia esté terminada 💫"
+        },
+        {
           "type": "image",
           "id": "izksb02",
           "src": "assets/1782865200385-IMG_1254.jpeg",
@@ -1264,6 +1279,11 @@ window.BAG_DATA = {
           "type": "text",
           "id": "efuj2ve",
           "content": "Sólo 2026 unidades disponibles en la aplicación Nike SNKRS."
+        },
+        {
+          "type": "text",
+          "id": "5v2yu21",
+          "content": "🛒 Disponibles a partir del Sábado 27 de Junio en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
