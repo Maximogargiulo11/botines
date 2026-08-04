@@ -513,7 +513,7 @@ window.BAG_DATA = {
       "slug": "presentes-en-la-final-de-la-copa-del-mundo-2026",
       "brand": "Nike",
       "category": "EDITORIAL",
-      "title": "Presentes en la Final de la Copa del Mundo 2026",
+      "title": "Presentes en la Final de la Copa del Mundo 2026.",
       "excerpt": "Enzo Fernández con nuestros Nike Phantom GT 2 ‘Generation’.",
       "date": "19 de Junio de 2026",
       "cover": "assets/1784996345850-IMG_2531.jpeg",
