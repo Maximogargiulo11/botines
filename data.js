@@ -338,7 +338,7 @@ window.BAG_DATA = {
       "slug": "nike-lanza-el-break-em-para-el-comienzo-de-la-temporada",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Nike lanza el ‘Break ‘Em’ para el comienzo de la temporada",
+      "title": "Nike lanza el ‘Break ‘Em’ para el comienzo de la temporada.",
       "excerpt": "Diseñados para romper rivales y dominar cada acción del juego 🔥",
       "date": "23 de Julio de 2026",
       "cover": "assets/1784993840271-IMG_2646.jpeg",
