@@ -4,12 +4,138 @@
 
 window.BAG_DATA = {
   "config": {
-    "homepageArticleCount": 12,
+    "homepageArticleCount": 18,
     "typography": {
       "serif": "bebas"
     }
   },
   "articles": [
+    {
+      "id": "zlxdxh9",
+      "slug": "adidas-presenta-su-tradicional-paquete-de-cuero",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas presenta su tradicional paquete de cuero.",
+      "excerpt": "Lanza en sus silos F50 y Predator.",
+      "date": "04 de Agosto de 2026",
+      "cover": "assets/1785848780909-IMG_2853.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "2w21hox",
+          "content": "Los botines de fútbol pueden ser cada vez más ligeros y rápidos con cada generación e implementando más y mejores tecnologías, pero todavía hay algo especial en la sensación que causa el cuero. Con el nuevo paquete ‘Leather Tech’, el Three Stripes combina la artesanía clásica con la innovación moderna, ofreciendo lo mejor de ambos mundos en el F50 Elite Hyperfast L-Tech y Predator Elite FT L-Tech.\n"
+        },
+        {
+          "type": "image",
+          "id": "ldodmxn",
+          "src": "assets/1785849152505-IMG_2844.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "hkpuay4",
+          "content": "Volviendo a un espacio más tradicional para la construcción de botines de fútbol, Adidas ha vuelto a poner el cuero de primera calidad en el centro de atención, combinando un antepié de cuero con un cuarto técnico ligero en dos de sus silos más icónicos. La idea es simple: mantener ese toque suave y amortiguado en la pelota donde más importa, mientras se beneficia del soporte ligero, el bloqueo y la comodidad que el fútbol moderno exige alrededor del talón y el mediopié. Es una combinación que se siente como una evolución natural en lugar de un paso atrás. Los jugadores tienen la sensación atemporal del cuero en la zona de golpe, junto con las características de rendimiento que han hecho que las botas de fútbol de hoy en día sean más rápidas y más receptivas que nunca. Y, como ventaja adicional, ambos se ven absolutamente magníficos."
+        },
+        {
+          "type": "text",
+          "id": "w8kwk10",
+          "content": "Liderando el paquete está el Predator Elite FT L-Tech, que llega con lo que podría decirse que es el aspecto más icónico de Predator: negro y rojo. Es una combinación de colores que evoca instantáneamente recuerdos de algunos de los mejores modelos Predator jamás fabricados, y Adidas se ha apoyado mucho en esa herencia."
+        },
+        {
+          "type": "image",
+          "id": "v7n78kx",
+          "src": "assets/1785847750475-IMG_2836.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "0vropkn",
+          "content": "El antepié de cuero de primera calidad ofrece ese toque clásico de Predator, mientras que la lengüeta plegable de la firma regresa en un acabado rojo vivo, completo con ojos Predator bordados para una estética inconfundible. Pero son los detalles más finos los que realmente hacen que este lanzamiento se destaque."
+        },
+        {
+          "type": "text",
+          "id": "3d2zsrm",
+          "content": "Un \"1994\" bordado aparece en el botín izquierdo, marcando el año en que el Predator original se lanzó y cambió el diseño del botín de fútbol para siempre. La nostalgia continúa con los ojos Predator originales que aparecen en el talón derecho, mientras que la icónica marca de palabra Predator aparece en el talón izquierdo, la correa elástica e incluso debajo de la lengua. Luego están las marcas de recuento: 13 en el botín derecho y 10 en el izquierdo. Juntos, representan el hecho de que este es el modelo 23 de Predator, un sutil pero inteligente guiño a la evolución del silo a lo largo de más de tres décadas."
+        },
+        {
+          "type": "image-pair",
+          "id": "gd43hln",
+          "left": {
+            "src": "assets/1785848085087-IMG_2848.jpeg"
+          },
+          "right": {
+            "src": "assets/1785848092768-IMG_2849.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "a7sz2x8",
+          "content": "Mientras que el Predator llama la atención con su atrevido estilo patrimonial, el F50 Elite Hyperfast L-Tech adopta un enfoque más discreto."
+        },
+        {
+          "type": "image",
+          "id": "desodi1",
+          "src": "assets/1785848144987-IMG_2840.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "tumd32c",
+          "content": "Presentado en un \"Zero Met. Color /Core Black/Solar Orange\", el diseño se inspira en una de las franquicias de botines de velocidad más reconocibles en la historia del fútbol. Su mezcla de blanco, plata y negro hace referencia directamente a la estética original del F50, mientras que los toques de naranja solar brillante inyectan un toque moderno."
+        },
+        {
+          "type": "image",
+          "id": "lurbw18",
+          "src": "assets/1785848257513-IMG_2841.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "i95tsj8",
+          "content": "Otros toques tradicionales llegan a través de los gráficos actualizados de Sprintweb, que ofrecen un aspecto claro inspirado en el archivo, mientras que la marca F50 en relieve refuerza la conexión entre el pasado y el presente. Es una ejecución reflexiva que logra celebrar las raíces de la franquicia mientras se siente completamente actualizado."
+        },
+        {
+          "type": "image-pair",
+          "id": "3lqolw2",
+          "left": {
+            "src": "assets/1785848268612-IMG_2846.jpeg"
+          },
+          "right": {
+            "src": "assets/1785848274101-IMG_2847.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "tdd7qwm",
+          "content": "Dos botines que abarcan las cualidades que los jugadores han amado sobre el cuero durante décadas, golpeando ese punto dulce entre el pasado y el presente del fútbol."
+        },
+        {
+          "type": "text",
+          "id": "jwkmd2v",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
     {
       "id": "fcza1u9",
       "slug": "un-gol-que-quedara-para-siempre",
@@ -118,7 +244,7 @@ window.BAG_DATA = {
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": false
+      "featuredWide": true
     },
     {
       "id": "wshc6ec",
@@ -138,7 +264,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -212,7 +338,7 @@ window.BAG_DATA = {
       "slug": "nike-lanza-el-break-em-para-el-comienzo-de-la-temporada",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Nike lanza el ‘Break ‘Em’ para el comienzo de la temporada",
+      "title": "Nike lanza el ‘Break ‘Em’ para el comienzo de la temporada.",
       "excerpt": "Diseñados para romper rivales y dominar cada acción del juego 🔥",
       "date": "23 de Julio de 2026",
       "cover": "assets/1784993840271-IMG_2646.jpeg",
@@ -387,7 +513,7 @@ window.BAG_DATA = {
       "slug": "presentes-en-la-final-de-la-copa-del-mundo-2026",
       "brand": "Nike",
       "category": "EDITORIAL",
-      "title": "Presentes en la Final de la Copa del Mundo 2026",
+      "title": "Presentes en la Final de la Copa del Mundo 2026.",
       "excerpt": "Enzo Fernández con nuestros Nike Phantom GT 2 ‘Generation’.",
       "date": "19 de Junio de 2026",
       "cover": "assets/1784996345850-IMG_2531.jpeg",
@@ -1111,11 +1237,21 @@ window.BAG_DATA = {
       "sizesUK": [],
       "contentBlocks": [
         {
+          "type": "text",
+          "id": "aa9v2ky",
+          "content": "Velocidad diseñada para encontrar oro, hechos para Cristiano Ronaldo 🌟"
+        },
+        {
           "type": "image",
           "id": "qqxu99d",
           "src": "assets/1782858136549-IMG_1166.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "r9hjuxa",
+          "content": "Has escuchado el dicho sobre que el tren pasa una vez en la vida. Esperas años por uno. Pero luego vienen dos al mismo tiempo. Bueno, este es el caso de Cristiano Ronaldo y sus botines exclusivos con Nike, con la revelación de los Mercurial Superfly 11 ‘CR7 Gold Scorpion’, su segunda ‘signature’ en tan sólo unos días 👟"
         },
         {
           "type": "image-pair",
@@ -1128,6 +1264,11 @@ window.BAG_DATA = {
           }
         },
         {
+          "type": "text",
+          "id": "vnh5c9v",
+          "content": "Esta Copa del Mundo parece ser una para romper récords, y donde hay récords que romper en el fútbol, Cristiano nunca estará lejos. Efectivamente, con sus dos goles contra Uzbekistán, se convirtió en el primer y único jugador hasta la fecha en haber anotado en seis torneos diferentes de la Copa del Mundo. Una hazaña increíble, y una que Nike honró con una edición dorada Mercurial Superfly I RGN a principios de esta semana. Pero no terminaron allí…\n\n\nEntonces, ¿por qué dos? 🤔 Ese primero fue un verdadero retroceso, honrando el legado. ¿Este nuevo? Se trata de lo que está por venir. Como tal, no esperes ver a Ronaldo en el RGN: usará este nuevo Escorpión de Oro a partir de ahora durante y lo que resta Mundial 🔜\n\n\nJuntos, los dos lanzamientos, enmarcan el legado de Ronaldo no como algo que debe ser cuidadosamente empaquetado y archivado, sino como algo que aún se desarrolla en tiempo real. El RGN honró el viaje; el Escorpión de Oro está enfocado firmemente en el ahora, en la idea de que incluso después de seis Copas del Mundo, incluso después de reescribir los libros de récords una vez más, todavía quedan capítulos por escribir ✨\n\n\nY si la historia nos ha enseñado algo, es que no apostarías en contra de que agregue algunas líneas más antes de que esta historia esté terminada 💫"
+        },
+        {
           "type": "image",
           "id": "izksb02",
           "src": "assets/1782865200385-IMG_1254.jpeg",
@@ -1138,12 +1279,17 @@ window.BAG_DATA = {
           "type": "text",
           "id": "efuj2ve",
           "content": "Sólo 2026 unidades disponibles en la aplicación Nike SNKRS."
+        },
+        {
+          "type": "text",
+          "id": "5v2yu21",
+          "content": "🛒 Disponibles a partir del Sábado 27 de Junio en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": true
+      "featuredWide": false
     },
     {
       "id": "kavbn26",
@@ -1278,7 +1424,7 @@ window.BAG_DATA = {
       "slug": "nike-actualiza-el-pack-shadow",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Nike actualiza el pack ‘Shadow’",
+      "title": "Nike actualiza el pack ‘Shadow’.",
       "excerpt": "Nike re-lanza el pack ‘Shadow’ con las actualizaciones de Mercurial Vapor y Superfly.",
       "date": "23 de Junio de 2026",
       "cover": "assets/1782786194518-1782346699579-IMG_2152.jpeg",
@@ -1350,7 +1496,10 @@ window.BAG_DATA = {
         "brand": "nike",
         "model": "mercurial",
         "colorwayId": "d4s9li3"
-      }
+      },
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
     },
     {
       "id": "cr1rymp",
@@ -3179,8 +3328,7 @@ window.BAG_DATA = {
           "uk": []
         },
         "images": [
-          "assets/1782858833321-IMG_2248.jpeg",
-          "assets/1782858850147-IMG_2250.jpeg"
+          "assets/1785860596954-IMG_2325.webp"
         ],
         "videos": [],
         "spec": {
@@ -3855,7 +4003,6 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "7",
             "7.5",
             "8",
             "8.5",
@@ -3866,24 +4013,9 @@ window.BAG_DATA = {
             "11",
             "11.5",
             "12",
-            "12.5",
-            "13"
+            "12.5"
           ],
-          "uk": [
-            "6.5",
-            "6",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803106056-IMG_1842.webp"
@@ -3940,31 +4072,14 @@ window.BAG_DATA = {
             "7.5",
             "8",
             "8.5",
-            "9",
             "9.5",
             "10",
             "10.5",
             "11",
-            "11.5",
             "12",
-            "12.5",
-            "13"
+            "12.5"
           ],
-          "uk": [
-            "6",
-            "6.5",
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "12"
-          ]
+          "uk": []
         },
         "images": [
           "assets/1781803178746-IMG_1841.webp"
@@ -4006,7 +4121,6 @@ window.BAG_DATA = {
             "8",
             "9",
             "10",
-            "11",
             "12",
             "12.5"
           ],
@@ -4049,10 +4163,7 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "8",
-            "10",
             "11",
-            "12",
             "12.5",
             "13"
           ],
@@ -4465,10 +4576,8 @@ window.BAG_DATA = {
             "8",
             "9.5",
             "10",
-            "11.5",
             "11",
             "10.5",
-            "12",
             "12.5",
             "13"
           ],
@@ -4694,14 +4803,11 @@ window.BAG_DATA = {
           ],
           "us": [
             "7",
-            "8",
-            "8.5",
-            "9.5",
-            "11",
-            "11.5",
             "12",
             "12.5",
-            "13"
+            "13",
+            "9",
+            "11"
           ],
           "uk": []
         },
@@ -5097,19 +5203,7 @@ window.BAG_DATA = {
             "46"
           ],
           "us": [
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "11",
-            "11.5",
-            "13",
-            "12.5",
-            "12"
+            "8"
           ],
           "uk": []
         },
@@ -5153,8 +5247,7 @@ window.BAG_DATA = {
             "9",
             "8",
             "12",
-            "12.5",
-            "13"
+            "8.5"
           ],
           "uk": []
         },
@@ -5263,14 +5356,9 @@ window.BAG_DATA = {
           ],
           "us": [
             "7",
-            "7.5",
-            "8",
             "9",
             "9.5",
             "10",
-            "10.5",
-            "11",
-            "11.5",
             "12.5"
           ],
           "uk": []
