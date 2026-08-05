@@ -244,7 +244,7 @@ window.BAG_DATA = {
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": false
+      "featuredWide": true
     },
     {
       "id": "wshc6ec",
@@ -1289,7 +1289,7 @@ window.BAG_DATA = {
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": true
+      "featuredWide": false
     },
     {
       "id": "kavbn26",
