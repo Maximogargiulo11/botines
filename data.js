@@ -11,6 +11,65 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "xlbgxff",
+      "slug": "adidas-y-trinity-rodman-se-unen-para-una-nueva-edicion-de-f50-sparkfusion",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Adidas y Trinity Rodman se unen para una nueva edición de F50 Sparkfusion 👑",
+      "excerpt": "La marca de las tres líneas y su principal embajadora en el futbol femenino se fusiona para una colaboración única y especial.",
+      "date": "06 de Agosto de 2026",
+      "cover": "assets/1786029514699-IMG_2715.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1786029523479-IMG_2717.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1786029558474-IMG_2715.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "23v62ys",
+          "src": "assets/1786029647750-IMG_2718.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "bsxteiu",
+          "left": {
+            "src": "assets/1786029591982-IMG_2878.webp"
+          },
+          "right": {
+            "src": "assets/1786029597241-IMG_2879.webp"
+          }
+        },
+        {
+          "type": "image",
+          "id": "7h9jjp7",
+          "src": "assets/1786029613430-IMG_2873.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "5kdqwod",
+          "src": "assets/1786029674898-IMG_2717.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "thv62lg",
       "slug": "puma-lanza-un-nuevo-paquete-para-el-futbol-femenino-brilliance",
       "brand": "Puma",
