@@ -21,7 +21,7 @@ window.BAG_DATA = {
       "cover": "assets/1786029514699-IMG_2715.jpeg",
       "coverWidth": "",
       "coverHeight": "",
-      "imagenCard": "assets/1786030374851-IMG_2716.jpeg",
+      "imagenCard": "assets/1786030256833-IMG_2719.jpeg",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
       "imagenCarrusel": "assets/1786030248617-IMG_2716.jpeg",
@@ -62,6 +62,11 @@ window.BAG_DATA = {
           "src": "assets/1786029674898-IMG_2717.jpeg",
           "width": "",
           "height": ""
+        },
+        {
+          "type": "text",
+          "id": "0gp5hk3",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
