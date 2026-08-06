@@ -60,13 +60,6 @@ window.BAG_DATA = {
           }
         },
         {
-          "type": "image",
-          "id": "4plk415",
-          "src": "assets/1786023333732-IMG_2868.jpeg",
-          "width": "",
-          "height": ""
-        },
-        {
           "type": "text",
           "id": "9jbwivk",
           "content": "Diseñado específicamente en torno a la anatomía del pie femenino. Desarrollado con ideas de 11 jugadoras, incluyendo a Alex Greenwood, Jess Park y Sandy Baltimore. Cada silo también cuenta con iconos personales inspirados en sus carreras individuales."
