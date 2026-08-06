@@ -51,12 +51,22 @@ window.BAG_DATA = {
         },
         {
           "type": "image-pair",
-          "id": "y20evqf",
+          "id": "15tm8xn",
           "left": {
-            "src": "assets/1786023308711-IMG_2867.jpeg"
+            "src": "assets/1786028491102-IMG_2722.jpeg"
           },
           "right": {
-            "src": "assets/1786023322125-IMG_2866.jpeg"
+            "src": "assets/1786028505734-IMG_2868.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "njzmjge",
+          "left": {
+            "src": "assets/1786028525687-IMG_2720.jpeg"
+          },
+          "right": {
+            "src": "assets/1786028534265-IMG_2726.jpeg"
           }
         },
         {
