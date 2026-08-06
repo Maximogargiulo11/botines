@@ -21,7 +21,7 @@ window.BAG_DATA = {
       "cover": "assets/1786029514699-IMG_2715.jpeg",
       "coverWidth": "",
       "coverHeight": "",
-      "imagenCard": "assets/1786030256833-IMG_2719.jpeg",
+      "imagenCard": "assets/1786030374851-IMG_2716.jpeg",
       "imagenCardWidth": "",
       "imagenCardHeight": "",
       "imagenCarrusel": "assets/1786030248617-IMG_2716.jpeg",
