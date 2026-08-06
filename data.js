@@ -13,7 +13,7 @@ window.BAG_DATA = {
     {
       "id": "xlbgxff",
       "slug": "adidas-y-trinity-rodman-se-unen-para-una-nueva-edicion-de-f50-sparkfusion",
-      "brand": "Puma",
+      "brand": "Adidas",
       "category": "LANZAMIENTO",
       "title": "Adidas y Trinity Rodman se unen para una nueva edición de F50 Sparkfusion 👑",
       "excerpt": "La marca de las tres líneas y su principal embajadora en el futbol femenino se fusiona para una colaboración única y especial.",
