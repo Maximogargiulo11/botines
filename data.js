@@ -26,7 +26,7 @@ window.BAG_DATA = {
       "imagenCardHeight": "",
       "imagenCarrusel": "assets/1786023016912-IMG_2870.jpeg",
       "imagenCarruselWidth": "1080",
-      "imagenCarruselHeight": "1100",
+      "imagenCarruselHeight": "1050",
       "coverVideo": "",
       "featured": true,
       "sizesUS": [],
