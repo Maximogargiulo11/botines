@@ -33,6 +33,11 @@ window.BAG_DATA = {
       "sizesUK": [],
       "contentBlocks": [
         {
+          "type": "text",
+          "id": "jkdu1sx",
+          "content": "La marca de las tres líneas y su principal embajadora en el futbol femenino se fusiona para una colaboración única y especial."
+        },
+        {
           "type": "image",
           "id": "23v62ys",
           "src": "assets/1786029647750-IMG_2718.jpeg",
