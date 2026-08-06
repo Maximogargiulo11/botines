@@ -11,6 +11,85 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "thv62lg",
+      "slug": "puma-lanza-un-nuevo-paquete-para-el-futbol-femenino-brilliance",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma lanza un nuevo paquete para el fútbol femenino: ‘Brilliance’ ✨",
+      "excerpt": "¿Invisible? 😏 Ya no…",
+      "date": "06 de Agosto de 2026",
+      "cover": "assets/1786023012050-IMG_2870.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1786023016912-IMG_2870.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "b1lbqtt",
+          "content": "El paquete de Puma ‘Brilliance’ ha aterrizado, trayendo ediciones exclusivas para el futbol femenino de Ultra, Future y King."
+        },
+        {
+          "type": "image",
+          "id": "xiqniif",
+          "src": "assets/1786023224091-IMG_2870.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "dkfk16c",
+          "content": "Inspirado por el trabajo que nadie ve. Las madrugadas, las sesiones extras, los contratiempos y demás sacrificios que conllevan para los mayores momentos que les demandan en el campo."
+        },
+        {
+          "type": "image-pair",
+          "id": "y20evqf",
+          "left": {
+            "src": "assets/1786023308711-IMG_2867.jpeg"
+          },
+          "right": {
+            "src": "assets/1786023322125-IMG_2866.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "4plk415",
+          "src": "assets/1786023333732-IMG_2868.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9jbwivk",
+          "content": "Diseñado específicamente en torno a la anatomía del pie femenino. Desarrollado con ideas de 11 jugadoras, incluyendo a Alex Greenwood, Jess Park y Sandy Baltimore. Cada silo también cuenta con iconos personales inspirados en sus carreras individuales."
+        },
+        {
+          "type": "image",
+          "id": "5ddi8i7",
+          "src": "assets/1786023413423-IMG_2865.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "3knby64",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "zlxdxh9",
       "slug": "adidas-presenta-su-tradicional-paquete-de-cuero",
       "brand": "Adidas",
