@@ -3089,7 +3089,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 11 Elite FG ‘Kylian Mbappe’",
         "colorway": "Oro / Verde",
         "color": "#a99a00",
-        "price": 769999,
+        "price": 659999,
         "availableSizes": [],
         "sizes": {
           "eu": [
