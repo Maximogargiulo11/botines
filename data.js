@@ -11,6 +11,111 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "7r8o6n5",
+      "slug": "nike-honra-el-legado-de-la-copa-del-mundo-a-kylian-mbappe",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike honra el legado de la Copa del Mundo a Kylian Mbappé 🌟",
+      "excerpt": "La marca del swoosh rinde homenaje al crack francés con una edición exclusiva de Mercurial Superfly 11.",
+      "date": "10 de Agosto de 2026",
+      "cover": "assets/1786373904843-IMG_2929.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1786373912038-IMG_2924.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1786373919581-IMG_2924.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "instagram",
+          "id": "3q662f9",
+          "url": "https://www.instagram.com/reel/Db2a1xLt-ke/?igsh=MWdvc29pcTk1MzBwcQ=="
+        },
+        {
+          "type": "text",
+          "id": "55el60z",
+          "content": "Cuando eres el ganador de la Bota de Oro en las Copas del Mundo consecutivas y el máximo goleador de todos los tiempos en la historia del torneo, una edición de jugador estándar simplemente no va a la altura. Así que es justo que Nike haya celebrado el increíble legado de Kylian Mbappé con un nuevo Mercurial Superfly 11. Y sí, como probablemente esperarías, está goteando oro…"
+        },
+        {
+          "type": "image",
+          "id": "3liix3x",
+          "src": "assets/1786374001550-IMG_2924.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "90oykon",
+          "content": "Llegando en un llamativo color, el última botín de la firma de Mbappé se inspira directamente en los logros del francés en el escenario más grande del fútbol. La parte superior de oro metálico actúa como un homenaje a su éxito en la Copa del Mundo, creando un aspecto instantáneamente llamativo que se siente digno de uno de los jugadores que definen el juego."
+        },
+        {
+          "type": "text",
+          "id": "tp9pivl",
+          "content": "Mientras que el oro domina la parte superior, Nike ha equilibrado el diseño con detalles blancos nítidos y acentos verde azulado vibrantes en toda la marca. El verde azulado tampoco está ahí solo para el contraste. Sirve como un anudo al equipo visitante de Francia de la Copa del Mundo de 2026, al tiempo que hace referencia a la primera bota de la firma de Mbappé, la icónica \"Bondy Dream\", creando un buen vínculo entre donde todo comenzó y dónde está ahora."
+        },
+        {
+          "type": "image-pair",
+          "id": "53jtv4z",
+          "left": {
+            "src": "assets/1786374038997-IMG_2925.jpeg"
+          },
+          "right": {
+            "src": "assets/1786374045282-IMG_2926.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4aqp537",
+          "content": "El acabado metálico texturizado asegura que el Mercurial se destaque desde todos los ángulos, pero son los toques personalizados los que realmente hacen que este lanzamiento sea especial. Nike ha llenado el diseño con detalles únicos para el delantero del Real Madrid, convirtiendo la bota en una celebración de su viaje y logros."
+        },
+        {
+          "type": "image-pair",
+          "id": "77vsv1q",
+          "left": {
+            "src": "assets/1786374164625-IMG_2927.jpeg"
+          },
+          "right": {
+            "src": "assets/1786374170721-IMG_2928.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "r4j3fd6",
+          "content": "En el talón, una atrevida franja negra presenta una colección de símbolos estrechamente asociados con Mbappé, incluyendo su monograma \"KM\", una corona, el número \"999\" y el clásico emblema de gallo francés. Juntos, añaden una capa de narración que va más allá de la simple estética."
+        },
+        {
+          "type": "text",
+          "id": "cyuvif9",
+          "content": "La personalización continúa debajo, donde la placa de suela está estampada con la mentalidad de marca registrada de Mbappé a través de la frase \"Hamre de más\". Es un mensaje apropiado para un jugador que sigue elevando el listón a pesar de que ya ha reescrito los libros de récords. Junto a él se encuentra \"XCVIII\", los números romanos del 98, rindiendo homenaje a su año de nacimiento en 1998."
+        },
+        {
+          "type": "image-pair",
+          "id": "p296o53",
+          "left": {
+            "src": "assets/1786374305111-IMG_2920.jpeg"
+          },
+          "right": {
+            "src": "assets/1786374313937-IMG_2922.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "5aefz2y",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "xlbgxff",
       "slug": "adidas-y-trinity-rodman-se-unen-para-una-nueva-edicion-de-f50-sparkfusion",
       "brand": "Adidas",
