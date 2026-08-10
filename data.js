@@ -4770,7 +4770,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG",
         "colorway": "Amarillo",
         "color": "#fbfb00",
-        "price": 4699999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
