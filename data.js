@@ -2518,14 +2518,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1782349472854-IMG_2191.jpeg",
-          "assets/1782349482561-IMG_2192.jpeg",
-          "assets/1782349489089-IMG_2193.jpeg",
-          "assets/1782349495792-IMG_2194.jpeg",
-          "assets/1782349501613-IMG_2195.jpeg",
-          "assets/1782349507364-IMG_2196.jpeg",
-          "assets/1782349513295-IMG_2197.jpeg",
-          "assets/1782349518841-IMG_2198.jpeg"
+          "assets/1786406124572-IMG_2633.webp"
         ],
         "videos": [],
         "spec": {
