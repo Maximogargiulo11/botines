@@ -40,7 +40,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "55el60z",
-          "content": "Cuando eres el ganador de la Bota de Oro en las Copas del Mundo consecutivas y el máximo goleador de todos los tiempos en la historia del torneo, una edición de jugador estándar simplemente no va a la altura. Así que es justo que Nike haya celebrado el increíble legado de Kylian Mbappé con un nuevo Mercurial Superfly 11. Y sí, como probablemente esperarías, está goteando oro…"
+          "content": "Cuando eres el ganador de la Bota de Oro en las Copas del Mundo de forma consecutiva y eres el máximo goleador de todos los tiempos en la historia del torneo, una edición estandar para un jugador de este nivel simplemente no va a estar a la altura. Así que es justo que Nike haya celebrado el increíble legado de Kylian Mbappé con un nuevo Mercurial Superfly 11. Y sí, como probablemente esperarías, está goteando oro…"
         },
         {
           "type": "image",
@@ -107,7 +107,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "5aefz2y",
-          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+          "content": "🛒 Disponibles a partir del Jueves 13 de Agosto en Botines Alta Gama Córdoba."
         }
       ],
       "relatedProduct": null,
