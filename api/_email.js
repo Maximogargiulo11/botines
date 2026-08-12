@@ -2,7 +2,7 @@ const { Resend } = require('resend');
 
 const IG_PROFILE = 'https://instagram.com/botinesaltagamacba';
 const IG_DM = 'https://ig.me/m/botinesaltagamacba';
-const SITE_URL = 'https://botinesweb.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
 
 const fmt = (n) => '$ ' + Number(n).toLocaleString('es-AR');
 
@@ -84,4 +84,51 @@ async function sendConfirmationEmail(order) {
   }
 }
 
-module.exports = { sendConfirmationEmail };
+async function sendConfirmSubscription(email, name, token) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) { console.error('RESEND_API_KEY no configurado (confirm subscription)'); return { sent: false, reason: 'Resend no configurado' }; }
+  const link = `${SITE_URL}/api/confirm-subscription?token=${encodeURIComponent(token)}`;
+  const html = `
+    <div style="font-family: Arial, Helvetica, sans-serif; color:#111827; line-height:1.6; font-size:15px;">
+      <p>¡Hola, ${esc(name)}!</p>
+      <p>Gracias por sumarte a <strong>Botines Alta Gama Córdoba</strong>.</p>
+      <p>Confirmá tu email para recibir tu <strong>cupón de 5% de descuento</strong> y enterarte de los nuevos lanzamientos:</p>
+      <p><a href="${link}" style="display:inline-block;background:#111827;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;">Confirmar mi email</a></p>
+      <p style="font-size:13px;color:#6b7280;">Si no fuiste vos, ignorá este mail.</p>
+    </div>`;
+  try {
+    const { Resend } = require('resend');
+    const { error } = await new Resend(apiKey).emails.send({
+      from: 'Botines Alta Gama Córdoba <pedidos@botinesaltagamacba.com>',
+      to: email, subject: 'Confirmá tu email — Botines Alta Gama Córdoba', html,
+    });
+    if (error) { console.error('confirm sub email error:', error.message || error); return { sent: false, reason: error.message || 'error' }; }
+    return { sent: true };
+  } catch (err) { console.error('confirm sub email error:', err.message); return { sent: false, reason: err.message }; }
+}
+
+async function sendCouponEmail(email, name, code, expiresAt) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) { console.error('RESEND_API_KEY no configurado (coupon email)'); return { sent: false, reason: 'Resend no configurado' }; }
+  const vence = new Date(expiresAt).toLocaleDateString('es-AR');
+  const html = `
+    <div style="font-family: Arial, Helvetica, sans-serif; color:#111827; line-height:1.6; font-size:15px;">
+      <p>¡Listo, ${esc(name)}! Tu email quedó confirmado.</p>
+      <p>Este es tu cupón de <strong>5% de descuento</strong> en tu compra:</p>
+      <p style="font-size:24px;font-weight:700;letter-spacing:2px;background:#f3f4f6;padding:14px 18px;border-radius:8px;display:inline-block;">${esc(code)}</p>
+      <p>Ingresalo en el checkout, en el campo <strong>"Código de descuento"</strong>. Es de un solo uso y vence el <strong>${esc(vence)}</strong>.</p>
+      <p>💡 Pagando por <strong>transferencia</strong> el descuento se suma al 10% habitual: <strong>15% off en total</strong>.</p>
+      <p>Cualquier consulta, escribinos por Instagram: <a href="https://ig.me/m/botinesaltagamacba">@botinesaltagamacba</a></p>
+    </div>`;
+  try {
+    const { Resend } = require('resend');
+    const { error } = await new Resend(apiKey).emails.send({
+      from: 'Botines Alta Gama Córdoba <pedidos@botinesaltagamacba.com>',
+      to: email, subject: 'Tu cupón de 5% — Botines Alta Gama Córdoba', html,
+    });
+    if (error) { console.error('coupon email error:', error.message || error); return { sent: false, reason: error.message || 'error' }; }
+    return { sent: true };
+  } catch (err) { console.error('coupon email error:', err.message); return { sent: false, reason: err.message }; }
+}
+
+module.exports = { sendConfirmationEmail, sendConfirmSubscription, sendCouponEmail };
