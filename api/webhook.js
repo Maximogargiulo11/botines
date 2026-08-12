@@ -1,6 +1,7 @@
 const { put, list, get } = require('@vercel/blob');
 const crypto = require('crypto');
 const { sendConfirmationEmail } = require('./_email');
+const { markCouponUsed } = require('./_coupons');
 
 module.exports = async function handler(req, res) {
   // MercadoPago also sends a GET to validate the endpoint
@@ -66,6 +67,7 @@ module.exports = async function handler(req, res) {
       await saveOrder(order);
       if (payment.status === 'approved') {
         await trackGA4Purchase(order);
+        if (meta.coupon) await markCouponUsed(meta.coupon);
       }
     } else if (payment.status === 'approved') {
       await tryAutoMatchTransfer(payment);
@@ -184,4 +186,5 @@ async function tryAutoMatchTransfer(payment) {
     allowOverwrite: true,
   });
   await sendConfirmationEmail(order);
+  if (order.coupon) await markCouponUsed(order.coupon);
 }

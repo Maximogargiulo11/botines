@@ -1,12 +1,13 @@
 const { put } = require('@vercel/blob');
 const { getTrustedPrice } = require('./_products');
+const { validateCoupon } = require('./_coupons');
 
 const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'email', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { items, shipping } = req.body || {};
+  const { items, shipping, coupon } = req.body || {};
   if (!items || !items.length) return res.status(400).json({ error: 'El carrito está vacío' });
 
   const missingFields = REQUIRED_SHIPPING_FIELDS.filter(f => !shipping || !String(shipping[f] || '').trim());
@@ -35,7 +36,13 @@ module.exports = async function handler(req, res) {
   }
 
   const subtotal = orderItems.reduce((sum, it) => sum + it.unit_price * it.quantity, 0);
-  const amount = Math.round(subtotal * 0.9);
+  let couponCode = null;
+  let mult = 0.9; // transferencia: 10% off
+  if (coupon) {
+    const v = await validateCoupon(coupon);
+    if (v.valid) { couponCode = v.coupon.code; mult = 0.85; } // + 5% cupón = 15%
+  }
+  const amount = Math.round(subtotal * mult);
 
   const orderId = `transfer-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
 
@@ -43,6 +50,7 @@ module.exports = async function handler(req, res) {
     id: orderId,
     payment_method: 'transferencia',
     status: 'pendiente',
+    coupon: couponCode,
     amount,
     date: new Date().toISOString(),
     payer_name: `${shipping.nombre} ${shipping.apellido}`.trim(),

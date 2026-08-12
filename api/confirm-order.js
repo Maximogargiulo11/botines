@@ -1,5 +1,6 @@
 const { get, put } = require('@vercel/blob');
 const { sendConfirmationEmail } = require('./_email');
+const { markCouponUsed } = require('./_coupons');
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Método no permitido' });
@@ -33,6 +34,8 @@ module.exports = async function handler(req, res) {
       contentType: 'application/json',
       allowOverwrite: true,
     });
+
+    if (order.coupon) await markCouponUsed(order.coupon);
 
     const emailResult = (await sendConfirmationEmail(order)) || { sent: false, reason: 'Motivo desconocido.' };
 

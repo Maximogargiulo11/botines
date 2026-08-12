@@ -1,4 +1,5 @@
 const { getTrustedPrice } = require('./_products');
+const { validateCoupon } = require('./_coupons');
 
 const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
 
@@ -14,13 +15,20 @@ module.exports = async function handler(req, res) {
     return res.status(500).json({ error: 'Configuración de pago incompleta' });
   }
 
-  const { items, shipping } = req.body || {};
+  const { items, shipping, coupon } = req.body || {};
   if (!items || !items.length) return res.status(400).json({ error: 'El carrito está vacío' });
 
   const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'email', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
   const missingFields = REQUIRED_SHIPPING_FIELDS.filter(f => !shipping || !String(shipping[f] || '').trim());
   if (missingFields.length) {
     return res.status(400).json({ error: `Faltan datos de envío: ${missingFields.join(', ')}` });
+  }
+
+  let couponCode = null;
+  let mult = 1;
+  if (coupon) {
+    const v = await validateCoupon(coupon);
+    if (v.valid) { couponCode = v.coupon.code; mult = 0.95; } // 5% off
   }
 
   const unknownItems = [];
@@ -35,7 +43,7 @@ module.exports = async function handler(req, res) {
       id: item.id,
       title: `${item.name} — ${item.colorway} — Talle ${item.size} ${String(item.unit || 'EU').toUpperCase()}`,
       quantity: qty,
-      unit_price: trustedPrice,
+      unit_price: Math.round(trustedPrice * mult),
       currency_id: 'ARS',
       ...(item.image ? { picture_url: `${SITE_URL}/${item.image}` } : {}),
     };
@@ -58,6 +66,7 @@ module.exports = async function handler(req, res) {
       codigo_postal: shipping.codigoPostal,
       celular: shipping.celular,
       descripcion: shipping.descripcion || '',
+      coupon: couponCode || '',
     },
     back_urls: {
       success: `${SITE_URL}/#/pago-exitoso`,
