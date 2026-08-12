@@ -253,14 +253,14 @@
 /* ============ HERO ============ */
 .bag-hero {
   position: relative;
-  height: 70vh;
-  min-height: 520px;
+  aspect-ratio: 3 / 2;
+  min-height: 440px;
   overflow: hidden;
   cursor: pointer;
   border-bottom: 1px solid var(--bag-line);
 }
 .bag-hero__media { position: absolute; inset: 0; }
-.bag-hero__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 800ms var(--bag-ease); }
+.bag-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 800ms var(--bag-ease); }
 .bag-hero:hover .bag-hero__media img { transform: scale(1.02); }
 .bag-hero__overlay {
   position: absolute; inset: 0;
