@@ -1866,3 +1866,32 @@
   .bag-checkout__layout { grid-template-columns: 1fr; }
   .bag-checkout__row { grid-template-columns: 1fr; }
 }
+
+/* ============ POPUP DE SUSCRIPCIÓN ============ */
+.bag-sub-backdrop {
+  position: fixed; inset: 0; z-index: 320;
+  background: rgba(0,0,0,0.6); backdrop-filter: blur(3px);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+  animation: bag-fadein-modal 220ms var(--bag-ease);
+}
+.bag-sub {
+  position: relative; background: var(--bag-bg-elev); border: 1px solid var(--bag-line);
+  max-width: 420px; width: 100%; padding: 40px 32px 28px;
+}
+.bag-sub__close {
+  position: absolute; top: 12px; right: 12px; background: transparent; border: 0;
+  color: var(--bag-fg-muted); cursor: pointer; padding: 6px;
+}
+.bag-sub__close:hover { color: var(--bag-fg); }
+.bag-sub__body { text-align: center; }
+.bag-sub__eyebrow { font-size: var(--bag-fs-xs); letter-spacing: var(--bag-ls-wide); text-transform: uppercase; color: var(--bag-accent); margin-bottom: 8px; }
+.bag-sub__title { font-size: var(--bag-fs-xl); margin: 0 0 10px; }
+.bag-sub__text { font-size: var(--bag-fs-sm); color: var(--bag-fg-muted); line-height: 1.6; margin: 0 0 20px; }
+.bag-sub__input {
+  width: 100%; background: var(--bag-bg); border: 1px solid var(--bag-line);
+  color: var(--bag-fg); padding: 12px 14px; margin-bottom: 10px; font-size: var(--bag-fs-base);
+}
+.bag-sub__input:focus { outline: none; border-color: var(--bag-accent); }
+.bag-sub__hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.bag-sub__error { color: var(--bag-danger, #ff4455); font-size: var(--bag-fs-sm); margin-bottom: 10px; }
+.bag-sub__note { font-size: var(--bag-fs-xs); color: var(--bag-fg-faint); margin-top: 12px; }

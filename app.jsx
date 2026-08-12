@@ -1,5 +1,5 @@
 /* global React, ReactDOM, BAG_DATA */
-/* global Navbar, Footer, CartDrawer */
+/* global Navbar, Footer, CartDrawer, SubscribePopup */
 /* global HomeScreen, ArticleScreen, BrandsScreen, BrandScreen, ModelScreen, ProductScreen, PoliticaScreen, FaqScreen, CheckoutScreen */
 /* global useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakColor */
 
@@ -94,6 +94,8 @@ function App() {
   else if (parts[0] === 'pago-transferencia') screen = <PaymentResultScreen status="transferencia" navigate={navigate} clearCart={clearCart} />;
   else if (parts[0] === 'pago-fallido')  screen = <PaymentResultScreen status="fallido"  navigate={navigate} />;
   else if (parts[0] === 'pago-pendiente') screen = <PaymentResultScreen status="pendiente" navigate={navigate} />;
+  else if (parts[0] === 'suscripcion-confirmada') screen = <SubscriptionResultScreen ok navigate={navigate} />;
+  else if (parts[0] === 'suscripcion-error')      screen = <SubscriptionResultScreen navigate={navigate} />;
   else screen = <HomeScreen navigate={navigate} />;
 
   return (
@@ -102,6 +104,7 @@ function App() {
       {screen}
       <Footer navigate={navigate} />
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} items={cart} onRemove={removeFromCart} navigate={navigate} clearCart={clearCart} />
+      <SubscribePopup route={route} />
 
       {/* Tweaks panel */}
       <TweaksPanel>
@@ -183,6 +186,25 @@ function PaymentResultScreen({ status, navigate, clearCart }) {
           {status !== 'exitoso' && (
             <a className="bag-btn bag-btn--ghost" href="https://ig.me/m/botinesaltagamacba" target="_blank" rel="noreferrer">Consultar por Instagram</a>
           )}
+          <button className="bag-btn bag-btn--primary" onClick={() => navigate('/')}>Volver al inicio</button>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function SubscriptionResultScreen({ ok, navigate }) {
+  return (
+    <main className="bag-payment-result">
+      <div className="bag-payment-result__box">
+        <div className="bag-payment-result__icon" style={{ color: ok ? '#22c55e' : '#ff4455' }}>{ok ? '✓' : '✕'}</div>
+        <h1 className="bag-payment-result__title">{ok ? '¡Suscripción confirmada!' : 'No pudimos confirmar'}</h1>
+        <p className="bag-payment-result__body">
+          {ok
+            ? 'Te enviamos tu cupón de 5% de descuento por email. Revisá tu bandeja (y spam).'
+            : 'El link no es válido o ya expiró. Probá suscribirte de nuevo desde la página.'}
+        </p>
+        <div className="bag-payment-result__actions">
           <button className="bag-btn bag-btn--primary" onClick={() => navigate('/')}>Volver al inicio</button>
         </div>
       </div>
