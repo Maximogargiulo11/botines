@@ -14,17 +14,17 @@ Se quiere sumar un **cartel emergente (popup)** que capte email + nombre para: (
 
 ## Decisiones tomadas (con el dueño)
 
-- **Descuento:** cupón **único por persona, de un solo uso**, ingresado en el checkout y validado/aplicado **en el servidor**.
+- **Descuento:** cupón **único por persona, de un solo uso**, del **5%**, ingresado en el checkout y validado/aplicado **en el servidor**. Sirve para MercadoPago y para transferencia.
 - **Validez del cupón:** **30 días** desde que se emite.
 - **Doble opt-in:** se valida el email (mail con link de confirmación) **antes** de entregar el cupón y sumar a la lista.
-- **No acumula:** el cupón da 10%; **no se suma** al 10% de transferencia (máximo 10% en cualquier caso). En la práctica el cupón sirve para pagos con **MercadoPago**.
+- **Sí acumula:** el cupón (5%) **se suma** al 10% de transferencia → **15% total** pagando por transferencia (aditivo: `subtotal * 0.85`). Con MercadoPago, el cupón da **5%** (`subtotal * 0.95`).
 - **Newsletter:** guardar la lista **y** una pantalla en el admin para redactar y enviar el aviso de lanzamiento a todos.
 - **Popup:** aparece a los **8 segundos** o al scrollear (lo que ocurra primero), **una vez por visitante**.
 - **Enfoque:** todo a medida sobre el stack actual (Resend + Vercel Blob + Vercel Functions + panel admin). No se usa herramienta externa de marketing.
 
 ## Flujo del cliente
 
-1. **Popup** (`components/SubscribePopup.jsx`): aparece a los 8 s o al primer scroll significativo, salvo que el visitante ya se haya suscripto o lo haya cerrado (flag en `localStorage`). No aparece en el checkout (`#/checkout`) ni afecta al admin. Campos: **Email** y **Nombre**. Botón "Suscribirme". Se cierra con la X.
+1. **Popup** (`components/SubscribePopup.jsx`): aparece a los 8 s o al primer scroll significativo, salvo que el visitante ya se haya suscripto o lo haya cerrado (flag en `localStorage`). No aparece en el checkout (`#/checkout`) ni afecta al admin. Ofrece **5% de descuento** por suscribirse (que además suma con el 10% de transferencia → 15%). Campos: **Email** y **Nombre**. Botón "Suscribirme". Se cierra con la X.
 2. Al enviar → `POST /api/subscribe`. El popup pasa a un estado "Revisá tu mail para confirmar y recibir tu cupón." Se marca `localStorage` como "suscripto" para no volver a mostrarlo.
 3. Llega un mail **"Confirmá tu email"** con un link a `GET /api/confirm-subscription?token=…`.
 4. Al hacer clic: el servidor confirma, genera el **cupón único** (ej. `BAG-7K3M9Q`), lo guarda, envía un segundo mail con el cupón ("válido por 30 días") y redirige a `#/suscripcion-confirmada` (pantalla de éxito). Si el token es inválido/vencido → `#/suscripcion-error`.
@@ -32,10 +32,11 @@ Se quiere sumar un **cartel emergente (popup)** que capte email + nombre para: (
 
 ## Reglas de descuento (servidor)
 
-- El precio **siempre** se calcula en el servidor desde el catálogo (`getTrustedPrice`), nunca desde el navegador.
-- **MercadoPago:** si viene un `coupon` válido (existe, no usado, no vencido), el subtotal se multiplica por `0.9` (`Math.round(subtotal * 0.9)`) y el código se guarda en `metadata`. El cupón se marca **usado** cuando el pago llega a `approved` (en `api/webhook.js`), para no consumirlo si el pago no se concreta. La ventana entre validar (al crear la preferencia) y marcar usado (al aprobarse) permite en teoría reusarlo dos veces si el cliente inicia dos pagos casi simultáneos; es aceptable dado el bajo volumen (mismo criterio que la carrera aceptada en el matching de transferencias).
-- **Transferencia:** ya aplica 10%. Para respetar "no acumular", si viene un cupón en una compra por transferencia **no se aplica descuento extra ni se consume el cupón** (el cliente lo conserva para una compra con MercadoPago). El total sigue siendo el 10% de transferencia.
-- Un cupón inválido/vencido/usado → el checkout muestra un aviso y sigue sin descuento (no bloquea la compra).
+- El precio **siempre** se calcula en el servidor desde el catálogo (`getTrustedPrice`), nunca desde el navegador. El descuento es **aditivo** (base del método de pago + 5% del cupón).
+- **MercadoPago:** sin cupón → precio completo. Con `coupon` válido (existe, no usado, no vencido) → `Math.round(subtotal * 0.95)` (5% off) y el código se guarda en `metadata`. El cupón se marca **usado** cuando el pago llega a `approved` (en `api/webhook.js`), para no consumirlo si el pago no se concreta.
+- **Transferencia:** base 10%. Sin cupón → `Math.round(subtotal * 0.90)`. Con `coupon` válido → `Math.round(subtotal * 0.85)` (**15%**: 10% transferencia + 5% cupón). El código se guarda en el pedido y se marca **usado** cuando el pedido pasa a `approved` (confirmación manual en `api/confirm-order.js`, o auto-match en `api/webhook.js`) — no al crearlo, para no consumirlo si la transferencia no se concreta.
+- Un cupón inválido/vencido/usado → el checkout muestra un aviso y sigue **sin** el 5% extra (no bloquea la compra; si es transferencia, mantiene su 10%).
+- **Ventana de validación:** entre validar el cupón (al crear la preferencia/pedido) y marcarlo usado (al aprobarse) hay una ventana en la que, en teoría, podría reusarse si el cliente inicia dos compras casi simultáneas. Es aceptable dado el bajo volumen (mismo criterio que la carrera aceptada en el matching de transferencias).
 
 ## Modelo de datos (Vercel Blob, privado)
 
@@ -60,9 +61,10 @@ Todo con `access: "private"`, mismo patrón que los pedidos.
   - Busca el puntero `subtokens/<token>` → subscriber. Si no existe/expiró → redirige a `#/suscripcion-error`.
   - Marca `confirmed`, genera cupón único (`api/_coupons.js`), guarda `coupons/<CODE>` (`expiresAt` = ahora + 30 días), envía el mail con el cupón, borra el puntero de token usado y redirige (302) a `#/suscripcion-confirmada`.
 - **`api/_coupons.js`** (nuevo, helper) — `generateCode()`, `validateCoupon(code)` → `{ valid, reason }`, `markUsed(code)`. Reutilizado por el checkout.
-- **`api/create-preference.js`** (modificar) — acepta `coupon` opcional; si es válido aplica `*0.9` y lo agrega a `metadata.coupon`.
-- **`api/webhook.js`** (modificar) — al procesar un pago `approved` con `meta.coupon`, marca el cupón usado.
-- **`api/create-transfer-order.js`** (modificar) — acepta `coupon` opcional pero **no** lo aplica ni consume (regla de no acumular); se conserva.
+- **`api/create-preference.js`** (modificar) — acepta `coupon` opcional; si es válido aplica `*0.95` (5%) y lo agrega a `metadata.coupon`.
+- **`api/create-transfer-order.js`** (modificar) — acepta `coupon` opcional; si es válido aplica `*0.85` (15% total) en vez de `*0.90`, y guarda el `coupon` en el objeto del pedido. **No** lo marca usado acá (se marca al aprobarse).
+- **`api/webhook.js`** (modificar) — al procesar un pago `approved` con `meta.coupon` (MercadoPago), marca el cupón usado; y en `tryAutoMatchTransfer`, si el pedido de transferencia que se aprueba tiene `coupon`, también lo marca usado.
+- **`api/confirm-order.js`** (modificar) — al confirmar manualmente un pedido de transferencia que tiene `coupon`, marca el cupón usado.
 - **`api/subscribers.js`** (nuevo, protegido por `ADMIN_API_SECRET`) — `GET` lista de suscriptos (email, nombre, estado, cupón, usado, fecha), ordenada por fecha desc.
 - **`api/send-newsletter.js`** (nuevo, protegido por `ADMIN_API_SECRET`) — `POST { subject, bodyHtml, imageUrl?, linkUrl? }` → arma el HTML y envía a todos los suscriptos `confirmed` vía Resend (en lotes, con manejo de error por destinatario; loguea cuántos se enviaron). Devuelve `{ sent, failed }`.
 - **`api/_email.js`** (extender) — nuevas plantillas: `sendConfirmSubscription(email, token)` y `sendCouponEmail(email, name, code, expiresAt)`. Todo user-controlled escapado con el `esc()` existente.
@@ -93,4 +95,4 @@ Todo con `access: "private"`, mismo patrón que los pedidos.
 - Sin captcha (honeypot + throttle alcanzan para el volumen actual).
 - Sin segmentación ni analytics de campañas (se puede sumar después).
 - Sin baja automática por link de "unsubscribe" en v1 (se puede sumar; el dueño puede quitar de la lista desde el admin). *Nota: conviene sumar un link de baja pronto por buenas prácticas de email.*
-- El cupón no acumula con transferencia (decisión explícita).
+- El cupón (5%) **acumula** con el 10% de transferencia → **15% total** (decisión explícita).
