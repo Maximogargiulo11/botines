@@ -1,12 +1,14 @@
 const { put, get } = require('@vercel/blob');
+const { randomInt } = require('crypto');
 
 const COUPON_DISCOUNT = 0.05;      // 5%
 const COUPON_VALID_DAYS = 30;
 const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // sin O/0/I/1
 
 function generateCouponCode() {
+  // CSPRNG (crypto.randomInt) para que el código no sea predecible.
   let s = '';
-  for (let i = 0; i < 6; i++) s += ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
+  for (let i = 0; i < 6; i++) s += ALPHABET[randomInt(ALPHABET.length)];
   return `BAG-${s}`;
 }
 
