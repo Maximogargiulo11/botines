@@ -11,6 +11,262 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "7r8o6n5",
+      "slug": "nike-honra-el-legado-de-la-copa-del-mundo-a-kylian-mbappe",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike honra el legado de la Copa del Mundo a Kylian Mbappé 🌟",
+      "excerpt": "La marca del swoosh rinde homenaje al crack francés con una edición exclusiva de Mercurial Superfly 11.",
+      "date": "10 de Agosto de 2026",
+      "cover": "assets/1786373904843-IMG_2929.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1786373912038-IMG_2924.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1786373919581-IMG_2924.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "instagram",
+          "id": "3q662f9",
+          "url": "https://www.instagram.com/reel/Db2a1xLt-ke/?igsh=MWdvc29pcTk1MzBwcQ=="
+        },
+        {
+          "type": "text",
+          "id": "55el60z",
+          "content": "Cuando eres el ganador de la Bota de Oro en las Copas del Mundo de forma consecutiva y eres el máximo goleador de todos los tiempos en la historia del torneo, una edición estandar para un jugador de este nivel simplemente no va a estar a la altura. Así que es justo que Nike haya celebrado el increíble legado de Kylian Mbappé con un nuevo Mercurial Superfly 11. Y sí, como probablemente esperarías, está goteando oro…"
+        },
+        {
+          "type": "image",
+          "id": "3liix3x",
+          "src": "assets/1786374001550-IMG_2924.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "90oykon",
+          "content": "Llegando en un llamativo color, el última botín de la firma de Mbappé se inspira directamente en los logros del francés en el escenario más grande del fútbol. La parte superior de oro metálico actúa como un homenaje a su éxito en la Copa del Mundo, creando un aspecto instantáneamente llamativo que se siente digno de uno de los jugadores que definen el juego."
+        },
+        {
+          "type": "text",
+          "id": "tp9pivl",
+          "content": "Mientras que el oro domina la parte superior, Nike ha equilibrado el diseño con detalles blancos nítidos y acentos verde azulado vibrantes en toda la marca. El verde azulado tampoco está ahí solo para el contraste. Sirve como un anudo al equipo visitante de Francia de la Copa del Mundo de 2026, al tiempo que hace referencia a la primera bota de la firma de Mbappé, la icónica \"Bondy Dream\", creando un buen vínculo entre donde todo comenzó y dónde está ahora."
+        },
+        {
+          "type": "image-pair",
+          "id": "53jtv4z",
+          "left": {
+            "src": "assets/1786374038997-IMG_2925.jpeg"
+          },
+          "right": {
+            "src": "assets/1786374045282-IMG_2926.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4aqp537",
+          "content": "El acabado metálico texturizado asegura que el Mercurial se destaque desde todos los ángulos, pero son los toques personalizados los que realmente hacen que este lanzamiento sea especial. Nike ha llenado el diseño con detalles únicos para el delantero del Real Madrid, convirtiendo la bota en una celebración de su viaje y logros."
+        },
+        {
+          "type": "image-pair",
+          "id": "77vsv1q",
+          "left": {
+            "src": "assets/1786374164625-IMG_2927.jpeg"
+          },
+          "right": {
+            "src": "assets/1786374170721-IMG_2928.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "r4j3fd6",
+          "content": "En el talón, una atrevida franja negra presenta una colección de símbolos estrechamente asociados con Mbappé, incluyendo su monograma \"KM\", una corona, el número \"999\" y el clásico emblema de gallo francés. Juntos, añaden una capa de narración que va más allá de la simple estética."
+        },
+        {
+          "type": "text",
+          "id": "cyuvif9",
+          "content": "La personalización continúa debajo, donde la placa de suela está estampada con la mentalidad de marca registrada de Mbappé a través de la frase \"Hamre de más\". Es un mensaje apropiado para un jugador que sigue elevando el listón a pesar de que ya ha reescrito los libros de récords. Junto a él se encuentra \"XCVIII\", los números romanos del 98, rindiendo homenaje a su año de nacimiento en 1998."
+        },
+        {
+          "type": "image-pair",
+          "id": "p296o53",
+          "left": {
+            "src": "assets/1786374305111-IMG_2920.jpeg"
+          },
+          "right": {
+            "src": "assets/1786374313937-IMG_2922.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "5aefz2y",
+          "content": "🛒 Disponibles a partir del Jueves 13 de Agosto en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "xlbgxff",
+      "slug": "adidas-y-trinity-rodman-se-unen-para-una-nueva-edicion-de-f50-sparkfusion",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas y Trinity Rodman se unen para una nueva edición de F50 Sparkfusion 👑",
+      "excerpt": "La marca de las tres líneas y su principal embajadora en el futbol femenino se fusiona para una colaboración única y especial.",
+      "date": "06 de Agosto de 2026",
+      "cover": "assets/1786029514699-IMG_2715.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1786374797449-IMG_2716.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1786030248617-IMG_2716.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "jkdu1sx",
+          "content": "La marca de las tres líneas y su principal embajadora en el futbol femenino se fusiona para una colaboración única y especial."
+        },
+        {
+          "type": "image",
+          "id": "23v62ys",
+          "src": "assets/1786029647750-IMG_2718.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "bsxteiu",
+          "left": {
+            "src": "assets/1786029591982-IMG_2878.webp"
+          },
+          "right": {
+            "src": "assets/1786029597241-IMG_2879.webp"
+          }
+        },
+        {
+          "type": "image",
+          "id": "7h9jjp7",
+          "src": "assets/1786029613430-IMG_2873.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "5kdqwod",
+          "src": "assets/1786029674898-IMG_2717.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "0gp5hk3",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "thv62lg",
+      "slug": "puma-lanza-un-nuevo-paquete-para-el-futbol-femenino-brilliance",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma lanza un nuevo paquete para el fútbol femenino: ‘Brilliance’ ✨",
+      "excerpt": "¿Invisible? 😏 Ya no…",
+      "date": "06 de Agosto de 2026",
+      "cover": "assets/1786023012050-IMG_2870.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1786023016912-IMG_2870.jpeg",
+      "imagenCarruselWidth": "1080",
+      "imagenCarruselHeight": "1050",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "b1lbqtt",
+          "content": "El paquete de Puma ‘Brilliance’ ha aterrizado, trayendo ediciones exclusivas para el futbol femenino de Ultra, Future y King."
+        },
+        {
+          "type": "image",
+          "id": "xiqniif",
+          "src": "assets/1786023224091-IMG_2870.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "dkfk16c",
+          "content": "Inspirado por el trabajo que nadie ve. Las madrugadas, las sesiones extras, los contratiempos y demás sacrificios que conllevan para los mayores momentos que les demandan en el campo."
+        },
+        {
+          "type": "image-pair",
+          "id": "15tm8xn",
+          "left": {
+            "src": "assets/1786028491102-IMG_2722.jpeg"
+          },
+          "right": {
+            "src": "assets/1786028505734-IMG_2868.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "njzmjge",
+          "left": {
+            "src": "assets/1786028525687-IMG_2720.jpeg"
+          },
+          "right": {
+            "src": "assets/1786028534265-IMG_2726.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "9jbwivk",
+          "content": "Diseñado específicamente en torno a la anatomía del pie femenino. Desarrollado con ideas de 11 jugadoras, incluyendo a Alex Greenwood, Jess Park y Sandy Baltimore. Cada silo también cuenta con iconos personales inspirados en sus carreras individuales."
+        },
+        {
+          "type": "image",
+          "id": "5ddi8i7",
+          "src": "assets/1786023413423-IMG_2865.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "3knby64",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "zlxdxh9",
       "slug": "adidas-presenta-su-tradicional-paquete-de-cuero",
       "brand": "Adidas",
@@ -628,7 +884,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -2262,14 +2518,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1782349472854-IMG_2191.jpeg",
-          "assets/1782349482561-IMG_2192.jpeg",
-          "assets/1782349489089-IMG_2193.jpeg",
-          "assets/1782349495792-IMG_2194.jpeg",
-          "assets/1782349501613-IMG_2195.jpeg",
-          "assets/1782349507364-IMG_2196.jpeg",
-          "assets/1782349513295-IMG_2197.jpeg",
-          "assets/1782349518841-IMG_2198.jpeg"
+          "assets/1786406124572-IMG_2633.webp"
         ],
         "videos": [],
         "spec": {
@@ -2826,6 +3075,68 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "peso": "186 gr.",
           "coleccion": "‘Break ‘Em’ Pack"
+        }
+      },
+      {
+        "id": "ib098u4",
+        "name": "Nike Mercurial Superfly 11 Elite FG ‘Kylian Mbappe’",
+        "colorway": "Oro / Verde",
+        "color": "#a99a00",
+        "price": 659999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
+        },
+        "images": [
+          "assets/1786374619768-IMG_2932.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Kylian Mbappé’ Signature"
         }
       }
     ],
@@ -4452,7 +4763,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG",
         "colorway": "Amarillo",
         "color": "#fbfb00",
-        "price": 4699999,
+        "price": 469999,
         "availableSizes": [],
         "sizes": {
           "eu": [
@@ -4806,8 +5117,7 @@ window.BAG_DATA = {
             "12",
             "12.5",
             "13",
-            "9",
-            "11"
+            "9"
           ],
           "uk": []
         },
