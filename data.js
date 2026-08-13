@@ -110,8 +110,12 @@ window.BAG_DATA = {
           "content": "🛒 Disponibles a partir del Jueves 13 de Agosto en Botines Alta Gama Córdoba."
         }
       ],
-      "relatedProduct": null,
-      "showFeaturedOnHome": false,
+      "relatedProduct": {
+        "brand": "nike",
+        "model": "mercurial",
+        "colorwayId": "ib098u4"
+      },
+      "showFeaturedOnHome": true,
       "showInHome": true,
       "featuredWide": false
     },
