@@ -3690,7 +3690,7 @@ window.BAG_DATA = {
         "name": "Nike Phantom 6 Low Elite FG",
         "colorway": "Naranja / Gris",
         "color": "#ff4015",
-        "price": 459999,
+        "price": 499999,
         "availableSizes": [],
         "sizes": {
           "eu": [
