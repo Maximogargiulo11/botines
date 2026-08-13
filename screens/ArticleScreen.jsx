@@ -85,7 +85,7 @@ function ArticleScreen({ slug, navigate }) {
   let relProductObj = null;
   if (article.relatedProduct) {
     const list = BAG_DATA.products[`${article.relatedProduct.brand.toLowerCase()}/${article.relatedProduct.model}`] || [];
-    relProductObj = list.find(p => p.id === article.relatedProduct.id) || list[0];
+    relProductObj = list.find(p => p.id === article.relatedProduct.colorwayId) || null;
   }
 
   // Render the related product aside
