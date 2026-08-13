@@ -44,10 +44,27 @@ function CheckoutScreen({ cart, navigate }) {
   const [showTransfer, setShowTransfer] = useState_checkout(false);
   const [transferLoading, setTransferLoading] = useState_checkout(false);
   const [transferError, setTransferError] = useState_checkout(null);
+  const [coupon, setCoupon] = useState_checkout('');
+  const [couponState, setCouponState] = useState_checkout(null); // null | 'checking' | 'valid' | 'invalid'
 
   const subtotal = cart.reduce((sum, it) => sum + (it.price || 0) * (it.qty || 1), 0);
-  const transferTotal = Math.round(subtotal * 0.9);
+  const couponValid = couponState === 'valid';
+  const transferTotal = Math.round(subtotal * (couponValid ? 0.85 : 0.9));
   const updateField = (key, value) => setForm(f => ({ ...f, [key]: value }));
+
+  const checkCoupon = async () => {
+    const code = coupon.trim();
+    if (!code) { setCouponState(null); return; }
+    setCouponState('checking');
+    try {
+      const res = await fetch('/api/validate-coupon', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code }),
+      });
+      const d = await res.json();
+      setCouponState(d.valid ? 'valid' : 'invalid');
+    } catch { setCouponState('invalid'); }
+  };
 
   const handleTransferConfirm = async () => {
     setTransferLoading(true);
@@ -65,7 +82,7 @@ function CheckoutScreen({ cart, navigate }) {
       const res = await fetch('/api/create-transfer-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: cart, shipping: form }),
+        body: JSON.stringify({ items: cart, shipping: form, coupon: coupon.trim() || undefined }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Error al registrar el pedido');
@@ -99,7 +116,7 @@ function CheckoutScreen({ cart, navigate }) {
       const res = await fetch('/api/create-preference', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: cart, shipping: form }),
+        body: JSON.stringify({ items: cart, shipping: form, coupon: coupon.trim() || undefined }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Error al iniciar el pago');
@@ -205,6 +222,22 @@ function CheckoutScreen({ cart, navigate }) {
                 </div>
               </div>
 
+              <div className="bag-coupon">
+                <label className="bag-eyebrow bag-eyebrow--muted" htmlFor="bag-coupon-input">Código de descuento (opcional)</label>
+                <input
+                  id="bag-coupon-input"
+                  className="bag-coupon__input"
+                  type="text"
+                  placeholder="BAG-XXXXXX"
+                  value={coupon}
+                  onChange={(e) => { setCoupon(e.target.value.toUpperCase()); setCouponState(null); }}
+                  onBlur={checkCoupon}
+                />
+                {couponState === 'checking' && <span className="bag-coupon__msg">Verificando…</span>}
+                {couponState === 'valid' && <span className="bag-coupon__msg bag-coupon__msg--ok">✓ Cupón válido — 5% de descuento aplicado</span>}
+                {couponState === 'invalid' && <span className="bag-coupon__msg bag-coupon__msg--err">Cupón no válido o vencido</span>}
+              </div>
+
               {payError && <p className="bag-cart__error">{payError}</p>}
               <button className="bag-btn bag-btn--primary bag-btn--block" onClick={handlePay} disabled={loading}>
                 {loading ? 'Redirigiendo...' : 'PAGAR CON MERCADOPAGO'}
@@ -212,7 +245,7 @@ function CheckoutScreen({ cart, navigate }) {
 
               {!showTransfer ? (
                 <button className="bag-btn bag-btn--ghost bag-btn--block" onClick={() => setShowTransfer(true)}>
-                  PAGAR POR TRANSFERENCIA (10% OFF)
+                  PAGAR POR TRANSFERENCIA ({couponValid ? '15' : '10'}% OFF)
                 </button>
               ) : (
                 <div className="bag-transfer-box">

@@ -1895,3 +1895,10 @@
 .bag-sub__hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .bag-sub__error { color: var(--bag-danger, #ff4455); font-size: var(--bag-fs-sm); margin-bottom: 10px; }
 .bag-sub__note { font-size: var(--bag-fs-xs); color: var(--bag-fg-faint); margin-top: 12px; }
+
+.bag-coupon { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 14px; }
+.bag-coupon__input { background: var(--bag-bg); border: 1px solid var(--bag-line); color: var(--bag-fg); padding: 10px 12px; font-size: var(--bag-fs-base); letter-spacing: 1px; text-transform: uppercase; }
+.bag-coupon__input:focus { outline: none; border-color: var(--bag-accent); }
+.bag-coupon__msg { font-size: var(--bag-fs-xs); color: var(--bag-fg-muted); }
+.bag-coupon__msg--ok { color: var(--bag-success, #22c55e); }
+.bag-coupon__msg--err { color: var(--bag-danger, #ff4455); }
