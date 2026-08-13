@@ -2174,7 +2174,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Superfly 10 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 599999,
+        "price": 649999,
         "availableSizes": [
           "41",
           "42",
@@ -2198,18 +2198,10 @@ window.BAG_DATA = {
             "44"
           ],
           "us": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
+            "12"
           ],
           "uk": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+            "11"
           ]
         },
         "images": [
@@ -2228,7 +2220,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Vapor 17 Elite FG",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 549999,
+        "price": 599999,
         "availableSizes": [
           "39.5",
           "40.5",
@@ -2260,7 +2252,19 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "11",
+            "10.5",
+            "10",
+            "11.5",
+            "12"
+          ],
           "uk": []
         },
         "images": [
@@ -2330,7 +2334,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Vapor 17 Elite SG-Pro Player Edition",
         "colorway": "Rosa / Blanco",
         "color": "#e63b7a",
-        "price": 659999,
+        "price": 689999,
         "availableSizes": [
           "39",
           "39.5",
@@ -2362,8 +2366,32 @@ window.BAG_DATA = {
             "45",
             "46"
           ],
-          "us": [],
-          "uk": []
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
         },
         "images": [
           "assets/1781807897928-IMG_1895.webp"
