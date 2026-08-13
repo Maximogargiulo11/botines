@@ -1546,11 +1546,95 @@ function TypographySection({ data, onDataChange }) {
 // ─────────────────────────────────────────
 // MAIN APP
 // ─────────────────────────────────────────
+function SubscribersSection({ adminSecret, notify }) {
+  const [subs, setSubs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [subject, setSubject] = useState('');
+  const [body, setBody] = useState('');
+  const [imageUrl, setImageUrl] = useState('');
+  const [linkUrl, setLinkUrl] = useState('');
+  const [sending, setSending] = useState(false);
+
+  const load = () => {
+    setLoading(true); setError(null);
+    fetch('/api/subscribers', { headers: { 'X-Admin-Secret': adminSecret } })
+      .then(r => { if (!r.ok) throw new Error(r.status === 401 ? 'Falta el secreto de admin en Ajustes' : `HTTP ${r.status}`); return r.json(); })
+      .then(d => { setSubs(Array.isArray(d) ? d : []); setLoading(false); })
+      .catch(e => { setError(e.message); setLoading(false); });
+  };
+  useEffect(() => { load(); }, [adminSecret]);
+
+  const confirmed = subs.filter(s => s.status === 'confirmed');
+
+  const send = async () => {
+    if (!subject.trim() || !body.trim()) { notify('Completá asunto y contenido.', 'error'); return; }
+    if (!window.confirm(`¿Enviar este aviso a ${confirmed.length} suscripto(s) confirmado(s)?`)) return;
+    setSending(true);
+    try {
+      const res = await fetch('/api/send-newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
+        body: JSON.stringify({ subject: subject.trim(), bodyHtml: body, imageUrl: imageUrl.trim(), linkUrl: linkUrl.trim() }),
+      });
+      const d = await res.json();
+      if (!res.ok) throw new Error(d.error || 'Error al enviar');
+      notify(`Enviado a ${d.sent} suscripto(s)${d.failed ? `, ${d.failed} fallaron` : ''}.`, 'success');
+      setSubject(''); setBody(''); setImageUrl(''); setLinkUrl('');
+    } catch (e) { notify(`Error: ${e.message}`, 'error'); }
+    finally { setSending(false); }
+  };
+
+  return (
+    <div>
+      <div className="adm-section-header">
+        <h2>Suscriptos</h2>
+        <Btn variant="ghost" size="sm" onClick={load}>↺ Actualizar</Btn>
+      </div>
+
+      <div className="adm-section">
+        <div className="adm-section__title">Enviar aviso de lanzamiento</div>
+        <p className="adm-text">Se envía a los {confirmed.length} suscripto(s) confirmado(s).</p>
+        <TextInput label="Asunto" value={subject} onChange={setSubject} placeholder="Nuevo lanzamiento 🔥" />
+        <Textarea label="Contenido (podés usar HTML simple)" value={body} onChange={setBody} rows={6} placeholder="<p>Ya llegaron los nuevos...</p>" />
+        <TextInput label="URL de imagen (opcional)" value={imageUrl} onChange={setImageUrl} placeholder="https://..." />
+        <TextInput label="URL del botón (opcional)" value={linkUrl} onChange={setLinkUrl} placeholder="https://botinesweb.vercel.app/#/..." />
+        <Btn onClick={send} disabled={sending}>{sending ? 'Enviando...' : 'Enviar a todos'}</Btn>
+      </div>
+
+      <div className="adm-section">
+        <div className="adm-section__title">Lista ({subs.length})</div>
+        {loading && <div className="adm-loading"><div className="adm-spinner" /><span>Cargando...</span></div>}
+        {!loading && error && <p className="adm-text" style={{ color: 'var(--a-danger)' }}>Error: {error}</p>}
+        {!loading && !error && subs.length === 0 && <p className="adm-text">Todavía no hay suscriptos.</p>}
+        {!loading && subs.length > 0 && (
+          <div className="adm-orders-list">
+            {subs.map((s, i) => (
+              <div key={i} className="adm-order-row">
+                <span className={`adm-status adm-status--${s.status === 'confirmed' ? 'success' : 'warn'}`}>{s.status === 'confirmed' ? 'Confirmado' : 'Pendiente'}</span>
+                <div className="adm-order-row__info">
+                  <div className="adm-order-row__name">{s.name || '—'}</div>
+                  <div className="adm-order-row__email">{s.email}</div>
+                  {s.couponCode && <div className="adm-order-row__items">Cupón {s.couponCode}</div>}
+                </div>
+                <div className="adm-order-row__meta">
+                  <div className="adm-order-row__date">{s.subscribedAt ? new Date(s.subscribedAt).toLocaleDateString('es-AR') : '—'}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 const NAV = [
   { id: 'articles',   label: 'Lanzamientos', icon: '◈' },
   { id: 'brands',     label: 'Marcas',        icon: '◉' },
   { id: 'products',   label: 'Catálogo',       icon: '▣' },
   { id: 'orders',     label: 'Órdenes',        icon: '◍' },
+  { id: 'subscribers', label: 'Suscriptos',   icon: '✉' },
   { id: 'pages',      label: 'Páginas',        icon: '◧' },
   { id: 'typography', label: 'Tipografía',     icon: '◑' },
   { id: 'settings',   label: 'Ajustes',        icon: '◎' },
@@ -1712,6 +1796,7 @@ function AdminApp() {
             <ProductsSection data={data} onDataChange={handleDataChange} token={token} />
           )}
           {section === 'orders' && <OrdersSection adminSecret={adminSecret} notify={notify} products={(data && data.products) || null} />}
+          {section === 'subscribers' && <SubscribersSection adminSecret={adminSecret} notify={notify} />}
           {!loading && data && section === 'pages' && (
             <PagesSection data={data} onDataChange={handleDataChange} />
           )}
