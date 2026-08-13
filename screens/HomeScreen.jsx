@@ -10,8 +10,9 @@ function HomeScreen({ navigate }) {
   const heroList  = homeArticles.filter(a => a.featured);
   const slides    = heroList.length > 0 ? heroList : homeArticles.slice(0, 1);
 
-  // Featured launches with related product (separate section below grid)
-  const featuredLaunches = homeArticles.filter(a => a.relatedProduct && a.showFeaturedOnHome);
+  // Featured launches with related product (separate section below grid).
+  // Si el artículo ya está en el carrusel (featured), no se repite como bloque grande.
+  const featuredLaunches = homeArticles.filter(a => a.relatedProduct && a.showFeaturedOnHome && !a.featured);
   const featuredIds      = new Set(featuredLaunches.map(a => a.id));
 
   // Pinned wide article (SplitArticle slot)
