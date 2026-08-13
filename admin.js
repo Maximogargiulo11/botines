@@ -1274,7 +1274,6 @@ function OrdersSection({ adminSecret, notify, products }) {
         <div className="adm-orders-list">
           {orders.map(o => {
             const st = STATUS[o.status] || { label: o.status, cls: 'muted' };
-            const isPending = o.status === 'pendiente';
             const isExpanded = expandedId === o.id;
             const toggle = () => {
               if (window.getSelection && String(window.getSelection())) return; // no togglear si está seleccionando texto
@@ -1282,11 +1281,11 @@ function OrdersSection({ adminSecret, notify, products }) {
             };
             return (
               <div key={o.id} className="adm-order">
-              <div className="adm-order-row" onClick={isPending ? toggle : undefined} style={isPending ? { cursor: 'pointer' } : undefined}>
+              <div className="adm-order-row" onClick={toggle} style={{ cursor: 'pointer' }}>
                 <span className={`adm-status adm-status--${st.cls}`}>{st.label}</span>
                 <div className="adm-order-row__info">
                   <div className="adm-order-row__name">
-                    {isPending && <span style={{ display: 'inline-block', width: 12, marginRight: 6, color: 'var(--a-fg3)', transition: 'transform .15s', transform: isExpanded ? 'rotate(90deg)' : 'none' }}>▸</span>}
+                    <span style={{ display: 'inline-block', width: 12, marginRight: 6, color: 'var(--a-fg3)', transition: 'transform .15s', transform: isExpanded ? 'rotate(90deg)' : 'none' }}>▸</span>
                     {o.payer_name || o.payer_email || '—'}
                   </div>
                   {o.payer_email && <div className="adm-order-row__email">{o.payer_email}</div>}
@@ -1326,7 +1325,7 @@ function OrdersSection({ adminSecret, notify, products }) {
                   </Btn>
                 </div>
               </div>
-              {isPending && isExpanded && (
+              {isExpanded && (
                 <div style={{ marginTop: 8, background: 'var(--a-surface2)', border: '1px solid var(--a-border)', borderRadius: 8, padding: 16, display: 'flex', flexWrap: 'wrap', gap: 16 }}>
                   {(o.items || []).map((it, i) => {
                     const img = productImg[it.id];
