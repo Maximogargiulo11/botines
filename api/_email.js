@@ -2,7 +2,7 @@ const { Resend } = require('resend');
 
 const IG_PROFILE = 'https://instagram.com/botinesaltagamacba';
 const IG_DM = 'https://ig.me/m/botinesaltagamacba';
-const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
 const fmt = (n) => '$ ' + Number(n).toLocaleString('es-AR');
 

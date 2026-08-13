@@ -1,7 +1,7 @@
 const { getTrustedPrice } = require('./_products');
 const { validateCoupon } = require('./_coupons');
 
-const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');

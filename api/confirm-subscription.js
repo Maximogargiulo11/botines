@@ -2,7 +2,7 @@ const { getSubscriberByKey, saveSubscriber, getKeyByToken, deleteToken } = requi
 const { createCoupon } = require('./_coupons');
 const { sendCouponEmail } = require('./_email');
 
-const SITE_URL = process.env.SITE_URL || 'https://botinesweb.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
 module.exports = async function handler(req, res) {
   const token = req.query && req.query.token;
