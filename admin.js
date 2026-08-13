@@ -664,13 +664,13 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
           <Field>
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.featured} onChange={e => set('featured', e.target.checked)} />
-              <span>Destacado (aparece como hero en el home)</span>
+              <span>Mostrar en el carrusel principal del home (arriba de todo)</span>
             </label>
           </Field>
           <Field>
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.featuredWide} onChange={e => set('featuredWide', e.target.checked)} />
-              <span>Mostrar como artículo grande en el home (slot central)</span>
+              <span>Mostrar como artículo ancho destacado (imagen grande, sin tarjeta de producto)</span>
             </label>
           </Field>
         </div>
@@ -688,7 +688,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
             <Field>
               <label className="adm-checkbox" style={{ marginTop: 12 }}>
                 <input type="checkbox" checked={!!f.showFeaturedOnHome} onChange={e => set('showFeaturedOnHome', e.target.checked)} />
-                <span>Mostrar como lanzamiento destacado en el home</span>
+                <span>Mostrar como bloque destacado grande, con la tarjeta del colorway (si ya está en el carrusel, no se repite acá)</span>
               </label>
             </Field>
           )}
