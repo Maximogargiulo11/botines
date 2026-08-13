@@ -759,8 +759,12 @@ window.BAG_DATA = {
           "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
         }
       ],
-      "relatedProduct": null,
-      "showFeaturedOnHome": false,
+      "relatedProduct": {
+        "brand": "nike",
+        "model": "phantom",
+        "colorwayId": "niahqbf"
+      },
+      "showFeaturedOnHome": true,
       "showInHome": true,
       "featuredWide": false
     },
