@@ -11,7 +11,7 @@ function Footer({ navigate }) {
         </a>
         <nav className="bag-footer__nav">
           <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>LANZAMIENTOS</a>
-          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/marcas'); }}>MARCAS</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/marcas'); }}>BOTINES</a>
         </nav>
         <div className="bag-footer__social">
           <a href="https://instagram.com/botinesaltagamacba" target="_blank" rel="noreferrer" aria-label="Instagram">

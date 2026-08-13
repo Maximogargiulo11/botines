@@ -66,7 +66,7 @@ function Navbar({ route, navigate, cartCount, onCartClick }) {
               href="#"
               onClick={(e) => { e.preventDefault(); navigate('/marcas'); }}
             >
-              MARCAS
+              BOTINES
               <svg viewBox="0 0 12 12" width="10" height="10" style={{ marginLeft: 6, opacity: 0.6 }} fill="none" stroke="currentColor" strokeWidth="1.4"><path d="M2 4 L6 8 L10 4"/></svg>
             </a>
             {dropdownOpen && (
@@ -99,7 +99,7 @@ function Navbar({ route, navigate, cartCount, onCartClick }) {
         <div className="bag-nav__mobile">
           <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); navigate('/'); }}>LANZAMIENTOS</a>
           <div className="bag-nav__mobile-group">
-            <div className="bag-nav__mobile-group-label">MARCAS</div>
+            <div className="bag-nav__mobile-group-label">BOTINES</div>
             {brands.map(b => (
               <a key={b.slug} href="#" className="bag-nav__mobile-sub" onClick={(e) => { e.preventDefault(); setMobileOpen(false); navigate(`/marcas/${b.slug}`); }}>{b.name}</a>
             ))}
