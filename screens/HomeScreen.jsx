@@ -17,11 +17,12 @@ function HomeScreen({ navigate }) {
   // Pinned wide article (SplitArticle slot)
   const wideOverride = homeArticles.find(a => a.featuredWide);
 
-  // Grids: exclude featured launches and the pinned wide article
-  const gridArticles = all.filter(a => !featuredIds.has(a.id) && a.id !== wideOverride?.id);
+  // Grids: excluir los del carrusel (featured), los featured launches y el wide fijado.
+  // Cada artículo aparece solo donde está seleccionado (carrusel / featured launch / wide).
+  const gridArticles = all.filter(a => !a.featured && !featuredIds.has(a.id) && a.id !== wideOverride?.id);
   const secondary = gridArticles.slice(0, 4);
-  const wide      = wideOverride || gridArticles[4];
-  const small     = wideOverride ? gridArticles.slice(4) : gridArticles.slice(5);
+  const wide      = wideOverride || null; // el slot central grande solo si tiene featuredWide
+  const small     = gridArticles.slice(4);
 
   // ── Carousel ──────────────────────────────────────────────────
   const [slide, setSlide]   = useState(0);
