@@ -26,7 +26,7 @@ function mockRes() { return { headers: null, ended: false, writeHead(c, h){ this
 (async () => {
   let res = mockRes();
   await handler({ query: { token: 'bad' } }, res);
-  assert.ok(res.headers.Location.endsWith('/#/suscripcion-error'), 'token malo → error');
+  assert.ok(res.headers.Location.endsWith('/suscripcion-error'), 'token malo → error');
 
   res = mockRes();
   await handler({ query: { token: 'good' } }, res);
@@ -34,6 +34,6 @@ function mockRes() { return { headers: null, ended: false, writeHead(c, h){ this
   assert.strictEqual(state.saved.couponCode, 'BAG-ABC123');
   assert.strictEqual(couponMailedCode, 'BAG-ABC123');
   assert.strictEqual(state.tokenDeleted, true);
-  assert.ok(res.headers.Location.endsWith('/#/suscripcion-confirmada'));
+  assert.ok(res.headers.Location.endsWith('/suscripcion-confirmada'));
   console.log('OK confirm-subscription');
 })().catch(e => { console.error(e); process.exit(1); });
