@@ -19,20 +19,26 @@ function saveCart(items) {
   try { localStorage.setItem(CART_KEY, JSON.stringify(items)); } catch {}
 }
 
-/* Hash-based router: #/lanzamientos/foo */
-function useHashRoute() {
-  const [hash, setHash] = useState(() => window.location.hash || '#/');
+/* History-based router: /lanzamientos/foo */
+function usePathRoute() {
+  const [route, setRoute] = useState(() => window.location.pathname || '/');
   useEffect(() => {
-    const onHash = () => setHash(window.location.hash || '#/');
-    window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
+    const onPop = () => setRoute(window.location.pathname || '/');
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
   }, []);
-  return hash.replace(/^#/, '') || '/';
+  return [route, setRoute];
 }
 
 function App() {
-  const route = useHashRoute();
-  const navigate = (path) => { window.location.hash = path; window.scrollTo({ top: 0, behavior: 'instant' }); };
+  const [route, setRoute] = usePathRoute();
+  const navigate = (path) => {
+    if (path !== window.location.pathname) {
+      window.history.pushState({}, '', path);
+      setRoute(path);
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
 
   const [cart, setCart] = useState(loadCart);
   const [cartOpen, setCartOpen] = useState(false);
