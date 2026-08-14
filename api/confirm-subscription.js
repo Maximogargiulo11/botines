@@ -6,7 +6,7 @@ const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
 module.exports = async function handler(req, res) {
   const token = req.query && req.query.token;
-  const redirect = (path) => { res.writeHead(302, { Location: `${SITE_URL}/#/${path}` }); res.end(); };
+  const redirect = (path) => { res.writeHead(302, { Location: `${SITE_URL}/${path}` }); res.end(); };
   try {
     const key = await getKeyByToken(token);
     if (!key) return redirect('suscripcion-error');

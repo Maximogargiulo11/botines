@@ -69,9 +69,9 @@ module.exports = async function handler(req, res) {
       coupon: couponCode || '',
     },
     back_urls: {
-      success: `${SITE_URL}/#/pago-exitoso`,
-      failure: `${SITE_URL}/#/pago-fallido`,
-      pending: `${SITE_URL}/#/pago-pendiente`,
+      success: `${SITE_URL}/pago-exitoso`,
+      failure: `${SITE_URL}/pago-fallido`,
+      pending: `${SITE_URL}/pago-pendiente`,
     },
     auto_return: 'approved',
     notification_url: `${SITE_URL}/api/webhook`,
