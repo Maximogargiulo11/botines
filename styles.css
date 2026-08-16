@@ -1902,3 +1902,43 @@
 .bag-coupon__msg { font-size: var(--bag-fs-xs); color: var(--bag-fg-muted); }
 .bag-coupon__msg--ok { color: var(--bag-success, #22c55e); }
 .bag-coupon__msg--err { color: var(--bag-danger, #ff4455); }
+
+/* ── Botón flotante: consultar por Instagram ────────────────────── */
+.bag-ig-fab {
+  position: fixed;
+  right: 18px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 18px);
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: #0a0a0a;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+  transition: width 0.28s ease, background 0.2s ease, transform 0.2s ease;
+}
+.bag-ig-fab:active { transform: scale(0.94); }
+.bag-ig-fab__icon {
+  flex: 0 0 54px;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+}
+.bag-ig-fab__label {
+  opacity: 0;
+  max-width: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: opacity 0.18s ease, max-width 0.28s ease, padding 0.28s ease;
+}
+@media (hover: hover) {
+  .bag-ig-fab:hover { width: 190px; background: #000000; }
+  .bag-ig-fab:hover .bag-ig-fab__label { opacity: 1; max-width: 140px; padding-right: 20px; }
+}
