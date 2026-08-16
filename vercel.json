@@ -3,7 +3,7 @@
   "rewrites": [
     { "source": "/marcas/:brand/:model/:id", "destination": "/api/page" },
     { "source": "/lanzamientos/:slug", "destination": "/api/page" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
