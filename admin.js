@@ -1597,7 +1597,7 @@ function SubscribersSection({ adminSecret, notify }) {
         <TextInput label="Asunto" value={subject} onChange={setSubject} placeholder="Nuevo lanzamiento 🔥" />
         <Textarea label="Contenido (podés usar HTML simple)" value={body} onChange={setBody} rows={6} placeholder="<p>Ya llegaron los nuevos...</p>" />
         <TextInput label="URL de imagen (opcional)" value={imageUrl} onChange={setImageUrl} placeholder="https://..." />
-        <TextInput label="URL del botón (opcional)" value={linkUrl} onChange={setLinkUrl} placeholder="https://botinesweb.vercel.app/#/..." />
+        <TextInput label="URL del botón (opcional)" value={linkUrl} onChange={setLinkUrl} placeholder="https://www.botinesaltagamacba.com/..." />
         <Btn onClick={send} disabled={sending}>{sending ? 'Enviando...' : 'Enviar a todos'}</Btn>
       </div>
 
@@ -1748,7 +1748,7 @@ function AdminApp() {
           ))}
         </nav>
         <div className="adm-sidebar__footer">
-          <a href="https://botinesweb.vercel.app/#/" target="_blank" rel="noreferrer" className="adm-nav__item">
+          <a href="https://www.botinesaltagamacba.com/" target="_blank" rel="noreferrer" className="adm-nav__item">
             <span className="adm-nav__icon">↗</span>
             <span className="adm-nav__label">Ver sitio</span>
           </a>
