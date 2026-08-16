@@ -14,10 +14,14 @@ const esc = (s) => String(s ?? '')
 
 const fmtPrice = (n) => '$ ' + Number(n).toLocaleString('es-AR');
 
-function absImage(rel) {
+// WhatsApp/Facebook no renderizan WebP de forma confiable. Servimos la og:image
+// siempre como JPG, convirtiéndola con el proxy de imágenes weserv.nl (gratis).
+// El logo de fallback es PNG y WhatsApp lo renderiza bien, así que va directo.
+function ogImageUrl(rel) {
   if (!rel) return SITE_URL + FALLBACK_IMAGE;
-  if (/^https?:\/\//i.test(rel)) return rel;
-  return SITE_URL + '/' + String(rel).replace(/^\/+/, '');
+  const abs = /^https?:\/\//i.test(rel) ? rel : SITE_URL + '/' + String(rel).replace(/^\/+/, '');
+  const noScheme = abs.replace(/^https?:\/\//i, '');
+  return 'https://images.weserv.nl/?url=' + encodeURIComponent(noScheme) + '&w=1200&output=jpg&q=82';
 }
 
 function metaFor(pathname) {
@@ -30,7 +34,7 @@ function metaFor(pathname) {
       return {
         title,
         description: `${title}. ${fmtPrice(p.price)}. Comprá online en Botines Alta Gama Córdoba.`,
-        image: absImage(p.images && p.images[0]),
+        image: ogImageUrl(p.images && p.images[0]),
         type: 'product',
         price: p.price,
       };
@@ -41,7 +45,7 @@ function metaFor(pathname) {
       return {
         title: a.title,
         description: a.excerpt || 'Nuevo lanzamiento en Botines Alta Gama Córdoba.',
-        image: absImage(a.cover),
+        image: ogImageUrl(a.cover),
         type: 'article',
         price: null,
       };

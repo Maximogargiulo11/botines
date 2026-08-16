@@ -32,7 +32,8 @@ function mockRes() {
   let res = mockRes();
   await handler({ url: '/marcas/nike/mercurial/p1' }, res);
   assert.ok(res.body.includes('property="og:title" content="Nike Mercurial — Rosa"'), 'og:title producto');
-  assert.ok(res.body.includes('property="og:image" content="https://www.botinesaltagamacba.com/assets/a.webp"'), 'og:image absoluta');
+  assert.ok(res.body.includes('images.weserv.nl') && res.body.includes('output=jpg'), 'og:image convertida a jpg');
+  assert.ok(res.body.includes(encodeURIComponent('www.botinesaltagamacba.com/assets/a.webp')), 'og:image apunta a la foto del producto');
   assert.ok(res.body.includes('property="og:url" content="https://www.botinesaltagamacba.com/marcas/nike/mercurial/p1"'), 'og:url');
   assert.ok(res.body.includes('property="product:price:amount" content="599999"'), 'precio');
   assert.ok(res.body.includes('name="twitter:card" content="summary_large_image"'), 'twitter card');
@@ -41,7 +42,7 @@ function mockRes() {
   res = mockRes();
   await handler({ url: '/lanzamientos/mi-lanzamiento' }, res);
   assert.ok(res.body.includes('property="og:title" content="Mi Lanzamiento"'), 'og:title artículo');
-  assert.ok(res.body.includes('property="og:image" content="https://www.botinesaltagamacba.com/assets/c.webp"'), 'og:image artículo');
+  assert.ok(res.body.includes(encodeURIComponent('www.botinesaltagamacba.com/assets/c.webp')), 'og:image artículo');
 
   // Producto inexistente → index.html sin tocar
   res = mockRes();
