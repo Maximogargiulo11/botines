@@ -1554,6 +1554,7 @@ function SubscribersSection({ adminSecret, notify }) {
   const [imageUrl, setImageUrl] = useState('');
   const [linkUrl, setLinkUrl] = useState('');
   const [sending, setSending] = useState(false);
+  const [resending, setResending] = useState(null);
 
   const load = () => {
     setLoading(true); setError(null);
@@ -1582,6 +1583,22 @@ function SubscribersSection({ adminSecret, notify }) {
       setSubject(''); setBody(''); setImageUrl(''); setLinkUrl('');
     } catch (e) { notify(`Error: ${e.message}`, 'error'); }
     finally { setSending(false); }
+  };
+
+  const resendConfirm = async (email) => {
+    setResending(email);
+    try {
+      const res = await fetch('/api/subscribers', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
+        body: JSON.stringify({ email }),
+      });
+      const d = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(d.error || `HTTP ${res.status}`);
+      notify('Mail de confirmación reenviado ✓', 'success');
+      load();
+    } catch (e) { notify(`Error: ${e.message}`, 'error'); }
+    finally { setResending(null); }
   };
 
   return (
@@ -1618,6 +1635,11 @@ function SubscribersSection({ adminSecret, notify }) {
                 </div>
                 <div className="adm-order-row__meta">
                   <div className="adm-order-row__date">{s.subscribedAt ? new Date(s.subscribedAt).toLocaleDateString('es-AR') : '—'}</div>
+                  {s.status !== 'confirmed' && (
+                    <Btn variant="ghost" size="sm" disabled={resending === s.email} onClick={() => resendConfirm(s.email)}>
+                      {resending === s.email ? 'Enviando...' : 'Reenviar confirmación'}
+                    </Btn>
+                  )}
                 </div>
               </div>
             ))}
