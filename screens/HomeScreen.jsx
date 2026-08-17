@@ -51,12 +51,64 @@ function HomeScreen({ navigate }) {
     const [brand, model] = key.split('/');
     list.forEach(product => catalogItems.push({ product, brand, model }));
   });
-  const catalogRef = useRef(null);
+  const catalogRef      = useRef(null);
+  const autoPausedRef   = useRef(false);
+  const autoDirRef      = useRef(1);
+  const autoResumeTimer = useRef(null);
+
+  const pauseAuto  = () => { autoPausedRef.current = true; };
+  const resumeAuto = () => { autoPausedRef.current = false; };
+  const pauseAutoFor = (ms) => {
+    autoPausedRef.current = true;
+    clearTimeout(autoResumeTimer.current);
+    autoResumeTimer.current = setTimeout(() => { autoPausedRef.current = false; }, ms);
+  };
+
   const scrollCatalog = (dir) => {
     const el = catalogRef.current;
     if (!el) return;
+    pauseAutoFor(6000); // al usar las flechas, pausar el auto-scroll un rato
     el.scrollBy({ left: dir * el.offsetWidth * 0.75, behavior: 'smooth' });
   };
+
+  // Auto-scroll lento del catálogo: avanza de a un botín cada 3.5s (ida y vuelta,
+  // sin rebobinado brusco). Se pausa con el mouse encima o al tocar, y respeta
+  // la preferencia de "reduce motion".
+  useEffect(() => {
+    const el = catalogRef.current;
+    if (!el) return;
+    const mq = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mq && mq.matches) return;
+
+    const stepPx = () => {
+      const item = el.querySelector('.bag-catalog-carousel__item');
+      return (item ? item.offsetWidth : el.clientWidth * 0.25) + 20; // ancho de tarjeta + gap
+    };
+    const tick = () => {
+      if (autoPausedRef.current) return;
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (maxScroll <= 4) return; // no hay overflow, nada que mover
+      if (el.scrollLeft >= maxScroll - 4) autoDirRef.current = -1;
+      else if (el.scrollLeft <= 4)       autoDirRef.current = 1;
+      el.scrollBy({ left: autoDirRef.current * stepPx(), behavior: 'smooth' });
+    };
+    const id = setInterval(tick, 3500);
+
+    const onTouchEnd = () => pauseAutoFor(6000);
+    el.addEventListener('mouseenter', pauseAuto);
+    el.addEventListener('mouseleave', resumeAuto);
+    el.addEventListener('touchstart', pauseAuto, { passive: true });
+    el.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    return () => {
+      clearInterval(id);
+      clearTimeout(autoResumeTimer.current);
+      el.removeEventListener('mouseenter', pauseAuto);
+      el.removeEventListener('mouseleave', resumeAuto);
+      el.removeEventListener('touchstart', pauseAuto);
+      el.removeEventListener('touchend', onTouchEnd);
+    };
+  }, []);
 
   return (
     <main className="bag-home">
