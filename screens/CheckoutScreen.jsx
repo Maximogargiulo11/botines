@@ -133,7 +133,7 @@ function CheckoutScreen({ cart, navigate }) {
         <div className="bag-checkout__empty">
           <div className="bag-eyebrow bag-eyebrow--muted">Carrito vacío</div>
           <p>Aún no añadiste productos. Explorá el catálogo para encontrar tu próximo par.</p>
-          <button className="bag-btn bag-btn--ghost" onClick={() => navigate('/marcas')}>EXPLORAR CATÁLOGO</button>
+          <button className="bag-btn bag-btn--ghost" onClick={() => navigate('/marcas')}>IR A LA TIENDA</button>
         </div>
       </main>
     );

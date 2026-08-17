@@ -100,7 +100,7 @@ function ArticleScreen({ slug, navigate }) {
         <div className="bag-related-product__colorway">{relProductObj.colorway}</div>
         <div className="bag-related-product__price">{window.formatPrice(relProductObj.price)}</div>
         <button className="bag-btn bag-btn--primary" onClick={() => navigate(`/marcas/${article.relatedProduct.brand.toLowerCase()}/${article.relatedProduct.model}`)}>
-          VER EN CATÁLOGO
+          COMPRAR
         </button>
       </div>
     </aside>
@@ -154,7 +154,7 @@ function ArticleScreen({ slug, navigate }) {
                 <div className="bag-article-product-card__colorway">{product.colorway}</div>
                 <div className="bag-article-product-card__price">{window.formatPrice(product.price)}</div>
                 <button className="bag-btn bag-btn--primary" onClick={() => navigate(`/marcas/${block.brand}/${block.model}/${product.id}`)}>
-                  VER EN CATÁLOGO
+                  COMPRAR
                 </button>
               </div>
             </div>

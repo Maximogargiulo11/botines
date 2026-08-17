@@ -35,7 +35,7 @@ function CartDrawer({ open, onClose, items, onRemove, navigate, clearCart }) {
             <div className="bag-cart__empty">
               <div className="bag-eyebrow bag-eyebrow--muted">Carrito vacío</div>
               <p>Aún no añadiste productos. Explora el catálogo para encontrar tu próximo par.</p>
-              <button className="bag-btn bag-btn--ghost bag-btn--block" onClick={() => { onClose(); navigate('/marcas'); }}>EXPLORAR CATÁLOGO</button>
+              <button className="bag-btn bag-btn--ghost bag-btn--block" onClick={() => { onClose(); navigate('/marcas'); }}>IR A LA TIENDA</button>
             </div>
           )}
           {items.map((it, idx) => (
