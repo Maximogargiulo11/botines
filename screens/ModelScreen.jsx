@@ -66,7 +66,8 @@ function ModelScreen({ brandSlug, modelSlug, navigate }) {
       )}
 
       <section className="bag-products-grid">
-        {products.map(p => (
+        {/* Más nuevos primero: se muestran en orden inverso al de carga (los últimos agregados arriba) */}
+        {[...products].reverse().map(p => (
           <article className="bag-product-grid-card" key={p.id} onClick={() => navigate(`/marcas/${brandSlug}/${modelSlug}/${p.id}`)}>
             <div className="bag-product-grid-card__media">
               <img src={p.images[0]} alt="" />

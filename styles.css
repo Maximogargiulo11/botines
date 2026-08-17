@@ -972,7 +972,7 @@
   gap: 32px;
 }
 @media (max-width: 900px) { .bag-products-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .bag-products-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .bag-products-grid { grid-template-columns: repeat(2, 1fr); } }
 
 .bag-product-grid-card { display: flex; flex-direction: column; cursor: pointer; border: 1px solid var(--bag-line); background: var(--bag-bg-elev); transition: border-color var(--bag-dur) var(--bag-ease); }
 .bag-product-grid-card:hover { border-color: var(--bag-fg-muted); }
@@ -1683,6 +1683,16 @@
   .bag-brands-grid,
   .bag-models-grid,
   .bag-products-grid { padding: 16px var(--bag-gutter-mob) 40px; gap: 16px; }
+
+  /* Colorways en mobile: 2 por fila, tarjetas compactas */
+  .bag-products-grid { gap: 10px; }
+  .bag-product-grid-card__media img { padding: 12px; }
+  .bag-product-grid-card__body { padding: 10px 10px 14px; gap: 6px; }
+  .bag-product-grid-card__name { font-size: 13px; }
+  .bag-product-grid-card__price { font-size: 15px; }
+  .bag-product-grid-card .bag-tag { font-size: 9px; }
+  .bag-product-grid-card__sizes,
+  .bag-product-grid-card .bag-btn--block { display: none; }
 
   /* Cart: full width en mobile */
   .bag-cart { width: 100%; }
