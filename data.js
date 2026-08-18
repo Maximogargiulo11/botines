@@ -28,7 +28,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -130,7 +130,7 @@ window.BAG_DATA = {
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": false
+      "featuredWide": true
     },
     {
       "id": "7r8o6n5",
