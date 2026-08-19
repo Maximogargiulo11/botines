@@ -1,5 +1,5 @@
 /* global React */
-const { useState: useState_checkout } = React;
+const { useState: useState_checkout, useEffect: useEffect_checkout } = React;
 
 const PROVINCIAS_AR = [
   'Buenos Aires', 'CABA', 'Catamarca', 'Chaco', 'Chubut', 'Córdoba', 'Corrientes',
@@ -48,6 +48,20 @@ function CheckoutScreen({ cart, navigate }) {
   const [couponState, setCouponState] = useState_checkout(null); // null | 'checking' | 'valid' | 'invalid'
 
   const subtotal = cart.reduce((sum, it) => sum + (it.price || 0) * (it.qty || 1), 0);
+
+  // Meta Pixel: InitiateCheckout al entrar al checkout con productos
+  useEffect_checkout(() => {
+    if (cart.length > 0 && typeof window.fbq === 'function') {
+      window.fbq('track', 'InitiateCheckout', {
+        value: subtotal,
+        currency: 'ARS',
+        num_items: cart.reduce((n, it) => n + (it.qty || 1), 0),
+        content_ids: cart.map(it => it.id),
+        content_type: 'product',
+      });
+    }
+  }, []);
+
   const couponValid = couponState === 'valid';
   const transferTotal = Math.round(subtotal * (couponValid ? 0.85 : 0.9));
   const updateField = (key, value) => setForm(f => ({ ...f, [key]: value }));

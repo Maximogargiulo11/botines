@@ -124,6 +124,15 @@ function ProductScreen({ brandSlug, modelSlug, productId, navigate, addToCart })
         items: [{ item_id: product.id, item_name: product.name, item_brand: brand.name, item_category: model.name, item_variant: product.colorway, price: product.price, quantity: 1 }],
       });
     }
+    if (product && typeof window.fbq === 'function') {
+      window.fbq('track', 'ViewContent', {
+        content_name: product.name,
+        content_ids: [product.id],
+        content_type: 'product',
+        value: product.price,
+        currency: 'ARS',
+      });
+    }
   }, [product && product.id]);
 
   // Close lightbox on Escape

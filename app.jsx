@@ -48,6 +48,9 @@ function App() {
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'page_view', { page_path: route });
     }
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'PageView');
+    }
   }, [route]);
 
   const addToCart = (item) => {
@@ -59,6 +62,15 @@ function App() {
         currency: 'ARS',
         value: item.price,
         items: [{ item_id: item.id, item_name: item.name, item_brand: item.brand, item_variant: item.colorway, price: item.price, quantity: 1 }],
+      });
+    }
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'AddToCart', {
+        content_name: item.name,
+        content_ids: [item.id],
+        content_type: 'product',
+        value: item.price,
+        currency: 'ARS',
       });
     }
   };
@@ -154,20 +166,28 @@ function PaymentResultScreen({ status, navigate, clearCart }) {
   useEffect(() => {
     if (status === 'exitoso' || status === 'transferencia') {
       if (clearCart) clearCart();
-      if (typeof window.gtag === 'function') {
-        try {
-          const snap = JSON.parse(sessionStorage.getItem('bag:checkout_snapshot') || 'null');
-          if (snap) {
+      try {
+        const snap = JSON.parse(sessionStorage.getItem('bag:checkout_snapshot') || 'null');
+        if (snap) {
+          if (typeof window.gtag === 'function') {
             window.gtag('event', 'purchase', {
               transaction_id: snap.transaction_id,
               currency: 'ARS',
               value: snap.value,
               items: snap.items,
             });
-            sessionStorage.removeItem('bag:checkout_snapshot');
           }
-        } catch {}
-      }
+          if (typeof window.fbq === 'function') {
+            window.fbq('track', 'Purchase', {
+              value: snap.value,
+              currency: 'ARS',
+              content_type: 'product',
+              content_ids: (snap.items || []).map(i => i.item_id),
+            });
+          }
+          sessionStorage.removeItem('bag:checkout_snapshot');
+        }
+      } catch {}
     }
   }, []);
 
