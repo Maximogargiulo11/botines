@@ -95,7 +95,7 @@ function ArticleScreen({ slug, navigate }) {
         <img src={relProductObj.images?.[0]} alt="" />
       </div>
       <div className="bag-related-product__body">
-        <div className="bag-eyebrow bag-eyebrow--muted">{article.brand?.toUpperCase()}</div>
+        <div className="bag-eyebrow bag-eyebrow--muted">{article.relatedProduct.brand?.toUpperCase()}</div>
         <div className="bag-related-product__name">{relProductObj.name}</div>
         <div className="bag-related-product__colorway">{relProductObj.colorway}</div>
         <div className="bag-related-product__price">{window.formatPrice(relProductObj.price)}</div>
@@ -262,7 +262,7 @@ function ArticleScreen({ slug, navigate }) {
           <span>›</span>
           <span className="is-current">{article.title}</span>
         </nav>
-        <div className="bag-eyebrow">{article.category} · {article.brand?.toUpperCase()}</div>
+        <div className="bag-eyebrow">{article.category}{article.brand ? ` · ${article.brand.toUpperCase()}` : ''}</div>
         <h1 className="bag-article-head__title">{article.title}</h1>
         <div className="bag-article-head__meta">
           <span className="bag-meta">{article.date}</span>

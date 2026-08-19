@@ -203,7 +203,7 @@ function SelectInput({ label, value, onChange, options, hint, small }) {
   return (
     <Field label={label} hint={hint}>
       <select className={`adm-input adm-select${small ? ' adm-select--sm' : ''}`} value={value} onChange={e => onChange(e.target.value)}>
-        {options.map(o => <option key={o.value || o} value={o.value || o}>{o.label || o}</option>)}
+        {options.map(o => <option key={o.value ?? o} value={o.value ?? o}>{o.label ?? o}</option>)}
       </select>
     </Field>
   );
@@ -578,6 +578,14 @@ function RelatedProductPicker({ value, onChange, products }) {
 // ─────────────────────────────────────────
 const CATEGORIES = ['LANZAMIENTO', 'CAMPAÑA', 'NOVEDAD', 'EDITORIAL'];
 const BRANDS_LIST = ['Nike', 'Adidas', 'Puma'];
+// Opciones de marca para un lanzamiento. "General" (valor vacío) = noticia que no
+// pertenece a ninguna marca puntual (o abarca a todas).
+const ARTICLE_BRAND_OPTIONS = [
+  { value: '', label: 'General (todas / ninguna)' },
+  { value: 'Nike', label: 'Nike' },
+  { value: 'Adidas', label: 'Adidas' },
+  { value: 'Puma', label: 'Puma' },
+];
 
 function ArticleEditor({ article, onSave, onCancel, token, data }) {
   const [f, setF] = useState(() => {
@@ -585,7 +593,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
     return {
       id: a.id || genId(),
       slug: a.slug || '',
-      brand: a.brand || 'Nike',
+      brand: a.brand == null ? 'Nike' : a.brand,
       category: a.category || 'LANZAMIENTO',
       title: a.title || '',
       excerpt: a.excerpt || '',
@@ -635,7 +643,7 @@ function ArticleEditor({ article, onSave, onCancel, token, data }) {
         <div className="adm-section">
           <div className="adm-section__title">Información básica</div>
           <div className="adm-grid-2">
-            <SelectInput label="Marca" value={f.brand} onChange={v => set('brand', v)} options={BRANDS_LIST} />
+            <SelectInput label="Marca" value={f.brand} onChange={v => set('brand', v)} options={ARTICLE_BRAND_OPTIONS} />
             <SelectInput label="Categoría" value={f.category} onChange={v => set('category', v)} options={CATEGORIES} />
           </div>
           <TextInput label="Título" value={f.title} onChange={v => set('title', v)} required placeholder="Puma lanza el Showtime Pack..." />
@@ -752,7 +760,7 @@ function ArticlesSection({ data, onDataChange, token, homepageCount, onHomepageC
             <div className="adm-list-item__info">
               <div className="adm-list-item__meta">
                 <span className="adm-badge">{article.category}</span>
-                <span className="adm-badge adm-badge--muted">{article.brand}</span>
+                <span className="adm-badge adm-badge--muted">{article.brand || 'General'}</span>
                 {article.featured && <span className="adm-badge adm-badge--accent">DESTACADO</span>}
               </div>
               <div className="adm-list-item__title">{article.title}</div>

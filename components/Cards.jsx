@@ -19,7 +19,7 @@ function HeroArticle({ article, onClick, onProductClick, slideIndex, totalSlides
       </div>
       <div className="bag-hero__overlay">
         <div className="bag-hero__body">
-          <div className="bag-eyebrow">{article.category} · {article.brand?.toUpperCase()}</div>
+          <div className="bag-eyebrow">{article.category}{article.brand ? ` · ${article.brand.toUpperCase()}` : ''}</div>
           <h1 className="bag-hero__title">{article.title}</h1>
           <p className="bag-hero__excerpt">{article.excerpt}</p>
         </div>
