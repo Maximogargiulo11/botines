@@ -11,6 +11,128 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "oxayjjf",
+      "slug": "el-final-de-una-era",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "¿El final de una era?",
+      "excerpt": "Todo parece indicar que Nike y Kylian Mbappé tomarán caminos distintos. Pero… ¿Qué marca calzará al goleador francés? ",
+      "date": "Martes 18 de Agosto de 2026",
+      "cover": "assets/1787090567773-809E5BA2-7B96-45F3-AD03-801C9F8472D8.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1787090575338-809E5BA2-7B96-45F3-AD03-801C9F8472D8.png",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1787090580163-809E5BA2-7B96-45F3-AD03-801C9F8472D8.png",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "ccvgq0c",
+          "content": "Los informes que están circulando de que Kylian Mbappé podría estar listo para dejar Nike después de 19 años con la marca, está tomando fuerza.\n\n\nLa primera pregunta es simple: ¿por qué Mbappé siquiera consideraría irse después de una relación tan larga y exitosa?"
+        },
+        {
+          "type": "image",
+          "id": "056eshc",
+          "src": "assets/1787090789859-IMG_2555.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "gt7bm83",
+          "content": "Nike ha posicionado al francés como una de las piedras angulares de su lista de fútbol, posiblemente asumiendo el manto que durante mucho tiempo mantuvo a Cristiano Ronaldo como la figura principal de la marca en el juego. Y lo han tratado en consecuencia: solo en los últimos siete años, Mbappé ha recibido 12 botines de edición exclusiva. Ese es un nivel de apoyo al que ningún otro jugador actual puede siquiera acercarse.\n\n\nLa respuesta obvia, como suele ser, son cuestiones económicos . Pero podría haber mucho más en esta historia. Los informes sugieren que si Mbappé deja Nike, no será por uno de sus rivales tradicionales. No esperes verlos con unos Adidas F50 o Pum Ultra, silos de velocidad características de cada marca, en el corto plazo. En cambio, se rumorea que el destino es mucho más inesperado.\n\n\nEso ha alimentado naturalmente la especulación en torno a marcas como On, las cuales poseen el poder financiero y la ambición global para hacer un movimiento serio hacia el fútbol y su calzado deportivo. La pregunta entonces se convierte en: ¿por qué Mbappé se sentiría tentado por una marca con poca o ninguna huella existente en el deporte? La respuesta puede estar en la estructura del acuerdo en sí.\n\n\nA diferencia de un acuerdo de respaldo tradicional con un gigante de la ropa deportiva establecido, los informes sugieren que la propuesta sobre la mesa le daría a Mbappé una participación mucho más profunda en el negocio. Según se informa, la marca anónima está planeando una entrada significativa en el fútbol con una línea de botines premium construida alrededor de la superestrella francesa. Más importante aún, se dice que la oferta incluye no solo una submarca dedicada a Mbappé, sino también capital en la empresa. Eso cambia la conversación por completo.\n\n\nEn lugar de simplemente promocionar productos, Mbappé invertiría en el crecimiento a largo plazo de la propia marca. El modelo refleja las asociaciones atleta-inversor que se han vuelto cada vez más comunes en otros jugadores también y hasta en otros deportes."
+        },
+        {
+          "type": "image-pair",
+          "id": "cuooj4o",
+          "left": {
+            "src": "assets/1787090772709-IMG_2969.jpeg"
+          },
+          "right": {
+            "src": "assets/1787090782626-IMG_2959.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "riaq8vi",
+          "content": "En el extremo más alto, también trae a la mente el plan establecido por Michael Jordan con Nike: lo que comenzó como una asociación característica con Nike se convirtió en Jordan Brand, un negocio que finalmente trascendió el baloncesto y se convirtió en una potencia cultural global por derecho propio. El fútbol nunca ha tenido realmente su equivalente, sin embargo.\n\n\nHemos visto destellos de pensamientos similares en los últimos años: Skechers aceleró su impulso hacia el fútbol al asegurar a Harry Kane como la cara de la marca, ganando credibilidad al instante en el mercado. Pero si bien ese acuerdo fue indudablemente lucrativo, es muy poco probable que el papel de Kane se extienda a la propiedad o a la participación empresarial a largo plazo.\n\n\nSin embargo, si los informes resultan ser ciertos aquí, el posible movimiento de Mbappé representaría algo fundamentalmente diferente. Sería mucho más que simplemente cambiarse los botines.\n\n\nA los 27 años, Mbappé se encuentra en una de las coyunturas más importantes de su carrera. Es una de las estrellas del Real Madrid, capitán de Francia, y sigue siendo uno de los atletas más influyentes del planeta. Su atractivo se extiende mucho más allá del fútbol, lo que lo convierte en uno de los pocos jugadores capaces de llevar toda una estrategia de marca sobre sus hombros.\n\n\nEn lugar de continuar el camino tradicional de ser la cara de una empresa de ropa deportiva existente, podría estar buscando construir algo propio. Si esa es la motivación, la decisión se convierte tanto en un movimiento comercial como deportivo."
+        },
+        {
+          "type": "image-pair",
+          "id": "f4yer4y",
+          "left": {
+            "src": "assets/1787091073029-IMG_2970.jpeg"
+          },
+          "right": {
+            "src": "assets/1787091080392-IMG_2971.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "3bty9s8",
+          "content": "Entonces, ¿qué podría significar para el fútbol?\n\n\nEn primer lugar, sería un golpe significativo para Nike. El Swoosh todavía cuenta con una lista envidiable, con jugadores como Vinícius Júnior y Erling Haaland entre sus nombres principales. Y no es como si Nike no hubiera sobrevivido a salidas de alto perfil antes. Ningún jugador es más grande que la marca.\n\n\nSin embargo, perder a Mbappé todavía dolería. Este es un jugador con el que Nike ha trabajado desde que tenía ocho años. Han invertido mucho en construirlo como uno de sus atletas de fútbol definitorios, creando campañas, productos de firma y narrativas a largo plazo en torno a su ascenso. Perderlo en la cima de su carrera, justo cuando entra en lo que deberían ser sus años más poderosos comercialmente, sería una píldora amarga para tragar.\n\n\nMás allá de Nike, sin embargo, se encuentra la pregunta más intrigante. ¿Podría ser este el comienzo de un cambio lejos de la jerarquía de marcas tradicional del fútbol?"
+        },
+        {
+          "type": "image-pair",
+          "id": "jvfzauu",
+          "left": {
+            "src": "assets/1787091162096-IMG_2973.jpeg"
+          },
+          "right": {
+            "src": "assets/1787091169438-IMG_2972.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "x51olxu",
+          "content": "Durante décadas, el deporte ha pertenecido en gran medida a un puñado de jugadores establecidos. Nike, Adidas y Puma han dominado el mercado, controlando a los mejores atletas, equipos y competiciones. Pero si Mbappé ayuda con éxito a lanzar y construir una nueva marca de fútbol mientras se beneficia simultáneamente como propietario, puede obligar a otros jugadores a repensar cómo puede ser un acuerdo de patrocinio.\n\n\nDe repente, que le paguen por usar botines podría no ser suficiente, y la próxima generación de superestrellas podría comenzar a buscar equidad, control creativo y oportunidades de negocio a largo plazo en lugar de simplemente tarifas de respaldo más grandes. Jugadores como Jude Bellingham, Lamine Yamal y Vinícius Júnior sin duda se darían cuenta si tal modelo tuviera éxito.\n\n\nPor supuesto, todavía hay barreras significativas para que eso suceda. Desarrollar calzado de fútbol de élite no es fácil. Nike, Adidas y Puma han pasado décadas refinando sus productos a través de la investigación, las pruebas y los comentarios de los atletas. Su experiencia, infraestructura y patrimonio siguen siendo enormes ventajas competitivas.\n\n\nEs por eso que cualquier retador se enfrentaría a un camino difícil, independientemente de quién esté vinculado al proyecto. Pero si el fútbol nos ha enseñado algo, es que el panorama puede cambiar rápidamente cuando se trata de talento generacional. Y en este momento, hay muy pocos atletas con la influencia para desafiar las normas existentes como Kylian Mbappé.\n\n\nSi se aleja de Nike, no será solo una de las mayores historias de patrocinio que el fútbol haya visto. Podría ser el momento en que la relación entre futbolistas y marcas de ropa deportiva comience a evolucionar hacia algo completamente nuevo."
+        },
+        {
+          "type": "image-pair",
+          "id": "gdf0hvh",
+          "left": {
+            "src": "assets/1787091244472-IMG_2960.jpeg"
+          },
+          "right": {
+            "src": "assets/1787091251582-IMG_2962.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "19ri55v",
+          "left": {
+            "src": "assets/1787091262658-IMG_2964.jpeg"
+          },
+          "right": {
+            "src": "assets/1787091269020-IMG_2965.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "v2k0c61",
+          "src": "assets/1787091282400-IMG_2966.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "2vq34vr",
+          "content": "Más allá de esto, puedes comprar la última ‘signature’ de Mercurial Superfly 11 sobre Kylian Mbappé en nuestra tienda online. 🛒 ¡Ya disponibles! "
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": true
+    },
+    {
       "id": "7r8o6n5",
       "slug": "nike-honra-el-legado-de-la-copa-del-mundo-a-kylian-mbappe",
       "brand": "Nike",
