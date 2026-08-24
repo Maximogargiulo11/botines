@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "Las ediciones exclusivas de Nike para Kylian Mbappé.",
       "excerpt": "7 años de relación, 12 firmas de Mercurial Superfly.",
       "date": "24 de Agosto de 2026",
-      "cover": "",
+      "cover": "assets/1787606924008-Sin_ti_tulo_-_24_de_agosto_de_2026_a_las_18.25.37.png",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "",
