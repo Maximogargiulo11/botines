@@ -35,7 +35,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "jsl05aj",
-          "content": "⚡️ F50 vs. Predator: Adidas convierte sus botines en una batalla.\n\n\n¿De qué lado estás? ¿F50 o Predator? Adidas encendió las redes con una nueva movida de marketing que enfrenta a dos de sus líneas más importantes como si fueran protagonistas de una verdadera rivalidad."
+          "content": "F50 vs. Predator: Adidas convierte sus botines en una batalla.\n\n\n¿De qué lado estás? ¿F50 o Predator? Adidas encendió las redes con una nueva movida de marketing que enfrenta a dos de sus líneas más importantes como si fueran protagonistas de una verdadera rivalidad."
         },
         {
           "type": "text",
@@ -48,9 +48,29 @@ window.BAG_DATA = {
           "content": "⚡ F50: velocidad.\n\n\nDe un lado aparece la F50, asociada históricamente con la velocidad, la explosividad y los jugadores que buscan atacar los espacios y marcar diferencias con su aceleración."
         },
         {
+          "type": "image-pair",
+          "id": "lzud53s",
+          "left": {
+            "src": "assets/1787604934059-IMG_3022.jpeg"
+          },
+          "right": {
+            "src": "assets/1787604949890-IMG_3031.jpeg"
+          }
+        },
+        {
           "type": "text",
           "id": "4rwavbd",
-          "content": "🎯Predator: control.\n\n\nDel otro lado, la Predator representa el control, el dominio de la pelota y la precisión. Una línea que adidas convirtió durante años en uno de los grandes símbolos de la marca.\n\n\nY justamente ahí está el atractivo de la campaña: no se trata solamente de elegir un botín, sino de elegir una forma de jugar."
+          "content": "🎯 Predator: control.\n\n\nDel otro lado, la Predator representa el control, el dominio de la pelota y la precisión. Una línea que adidas convirtió durante años en uno de los grandes símbolos de la marca.\n\n\nY justamente ahí está el atractivo de la campaña: no se trata solamente de elegir un botín, sino de elegir una forma de jugar."
+        },
+        {
+          "type": "image-pair",
+          "id": "o5rjxn6",
+          "left": {
+            "src": "assets/1787604969297-IMG_3045.jpeg"
+          },
+          "right": {
+            "src": "assets/1787604983534-IMG_3046.jpeg"
+          }
         },
         {
           "type": "text",
