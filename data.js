@@ -31,7 +31,43 @@ window.BAG_DATA = {
       "featured": false,
       "sizesUS": [],
       "sizesUK": [],
-      "contentBlocks": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "jsl05aj",
+          "content": "⚡️ F50 vs. Predator: Adidas convierte sus botines en una batalla.\n\n\n¿De qué lado estás? ¿F50 o Predator? Adidas encendió las redes con una nueva movida de marketing que enfrenta a dos de sus líneas más importantes como si fueran protagonistas de una verdadera rivalidad."
+        },
+        {
+          "type": "text",
+          "id": "b47fsry",
+          "content": "Adidas decidió llevar la histórica elección entre F50 y Predator a otro nivel. A través de sus redes sociales, la marca comenzó a construir una narrativa de enfrentamiento entre ambos modelos, invitando a los futbolistas y fanáticos a elegir de qué lado están.\n\n\nLa estrategia no parece casual. En lugar de limitarse a mostrar las características de cada botín, adidas transforma la elección en una cuestión de identidad."
+        },
+        {
+          "type": "text",
+          "id": "jfc51zd",
+          "content": "⚡ F50: velocidad.\n\n\nDe un lado aparece la F50, asociada históricamente con la velocidad, la explosividad y los jugadores que buscan atacar los espacios y marcar diferencias con su aceleración."
+        },
+        {
+          "type": "text",
+          "id": "4rwavbd",
+          "content": "🎯Predator: control.\n\n\nDel otro lado, la Predator representa el control, el dominio de la pelota y la precisión. Una línea que adidas convirtió durante años en uno de los grandes símbolos de la marca.\n\n\nY justamente ahí está el atractivo de la campaña: no se trata solamente de elegir un botín, sino de elegir una forma de jugar."
+        },
+        {
+          "type": "text",
+          "id": "j6md1qo",
+          "content": "Una rivalidad creada para las redes.\n\n\nLa campaña utiliza una fórmula que funciona especialmente bien en redes sociales: crear dos bandos y hacer que la comunidad participe.\n\n\nLa pregunta genera debate, comentarios, comparaciones y, sobre todo, identificación. En redes ya pueden encontrarse contenidos que plantean directamente el enfrentamiento entre ambos modelos y la elección de un “equipo”.\n\n\nDesde el punto de vista del marketing, adidas consigue algo muy interesante: hacer que dos productos de su propio catálogo compitan entre sí sin que ninguno pierda protagonismo.\n"
+        },
+        {
+          "type": "text",
+          "id": "g4b8mwb",
+          "content": "¿Quién gana la batalla? 👀\n\n\nProbablemente esa sea justamente la pregunta que Adidas quiere instalar.\n\n\nPorque mientras algunos jugadores se sienten representados por la velocidad de la F50, otros prefieren el control y la precisión de la Predator.\n\n\nY vos, si tuvieras que elegir solamente uno…\n\n\n¿De qué lado estás? ¿F50 o Predator?"
+        },
+        {
+          "type": "text",
+          "id": "5lyzs28",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
