@@ -6373,7 +6373,7 @@ window.BAG_DATA = {
         {
           "id": "p6",
           "title": "Productos en liquidación",
-          "content": "Los modelos marcados con rebaja o última unidad admiten cambio por talle dentro del mismo modelo, pero no admiten devolución con reintegro."
+          "content": "Los modelos marcados con rebaja o última unidad no admiten cambio ni devolución con reintegro."
         }
       ]
     },
