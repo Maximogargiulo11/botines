@@ -16,7 +16,7 @@ window.BAG_DATA = {
       "brand": "",
       "category": "NOVEDAD",
       "title": "Botines negros bajo las sombras ⚫️",
-      "excerpt": "",
+      "excerpt": "El negro es un clásico que nunca desaparece del fútbol.",
       "date": "21 de Agosto de 2021",
       "cover": "assets/1787319862253-IMG_2990.jpeg",
       "coverWidth": "",
@@ -31,7 +31,13 @@ window.BAG_DATA = {
       "featured": false,
       "sizesUS": [],
       "sizesUK": [],
-      "contentBlocks": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "d8dck2x",
+          "content": "Mientras las tendencias cambian constantemente, los botines predominantemente negros mantienen una identidad propia: sobria, elegante y con una personalidad que no necesita demasiados colores para llamar la atención.\n\n\nEn los últimos lanzamientos, el negro vuelve a aparecer como protagonista en una gran variedad de modelos, desde diseños completamente oscuros hasta propuestas que incorporan detalles en colores vibrantes.\n\n\nUn clásico que se reinventa.\n\n\nLos botines negros ya no representan únicamente una estética tradicional. Las principales marcas los combinan con diferentes texturas, materiales, acabados y tecnologías para crear diseños que pueden ser minimalistas, agresivos o incluso futuristas.\n\n\nUn botín negro puede mantenerse completamente limpio o incorporar pequeños detalles en blanco, plateado, dorado, rojo, azul o colores fluorescentes, logrando contrastes que resaltan sobre la base oscura.\n\n\nElegancia dentro de la cancha.\n\n\nSi los botines blancos destacan por su limpieza, los negros lo hacen por su presencia.\n\n\nEl color negro transmite una sensación de solidez, seriedad y carácter. Es una elección para quienes buscan un botín que se vea sofisticado, pero que al mismo tiempo tenga una fuerte identidad dentro de la cancha.\n\n\nSu versatilidad también permite que se adapte prácticamente a cualquier camiseta, pantalón o combinación de colores.\n\n\nTecnología bajo una estética clásica.\n\n\nDetrás de una apariencia tradicional puede encontrarse la tecnología más moderna.\n\n\nLos modelos actuales incorporan diferentes construcciones y tecnologías pensadas para mejorar aspectos fundamentales del juego como la velocidad, el control, la estabilidad y la comodidad.\n\n\nPor eso, elegir un botín negro no significa quedarse en el pasado. Al contrario: muchas veces, el diseño más clásico puede esconder algunas de las innovaciones más avanzadas.\n\n\nPara quienes prefieren marcar la diferencia sin exagerar.\n\n\nEn un mercado lleno de colores llamativos y diseños cada vez más atrevidos, el negro ofrece una alternativa diferente.\n\n\nNo necesita llamar la atención a primera vista. Su atractivo está en los detalles, en las texturas y en la presencia que adquiere cuando está puesto.\n\n\nClásicos, elegantes y con carácter.\n\n\nLos botines negros siguen demostrando que algunas tendencias nunca pasan de moda.\n\n\nDescubrí nuestra selección de botines predominantemente negros y encontrá el modelo que mejor representa tu estilo de juego."
+        }
+      ],
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
