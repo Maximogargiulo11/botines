@@ -68,7 +68,32 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "7p22h0h",
-          "content": "Desde diseños completamente blancos hasta modelos que combinan el blanco con pequeños detalles de color, las principales marcas están apostando por una estética limpia, moderna y llamativa. Una tendencia que no pasa desapercibida dentro de la cancha.\n\n\nUna variedad que va mucho más allá del blanco.\n\n\nHablar de botines blancos no significa hablar de un único estilo. La variedad es enorme: encontramos modelos completamente blancos, diseños con detalles metálicos, combinaciones con negro, toques de azul, rojo, celeste o incluso colores fluorescentes.\n\n\nLa base blanca permite que cada detalle del botín tome protagonismo. Logos, suelas, cordones, texturas y tecnologías se destacan mucho más sobre una superficie limpia, generando una estética premium y sofisticada.\n\n\nMinimalismo dentro de la cancha.\n\n\nLos botines predominantemente blancos transmiten una sensación de simplicidad y elegancia. Son modelos que no necesitan demasiados elementos para llamar la atención.\n\n\nEn algunos casos, el diseño apuesta por un blanco prácticamente puro. En otros, se incorporan pequeños contrastes que aportan personalidad sin perder la esencia limpia del botín.\n\n\nEs justamente esa combinación entre minimalismo, tecnología y diseño la que convierte a estos modelos en una de las opciones más buscadas por quienes buscan algo diferente.\n\n\nPara todos los estilos de jugador.\n\n\nOtra de las grandes ventajas de esta tendencia es la variedad de siluetas y tecnologías disponibles. Hay opciones pensadas para velocidad, control, potencia y diferentes tipos de superficie.\n\n\nEsto permite que el jugador pueda elegir no solo por estética, sino también por las características que mejor se adaptan a su juego.\n\n\nPorque un botín blanco puede ser mucho más que una elección de color: puede representar una forma de entender el fútbol.\n\n\nEl blanco como protagonista.\n\n\nEn una época donde los lanzamientos buscan constantemente sorprender con colores y diseños cada vez más llamativos, los botines blancos encuentran su lugar justamente haciendo lo contrario.\n\n\nLimpios. Elegantes. Modernos.\n\n\nUna estética que demuestra que, dentro de la cancha, menos también puede ser más.\n\n\nDescubrí nuestra selección de botines predominantemente blancos y encontrá el modelo que mejor representa tu estilo."
+          "content": "Desde diseños completamente blancos hasta modelos que combinan el blanco con pequeños detalles de color, las principales marcas están apostando por una estética limpia, moderna y llamativa. Una tendencia que no pasa desapercibida dentro de la cancha."
+        },
+        {
+          "type": "text",
+          "id": "g3uuiq6",
+          "content": "Una variedad que va mucho más allá del blanco.\n\n\nHablar de botines blancos no significa hablar de un único estilo. La variedad es enorme: encontramos modelos completamente blancos, diseños con detalles metálicos, combinaciones con negro, toques de azul, rojo, celeste o incluso colores fluorescentes.\n\n\nLa base blanca permite que cada detalle del botín tome protagonismo. Logos, suelas, cordones, texturas y tecnologías se destacan mucho más sobre una superficie limpia, generando una estética premium y sofisticada."
+        },
+        {
+          "type": "text",
+          "id": "0020flc",
+          "content": "Minimalismo dentro de la cancha.\n\n\nLos botines predominantemente blancos transmiten una sensación de simplicidad y elegancia. Son modelos que no necesitan demasiados elementos para llamar la atención.\n\n\nEn algunos casos, el diseño apuesta por un blanco prácticamente puro. En otros, se incorporan pequeños contrastes que aportan personalidad sin perder la esencia limpia del botín.\n\n\nEs justamente esa combinación entre minimalismo, tecnología y diseño la que convierte a estos modelos en una de las opciones más buscadas por quienes buscan algo diferente."
+        },
+        {
+          "type": "text",
+          "id": "wwixv64",
+          "content": "Para todos los estilos de jugador.\n\n\nOtra de las grandes ventajas de esta tendencia es la variedad de siluetas y tecnologías disponibles. Hay opciones pensadas para velocidad, control, potencia y diferentes tipos de superficie.\n\n\nEsto permite que el jugador pueda elegir no solo por estética, sino también por las características que mejor se adaptan a su juego.\n\n\nPorque un botín blanco puede ser mucho más que una elección de color: puede representar una forma de entender el fútbol."
+        },
+        {
+          "type": "text",
+          "id": "l510dm3",
+          "content": "El blanco como protagonista.\n\n\nEn una época donde los lanzamientos buscan constantemente sorprender con colores y diseños cada vez más llamativos, los botines blancos encuentran su lugar justamente haciendo lo contrario."
+        },
+        {
+          "type": "text",
+          "id": "pxsmz7w",
+          "content": "Limpios. Elegantes. Modernos.\n\n\nUna estética que demuestra que, dentro de la cancha, menos también puede ser más.\n\n\nDescubrí nuestra selección de botines predominantemente blancos y encontrá el modelo que mejor representa tu estilo."
         }
       ],
       "relatedProduct": null,
