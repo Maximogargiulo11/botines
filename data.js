@@ -11,6 +11,188 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "61ng5gt",
+      "slug": "las-ediciones-exclusivas-de-nike-para-kylian-mbappe",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Las ediciones exclusivas de Nike para Kylian Mbappé.",
+      "excerpt": "7 años de relación, 12 firmas de Mercurial Superfly.",
+      "date": "24 de Agosto de 2026",
+      "cover": "",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "2i0eddc",
+          "content": "Desde 2019, cuando Mbappé recibió su primera firma Mercurial, Nike lo ha llevado a través de cuatro generaciones del Superfly, cada una de las cuales sirve como un lienzo para contar diferentes capítulos de su historia. Desde los orígenes inspirados en Bondy de su lanzamiento debut hasta atrevidos cambios de imagen gráficos, especiales de la Copa del Mundo y diseños que rinden homenaje a su herencia, cada bota ha ofrecido una visión única del viaje de un jugador que ya ha logrado más de lo que la mayoría puede soñar."
+        },
+        {
+          "type": "text",
+          "id": "wadhdpz",
+          "content": "Lo que hace que la colección sea tan convincente es que traza el ascenso de Mbappé en tiempo real. A medida que su juego evolucionaba, también lo hacían las botas bajo sus pies, con Nike usando cada lanzamiento para celebrar un hito, un recuerdo o una parte de la personalidad detrás del jugador. Entonces, con otro capítulo de la firma ahora escrito, pensamos que era el momento perfecto para mirar hacia atrás en las 12 botas Nike Mercurial Superfly que usó Kylian Mbappé hasta la fecha."
+        },
+        {
+          "type": "text",
+          "id": "gpp1f1a",
+          "content": "Nike Mercurial Superfly 7 Elite FG ‘Bondy Dreams’. (Diciembre, 2019)"
+        },
+        {
+          "type": "image",
+          "id": "lv1pa7l",
+          "src": "assets/1787605438445-IMG_3088.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "nftxx29",
+          "content": "Nike Mercurial Superfly 7 Elite FG ‘Pink’. (Agosto, 2020)"
+        },
+        {
+          "type": "image",
+          "id": "dhhn8ho",
+          "src": "assets/1787605532267-IMG_3089.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "54ughgb",
+          "content": "Nike Mercurial Superfly 7 Elite FG ‘Chapter 2’. (Enero, 2021)"
+        },
+        {
+          "type": "image",
+          "id": "lk89n95",
+          "src": "assets/1787605595727-IMG_3090.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "wkxtoer",
+          "content": "Nike Mercurial Superfly 8 Elite FG ‘Flames’. (Octubre, 2021)"
+        },
+        {
+          "type": "image",
+          "id": "c0sa2i0",
+          "src": "assets/1787605683688-IMG_3091.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "n7ix85x",
+          "content": "Nike Mercurial Superfly 9 Air Zoom FG ‘KM’. (Septiembre, 2022)"
+        },
+        {
+          "type": "image",
+          "id": "dcuwocr",
+          "src": "assets/1787605811508-IMG_3092.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "wrhfwho",
+          "content": "Nike Mercurial Superfly 9 Air Zoom FG Kylian Mbappé ‘Generation’. (Diciembre, 2022)"
+        },
+        {
+          "type": "image",
+          "id": "j03qjem",
+          "src": "assets/1787605868325-IMG_3093.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "hikiz9n",
+          "content": "Nike Mercurial Superfly 9 Air Zoom FG Kylian Mbappé ‘Celeste/Amarillo’. (Agosto, 2023)"
+        },
+        {
+          "type": "image",
+          "id": "1djlowb",
+          "src": "assets/1787605943668-IMG_3094.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "vug1krm",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG ‘Amarillo/Naranja’. (Septiembre, 2024)"
+        },
+        {
+          "type": "image",
+          "id": "8tiq7ml",
+          "src": "assets/1787606170483-IMG_3095.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "aeacd4w",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG ‘KM’. (Abril, 2025)"
+        },
+        {
+          "type": "image",
+          "id": "mnxnt7f",
+          "src": "assets/1787606233338-IMG_3096.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "smxghft",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG Kylian Mbappé ‘Naranja/Azul’. (Octubre de 2025)"
+        },
+        {
+          "type": "image",
+          "id": "u93cqqi",
+          "src": "assets/1787606313331-IMG_3097.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9kojhet",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG ‘Air Max’. (Febrero, 2026)"
+        },
+        {
+          "type": "image",
+          "id": "cd1pxoq",
+          "src": "assets/1787606376318-IMG_3098.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "d7kpgj1",
+          "content": "Nike Mercurial Superfly 11 Elite FG Kylian Mbappé ‘Gold Edition’. (Agosto, 2026)"
+        },
+        {
+          "type": "image",
+          "id": "aucvgk4",
+          "src": "assets/1787606437437-IMG_3099.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "4q8wh9m",
       "slug": "adidas-y-una-dificil-decision-f50-o-predator",
       "brand": "Adidas",
