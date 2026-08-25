@@ -11,6 +11,387 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "61ng5gt",
+      "slug": "las-ediciones-exclusivas-de-nike-para-kylian-mbappe",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Las ediciones exclusivas de Nike para Kylian Mbappé.",
+      "excerpt": "7 años de relación, 12 firmas de Mercurial Superfly.",
+      "date": "24 de Agosto de 2026",
+      "cover": "assets/1787607604578-Sin_ti_tulo_-_24_de_agosto_de_2026_a_las_18.25.37-2.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1787607614601-Sin_ti_tulo_-_24_de_agosto_de_2026_a_las_18.25.37.png",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "2i0eddc",
+          "content": "Desde 2019, cuando Mbappé recibió su primera firma Mercurial, Nike lo ha llevado a través de cuatro generaciones del Superfly, cada una de las cuales sirve como un lienzo para contar diferentes capítulos de su historia. Desde los orígenes inspirados en Bondy de su lanzamiento debut hasta atrevidos cambios de imagen gráficos, especiales de la Copa del Mundo y diseños que rinden homenaje a su herencia, cada bota ha ofrecido una visión única del viaje de un jugador que ya ha logrado más de lo que la mayoría puede soñar."
+        },
+        {
+          "type": "text",
+          "id": "wadhdpz",
+          "content": "Lo que hace que la colección sea tan convincente es que traza el ascenso de Mbappé en tiempo real. A medida que su juego evolucionaba, también lo hacían las botas bajo sus pies, con Nike usando cada lanzamiento para celebrar un hito, un recuerdo o una parte de la personalidad detrás del jugador. Entonces, con otro capítulo de la firma ahora escrito, pensamos que era el momento perfecto para mirar hacia atrás en las 12 botas Nike Mercurial Superfly que usó Kylian Mbappé hasta la fecha."
+        },
+        {
+          "type": "text",
+          "id": "gpp1f1a",
+          "content": "Nike Mercurial Superfly 7 Elite FG ‘Bondy Dreams’. (Diciembre, 2019)"
+        },
+        {
+          "type": "image",
+          "id": "lv1pa7l",
+          "src": "assets/1787605438445-IMG_3088.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "nftxx29",
+          "content": "Nike Mercurial Superfly 7 Elite FG ‘Pink’. (Agosto, 2020)"
+        },
+        {
+          "type": "image",
+          "id": "dhhn8ho",
+          "src": "assets/1787605532267-IMG_3089.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "54ughgb",
+          "content": "Nike Mercurial Superfly 7 Elite FG ‘Chapter 2’. (Enero, 2021)"
+        },
+        {
+          "type": "image",
+          "id": "lk89n95",
+          "src": "assets/1787605595727-IMG_3090.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "wkxtoer",
+          "content": "Nike Mercurial Superfly 8 Elite FG ‘Flames’. (Octubre, 2021)"
+        },
+        {
+          "type": "image",
+          "id": "c0sa2i0",
+          "src": "assets/1787605683688-IMG_3091.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "n7ix85x",
+          "content": "Nike Mercurial Superfly 9 Air Zoom FG ‘KM’. (Septiembre, 2022)"
+        },
+        {
+          "type": "image",
+          "id": "dcuwocr",
+          "src": "assets/1787605811508-IMG_3092.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "wrhfwho",
+          "content": "Nike Mercurial Superfly 9 Air Zoom FG Kylian Mbappé ‘Generation’. (Diciembre, 2022)"
+        },
+        {
+          "type": "image",
+          "id": "j03qjem",
+          "src": "assets/1787605868325-IMG_3093.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "hikiz9n",
+          "content": "Nike Mercurial Superfly 9 Air Zoom FG Kylian Mbappé ‘Celeste/Amarillo’. (Agosto, 2023)"
+        },
+        {
+          "type": "image",
+          "id": "1djlowb",
+          "src": "assets/1787605943668-IMG_3094.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "vug1krm",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG ‘Amarillo/Naranja’. (Septiembre, 2024)"
+        },
+        {
+          "type": "image",
+          "id": "8tiq7ml",
+          "src": "assets/1787606170483-IMG_3095.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "aeacd4w",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG ‘KM’. (Abril, 2025)"
+        },
+        {
+          "type": "image",
+          "id": "mnxnt7f",
+          "src": "assets/1787606233338-IMG_3096.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "smxghft",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG Kylian Mbappé ‘Naranja/Azul’. (Octubre de 2025)"
+        },
+        {
+          "type": "image",
+          "id": "u93cqqi",
+          "src": "assets/1787606313331-IMG_3097.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9kojhet",
+          "content": "Nike Mercurial Superfly 10 Air Zoom FG ‘Air Max’. (Febrero, 2026)"
+        },
+        {
+          "type": "image",
+          "id": "cd1pxoq",
+          "src": "assets/1787606376318-IMG_3098.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "d7kpgj1",
+          "content": "Nike Mercurial Superfly 11 Elite FG Kylian Mbappé ‘Gold Edition’. (Agosto, 2026)"
+        },
+        {
+          "type": "image",
+          "id": "aucvgk4",
+          "src": "assets/1787606437437-IMG_3099.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "4q8wh9m",
+      "slug": "adidas-y-una-dificil-decision-f50-o-predator",
+      "brand": "Adidas",
+      "category": "CAMPAÑA",
+      "title": "Adidas y una difícil decisión. ¿F50 o Predator?",
+      "excerpt": "La marca de las tres líneas lanza una campaña de marketing para la elección clave de una disputa de dos silos.",
+      "date": "24 de Agosto de 2026",
+      "cover": "assets/1787591886942-IMG_3056.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "jsl05aj",
+          "content": "F50 vs. Predator: Adidas convierte sus botines en una batalla.\n\n\n¿De qué lado estás? ¿F50 o Predator? Adidas encendió las redes con una nueva movida de marketing que enfrenta a dos de sus líneas más importantes como si fueran protagonistas de una verdadera rivalidad."
+        },
+        {
+          "type": "text",
+          "id": "b47fsry",
+          "content": "Adidas decidió llevar la histórica elección entre F50 y Predator a otro nivel. A través de sus redes sociales, la marca comenzó a construir una narrativa de enfrentamiento entre ambos modelos, invitando a los futbolistas y fanáticos a elegir de qué lado están.\n\n\nLa estrategia no parece casual. En lugar de limitarse a mostrar las características de cada botín, adidas transforma la elección en una cuestión de identidad."
+        },
+        {
+          "type": "text",
+          "id": "jfc51zd",
+          "content": "⚡ F50: velocidad.\n\n\nDe un lado aparece la F50, asociada históricamente con la velocidad, la explosividad y los jugadores que buscan atacar los espacios y marcar diferencias con su aceleración."
+        },
+        {
+          "type": "image-pair",
+          "id": "lzud53s",
+          "left": {
+            "src": "assets/1787604934059-IMG_3022.jpeg"
+          },
+          "right": {
+            "src": "assets/1787604949890-IMG_3031.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4rwavbd",
+          "content": "🎯 Predator: control.\n\n\nDel otro lado, la Predator representa el control, el dominio de la pelota y la precisión. Una línea que adidas convirtió durante años en uno de los grandes símbolos de la marca.\n\n\nY justamente ahí está el atractivo de la campaña: no se trata solamente de elegir un botín, sino de elegir una forma de jugar."
+        },
+        {
+          "type": "image-pair",
+          "id": "o5rjxn6",
+          "left": {
+            "src": "assets/1787604969297-IMG_3045.jpeg"
+          },
+          "right": {
+            "src": "assets/1787604983534-IMG_3046.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "j6md1qo",
+          "content": "Una rivalidad creada para las redes.\n\n\nLa campaña utiliza una fórmula que funciona especialmente bien en redes sociales: crear dos bandos y hacer que la comunidad participe.\n\n\nLa pregunta genera debate, comentarios, comparaciones y, sobre todo, identificación. En redes ya pueden encontrarse contenidos que plantean directamente el enfrentamiento entre ambos modelos y la elección de un “equipo”.\n\n\nDesde el punto de vista del marketing, adidas consigue algo muy interesante: hacer que dos productos de su propio catálogo compitan entre sí sin que ninguno pierda protagonismo.\n"
+        },
+        {
+          "type": "text",
+          "id": "g4b8mwb",
+          "content": "¿Quién gana la batalla? 👀\n\n\nProbablemente esa sea justamente la pregunta que Adidas quiere instalar.\n\n\nPorque mientras algunos jugadores se sienten representados por la velocidad de la F50, otros prefieren el control y la precisión de la Predator.\n\n\nY vos, si tuvieras que elegir solamente uno…\n\n\n¿De qué lado estás? ¿F50 o Predator?"
+        },
+        {
+          "type": "text",
+          "id": "5lyzs28",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "rmdento",
+      "slug": "botines-negros-bajo-las-sombras",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Botines negros bajo las sombras ⚫️",
+      "excerpt": "El negro es un clásico que nunca desaparece del fútbol.",
+      "date": "21 de Agosto de 2021",
+      "cover": "assets/1787319862253-IMG_2990.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "d8dck2x",
+          "content": "Mientras las tendencias cambian constantemente, los botines predominantemente negros mantienen una identidad propia: sobria, elegante y con una personalidad que no necesita demasiados colores para llamar la atención.\n\n\nEn los últimos lanzamientos, el negro vuelve a aparecer como protagonista en una gran variedad de modelos, desde diseños completamente oscuros hasta propuestas que incorporan detalles en colores vibrantes."
+        },
+        {
+          "type": "text",
+          "id": "9u31tv0",
+          "content": "Un clásico que se reinventa.\n\n\nLos botines negros ya no representan únicamente una estética tradicional. Las principales marcas los combinan con diferentes texturas, materiales, acabados y tecnologías para crear diseños que pueden ser minimalistas, agresivos o incluso futuristas.\n\n\nUn botín negro puede mantenerse completamente limpio o incorporar pequeños detalles en blanco, plateado, dorado, rojo, azul o colores fluorescentes, logrando contrastes que resaltan sobre la base oscura."
+        },
+        {
+          "type": "text",
+          "id": "qxauae2",
+          "content": "Elegancia dentro de la cancha.\n\n\nSi los botines blancos destacan por su limpieza, los negros lo hacen por su presencia.\n\n\nEl color negro transmite una sensación de solidez, seriedad y carácter. Es una elección para quienes buscan un botín que se vea sofisticado, pero que al mismo tiempo tenga una fuerte identidad dentro de la cancha.\n\n\nSu versatilidad también permite que se adapte prácticamente a cualquier camiseta, pantalón o combinación de colores."
+        },
+        {
+          "type": "text",
+          "id": "pmx8o2l",
+          "content": "Tecnología bajo una estética clásica.\n\n\nDetrás de una apariencia tradicional puede encontrarse la tecnología más moderna.\n\n\nLos modelos actuales incorporan diferentes construcciones y tecnologías pensadas para mejorar aspectos fundamentales del juego como la velocidad, el control, la estabilidad y la comodidad.\n\n\nPor eso, elegir un botín negro no significa quedarse en el pasado. Al contrario: muchas veces, el diseño más clásico puede esconder algunas de las innovaciones más avanzadas."
+        },
+        {
+          "type": "text",
+          "id": "apt63cg",
+          "content": "Para quienes prefieren marcar la diferencia sin exagerar.\n\n\nEn un mercado lleno de colores llamativos y diseños cada vez más atrevidos, el negro ofrece una alternativa diferente.\n\n\nNo necesita llamar la atención a primera vista. Su atractivo está en los detalles, en las texturas y en la presencia que adquiere cuando está puesto."
+        },
+        {
+          "type": "text",
+          "id": "d6sch7p",
+          "content": "Clásicos, elegantes y con carácter.\n\n\nLos botines negros siguen demostrando que algunas tendencias nunca pasan de moda.\n\n\nDescubrí nuestra selección de botines predominantemente negros y encontrá el modelo que mejor representa tu estilo de juego."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
+      "id": "76x6bay",
+      "slug": "botines-blancos-puramente-limpios",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Botines blancos puramente limpios ⚪️",
+      "excerpt": "El blanco vuelve a ganar protagonismo en el fútbol y se convierte en uno de los colores más elegantes y versátiles dentro de la nueva generación de botines.",
+      "date": "21 de Agosto de 2021",
+      "cover": "assets/1787319813304-IMG_2989.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "7p22h0h",
+          "content": "Desde diseños completamente blancos hasta modelos que combinan el blanco con pequeños detalles de color, las principales marcas están apostando por una estética limpia, moderna y llamativa. Una tendencia que no pasa desapercibida dentro de la cancha."
+        },
+        {
+          "type": "text",
+          "id": "g3uuiq6",
+          "content": "Una variedad que va mucho más allá del blanco.\n\n\nHablar de botines blancos no significa hablar de un único estilo. La variedad es enorme: encontramos modelos completamente blancos, diseños con detalles metálicos, combinaciones con negro, toques de azul, rojo, celeste o incluso colores fluorescentes.\n\n\nLa base blanca permite que cada detalle del botín tome protagonismo. Logos, suelas, cordones, texturas y tecnologías se destacan mucho más sobre una superficie limpia, generando una estética premium y sofisticada."
+        },
+        {
+          "type": "text",
+          "id": "0020flc",
+          "content": "Minimalismo dentro de la cancha.\n\n\nLos botines predominantemente blancos transmiten una sensación de simplicidad y elegancia. Son modelos que no necesitan demasiados elementos para llamar la atención.\n\n\nEn algunos casos, el diseño apuesta por un blanco prácticamente puro. En otros, se incorporan pequeños contrastes que aportan personalidad sin perder la esencia limpia del botín.\n\n\nEs justamente esa combinación entre minimalismo, tecnología y diseño la que convierte a estos modelos en una de las opciones más buscadas por quienes buscan algo diferente."
+        },
+        {
+          "type": "text",
+          "id": "wwixv64",
+          "content": "Para todos los estilos de jugador.\n\n\nOtra de las grandes ventajas de esta tendencia es la variedad de siluetas y tecnologías disponibles. Hay opciones pensadas para velocidad, control, potencia y diferentes tipos de superficie.\n\n\nEsto permite que el jugador pueda elegir no solo por estética, sino también por las características que mejor se adaptan a su juego.\n\n\nPorque un botín blanco puede ser mucho más que una elección de color: puede representar una forma de entender el fútbol."
+        },
+        {
+          "type": "text",
+          "id": "l510dm3",
+          "content": "El blanco como protagonista.\n\n\nEn una época donde los lanzamientos buscan constantemente sorprender con colores y diseños cada vez más llamativos, los botines blancos encuentran su lugar justamente haciendo lo contrario."
+        },
+        {
+          "type": "text",
+          "id": "pxsmz7w",
+          "content": "Limpios. Elegantes. Modernos.\n\n\nUna estética que demuestra que, dentro de la cancha, menos también puede ser más.\n\n\nDescubrí nuestra selección de botines predominantemente blancos y encontrá el modelo que mejor representa tu estilo."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "oxayjjf",
       "slug": "el-final-de-una-era",
       "brand": "Nike",
@@ -6319,7 +6700,7 @@ window.BAG_DATA = {
         {
           "id": "p6",
           "title": "Productos en liquidación",
-          "content": "Los modelos marcados con rebaja o última unidad admiten cambio por talle dentro del mismo modelo, pero no admiten devolución con reintegro."
+          "content": "Los modelos marcados con rebaja o última unidad no admiten cambio ni devolución con reintegro."
         }
       ]
     },
