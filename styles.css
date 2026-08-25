@@ -287,6 +287,56 @@
   color: var(--bag-fg-2);
   max-width: 560px;
 }
+.bag-hero__shop-btn {
+  align-self: flex-start;
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  color: #0a0a0a;
+  border: none;
+  padding: 12px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+.bag-hero__shop-btn:hover { transform: translateY(-1px); opacity: 0.92; }
+
+/* ── Barra de beneficios (rotativa) ── */
+.bag-benefits-bar {
+  position: relative;
+  height: 34px;
+  background: #0a0a0a;
+  border-bottom: 1px solid var(--bag-line);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bag-benefits-bar__item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 16px;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+.bag-benefits-bar__item.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Hero drop panel (producto relacionado en el carrusel) */
 .bag-hero-drop {

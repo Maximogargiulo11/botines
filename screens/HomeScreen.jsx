@@ -125,6 +125,7 @@ function HomeScreen({ navigate }) {
                 article={a}
                 onClick={() => navigate(`/lanzamientos/${a.slug}`)}
                 onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
+                onShop={() => navigate('/marcas')}
                 slideIndex={i}
                 totalSlides={slides.length}
               />
@@ -166,34 +167,8 @@ function HomeScreen({ navigate }) {
         )}
       </div>
 
-      {secondary.length > 0 && (
-        <section className="bag-grid-4">
-          {secondary.map(a => (
-            <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-          ))}
-        </section>
-      )}
-
-      {featuredLaunches.map(a => (
-        <FeaturedLaunch
-          key={a.id}
-          article={a}
-          onClick={() => navigate(`/lanzamientos/${a.slug}`)}
-          onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
-        />
-      ))}
-
-      {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
-
-      {small.length > 0 && (
-        <section className="bag-grid-4 bag-grid-4--small">
-          {small.map(a => (
-            <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-          ))}
-        </section>
-      )}
-
-      <SectionRule label="CATÁLOGO" />
+      {/* Botines a la venta arriba: que se perciba como tienda apenas entrás */}
+      <SectionRule label="BOTINES EN STOCK" />
 
       <section className="bag-catalog-preview">
         <div className="bag-catalog-carousel-wrap">
@@ -223,6 +198,33 @@ function HomeScreen({ navigate }) {
           </button>
         </div>
       </section>
+
+      {secondary.length > 0 && (
+        <section className="bag-grid-4">
+          {secondary.map(a => (
+            <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+          ))}
+        </section>
+      )}
+
+      {featuredLaunches.map(a => (
+        <FeaturedLaunch
+          key={a.id}
+          article={a}
+          onClick={() => navigate(`/lanzamientos/${a.slug}`)}
+          onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
+        />
+      ))}
+
+      {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
+
+      {small.length > 0 && (
+        <section className="bag-grid-4 bag-grid-4--small">
+          {small.map(a => (
+            <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+          ))}
+        </section>
+      )}
 
     </main>
   );

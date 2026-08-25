@@ -1,7 +1,7 @@
 /* global React, BAG_DATA */
 
 /* Hero card (full-bleed, text overlay bottom-left) */
-function HeroArticle({ article, onClick, onProductClick, slideIndex, totalSlides }) {
+function HeroArticle({ article, onClick, onProductClick, onShop, slideIndex, totalSlides }) {
   let relProduct = null, relBrand = null, relModel = null;
   if (article.relatedProduct && BAG_DATA && BAG_DATA.products) {
     const { brand, model, colorwayId } = article.relatedProduct;
@@ -22,6 +22,12 @@ function HeroArticle({ article, onClick, onProductClick, slideIndex, totalSlides
           <div className="bag-eyebrow">{article.category}{article.brand ? ` · ${article.brand.toUpperCase()}` : ''}</div>
           <h1 className="bag-hero__title">{article.title}</h1>
           <p className="bag-hero__excerpt">{article.excerpt}</p>
+          {onShop && (
+            <button className="bag-hero__shop-btn" onClick={e => { e.stopPropagation(); onShop(); }}>
+              VER BOTINES
+              <svg viewBox="0 0 16 16" width="14" height="14" style={{ marginLeft: 8 }} fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M3 8 L13 8 M9 4 L13 8 L9 12"/></svg>
+            </button>
+          )}
         </div>
       </div>
       {relProduct && (

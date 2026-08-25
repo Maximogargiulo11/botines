@@ -30,6 +30,27 @@ function usePathRoute() {
   return [route, setRoute];
 }
 
+/* Barra de beneficios rotativa — señal de tienda arriba de todo */
+const BENEFITS = [
+  '🚚 Envíos a todo el país',
+  '💸 10% OFF pagando por transferencia',
+  '✨ 5% OFF suscribiéndote',
+];
+function BenefitsBar() {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setI(n => (n + 1) % BENEFITS.length), 3500);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <div className="bag-benefits-bar" role="status" aria-live="polite">
+      {BENEFITS.map((b, idx) => (
+        <span key={idx} className={`bag-benefits-bar__item${idx === i ? ' is-active' : ''}`}>{b}</span>
+      ))}
+    </div>
+  );
+}
+
 function App() {
   const [route, setRoute] = usePathRoute();
   const navigate = (path) => {
@@ -118,6 +139,7 @@ function App() {
 
   return (
     <div className="bag-app" style={{ '--bag-accent': accent.bg, '--bag-accent-fg': accent.fg, '--bag-font-serif': serifFamily }}>
+      <BenefitsBar />
       <Navbar route={route} navigate={navigate} cartCount={cart.length} onCartClick={() => setCartOpen(true)} />
       {screen}
       <Footer navigate={navigate} />
