@@ -1,6 +1,4 @@
 const { getSubscriberByKey, saveSubscriber, getKeyByToken, deleteToken } = require('./_subscribers');
-const { createCoupon } = require('./_coupons');
-const { sendCouponEmail } = require('./_email');
 
 const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
@@ -14,15 +12,11 @@ module.exports = async function handler(req, res) {
     if (!sub) return redirect('suscripcion-error');
 
     if (sub.status !== 'confirmed') {
-      const coupon = await createCoupon(sub.email);
       sub.status = 'confirmed';
       sub.confirmedAt = new Date().toISOString();
-      sub.couponCode = coupon.code;
-      sub.couponExpiresAt = coupon.expiresAt;
       sub.confirmToken = null;
       await saveSubscriber(sub);
       await deleteToken(token);
-      await sendCouponEmail(sub.email, sub.name, coupon.code, coupon.expiresAt);
     }
     return redirect('suscripcion-confirmada');
   } catch (err) {

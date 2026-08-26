@@ -31,8 +31,9 @@ function mockRes() { return { headers: null, ended: false, writeHead(c, h){ this
   res = mockRes();
   await handler({ query: { token: 'good' } }, res);
   assert.strictEqual(state.saved.status, 'confirmed');
-  assert.strictEqual(state.saved.couponCode, 'BAG-ABC123');
-  assert.strictEqual(couponMailedCode, 'BAG-ABC123');
+  assert.ok(state.saved.confirmedAt, 'marca confirmedAt');
+  assert.strictEqual(state.saved.couponCode, undefined, 'ya no genera cupón al suscribirse');
+  assert.strictEqual(couponMailedCode, null, 'ya no manda el mail del cupón');
   assert.strictEqual(state.tokenDeleted, true);
   assert.ok(res.headers.Location.endsWith('/suscripcion-confirmada'));
   console.log('OK confirm-subscription');

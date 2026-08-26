@@ -34,7 +34,7 @@ function usePathRoute() {
 const BENEFITS = [
   '🚚 Envíos a todo el país',
   '💸 10% OFF pagando por transferencia',
-  '✨ 5% OFF suscribiéndote',
+  '📩 Suscribite y recibí los lanzamientos antes que nadie',
 ];
 function BenefitsBar() {
   const [i, setI] = useState(0);
@@ -265,7 +265,7 @@ function SubscriptionResultScreen({ ok, navigate }) {
         <h1 className="bag-payment-result__title">{ok ? '¡Suscripción confirmada!' : 'No pudimos confirmar'}</h1>
         <p className="bag-payment-result__body">
           {ok
-            ? 'Te enviamos tu cupón de 5% de descuento por email. Revisá tu bandeja (y spam).'
+            ? '¡Listo! Ya sos parte. Vas a recibir los nuevos lanzamientos y drops antes que nadie.'
             : 'El link no es válido o ya expiró. Probá suscribirte de nuevo desde la página.'}
         </p>
         <div className="bag-payment-result__actions">

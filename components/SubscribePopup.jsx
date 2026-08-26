@@ -65,14 +65,14 @@ function SubscribePopup({ route }) {
           <div className="bag-sub__body">
             <div className="bag-sub__eyebrow">¡Casi listo!</div>
             <h2 className="bag-sub__title">Revisá tu email</h2>
-            <p className="bag-sub__text">Te mandamos un correo para confirmar tu email. Al confirmarlo recibís tu <strong>cupón de 5%</strong>.</p>
+            <p className="bag-sub__text">Te mandamos un correo para confirmar tu email. Al confirmarlo, vas a recibir los <strong>nuevos lanzamientos antes que nadie</strong>.</p>
             <button className="bag-btn bag-btn--primary bag-btn--block" onClick={close}>Listo</button>
           </div>
         ) : (
           <div className="bag-sub__body">
-            <div className="bag-sub__eyebrow">Ofertas y novedades</div>
-            <h2 className="bag-sub__title">5% de descuento en tu compra</h2>
-            <p className="bag-sub__text">Suscribite y recibí un cupón de 5%. Pagando por transferencia se suma al 10% → <strong>15% off</strong>.</p>
+            <div className="bag-sub__eyebrow">Novedades exclusivas</div>
+            <h2 className="bag-sub__title">Los lanzamientos, antes que nadie</h2>
+            <p className="bag-sub__text">Suscribite y recibí por mail los <strong>nuevos botines y drops</strong> apenas salen, antes que el resto.</p>
             <form onSubmit={submit}>
               <input className="bag-sub__input" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
               <input className="bag-sub__input" type="text" placeholder="Nombre" value={name} onChange={(e) => setName(e.target.value)} />

@@ -92,7 +92,7 @@ async function sendConfirmSubscription(email, name, token) {
     <div style="font-family: Arial, Helvetica, sans-serif; color:#111827; line-height:1.6; font-size:15px;">
       <p>¡Hola, ${esc(name)}!</p>
       <p>Gracias por sumarte a <strong>Botines Alta Gama Córdoba</strong>.</p>
-      <p>Confirmá tu email para recibir tu <strong>cupón de 5% de descuento</strong> y enterarte de los nuevos lanzamientos:</p>
+      <p>Confirmá tu email para ser de los <strong>primeros en enterarte de los nuevos lanzamientos y drops</strong>, antes que nadie:</p>
       <p><a href="${link}" style="display:inline-block;background:#111827;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;">Confirmar mi email</a></p>
       <p style="font-size:13px;color:#6b7280;">Si no fuiste vos, ignorá este mail.</p>
     </div>`;
