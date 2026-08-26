@@ -55,6 +55,19 @@ module.exports = async function handler(req, res) {
   try {
     const { Resend } = require('resend');
     const resend = new Resend(apiKey);
+
+    // PRUEBA: enviar solo a un mail (no toca la lista, no registra dedup)
+    const testEmail = String((req.body && req.body.testEmail) || '').trim();
+    if (testEmail) {
+      if (!/^\S+@\S+\.\S+$/.test(testEmail)) return res.status(400).json({ error: 'Email de prueba inválido' });
+      const { error } = await resend.emails.send({
+        from: 'Botines Alta Gama Córdoba <pedidos@botinesaltagamacba.com>',
+        to: testEmail, subject: `[PRUEBA] ${subject}`, html,
+      });
+      if (error) return res.status(502).json({ error: error.message || 'Resend rechazó el envío de prueba' });
+      return res.status(200).json({ sent: 1, test: true });
+    }
+
     const recipients = (await listSubscribers()).filter(s => s.status === 'confirmed');
     let sent = 0, failed = 0;
     for (const s of recipients) {

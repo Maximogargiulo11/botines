@@ -637,31 +637,48 @@ function ArticleEditor({ article, onSave, onCancel, token, data, adminSecret, no
       .catch(() => {});
   }, [article.id, adminSecret]);
 
+  const buildEmail = () => {
+    const SITE = 'https://www.botinesaltagamacba.com';
+    const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const absCover = f.cover ? (/^https?:/i.test(f.cover) ? f.cover : SITE + '/' + f.cover.replace(/^\/+/, '')) : '';
+    const imageUrl = absCover ? 'https://images.weserv.nl/?url=' + encodeURIComponent(absCover.replace(/^https?:\/\//, '')) + '&w=600&output=jpg&q=82' : '';
+    const bodyHtml = `<h2 style="font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:700;margin:0 0 10px;color:#111827;">${esc(f.title)}</h2>`
+      + (f.excerpt ? `<p style="margin:0;color:#374151;">${esc(f.excerpt)}</p>` : '');
+    return { subject: f.title.trim(), bodyHtml, imageUrl, linkUrl: `${SITE}/lanzamientos/${f.slug}`, linkLabel: 'Leer la noticia' };
+  };
+
+  const sendTest = async () => {
+    if (!f.title.trim()) { notify('Poné un título antes de probar.', 'error'); return; }
+    const email = window.prompt('Enviar una PRUEBA solo a este mail (no le llega a nadie más):', '');
+    if (!email || !email.trim()) return;
+    setNlSending(true);
+    try {
+      const res = await fetch('/api/send-newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
+        body: JSON.stringify({ ...buildEmail(), testEmail: email.trim() }),
+      });
+      const d = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(d.error || `HTTP ${res.status}`);
+      notify(`Prueba enviada a ${email.trim()} ✓ (revisá tu casilla y spam)`, 'success');
+    } catch (e) { notify(`Error en la prueba: ${e.message}`, 'error'); }
+    finally { setNlSending(false); }
+  };
+
   const sendNewsletter = async (forceResend) => {
     if (!article.id) { notify('Guardá el lanzamiento primero para poder enviarlo por mail.', 'error'); return; }
     if (!f.title.trim() || !f.slug.trim()) { notify('El lanzamiento necesita título y slug.', 'error'); return; }
     const msg = nlSentAt
       ? `Este lanzamiento ya se envió el ${new Date(nlSentAt).toLocaleString('es-AR')}.\n\n¿Reenviarlo igual a los suscriptores confirmados?`
-      : `¿Enviar "${f.title}" por mail a los suscriptores confirmados?\n\nAsegurate de haber GUARDADO el lanzamiento y esperado el deploy (~1-2 min) para que el link funcione.`;
+      : `¿Enviar "${f.title}" por mail a TODOS los suscriptores confirmados?\n\nAsegurate de haber GUARDADO el lanzamiento y esperado el deploy (~1-2 min) para que el link funcione.`;
     if (!window.confirm(msg)) return;
-
-    const SITE = 'https://www.botinesaltagamacba.com';
-    const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const absCover = f.cover ? (/^https?:/i.test(f.cover) ? f.cover : SITE + '/' + f.cover.replace(/^\/+/, '')) : '';
-    const emailImage = absCover ? 'https://images.weserv.nl/?url=' + encodeURIComponent(absCover.replace(/^https?:\/\//, '')) + '&w=600&output=jpg&q=82' : '';
-    const bodyHtml = `<h2 style="font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:700;margin:0 0 10px;color:#111827;">${esc(f.title)}</h2>`
-      + (f.excerpt ? `<p style="margin:0;color:#374151;">${esc(f.excerpt)}</p>` : '');
 
     setNlSending(true);
     try {
       const res = await fetch('/api/send-newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
-        body: JSON.stringify({
-          subject: f.title.trim(), bodyHtml, imageUrl: emailImage,
-          linkUrl: `${SITE}/lanzamientos/${f.slug}`, linkLabel: 'Leer la noticia',
-          articleId: article.id, force: !!forceResend || !!nlSentAt,
-        }),
+        body: JSON.stringify({ ...buildEmail(), articleId: article.id, force: !!forceResend || !!nlSentAt }),
       });
       const d = await res.json().catch(() => ({}));
       if (res.status === 409 && d.alreadySent) {
@@ -688,6 +705,14 @@ function ArticleEditor({ article, onSave, onCancel, token, data, adminSecret, no
           {nlSentAt && <div className="adm-text" style={{ fontSize: 12, color: 'var(--a-muted, #9ca3af)', marginTop: 2 }}>📧 Enviado a suscriptores el {new Date(nlSentAt).toLocaleString('es-AR')}</div>}
         </div>
         <div className="adm-editor__actions">
+          <Btn
+            variant="ghost"
+            disabled={nlSending || !f.title.trim()}
+            title="Enviar una prueba a un solo mail (no le llega a los suscriptores)"
+            onClick={sendTest}
+          >
+            📨 Prueba
+          </Btn>
           <Btn
             variant="ghost"
             disabled={nlSending || !article.id}
