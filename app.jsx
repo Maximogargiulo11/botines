@@ -277,3 +277,5 @@ function SubscriptionResultScreen({ ok, navigate }) {
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+/* deploy: suscripción sin cupón */
