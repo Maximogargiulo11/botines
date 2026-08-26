@@ -2,6 +2,7 @@ const { put, list, get } = require('@vercel/blob');
 const crypto = require('crypto');
 const { sendConfirmationEmail } = require('./_email');
 const { markCouponUsed } = require('./_coupons');
+const { markRecovered } = require('./_carts');
 
 module.exports = async function handler(req, res) {
   // MercadoPago also sends a GET to validate the endpoint
@@ -65,6 +66,7 @@ module.exports = async function handler(req, res) {
 
     if (shipping) {
       await saveOrder(order);
+      await markRecovered(shipping.email);
       if (payment.status === 'approved') {
         await trackGA4Purchase(order);
         if (meta.coupon) await markCouponUsed(meta.coupon);

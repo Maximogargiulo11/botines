@@ -1,5 +1,5 @@
 /* global React */
-const { useState: useState_checkout, useEffect: useEffect_checkout } = React;
+const { useState: useState_checkout, useEffect: useEffect_checkout, useRef: useRef_checkout } = React;
 
 const PROVINCIAS_AR = [
   'Buenos Aires', 'CABA', 'Catamarca', 'Chaco', 'Chubut', 'Córdoba', 'Corrientes',
@@ -46,8 +46,51 @@ function CheckoutScreen({ cart, navigate }) {
   const [transferError, setTransferError] = useState_checkout(null);
   const [coupon, setCoupon] = useState_checkout('');
   const [couponState, setCouponState] = useState_checkout(null); // null | 'checking' | 'valid' | 'invalid'
+  const lastSavedRef = useRef_checkout('');
 
   const subtotal = cart.reduce((sum, it) => sum + (it.price || 0) * (it.qty || 1), 0);
+
+  const validateCouponRemote = async (code) => {
+    setCouponState('checking');
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'validate-coupon', code }),
+      });
+      const d = await res.json();
+      setCouponState(d.valid ? 'valid' : 'invalid');
+    } catch { setCouponState('invalid'); }
+  };
+
+  // Cupón de recuperación (viene del mail de carrito abandonado, toque 3):
+  // lo dejó RecoverCartScreen en sessionStorage. Se pre-carga y valida.
+  useEffect_checkout(() => {
+    let rc = null;
+    try { rc = sessionStorage.getItem('bag:recover:coupon'); } catch {}
+    if (rc) {
+      try { sessionStorage.removeItem('bag:recover:coupon'); } catch {}
+      const code = rc.trim().toUpperCase();
+      setCoupon(code);
+      validateCouponRemote(code);
+    }
+  }, []);
+
+  // Captura del carrito para recordatorios: al dejar un email válido con el
+  // carrito no vacío, lo guardamos en el servidor. Throttle por firma para no
+  // re-postear si no cambió nada.
+  const saveCartRemote = async () => {
+    const em = form.email.trim().toLowerCase();
+    if (!/^\S+@\S+\.\S+$/.test(em) || cart.length === 0) return;
+    const sig = em + '|' + JSON.stringify(cart.map(it => [it.id, it.size, it.qty]));
+    if (sig === lastSavedRef.current) return;
+    lastSavedRef.current = sig;
+    try {
+      await fetch('/api/checkout', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'save-cart', email: em, name: form.nombre.trim(), items: cart }),
+      });
+    } catch {}
+  };
 
   // Meta Pixel: InitiateCheckout al entrar al checkout con productos
   useEffect_checkout(() => {
@@ -69,15 +112,7 @@ function CheckoutScreen({ cart, navigate }) {
   const checkCoupon = async () => {
     const code = coupon.trim();
     if (!code) { setCouponState(null); return; }
-    setCouponState('checking');
-    try {
-      const res = await fetch('/api/validate-coupon', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code }),
-      });
-      const d = await res.json();
-      setCouponState(d.valid ? 'valid' : 'invalid');
-    } catch { setCouponState('invalid'); }
+    await validateCouponRemote(code);
   };
 
   const handleTransferConfirm = async () => {
@@ -179,7 +214,7 @@ function CheckoutScreen({ cart, navigate }) {
                 </CheckoutField>
               </div>
               <CheckoutField label="Email" error={errors.email}>
-                <input value={form.email} onChange={e => updateField('email', e.target.value)} type="email" placeholder="tu@email.com" autoComplete="email" />
+                <input value={form.email} onChange={e => updateField('email', e.target.value)} onBlur={saveCartRemote} type="email" placeholder="tu@email.com" autoComplete="email" />
               </CheckoutField>
               <CheckoutField label="DNI" error={errors.dni}>
                 <input value={form.dni} onChange={e => updateField('dni', e.target.value)} inputMode="numeric" placeholder="Ej. 30123456" />

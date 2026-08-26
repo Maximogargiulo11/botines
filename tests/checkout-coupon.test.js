@@ -12,6 +12,11 @@ require.cache[coupPath] = { id: coupPath, filename: coupPath, loaded: true, expo
   validateCoupon: async (c) => c === 'BAG-OK' ? { valid: true, coupon: { code: 'BAG-OK' } } : { valid: false, reason: 'x' },
   markCouponUsed: async () => {},
 }};
+const cartsPath = require.resolve('../api/_carts.js');
+let markedRecovered = null;
+require.cache[cartsPath] = { id: cartsPath, filename: cartsPath, loaded: true, exports: {
+  markRecovered: async (email) => { markedRecovered = email; },
+}};
 const blobPath = require.resolve('@vercel/blob', { paths: [path.join(__dirname, '..')] });
 let putBody = null;
 require.cache[blobPath] = { id: blobPath, filename: blobPath, loaded: true, exports: {
@@ -32,5 +37,6 @@ const shipping = { nombre:'A', apellido:'B', email:'a@b.com', dni:'1', provincia
   await handler({ method:'POST', body:{ items:[{ id:'p1', name:'N', colorway:'C', size:'42', qty:1 }], shipping, coupon:'BAG-OK' } }, res);
   assert.strictEqual(putBody.amount, 85000, 'transferencia con cupón = 85.000');
   assert.strictEqual(putBody.coupon, 'BAG-OK', 'guarda el cupón en el pedido');
+  assert.strictEqual(markedRecovered, 'a@b.com', 'marca el carrito como recuperado con el email de envío');
   console.log('OK checkout-coupon');
 })().catch(e => { console.error(e); process.exit(1); });

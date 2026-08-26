@@ -129,6 +129,7 @@ function App() {
   else if (parts[0] === 'politica-cambios') screen = <PoliticaScreen navigate={navigate} />;
   else if (parts[0] === 'faq') screen = <FaqScreen navigate={navigate} />;
   else if (parts[0] === 'checkout') screen = <CheckoutScreen cart={cart} navigate={navigate} />;
+  else if (parts[0] === 'recuperar') screen = <RecoverCartScreen navigate={navigate} />;
   else if (parts[0] === 'pago-exitoso')  screen = <PaymentResultScreen status="exitoso"  navigate={navigate} clearCart={clearCart} />;
   else if (parts[0] === 'pago-transferencia') screen = <PaymentResultScreen status="transferencia" navigate={navigate} clearCart={clearCart} />;
   else if (parts[0] === 'pago-fallido')  screen = <PaymentResultScreen status="fallido"  navigate={navigate} />;
@@ -252,6 +253,51 @@ function PaymentResultScreen({ status, navigate, clearCart }) {
           )}
           <button className="bag-btn bag-btn--primary" onClick={() => navigate('/')}>Volver al inicio</button>
         </div>
+      </div>
+    </main>
+  );
+}
+
+/* Recuperación de carrito abandonado (link de 1 clic desde el mail).
+   Decodifica el carrito del querystring, lo rearma en localStorage con
+   precios ACTUALES del catálogo, y va al checkout. Si viene ?coupon, lo deja
+   listo para pre-cargar. Usa navegación completa para que App re-lea el carrito. */
+function RecoverCartScreen() {
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const c = params.get('c');
+      const coupon = params.get('coupon');
+      if (c) {
+        const decoded = JSON.parse(atob(c));
+        const products = (window.BAG_DATA && window.BAG_DATA.products) || {};
+        const byId = {};
+        for (const key of Object.keys(products)) {
+          for (const v of products[key]) byId[v.id] = v;
+        }
+        const items = [];
+        for (const entry of (Array.isArray(decoded) ? decoded : [])) {
+          const p = byId[entry.id];
+          if (!p) continue;
+          items.push({
+            id: p.id, name: p.name, colorway: p.colorway, price: p.price,
+            size: entry.sz, unit: entry.u || 'eu',
+            image: (p.images && p.images[0]) || '', qty: Math.max(1, Number(entry.q) || 1),
+          });
+        }
+        if (items.length) saveCart(items);
+      }
+      if (coupon) { try { sessionStorage.setItem('bag:recover:coupon', coupon); } catch {} }
+    } catch (e) { /* link inválido: seguimos igual al checkout */ }
+    // Navegación completa: App vuelve a montar y lee el carrito recién guardado.
+    window.location.replace('/checkout');
+  }, []);
+  return (
+    <main className="bag-payment-result">
+      <div className="bag-payment-result__box">
+        <div className="bag-payment-result__icon" style={{ color: '#22c55e' }}>🛒</div>
+        <h1 className="bag-payment-result__title">Recuperando tu carrito…</h1>
+        <p className="bag-payment-result__body">Un segundo, te llevamos a completar tu compra.</p>
       </div>
     </main>
   );

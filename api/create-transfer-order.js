@@ -1,6 +1,7 @@
 const { put } = require('@vercel/blob');
 const { getTrustedPrice } = require('./_products');
 const { validateCoupon } = require('./_coupons');
+const { markRecovered } = require('./_carts');
 
 const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'email', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
 
@@ -76,6 +77,8 @@ module.exports = async function handler(req, res) {
       contentType: 'application/json',
       allowOverwrite: true,
     });
+    // El pedido se concretó: cortamos la secuencia de recordatorios de este email.
+    await markRecovered(shipping.email);
     return res.status(200).json({ ok: true, orderId });
   } catch (err) {
     console.error('create-transfer-order error:', err);
