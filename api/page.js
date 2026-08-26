@@ -93,7 +93,7 @@ module.exports = async function handler(req, res) {
       const url = SITE_URL + pathname;
       const block = buildMetaTags(meta, url);
       html = html.replace(/<title>[\s\S]*?<\/title>/i,
-        `<title>${esc(meta.title)} · Botines Alta Gama CBA</title>\n  ${block}`);
+        `<title>${esc(meta.title)} · Botines Alta Gama Córdoba</title>\n  ${block}`);
     }
   } catch (err) {
     console.error('page.js: error armando meta OG', err);
