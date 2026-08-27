@@ -5,7 +5,12 @@ on:
     # Cada 15 minutos. La imprecisión de unos minutos es irrelevante para
     # ventanas de 1h/24h/48h.
     - cron: '*/15 * * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      hour_ms:
+        description: 'Modo test: comprimir la unidad de tiempo en ms (ej. 1000 = 1 seg). Vacío = 1 hora real.'
+        required: false
+        default: ''
 
 jobs:
   run:
@@ -21,3 +26,4 @@ jobs:
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           SITE_URL: ${{ secrets.SITE_URL }}
+          REMINDER_HOUR_MS: ${{ github.event.inputs.hour_ms }}
