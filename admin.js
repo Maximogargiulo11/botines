@@ -756,13 +756,13 @@ function ArticleEditor({ article, onSave, onCancel, token, data, adminSecret, no
           <Field>
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.showInHome} onChange={e => set('showInHome', e.target.checked)} />
-              <span>Mostrar en el home</span>
+              <span>Mostrar en la página de Lanzamientos</span>
             </label>
           </Field>
           <Field>
             <label className="adm-checkbox">
               <input type="checkbox" checked={f.featured} onChange={e => set('featured', e.target.checked)} />
-              <span>Mostrar en el carrusel principal del home (arriba de todo)</span>
+              <span>Destacar en Inicio (carrusel principal, arriba de todo — también aparece en Lanzamientos)</span>
             </label>
           </Field>
           <Field>

@@ -1,7 +1,8 @@
 /* global React, BAG_DATA, HeroArticle, ArticleCard, SplitArticle, SmallArticleCard, ProductPreviewCard, SectionRule, FeaturedLaunch */
 const { useState, useEffect, useRef } = React;
 
-function HomeScreen({ navigate }) {
+function HomeScreen({ navigate, variant = 'lanzamientos' }) {
+  const isInicio = variant === 'inicio';
   const count    = (BAG_DATA.config && BAG_DATA.config.homepageArticleCount) || 8;
   const homeArticles = BAG_DATA.articles.filter(a => a.showInHome !== false);
   const all      = homeArticles.slice(0, count);
@@ -167,6 +168,16 @@ function HomeScreen({ navigate }) {
         )}
       </div>
 
+      {/* Inicio: CTA para ir al feed completo de lanzamientos */}
+      {isInicio && (
+        <div className="bag-catalog-preview__cta">
+          <button className="bag-btn bag-btn--ghost" onClick={() => navigate('/lanzamientos')}>
+            VER TODOS LOS LANZAMIENTOS
+            <svg viewBox="0 0 16 16" width="14" height="14" style={{ marginLeft: 8 }} fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 8 L13 8 M9 4 L13 8 L9 12"/></svg>
+          </button>
+        </div>
+      )}
+
       {/* Botines a la venta arriba: que se perciba como tienda apenas entrás */}
       <SectionRule label="BOTINES EN STOCK" />
 
@@ -199,31 +210,37 @@ function HomeScreen({ navigate }) {
         </div>
       </section>
 
-      {secondary.length > 0 && (
-        <section className="bag-grid-4">
-          {secondary.map(a => (
-            <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+      {/* El feed completo de artículos solo en la página de Lanzamientos.
+          En Inicio queda solo el carrusel de destacados + botines. */}
+      {!isInicio && (
+        <>
+          {secondary.length > 0 && (
+            <section className="bag-grid-4">
+              {secondary.map(a => (
+                <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+              ))}
+            </section>
+          )}
+
+          {featuredLaunches.map(a => (
+            <FeaturedLaunch
+              key={a.id}
+              article={a}
+              onClick={() => navigate(`/lanzamientos/${a.slug}`)}
+              onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
+            />
           ))}
-        </section>
-      )}
 
-      {featuredLaunches.map(a => (
-        <FeaturedLaunch
-          key={a.id}
-          article={a}
-          onClick={() => navigate(`/lanzamientos/${a.slug}`)}
-          onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
-        />
-      ))}
+          {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
 
-      {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
-
-      {small.length > 0 && (
-        <section className="bag-grid-4 bag-grid-4--small">
-          {small.map(a => (
-            <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-          ))}
-        </section>
+          {small.length > 0 && (
+            <section className="bag-grid-4 bag-grid-4--small">
+              {small.map(a => (
+                <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+              ))}
+            </section>
+          )}
+        </>
       )}
 
     </main>

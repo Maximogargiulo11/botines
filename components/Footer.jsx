@@ -10,7 +10,8 @@ function Footer({ navigate }) {
           <span className="bag-footer__brand-meta">CBA</span>
         </a>
         <nav className="bag-footer__nav">
-          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>LANZAMIENTOS</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>INICIO</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/lanzamientos'); }}>LANZAMIENTOS</a>
           <a href="#" onClick={(e) => { e.preventDefault(); navigate('/marcas'); }}>BOTINES</a>
         </nav>
         <div className="bag-footer__social">

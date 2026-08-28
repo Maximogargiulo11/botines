@@ -52,9 +52,14 @@ function Navbar({ route, navigate, cartCount, onCartClick }) {
         {/* Center nav (desktop) */}
         <nav className="bag-nav__center" aria-label="Navegación principal">
           <a
-            className={`bag-nav__link ${route.startsWith('/lanzamientos') || route === '/' ? 'is-active' : ''}`}
+            className={`bag-nav__link ${route === '/' ? 'is-active' : ''}`}
             href="#"
             onClick={(e) => { e.preventDefault(); navigate('/'); }}
+          >INICIO</a>
+          <a
+            className={`bag-nav__link ${route.startsWith('/lanzamientos') ? 'is-active' : ''}`}
+            href="#"
+            onClick={(e) => { e.preventDefault(); navigate('/lanzamientos'); }}
           >LANZAMIENTOS</a>
           <div
             className="bag-nav__dropdown-wrap"
@@ -97,7 +102,8 @@ function Navbar({ route, navigate, cartCount, onCartClick }) {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="bag-nav__mobile">
-          <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); navigate('/'); }}>LANZAMIENTOS</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); navigate('/'); }}>INICIO</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); navigate('/lanzamientos'); }}>LANZAMIENTOS</a>
           <div className="bag-nav__mobile-group">
             <div className="bag-nav__mobile-group-label">BOTINES</div>
             {brands.map(b => (

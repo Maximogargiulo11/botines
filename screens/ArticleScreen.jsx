@@ -258,7 +258,7 @@ function ArticleScreen({ slug, navigate }) {
         <nav className="bag-breadcrumb">
           <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Inicio</a>
           <span>›</span>
-          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Lanzamientos</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); navigate('/lanzamientos'); }}>Lanzamientos</a>
           <span>›</span>
           <span className="is-current">{article.title}</span>
         </nav>

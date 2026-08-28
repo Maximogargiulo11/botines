@@ -120,7 +120,8 @@ function App() {
   /* Parse route */
   const parts = route.split('/').filter(Boolean);
   let screen;
-  if (parts.length === 0) screen = <HomeScreen navigate={navigate} />;
+  if (parts.length === 0) screen = <HomeScreen variant="inicio" navigate={navigate} />;
+  else if (parts[0] === 'lanzamientos' && !parts[1]) screen = <HomeScreen variant="lanzamientos" navigate={navigate} />;
   else if (parts[0] === 'lanzamientos') screen = <ArticleScreen slug={parts[1]} navigate={navigate} />;
   else if (parts[0] === 'marcas' && !parts[1]) screen = <BrandsScreen navigate={navigate} />;
   else if (parts[0] === 'marcas' && parts[1] && !parts[2]) screen = <BrandScreen brandSlug={parts[1]} navigate={navigate} />;
@@ -136,7 +137,7 @@ function App() {
   else if (parts[0] === 'pago-pendiente') screen = <PaymentResultScreen status="pendiente" navigate={navigate} />;
   else if (parts[0] === 'suscripcion-confirmada') screen = <SubscriptionResultScreen ok navigate={navigate} />;
   else if (parts[0] === 'suscripcion-error')      screen = <SubscriptionResultScreen navigate={navigate} />;
-  else screen = <HomeScreen navigate={navigate} />;
+  else screen = <HomeScreen variant="inicio" navigate={navigate} />;
 
   return (
     <div className="bag-app" style={{ '--bag-accent': accent.bg, '--bag-accent-fg': accent.fg, '--bag-font-serif': serifFamily }}>
