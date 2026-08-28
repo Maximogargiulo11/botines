@@ -114,7 +114,8 @@ function HomeScreen({ navigate, variant = 'lanzamientos' }) {
   return (
     <main className="bag-home">
 
-      {/* ── Hero carousel ── */}
+      {/* ── Hero carousel: solo en Inicio ── */}
+      {isInicio && (
       <div className="bag-hero-carousel">
         <div
           className="bag-hero-carousel__track"
@@ -167,6 +168,7 @@ function HomeScreen({ navigate, variant = 'lanzamientos' }) {
           </>
         )}
       </div>
+      )}
 
       {/* Inicio: CTA para ir al feed completo de lanzamientos */}
       {isInicio && (
@@ -178,7 +180,8 @@ function HomeScreen({ navigate, variant = 'lanzamientos' }) {
         </div>
       )}
 
-      {/* Botines a la venta arriba: que se perciba como tienda apenas entrás */}
+      {/* Botines en stock: solo en Inicio */}
+      {isInicio && (<>
       <SectionRule label="BOTINES EN STOCK" />
 
       <section className="bag-catalog-preview">
@@ -209,38 +212,19 @@ function HomeScreen({ navigate, variant = 'lanzamientos' }) {
           </button>
         </div>
       </section>
+      </>)}
 
-      {/* El feed completo de artículos solo en la página de Lanzamientos.
-          En Inicio queda solo el carrusel de destacados + botines. */}
+      {/* Lanzamientos: grilla uniforme de todos los artículos que el admin muestra.
+          Sin hero ni carrusel de botines; en mobile se ven de a 2. */}
       {!isInicio && (
-        <>
-          {secondary.length > 0 && (
-            <section className="bag-grid-4">
-              {secondary.map(a => (
-                <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-              ))}
-            </section>
-          )}
-
-          {featuredLaunches.map(a => (
-            <FeaturedLaunch
-              key={a.id}
-              article={a}
-              onClick={() => navigate(`/lanzamientos/${a.slug}`)}
-              onProductClick={(brand, model, id) => navigate(`/marcas/${brand}/${model}/${id}`)}
-            />
-          ))}
-
-          {wide && <SplitArticle article={wide} onClick={() => navigate(`/lanzamientos/${wide.slug}`)} />}
-
-          {small.length > 0 && (
-            <section className="bag-grid-4 bag-grid-4--small">
-              {small.map(a => (
-                <SmallArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
-              ))}
-            </section>
-          )}
-        </>
+        <section className="bag-lanz">
+          <SectionRule label="LANZAMIENTOS" />
+          <div className="bag-lanz-grid">
+            {homeArticles.map(a => (
+              <ArticleCard key={a.id} article={a} onClick={() => navigate(`/lanzamientos/${a.slug}`)} />
+            ))}
+          </div>
+        </section>
       )}
 
     </main>

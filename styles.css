@@ -626,6 +626,21 @@
 @media (max-width: 980px) { .bag-grid-4 { grid-template-columns: repeat(2, 1fr); } .bag-grid-3 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .bag-grid-4 { grid-template-columns: 1fr; } .bag-grid-3 { grid-template-columns: 1fr; } }
 
+/* ============ LANZAMIENTOS (grilla uniforme) ============ */
+.bag-lanz { max-width: var(--bag-content-max); margin: 0 auto; padding-bottom: 64px; }
+.bag-lanz-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 var(--bag-gutter);
+}
+@media (max-width: 760px) { .bag-lanz-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+@media (max-width: 560px) {
+  .bag-lanz-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; padding: 0 var(--bag-gutter-mob); }
+  .bag-lanz-grid .bag-article-card { gap: 8px; }
+  .bag-lanz-grid .bag-article-card__title { font-size: var(--bag-fs-sm); }
+}
+
 /* ============ ARTICLE CARDS ============ */
 .bag-article-card { cursor: pointer; display: flex; flex-direction: column; gap: 14px; }
 .bag-article-card__media { aspect-ratio: 4/3; overflow: hidden; background: #000; }
