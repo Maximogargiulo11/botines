@@ -174,7 +174,7 @@ function HomeScreen({ navigate, variant = 'lanzamientos' }) {
       {isInicio && (
         <div className="bag-catalog-preview__cta">
           <button className="bag-btn bag-btn--ghost" onClick={() => navigate('/lanzamientos')}>
-            VER TODOS LOS LANZAMIENTOS
+            VER TODO
             <svg viewBox="0 0 16 16" width="14" height="14" style={{ marginLeft: 8 }} fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 8 L13 8 M9 4 L13 8 L9 12"/></svg>
           </button>
         </div>
