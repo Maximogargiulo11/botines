@@ -82,9 +82,15 @@ module.exports = async function handler(req, res) {
 };
 
 async function trackGA4Purchase(order) {
+  // Credenciales del Measurement Protocol de GA4. Se leen de variables de
+  // entorno (configuralas en Vercel); el fallback mantiene el tracking hasta
+  // que estén seteadas. El api_secret es sensible: rotalo en GA4 y movelo a
+  // GA4_API_SECRET para dejar de tenerlo en el código.
+  const measurementId = process.env.GA4_MEASUREMENT_ID || 'G-EY02HQBMZJ';
+  const apiSecret = process.env.GA4_API_SECRET || 'rB-0yIapRsW-xkMNpp3wvw';
   try {
     await fetch(
-      'https://www.google-analytics.com/mp/collect?measurement_id=G-EY02HQBMZJ&api_secret=rB-0yIapRsW-xkMNpp3wvw',
+      `https://www.google-analytics.com/mp/collect?measurement_id=${measurementId}&api_secret=${apiSecret}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

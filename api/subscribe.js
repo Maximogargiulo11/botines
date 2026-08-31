@@ -1,9 +1,11 @@
 const crypto = require('crypto');
 const { getSubscriber, saveSubscriber, saveToken, emailKey } = require('./_subscribers');
 const { sendConfirmSubscription } = require('./_email');
+const { limited } = require('./_ratelimit');
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Método no permitido' });
+  if (limited(req, res, { bucket: 'subscribe', limit: 5, windowMs: 60 * 1000 })) return;
   const { email, name, website } = req.body || {};
   if (website) return res.status(200).json({ ok: true }); // honeypot: bot
 

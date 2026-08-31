@@ -1,11 +1,13 @@
 const { validateCoupon, COUPON_DISCOUNT } = require('./_coupons');
 const { getTrustedPrice } = require('./_products');
 const { getCart, saveCart } = require('./_carts');
+const { limited } = require('./_ratelimit');
 
 // Endpoint consolidado del checkout (reemplaza a validate-coupon para no pasar
 // el tope de 12 Serverless Functions de Vercel Hobby). Enruta por `action`.
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Método no permitido' });
+  if (limited(req, res, { bucket: 'checkout', limit: 30, windowMs: 60 * 1000 })) return;
   const { action } = req.body || {};
 
   if (action === 'validate-coupon') {

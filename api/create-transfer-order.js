@@ -2,11 +2,13 @@ const { put } = require('@vercel/blob');
 const { getTrustedPrice } = require('./_products');
 const { validateCoupon } = require('./_coupons');
 const { markRecovered } = require('./_carts');
+const { limited } = require('./_ratelimit');
 
 const REQUIRED_SHIPPING_FIELDS = ['nombre', 'apellido', 'email', 'dni', 'provincia', 'localidad', 'direccion', 'codigoPostal', 'celular'];
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  if (limited(req, res, { bucket: 'transfer-order', limit: 15, windowMs: 60 * 1000 })) return;
 
   const { items, shipping, coupon } = req.body || {};
   if (!items || !items.length) return res.status(400).json({ error: 'El carrito está vacío' });
