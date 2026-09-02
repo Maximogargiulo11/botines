@@ -67,7 +67,7 @@ window.BAG_DATA = {
         {
           "type": "image",
           "id": "ljq2tfy",
-          "src": "assets/1788367968018-IMG_3160.jpeg",
+          "src": "assets/1788374712000-IMG_3674.jpeg",
           "width": "",
           "height": ""
         },
