@@ -117,7 +117,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -299,7 +299,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -382,7 +382,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -440,7 +440,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -498,7 +498,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -600,7 +600,7 @@ window.BAG_DATA = {
       "relatedProduct": null,
       "showFeaturedOnHome": false,
       "showInHome": true,
-      "featuredWide": true
+      "featuredWide": false
     },
     {
       "id": "7r8o6n5",
@@ -620,7 +620,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -729,7 +729,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -880,7 +880,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -1203,7 +1203,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
