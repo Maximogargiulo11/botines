@@ -11,6 +11,95 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "7unyex7",
+      "slug": "se-partio-en-pleno-partido",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "¡Se partió en pleno partido!",
+      "excerpt": "El increíble accidente que sufrió Colby Donovan con sus Nike Mercurial Vapor 17 SG ‘Breakout’",
+      "date": "02 de Septiembre de 2026",
+      "cover": "assets/1788367805001-F0D941F1-F7B6-4A46-880E-FFF84253E904.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1788367860494-IMG_3156.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1788367848320-IMG_3156.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "lqi75rc",
+          "content": "¿Un botín que no pudo seguir el ritmo? 👀"
+        },
+        {
+          "type": "image",
+          "id": "xvr1lyt",
+          "src": "assets/1788367894080-IMG_3157.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ktvrgs5",
+          "content": "Durante el encuentro entre Celtic y Falkirk, el joven Colby Donovan sufrió una insólita rotura en sus Nike Mercurial Vapor 17 SG ‘Breakout’."
+        },
+        {
+          "type": "image-pair",
+          "id": "ynrl3co",
+          "left": {
+            "src": "assets/1788367925844-IMG_3158.jpeg"
+          },
+          "right": {
+            "src": "assets/1788367935587-IMG_3159.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "jxnzc6u",
+          "content": "El botín literalmente se partió por la mitad, dejando la suela y la parte delantera prácticamente separadas 😱"
+        },
+        {
+          "type": "image",
+          "id": "ljq2tfy",
+          "src": "assets/1788367968018-IMG_3160.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "inkwydy",
+          "content": "Un fallo de equipamiento poco habitual, especialmente tratándose de uno de los modelos de velocidad más importantes de @nikefootball"
+        },
+        {
+          "type": "image",
+          "id": "bafhxds",
+          "src": "assets/1788368013397-IMG_3156.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "3h6xw9q",
+          "content": "¿Qué pudo haber provocado la rotura? ¿Alguna vez viste algo así con unos botines profesionales? 🤔"
+        },
+        {
+          "type": "text",
+          "id": "qa4i1yt",
+          "content": "Botines Alta Gama Córdoba ✍️"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "61ng5gt",
       "slug": "las-ediciones-exclusivas-de-nike-para-kylian-mbappe",
       "brand": "Nike",
