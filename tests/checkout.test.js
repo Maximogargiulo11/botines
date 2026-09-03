@@ -70,6 +70,31 @@ const cartJson = (email) => JSON.parse(store[`carts/${cartKey(email)}.json`]);
   assert.strictEqual(cart.createdAt, createdAt, 'conserva createdAt original');
   assert.strictEqual(cart.items[0].size, '43', 'actualiza items');
 
+  // --- save-cart tras ciclo COMPLETO (t3 enviado): reinicia la secuencia ---
+  // Regresión: un carrito cuyo ciclo de 3 toques ya terminó quedaba pegado en
+  // 'idle' para siempre y no volvía a mandar recordatorios al re-abandonarse.
+  store[`carts/${cartKey('a@b.com')}.json`] = JSON.stringify({
+    ...cart, sent:{ t1:true, t2:true, t3:true }, createdAt:'2000-01-01T00:00:00.000Z',
+    updatedAt:'2000-01-01T00:00:00.000Z',
+  });
+  res = mockRes();
+  await handler({ method:'POST', body:{ action:'save-cart', email:'a@b.com',
+    items:[{ id:'p1', name:'N', colorway:'C', size:'44', unit:'us', qty:1 }] } }, res);
+  cart = cartJson('a@b.com');
+  assert.deepStrictEqual(cart.sent, { t1:false, t2:false, t3:false }, 'ciclo completo → resetea toques');
+  assert.notStrictEqual(cart.createdAt, '2000-01-01T00:00:00.000Z', 'ciclo completo → createdAt nuevo');
+  assert.strictEqual(cart.status, 'pending');
+
+  // --- save-cart con createdAt inválido: reinicia (no arrastra NaN) ---
+  store[`carts/${cartKey('a@b.com')}.json`] = JSON.stringify({
+    ...cart, sent:{ t1:false, t2:false, t3:false }, createdAt:'no-es-fecha',
+  });
+  res = mockRes();
+  await handler({ method:'POST', body:{ action:'save-cart', email:'a@b.com',
+    items:[{ id:'p1', name:'N', colorway:'C', size:'45', unit:'us', qty:1 }] } }, res);
+  cart = cartJson('a@b.com');
+  assert.ok(Number.isFinite(new Date(cart.createdAt).getTime()), 'createdAt inválido → se reemplaza por uno válido');
+
   // --- save-cart sin items válidos → 400 ---
   res = mockRes();
   await handler({ method:'POST', body:{ action:'save-cart', email:'c@d.com', items:[{ id:'zzz' }] } }, res);

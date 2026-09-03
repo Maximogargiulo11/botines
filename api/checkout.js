@@ -1,11 +1,13 @@
 const { validateCoupon, COUPON_DISCOUNT } = require('./_coupons');
 const { getTrustedPrice } = require('./_products');
 const { getCart, saveCart } = require('./_carts');
+const { limited } = require('./_ratelimit');
 
 // Endpoint consolidado del checkout (reemplaza a validate-coupon para no pasar
 // el tope de 12 Serverless Functions de Vercel Hobby). Enruta por `action`.
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Método no permitido' });
+  if (limited(req, res, { bucket: 'checkout', limit: 30, windowMs: 60 * 1000 })) return;
   const { action } = req.body || {};
 
   if (action === 'validate-coupon') {
@@ -47,17 +49,39 @@ module.exports = async function handler(req, res) {
     try {
       const existing = await getCart(clean);
       const now = new Date().toISOString();
-      // Si ya hay un carrito pendiente, se actualizan items/updatedAt SIN
-      // resetear los toques ya enviados. Si estaba 'recovered' (ya compró),
-      // arranca una secuencia nueva.
-      const cart = (existing && existing.status !== 'recovered') ? {
+
+      // ¿El ciclo de recordatorios del carrito anterior ya terminó? En ese caso
+      // esta actividad es un abandono NUEVO y arrancamos la secuencia de cero.
+      // Si no, es la misma sesión de compra: se actualizan items/updatedAt SIN
+      // resetear los toques ya enviados (para no re-spamear a mitad de ciclo).
+      //
+      // Se reinicia cuando:
+      //  - no había carrito previo,
+      //  - status 'recovered' (ya concretó una compra con este mail),
+      //  - el último toque (t3) ya se había enviado → el ciclo estaba completo,
+      //  - createdAt no es una fecha válida (carrito viejo/corrupto que dejaba
+      //    la antigüedad en NaN y no disparaba nunca),
+      //  - el carrito quedó abandonado hace más que toda la ventana (48h+margen):
+      //    lo tomamos como un abandono nuevo en vez de arrastrar el viejo.
+      const prevSent = (existing && existing.sent) || {};
+      const createdMs = existing ? new Date(existing.createdAt).getTime() : NaN;
+      const lastTouchMs = existing ? new Date(existing.updatedAt || existing.createdAt).getTime() : NaN;
+      const STALE_MS = 3 * 24 * 60 * 60 * 1000; // 3 días
+      const cycleFinished = !existing
+        || existing.status === 'recovered'
+        || prevSent.t3 === true
+        || !Number.isFinite(createdMs)
+        || (Number.isFinite(lastTouchMs) && (Date.now() - lastTouchMs) > STALE_MS);
+
+      const cart = (existing && !cycleFinished) ? {
         ...existing,
         name: name ? String(name) : existing.name,
         items: cleanItems,
+        createdAt: Number.isFinite(createdMs) ? existing.createdAt : now, // blindaje anti-NaN
         updatedAt: now,
       } : {
         email: clean,
-        name: name ? String(name) : '',
+        name: name ? String(name) : (existing && existing.name) || '',
         items: cleanItems,
         createdAt: now,
         updatedAt: now,

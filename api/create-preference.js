@@ -1,5 +1,6 @@
 const { getTrustedPrice } = require('./_products');
 const { validateCoupon } = require('./_coupons');
+const { limited } = require('./_ratelimit');
 
 const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
@@ -9,6 +10,7 @@ module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  if (limited(req, res, { bucket: 'create-preference', limit: 15, windowMs: 60 * 1000 })) return;
 
   if (!process.env.MP_ACCESS_TOKEN) {
     console.error('MP_ACCESS_TOKEN no configurado');
