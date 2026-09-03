@@ -112,7 +112,12 @@ async function processCart(resend, cart) {
   }
 
   const sent = cart.sent || { t1: false, t2: false, t3: false };
-  const age = Date.now() - new Date(cart.createdAt).getTime();
+  // Antigüedad desde createdAt. Si por algún motivo no es una fecha válida
+  // (carrito viejo/corrupto), caemos a updatedAt para no dejar la edad en NaN
+  // — que haría que ningún toque se dispare nunca.
+  let baseMs = new Date(cart.createdAt).getTime();
+  if (!Number.isFinite(baseMs)) baseMs = new Date(cart.updatedAt).getTime();
+  const age = Date.now() - baseMs;
 
   // Máximo un toque por corrida (if / else if).
   if (age >= 1 * HOUR && !sent.t1) {

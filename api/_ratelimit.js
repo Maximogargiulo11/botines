@@ -21,9 +21,10 @@ function sweep(now) {
 }
 
 function clientIp(req) {
-  const xff = req.headers['x-forwarded-for'];
+  const headers = (req && req.headers) || {};
+  const xff = headers['x-forwarded-for'];
   if (xff) return String(xff).split(',')[0].trim();
-  return req.headers['x-real-ip'] || req.socket?.remoteAddress || 'unknown';
+  return headers['x-real-ip'] || (req && req.socket && req.socket.remoteAddress) || 'unknown';
 }
 
 // Devuelve true si la petición está permitida, false si superó el límite.
