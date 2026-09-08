@@ -103,10 +103,21 @@ async function send(resend, cart, email) {
   if (error) throw new Error(error.message || 'Resend rechazó el envío');
 }
 
+// Enmascara el email para el log (no exponer datos personales en los logs de Actions).
+function maskEmail(email) {
+  const [u, d] = String(email || '').split('@');
+  if (!d) return '???';
+  return `${u.slice(0, 2)}***@${d}`;
+}
+
 async function processCart(resend, cart) {
-  if (!cart || !cart.email || !Array.isArray(cart.items) || cart.items.length === 0) return 'skip';
+  if (!cart || !cart.email || !Array.isArray(cart.items) || cart.items.length === 0) {
+    console.log('  · carrito inválido (sin email o sin items) → skip');
+    return 'skip';
+  }
 
   if (cart.status === 'recovered') {
+    console.log(`  · ${maskEmail(cart.email)} status=recovered → skip (ya compró; no se le manda recordatorio)`);
     if (olderThan(cart.recoveredAt || cart.updatedAt, 7 * DAY)) { await deleteCart(cart.email); return 'purged'; }
     return 'skip';
   }
@@ -118,6 +129,7 @@ async function processCart(resend, cart) {
   let baseMs = new Date(cart.createdAt).getTime();
   if (!Number.isFinite(baseMs)) baseMs = new Date(cart.updatedAt).getTime();
   const age = Date.now() - baseMs;
+  console.log(`  · ${maskEmail(cart.email)} status=${cart.status || '?'} sent=${JSON.stringify(sent)} ageMin=${Math.round(age / 60000)} items=${cart.items.length}`);
 
   // Máximo un toque por corrida (if / else if).
   if (age >= 1 * HOUR && !sent.t1) {
