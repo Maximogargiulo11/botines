@@ -11,6 +11,147 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "juqwrnz",
+      "slug": "30-anos-una-leyenda-un-predator-a-la-altura-de-zizou",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "30 años. Una leyenda. Un Predator a la altura de Zizou.",
+      "excerpt": "Para celebrar los 30 años de Adidas y Zinedine Zidane, la marca de las tres líneas han revelado una edición especial de Predator que coincide con el estilo de juego del francés.",
+      "date": "08 de Septiembre de 2026",
+      "cover": "assets/1788877699090-IMG_3197.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1788877860134-IMG_3193.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1788877869680-IMG_3190.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "f1ab883",
+          "content": "Zidane fue un futbolista verdaderamente único. Todo sobre la forma en que jugaba parecía sin esfuerzo. Se soltaba en el campo con una calma que hizo que todos los demás parecieran apresurados, siempre pareciendo tener más tiempo y espacio que los que lo rodeaban. Ese estilo también produjo algunos momentos inolvidables, desde la gloria de la Copa del Mundo hasta la magia ganadora de la Liga de Campeones. Y así como esos recuerdos son inseparables de Zinedine, también lo son los Predator en sus pies."
+        },
+        {
+          "type": "instagram",
+          "id": "v1vdqm7",
+          "url": "https://www.instagram.com/reel/Dc_SlbbRmZk/?stkn=NGM5aWI2dGducWJi"
+        },
+        {
+          "type": "text",
+          "id": "mzsffmj",
+          "content": "Pocas asociaciones de jugadores y botines se han vuelto tan estrechamente vinculados, y a lo largo de los años el icono francés ha estado en el centro de algunos de los capítulos más memorables de este silo tan característico para él."
+        },
+        {
+          "type": "image",
+          "id": "xnz5zv3",
+          "src": "assets/1788878008317-IMG_3196.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "grre48d",
+          "content": "Su influencia se extiende mucho más allá de lo que logró en el campo. Zidane ha sido una figura central en algunas de las campañas de fútbol más icónicas de Adidas y se ha convertido en una de las caras definitorias de la marca a través de una relación que abarca tres décadas. La lealtad, la autenticidad y una influencia duradera lo han convertido en una parte clave de la historia de Adidas, haciendo de este hito de 30 años la ocasión perfecta para un Predator de edición especial."
+        },
+        {
+          "type": "image-pair",
+          "id": "fl2a43d",
+          "left": {
+            "src": "assets/1788878021933-IMG_3187.jpeg"
+          },
+          "right": {
+            "src": "assets/1788878029380-IMG_3192.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "o18j2kr",
+          "content": "Combinando la última tecnología de rendimiento Predator con una serie de toques personales, este botín celebra a un jugador cuya visión, creatividad y control inspiraron a una generación. Desde sus inicios en las calles de Marsella hasta la cumbre del fútbol mundial, cada detalle refleja un capítulo del viaje de Zidane y el legado que sigue dejando atrás."
+        },
+        {
+          "type": "text",
+          "id": "2iwxndj",
+          "content": "Vestido con un color blanco y dorado metálico de primera calidad, el diseño captura la elegancia que definió a Zidane a lo largo de su carrera. Los detalles dorados se destacan en los elementos superiores y clave de Predator, mientras que los destellos de azul, blanco y rojo en el lado lateral proporcionan un guiño a sus logros con la Selección de Francia."
+        },
+        {
+          "type": "image-pair",
+          "id": "75w9tme",
+          "left": {
+            "src": "assets/1788878100709-IMG_3184.jpeg"
+          },
+          "right": {
+            "src": "assets/1788878109562-IMG_3188.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "o23tub9",
+          "content": "La narración personal continúa a lo largo del botín. Una lengua plegable lleva el logotipo en oro, inspirado en su inolvidable volea en la final de la Liga de Campeones de la UEFA de 2002. La lengüeta está asegurada por una correa elástica personalizada, con cada bota destacando diferentes partes de su historia. En el botín derecho, la correa hace referencia a las ciudades que dieron forma a su carrera profesional: Cannes, Burdeos, Turín y Madrid. A la izquierda, rinde homenaje a sus raíces, con La Castellane, Saint Henri y Septèmes, las comunidades y clubes de aficionados que desempeñaron un papel en su desarrollo."
+        },
+        {
+          "type": "image-pair",
+          "id": "hvhr70l",
+          "left": {
+            "src": "assets/1788878121752-IMG_3194.jpeg"
+          },
+          "right": {
+            "src": "assets/1788878130318-IMG_3185.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "bn04x4e",
+          "content": "Otros toques premium incluyen la marca lenticular dentro de las Tres Rayas que cambia entre el logotipo de Adidas y las letras ZZ. Una marca ZZ30 a medida completa el diseño, conmemorando tres décadas de asociación entre la marca y una de las figuras más icónicas del fútbol."
+        },
+        {
+          "type": "image",
+          "id": "dtfi9k4",
+          "src": "assets/1788878199897-IMG_3183.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "67dfz1i",
+          "content": "Hablando sobre su relación con Adidas, Zidane dijo: \"El fútbol me ha dado muchos recuerdos inolvidables, y Adidas ha sido parte de ese viaje desde el principio. Predator ocupa un lugar especial en esa historia. Era la bota que usaba durante algunos de los momentos más importantes de mi carrera y una que se convirtió en sinónimo de la forma en que quería jugar el juego. Cuando miro esta bota, veo momentos, lugares y personas que dieron forma a mi viaje. Es una forma especial de celebrar 30 años juntos y compartir esa historia con una nueva generación de jugadores\"."
+        },
+        {
+          "type": "image",
+          "id": "3szmrwx",
+          "src": "assets/1788878277376-IMG_3189.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "m2vpuyj",
+          "content": "Sam Handy, Gerente General de Adidas Football, agregó: \"Muy pocos jugadores han tenido una relación con Adidas tan duradera e influyente como Zinedine Zidane. Durante tres décadas, ha encarnado la creatividad, la elegancia y la excelencia en los escenarios más importantes del fútbol. Esta edición especial Predator combina la última innovación de rendimiento con detalles de narración personal que celebran un viaje extraordinario desde Marsella hasta el icono del fútbol mundial\"."
+        },
+        {
+          "type": "image",
+          "id": "4g2si1w",
+          "src": "assets/1788878303076-IMG_3195.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "prjrlr6",
+          "content": "🛒 Disponibles a partir del Martes 08 de Septiembre en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "7unyex7",
       "slug": "se-partio-en-pleno-partido",
       "brand": "Nike",
