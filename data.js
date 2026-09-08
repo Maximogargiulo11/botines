@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "Puma y 247 Represent se fusionan para una edición especial de Ultra 7 Nitro.",
       "excerpt": "Un colaboración que ve a la marca inglesa entrar por primera vez al mercado de los botines de fútbol por primera vez.",
       "date": "09 de Septiembre de 2026",
-      "cover": "assets/1788880563021-IMG_3210.jpeg",
+      "cover": "assets/1788881431995-IMG_3212.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "assets/1788880613523-IMG_3213.jpeg",
