@@ -11,6 +11,159 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "zit17et",
+      "slug": "puma-y-247-represent-se-fusionan-para-una-edicion-especial-de-ultra-7-nitro",
+      "brand": "Puma",
+      "category": "NOVEDAD",
+      "title": "Puma y 247-Represent se fusionan para una edición especial de Ultra 7 Nitro.",
+      "excerpt": "Un colaboración que ve a la marca inglesa entrar por primera vez al mercado de los botines de fútbol por primera vez.",
+      "date": "09 de Septiembre de 2026",
+      "cover": "assets/1788880563021-IMG_3210.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1788880613523-IMG_3213.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1788880606576-IMG_3214.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "rf2ck1j",
+          "content": "La línea 247 de Represent ha pasado los últimos años construyendo una reputación en el rendimiento de la carrera, pero el fútbol siempre fue el siguiente paso obvio. Ahora, ese movimiento finalmente ha llegado con el lanzamiento de los Puma 247 Ultra Nitro 7 Ultimate."
+        },
+        {
+          "type": "instagram",
+          "id": "h046wpp",
+          "url": "https://www.instagram.com/reel/Dc-2gVuMz6y/?stkn=MTRpbmZ2ODNsMjZsMw=="
+        },
+        {
+          "type": "text",
+          "id": "uz3dnr9",
+          "content": "Encavado por el Liverpool y el delantero holandés Cody Gakpo, el lanzamiento es el último capítulo de una asociación que ha evolucionado constantemente entre PUMA y Represent, pasando de las carreteras y los pisos de gimnasio de rendimiento que se dirigen al deporte más grande del mundo."
+        },
+        {
+          "type": "image",
+          "id": "4sr9lxe",
+          "src": "assets/1788880828001-IMG_3210.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "8wkdke1",
+          "left": {
+            "src": "assets/1788880886397-IMG_3216.jpeg"
+          },
+          "right": {
+            "src": "assets/1788880892644-IMG_3214.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "sl7z2nt",
+          "content": "Fundada por los hermanos George y Michael Heaton en 2011, Represent construyó su nombre sobre una mezcla de lujo moderno y diseño de inspiración vintage. Su línea de rendimiento 247 siguió una filosofía similar, creando equipo de entrenamiento para personas más interesadas en poner el trabajo que en hablar de ello. Esa actitud ayudó a establecer una relación natural con Puma, con ambas marcas centrándose inicialmente en ejecutar colecciones diseñadas en torno al rendimiento en lugar de la exageración. Pero el fútbol nunca ha estado demasiado lejos de la órbita de Represent."
+        },
+        {
+          "type": "text",
+          "id": "k6sgtz5",
+          "content": "Como explica George Heaton, el objetivo no era solo estampar la marca 247 en un producto existente. \"Hemos trabajado estrechamente con PUMA en el ULTRA y vimos una oportunidad para llevar el ADN distintivo de 247 a una categoría completamente nueva. Es una bota de rendimiento seria en su núcleo, pero la hemos abordado a través de la lente Represent, dándole nuestra propia perspectiva, lenguaje de diseño y actitud\"."
+        },
+        {
+          "type": "image",
+          "id": "5mi7l23",
+          "src": "assets/1788880961108-IMG_3224.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "mj5e9dk",
+          "content": "Ese enfoque se puede ver en toda la bota. Puma puede haber suministrado la plataforma, pero 247 ha tenido una mano en la configuración de casi todos los detalles visibles. El color, las proporciones, los detalles de la placa de suela e incluso el gráfico de plantilla personalizado que aparece en la campaña reflejan el lenguaje de diseño que se ha convertido en sinónimo de Represent."
+        },
+        {
+          "type": "image-pair",
+          "id": "hjvnhrv",
+          "left": {
+            "src": "assets/1788881018901-IMG_3228.jpeg"
+          },
+          "right": {
+            "src": "assets/1788881024403-IMG_3227.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "vy6v0s1",
+          "content": "Y es apropiado que la asociación haya aterrizado en el ULTRA. Como bota de velocidad insignia de PUMA, ya está construida con rendimiento a la vanguardia, lo que la convierte en el lienzo ideal para el primer proyecto de fútbol de 247."
+        },
+        {
+          "type": "image",
+          "id": "avxueji",
+          "src": "assets/1788881053493-IMG_3225.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "5a9nza0",
+          "content": "Sin embargo, el punto clave es que este no es un ejercicio de moda. El ULTRA NITRO 7 ya era una gran bota de rendimiento antes de que Represent se involucrara. Lo que 247 ha añadido es su propia identidad, aportando una perspectiva estética diferente a una categoría que a menudo se siente atrapada entre combinaciones de colores familiares y colaboraciones predecibles."
+        },
+        {
+          "type": "image-pair",
+          "id": "hil10pk",
+          "left": {
+            "src": "assets/1788881128327-IMG_3217.jpeg"
+          },
+          "right": {
+            "src": "assets/1788881136247-IMG_3220.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "b6k1rb0",
+          "content": "Para Represent, también es un momento significativo. Después de años de coquetear con el fútbol a través de colecciones y referencias culturales, la marca finalmente ha entrado en el campo. Y dada la forma en que su asociación con PUMA se ha desarrollado desde la carrera hacia el fútbol, no sería una sorpresa si esto resulta ser solo el comienzo."
+        },
+        {
+          "type": "image",
+          "id": "t9zsdz6",
+          "src": "assets/1788881146033-IMG_3221.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "g88i3dj",
+          "left": {
+            "src": "assets/1788881167230-IMG_3223.jpeg"
+          },
+          "right": {
+            "src": "assets/1788881172924-IMG_3219.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "231siwq",
+          "content": "🛒 Disponibles a partir del Miércoles 09 de Septiembre en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "image",
+          "id": "44yqdsa",
+          "src": "assets/1788881229875-IMG_3222.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "juqwrnz",
       "slug": "30-anos-una-leyenda-un-predator-a-la-altura-de-zizou",
       "brand": "Adidas",
