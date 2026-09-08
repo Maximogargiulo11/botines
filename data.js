@@ -38,9 +38,9 @@ window.BAG_DATA = {
           "content": "Zidane fue un futbolista verdaderamente único. Todo sobre la forma en que jugaba parecía sin esfuerzo. Se soltaba en el campo con una calma que hizo que todos los demás parecieran apresurados, siempre pareciendo tener más tiempo y espacio que los que lo rodeaban. Ese estilo también produjo algunos momentos inolvidables, desde la gloria de la Copa del Mundo hasta la magia ganadora de la Liga de Campeones. Y así como esos recuerdos son inseparables de Zinedine, también lo son los Predator en sus pies."
         },
         {
-          "type": "instagram",
-          "id": "v1vdqm7",
-          "url": "https://www.instagram.com/reel/Dc_SlbbRmZk/?stkn=NGM5aWI2dGducWJi"
+          "type": "video",
+          "id": "2hs8dfu",
+          "src": "assets/1788879811433-AQMe9YJFV1LWauBDhukR4pASKrR_UpXEJYEF3ge1luFpw4zlhUFH8em5Li1oUMIhNij7OnxoHiwG6EfJf-QtBZ5UdVQ1X0Kd2dFW3kc.mp4"
         },
         {
           "type": "text",
