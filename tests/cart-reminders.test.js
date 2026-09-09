@@ -39,16 +39,22 @@ const baseCart = (over) => ({
 });
 
 (async () => {
-  // Recién creado (<1h): no envía nada.
+  // Recién creado (<30min): no envía nada.
   sentEmails.length = 0;
   let r = await processCart(resend, baseCart({ createdAt: ago(10 * 60 * 1000) }));
-  assert.strictEqual(r, 'idle', '<1h no envía');
+  assert.strictEqual(r, 'idle', '<30min no envía');
   assert.strictEqual(sentEmails.length, 0);
 
-  // >=1h y sin t1: envía toque 1, marca t1.
+  // 20 min: todavía no llega al umbral de 30 min → idle.
   sentEmails.length = 0;
-  r = await processCart(resend, baseCart({ createdAt: ago(2 * HOUR) }));
-  assert.strictEqual(r, 'sent');
+  r = await processCart(resend, baseCart({ createdAt: ago(20 * 60 * 1000) }));
+  assert.strictEqual(r, 'idle', '20min < 30min: no envía todavía');
+  assert.strictEqual(sentEmails.length, 0);
+
+  // >=30min y sin t1: envía toque 1, marca t1.
+  sentEmails.length = 0;
+  r = await processCart(resend, baseCart({ createdAt: ago(35 * 60 * 1000) }));
+  assert.strictEqual(r, 'sent', '35min >= 30min: envía toque 1');
   assert.strictEqual(sentEmails.length, 1);
   assert.ok(/olvidaste/i.test(sentEmails[0].subject), 'asunto del toque 1');
   assert.strictEqual(saved['u@x.com'].sent.t1, true);
