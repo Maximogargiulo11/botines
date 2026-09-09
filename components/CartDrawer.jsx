@@ -1,5 +1,7 @@
 /* global React */
-const { useState: useState_cart, useEffect: useEffect_cart } = React;
+const { useState: useState_cart, useEffect: useEffect_cart, useRef: useRef_cart } = React;
+
+const CART_EMAIL_KEY = 'bag:cart:email';
 
 function CartDrawer({ open, onClose, items, onRemove, navigate, clearCart }) {
   useEffect_cart(() => {
@@ -8,7 +10,34 @@ function CartDrawer({ open, onClose, items, onRemove, navigate, clearCart }) {
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
+  // Captura de carrito abandonado: si el visitante deja su email acá, guardamos
+  // el carrito en el servidor y el cron dispara el recordatorio (toque 1 a los
+  // 30 min), aunque nunca llegue al checkout. Es la misma acción save-cart que
+  // usa la pantalla de checkout.
+  const [email, setEmail] = useState_cart(() => {
+    try { return localStorage.getItem(CART_EMAIL_KEY) || ''; } catch { return ''; }
+  });
+  const [saved, setSaved] = useState_cart(false);
+  const lastSavedRef = useRef_cart('');
+
   const subtotal = items.reduce((sum, it) => sum + (it.price || 0) * (it.qty || 1), 0);
+
+  const saveCartRemote = async () => {
+    const em = String(email || '').trim().toLowerCase();
+    if (!/^\S+@\S+\.\S+$/.test(em) || items.length === 0) return;
+    try { localStorage.setItem(CART_EMAIL_KEY, em); } catch {}
+    // Evita re-postear si no cambió email ni items.
+    const sig = em + '|' + JSON.stringify(items.map(it => [it.id, it.size, it.qty]));
+    if (sig === lastSavedRef.current) { setSaved(true); return; }
+    lastSavedRef.current = sig;
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'save-cart', email: em, items }),
+      });
+      if (res.ok) setSaved(true);
+    } catch {}
+  };
 
   const goToCheckout = () => {
     onClose();
@@ -60,7 +89,34 @@ function CartDrawer({ open, onClose, items, onRemove, navigate, clearCart }) {
               <span className="bag-cart__subtotal-value">{window.formatPrice(subtotal)}</span>
             </div>
             <div className="bag-shipping-banner">🚚 Envío gratis</div>
-            <button className="bag-btn bag-btn--primary bag-btn--block" onClick={(e) => { e.currentTarget.blur(); goToCheckout(); }}>
+
+            {/* Captura de carrito: dejá tu email y te lo guardamos (recordatorio) */}
+            <div className="bag-cart__save" style={{ margin: '12px 0' }}>
+              <label className="bag-eyebrow bag-eyebrow--muted" htmlFor="bag-cart-email">¿NO LLEGÁS A COMPRAR AHORA?</label>
+              <p className="bag-cart__note" style={{ margin: '4px 0 8px' }}>Dejanos tu email y te guardamos el carrito.</p>
+              <input
+                id="bag-cart-email"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                placeholder="tu@email.com"
+                value={email}
+                onChange={(e) => { setEmail(e.target.value); setSaved(false); }}
+                onBlur={saveCartRemote}
+                style={{
+                  width: '100%', boxSizing: 'border-box', padding: '10px 12px',
+                  border: '1px solid rgba(0,0,0,0.2)', borderRadius: 8, fontSize: 14,
+                  background: '#fff', color: '#111', outline: 'none',
+                }}
+              />
+              {saved && (
+                <div className="bag-cart__save-ok" style={{ marginTop: 6, fontSize: 12, color: '#059669' }}>
+                  ✓ Te guardamos el carrito. Si no completás la compra, te lo recordamos por email.
+                </div>
+              )}
+            </div>
+
+            <button className="bag-btn bag-btn--primary bag-btn--block" onClick={(e) => { e.currentTarget.blur(); saveCartRemote(); goToCheckout(); }}>
               IR A PAGAR
             </button>
             <div className="bag-payopts">
