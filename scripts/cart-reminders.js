@@ -11,10 +11,13 @@ const { createCoupon } = require('../api/_coupons');
 
 const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 const FROM = 'Botines Alta Gama Córdoba <pedidos@botinesaltagamacba.com>';
-// HOUR es la unidad de las ventanas (1h / 24h / 48h). Se puede comprimir para
-// pruebas manuales pasando REMINDER_HOUR_MS (ej. 1000 = 1 seg → t1 a 1s, t2 a
-// 24s, t3 a 48s). En las corridas automáticas la variable viene vacía → 1 hora real.
+// HOUR es la unidad de las ventanas (t1 a los 30 min / t2 a 24h / t3 a 48h). Se
+// puede comprimir para pruebas manuales pasando REMINDER_HOUR_MS (ej. 1000 = 1 seg
+// → t1 a 0,5s, t2 a 24s, t3 a 48s). En las corridas automáticas la variable viene
+// vacía → 1 hora real.
 const HOUR = Number(process.env.REMINDER_HOUR_MS) || (60 * 60 * 1000);
+// Demora del primer recordatorio (toque 1): 30 minutos = media hora.
+const T1_DELAY = 0.5 * HOUR;
 const DAY = 24 * 60 * 60 * 1000; // la purga usa días reales, no se comprime
 
 const IG_DM = 'https://ig.me/m/botinesaltagamacba';
@@ -132,7 +135,7 @@ async function processCart(resend, cart) {
   console.log(`  · ${maskEmail(cart.email)} status=${cart.status || '?'} sent=${JSON.stringify(sent)} ageMin=${Math.round(age / 60000)} items=${cart.items.length}`);
 
   // Máximo un toque por corrida (if / else if).
-  if (age >= 1 * HOUR && !sent.t1) {
+  if (age >= T1_DELAY && !sent.t1) {
     await send(resend, cart, emailTouch1(cart, recoverLink(cart)));
     sent.t1 = true;
   } else if (age >= 24 * HOUR && !sent.t2) {
