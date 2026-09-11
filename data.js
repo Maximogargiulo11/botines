@@ -11,6 +11,77 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "r5hkpyc",
+      "slug": "barcelona-spoilea-nuevos-colores-para-f50-predator-y-copa",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Barcelona spoilea: nuevos colores para F50, Predator y Copa.",
+      "excerpt": "Los jugadores Culés presentaron en sus pies el nuevo paquete de Adidas.",
+      "date": "11 de Septiembre de 2026",
+      "cover": "assets/1789136742694-IMG_3259.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "afakkum",
+          "content": "Lamine Yamal, Jules Koundé, Anthony Gordon, entre otros, saltaron al campo de juego con los nuevos colores del próximo paquete de Adidas."
+        },
+        {
+          "type": "image",
+          "id": "72wlfe6",
+          "src": "assets/1789136758134-IMG_3255.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "zf7ocb0",
+          "src": "assets/1789136765938-IMG_3256.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "aitrh85",
+          "content": "Desde la velocidad de F50, la elegancia de Copa y el control de Predator. ¡La nueva colección salió con toda la fuerza al verde césped para hacer juego!"
+        },
+        {
+          "type": "image",
+          "id": "wn2nkfq",
+          "src": "assets/1789136780231-IMG_3257.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "lnc7uia",
+          "src": "assets/1789136788977-IMG_3258.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "1ohifak",
+          "content": "🛒 Próximamente disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "st0p745",
       "slug": "jugadores-del-real-madrid-con-el-nuevo-paquete-de-adidas",
       "brand": "Adidas",
