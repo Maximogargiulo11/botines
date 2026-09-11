@@ -86,7 +86,7 @@ window.BAG_DATA = {
       "slug": "jugadores-del-real-madrid-con-el-nuevo-paquete-de-adidas",
       "brand": "Adidas",
       "category": "NOVEDAD",
-      "title": "Jugadores del Real Madrid con el nuevo paquete de Adidas",
+      "title": "Jugadores del Real Madrid con el nuevo paquete de Adidas.",
       "excerpt": "En el entrenamiento, los jugadores saltaron al campo de juego con los nuevos colores de F50, Predator y Copa.",
       "date": "11 de Septiembre de 2026",
       "cover": "assets/1789135102692-IMG_3261.webp",
