@@ -4,7 +4,7 @@
 
 window.BAG_DATA = {
   "config": {
-    "homepageArticleCount": 31,
+    "homepageArticleCount": 17,
     "typography": {
       "serif": "bebas"
     }
@@ -38,14 +38,18 @@ window.BAG_DATA = {
           "content": "El próximo paquete de Adidas debuta en el campo de juego sobre los pies de los jugadores del Real Madrid: nuevos colores para los silos F50, Predator y Copa."
         },
         {
-          "type": "image-pair",
-          "id": "z7ole77",
-          "left": {
-            "src": "assets/1789135290045-IMG_3265.webp"
-          },
-          "right": {
-            "src": "assets/1789135298741-IMG_3260.webp"
-          }
+          "type": "image",
+          "id": "mhyd2nf",
+          "src": "assets/1789135707924-IMG_3265.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "52io5gj",
+          "src": "assets/1789135715381-IMG_3260.webp",
+          "width": "",
+          "height": ""
         },
         {
           "type": "text",
