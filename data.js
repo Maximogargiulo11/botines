@@ -11,6 +11,83 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "st0p745",
+      "slug": "jugadores-del-real-madrid-con-el-nuevo-paquete-de-adidas",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Jugadores del Real Madrid con el nuevo paquete de Adidas",
+      "excerpt": "En el entrenamiento, los jugadores saltaron al campo de juego con los nuevos colores de F50, Predator y Copa.",
+      "date": "11 de Septiembre de 2026",
+      "cover": "assets/1789135102692-IMG_3261.webp",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1789135086557-IMG_3261.webp",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1789135110533-IMG_3261.webp",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "ucleoda",
+          "content": "El próximo paquete de Adidas debuta en el campo de juego sobre los pies de los jugadores del Real Madrid: nuevos colores para los silos F50, Predator y Copa."
+        },
+        {
+          "type": "image-pair",
+          "id": "z7ole77",
+          "left": {
+            "src": "assets/1789135290045-IMG_3265.webp"
+          },
+          "right": {
+            "src": "assets/1789135298741-IMG_3260.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "8rbjcb7",
+          "content": "Primeras impresiones para Jude Bellingham con su silo característico. Si bien no hay cambios funcionales ni generaciones, sólo estéticos a simple vista."
+        },
+        {
+          "type": "image",
+          "id": "chhc90l",
+          "src": "assets/1789135413681-IMG_3264.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "7k8lrgu",
+          "src": "assets/1789135426249-IMG_3262.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9nol8d0",
+          "content": "También, por un lado, Dumfries como Brahim Díaz con F50. Por otro lado, Bernardo Silva con Copa."
+        },
+        {
+          "type": "text",
+          "id": "fyksi6b",
+          "content": "¿Qué opinas de los nuevos colores del próximo paquete de Adidas?"
+        },
+        {
+          "type": "text",
+          "id": "7q964lo",
+          "content": "🛒 Próximamente disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "zit17et",
       "slug": "puma-y-247-represent-se-fusionan-para-una-edicion-especial-de-ultra-7-nitro",
       "brand": "Puma",
