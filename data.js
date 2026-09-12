@@ -4961,6 +4961,52 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Break ‘Em’ Pack"
         }
+      },
+      {
+        "id": "b61upci",
+        "name": "Nike Phantom GT 2 Elite FG ‘Generation’",
+        "colorway": "Negro / Bronce / Rosaso",
+        "color": "#000000",
+        "price": 449999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "8.5",
+            "11"
+          ],
+          "uk": [
+            "7",
+            "7.5",
+            "10"
+          ]
+        },
+        "images": [
+          "assets/1789251083490-IMG_3281.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Generation’ (2022)"
+        }
       }
     ],
     "nike/tiempo": [
