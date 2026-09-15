@@ -7577,6 +7577,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Born For Goals’ Pack"
         }
+      },
+      {
+        "id": "s80uw1j",
+        "name": "Adidas Copa Pure 4 Elite FG ‘Final Rush’",
+        "colorway": "Negro / Menta",
+        "color": "#41ffa5",
+        "price": 569999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1789512317635-IMG_3390.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Final Rush’ Pack"
+        }
       }
     ],
     "puma/future": [
