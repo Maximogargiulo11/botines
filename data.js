@@ -7016,6 +7016,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "ZZ30"
         }
+      },
+      {
+        "id": "fc2ab5c",
+        "name": "Adidas Predator Elite FG ‘Final Rush’",
+        "colorway": "Negro / Menta",
+        "color": "#1fffa1",
+        "price": 569999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "9.5",
+            "10",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1789511646156-IMG_3385.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Final Rush’ Pack"
+        }
       }
     ],
     "adidas/copa": [
