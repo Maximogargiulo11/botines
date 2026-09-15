@@ -299,7 +299,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -452,7 +452,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -593,7 +593,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
