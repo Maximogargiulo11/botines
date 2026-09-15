@@ -11,6 +11,125 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "7az6kix",
+      "slug": "adidas-aterriza-con-el-nuevo-paquete-final-rush-para-el-tramo-final-del-2026",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas aterriza con el nuevo paquete ‘Final Rush’ para el tramo final del 2026.",
+      "excerpt": "Nuevos colores “mente fresca” para F50 SparkFusion, F40 Hyperfast, Predator y Copa.",
+      "date": "15 de Septiembre de 2026",
+      "cover": "assets/1789483822701-IMG_3395.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "mqplqx9",
+          "content": "No hay ninguna actualización tecnológica revolucionaria o innovación que cambie el juego llegando con esta caída. En cambio, este lanzamiento se centra puramente en la estética, dando a las botas de nivel de élite de la marca un nuevo aspecto limpio a medida que nos dirigimos hacia el final del 2026. Y \"fresco\" es realmente la palabra clave aquí. Menta fresca."
+        },
+        {
+          "type": "text",
+          "id": "er63xow",
+          "content": "Los tonos verdes dominan en toda la colección, aportando una sensación fresca y nítida al Predator, F50 Hyperfast, F50 SparkFusion y Copa Pure IV. Inyectando un poco de energía extra en un período del calendario que a menudo puede saturarse con colores más oscuros inspirados en el invierno. La tecnología permanece intacta, lo que significa que los jugadores todavía tienen las mismas características centradas en el rendimiento a las que se han acostumbrado."
+        },
+        {
+          "type": "text",
+          "id": "fy0fl1a",
+          "content": "Diseñado específicamente para el juego femenino, el F50 Sparkfusion Elite Laceless continúa estableciendo su propia identidad dentro de la línea de botas adidas. Aquí, la menta clara y el blanco proporcionan la base, mientras que los acentos de púrpura solar inyectan una bienvenida explosión de personalidad.\nLa combinación se siente fresca, vibrante y distinta de la combinación de colores estándar F50, lo que ayuda a que el Sparkfusion se manta cómodamente por sí mismo."
+        },
+        {
+          "type": "image-pair",
+          "id": "inf1tbp",
+          "left": {
+            "src": "assets/1789483966273-IMG_3400.jpeg"
+          },
+          "right": {
+            "src": "assets/1789483974025-IMG_3404.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "wybwrmf",
+          "content": "El F50 Hyperfast centrado en la velocidad recibe quizás el tratamiento más vivo de la colección con una combinación de colores \"Pulse Mint/Core Black/Solar Lemon\". Pulse Mint ocupa un lugar central, complementado con la marca negra y destellos de Solar Lemon. Es enérgico sin volverse abrumador, logrando un buen equilibrio entre llamativo y portátil. Exactamente lo que esperarías de una bota construida en torno a un ritmo explosivo."
+        },
+        {
+          "type": "image",
+          "id": "w3z2xl7",
+          "src": "assets/1789484009421-IMG_3396.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "w9aznkb",
+          "left": {
+            "src": "assets/1789484019555-IMG_3397.jpeg"
+          },
+          "right": {
+            "src": "assets/1789484025164-IMG_3402.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "tujoc4m",
+          "content": "Llegando en \"Core Black/Silver Metallic/Pulse Mint\", el Predator podría decirse que tiene el contraste visual más fuerte del paquete. Una base predominantemente negra se eleva a través de detalles plateados y sutiles acentos Pulse Mint, creando un aspecto nítido que conserva la presencia dominante del silo. Es una visión un poco más subestivada del tema de la menta, pero que se siente particularmente bien adaptada a la herencia de poder y control del Predator."
+        },
+        {
+          "type": "image-pair",
+          "id": "29wxagv",
+          "left": {
+            "src": "assets/1789484051471-IMG_3403.jpeg"
+          },
+          "right": {
+            "src": "assets/1789484058314-IMG_3401.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "egwet38",
+          "src": "assets/1789484067398-IMG_3398.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "mta1fxh",
+          "content": "Para aquellos que prefieren una estética más clásica, el Copa Pure IV podría ser una de las opciones más limpias del paquete en un aspecto \"Clear Mint/Core Black/Ftwr White\". La parte superior Clear Mint está equilibrada por detalles en blanco y negro, creando un aspecto premium que complementa el ADN tradicional de la Copa. Es simple, efectivo y elegante sin esfuerzo."
+        },
+        {
+          "type": "image",
+          "id": "09vk5nx",
+          "src": "assets/1789484090918-IMG_3399.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "lg9tcm0",
+          "content": "Boot Drop BAGC 📦"
+        },
+        {
+          "type": "text",
+          "id": "awmn4qh",
+          "content": "🛒 Disponibles en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "r5hkpyc",
       "slug": "barcelona-spoilea-nuevos-colores-para-f50-predator-y-copa",
       "brand": "Adidas",
