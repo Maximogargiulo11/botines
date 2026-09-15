@@ -6195,6 +6195,58 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Final Rush’ Pack"
         }
+      },
+      {
+        "id": "fwlt5ah",
+        "name": "Adidas F50 Hyperfast Elite LL FG ‘Final Rush’",
+        "colorway": "Menta",
+        "color": "#00fa95",
+        "price": 579999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1789511399502-IMG_3393.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Final Rush’ Pack"
+        }
       }
     ],
     "adidas/predator": [
