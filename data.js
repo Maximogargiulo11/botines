@@ -11,6 +11,94 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "331nlvj",
+      "slug": "dentro-de-la-tienda-de-botines-de-nike-por-24-horas",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Dentro de la tienda de botines de Nike por 24 horas.",
+      "excerpt": "Adéntrate con nosotros en una experiencia única y exclusiva de la marca del swoosh con sus principales figuras.",
+      "date": "17 de Septiembre de 2026",
+      "cover": "assets/1789677638618-IMG_3452.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "93q693j",
+          "content": "Los futbolistas de élite son personas particulares, y es comprensible. Cuando tus pies son responsables de tu reputación y de tu sustento, un par de botines casi correcto no está bien en absoluto."
+        },
+        {
+          "type": "text",
+          "id": "iwvg668",
+          "content": "Recuerdo que cuando era niño, apretaba mis pobres pies en un par que quizás no era acorde a mi tipo, solo por querer lucir algo que me gustaba pero que no sentía cómodo. "
+        },
+        {
+          "type": "text",
+          "id": "haws8rs",
+          "content": "Básicamente, el ajuste debe ser exacto, especialmente cuando eres un profesional. La suela debe sentirse familiar y, idealmente, deberían parecerse a la tuya, por lo que Nike pasó el verano asegurándose de que sus mayores jugadores obtuvieran precisamente eso."
+        },
+        {
+          "type": "text",
+          "id": "blem2vg",
+          "content": "A lo largo de la Copa del Mundo de este verano, a través de talleres temporales en Beaverton, Nueva York y Ciudad de México, los ‘Boot Shops’ de la marca, con personal de Montebelluna, crearon y modificaron calzado para Cristiano Ronaldo, Kylian Mbappé, Vinicius Jr. y muchos más. Su tiempo promedio de respuesta fue de solo 24 horas. La velocidad es bastante impresionante por sí sola, pero esto no fue simplemente un caso de imprimir un nombre en una combinación de colores existente. Las solicitudes iran desde modificaciones precisas de rendimiento hasta diseños totalmente personalizados, con cada par moldeado en torno a las necesidades del jugador que los usaría."
+        },
+        {
+          "type": "text",
+          "id": "kj1w9xt",
+          "content": "Ronaldo recibió botas doradas personalizadas, porque, bueno, por supuesto que lo mereció. Mercurial de Vini Jr. adornó la bandera brasileña junto con su logotipo personal, mientras que Mbappé optó por un par azul y rojo con los nombres de sus seres queridos. Cada diseño ofreció otro recordatorio de que la bota de fútbol moderna ya no es solo una pieza de equipo, es un lienzo para la identidad, la familia y la mitología personal. En total, los tres centros de Nike completaron alrededor de 600 construcciones durante el verano."
+        },
+        {
+          "type": "text",
+          "id": "nbgtc3i",
+          "content": "La idea surgió de una solicitud directa de los atletas de Nike: querían un acceso más rápido a la personalización y los cambios técnicos durante el torneo. En lugar de pedirles a los jugadores que esperen a que los botines viajen a través de la cadena habitual de desarrollo y entrega, Nike acercó el taller a ellos."
+        },
+        {
+          "type": "text",
+          "id": "n87vjze",
+          "content": "Los trabajos más complicados fueron enviados al Bowerman Footwear Lab en Beaverton. Ubicado dentro del campus de Nike, el espacio de 90.000 pies cuadrados está equipado para llevar una bota de una idea temprana a un producto terminado bajo un mismo techo. Casi una docena de miembros de su equipo produjeron cerca de 300 pares personalizados para los jugadores del torneo. Su verdadera ventaja es la capacidad de hacer prototipos en tiempo real. Un jugador puede visitar el campus, probar una nueva idea y ofrecer comentarios inmediatos. El equipo puede luego regresar a la maquinaria, alterar el producto y colocar otra versión frente a ellos sin perder días en el proceso de diseño tradicional."
+        },
+        {
+          "type": "text",
+          "id": "k9624zk",
+          "content": "Para mí, todo esto es bastante convincente. El fútbol moderno está obsesionado con lo que sucede en público: los goles, las celebraciones, los ajustes de túnel, los botines de la firma, pero la tienda de botines revela el trabajo más metódico detrás de esas imágenes, los especialistas que ajustan, prueban y reconstruyen hasta que alcanzan la perfección."
+        },
+        {
+          "type": "text",
+          "id": "igkxyyc",
+          "content": "También reúne dos lados de Nike que ocasionalmente pueden aparecer en desacuerdo. Existe la vasta empresa global de ropa deportiva, capaz de operar a través de los continentes a una escala enorme. Luego está la tradición de Montebelluna, la ciudad italiana, sinónimo de fabricación especializada de botines y el tipo de artesanía normalmente asociada con una producción más lenta y más considerada."
+        },
+        {
+          "type": "text",
+          "id": "hizn8ib",
+          "content": "‘Boot Shop’ logró combinar ambos. La experiencia del viejo mundo se colocó dentro de una moderna red de respuesta rápida, capaz de entregar productos altamente individuales mientras la mayor competencia del verano aún se desarrollaba. Los jugadores crearon los momentos que todos vieron y en algún lugar detrás de ellos, un pequeño equipo de boteros se aseguró de que estuvieran debidamente equipados para hacerlo."
+        },
+        {
+          "type": "text",
+          "id": "eks24ma",
+          "content": "Boot Shop BAGC 🎨🖌️"
+        },
+        {
+          "type": "text",
+          "id": "54r7bm3",
+          "content": "🛒 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "7az6kix",
       "slug": "adidas-aterriza-con-el-nuevo-paquete-final-rush-para-el-tramo-final-del-2026",
       "brand": "Adidas",
