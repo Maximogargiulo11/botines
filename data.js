@@ -11,6 +11,64 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "qndpugy",
+      "slug": "vuelven-los-adipure",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "¿Vuelven los AdiPure?",
+      "excerpt": "Jugadores “spoilean” una fusión de Adidas que une parte del ADN de Copa y AdiPure para un crossover único.",
+      "date": "17 de Septiembre de 2026",
+      "cover": "assets/1789680002001-IMG_3435.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image-pair",
+          "id": "w9qjwrp",
+          "left": {
+            "src": "assets/1789680069924-IMG_3435.jpeg"
+          },
+          "right": {
+            "src": "assets/1789680087863-IMG_3435.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "btt2wp7",
+          "left": {
+            "src": "assets/1789680097196-IMG_3437.jpeg"
+          },
+          "right": {
+            "src": "assets/1789680105130-IMG_3437.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "9g8tiuy",
+          "content": "Si eso está cocinando Adidas, acá estamos en la espera para eso…"
+        },
+        {
+          "type": "text",
+          "id": "gbvy51a",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "331nlvj",
       "slug": "dentro-de-la-tienda-de-botines-de-nike-por-24-horas",
       "brand": "Nike",
