@@ -131,7 +131,7 @@ window.BAG_DATA = {
             "src": "assets/1789678281763-IMG_3461.jpeg"
           },
           "right": {
-            "src": ""
+            "src": "assets/1789679134963-IMG_3463.jpeg"
           }
         },
         {
