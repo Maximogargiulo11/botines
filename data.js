@@ -28,14 +28,34 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": false,
+      "featured": true,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
         {
+          "type": "image-pair",
+          "id": "l0vjg9k",
+          "left": {
+            "src": "assets/1789678016469-IMG_3423.jpeg"
+          },
+          "right": {
+            "src": "assets/1789678029474-IMG_3424.jpeg"
+          }
+        },
+        {
           "type": "text",
           "id": "93q693j",
           "content": "Los futbolistas de élite son personas particulares, y es comprensible. Cuando tus pies son responsables de tu reputación y de tu sustento, un par de botines casi correcto no está bien en absoluto."
+        },
+        {
+          "type": "image-pair",
+          "id": "vcz7r27",
+          "left": {
+            "src": "assets/1789678094610-IMG_3428.jpeg"
+          },
+          "right": {
+            "src": "assets/1789678110995-IMG_3421.jpeg"
+          }
         },
         {
           "type": "text",
@@ -53,14 +73,41 @@ window.BAG_DATA = {
           "content": "A lo largo de la Copa del Mundo de este verano, a través de talleres temporales en Beaverton, Nueva York y Ciudad de México, los ‘Boot Shops’ de la marca, con personal de Montebelluna, crearon y modificaron calzado para Cristiano Ronaldo, Kylian Mbappé, Vinicius Jr. y muchos más. Su tiempo promedio de respuesta fue de solo 24 horas. La velocidad es bastante impresionante por sí sola, pero esto no fue simplemente un caso de imprimir un nombre en una combinación de colores existente. Las solicitudes iran desde modificaciones precisas de rendimiento hasta diseños totalmente personalizados, con cada par moldeado en torno a las necesidades del jugador que los usaría."
         },
         {
+          "type": "image-pair",
+          "id": "bbds4o8",
+          "left": {
+            "src": "assets/1789678120605-IMG_3426.jpeg"
+          },
+          "right": {
+            "src": "assets/1789678144493-IMG_3419.jpeg"
+          }
+        },
+        {
           "type": "text",
           "id": "kj1w9xt",
           "content": "Ronaldo recibió botas doradas personalizadas, porque, bueno, por supuesto que lo mereció. Mercurial de Vini Jr. adornó la bandera brasileña junto con su logotipo personal, mientras que Mbappé optó por un par azul y rojo con los nombres de sus seres queridos. Cada diseño ofreció otro recordatorio de que la bota de fútbol moderna ya no es solo una pieza de equipo, es un lienzo para la identidad, la familia y la mitología personal. En total, los tres centros de Nike completaron alrededor de 600 construcciones durante el verano."
         },
         {
+          "type": "image",
+          "id": "up4x4g5",
+          "src": "assets/1789678164710-IMG_3453.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "text",
           "id": "nbgtc3i",
           "content": "La idea surgió de una solicitud directa de los atletas de Nike: querían un acceso más rápido a la personalización y los cambios técnicos durante el torneo. En lugar de pedirles a los jugadores que esperen a que los botines viajen a través de la cadena habitual de desarrollo y entrega, Nike acercó el taller a ellos."
+        },
+        {
+          "type": "image-pair",
+          "id": "apw1zcf",
+          "left": {
+            "src": "assets/1789678185340-IMG_3430.jpeg"
+          },
+          "right": {
+            "src": "assets/1789678193574-IMG_3454.jpeg"
+          }
         },
         {
           "type": "text",
@@ -78,14 +125,48 @@ window.BAG_DATA = {
           "content": "También reúne dos lados de Nike que ocasionalmente pueden aparecer en desacuerdo. Existe la vasta empresa global de ropa deportiva, capaz de operar a través de los continentes a una escala enorme. Luego está la tradición de Montebelluna, la ciudad italiana, sinónimo de fabricación especializada de botines y el tipo de artesanía normalmente asociada con una producción más lenta y más considerada."
         },
         {
+          "type": "image-pair",
+          "id": "6rpbjgd",
+          "left": {
+            "src": "assets/1789678281763-IMG_3461.jpeg"
+          },
+          "right": {
+            "src": ""
+          }
+        },
+        {
           "type": "text",
           "id": "hizn8ib",
           "content": "‘Boot Shop’ logró combinar ambos. La experiencia del viejo mundo se colocó dentro de una moderna red de respuesta rápida, capaz de entregar productos altamente individuales mientras la mayor competencia del verano aún se desarrollaba. Los jugadores crearon los momentos que todos vieron y en algún lugar detrás de ellos, un pequeño equipo de boteros se aseguró de que estuvieran debidamente equipados para hacerlo."
         },
         {
+          "type": "image-pair",
+          "id": "0li40ke",
+          "left": {
+            "src": "assets/1789678221691-IMG_3432.jpeg"
+          },
+          "right": {
+            "src": "assets/1789678239450-IMG_3433.jpeg"
+          }
+        },
+        {
           "type": "text",
           "id": "eks24ma",
           "content": "Boot Shop BAGC 🎨🖌️"
+        },
+        {
+          "type": "image",
+          "id": "5x94n4v",
+          "src": "assets/1789678254650-IMG_3455.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "x1ns54y",
+          "src": "assets/1789678263140-IMG_3458.webp",
+          "width": "",
+          "height": ""
         },
         {
           "type": "text",
