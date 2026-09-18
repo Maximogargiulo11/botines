@@ -11,6 +11,76 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "bhdv1y7",
+      "slug": "mbappe-deja-nike-tras-20-anos-y-se-une-a-on-football",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Mbappé deja Nike tras 20 años y se une a On Football",
+      "excerpt": "",
+      "date": "18 de Septiembre de 2026",
+      "cover": "assets/1789766102233-IMG_3466.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "a5pqdpk",
+          "content": "Después de meses de especulación, On ha confirmado oficialmente su tan comentado movimiento al fútbol al revelar nada menos que a Kylian Mbappé como su atleta principal y a Thierry Henry como su Director de Fútbol."
+        },
+        {
+          "type": "text",
+          "id": "wyzg3ud",
+          "content": "El anuncio, que llegó el 18 de septiembre, no fue una sorpresa, con rumores que se arremolinaban desde antes de la Copa del Mundo de este verano. Es una historia similar para la participación de Mbappé también, pero finalmente verlo usando la marca se siente bastante sísmico."
+        },
+        {
+          "type": "text",
+          "id": "ns10ss3",
+          "content": "Agregando a Henry, que aparentemente ha estado trabajando detrás de escena en el proyecto desde finales de 2025, y Sydney Schertenleib del Barcelona, y esto ya parece el recién llegado más serio que el fútbol haya visto. Porque a diferencia de otras \"marcas de retadores\", On no está entrando en el fútbol para probar suerte y ver lo que puede lograr, está entrando desde una posición que ningún recién llegado ha ocupado nunca."
+        },
+        {
+          "type": "image",
+          "id": "0tpsizm",
+          "src": "assets/1789768038429-IMG_3467.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "rsbp92w",
+          "content": "Naturalmente, Skechers ofrece la comparación reciente más obvia aquí. Cuando la marca de calzado estadounidense lanzó su división de fútbol en 2023, con Harry Kane usando el SKX_01, llegó casi de la nada. Tres años después, Skechers se ha establecido como una presencia legítima dentro del juego, con sus botas usadas al más alto nivel, su lista ampliada y la vista de un par de Skechers en lo común."
+        },
+        {
+          "type": "text",
+          "id": "bt8ki0b",
+          "content": "Ese es un logro que no debe subestimarse, pero también hace que las posibilidades para On se sientan considerablemente mayores. Claro, Skechers tenía escala, dinero y un negocio global de calzado cuando entró en el fútbol, pero lo que On tiene, junto con mucho dinero propio, es impulso."
+        },
+        {
+          "type": "text",
+          "id": "tb3lef6",
+          "content": "Ha pasado la última década y media convirtiéndose de una marca de running suiza de aspecto extraño a una de las empresas de ropa deportiva más deseables del planeta. Su crecimiento también ha sido bastante ridículo."
+        },
+        {
+          "type": "text",
+          "id": "uqksdw7",
+          "content": "Más importante aún, ha logrado todo esto sin perder la mentalidad de retador que hizo que la marca fuera interesante en primer lugar. Ahora es enorme, pero todavía se comporta como una empresa que intenta alterar el carrito de la manzana, que es precisamente lo que necesita el fútbol."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "qndpugy",
       "slug": "vuelven-los-adipure",
       "brand": "Adidas",
