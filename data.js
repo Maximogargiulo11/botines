@@ -18,7 +18,7 @@ window.BAG_DATA = {
       "title": "¿Vuelven los AdiPure?",
       "excerpt": "Jugadores “spoilean” una fusión de Adidas que une parte del ADN de Copa y AdiPure para un crossover único.",
       "date": "17 de Septiembre de 2026",
-      "cover": "assets/1789680002001-IMG_3435.jpeg",
+      "cover": "assets/1789766028547-IMG_3437.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "",
