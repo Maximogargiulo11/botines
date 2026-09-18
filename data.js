@@ -73,6 +73,109 @@ window.BAG_DATA = {
           "type": "text",
           "id": "uqksdw7",
           "content": "Más importante aún, ha logrado todo esto sin perder la mentalidad de retador que hizo que la marca fuera interesante en primer lugar. Ahora es enorme, pero todavía se comporta como una empresa que intenta alterar el carrito de la manzana, que es precisamente lo que necesita el fútbol."
+        },
+        {
+          "type": "image",
+          "id": "mtgwf1f",
+          "src": "assets/1789768665872-IMG_3468.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "f4bnqij",
+          "content": "El mercado de botas ha estado dominado por el mismo puñado de nombres durante décadas. Nike, adidas y PUMA siguen siendo los objetos inamovibles, mientras que New Balance, Mizuno y ahora Skechers compiten por los bienes raíces restantes."
+        },
+        {
+          "type": "text",
+          "id": "yd9axpk",
+          "content": "A la mayoría de las botas modernas, que parecen existir dentro del mismo marco familiar. Sin embargo, viene de otro lugar completamente diferente. En la carrera, la marca no atrapó a Nike y adidas al intentar hacer versiones ligeramente diferentes de sus zapatos, desarrolló un lenguaje visual y técnico propio."
+        },
+        {
+          "type": "text",
+          "id": "7oiypem",
+          "content": "CloudTec hizo que su calzado fuera reconocible al instante, mientras que su marca suiza limpia ayudó a convertir las zapatillas de running de alto rendimiento en calzado de todos los días. Roger Federer aceleró el crossover cuando se unió a la marca en 2019 y Zendaya lo empujó más lejos cuando se convirtió en Global Brand Parter en 2024. Eso, junto con las colaboraciones con LOEWE, demostró que On también podía ocupar espacios de lujo con facilidad. Mientras todo el tiempo, su producto de carrera de élite continuó ganando carreras."
+        },
+        {
+          "type": "image",
+          "id": "bc413ec",
+          "src": "assets/1789768795869-IMG_3470.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "lelobuy",
+          "content": "La ambición de On, según el cofundador David Allemann, es conectar \"el campo, el pavimento y la pista\". Es una línea fácil de descartar como discurso de negocios, pero On ya ha demostrado que entiende cómo esos tres mundos se superponen cada vez más."
+        },
+        {
+          "type": "text",
+          "id": "h85bgw9",
+          "content": "Luego, por supuesto, está la tecnología. LightSpray, el proceso de fabricación robótica (aunque de aspecto ligeramente espeluznante) de On, crea una parte superior de rendimiento de una sola pieza al rociar un filamento continuo alrededor de un molde. El proceso elimina muchas de las costuras convencionales, materiales y etapas de construcción asociadas con la producción de calzado, lo que resulta en algo increíblemente ligero, preciso y cercano al pie."
+        },
+        {
+          "type": "text",
+          "id": "alr4luq",
+          "content": "Ahora planea adaptar esa tecnología para el fútbol. Eso no garantiza que creará inmediatamente una gran bota - correr rápidamente en línea recta y manipular un balón de fútbol bajo presión son obviamente cosas muy diferentes, pero le da a la marca un nuevo lugar para comenzar."
+        },
+        {
+          "type": "text",
+          "id": "ad24n69",
+          "content": "En una industria llena de parte superior de punto, recubrimientos de agarre y formas cada vez más elaboradas de describir los materiales, una bota de fútbol rociada robóticamente sería realmente diferente. No es cosméticamente diferente, pero fundamentalmente diferente."
+        },
+        {
+          "type": "image",
+          "id": "jm1dzfh",
+          "src": "assets/1789768855958-IMG_3473.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "jwn9h9r",
+          "src": "assets/1789768865204-IMG_3472.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "rk88eb7",
+          "content": "La participación de Mbappé hace que todo esto sea imposible de ignorar. No es solo una cara famosa que se está utilizando para amplificar un momento de lanzamiento. Según On, trabajará directamente con los equipos de producto para desarrollar y probar el calzado y la ropa futuros. Henry, por otro lado, supervisará la estrategia más amplia, desde las relaciones con los atletas hasta la dirección cultural de la marca, mientras que Schertenleib ayudará a garantizar que sus productos estén moldeados por el futuro del juego femenino."
+        },
+        {
+          "type": "text",
+          "id": "9u0q5vh",
+          "content": "Incluso la campaña de lanzamiento, fotografiada por Juergen Teller dentro de On Labs en Zúrich, se siente puntiaguda. Esto es fútbol presentado a través de la ingeniería, la experimentación y una lente cultural específica."
+        },
+        {
+          "type": "text",
+          "id": "bw6rdyz",
+          "content": "Por supuesto, irrumpir en el fútbol no será fácil, pero On ya ha interrumpido una categoría de rendimiento supuestamente establecida al dar a la gente algo que no sabía que necesitaba. Y ahora tiene a Mbappé, Henry, un serio poder financiero, una genuina relevancia cultural y tecnología a diferencia de todo lo que está actualmente en el campo."
+        },
+        {
+          "type": "text",
+          "id": "ba9r32b",
+          "content": "El fútbol no necesita otra marca de ropa deportiva que haga más de lo mismo. Y lo más emocionante de On es que ciertamente no lo hará."
+        },
+        {
+          "type": "image-pair",
+          "id": "3kbfkwl",
+          "left": {
+            "src": "assets/1789769189225-IMG_3465.jpeg"
+          },
+          "right": {
+            "src": "assets/1789769197847-IMG_3464.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "fnc78fr",
+          "content": "Boot Lab BAGC"
+        },
+        {
+          "type": "text",
+          "id": "zkzlfbj",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba. "
         }
       ],
       "relatedProduct": null,
