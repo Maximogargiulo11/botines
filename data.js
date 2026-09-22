@@ -11,6 +11,127 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "4nwbxcc",
+      "slug": "steven-bergwijn-ha-sido-visto-en-el-campo-de-juego-con-el-nuevo-proximo-mercurial-superfly-11-x-kobe",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Steven Bergwijn ha sido visto en el campo de juego con el  nuevo próximo Mercurial Superfly 11 x Kobe 🏀",
+      "excerpt": "Una colaboración exclusiva que lleva el universo de Kobe Bryant a uno de los silos de velocidad más emblemáticos de Nike Football.",
+      "date": "22 de Septiembre de 2026",
+      "cover": "assets/1790080832404-IMG_3440.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1790080854649-IMG_3439.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1790080887598-IMG_3442.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "vwoflgt",
+          "content": "Una colaboración exclusiva que lleva el universo de Kobe Bryant a uno de los silos de velocidad más emblemáticos de Nike Football, conectando el baloncesto y el fútbol a través del movimiento, el juego de futbol, la aceleración y esa obsesión por los detalles."
+        },
+        {
+          "type": "image",
+          "id": "u9i4n9m",
+          "src": "assets/1790080940104-IMG_3440.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "0at6ka7",
+          "content": "Cuentan con una impresionante combinación de colores rosa y morado, resaltada por una llamativa transición de degradado a través de la parte superior."
+        },
+        {
+          "type": "image-pair",
+          "id": "qpfp9rk",
+          "left": {
+            "src": "assets/1790080973616-IMG_3444.jpeg"
+          },
+          "right": {
+            "src": "assets/1790080984735-IMG_3443.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "fl0jet2",
+          "content": "Esta combinación de colores vibrante y audaz trae inmediatamente recuerdos de la icónica edición 'Fireberry' de las Nike Mercurial Vapor 9."
+        },
+        {
+          "type": "image",
+          "id": "9e3qy5n",
+          "src": "assets/1790081089175-IMG_3534.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "j055i4q",
+          "src": "assets/1790081096670-IMG_3535.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "n354ope",
+          "content": "En un brillante toque personalizado, la palabra \"KOBE\" reemplaza el texto tradicional \"NIKE\" en la empeine cerca del talón, utilizando exactamente el mismo estilo de fuente clásico."
+        },
+        {
+          "type": "image",
+          "id": "jnvc6z2",
+          "src": "assets/1790081103457-IMG_3536.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "hyn2s61",
+          "content": "Para hacer que el diseño destaque aún más contra el vibrante fondo rosa, el Swoosh y otros detalles técnicos sutiles se ejecutan en un color limón brillante y contrastante."
+        },
+        {
+          "type": "image-pair",
+          "id": "qp9iyh9",
+          "left": {
+            "src": "assets/1790081158890-IMG_3532.jpeg"
+          },
+          "right": {
+            "src": "assets/1790081164267-IMG_3533.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "yjxb5py",
+          "content": "Boot Spotting BAGC 👟🔍"
+        },
+        {
+          "type": "instagram",
+          "id": "xo5e1sz",
+          "url": "https://www.instagram.com/p/DdMKbSPiKsW/?img_index=1&stkn=eDFnN2IzeWNoMGNs"
+        },
+        {
+          "type": "text",
+          "id": "xnwk2dh",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "xxpedi9",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "bhdv1y7",
       "slug": "mbappe-deja-nike-tras-20-anos-y-se-une-a-on-football",
       "brand": "",
