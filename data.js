@@ -6761,7 +6761,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Hyperfast Elite FG ‘Final Rush’",
         "colorway": "Menta",
         "color": "#56ff95",
-        "price": 569999,
+        "price": 519999,
         "availableSizes": [],
         "sizes": {
           "eu": [
