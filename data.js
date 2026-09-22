@@ -11,6 +11,97 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "w0ifflr",
+      "slug": "sam-kerr-obtiene-su-segunda-firma-de-mercurial-superfly-11-por-nike",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Sam Kerr obtiene su segunda firma de Mercurial Superfly 11 por Nike ✍️",
+      "excerpt": "Después del lanzamiento de la firma de debut del año pasado, Nike ha entregado una vez más a la superestrella australiana un diseño que se siente tan audaz y distintivo como la propia jugadora.",
+      "date": "22 de Septiembre de 2026",
+      "cover": "assets/1790081335828-IMG_3505.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1790081351667-IMG_3508.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "knk339w",
+          "content": "Los botines exclusivos siguen siendo un honor relativamente raro en el fútbol femenino, lo que convierte a la segunda Nike Mercurial Superfly exclusiva de Sam Kerr en otro hito significativo en una carrera que ya ha ayudado a redefinir el juego femenino."
+        },
+        {
+          "type": "image",
+          "id": "ajeumeb",
+          "src": "assets/1790081396581-IMG_3509.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9n0ugxf",
+          "content": "Oficialmente vestida con Green Glow/Black, la bota comienza con una base verde menta fresca que llama la atención de inmediato. Pero son los detalles en capas en la parte superior lo que realmente da vida al diseño."
+        },
+        {
+          "type": "text",
+          "id": "lnwqqs4",
+          "content": "Bajo los pies, la suela translúcida del Mercurial proporciona otro detalle oculto. A través de la suela transparente, se pueden ver destellos de naranja brillante y rojo debajo, creando un marcado contraste con los tonos más fríos utilizados en la parte superior."
+        },
+        {
+          "type": "image",
+          "id": "ehsq09c",
+          "src": "assets/1790081495607-IMG_3506.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yxphwbi",
+          "content": "Como es de esperar de un lanzamiento de firma, el toque personal de Kerr también está presente, con su logotipo característico \"SK\" que aparece en el talón y en la unidad Air Zoom en la suela, ambos actuando como una buena señal para el diseño."
+        },
+        {
+          "type": "image",
+          "id": "2bdm0d9",
+          "src": "assets/1790081504653-IMG_3507.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "08oh1i5",
+          "content": "Boot Drop BAGC ✍️"
+        },
+        {
+          "type": "image",
+          "id": "9st05j0",
+          "src": "assets/1790081535557-IMG_3508.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "zjndyif",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "gx3ohnp",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "4nwbxcc",
       "slug": "steven-bergwijn-ha-sido-visto-en-el-campo-de-juego-con-el-nuevo-proximo-mercurial-superfly-11-x-kobe",
       "brand": "Nike",
