@@ -458,7 +458,7 @@ window.BAG_DATA = {
       "slug": "dentro-de-la-tienda-de-botines-de-nike-por-24-horas",
       "brand": "Nike",
       "category": "NOVEDAD",
-      "title": "Dentro de la tienda de botines de Nike por 24 horas.",
+      "title": "Dentro de la tienda de botines de Nike por 24 horas 😮",
       "excerpt": "Adéntrate con nosotros en una experiencia única y exclusiva de la marca del swoosh con sus principales figuras.",
       "date": "17 de Septiembre de 2026",
       "cover": "assets/1789677638618-IMG_3452.jpeg",
