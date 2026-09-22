@@ -7790,7 +7790,7 @@ window.BAG_DATA = {
         "name": "Adidas Predator Elite FT FG ‘Final Rush’",
         "colorway": "Negro / Menta",
         "color": "#3fffa4",
-        "price": 589999,
+        "price": 529999,
         "availableSizes": [],
         "sizes": {
           "eu": [
