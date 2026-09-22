@@ -4943,6 +4943,68 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Kylian Mbappé’ Signature"
         }
+      },
+      {
+        "id": "fq3n10w",
+        "name": "Nike Mercurial Superfly 11 Elite FG SE ‘Sam Kerr’",
+        "colorway": "Verde",
+        "color": "#08ff55",
+        "price": 639999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ]
+        },
+        "images": [
+          "assets/1790089701089-IMG_3561.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "peso": "186 gr.",
+          "terreno": "Césped natural firme",
+          "coleccion": "‘Sam Kerr’ Signature"
+        }
       }
     ],
     "nike/phantom": [
