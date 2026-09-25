@@ -5005,6 +5005,67 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme",
           "coleccion": "‘Sam Kerr’ Signature"
         }
+      },
+      {
+        "id": "tvnatdf",
+        "name": "Nike Mercurial Superfly 11 Elite FG Custom",
+        "colorway": "Blanco",
+        "color": "#ffffff",
+        "price": 799999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "9.5",
+            "10"
+          ]
+        },
+        "images": [
+          "assets/1790295221712-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-2.png",
+          "assets/1790295229373-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-6.png",
+          "assets/1790295237794-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-5.png",
+          "assets/1790295245080-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-8.png"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "Customizados (personalizados)"
+        }
       }
     ],
     "nike/phantom": [
