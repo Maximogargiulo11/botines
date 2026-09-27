@@ -11,6 +11,105 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "zt2sryz",
+      "slug": "on-football-primer-prototipo-de-prueba-para-kylian-mbappe",
+      "brand": "Nike",
+      "category": "CAMPAÑA",
+      "title": "On Football: primer prototipo de prueba para Kylian Mbappé",
+      "excerpt": "Nos adentramos en la intimidad del laboratorio para ver cómo fabrican su botín de fútbol.",
+      "date": "25 de Septiembre de 2026",
+      "cover": "assets/1790550195650-IMG_3599.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "cy53k1t",
+          "src": "assets/1790550524247-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-4.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "yb6l7mg",
+          "content": "Aparentemente, su primer modelo sería un silo velocista característico del jugador francés como usaba anteriormente Nike Mercurial Superfly. Construido con tecnologías de primer nivel y material ultra ligeros, que permiten una liviandad al calzárselos 💨"
+        },
+        {
+          "type": "image-pair",
+          "id": "hl3ao1v",
+          "left": {
+            "src": "assets/1790550548242-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-10.png"
+          },
+          "right": {
+            "src": "assets/1790550557099-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-9.png"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "7nst51l",
+          "left": {
+            "src": "assets/1790550573706-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-5.png"
+          },
+          "right": {
+            "src": "assets/1790550584394-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-6.png"
+          }
+        },
+        {
+          "type": "text",
+          "id": "i8b4fse",
+          "content": "“La revolucionaria tecnología LightSpray se une para crear entre todos el fútbol del futuro”. ✍️"
+        },
+        {
+          "type": "video",
+          "id": "z94t2hi",
+          "src": "assets/1790550597760-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-3.mp4"
+        },
+        {
+          "type": "image",
+          "id": "scmdvzq",
+          "src": "assets/1790550612761-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-8.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "g08yyjf",
+          "src": "assets/1790550626667-Sin_ti_tulo_-_24_de_septiembre_de_2026_a_las_10.50.40-7.mp4"
+        },
+        {
+          "type": "text",
+          "id": "1jqh6pw",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "image",
+          "id": "lqq7uap",
+          "src": "assets/1790550641351-IMG_3619.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "03l5veb",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "pm7fj9f",
       "slug": "nueva-signature-de-nike-phantom-6-low-para-erling-haaland",
       "brand": "Nike",
