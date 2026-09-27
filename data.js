@@ -103,6 +103,13 @@ window.BAG_DATA = {
           "content": "Tal vez On Football sigue siendo un trabajo en progreso, y el próximo capítulo sólo está tomando forma paso a paso. El anuncio es oficial, pero la verdadera transición en el terreno de juego apenas comienza…"
         },
         {
+          "type": "image",
+          "id": "npegtn4",
+          "src": "assets/1790549252981-IMG_3520.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "text",
           "id": "w1tnhql",
           "content": "BAGC x Nike - By You \nExclsuive Experience"
@@ -116,13 +123,6 @@ window.BAG_DATA = {
           "type": "text",
           "id": "yx10g8a",
           "content": "📲 Compra en www.botinesaltagamacba.com"
-        },
-        {
-          "type": "image",
-          "id": "npegtn4",
-          "src": "",
-          "width": "",
-          "height": ""
         }
       ],
       "relatedProduct": null,
