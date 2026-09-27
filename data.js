@@ -5861,6 +5861,73 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Generation’ (2022)"
         }
+      },
+      {
+        "id": "ph336wt",
+        "name": "Nike Phantom 6 Low Elite FG Erling Haaland",
+        "colorway": "Azul / Celeste ",
+        "color": "#00479e",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "9.5",
+            "8",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9.5",
+            "9",
+            "10",
+            "10.5",
+            "11"
+          ]
+        },
+        "images": [
+          "assets/1790474088048-IMG_3669.jpeg",
+          "assets/1790474094450-IMG_3670.jpeg",
+          "assets/1790474100610-IMG_3671.jpeg",
+          "assets/1790474107487-IMG_3672.jpeg",
+          "assets/1790474113781-IMG_3673.jpeg",
+          "assets/1790474119204-IMG_3674.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "Erling Haaland Signature"
+        }
       }
     ],
     "nike/tiempo": [
