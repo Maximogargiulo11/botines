@@ -11,6 +11,81 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "pm7fj9f",
+      "slug": "nueva-signature-de-nike-phantom-6-low-para-erling-haaland",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Nueva ‘signature’ de Nike Phantom 6 Low para Erling Haaland",
+      "excerpt": "",
+      "date": "25 de Septiembre de 2026",
+      "cover": "assets/1790549735962-IMG_3616.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image-pair",
+          "id": "t8uchvn",
+          "left": {
+            "src": "assets/1790549974211-IMG_3592.webp"
+          },
+          "right": {
+            "src": "assets/1790549984178-IMG_3593.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "1kf4i63",
+          "content": "Erling recibe una nueva ‘signature’ Phantom 6 de Nike Football 🎯"
+        },
+        {
+          "type": "image",
+          "id": "6hm5ns0",
+          "src": "assets/1790549996178-IMG_3594.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "54e6u9c",
+          "content": "El goleador noruego 🇳🇴 se mostró feliz luego de recibirlos y lo hizo saber a sus seguidores de esta manera en su cuenta personal de Instagram 😁📸"
+        },
+        {
+          "type": "instagram",
+          "id": "jwh8p5f",
+          "url": "https://www.instagram.com/p/Ddo18G9yOkX/?stkn=dWJ6azRhaTJvb29l"
+        },
+        {
+          "type": "instagram",
+          "id": "mgo4fkn",
+          "url": "https://www.instagram.com/reel/Ddo5XDRMici/?stkn=dzc3bWo4bTJweG8y"
+        },
+        {
+          "type": "text",
+          "id": "4yq10yp",
+          "content": "🛒 Disponibles a partir del Jueves 01 de Octubre en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "j03i8jc",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "xvzjxpn",
       "slug": "kylian-mbappe-retorna-al-campo-de-juego-con-mercurial-superfly-11-pero-sin-el-logo-de-nike",
       "brand": "Nike",
