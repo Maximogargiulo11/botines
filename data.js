@@ -11,6 +11,95 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "h1os8or",
+      "slug": "kylian-mbappe-debut-con-su-primer-botin-on-football-en-un-partido-oficial",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Kylian Mbappé debut con su primer botín On Football en un partido oficial",
+      "excerpt": "La verdadera historia entre On Football y Kylian Mbappé ¡Ya empezó! 🙌",
+      "date": "26 de Septiembre en 2026",
+      "cover": "assets/1790550937749-IMG_3675.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image",
+          "id": "77qr63i",
+          "src": "assets/1790551103714-Sin_ti_tulo_-_26_de_septiembre_de_2026_a_las_21.08.06-2.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "lcx4k5t",
+          "content": "Luego del anuncio oficial de la firma del jugador francés con la marca suiza y causar una revolución en el mercado de los botines de fútbol, hace su debut en un partido oficial en los pies de su principal embajador."
+        },
+        {
+          "type": "image",
+          "id": "c2qrwd8",
+          "src": "assets/1790551120436-Sin_ti_tulo_-_26_de_septiembre_de_2026_a_las_21.08.06-3.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "76poyx6",
+          "content": "Aunque en teoría es un prototipo de prueba, que implementa la tecnología ‘LightSpray’, no vendría mal como estreno en color blanco para lucir más limpio dentro de la cancha…"
+        },
+        {
+          "type": "image-pair",
+          "id": "l9mu43m",
+          "left": {
+            "src": "assets/1790551144013-Sin_ti_tulo_-_26_de_septiembre_de_2026_a_las_21.08.06-4.png"
+          },
+          "right": {
+            "src": "assets/1790551152364-Sin_ti_tulo_-_26_de_septiembre_de_2026_a_las_21.08.06-5.png"
+          }
+        },
+        {
+          "type": "text",
+          "id": "oxf1h88",
+          "content": "Estamos ante el comienzo de una nueva era de botines de fútbol por parte de una marca emergente en este mercado."
+        },
+        {
+          "type": "image",
+          "id": "bsnwc14",
+          "src": "assets/1790551187946-IMG_3682.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "hnflhkm",
+          "content": "¿Probarías uno de ellos? 🤔"
+        },
+        {
+          "type": "text",
+          "id": "bmwnu59",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "47mj309",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "zt2sryz",
       "slug": "on-football-primer-prototipo-de-prueba-para-kylian-mbappe",
       "brand": "Nike",
