@@ -11,6 +11,126 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "xvzjxpn",
+      "slug": "kylian-mbappe-retorna-al-campo-de-juego-con-mercurial-superfly-11-pero-sin-el-logo-de-nike",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Kylian Mbappé retorna al campo de juego con Mercurial Superfly 11 pero sin el logo de Nike",
+      "excerpt": "",
+      "date": "23 de Septiembre de 2026",
+      "cover": "assets/1790548757079-IMG_3516.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "omoj67j",
+          "content": "Una relación tan larga y duradera como la de Kylian Mbappé con Nike Football no desaparecen de la noche a la mañana."
+        },
+        {
+          "type": "image",
+          "id": "ho4ugeq",
+          "src": "assets/1790548926657-IMG_3519.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "0ywzwyo",
+          "content": "Si bien, la era On ha comenzado oficialmente, pero la transición a la cancha podría no estar completa todavía. Luego de ser anunciado oficialmente como el atleta más reciente de On Football, el crack francés saltó al campo para el calentamiento antes del Derby de Madrid llevando un par completamente blanco de Nike Mercurial Superfly 11, que claramente han sido hechos de servicio exclusivo de personalización ‘By You’."
+        },
+        {
+          "type": "text",
+          "id": "vx2gmi2",
+          "content": "Después de echar nuestro primer vistazo a sus nuevas botas On Football, ver a Mbappé de vuelta con Nike es definitivamente inesperado. "
+        },
+        {
+          "type": "image-pair",
+          "id": "fdbv4iy",
+          "left": {
+            "src": "assets/1790548943424-IMG_3517.jpeg"
+          },
+          "right": {
+            "src": "assets/1790548958534-IMG_3518.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "7yyaaly",
+          "content": "Sin colores, sin marca visible, solo la inconfundible silueta de la bota que definió su capítulo anterior y la cámara Air Zoom en un color anaranjado para distinguir. ¿Habrá sido el último movimiento de marketing de Nike antes de abandonar los pies de Kylian? "
+        },
+        {
+          "type": "image",
+          "id": "xfbbcwd",
+          "src": "assets/1790548971303-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-2.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "2e2vm53",
+          "src": "assets/1790548985695-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-6.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "2xf7uf0",
+          "src": "assets/1790549004712-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-5.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "6uesw8i",
+          "src": "assets/1790549017960-Sin_ti_tulo_-_23_de_septiembre_de_2026_a_las_10.12.54-8.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "c6wfjoi",
+          "content": "Tal vez On Football sigue siendo un trabajo en progreso, y el próximo capítulo sólo está tomando forma paso a paso. El anuncio es oficial, pero la verdadera transición en el terreno de juego apenas comienza…"
+        },
+        {
+          "type": "text",
+          "id": "w1tnhql",
+          "content": "BAGC x Nike - By You \nExclsuive Experience"
+        },
+        {
+          "type": "text",
+          "id": "kgym12m",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "yx10g8a",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        },
+        {
+          "type": "image",
+          "id": "npegtn4",
+          "src": "",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "8e82d2g",
       "slug": "mbappe-spoilea-el-el-primer-vistazo-de-on-football",
       "brand": "",
