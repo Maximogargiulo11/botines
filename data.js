@@ -11,6 +11,95 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "jprxviu",
+      "slug": "erling-haaland-presenta-su-quinta-signature-de-phantom-6-low-por-nike-football",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Erling Haaland presenta su quinta ‘signature’ de Phantom 6 por Nike Football",
+      "excerpt": "Construidos para la tormenta ⛈️",
+      "date": "25 de Septiembre de 2026",
+      "cover": "assets/1790551757717-IMG_3693.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "89u7gmr",
+          "content": "Presentamos la quinta ‘signature’ de Phantom 6 para Erling Haaland, por Nike Football."
+        },
+        {
+          "type": "image",
+          "id": "3nhptfo",
+          "src": "assets/1790551837243-IMG_3696.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "9lbypz9",
+          "content": "Con un diseño reactivo a la lluvia que revela más detalles cuando está mojado💧"
+        },
+        {
+          "type": "image-pair",
+          "id": "zg0ltzg",
+          "left": {
+            "src": "assets/1790551849228-IMG_3694.jpeg"
+          },
+          "right": {
+            "src": "assets/1790551857861-IMG_3695.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "f8moalz",
+          "content": "Nuevo cabello. Nuevos botines. Nuevo look.\nPero hay algo que nunca cambia: anotar goles🦿⚽️"
+        },
+        {
+          "type": "image",
+          "id": "tklqwd1",
+          "src": "assets/1790551866626-IMG_3697.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "exwqvxg",
+          "content": "Force Of Nature 🌊"
+        },
+        {
+          "type": "text",
+          "id": "8cxxgjn",
+          "content": "🛒 Disponibles a partir del 01 de Octubre en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "product-card",
+          "id": "zl2tl68",
+          "brand": "nike",
+          "model": "phantom",
+          "colorwayId": "ph336wt"
+        },
+        {
+          "type": "text",
+          "id": "s66pdbd",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "h1os8or",
       "slug": "kylian-mbappe-debut-con-su-primer-botin-on-football-en-un-partido-oficial",
       "brand": "",
