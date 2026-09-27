@@ -11,6 +11,88 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "8e82d2g",
+      "slug": "mbappe-spoilea-el-el-primer-vistazo-de-on-football",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Mbappé spoilea el ¡el primer vistazo de On Football!",
+      "excerpt": "",
+      "date": "23 de Septiembre de 2026",
+      "cover": "assets/1790548204574-IMG_3510.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1790548221495-IMG_3511.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "assets/1790548242790-IMG_3513.jpeg",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "knqjjdv",
+          "content": "Primer prototipo de prueba de On Football para los pies de Kylian Mbappé."
+        },
+        {
+          "type": "image",
+          "id": "m0m63td",
+          "src": "assets/1790548490394-IMG_3512.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "8vj3aj6",
+          "content": "El crack francés salta al verde césped en nuevo entrenamiento con el Real Madrid luego de firmar su contrato con la marca suiza y desligarse de toda casi una vida con el Swoosh."
+        },
+        {
+          "type": "text",
+          "id": "nnj6eoe",
+          "content": "On está entrando en el fútbol sin décadas de archivo de botines o silos históricos detrás, por lo que la primer botín tiene que sentirse creíble de inmediato. Tiene que introducir una nueva dirección de actuación, tener sentido en el campo y trabajar en los pies de uno de los jugadores más relevantes en la escena global."
+        },
+        {
+          "type": "image-pair",
+          "id": "tx68bbn",
+          "left": {
+            "src": "assets/1790548506204-IMG_3514.jpeg"
+          },
+          "right": {
+            "src": "assets/1790548515681-IMG_3515.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "cfi5f3y",
+          "content": "El capítulo de Mercurial ha terminado. Ahora comienza uno nuevo y más importante…"
+        },
+        {
+          "type": "image",
+          "id": "ooh0shc",
+          "src": "assets/1790548532992-IMG_3511.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "6z84pcj",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "9kh8fg7",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "w0ifflr",
       "slug": "sam-kerr-obtiene-su-segunda-firma-de-mercurial-superfly-11-por-nike",
       "brand": "Nike",
