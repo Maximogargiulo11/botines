@@ -5926,7 +5926,7 @@ window.BAG_DATA = {
           "suela": "FG",
           "terreno": "Césped natural firme ",
           "peso": "186 gr.",
-          "coleccion": "Erling Haaland Signature"
+          "coleccion": "‘Erling Haaland’ Signature"
         }
       }
     ],
