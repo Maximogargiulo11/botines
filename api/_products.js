@@ -16,7 +16,12 @@ function loadCatalog() {
   const products = (sandbox.window.BAG_DATA && sandbox.window.BAG_DATA.products) || {};
   for (const key of Object.keys(products)) {
     for (const variant of products[key]) {
-      byId[variant.id] = Number(variant.price);
+      byId[variant.id] = {
+        price: Number(variant.price),
+        name: String(variant.name || ''),
+        colorway: String(variant.colorway || ''),
+        image: (Array.isArray(variant.images) && variant.images[0]) ? String(variant.images[0]) : '',
+      };
     }
   }
   cache = byId;
@@ -24,7 +29,14 @@ function loadCatalog() {
 }
 
 function getTrustedPrice(id) {
+  const p = loadCatalog()[id];
+  return p ? p.price : undefined;
+}
+
+// Datos confiables del producto (nombre, colorway, imagen) desde el catálogo.
+// Devuelve undefined si el id no existe.
+function getProduct(id) {
   return loadCatalog()[id];
 }
 
-module.exports = { getTrustedPrice };
+module.exports = { getTrustedPrice, getProduct };

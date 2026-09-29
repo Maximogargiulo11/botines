@@ -1,8 +1,25 @@
 const { Resend } = require('resend');
+const { getProduct } = require('./_products');
 
 const IG_PROFILE = 'https://instagram.com/botinesaltagamacba';
 const IG_DM = 'https://ig.me/m/botinesaltagamacba';
 const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
+
+// Los mails necesitan URLs ABSOLUTAS para las imágenes (un path relativo como
+// "assets/x.webp" no carga en Gmail/Outlook). Normalizamos a URL completa.
+function absImageUrl(image) {
+  const img = String(image || '').trim();
+  if (!img) return '';
+  if (/^https?:\/\//i.test(img)) return img;
+  return `${SITE_URL}/${img.replace(/^\/+/, '')}`;
+}
+
+// Resuelve la imagen de un ítem del pedido: primero la del catálogo (fuente
+// confiable, por id), y si no, la que venga guardada en el propio ítem.
+function itemImageUrl(it) {
+  const prod = it && it.id ? getProduct(it.id) : undefined;
+  return absImageUrl((prod && prod.image) || (it && it.image) || '');
+}
 
 const fmt = (n) => '$ ' + Number(n).toLocaleString('es-AR');
 
@@ -34,12 +51,21 @@ async function sendConfirmationEmail(order) {
     return { sent: false, reason: 'El pedido no tiene email de contacto.' };
   }
 
-  const itemsDetailsHtml = (order.items || []).map(it => {
+  const itemsRowsHtml = (order.items || []).map(it => {
     const { producto, talle } = parseItem(it.title);
     const qty = Number(it.quantity) || 0;
-    return `<li>Producto: ${esc(producto)}</li>`
-      + (talle ? `<li>Talle: ${esc(talle)}</li>` : '')
-      + `<li>Cantidad: ${qty}</li>`;
+    const img = itemImageUrl(it);
+    return `
+      <tr>
+        <td style="padding:10px 14px 10px 0;width:72px;vertical-align:top;">
+          ${img ? `<img src="${esc(img)}" width="68" height="68" alt="${esc(producto)}" style="width:68px;height:68px;border-radius:8px;object-fit:cover;display:block;border:1px solid #e5e7eb;">` : ''}
+        </td>
+        <td style="padding:10px 0;font-size:14px;color:#111827;vertical-align:top;">
+          <strong>${esc(producto)}</strong><br>
+          ${talle ? `<span style="color:#6b7280;">Talle: ${esc(talle)}</span><br>` : ''}
+          <span style="color:#6b7280;">Cantidad: ${qty}</span>
+        </td>
+      </tr>`;
   }).join('');
 
   const html = `
@@ -48,11 +74,11 @@ async function sendConfirmationEmail(order) {
       <p>¡Gracias por confiar en <strong>Botines Alta Gama Córdoba</strong>!</p>
       <p>Te confirmamos que hemos recibido y verificado correctamente tu comprobante de pago, por lo que <strong>tu compra ha sido confirmada</strong>.</p>
       <p><strong>Detalles de tu pedido:</strong></p>
-      <ul>
-        <li>Número de pedido: #${esc(order.id)}</li>
-        ${itemsDetailsHtml}
-        <li>Total: ${fmt(order.amount)}</li>
-      </ul>
+      <p style="margin:0 0 4px;">Número de pedido: #${esc(order.id)}</p>
+      <table style="border-collapse:collapse;margin:8px 0 12px;width:100%;max-width:520px;">
+        ${itemsRowsHtml}
+      </table>
+      <p style="margin:0 0 16px;font-size:15px;"><strong>Total: ${fmt(order.amount)}</strong></p>
       <p>A partir de este momento, comenzaremos a preparar tu pedido para el envío.</p>
       <p>Te enviaremos una nueva notificación cuando tu pedido haya sido despachado, junto con la información necesaria para realizar su seguimiento.</p>
       <p>Si tenés alguna consulta, podés <a href="${IG_DM}">comunicarte con nuestro equipo</a>.</p>

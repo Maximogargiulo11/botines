@@ -8,6 +8,7 @@
 const { Resend } = require('resend');
 const { listCarts, saveCart, deleteCart } = require('../api/_carts');
 const { createCoupon } = require('../api/_coupons');
+const { getProduct } = require('../api/_products');
 
 const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 const FROM = 'Botines Alta Gama Córdoba <pedidos@botinesaltagamacba.com>';
@@ -42,18 +43,35 @@ function recoverLink(cart, couponCode) {
   return url;
 }
 
+// Los mails necesitan URLs ABSOLUTAS para las imágenes (un path relativo como
+// "assets/x.webp" no carga en Gmail/Outlook). Preferimos la imagen del catálogo
+// (por id) y caemos a la guardada en el ítem; después la volvemos absoluta.
+function absImageUrl(image) {
+  const img = String(image || '').trim();
+  if (!img) return '';
+  if (/^https?:\/\//i.test(img)) return img;
+  return `${SITE_URL}/${img.replace(/^\/+/, '')}`;
+}
+function itemImageUrl(it) {
+  const prod = it && it.id ? getProduct(it.id) : undefined;
+  return absImageUrl((prod && prod.image) || (it && it.image) || '');
+}
+
 function itemsHtml(cart) {
-  return cart.items.map(it => `
+  return cart.items.map(it => {
+    const img = itemImageUrl(it);
+    return `
     <tr>
       <td style="padding:8px 12px 8px 0;width:64px;">
-        ${it.image ? `<img src="${esc(it.image)}" width="60" height="60" alt="" style="border-radius:8px;object-fit:cover;display:block;">` : ''}
+        ${img ? `<img src="${esc(img)}" width="60" height="60" alt="" style="border-radius:8px;object-fit:cover;display:block;">` : ''}
       </td>
       <td style="padding:8px 0;font-size:14px;color:#111827;">
         <strong>${esc(it.name)}</strong><br>
         <span style="color:#6b7280;">${esc(it.colorway)} · Talle ${esc(it.size)} ${esc(String(it.unit || 'eu').toUpperCase())}</span><br>
         <span style="color:#111827;">${fmt(it.price)}</span>
       </td>
-    </tr>`).join('');
+    </tr>`;
+  }).join('');
 }
 
 function ctaButton(link, label) {
