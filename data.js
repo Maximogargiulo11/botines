@@ -11,6 +11,109 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "qp5nfqe",
+      "slug": "botines-personalizados-por-nike-football-para-los-jugadores-de-espana-campeones-del-mundo",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Botines personalizados por Nike Football para los jugadores de España, campeones del mundo.",
+      "excerpt": "",
+      "date": "27 de Septiembre de 2026",
+      "cover": "assets/1790958651498-IMG_4123.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1790958667970-IMG_4127.jpeg",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "liraic1",
+          "content": "Los jugadores Mikel Oyarzabal y Alex Bayena lucieron unos Mercurial Vapor 17 By You cuatomizados versión World Champions por Nike."
+        },
+        {
+          "type": "image",
+          "id": "8md3t79",
+          "src": "assets/1790958726148-IMG_4122.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "nvjvvs8",
+          "left": {
+            "src": "assets/1790958749476-IMG_4126.jpeg"
+          },
+          "right": {
+            "src": "assets/1790958762980-IMG_4125.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "7pz70zq",
+          "src": "assets/1790958773322-IMG_4127.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "swd5z74",
+          "src": "assets/1790958785322-IMG_4141.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "eknpfei",
+          "content": "En cambio, Rodri, saltó al campo de juego con sus característicos Phantom 6 High con detalles únicos."
+        },
+        {
+          "type": "image-pair",
+          "id": "36hera4",
+          "left": {
+            "src": "assets/1790958802228-IMG_4128.jpeg"
+          },
+          "right": {
+            "src": "assets/1790958810094-IMG_4129.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "3tusjd7",
+          "src": "assets/1790958819138-IMG_4131.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "7rot9n5",
+          "src": "assets/1790958842602-IMG_4130.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "feebrag",
+          "content": "🛒 Personaliza tus botines Nike con nuestro servicio exclusivo ‘By You’ en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "k3oln04",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "jprxviu",
       "slug": "erling-haaland-presenta-su-quinta-signature-de-phantom-6-low-por-nike-football",
       "brand": "Nike",
