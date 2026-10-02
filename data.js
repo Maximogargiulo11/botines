@@ -636,7 +636,7 @@ window.BAG_DATA = {
       "slug": "kylian-mbappe-retorna-al-campo-de-juego-con-mercurial-superfly-11-pero-sin-el-logo-de-nike",
       "brand": "Nike",
       "category": "NOVEDAD",
-      "title": "Kylian Mbappé retorna al campo de juego con Mercurial Superfly 11 pero sin el logo de Nike",
+      "title": "Kylian Mbappé retorna al campo de juego con Mercurial Superfly 11 pero sin el logo de Nike 🤔",
       "excerpt": "",
       "date": "23 de Septiembre de 2026",
       "cover": "assets/1790548757079-IMG_3516.jpeg",
