@@ -11,6 +11,107 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "rm01rdz",
+      "slug": "nuevos-colores-de-future-9-ultra-7-por-puma-football",
+      "brand": "Puma",
+      "category": "NOVEDAD",
+      "title": "Nuevos colores de Future 9 & Ultra 7, por Puma Football.",
+      "excerpt": "",
+      "date": "27 de Septiembre de 2026.",
+      "cover": "assets/1790959700086-Sin_ti_tulo_-_27_de_septiembre_de_2026_a_las_16.51.04-1.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "v4rz28y",
+          "content": "Se espera que Puma lance pronto el próximo paquete de temporada con estos colores en su silos Future 9 & Ultra 7, aunque desconozcamos el color de King 20, ya fueron “spoileados” por jugadores en la Liga de Naciones."
+        },
+        {
+          "type": "text",
+          "id": "3bpdbzk",
+          "content": "Por un lado, Marc Cucurella 🇪🇸 con su silo característico Future 9, que está cubierto por un azul oscuro con detalles en amarillo/verde."
+        },
+        {
+          "type": "image",
+          "id": "03kxrdm",
+          "src": "assets/1790959716251-IMG_4132.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "etmvxqj",
+          "left": {
+            "src": "assets/1790959475869-IMG_4135.jpeg"
+          },
+          "right": {
+            "src": "assets/1790959483114-IMG_4134.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "ldinxh3",
+          "src": "assets/1790959493230-IMG_4133.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "7u0z3wm",
+          "content": "Por otro lado, Cody Gakpo 🇳🇱, la principal cara de los últimos lanzamientos de Ultra 7, con un diseño que ya venimos viendo desde la presentación de la nueva generación de este silo donde combina mitad color blanco con otro color. En este caso ha sido también un color azul, como protagonista en todo el paquete."
+        },
+        {
+          "type": "image",
+          "id": "pidqr7s",
+          "src": "assets/1790959534703-IMG_4136.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "ltujx9c",
+          "left": {
+            "src": "assets/1790959546722-IMG_4137.jpeg"
+          },
+          "right": {
+            "src": "assets/1790959553711-IMG_4139.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "8pvzkgm",
+          "src": "assets/1790959570359-IMG_4138.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "s81sw4b",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "kscvxou",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "qp5nfqe",
       "slug": "botines-personalizados-por-nike-football-para-los-jugadores-de-espana-campeones-del-mundo",
       "brand": "Nike",
