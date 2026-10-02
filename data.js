@@ -267,7 +267,7 @@ window.BAG_DATA = {
       "slug": "erling-haaland-presenta-su-quinta-signature-de-phantom-6-low-por-nike-football",
       "brand": "Nike",
       "category": "LANZAMIENTO",
-      "title": "Erling Haaland presenta su quinta ‘signature’ de Phantom 6 por Nike Football",
+      "title": "Erling Haaland presenta su quinta ‘signature’ de Phantom 6 por Nike Football 🥶",
       "excerpt": "Construidos para la tormenta ⛈️",
       "date": "25 de Septiembre de 2026",
       "cover": "assets/1790551757717-IMG_3693.jpeg",
@@ -287,7 +287,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "89u7gmr",
-          "content": "Presentamos la quinta ‘signature’ de Phantom 6 para Erling Haaland, por Nike Football."
+          "content": "Presentamos la quinta ‘signature’ de Phantom 6 para Erling Haaland, por Nike Football 🇳🇴⚽️"
         },
         {
           "type": "image",
@@ -356,7 +356,7 @@ window.BAG_DATA = {
       "slug": "kylian-mbappe-debut-con-su-primer-botin-on-football-en-un-partido-oficial",
       "brand": "",
       "category": "NOVEDAD",
-      "title": "Kylian Mbappé debut con su primer botín On Football en un partido oficial",
+      "title": "Kylian Mbappé debut con su primer botín On Football en un partido oficial 😲",
       "excerpt": "La verdadera historia entre On Football y Kylian Mbappé ¡Ya empezó! 🙌",
       "date": "26 de Septiembre en 2026",
       "cover": "assets/1790550937749-IMG_3675.jpeg",
@@ -445,7 +445,7 @@ window.BAG_DATA = {
       "slug": "on-football-primer-prototipo-de-prueba-para-kylian-mbappe",
       "brand": "Nike",
       "category": "CAMPAÑA",
-      "title": "On Football: primer prototipo de prueba para Kylian Mbappé",
+      "title": "On Football: primer prototipo de prueba para Kylian Mbappé 🧪",
       "excerpt": "Nos adentramos en la intimidad del laboratorio para ver cómo fabrican su botín de fútbol.",
       "date": "25 de Septiembre de 2026",
       "cover": "assets/1790550195650-IMG_3599.jpeg",
@@ -544,7 +544,7 @@ window.BAG_DATA = {
       "slug": "nueva-signature-de-nike-phantom-6-low-para-erling-haaland",
       "brand": "Nike",
       "category": "NOVEDAD",
-      "title": "Nueva ‘signature’ de Nike Phantom 6 Low para Erling Haaland",
+      "title": "Nueva ‘signature’ de Nike Phantom 6 Low para Erling Haaland 🇳🇴⚽️",
       "excerpt": "",
       "date": "25 de Septiembre de 2026",
       "cover": "assets/1790549735962-IMG_3616.jpeg",
@@ -739,7 +739,7 @@ window.BAG_DATA = {
       "slug": "mbappe-spoilea-el-el-primer-vistazo-de-on-football",
       "brand": "",
       "category": "NOVEDAD",
-      "title": "Mbappé spoilea el ¡el primer vistazo de On Football!",
+      "title": "Mbappé spoilea el ¡el primer vistazo de On Football! 😱",
       "excerpt": "",
       "date": "23 de Septiembre de 2026",
       "cover": "assets/1790548204574-IMG_3510.jpeg",
