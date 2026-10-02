@@ -11,6 +11,97 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "3kqq2g7",
+      "slug": "bright-lights-nuevo-paquete-de-nike-football",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "‘Bright Lights’, nuevo paquete de Nike Football 🧊",
+      "excerpt": "",
+      "date": "01 de Octubre de 2026",
+      "cover": "assets/1790962235426-IMG_3779.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "do9t6t5",
+          "content": "Cuando las marcas lanzan paquetes de blanco, generalmente están dirigidas a los jugadores que buscan un aspecto limpio y discreto. Rara vez consiguen mucha tracción en el nivel superior del juego. Pero el nuevo paquete ‘Bright Lights’ de @nikefootball destaca por completo esa tendencia."
+        },
+        {
+          "type": "image",
+          "id": "162ggne",
+          "src": "assets/1790962336785-IMG_3780.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "mastdcp",
+          "content": "Presentado oficialmente en un color blanco y verde azulado nítido, el paquete Bright Lights permite a Nike apoyarse en una estética premium que se siente perfectamente sincronizada para los meses más fríos. Limpio, minimalista y elegante sin esfuerzo, es un paquete que se siente tan premium como prístino. Dando a través de serias vibraciones invernales, viste toda la lista de botas de la generación actual de Nike con una base blanca fresca, compensada por detalles vívidos de color verde azulado en todas partes. Liderando la carga están los silos de velocidad insignia de la marca, el Mercurial Vapor 17 y el Mercurial Superfly 11, mientras que el Phantom y el Tiempo completan la línea."
+        },
+        {
+          "type": "image",
+          "id": "zv6uttr",
+          "src": "assets/1790962346443-IMG_3781.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "8j23pjr",
+          "content": "Lo que es particularmente interesante de este lanzamiento es su papel previsto para los próximos meses. Tradicionalmente, las colecciones de blanqueota y blackout existen en gran medida como alternativas amigables con el estilo de vida o favoritas de base, ofreciendo a los jugadores un aspecto limpio lejos de las combinaciones de colores de los titulares en el tono. Es raro ver ese tipo de paquetes respaldados por los nombres más importantes del juego. Pero el Bright Lights Pack está en contraque esa tendencia."
+        },
+        {
+          "type": "image",
+          "id": "4gaee42",
+          "src": "assets/1790962417481-IMG_3782.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "au2fgc1",
+          "content": "En lugar de servir como lanzamiento lateral, este será el paquete principal de Nike para los meses más fríos de la temporada 2026/27, con la lista de nivel de élite del Swoosh lista para cambiar a los diseños blancos y verdeos en todas las ligas y competiciones de todo el mundo. Eso significa mucha exposición para un paquete que se siente refrescantemente discreto en una época en la que las botas de fútbol a menudo compiten para ser más fuertes y brillantes que nunca."
+        },
+        {
+          "type": "image",
+          "id": "c5imuqf",
+          "src": "assets/1790962427002-IMG_3783.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "70i487k",
+          "content": "Es un paquete que se siente premium, pulido y perfectamente adecuado para los meses más fríos del invierno europeo que se avecina."
+        },
+        {
+          "type": "text",
+          "id": "cslzcac",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "lkt96d3",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "eyshd6x",
       "slug": "nuevo-paquete-de-puma-football-unscripted",
       "brand": "Puma",
