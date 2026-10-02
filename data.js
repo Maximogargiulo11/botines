@@ -11,6 +11,109 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "eyshd6x",
+      "slug": "nuevo-paquete-de-puma-football-unscripted",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Nuevo paquete de Puma Football: ‘Unscripted’ 🔵",
+      "excerpt": "",
+      "date": "01 de Octubre de 2026",
+      "cover": "assets/1790961774264-IMG_3788.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "gza8rfo",
+          "content": "A medida que nos dirigimos hacia fin de año, Puma Football presenta la última actualización de colores para sus silos, presentando el nuevo paquete: ‘The Unscripted’, que cubre el Future 9, Ultra Nitro 7 y King 20."
+        },
+        {
+          "type": "text",
+          "id": "2d3xd86",
+          "content": "El nombre ‘Unscripted’ es un guión al fútbol en su su inmpredecible. Se trata de los destellos de brillo, los momentos de inspiración y las decisiones de una fracción de segundo que pueden alterar por completo el curso de un partido. Ya sea un pase que divide la defensa, un grito desde la distancia o una pieza de habilidad que deja a los defensores en nudos, este paquete está hecho para jugadores que escriben sus propias historias. ¿Tienes todo eso? Bien. Sigamos con cómo se ven en realidad."
+        },
+        {
+          "type": "text",
+          "id": "6nhgkyj",
+          "content": "Liderando la carga está el Future 9, vestido con un llamativo color \"Ultra Blue/Puma White/Luminous Blue/Fizzy Melon\". Una base azul audaz domina la parte superior, mientras que los destellos de Fizzy Melon estallan a través del antepié y la placa de la suela, creando un contraste vibrante que irradia a través del empine. La marca blanca en el talón mantiene las cosas limpias y nítidas, ayudando a que esos detalles más brillantes se destaquen aún más."
+        },
+        {
+          "type": "image-pair",
+          "id": "8j68adv",
+          "left": {
+            "src": "assets/1790961942316-IMG_3789.jpeg"
+          },
+          "right": {
+            "src": "assets/1790961949061-IMG_3790.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "6x0hyts",
+          "content": "El Ultra Nitro 7 continúa mostrando la última innovación de rendimiento de Puma, con la tecnología Nitro que ofrece un retorno de energía mejorado y propulsión bajo los pies. Disponible en opciones de nivel élite con cordones y sin cordones, el botín llega en una combinación de colores \"Ultra Blue/Icy Blue/Puma Black/Lime Squeeze\". Visualmente, es posiblemente el diseño más llamativo del trío, dividiendo azul y blanco casi perfectamente en el medio en una disposición diagonal que separa el antepié del talón. Los acentos “Neon Lime Squeeze” se utilizan con moderación, apareciendo principalmente en las puntas de los tachuelas y alrededor del área de la lengüeta de la edición sin cordones."
+        },
+        {
+          "type": "image-pair",
+          "id": "jrn5hie",
+          "left": {
+            "src": "assets/1790961966955-IMG_3792.jpeg"
+          },
+          "right": {
+            "src": "assets/1790961973540-IMG_3791.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "ps1fmom",
+          "content": "Completando el paquete está el siempre confiable King 20, que toma una ruta ligeramente diferente sin dejar de ser fiel a la estética general de la colección. Al llegar en \"Ultra Blue/Lime Squeeze/Puma Black\", la bota utiliza una rica base azul que se complementa con detalles negros en la firma “Formstrip” que corre a ambos lados de la parte superior. La adición de las fronteras “Lime Squeeze” crea un acabado nítido y enérgico, mientras que el mismo tono de neón reaparece en la marca King que se encuentra en la lengüeta y la placa de suela."
+        },
+        {
+          "type": "image-pair",
+          "id": "z8ywax7",
+          "left": {
+            "src": "assets/1790961983646-IMG_3793.jpeg"
+          },
+          "right": {
+            "src": "assets/1790961991442-IMG_3794.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "wd4d9ww",
+          "content": "Si bien cada silo conserva su propia identidad distinta, el paquete sin guión los reúne a través de un uso cohesivo del color y el contraste. El azul domina en todo momento, puntuado por golpes cuidadosamente colocados de detalles de neón que inyectan energía sin abrumar los diseños. Es una colección que abraza los meses más fríos del invierno europeo que se avecina, al tiempo que ofrece suficiente vitalidad para destacar bajo los reflectores."
+        },
+        {
+          "type": "text",
+          "id": "kautak9",
+          "content": "Una colección llega a una serie de colores azules conectados."
+        },
+        {
+          "type": "text",
+          "id": "ucy28ud",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "re7jeq4",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "0vjwh98",
       "slug": "nueva-signature-de-adidas-f50-tunit-para-messi",
       "brand": "Adidas",
