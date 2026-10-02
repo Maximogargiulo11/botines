@@ -11,11 +11,59 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "0vjwh98",
+      "slug": "nueva-signature-de-adidas-f50-tunit-para-messi",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Nueva ‘signature’ de Adidas F50 Tunit para Messi 🔴",
+      "excerpt": "",
+      "date": "28 de Septiembre de 2026",
+      "cover": "assets/1790959865316-IMG_4213.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "5j880d9",
+          "content": "Hoy, Lionel Messi saltó al campo de juego para un nuevo entrenamiento con Inter Miami, previo a viajar a Argentina para su partido de despedida, con una nueva firma de F50 Tunit llamativamente en color rojo con detalles en color negro y blanco 👟👀, además de su característico logo con Adidas Football ¿Recordas este color en otro botín que haya usado? 💭\n"
+        },
+        {
+          "type": "text",
+          "id": "7cvhz59",
+          "content": "¿Los usará el 06 de Octubre? 🤔\nEsperemos que no, ‘El Último Tango’ merece verdaderamente su “The Last Dance” 🥹…"
+        },
+        {
+          "type": "text",
+          "id": "yfh6lgx",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "qy1bvxr",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "rm01rdz",
       "slug": "nuevos-colores-de-future-9-ultra-7-por-puma-football",
       "brand": "Puma",
       "category": "NOVEDAD",
-      "title": "Nuevos colores de Future 9 & Ultra 7, por Puma Football.",
+      "title": "Nuevos colores de Future 9 & Ultra 7, por Puma Football 🔵",
       "excerpt": "",
       "date": "27 de Septiembre de 2026.",
       "cover": "assets/1790959700086-Sin_ti_tulo_-_27_de_septiembre_de_2026_a_las_16.51.04-1.png",
@@ -116,7 +164,7 @@ window.BAG_DATA = {
       "slug": "botines-personalizados-por-nike-football-para-los-jugadores-de-espana-campeones-del-mundo",
       "brand": "Nike",
       "category": "NOVEDAD",
-      "title": "Botines personalizados por Nike Football para los jugadores de España, campeones del mundo.",
+      "title": "Botines personalizados por Nike Football para los jugadores de España, campeones del mundo 🇪🇸🏆",
       "excerpt": "",
       "date": "27 de Septiembre de 2026",
       "cover": "assets/1790958651498-IMG_4123.jpeg",
