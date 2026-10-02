@@ -38,9 +38,26 @@ window.BAG_DATA = {
           "content": "Hoy, Lionel Messi saltó al campo de juego para un nuevo entrenamiento con Inter Miami, previo a viajar a Argentina para su partido de despedida, con una nueva firma de F50 Tunit llamativamente en color rojo con detalles en color negro y blanco 👟👀, además de su característico logo con Adidas Football ¿Recordas este color en otro botín que haya usado? 💭\n"
         },
         {
+          "type": "image-pair",
+          "id": "99xii2l",
+          "left": {
+            "src": "assets/1790961168299-Sin_ti_tulo_-_29_de_septiembre_de_2026_a_las_19.51.19-3.png"
+          },
+          "right": {
+            "src": "assets/1790961176187-Sin_ti_tulo_-_29_de_septiembre_de_2026_a_las_19.51.19-4.png"
+          }
+        },
+        {
           "type": "text",
           "id": "7cvhz59",
           "content": "¿Los usará el 06 de Octubre? 🤔\nEsperemos que no, ‘El Último Tango’ merece verdaderamente su “The Last Dance” 🥹…"
+        },
+        {
+          "type": "image",
+          "id": "lh6xfdo",
+          "src": "assets/1790961211559-IMG_3757.jpeg",
+          "width": "",
+          "height": ""
         },
         {
           "type": "text",
