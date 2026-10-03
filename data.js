@@ -8167,7 +8167,7 @@ window.BAG_DATA = {
         "name": "Adidas Hyperfast Elite FG Evo ‘Final Rush’",
         "colorway": "Menta",
         "color": "#5effc0",
-        "price": 659999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
