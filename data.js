@@ -6138,6 +6138,138 @@ window.BAG_DATA = {
           "peso": "216 gr.",
           "coleccion": "‘Break ‘Em’ Pack"
         }
+      },
+      {
+        "id": "h6nj5ze",
+        "name": "Nike Mercurial Vapor 17 Elite FG ‘Bright Lights’ ",
+        "colorway": "Blanco / Celeste",
+        "color": "#ffffff",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "11.5",
+            "11",
+            "10.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "10.5",
+            "10",
+            "9.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1791205900204-IMG_3932.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Bright Lights’ Pack"
+        }
+      },
+      {
+        "id": "ptyqydw",
+        "name": "Nike Mercurial Superfly 11 Elite FG ‘Bright Lights’",
+        "colorway": "Blanco / Celeste",
+        "color": "#ffffff",
+        "price": 649999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "11.5",
+            "11",
+            "10.5",
+            "13",
+            "12",
+            "12.5"
+          ],
+          "uk": [
+            "7",
+            "6",
+            "7.5",
+            "6.5",
+            "8",
+            "8.5",
+            "9.5",
+            "9",
+            "10.5",
+            "11",
+            "10",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1791205971826-IMG_3934.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Bright Lights’ Pack"
+        }
       }
     ],
     "nike/phantom": [
