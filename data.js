@@ -7181,12 +7181,7 @@ window.BAG_DATA = {
           ]
         },
         "images": [
-          "assets/1790474088048-IMG_3669.jpeg",
-          "assets/1790474094450-IMG_3670.jpeg",
-          "assets/1790474100610-IMG_3671.jpeg",
-          "assets/1790474107487-IMG_3672.jpeg",
-          "assets/1790474113781-IMG_3673.jpeg",
-          "assets/1790474119204-IMG_3674.jpeg"
+          "assets/1791206355035-IMG_3802.webp"
         ],
         "videos": [],
         "spec": {
