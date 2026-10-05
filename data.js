@@ -7195,6 +7195,138 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Erling Haaland’ Signature"
         }
+      },
+      {
+        "id": "5ypf7uz",
+        "name": "Nike Phantom 6 Low Elite FG ‘Bright Lights’ ",
+        "colorway": "Blanco / Celeste",
+        "color": "#ffffff",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1791206142390-IMG_3931.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Bright Lights’ Pack"
+        }
+      },
+      {
+        "id": "vubxjv8",
+        "name": "Nike Phantom 6 High Elite FG ‘Bright Lights’",
+        "colorway": "Blanco / Celeste",
+        "color": "#ffffff",
+        "price": 649999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1791206210887-IMG_3936.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Bright Lights’ Pack"
+        }
       }
     ],
     "nike/tiempo": [
