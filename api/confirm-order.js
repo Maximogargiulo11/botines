@@ -11,7 +11,7 @@ module.exports = async function handler(req, res) {
     return res.status(401).json({ error: 'No autorizado' });
   }
 
-  const { orderId } = req.body || {};
+  const { orderId, resend } = req.body || {};
   if (!orderId) return res.status(400).json({ error: 'Falta orderId' });
 
   // orderId sólo puede contener caracteres seguros: así el pathname queda
@@ -30,22 +30,25 @@ module.exports = async function handler(req, res) {
     const text = await new Response(result.stream).text();
     const order = JSON.parse(text);
 
-    if (order.status !== 'pendiente') {
-      return res.status(400).json({ error: 'El pedido no está pendiente' });
+    // Modo reenviar: no cambia el estado ni toca el cupón, sólo vuelve a mandar
+    // la confirmación al email de ESTE pedido. Sirve para los casos en que el
+    // mail no llegó o se mandó cruzado. Funciona con el pedido en cualquier estado.
+    if (!resend) {
+      if (order.status !== 'pendiente') {
+        return res.status(400).json({ error: 'El pedido no está pendiente' });
+      }
+      order.status = 'approved';
+      await put(pathname, JSON.stringify(order, null, 2), {
+        access: 'private',
+        contentType: 'application/json',
+        allowOverwrite: true,
+      });
+      if (order.coupon) await markCouponUsed(order.coupon);
     }
-
-    order.status = 'approved';
-    await put(pathname, JSON.stringify(order, null, 2), {
-      access: 'private',
-      contentType: 'application/json',
-      allowOverwrite: true,
-    });
-
-    if (order.coupon) await markCouponUsed(order.coupon);
 
     const emailResult = (await sendConfirmationEmail(order)) || { sent: false, reason: 'Motivo desconocido.' };
 
-    return res.status(200).json({ ok: true, emailSent: emailResult.sent, emailReason: emailResult.reason || null });
+    return res.status(200).json({ ok: true, emailSent: emailResult.sent, emailReason: emailResult.reason || null, to: order.shipping && order.shipping.email, resent: !!resend });
   } catch (err) {
     console.error('confirm-order error:', err);
     return res.status(500).json({ error: 'Error interno del servidor' });

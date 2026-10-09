@@ -1281,6 +1281,7 @@ function OrdersSection({ adminSecret, notify, products }) {
   const [error, setError]     = useState(null);
   const [confirming, setConfirming] = useState(null);
   const [deleting, setDeleting] = useState(null);
+  const [resending, setResending] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
 
   const confirmOrder = async (orderId) => {
@@ -1303,6 +1304,29 @@ function OrdersSection({ adminSecret, notify, products }) {
       notify(`Error al confirmar el pedido: ${e.message}`, 'error');
     } finally {
       setConfirming(null);
+    }
+  };
+
+  const resendOrder = async (order) => {
+    const quien = order.payer_name || order.shipping?.email || order.payer_email || order.id;
+    const dest = order.shipping?.email || order.payer_email || '';
+    if (!dest) { notify('Este pedido no tiene email de contacto para reenviar.', 'error'); return; }
+    if (!window.confirm(`¿Reenviar el mail de confirmación de ${quien} a ${dest}?`)) return;
+    setResending(order.id);
+    try {
+      const res = await fetch('/api/confirm-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Secret': adminSecret },
+        body: JSON.stringify({ orderId: order.id, resend: true }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error al reenviar el mail');
+      if (data.emailSent) notify(`Mail de confirmación reenviado a ${data.to || dest} ✓`, 'success');
+      else notify(`No se pudo reenviar el mail: ${data.emailReason || 'motivo desconocido'}`, 'warn');
+    } catch (e) {
+      notify(`Error al reenviar el mail: ${e.message}`, 'error');
+    } finally {
+      setResending(null);
     }
   };
 
@@ -1418,6 +1442,11 @@ function OrdersSection({ adminSecret, notify, products }) {
                   {o.status === 'pendiente' && (
                     <Btn size="sm" onClick={(e) => { e.stopPropagation(); confirmOrder(o.id); }} disabled={confirming === o.id} style={{ marginTop: 6 }}>
                       {confirming === o.id ? 'Confirmando...' : 'Confirmar pago'}
+                    </Btn>
+                  )}
+                  {(o.shipping?.email || o.payer_email) && (
+                    <Btn variant="ghost" size="sm" onClick={(e) => { e.stopPropagation(); resendOrder(o); }} disabled={resending === o.id} style={{ marginTop: 6 }} title="Volver a enviar el mail de confirmación al email de este pedido">
+                      {resending === o.id ? 'Reenviando...' : 'Reenviar mail'}
                     </Btn>
                   )}
                   <Btn variant="danger" size="sm" onClick={(e) => { e.stopPropagation(); deleteOrder(o); }} disabled={deleting === o.id} style={{ marginTop: 6 }}>
