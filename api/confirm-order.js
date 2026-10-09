@@ -14,6 +14,12 @@ module.exports = async function handler(req, res) {
   const { orderId } = req.body || {};
   if (!orderId) return res.status(400).json({ error: 'Falta orderId' });
 
+  // orderId sólo puede contener caracteres seguros: así el pathname queda
+  // acotado a orders/<id>.json y no se puede apuntar a otro blob.
+  if (!/^[a-zA-Z0-9_-]+$/.test(orderId)) {
+    return res.status(400).json({ error: 'orderId inválido' });
+  }
+
   const pathname = `orders/${orderId}.json`;
 
   try {

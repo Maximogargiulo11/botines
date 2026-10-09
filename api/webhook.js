@@ -1,8 +1,74 @@
-const { put, list, get } = require('@vercel/blob');
+const { put, get, del } = require('@vercel/blob');
 const crypto = require('crypto');
 const { sendConfirmationEmail } = require('./_email');
 const { markCouponUsed } = require('./_coupons');
 const { markRecovered } = require('./_carts');
+
+async function readJsonBlob(pathname) {
+  try {
+    const result = await get(pathname, { access: 'private' });
+    if (!result || result.statusCode !== 200) return null;
+    return JSON.parse(await new Response(result.stream).text());
+  } catch { return null; }
+}
+
+// Resuelve a qué comprador/pedido corresponde un pago, SIN adivinar por monto.
+// Usa la metadata del pago y, como respaldo confiable, el registro que guardó
+// create-preference (identificado por external_reference). Devuelve null si no
+// se puede identificar al comprador — en ese caso NO se manda ningún mail, para
+// no enviarle la confirmación a la persona equivocada.
+function resolveOrder(payment, pref) {
+  const meta = payment.metadata || {};
+  const ref = payment.external_reference || '';
+
+  let shipping = meta.nombre ? {
+    nombre: meta.nombre,
+    apellido: meta.apellido,
+    email: meta.email,
+    dni: meta.dni,
+    provincia: meta.provincia,
+    localidad: meta.localidad,
+    direccion: meta.direccion,
+    codigoPostal: meta.codigo_postal,
+    celular: meta.celular,
+    descripcion: meta.descripcion || '',
+  } : null;
+
+  let items = ((payment.additional_info && payment.additional_info.items) || []).map(it => ({
+    id: it.id,
+    title: it.title,
+    quantity: Number(it.quantity),
+    unit_price: Number(it.unit_price),
+  }));
+
+  let coupon = meta.coupon || '';
+
+  // Respaldo: lo que guardamos al crear la preferencia (atado a este pedido por
+  // external_reference). Cubre el caso en que MP no propaga la metadata.
+  if (pref) {
+    if (!shipping && pref.shipping) shipping = pref.shipping;
+    if (!items.length && Array.isArray(pref.items)) items = pref.items;
+    if (!coupon && pref.coupon) coupon = pref.coupon;
+  }
+
+  if (!shipping || !shipping.email) return null;
+
+  const orderId = ref || String(payment.id);
+  const payerName = `${shipping.nombre || ''} ${shipping.apellido || ''}`.trim()
+    || `${(payment.payer && payment.payer.first_name) || ''} ${(payment.payer && payment.payer.last_name) || ''}`.trim();
+
+  return {
+    id: orderId,
+    mp_payment_id: String(payment.id),
+    status: payment.status,
+    amount: payment.transaction_amount,
+    payer_name: payerName,
+    payer_email: shipping.email,
+    shipping,
+    items,
+    coupon: coupon || null,
+  };
+}
 
 module.exports = async function handler(req, res) {
   // MercadoPago also sends a GET to validate the endpoint
@@ -33,46 +99,35 @@ module.exports = async function handler(req, res) {
 
     const payment = await mpRes.json();
 
-    const meta = payment.metadata || {};
-    const shipping = meta.nombre ? {
-      nombre: meta.nombre,
-      apellido: meta.apellido,
-      email: meta.email,
-      dni: meta.dni,
-      provincia: meta.provincia,
-      localidad: meta.localidad,
-      direccion: meta.direccion,
-      codigoPostal: meta.codigo_postal,
-      celular: meta.celular,
-      descripcion: meta.descripcion || '',
-    } : null;
+    const ref = payment.external_reference || '';
+    const pref = ref ? await readJsonBlob(`prefs/${ref}.json`) : null;
+    const order = resolveOrder(payment, pref);
 
-    const order = {
-      id: Math.random().toString(36).slice(2, 9),
-      mp_payment_id: String(payment.id),
-      status: payment.status,
-      amount: payment.transaction_amount,
-      date: new Date().toISOString(),
-      payer_name: `${payment.payer?.first_name || ''} ${payment.payer?.last_name || ''}`.trim(),
-      payer_email: payment.payer?.email || '',
-      shipping,
-      items: (payment.additional_info?.items || []).map(it => ({
-        id: it.id,
-        title: it.title,
-        quantity: Number(it.quantity),
-        unit_price: Number(it.unit_price),
-      })),
-    };
+    if (!order) {
+      console.error(`webhook: pago ${payment.id} sin comprador identificable (ref=${ref || '-'}); no se envía mail para evitar cruces`);
+      return res.status(200).end();
+    }
 
-    if (shipping) {
-      await saveOrder(order);
-      await markRecovered(shipping.email);
-      if (payment.status === 'approved') {
-        await trackGA4Purchase(order);
-        if (meta.coupon) await markCouponUsed(meta.coupon);
-      }
-    } else if (payment.status === 'approved') {
-      await tryAutoMatchTransfer(payment);
+    const pathname = `orders/${order.id}.json`;
+    const existing = await readJsonBlob(pathname);
+    order.date = (existing && existing.date) || new Date().toISOString();
+    if (existing && existing.confirmationSentAt) order.confirmationSentAt = existing.confirmationSentAt;
+
+    await markRecovered(order.shipping.email);
+
+    // Confirmación de compra: se manda UNA sola vez, al email de este pedido.
+    if (payment.status === 'approved' && !order.confirmationSentAt) {
+      const r = await sendConfirmationEmail(order);
+      if (r && r.sent) order.confirmationSentAt = new Date().toISOString();
+      else console.error(`webhook: no se pudo enviar confirmación a ${order.payer_email}: ${(r && r.reason) || 'motivo desconocido'}`);
+    }
+
+    await saveOrder(pathname, order);
+
+    if (payment.status === 'approved') {
+      await trackGA4Purchase(order);
+      if (order.coupon) await markCouponUsed(order.coupon);
+      if (ref) { try { await del(`prefs/${ref}.json`); } catch {} }
     }
   } catch (err) {
     console.error('webhook error:', err.message);
@@ -149,50 +204,15 @@ function verifyMpSignature(req) {
   return crypto.timingSafeEqual(a, b);
 }
 
-async function saveOrder(order) {
-  // Un blob privado por pago (indexado por mp_payment_id, sin duplicados si
-  // MercadoPago reenvía el mismo webhook). Nunca queda servido públicamente,
-  // a diferencia del viejo orders.json comiteado al repo.
-  await put(`orders/${order.mp_payment_id}.json`, JSON.stringify(order, null, 2), {
-    access: 'private',
-    contentType: 'application/json',
-    allowOverwrite: true,
-  });
-}
-
-async function tryAutoMatchTransfer(payment) {
-  const amount = payment.transaction_amount;
-  if (!amount) return;
-
-  const cutoffMs = Date.now() - 72 * 60 * 60 * 1000;
-  const { blobs } = await list({ prefix: 'orders/transfer-' });
-
-  const candidates = [];
-  for (const b of blobs) {
-    const result = await get(b.pathname, { access: 'private' });
-    if (!result || result.statusCode !== 200) continue;
-    const text = await new Response(result.stream).text();
-    let order;
-    try { order = JSON.parse(text); } catch { continue; }
-    if (order.status !== 'pendiente') continue;
-    if (new Date(order.date).getTime() < cutoffMs) continue;
-    if (order.amount !== amount) continue;
-    candidates.push({ pathname: b.pathname, order });
-  }
-
-  if (candidates.length !== 1) {
-    console.log(`webhook: transferencia de $${amount} sin match único (${candidates.length} candidato(s) pendiente(s))`);
-    return;
-  }
-
-  const { pathname, order } = candidates[0];
-  order.status = 'approved';
-  order.mp_payment_id = String(payment.id);
+async function saveOrder(pathname, order) {
+  // Un blob privado por pedido, identificado por su orderId (== external_reference).
+  // allowOverwrite hace idempotente el reenvío del mismo webhook. Nunca queda
+  // servido públicamente.
   await put(pathname, JSON.stringify(order, null, 2), {
     access: 'private',
     contentType: 'application/json',
     allowOverwrite: true,
   });
-  await sendConfirmationEmail(order);
-  if (order.coupon) await markCouponUsed(order.coupon);
 }
+
+module.exports.resolveOrder = resolveOrder;

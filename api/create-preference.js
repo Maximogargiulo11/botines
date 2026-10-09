@@ -1,6 +1,7 @@
 const { getTrustedPrice } = require('./_products');
 const { validateCoupon } = require('./_coupons');
 const { limited } = require('./_ratelimit');
+const { put } = require('@vercel/blob');
 
 const SITE_URL = process.env.SITE_URL || 'https://www.botinesaltagamacba.com';
 
@@ -55,8 +56,14 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: `Producto no encontrado en el catálogo: ${unknownItems.join(', ')}` });
   }
 
+  // Identificador único de este pedido. Se pasa a MercadoPago como
+  // external_reference para poder emparejar el pago con ESTE pedido exacto en
+  // el webhook (nunca por monto, que cruza compras del mismo precio).
+  const orderId = `mp-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
+
   const preference = {
     items: preferenceItems,
+    external_reference: orderId,
     metadata: {
       nombre: shipping.nombre,
       apellido: shipping.apellido,
@@ -99,9 +106,42 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: msg });
     }
 
+    // Preferencia creada: guardamos el registro para que el webhook arme el
+    // pedido y confirme al comprador correcto aunque MP no mande la metadata.
+    await savePref(orderId, shipping, preferenceItems, couponCode);
+
     return res.status(200).json({ init_point: data.init_point, id: data.id });
   } catch (err) {
     console.error('create-preference error:', err);
     return res.status(500).json({ error: 'Error interno del servidor' });
   }
 };
+
+// Guarda, keyed por orderId (== external_reference), los datos que el webhook
+// necesita para armar el pedido y mandar la confirmación al comprador CORRECTO,
+// incluso si MercadoPago no propaga la metadata del pago. Tolerante a fallos:
+// nunca rompe la creación de la preferencia.
+async function savePref(orderId, shipping, items, couponCode) {
+  try {
+    await put(`prefs/${orderId}.json`, JSON.stringify({
+      id: orderId,
+      shipping: {
+        nombre: shipping.nombre,
+        apellido: shipping.apellido,
+        email: shipping.email,
+        dni: shipping.dni,
+        provincia: shipping.provincia,
+        localidad: shipping.localidad,
+        direccion: shipping.direccion,
+        codigoPostal: shipping.codigoPostal,
+        celular: shipping.celular,
+        descripcion: shipping.descripcion || '',
+      },
+      items: items.map(({ id, title, quantity, unit_price }) => ({ id, title, quantity, unit_price })),
+      coupon: couponCode || '',
+      createdAt: new Date().toISOString(),
+    }, null, 2), { access: 'private', contentType: 'application/json', allowOverwrite: true });
+  } catch (err) {
+    console.error('create-preference: no se pudo guardar pref', orderId, '-', err.message);
+  }
+}
