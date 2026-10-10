@@ -11,6 +11,85 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "k9h2yyg",
+      "slug": "nuevos-adidas-f50-tunit-para-messi-futbol-y-familia",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Nuevos Adidas F50 Tunit para Messi: ‘Fútbol y Familia’ 🔴",
+      "excerpt": "",
+      "date": "10 de Octubre de 2026",
+      "cover": "assets/1791652368588-IMG_4032.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image-pair",
+          "id": "sf4vspv",
+          "left": {
+            "src": "assets/1791652435475-IMG_4037.jpeg"
+          },
+          "right": {
+            "src": "assets/1791652443212-IMG_4036.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "bejji7c",
+          "content": "Inspirados en sus raíces argentinas y desde sus comienzos en Newell’s Old Boys, por eso el color rojo con detalles en color negro y blanco 🔙🥹"
+        },
+        {
+          "type": "image",
+          "id": "wmdaivp",
+          "src": "assets/1791652478592-IMG_4033.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "gz9zwz5",
+          "left": {
+            "src": "assets/1791652455956-IMG_4040.jpeg"
+          },
+          "right": {
+            "src": "assets/1791652463305-IMG_4041.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4ko9gd1",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "image",
+          "id": "icnycsj",
+          "src": "assets/1791652488618-IMG_4038.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "2ibgg35",
+          "src": "assets/1791652497329-IMG_4034.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "846i8hw",
       "slug": "ahora-si-el-ultimo-tango",
       "brand": "Adidas",
