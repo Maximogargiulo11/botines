@@ -8604,6 +8604,60 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Final Rush’ Pack"
         }
+      },
+      {
+        "id": "sqe4pmi",
+        "name": "Adidas F50 Elite FG Tunit Messi ‘Fútbol y Familia’",
+        "colorway": "Rojo",
+        "color": "#d20000",
+        "price": 659999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "12",
+            "11.5",
+            "11"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1791646799527-IMG_4045.jpeg",
+          "assets/1791646808751-IMG_4048.jpeg",
+          "assets/1791646815087-IMG_4046.jpeg",
+          "assets/1791646820531-IMG_4047.jpeg",
+          "assets/1791646828749-IMG_4049.jpeg"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘Fútbol y Familia’"
+        }
       }
     ],
     "adidas/predator": [
