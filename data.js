@@ -15,7 +15,7 @@ window.BAG_DATA = {
       "slug": "nueva-generacion-de-puma-future-por-neymar-jr",
       "brand": "Puma",
       "category": "NOVEDAD",
-      "title": "Nueva generación de Puma Future por Neymar Jr.",
+      "title": "Nueva generación de Puma Future por Neymar Jr. 👟👀",
       "excerpt": "",
       "date": "03 de Octubre de 2026",
       "cover": "assets/1791648596729-IMG_3840.jpeg",
