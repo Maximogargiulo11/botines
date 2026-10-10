@@ -11,6 +11,88 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "tek6uhu",
+      "slug": "dos-generaciones-de-predator-para-marcos-acuna",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Dos generaciones de Predator para Marcos Acuña 😯",
+      "excerpt": "",
+      "date": "04 de Octubre de 2026",
+      "cover": "assets/1791648992322-IMG_3851.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "uhitux3",
+          "content": "El jugador de River Plate se lo vio usar raramente dos tipos de Predator: la generación 25 de la edición especial ‘Goal Hunter en su pie derecho, y la generación 26 del paquete ‘Caos vs Control’ en su pie izquierdo."
+        },
+        {
+          "type": "image",
+          "id": "6ng9j1s",
+          "src": "assets/1791649093632-Sin_ti_tulo_-_03_de_octubre_de_2026_a_las_20.50.30-2.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "i29kyax",
+          "content": "¿Se habrá equivocado intencionalmente él? ¿Fue error del utilero? ¿Comodidad? ¿Gusto? Estas preguntas y muchas nos surgieron al verlo entrenar calzado de esta manera."
+        },
+        {
+          "type": "image-pair",
+          "id": "36u091p",
+          "left": {
+            "src": "assets/1791649133271-Sin_ti_tulo_-_03_de_octubre_de_2026_a_las_20.50.30-5.png"
+          },
+          "right": {
+            "src": "assets/1791649151793-Sin_ti_tulo_-_03_de_octubre_de_2026_a_las_20.50.30-4.png"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "kdr9sev",
+          "left": {
+            "src": "assets/1791649164067-Sin_ti_tulo_-_03_de_octubre_de_2026_a_las_20.50.30-6.png"
+          },
+          "right": {
+            "src": "assets/1791649180066-Sin_ti_tulo_-_03_de_octubre_de_2026_a_las_20.50.30-3.png"
+          }
+        },
+        {
+          "type": "text",
+          "id": "ribbwae",
+          "content": "Esperemos saberlo algún día…"
+        },
+        {
+          "type": "image",
+          "id": "gmu65dw",
+          "src": "assets/1791649201612-IMG_3870.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ks9r2jx",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "xkue2b9",
       "slug": "nueva-generacion-de-puma-future-por-neymar-jr",
       "brand": "Puma",
