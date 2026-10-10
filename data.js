@@ -11,6 +11,102 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "msdsn0y",
+      "slug": "adidas-copa-pure-4-caos-vs-control-customizados-de-blanco-por-el-clasico-para-emiliano-rigoni",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Adidas Copa Pure 4 ‘Caos vs Control’ customizados de blanco por el clásico para Emiliano Rigoni 👨🏻‍🎨",
+      "excerpt": "",
+      "date": "04 de Octubre de 2026",
+      "cover": "assets/1791650155892-Sin_ti_tulo_-_05_de_octubre_de_2026_a_las_09.17.15-3.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "2cefwhi",
+          "content": "En el día de ayer, en el clásico cordobés, luego de ver a varios jugadores con nuestros botines, quién nos llamó más la atención fueron los botines de Emi que le entregamos y fueron pintados de blanco las tres líneas azules, color característico del clásico rival, previo al partido 🖌️\n"
+        },
+        {
+          "type": "image",
+          "id": "5jejqmt",
+          "src": "assets/1791650268266-Sin_ti_tulo_-_05_de_octubre_de_2026_a_las_09.17.15-5.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "qx0hjpi",
+          "content": "🔎 Esto suele suceder cuando un jugador utiliza un botín que lleva los colores del clásico de su equipo y lo enfrenta en un partido: intenta modificarlos o cambia de par.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "ccipb0b",
+          "left": {
+            "src": "assets/1791650294423-Sin_ti_tulo_-_05_de_octubre_de_2026_a_las_09.17.15-3.png"
+          },
+          "right": {
+            "src": "assets/1791650305642-Sin_ti_tulo_-_05_de_octubre_de_2026_a_las_09.17.15-4.png"
+          }
+        },
+        {
+          "type": "image",
+          "id": "rtm1hwd",
+          "src": "assets/1791650337741-Sin_ti_tulo_-_05_de_octubre_de_2026_a_las_09.17.15-6.png",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "byag98r",
+          "content": "¿Recordás una situación similar? ¿Harías lo mismo o es indiferente? 🤔 ¡Leemos tu opinión en los comentarios!\n"
+        },
+        {
+          "type": "image",
+          "id": "92e35id",
+          "src": "assets/1791650350474-IMG_3922.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "59s5d8s",
+          "content": "Player BAGC 🤝\n"
+        },
+        {
+          "type": "image",
+          "id": "faqan5p",
+          "src": "assets/1791650361054-IMG_3919.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "b1fhj0c",
+          "content": "📸 Club Atlético Belgrano de Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "ho1py62",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "pjfn4tp",
       "slug": "adidas-f50-remake-2010-edition-convertidos-en-sg-para-franco-mastantuono",
       "brand": "Adidas",
