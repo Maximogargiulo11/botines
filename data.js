@@ -11,6 +11,81 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "pjfn4tp",
+      "slug": "adidas-f50-remake-2010-edition-convertidos-en-sg-para-franco-mastantuono",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Adidas F50 Remake ‘2010 Edition’ convertidos en SG para Franco Mastantuono ",
+      "excerpt": "",
+      "date": "04 de Octubre de 2026",
+      "cover": "assets/1791649643700-Sin_ti_tulo_-_04_de_octubre_de_2026_a_las_19.14.03-2.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "axelhyb",
+          "content": "El primer gol con la camiseta de la Selección Argentina de Franco fue nada más ni nada menos que en el estadio del club que lo vio nacer. Pero con los botines con que lo hizo fue lo que nos robó las miradas: los Adidas F50 Remake del 2010, un par de ediciones especial y limitado que fue utilizado por Mayo de 2025 cuando aún estaba en River Plate y que anoche nuevamente se lo vimos puestos 😮"
+        },
+        {
+          "type": "image-pair",
+          "id": "1t2unn1",
+          "left": {
+            "src": "assets/1791649749884-Sin_ti_tulo_-_04_de_octubre_de_2026_a_las_19.14.03-5.png"
+          },
+          "right": {
+            "src": "assets/1791649768212-Sin_ti_tulo_-_04_de_octubre_de_2026_a_las_19.14.03-6.png"
+          }
+        },
+        {
+          "type": "text",
+          "id": "7dovum2",
+          "content": "🔎 La curiosidad es que fueron sometidos al taller para el trabajo de mixeo y convertirlos en SG.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "atn9qag",
+          "left": {
+            "src": "assets/1791649782019-Sin_ti_tulo_-_04_de_octubre_de_2026_a_las_19.14.03-4.png"
+          },
+          "right": {
+            "src": "assets/1791649802996-IMG_4338.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "78lma7w",
+          "content": "¿Era el único par en suela mixta que tenía? 😅"
+        },
+        {
+          "type": "image",
+          "id": "2jicnwq",
+          "src": "assets/1791649822026-IMG_3894.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "h04vlv3",
+          "content": "🛒 Realizá el trabajo de mixeo de tus botines en el taller de Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "tek6uhu",
       "slug": "dos-generaciones-de-predator-para-marcos-acuna",
       "brand": "Adidas",
