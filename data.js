@@ -11,6 +11,77 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "846i8hw",
+      "slug": "ahora-si-el-ultimo-tango",
+      "brand": "Adidas",
+      "category": "CAMPAÑA",
+      "title": "Ahora si, ‘El Último Tango’ 👟🥹",
+      "excerpt": "",
+      "date": "06 de Octubre de 2026",
+      "cover": "assets/1791651755022-IMG_4398.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "l7umo9s",
+          "content": "Gracias, 10. 🩵🤍"
+        },
+        {
+          "type": "image",
+          "id": "gji3hyx",
+          "src": "assets/1791651850043-IMG_4394.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "50kd6e1",
+          "src": "assets/1791651805691-IMG_4402.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "4rfrxqn",
+          "src": "assets/1791651794289-IMG_4396.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "vwxx8r4",
+          "src": "assets/1791651840461-IMG_4393.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "tnumzia",
+          "left": {
+            "src": "assets/1791651817684-IMG_4395.jpeg"
+          },
+          "right": {
+            "src": "assets/1791651828692-IMG_4392.jpeg"
+          }
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "wrye1l4",
       "slug": "adidas-celebra-los-25-anos-del-gol-de-tiro-libre-de-david-beckham-a-grecia-con-dos-ediciones-de-predator",
       "brand": "Adidas",
