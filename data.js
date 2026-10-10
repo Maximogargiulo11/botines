@@ -84,8 +84,12 @@ window.BAG_DATA = {
           "height": ""
         }
       ],
-      "relatedProduct": null,
-      "showFeaturedOnHome": false,
+      "relatedProduct": {
+        "brand": "adidas",
+        "model": "f50",
+        "colorwayId": "8cj8guv"
+      },
+      "showFeaturedOnHome": true,
       "showInHome": true,
       "featuredWide": false
     },
