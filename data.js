@@ -11,6 +11,64 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "xkue2b9",
+      "slug": "nueva-generacion-de-puma-future-por-neymar-jr",
+      "brand": "Puma",
+      "category": "NOVEDAD",
+      "title": "Nueva generación de Puma Future por Neymar Jr.",
+      "excerpt": "",
+      "date": "03 de Octubre de 2026",
+      "cover": "assets/1791648596729-IMG_3840.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "29qazik",
+          "content": "El crack brasileño saltó al campo de juego para un nuevo entrenamiento con Santos FC con un prototipo de prueba de la próxima generación de Future 🔜"
+        },
+        {
+          "type": "image-pair",
+          "id": "fzly8pq",
+          "left": {
+            "src": "assets/1791648658201-IMG_3841.jpeg"
+          },
+          "right": {
+            "src": "assets/1791648682037-IMG_3842.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "sbr2xim",
+          "content": "¿Será de un paquete de temporada o una nueva ‘signature’ para él? 🤔 Pronto lo sabremos…"
+        },
+        {
+          "type": "text",
+          "id": "ia5tp90",
+          "content": "📸 Raúl Baretta"
+        },
+        {
+          "type": "text",
+          "id": "2qwli5n",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "3kqq2g7",
       "slug": "bright-lights-nuevo-paquete-de-nike-football",
       "brand": "Nike",
@@ -8603,60 +8661,6 @@ window.BAG_DATA = {
           "terreno": "Césped natural firme ",
           "peso": "186 gr.",
           "coleccion": "‘Final Rush’ Pack"
-        }
-      },
-      {
-        "id": "sqe4pmi",
-        "name": "Adidas F50 Elite FG Tunit Messi ‘Fútbol y Familia’",
-        "colorway": "Rojo",
-        "color": "#d20000",
-        "price": 659999,
-        "availableSizes": [],
-        "sizes": {
-          "eu": [
-            "38",
-            "38.5",
-            "39",
-            "39.5",
-            "40",
-            "40.5",
-            "41",
-            "42",
-            "42.5",
-            "43",
-            "44",
-            "44.5",
-            "45",
-            "46"
-          ],
-          "us": [
-            "7",
-            "7.5",
-            "8",
-            "8.5",
-            "9",
-            "9.5",
-            "10",
-            "10.5",
-            "12",
-            "11.5",
-            "11"
-          ],
-          "uk": []
-        },
-        "images": [
-          "assets/1791646799527-IMG_4045.jpeg",
-          "assets/1791646808751-IMG_4048.jpeg",
-          "assets/1791646815087-IMG_4046.jpeg",
-          "assets/1791646820531-IMG_4047.jpeg",
-          "assets/1791646828749-IMG_4049.jpeg"
-        ],
-        "videos": [],
-        "spec": {
-          "suela": "FG",
-          "terreno": "Césped natural firme ",
-          "peso": "186 gr.",
-          "coleccion": "‘Fútbol y Familia’"
         }
       }
     ],
