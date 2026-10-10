@@ -11,6 +11,120 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "wrye1l4",
+      "slug": "adidas-celebra-los-25-anos-del-gol-de-tiro-libre-de-david-beckham-a-grecia-con-dos-ediciones-de-predator",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas celebra los 25 años del gol de tiro libre de David Beckham a Grecia con dos ediciones de Predator 🔙👅",
+      "excerpt": "",
+      "date": "06 de Octubre de 2026",
+      "cover": "assets/1791650663503-IMG_3945.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "instagram",
+          "id": "3es8anh",
+          "url": "https://www.instagram.com/reel/DeG3ixmIXEt/?dlrf=YTl2dnpycm13MDJh"
+        },
+        {
+          "type": "text",
+          "id": "432wbz0",
+          "content": "Es uno de esos momentos del fútbol en los que todos recuerdan dónde estaban cuando sucedió. Está grabado en el folclore del fútbol. Último minuto, desde una distancia ridícula, con el destino de la Copa del Mundo de una nación a sus pies. Afortunadamente, esos pies pertenecían a un David Beckham equipado con unos Predator. Y el resto, como dicen, es historia."
+        },
+        {
+          "type": "instagram",
+          "id": "h7rlqyf",
+          "url": "https://www.instagram.com/reel/DeJhSOlIwZG/?srtk=Znlsamd2azdrajF2"
+        },
+        {
+          "type": "text",
+          "id": "joifqoo",
+          "content": "Para hacerte sentir viejo, han pasado 25 años desde ese inolvidable tiro libre contra Grecia el 6 de octubre de 2001. Un cuarto de siglo. Ridículo. Pero es uno de los momentos definitorios tanto de la carrera de Beckham como de la historia de Predator, la huelga que asegura el lugar de Inglaterra en la Copa Mundial de la FIFA 2002 y consolida el estatus de Beckham como uno de los mejores artistas del embrague del fútbol. Ahora, para conmemorar el aniversario, adidas presenta la bota Predator de tercera generación, codiseñada con el propio Beckham.\n"
+        },
+        {
+          "type": "image",
+          "id": "i5lthjl",
+          "src": "assets/1791650824733-IMG_3946.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "59cq8zk",
+          "content": "En cuanto al diseño, obviamente se inspira en el color que Beckham se ató en esa inolvidable tarde en Old Trafford. Sería raro si fuera algo más en realidad. Así que llega en una ejecución blanca y roja limpia, y el detalle del titular viene en forma del Trefoil, que aparece en una bota Predator por segunda vez en la historia de la franquicia. Introducida por primera vez en el lanzamiento de la edición especial debut de Beckham Predator en 2024, la marca icónica se ha convertido rápidamente en una característica definitoria de su línea de firma, creando un vínculo perfecto entre la herencia adidas Originals y uno de los silos de botas más legendarios del fútbol.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "cbpk7wr",
+          "left": {
+            "src": "assets/1791651049300-IMG_3942.jpeg"
+          },
+          "right": {
+            "src": "assets/1791651060386-IMG_3950.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "x8qli2a",
+          "content": "Sam Handy, gerente general de adidas Football, dijo: \"Pocos momentos en la historia del fútbol capturan el espíritu de Predator como el saque libre de David Beckham contra Grecia. Mostró la precisión, la confianza y el control que han definido tanto el legado de Beckham como la franquicia Predator durante más de tres décadas. Con este lanzamiento de edición especial, queríamos honrar ese momento a través de un diseño que combina la auténtica herencia futbolística, la artesanía de primera calidad y la innovación de rendimiento moderno\".\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "rm94eot",
+          "left": {
+            "src": "assets/1791651077898-IMG_3949.jpeg"
+          },
+          "right": {
+            "src": "assets/1791651087199-IMG_3947.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4b6b5ly",
+          "content": "Son hermosos los botines, dignos de la marca del cuarto de siglo. ¿Me los pondría? No estoy seguro de poder quitármelos, pero se verían más hermosos en mi repisa como colección."
+        },
+        {
+          "type": "image",
+          "id": "bq5w1s9",
+          "src": "assets/1791651013821-IMG_3944.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "video",
+          "id": "qr25cwt",
+          "src": "assets/1791651108621-AQN9gMNUubJLnrxu5dtW6uCGR9LpIlWtm3xJk95-Lw2KU0bjjP-DHKR2_M5ociE0VpxsqAnezN2ZO6qmf1Kl4hHq0MZRYpSSpn_ZlrQ.mp4"
+        },
+        {
+          "type": "text",
+          "id": "7w3l9md",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "image",
+          "id": "od2zmkr",
+          "src": "assets/1791651035303-IMG_3941.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "msdsn0y",
       "slug": "adidas-copa-pure-4-caos-vs-control-customizados-de-blanco-por-el-clasico-para-emiliano-rigoni",
       "brand": "Adidas",
