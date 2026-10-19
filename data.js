@@ -9167,7 +9167,7 @@ window.BAG_DATA = {
         "name": "Adidas F50 Elite FG Tunit Messi ‘Fútbol y Familia’",
         "colorway": "Rojo",
         "color": "#cf0000",
-        "price": 659999,
+        "price": 599999,
         "availableSizes": [],
         "sizes": {
           "eu": [
