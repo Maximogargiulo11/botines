@@ -11,6 +11,81 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "3c11fxq",
+      "slug": "puma-ultra-nitro-7-hyper-rush",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma Ultra Nitro 7 ‘Hyper Rush’",
+      "excerpt": "",
+      "date": "21 de Octubre de 2026",
+      "cover": "assets/1792601721099-IMG_4159.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "eero1us",
+          "content": "Listo para ser usados por sus jugadores de la próxima generación dentro del campo de juego en las próximas semanas 💨\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "44n614l",
+          "left": {
+            "src": "assets/1792601807408-IMG_4156.jpeg"
+          },
+          "right": {
+            "src": "assets/1792601814501-IMG_4158.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "adw60jj",
+          "content": "Construido para ampollas, con ajuste ligero y usando la tecnología NitroFam para amplificar tu aceleración ⚡️"
+        },
+        {
+          "type": "image",
+          "id": "wt77lpd",
+          "src": "assets/1792601829588-IMG_4154.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "3lrhngl",
+          "left": {
+            "src": "assets/1792601843981-IMG_4153.jpeg"
+          },
+          "right": {
+            "src": "assets/1792601850884-IMG_4157.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "ng1g53p",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "tff9b6t",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "k9h2yyg",
       "slug": "nuevos-adidas-f50-tunit-para-messi-futbol-y-familia",
       "brand": "Adidas",
