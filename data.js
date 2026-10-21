@@ -11,6 +11,44 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "834hp6q",
+      "slug": "radar-semanal-bagc",
+      "brand": "",
+      "category": "EDITORIAL",
+      "title": "Radar semanal BAGC",
+      "excerpt": "",
+      "date": "19 de Octubre de 2026",
+      "cover": "assets/1792602018602-Sin_ti_tulo_-_19_de_junio_de_2026_a_las_14.35.11-2.png",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "gkvfyho",
+          "content": "Nike:\n-Nuevo paquete ‘Bright Lights’.\n-Michael Olise firma un contrato con la marca del swoosh para traer nuevamente Hypervenom en 2027.\n"
+        },
+        {
+          "type": "text",
+          "id": "0leid67",
+          "content": "Adidas:\n-Nueva edición especial de Predator con David Beckham, en conmemoración de su gol icónico con la Selección de Inglaterra para la clasificación del Mundial.\n\nPuma:\n-Reivindica sus canales de distribución de venta e inventarios. \n\nOn:\n-Sigue lanzando prototipos de prueba para Kylian Mbappé y estamos cada vez más cerca del primer botín debut de la marca suiza en el mercado de botines."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "3c11fxq",
       "slug": "puma-ultra-nitro-7-hyper-rush",
       "brand": "Puma",
