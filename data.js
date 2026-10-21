@@ -40,7 +40,17 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "0leid67",
-          "content": "Adidas:\n-Nueva edición especial de Predator con David Beckham, en conmemoración de su gol icónico con la Selección de Inglaterra para la clasificación del Mundial.\n\nPuma:\n-Reivindica sus canales de distribución de venta e inventarios. \n\nOn:\n-Sigue lanzando prototipos de prueba para Kylian Mbappé y estamos cada vez más cerca del primer botín debut de la marca suiza en el mercado de botines."
+          "content": "Adidas:\n-Nueva edición especial de Predator con David Beckham, en conmemoración de su gol icónico con la Selección de Inglaterra para la clasificación del Mundial."
+        },
+        {
+          "type": "text",
+          "id": "uxw0je6",
+          "content": "Puma:\n-Reivindica sus canales de distribución de venta e inventarios. "
+        },
+        {
+          "type": "text",
+          "id": "vdrm943",
+          "content": "On:\n-Sigue lanzando prototipos de prueba para Kylian Mbappé y estamos cada vez más cerca del primer botín debut de la marca suiza en el mercado de botines."
         }
       ],
       "relatedProduct": null,
