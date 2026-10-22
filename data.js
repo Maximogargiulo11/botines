@@ -11,6 +11,159 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "70rmvax",
+      "slug": "lograra-on-football-revolucionar-el-mercado-de-los-botines",
+      "brand": "",
+      "category": "EDITORIAL",
+      "title": "¿Logrará On Football revolucionar el mercado de los botines?",
+      "excerpt": "",
+      "date": "21 de Octubre de 2026",
+      "cover": "assets/1792629232708-IMG_4028.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "k9n9ttq",
+          "content": "Las marcas han lanzado prototipos de prueba antes. Eso no es nada nuevo. Está haciendo algo diferente."
+        },
+        {
+          "type": "text",
+          "id": "a1jcpdf",
+          "content": "Porque la primera pregunta para cualquier marca que intente entrar en el fútbol siempre será: ¿Cómo? Más específicamente ¿Qué puedo ofrecer que nadie más pueda? Bueno, On ya tenía la respuesta con su tecnología LightSprayTM."
+        },
+        {
+          "type": "text",
+          "id": "4412257",
+          "content": "Dentro del mundo de la marca, es la tecnología la que diferencia instantáneamente el enfoque de la misma por el fútbol. "
+        },
+        {
+          "type": "text",
+          "id": "wy0gqgb",
+          "content": "¿Cómo planeas eso hacia el mundo exterior? ¿Cómo haces para que los posibles profesionales que esperas se enamoren de tu producto? ¿Y los que han usado las principales marcas toda su vida?"
+        },
+        {
+          "type": "text",
+          "id": "4vdoj5j",
+          "content": "La respuesta es que haces las cosas de manera diferente desde cero; invitas a todas estas personas a tu viaje. En lugar de solo ver el producto terminado, invítelos al proceso de desarrollo en sí. Es una posición única en la que se encuentra el equipo de On Football, y con razón están buscando explotarla.\n"
+        },
+        {
+          "type": "text",
+          "id": "r0z4o67",
+          "content": "Todo sobre el enfoque de On se siente fresco. Desde la tecnología detrás de la construcción del botín en sí hasta la forma en que la marca ha documentado abiertamente su progreso, hay un nivel de transparencia que rara vez se ve en el calzado de fútbol.\n"
+        },
+        {
+          "type": "text",
+          "id": "7vf6hpi",
+          "content": "Estamos acostumbrados a ver prototipos de whiteout probados por profesionales. Sin embargo, han levantado efectivamente el telón. En lugar de tratar la etapa del prototipo como algo que hay que ocultar, la han convertido en parte de la historia. El viaje en sí mismo se ha convertido en el lanzamiento.\n"
+        },
+        {
+          "type": "text",
+          "id": "vz89lwy",
+          "content": "El botín que usó Kylian Mbappé en sus últimos partidos es parte de un proceso de co-creación en curso entre On y sus atletas. En lugar de finalizar un producto a puerta cerrada, la marca está probando ideas en situaciones de coincidencia reales, recopilando comentarios sobre el ajuste, el bloqueo, la durabilidad y el rendimiento antes de devolver esas ideas al desarrollo.\n"
+        },
+        {
+          "type": "text",
+          "id": "p4b1x9y",
+          "content": "Como he mencionado anteriormente, LightSpray está en el centro de la innovación futbolística de On. Más que un simple proceso de fabricación, es la base del proyecto de fútbol de On. Usando un brazo robótico para rociar un filamento ultrafino alrededor de una cintura en forma de pie, la tecnología crea una parte superior sin costuras o adhesivos tradicionales. Le da a On un punto de partida completamente diferente desde el que diseñar un botín de fútbol, influyendo en todo, desde el peso y la comodidad hasta el ajuste y la sensación en la pelota."
+        },
+        {
+          "type": "text",
+          "id": "xt91l7j",
+          "content": "En torno a ese motor de innovación, la marca está experimentando con diferentes construcciones, incluidos conceptos con cordones y sin cordones, buscando el equilibrio adecuado entre rendimiento, preferencia y estilo de juego. Pero cualquiera que sea la dirección que tome el producto final, LightSpray sigue siendo la constante."
+        },
+        {
+          "type": "text",
+          "id": "mxowz05",
+          "content": "Como modelo de desarrollo inédito, el botín lleva un código alfanumérico de serie utilizado para rastrear este prototipo específico a través de pruebas: ON-DCPT-KM010. Al principio, el código se siente deliberadamente misterioso, pero probablemente se lee como \"On\" siendo el nombre de la marca, seguido de \"DCPT\", potencialmente abreviatura de \"Deception\", y finalmente \"KM010\", identificando la iteración de desarrollo específica de Mbappé."
+        },
+        {
+          "type": "text",
+          "id": "7mqqj7n",
+          "content": "Como todos los buenos prototipos, el código añade otra capa de intriga. Se siente menos como un nombre de producto y más como algo sacado de un laboratorio de diseño industrial."
+        },
+        {
+          "type": "text",
+          "id": "i8lwggn",
+          "content": "On ha anunciado que su colección de fútbol está prevista para su lanzamiento comercial en 2027. Hasta entonces, la marca continuará desarrollando, probando y refinando cada detalle junto a sus jugadores, llevando su enfoque de la innovación al campo de fútbol. Y nos están llevando con ellos en este viaje. Eso se siente nuevo."
+        },
+        {
+          "type": "text",
+          "id": "mmv66kq",
+          "content": "Sin embargo, para mí, la parte más interesante de este viaje increíble no es la tecnología, ni los respaldos por parte de los jugadores ni incluso el producto final a lanzarse. Lo más importante es el hecho de que se nos permite presenciar el proceso, como haciéndonos parte del mismo. Este nivel de desarrollo generalmente se esconde a puerta cerrada atrás de cuatro paredes y la formula bajo llave, es por eso que es increíblemente refrescante ver que la marca suiza está eligiendo la transparencia sobre el secreto, trayendo a todos a ser parte de este increíble proyecto en desarrollo."
+        },
+        {
+          "type": "text",
+          "id": "hrv0boj",
+          "content": "Yo, por mi parte, espero que este sea el comienzo no solo de la aparición de otra marca en el fútbol, sino de una nueva forma de experimentar la cultura creativa de los botines incrustada en el nivel más alto del juego, en el fútbol."
+        },
+        {
+          "type": "text",
+          "id": "iky6rz9",
+          "content": "@on @on.football"
+        },
+        {
+          "type": "text",
+          "id": "w0li556",
+          "content": "#DreamOn #LightSprayTM"
+        },
+        {
+          "type": "text",
+          "id": "lumvhgg",
+          "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "hz0ezmp",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        },
+        {
+          "type": "image-pair",
+          "id": "psa61c4",
+          "left": {
+            "src": "assets/1792629989798-IMG_4019.jpeg"
+          },
+          "right": {
+            "src": "assets/1792629997426-IMG_4020.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "1hmys8k",
+          "left": {
+            "src": "assets/1792630030713-IMG_4023.jpeg"
+          },
+          "right": {
+            "src": "assets/1792630039329-IMG_4024.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "78byyvn",
+          "left": {
+            "src": ""
+          },
+          "right": {
+            "src": ""
+          }
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "834hp6q",
       "slug": "radar-semanal-bagc",
       "brand": "",
