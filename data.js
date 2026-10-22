@@ -35,12 +35,12 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "k9n9ttq",
-          "content": "Las marcas han lanzado prototipos de prueba antes. Eso no es nada nuevo. Está haciendo algo diferente."
+          "content": "Las marcas han lanzado prototipos de prueba antes. Eso no es nada nuevo. Pero On está haciendo algo diferente."
         },
         {
           "type": "text",
           "id": "a1jcpdf",
-          "content": "Porque la primera pregunta para cualquier marca que intente entrar en el fútbol siempre será: ¿Cómo? Más específicamente ¿Qué puedo ofrecer que nadie más pueda? Bueno, On ya tenía la respuesta con su tecnología LightSprayTM."
+          "content": "La primera pregunta para cualquier marca que intente entrar en el fútbol siempre será: ¿Cómo? Más específicamente ¿Qué puedo ofrecer que nadie más pueda? Bueno, On ya tenía la respuesta con su tecnología LightSprayTM."
         },
         {
           "type": "text",
@@ -65,12 +65,12 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "4vdoj5j",
-          "content": "La respuesta es que haces las cosas de manera diferente desde cero; invitas a todas estas personas a tu viaje. En lugar de solo ver el producto terminado, invítelos al proceso de desarrollo en sí. Es una posición única en la que se encuentra el equipo de On Football, y con razón están buscando explotarla.\n"
+          "content": "La respuesta es hacer las cosas de manera diferente desde cero; invitas a todas estas personas a tu viaje. En lugar de solo ver el producto terminado, invítelos al proceso de desarrollo en sí. Es una posición única en la que se encuentra el equipo de On Football, y con una razón están buscando explotarla.\n"
         },
         {
           "type": "text",
           "id": "r0z4o67",
-          "content": "Todo sobre el enfoque de On se siente fresco. Desde la tecnología detrás de la construcción del botín en sí hasta la forma en que la marca ha documentado abiertamente su progreso, hay un nivel de transparencia que rara vez se ve en el calzado de fútbol.\n"
+          "content": "Todo este enfoque se siente fresco. Desde la tecnología detrás de la construcción del botín en sí hasta la forma en que la marca ha documentado abiertamente su progreso, hay un nivel de transparencia que rara vez se ve en el calzado de fútbol.\n"
         },
         {
           "type": "image-pair",
