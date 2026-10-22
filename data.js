@@ -48,6 +48,16 @@ window.BAG_DATA = {
           "content": "Dentro del mundo de la marca, es la tecnología la que diferencia instantáneamente el enfoque de la misma por el fútbol. "
         },
         {
+          "type": "image-pair",
+          "id": "psa61c4",
+          "left": {
+            "src": "assets/1792629989798-IMG_4019.jpeg"
+          },
+          "right": {
+            "src": "assets/1792629997426-IMG_4020.jpeg"
+          }
+        },
+        {
           "type": "text",
           "id": "wy0gqgb",
           "content": "¿Cómo planeas eso hacia el mundo exterior? ¿Cómo haces para que los posibles profesionales que esperas se enamoren de tu producto? ¿Y los que han usado las principales marcas toda su vida?"
@@ -61,6 +71,16 @@ window.BAG_DATA = {
           "type": "text",
           "id": "r0z4o67",
           "content": "Todo sobre el enfoque de On se siente fresco. Desde la tecnología detrás de la construcción del botín en sí hasta la forma en que la marca ha documentado abiertamente su progreso, hay un nivel de transparencia que rara vez se ve en el calzado de fútbol.\n"
+        },
+        {
+          "type": "image-pair",
+          "id": "1hmys8k",
+          "left": {
+            "src": "assets/1792630030713-IMG_4023.jpeg"
+          },
+          "right": {
+            "src": "assets/1792630039329-IMG_4024.jpeg"
+          }
         },
         {
           "type": "text",
@@ -78,6 +98,23 @@ window.BAG_DATA = {
           "content": "Como he mencionado anteriormente, LightSpray está en el centro de la innovación futbolística de On. Más que un simple proceso de fabricación, es la base del proyecto de fútbol de On. Usando un brazo robótico para rociar un filamento ultrafino alrededor de una cintura en forma de pie, la tecnología crea una parte superior sin costuras o adhesivos tradicionales. Le da a On un punto de partida completamente diferente desde el que diseñar un botín de fútbol, influyendo en todo, desde el peso y la comodidad hasta el ajuste y la sensación en la pelota."
         },
         {
+          "type": "image-pair",
+          "id": "78byyvn",
+          "left": {
+            "src": "assets/1792630243206-IMG_4022.jpeg"
+          },
+          "right": {
+            "src": "assets/1792630262596-IMG_4168.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "2hygj5l",
+          "src": "assets/1792630275618-IMG_4167.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "text",
           "id": "xt91l7j",
           "content": "En torno a ese motor de innovación, la marca está experimentando con diferentes construcciones, incluidos conceptos con cordones y sin cordones, buscando el equilibrio adecuado entre rendimiento, preferencia y estilo de juego. Pero cualquiera que sea la dirección que tome el producto final, LightSpray sigue siendo la constante."
@@ -86,6 +123,13 @@ window.BAG_DATA = {
           "type": "text",
           "id": "mxowz05",
           "content": "Como modelo de desarrollo inédito, el botín lleva un código alfanumérico de serie utilizado para rastrear este prototipo específico a través de pruebas: ON-DCPT-KM010. Al principio, el código se siente deliberadamente misterioso, pero probablemente se lee como \"On\" siendo el nombre de la marca, seguido de \"DCPT\", potencialmente abreviatura de \"Deception\", y finalmente \"KM010\", identificando la iteración de desarrollo específica de Mbappé."
+        },
+        {
+          "type": "image",
+          "id": "da6to4q",
+          "src": "assets/1792630533584-IMG_4089.jpeg",
+          "width": "",
+          "height": ""
         },
         {
           "type": "text",
@@ -98,6 +142,27 @@ window.BAG_DATA = {
           "content": "On ha anunciado que su colección de fútbol está prevista para su lanzamiento comercial en 2027. Hasta entonces, la marca continuará desarrollando, probando y refinando cada detalle junto a sus jugadores, llevando su enfoque de la innovación al campo de fútbol. Y nos están llevando con ellos en este viaje. Eso se siente nuevo."
         },
         {
+          "type": "image",
+          "id": "z8klba5",
+          "src": "assets/1792630326417-IMG_4163.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "lvvvwxt",
+          "src": "assets/1792630545394-IMG_4123.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "1o6a1w6",
+          "src": "assets/1792630555927-IMG_4145.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "text",
           "id": "mmv66kq",
           "content": "Sin embargo, para mí, la parte más interesante de este viaje increíble no es la tecnología, ni los respaldos por parte de los jugadores ni incluso el producto final a lanzarse. Lo más importante es el hecho de que se nos permite presenciar el proceso, como haciéndonos parte del mismo. Este nivel de desarrollo generalmente se esconde a puerta cerrada atrás de cuatro paredes y la formula bajo llave, es por eso que es increíblemente refrescante ver que la marca suiza está eligiendo la transparencia sobre el secreto, trayendo a todos a ser parte de este increíble proyecto en desarrollo."
@@ -106,6 +171,16 @@ window.BAG_DATA = {
           "type": "text",
           "id": "hrv0boj",
           "content": "Yo, por mi parte, espero que este sea el comienzo no solo de la aparición de otra marca en el fútbol, sino de una nueva forma de experimentar la cultura creativa de los botines incrustada en el nivel más alto del juego, en el fútbol."
+        },
+        {
+          "type": "image-pair",
+          "id": "62s7fpn",
+          "left": {
+            "src": "assets/1792630393837-IMG_4170.jpeg"
+          },
+          "right": {
+            "src": "assets/1792630404419-IMG_4164.jpeg"
+          }
         },
         {
           "type": "text",
@@ -123,39 +198,16 @@ window.BAG_DATA = {
           "content": "🛒 Próximamente en Botines Alta Gama Córdoba."
         },
         {
+          "type": "image",
+          "id": "sp0d6ah",
+          "src": "assets/1792630301850-IMG_4148.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "text",
           "id": "hz0ezmp",
           "content": "📲 Compra en www.botinesaltagamacba.com"
-        },
-        {
-          "type": "image-pair",
-          "id": "psa61c4",
-          "left": {
-            "src": "assets/1792629989798-IMG_4019.jpeg"
-          },
-          "right": {
-            "src": "assets/1792629997426-IMG_4020.jpeg"
-          }
-        },
-        {
-          "type": "image-pair",
-          "id": "1hmys8k",
-          "left": {
-            "src": "assets/1792630030713-IMG_4023.jpeg"
-          },
-          "right": {
-            "src": "assets/1792630039329-IMG_4024.jpeg"
-          }
-        },
-        {
-          "type": "image-pair",
-          "id": "78byyvn",
-          "left": {
-            "src": ""
-          },
-          "right": {
-            "src": ""
-          }
         }
       ],
       "relatedProduct": null,
