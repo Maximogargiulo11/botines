@@ -188,9 +188,23 @@ window.BAG_DATA = {
           "content": "@on @on.football"
         },
         {
+          "type": "image",
+          "id": "k2sigk4",
+          "src": "assets/1792631411379-IMG_4028.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
           "type": "text",
           "id": "w0li556",
           "content": "#DreamOn #LightSprayTM"
+        },
+        {
+          "type": "image",
+          "id": "klb4zrl",
+          "src": "assets/1792631427720-IMG_4027.jpeg",
+          "width": "",
+          "height": ""
         },
         {
           "type": "text",
