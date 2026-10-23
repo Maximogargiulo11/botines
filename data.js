@@ -338,12 +338,17 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "mmv66kq",
-          "content": "Sin embargo, para mí, la parte más interesante de este viaje increíble no es la tecnología, ni los respaldos por parte de los jugadores ni incluso el producto final a lanzarse. Lo más importante es el hecho de que se nos permite presenciar el proceso, como haciéndonos parte del mismo. Este nivel de desarrollo generalmente se esconde a puerta cerrada atrás de cuatro paredes y la formula bajo llave, es por eso que es increíblemente refrescante ver que la marca suiza está eligiendo la transparencia sobre el secreto, trayendo a todos a ser parte de este increíble proyecto en desarrollo."
+          "content": "Lo más importante es el hecho de que se nos permite presenciar el proceso, como haciéndonos parte del mismo. Este nivel de desarrollo generalmente se esconde a puertas cerradas detrás de cuatro paredes, el cual sólo algunos tienen un acceso muy exclusivo y la fórmula se encuentra bajo llave, es por eso que es increíble ver que la marca suiza está eligiendo la transparencia sobre el secreto, trayendo a todos a ser parte de este proyecto en desarrollo."
         },
         {
           "type": "text",
           "id": "hrv0boj",
-          "content": "Yo, por mi parte, espero que este sea el comienzo no solo de la aparición de otra marca en el fútbol, sino de una nueva forma de experimentar la cultura creativa de los botines incrustada en el nivel más alto del juego, en el fútbol."
+          "content": "En lo personal espero que este sea el comienzo, el punta pié inicial, de no solo la aparición de otra marca en el fútbol, sino de una nueva forma de experimentar la cultura creativa de los botines incrustada en el nivel más alto del juego, en la elite."
+        },
+        {
+          "type": "text",
+          "id": "nq9cxs7",
+          "content": "No tuve aún la suerte de estar dentro de un proceso en primera persona, pero sí sueño estar acompañando a una marca el día de mañana…"
         },
         {
           "type": "image-pair",
