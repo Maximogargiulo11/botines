@@ -11,6 +11,111 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "npq7tvi",
+      "slug": "nuevo-paquete-de-nike-united-chapter-4",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nuevo paquete de Nike: ‘United’, Chapter 4",
+      "excerpt": "",
+      "date": "23 de Octubre de 2026",
+      "cover": "assets/1792762927238-IMG_4233.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "d02qsxg",
+          "content": "Nuevo paquete de Nike: perteneciente a la saga ‘United’, capítulo 4."
+        },
+        {
+          "type": "image",
+          "id": "uqw6g5p",
+          "src": "assets/1792763094274-IMG_4234.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "zz8kn3h",
+          "src": "assets/1792763102702-IMG_4236.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "rwd53wt",
+          "left": {
+            "src": "assets/1792763111122-IMG_4238.jpeg"
+          },
+          "right": {
+            "src": "assets/1792763117733-IMG_4235.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "1s4cni0",
+          "src": "assets/1792763127161-IMG_4237.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "a47rx7v",
+          "src": "assets/1792763145937-IMG_4239.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "ln7va9a",
+          "src": "assets/1792763153467-IMG_4240.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "i3zmtp3",
+          "left": {
+            "src": "assets/1792763165415-IMG_4241.jpeg"
+          },
+          "right": {
+            "src": "assets/1792763172675-IMG_4242.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "isabfph",
+          "src": "assets/1792763180898-IMG_4243.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "5gkcdoq",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "o6fhx5w",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "yjkidcr",
       "slug": "adidas-y-yohji-yamamoto-f50-predator-y-3",
       "brand": "Adidas",
