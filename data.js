@@ -10056,6 +10056,56 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "Messi Signature ‘Fútbol y Familia’ Pack"
         }
+      },
+      {
+        "id": "vtt7h4i",
+        "name": "Adidas F50 Elite FG ‘Y-3’",
+        "colorway": "Azul",
+        "color": "#0042a9",
+        "price": 659999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ],
+          "uk": []
+        },
+        "images": [
+          "assets/1792766436637-IMG_4252.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Y-3’ "
+        }
       }
     ],
     "adidas/predator": [
