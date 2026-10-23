@@ -11,6 +11,74 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "yjkidcr",
+      "slug": "adidas-y-yohji-yamamoto-f50-predator-y-3",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas y Yohji Yamamoto: F50 & Predator ‘Y-3’",
+      "excerpt": "",
+      "date": "23 de Octubre de 2026",
+      "cover": "assets/1792762540722-IMG_4173.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "91jqsi9",
+          "content": "Nueva colaboración entre la marca de las tres líneas y el diseñador de moda japonés."
+        },
+        {
+          "type": "text",
+          "id": "zov4obe",
+          "content": " Cuando ambos fusionan, rara vez es una colaboración general…"
+        },
+        {
+          "type": "image-pair",
+          "id": "4f725nq",
+          "left": {
+            "src": "assets/1792762663034-IMG_4175.jpeg"
+          },
+          "right": {
+            "src": "assets/1792762678404-IMG_4176.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "vd3hgmo",
+          "left": {
+            "src": "assets/1792762693016-IMG_4177.jpeg"
+          },
+          "right": {
+            "src": "assets/1792762701983-IMG_4174.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "85c6pcq",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "iz2urpy",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "70rmvax",
       "slug": "lograra-on-football-revolucionar-el-mercado-de-los-botines",
       "brand": "",
