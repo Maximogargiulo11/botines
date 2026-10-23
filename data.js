@@ -9027,6 +9027,72 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Bright Lights’ Pack"
         }
+      },
+      {
+        "id": "acdd5ml",
+        "name": "Nike Tiempo Maestro Elite FG ‘United’ Chapter 4",
+        "colorway": "Gris / Naranja",
+        "color": "#999999",
+        "price": 599999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "7",
+            "6.5",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1792766356502-IMG_4256.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme ",
+          "peso": "186 gr.",
+          "coleccion": "‘United’ Chapter 4"
+        }
       }
     ],
     "adidas/f50": [
