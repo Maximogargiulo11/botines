@@ -11,6 +11,78 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "2pitotz",
+      "slug": "nike-phantom-6-gold-para-alexia-putellas-para-celebrar-su-tercer-balon-de-oro",
+      "brand": "Nike",
+      "category": "NOVEDAD",
+      "title": "Nike Phantom 6 ‘Gold’ para Alexia Putellas, para celebrar su tercer Balón de Oro 🌟",
+      "excerpt": "",
+      "date": "26 de Octubre de 2026",
+      "cover": "assets/1793319971374-IMG_4315.webp",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "iwljbwi",
+          "content": "Nike premió a su principal embajadora con un Phantom 6 Low bañado en oro luego de recibir el tercer Balón de Oro en su carrera."
+        },
+        {
+          "type": "image",
+          "id": "cieezxq",
+          "src": "assets/1793320112911-IMG_4312.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "7gzhou6",
+          "src": "assets/1793320124439-IMG_4313.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "1i6f4dl",
+          "left": {
+            "src": "assets/1793320158533-IMG_4314.webp"
+          },
+          "right": {
+            "src": "assets/1793320165086-IMG_4325.jpeg"
+          }
+        },
+        {
+          "type": "video",
+          "id": "93ppi1v",
+          "src": "assets/1793320196632-AQOJD1Qvyeal5HmO5q5FH1dw6e6lalJV_xwtzymaFmudk7Mz5bFitxAhLWdAdBM9svNwX-XINEXgXv_hsG0uTwgqVlOKge_yyGDgyH8.mp4"
+        },
+        {
+          "type": "text",
+          "id": "rgrlek3",
+          "content": "Fue entregado por sus propias compañeras de equipo, quienes grabaron la reacción en el momento."
+        },
+        {
+          "type": "instagram",
+          "id": "7djuxkq",
+          "url": "https://www.instagram.com/reel/DfCuGkBxq65/?xtok=cGR1bWdocnduc3Vy"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "npq7tvi",
       "slug": "nuevo-paquete-de-nike-united-chapter-4",
       "brand": "Nike",
