@@ -11,6 +11,113 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "6gdnkmc",
+      "slug": "skechers-gold-para-harry-kane-para-celebrar-el-balon-de-oro-2026",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Skechers ‘Gold’ para Harry Kane, para celebrar el Balón de Oro 2026 🌟",
+      "excerpt": "",
+      "date": "26 de Octubre de 2026",
+      "cover": "assets/1793320309953-IMG_4305.webp",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "image-pair",
+          "id": "785phrg",
+          "left": {
+            "src": "assets/1793320398581-IMG_4328.webp"
+          },
+          "right": {
+            "src": "assets/1793320408174-IMG_4330.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "2l7zcn6",
+          "content": "Durante siglos, los sellos han certificado algo precioso."
+        },
+        {
+          "type": "image-pair",
+          "id": "g7ixlwg",
+          "left": {
+            "src": "assets/1793320420355-IMG_4329.webp"
+          },
+          "right": {
+            "src": "assets/1793320426752-IMG_4331.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "l2nfx9p",
+          "content": "Diseñado y elaborado en celebración de una temporada notable: 73 Goles, 1 Harry Kane."
+        },
+        {
+          "type": "image-pair",
+          "id": "f19mdb1",
+          "left": {
+            "src": "assets/1793320454410-IMG_4317.webp"
+          },
+          "right": {
+            "src": "assets/1793320470715-IMG_4318.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "6t81wut",
+          "content": "Una temporada récord.\nUn toque dorado.\nUn legado estampado en la historia."
+        },
+        {
+          "type": "image",
+          "id": "ie2xu81",
+          "src": "assets/1793320479581-IMG_4321.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image-pair",
+          "id": "7nzbixo",
+          "left": {
+            "src": "assets/1793320514443-IMG_4322.webp"
+          },
+          "right": {
+            "src": "assets/1793320530273-IMG_4316.webp"
+          }
+        },
+        {
+          "type": "text",
+          "id": "knbecuh",
+          "content": "La temporada 25/26 de Harry Kane ganó una de las suyas."
+        },
+        {
+          "type": "image",
+          "id": "4heu6ny",
+          "src": "assets/1793320441415-IMG_4307.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "16sb98r",
+          "content": "#TheMarkOfGreatness"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "2pitotz",
       "slug": "nike-phantom-6-gold-para-alexia-putellas-para-celebrar-su-tercer-balon-de-oro",
       "brand": "Nike",
