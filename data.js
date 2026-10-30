@@ -11,6 +11,227 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "wnhpl37",
+      "slug": "adidas-y-prodirect-soccer-botines-personalizados",
+      "brand": "Adidas",
+      "category": "NOVEDAD",
+      "title": "Adidas y Pro:Direct Soccer: botines personalizados",
+      "excerpt": "Una oferta directa: servicio de fabricación de botines a medida de nivel elite generalmente reservado para profesionales.",
+      "date": "29 de Octubre de 2026",
+      "cover": "assets/1793321018218-IMG_4349.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "assets/1793321727688-IMG_4347.webp",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": false,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "jqdtpwa",
+          "content": "¿Alguna vez has soñado con tener tus propios botines a medida, perfectamente hechas a mano para cumplir con las especificaciones exactas de tus pies? Estoy hablando del tipo de servicio exclusivo que solo está disponible para los jugadores profesionales de élite. Bueno, ese sueño ahora es una realidad, ya que Adidas y Pro:Direct Soccer se unen para ofrecer su servicio ‘hecho a medida’, disponible exclusivamente en la tienda de PD:FC Manchester Arndale."
+        },
+        {
+          "type": "image",
+          "id": "gsdmr99",
+          "src": "assets/1793321739207-IMG_4347.webp",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "2l6kbj3",
+          "content": "Vamos a los hechos: no hay dos pies iguales y, sin embargo, todos tenemos que elegir del mismo grupo de botines en el mercado. Puede que te cueste encontrar un par que te quede perfectamente. Tal vez te conformes con el hecho de que el correcto se ajusta como un guante mientras que el izquierdo podría estar un poco suelto que el derecho, o viceversa. Te conformas con lo mejor que hay disponible y eso es todo. Pero ahora hay otra opción, aunque quizás un poco cara. A 1.300 libras esterlinas, esto no va a estar disponible para todos, pero el servicio Adidas Football ‘Made To Measure’ es una experiencia de nivel premium que anteriormente solo estaba disponible para los mejores jugadores del mundo, desde David Beckham y Toni Kroos hasta las estrellas de hoy, como Jude Bellingham y Lamine Yamal. Y ahora, por primera vez, esa misma experiencia de élite es accesible para cualquiera a través de PD:FC Manchester. Bueno, cualquiera que tenga el dinero al menos…"
+        },
+        {
+          "type": "image",
+          "id": "hu01w1f",
+          "src": "assets/1793321076599-IMG_4350.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "s281cij",
+          "content": "Entregado por el equipo de Adidas APEX (Athlete Product Excellence), el servicio lleva adelante la famosa promesa del fundador Adi Dassler: \"Solo lo mejor para el atleta\". Cuando los márgenes más finos pueden decidir los partidos, cada detalle importa, ¿verdad? Y pocos detalles son más importantes que la conexión entre el jugador y el botín. Debemos achicar ese margen."
+        },
+        {
+          "type": "text",
+          "id": "f6sqjnr",
+          "content": "Entonces, ¿qué implica? Que te escucho preguntar por ahí al respecto. Bueno, el viaje desde la consulta hasta la colección es un proceso cuidadosamente administrado y diseñado para crear un botín adaptado específicamente para vos, para tus pies."
+        },
+        {
+          "type": "image-pair",
+          "id": "pr334jz",
+          "left": {
+            "src": "assets/1793321118123-IMG_4351.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321128439-IMG_4352.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "7nre8kn",
+          "content": "Paso uno: consulta."
+        },
+        {
+          "type": "text",
+          "id": "4sugg1l",
+          "content": "Todo comienza en la tienda PD:FC Manchester, donde se someterá a una consulta individual. Utilizando la última tecnología de escaneo de pies de alta resolución, los especialistas toman medidas detalladas de sus pies mientras evalúan sus requisitos y preferencias individuales."
+        },
+        {
+          "type": "text",
+          "id": "o3zogkj",
+          "content": "La sesión está diseñada para identificar exactamente lo que necesita, con orientación experta para lograr el equilibrio ideal de ajuste, comodidad y rendimiento."
+        },
+        {
+          "type": "image-pair",
+          "id": "w8pdy9f",
+          "left": {
+            "src": "assets/1793321434967-IMG_4363.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321440596-IMG_4364.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "d9xydjd",
+          "content": "Paso 2: modificaciones de rendimiento."
+        },
+        {
+          "type": "text",
+          "id": "xxmzt3y",
+          "content": "Una vez que se han capturado sus medidas, el equipo de Adidas utiliza los datos, junto con sus comentarios y experiencias previas con pares anteriores, para entender cómo y por qué ciertas botines se sienten de la manera en que lo hacen."
+        },
+        {
+          "type": "text",
+          "id": "srn3xfo",
+          "content": "A partir de ahí, pueden recomendar modificaciones específicas para crear un ajuste verdaderamente personalizado. Esta es también la etapa en la que elegirá su silo preferido, así como el tipo de suelo para su placa de suela."
+        },
+        {
+          "type": "text",
+          "id": "dwl87vg",
+          "content": "Paso 3: experiencia artesanal."
+        },
+        {
+          "type": "text",
+          "id": "3r05lh8",
+          "content": "Con las especificaciones finalizadas, su pedido se envía a la reconocida Scheinfeld Manufaktur de Adidas en Baviera, Alemania."
+        },
+        {
+          "type": "text",
+          "id": "6k6whak",
+          "content": "Ubicada cerca de la sede de la marca en Herzogenaurach, la fábrica ha estado produciendo algunas de los mejores botines de fútbol de Adidas durante más de seis décadas. Acá es donde artesanos especializados construyen meticulosamente sus pares a mano, reuniendo décadas de experiencia, precisión y atención al detalle."
+        },
+        {
+          "type": "image-pair",
+          "id": "ws0uins",
+          "left": {
+            "src": "assets/1793321472101-IMG_4353.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321478877-IMG_4354.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "le6re1g",
+          "left": {
+            "src": "assets/1793321503199-IMG_4355.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321519882-IMG_4356.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "eebuzgo",
+          "left": {
+            "src": "assets/1793321526725-IMG_4357.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321534023-IMG_4358.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "z519hsg",
+          "left": {
+            "src": "assets/1793321541520-IMG_4359.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321549578-IMG_4360.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "xn1klt1",
+          "src": "assets/1793321567666-IMG_4365.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ogfi8cc",
+          "content": "Paso 4: construido para ti."
+        },
+        {
+          "type": "text",
+          "id": "6x9odmg",
+          "content": "Una vez completada la construcción, se aplican los toques finales. Se agregan opciones de personalización como banderas, iniciales o nombres antes de que los botines se empaqueten cuidadosamente para la entrega."
+        },
+        {
+          "type": "text",
+          "id": "h9n147m",
+          "content": "El producto terminado luego llega de vuelta al local de PD:FC Manchester, presentado en un embalaje premium y listo para la entrega a su dueño."
+        },
+        {
+          "type": "text",
+          "id": "eezu8wx",
+          "content": "¿El resultado? Es un par de botines de fútbol diseñadas específicamente para tus pies, construidas según tus preferencias y diseñadas para ofrecer la experiencia más cercana posible al calzado usado por los profesionales de élite del juego."
+        },
+        {
+          "type": "image",
+          "id": "6d3fvgy",
+          "src": "assets/1793321633221-IMG_4361.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "vc0zeax",
+          "content": "Para aquellos que siempre se han preguntado cómo se siente usar botines hechas exclusivamente para ellos, Adidas ‘Made To Measure’ ofrece una rara oportunidad de averiguarlo. No es barato, y ciertamente no está dirigido a todos, pero para los jugadores que persiguen el mejor ajuste, comodidad y rendimiento, no hay nada más exclusivo que esto."
+        },
+        {
+          "type": "image-pair",
+          "id": "96t0a1t",
+          "left": {
+            "src": "assets/1793321753251-IMG_4348.jpeg"
+          },
+          "right": {
+            "src": "assets/1793321758539-IMG_4346.jpeg"
+          }
+        },
+        {
+          "type": "video",
+          "id": "oyrk1xb",
+          "src": "https://youtu.be/Z23W6GzVccA?si=JMWvr6oWSnO8r-bo"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "6gdnkmc",
       "slug": "skechers-gold-para-harry-kane-para-celebrar-el-balon-de-oro-2026",
       "brand": "",
