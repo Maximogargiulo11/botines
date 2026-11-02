@@ -11,6 +11,84 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "1zp4t2o",
+      "slug": "radar-semanal-bagc",
+      "brand": "",
+      "category": "NOVEDAD",
+      "title": "Radar Semanal BAGC ",
+      "excerpt": "",
+      "date": "02 de Noviembre de 2026",
+      "cover": "assets/1793654482871-B897F54E-E3BE-49FD-8D83-BB9B06E772B2.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "y2k5xa5",
+          "content": "El objetivo de este radar es detectar oportunidades comerciales, anticipar movimientos de las marcas y encontrar tendencias que puedan convertirse en ventajas competitivas para Botines Alta Gama Córdoba. Esta edición contempla: lanzamientos y filtraciones de las marcas; nuevas tecnologías y evolución de los botines; marketing en colaboraciones y ediciones especiales; tendencias del mercado y comportamiento del consumidor; oportunidades comerciales; decisiones estratégicas para el negocio."
+        },
+        {
+          "type": "text",
+          "id": "uol3hp0",
+          "content": "Adidas Predator Touch Remake: Adidas prepara el regreso de un modelo histórico de 1996, con capellada de cuero, elementos de goma y la clásica lengüeta plegable. Puede ser una oportunidad visto como producto de atractivo nostálgico, ideal para coleccionistas y aficionados al la línea Predator."
+        },
+        {
+          "type": "text",
+          "id": "1ey47y8",
+          "content": "Nike Tiempo Maestro x Kids of Immigrants: colaboración especial con estética ‘Sundial’, gráficos topográficos y branding exclusivo. Se espera su comercialización durante Noviembre. Es una oportunidad para captar jugadores clientes interesados en ediciones limitadas y colaboraciones culturales."
+        },
+        {
+          "type": "text",
+          "id": "mf1j1nh",
+          "content": "Puma Future 10 Teaser Launch Camo Pack: nueva generación de la línea Future, con una estética de lanzamiento en blanco, negro y rojo. Es una oportunidad para seguir la evolución de la línea y evaluar demanda entre jugadores clientes que buscan ajuste y agilidad. "
+        },
+        {
+          "type": "text",
+          "id": "c4ftq87",
+          "content": "Próximos lanzamientos para monitorear."
+        },
+        {
+          "type": "text",
+          "id": "jx2ugmd",
+          "content": "Según el calendario de lanzamientos consultado, estas son algunas novedades que conviene seguir durante noviembre y los próximos meses:"
+        },
+        {
+          "type": "text",
+          "id": "2jgskh9",
+          "content": "Nike Mercurial Kobe Mamba Pack (19 de Noviembre): edición especial inspirada en Kobe Bryant."
+        },
+        {
+          "type": "text",
+          "id": "tvq8tmx",
+          "content": "Adidas Predator x ‘Willy Chavarría’ (Noviembre con fecha por confirmar): colaboración de edición especial."
+        },
+        {
+          "type": "text",
+          "id": "3wkzo9b",
+          "content": "Nike Mercurial Vapor 17 Special (Noviembre con fecha por confirmar): nueva propuesta estética de la línea Mercurial."
+        },
+        {
+          "type": "text",
+          "id": "9x3o4vk",
+          "content": "Adidas Predator 27 (Diciembre 2026, previsto): próxima evolución de una de las líneas más reconocidas de Adidas."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "wnhpl37",
       "slug": "adidas-y-prodirect-soccer-botines-personalizados",
       "brand": "Adidas",
