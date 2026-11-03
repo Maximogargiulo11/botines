@@ -11,6 +11,93 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "j3p8r8b",
+      "slug": "adidas-predator-touch-96-de-regreso",
+      "brand": "Adidas",
+      "category": "LANZAMIENTO",
+      "title": "Adidas Predator Touch 96’ de regreso 💫",
+      "excerpt": "",
+      "date": "03 de Noviembre de 2026",
+      "cover": "assets/1793712979835-IMG_4431.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "hzgbix0",
+          "content": "Describe un Adidas Predator. Lo más probable es que, si tienes cierta edad, al menos, dibujes el icónico color negro, blanco y rojo, una lengüeta de carpeta y esos elementos de goma demasiado agresivos. ¡Felicidades! Acabas de describir el Predator Touch, que está haciendo un bienvenido de regreso a la conciencia 30 años después de su debut."
+        },
+        {
+          "type": "image",
+          "id": "gr4ltiz",
+          "src": "assets/1793713110675-IMG_4427.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "cgre8q6",
+          "content": "Hasta mediados de los 90’, la botines de fútbol eran un asunto bastante estándar: cuero negro, cordones y tachuelas. Claro, había gente con los Copa Mundial, que estaba un poco por encima del resto, pero en general no había una gran cantidad para separar un modelo de otro más allá de la marca."
+        },
+        {
+          "type": "text",
+          "id": "gyvsv7n",
+          "content": "Todo eso cambió en 1996, cuando Adidas desató Predator en el mundo. De repente, hubo una pieza de tecnología genuinamente innovadora que los diferenciaba de la competencia. Y con ello vino una nueva estética sorprendente."
+        },
+        {
+          "type": "image-pair",
+          "id": "uufpdms",
+          "left": {
+            "src": "assets/1793713119175-IMG_4430.jpeg"
+          },
+          "right": {
+            "src": "assets/1793713125878-IMG_4429.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "qsm78z3",
+          "content": "Ahora, 30 años después de que el inolvidable gol de David Beckham, Adidas ha sacado la silueta clásica del archivo y la ha reequipado para el juego moderno."
+        },
+        {
+          "type": "text",
+          "id": "nxlzg91",
+          "content": "Oficialmente apodado Adidas Predator 96’ para su re-lanzamiento, el botín presenta una recreación exacta de la parte superior original, combinada con la placa de suela del Predator actual. Es un estilo clásico con herramientas modernas debajo, lo que lo hace tan adecuado para el juego de hoy como lo era en ese entonces. Así que si se te apetece probar suerte desde la mitad de la cancha por un tiro libre tú mismo, estarás más que equipado…"
+        },
+        {
+          "type": "image",
+          "id": "dah3v1e",
+          "src": "assets/1793713133293-IMG_4428.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "4jya1gs",
+          "content": "🛒 Disponibles a partir del Miércoles 04 de Noviembre en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "emhetf6",
+          "content": "📲 Compra en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "1zp4t2o",
       "slug": "radar-semanal-bagc",
       "brand": "",
