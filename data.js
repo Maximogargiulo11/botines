@@ -11,6 +11,113 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "3d34jx9",
+      "slug": "nike-tiempo-maestro-kid-of-inmigrants",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike Tiempo Maestro Kid Of Inmigrants 🤝",
+      "excerpt": "",
+      "date": "05 de Noviembre de 2026",
+      "cover": "assets/1793986684262-IMG_4464.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "u53zo07",
+          "content": "Kids Of Immigrants está dando sus primeros pasos reales en el campo, asociándose con Nike una vez más para ofrecer una nueva versión del Tiempo Maestro. "
+        },
+        {
+          "type": "image",
+          "id": "0hbl9t9",
+          "src": "assets/1793986726758-IMG_4465.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "klc38t7",
+          "content": "Siguiendo una serie de proyectos centrados en el estilo de vida juntos, este último lanzamiento marca un nuevo territorio para el sello con sede en Los Ángeles, aportando su narrativa distintiva al calzado de fútbol de rendimiento por primera vez."
+        },
+        {
+          "type": "image-pair",
+          "id": "tqkknna",
+          "left": {
+            "src": "assets/1793986753621-IMG_4467.jpeg"
+          },
+          "right": {
+            "src": "assets/1793986759790-IMG_4466.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "b8lr6hn",
+          "content": "Si aún no estás familiarizado con Kids Of Immigrants, probablemente ahora sea el momento. Fundada por Daniel Buezo y Weleh Dennis, la marca se ha construido una reputación por celebrar el patrimonio, la comunidad y la identidad cultural a través de la ropa y los proyectos creativos. "
+        },
+        {
+          "type": "text",
+          "id": "4o0l0ss",
+          "content": "Su última colaboración con Nike llegó antes de la Copa del Mundo, reelaborando el icónico Total 90 en una de las caídas más comentadas del año. Esta vez, sin embargo, están cambiando las calles por el estadio."
+        },
+        {
+          "type": "text",
+          "id": "rxqnlg8",
+          "content": "En el corazón de la colaboración está la idea del fútbol como lenguaje universal. Nike y Kids Of Immigrants continúan su misión compartida de unir a las personas a través del juego, utilizando el Tiempo Maestro como un lienzo para conectar culturas y generaciones que de otro modo podrían estar separadas por continentes."
+        },
+        {
+          "type": "image",
+          "id": "dvd7sex",
+          "src": "assets/1793986815501-IMG_4468.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "64wgejc",
+          "content": "Ese mensaje está tejido directamente en el diseño. La bota se inspira en los paisajes montañosos de Honduras y Liberia, las respectivas patrias de los fundadores Daniel Buezo y Weleh Dennis. Aunque a miles de kilómetros de distancia, los dos lugares están unidos aquí a través del fútbol, con el Tiempo sirviendo como símbolo de conexión, identidad y experiencia compartida."
+        },
+        {
+          "type": "text",
+          "id": "13vwmfp",
+          "content": "El lanzamiento también representa un hito significativo para ambos socios. Habiendo colaborado previamente en las iniciativas Air Max Sunder, T90 y Toma el Juego de Nike, esta es la primera vez que Nike y Kids Of Immigrants han llevado su asociación al mundo del calzado de fútbol de alto rendimiento de nivel de élite."
+        },
+        {
+          "type": "image-pair",
+          "id": "e0004vi",
+          "left": {
+            "src": "assets/1793986850652-IMG_4470.jpeg"
+          },
+          "right": {
+            "src": "assets/1793986856209-IMG_4469.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "yhibawr",
+          "content": "Para una marca construida sobre la narración y la conexión cultural, entrar en el terreno se siente como el siguiente capítulo natural. Y si este Tiempo Maestro es algo por lo que ir, ¡definitivamente tomaremos más!"
+        },
+        {
+          "type": "text",
+          "id": "g1du25x",
+          "content": "🛒 Disponibles a partir del Jueves 19 de Noviembre en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "j3p8r8b",
       "slug": "adidas-predator-touch-96-de-regreso",
       "brand": "Adidas",
