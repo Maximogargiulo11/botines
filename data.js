@@ -11,6 +11,113 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "zebhg7d",
+      "slug": "nike-sube-el-volumen-en-la-nueva-signature-de-nike-mercurial-vapor-17-de-vinicius-jr",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike sube el volumen en la nueva ‘signature’ de Nike Mercurial Vapor 17 de Vinicius Jr 🇧🇷",
+      "excerpt": "",
+      "date": "10 de Noviembre de 2026",
+      "cover": "assets/1794403658843-IMG_4496.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "fzq6496",
+          "content": "Si bien sería fácil mirar la paleta ardiente y archivarla bajo otro brillante botín de temática brasileña. Pero hay una historia mucho más profunda a través de este lanzamiento."
+        },
+        {
+          "type": "text",
+          "id": "vpxijbr",
+          "content": "La tercera firma de Nike para Vini Jr. se basa en la energía de “Baile Funk”, la música y la cultura que formaron una gran parte de su educación en Brasil."
+        },
+        {
+          "type": "image",
+          "id": "aarb2b3",
+          "src": "assets/1794403926616-IMG_4497.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "4gyc1k4",
+          "content": "Bajo la bandera creativa de “Baila Vini Jr.”, el botín establece una conexión entre los inconfundibles 808 ritmos de la música funk, las ahora icónicas celebraciones de goles del jugador y la intrépida forma en que aborda el juego."
+        },
+        {
+          "type": "text",
+          "id": "ie80epy",
+          "content": "Es una celebración de la individualidad. De apoyarte en vos mismo. De aceptar de dónde vienes e inspirar a otros a hacer lo mismo. Y apropiadamente, ese mensaje está tejido a lo largo del diseño: un brillante degradado de amarillo a naranja evoca las luces y la atmósfera de una fiesta de baile, mientras que las capas de rosa y púrpura se combinan con tratamientos gráficos texturizados que asientan a las paredes con postes de moscas, las fundas de vinilo y los imponentes sistemas de sonido. Es ruidoso, enérgico e imposible de ignorar, lo que se siente bastante apropiado para uno de los mejores artistas del fútbol."
+        },
+        {
+          "type": "image-pair",
+          "id": "rbwtczq",
+          "left": {
+            "src": "assets/1794403938778-IMG_4493.jpeg"
+          },
+          "right": {
+            "src": "assets/1794403944545-IMG_4495.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "i999dpv",
+          "content": "También hay toques personales dispersos por la parte superior, como cabría esperar de cualquier versión de la edición de firma. Un swoosh negro de gran tamaño refleja las propias preferencias de diseño, mientras que los gráficos inspirados en el sello se suman a la estética dirigida por la música."
+        },
+        {
+          "type": "text",
+          "id": "x5ui01t",
+          "content": "Quizás lo más significativo es la inclusión de \"Acredite\" (\"Creer\"), tomado de uno de los tatuajes del brasileño y que sirve como recordatorio de la mentalidad que lo ha ayudado a llevar a la cima del juego."
+        },
+        {
+          "type": "image-pair",
+          "id": "ebmpl0l",
+          "left": {
+            "src": "assets/1794403957957-IMG_4498.jpeg"
+          },
+          "right": {
+            "src": "assets/1794403962969-IMG_4494.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "5idabsr",
+          "content": "No hay actualizaciones tecnológicas exclusivas aquí, sólo uno de los pares de velocidad más avanzados de Nike envuelta en un diseño que refleja la personalidad de su usuario.\nY eso es realmente lo que hace que esta última edición destaque. En lugar de simplemente celebrar a Brasil, aprovecha directamente los sonidos, la cultura y la autoexpresión que dieron forma a Vini Jr. mucho antes de que se convirtiera en una de las estrellas más brillantes del deporte. "
+        },
+        {
+          "type": "text",
+          "id": "2ktsu9z",
+          "content": "¿El resultado? Es un botín que se siente personal, auténtico y, al igual que el propio jugador, imposible de ignorar."
+        },
+        {
+          "type": "image",
+          "id": "ehtfnus",
+          "src": "assets/1794403973414-IMG_4492.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "4egbon2",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "3d34jx9",
       "slug": "nike-tiempo-maestro-kid-of-inmigrants",
       "brand": "Nike",
