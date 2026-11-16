@@ -11,6 +11,83 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "jemh4sc",
+      "slug": "puma-future-181-remake-fg",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma Future 18.1 Remake FG 🟡",
+      "excerpt": "",
+      "date": "13 de Noviembre de 2026",
+      "cover": "assets/1794863037161-IMG_4518.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "rc966n6",
+          "content": "Puma lanza una re-edición del Future 18.1 del 2018, para celebrar la décima generación del silo Future."
+        },
+        {
+          "type": "image",
+          "id": "yu0j0ve",
+          "src": "assets/1794863142011-IMG_4516.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "4sib2g3",
+          "content": "Esta edición limitada recupera el diseñado hace 8 años atrás con la malla textil ‘Netfit’ para personalizar el atado."
+        },
+        {
+          "type": "image-pair",
+          "id": "1w03mm7",
+          "left": {
+            "src": "assets/1794863120956-IMG_4514.jpeg"
+          },
+          "right": {
+            "src": "assets/1794863127491-IMG_4515.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "n9c9osv",
+          "content": "Mantiene el color amarillo con detalles en rojo y negro del lanzamiento inicial, pero moderniza la suela con la tecnología del actual Future 10 y un acabado cromado iridiscente."
+        },
+        {
+          "type": "image",
+          "id": "0yloaax",
+          "src": "assets/1794863153119-IMG_4517.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "r0f3q8p",
+          "content": "Marco Reus fue elegido como el embajador exclusivo que los usará dentro del campo de juego."
+        },
+        {
+          "type": "text",
+          "id": "w6wtafh",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "zebhg7d",
       "slug": "nike-sube-el-volumen-en-la-nueva-signature-de-nike-mercurial-vapor-17-de-vinicius-jr",
       "brand": "Nike",
