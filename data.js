@@ -11,6 +11,179 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "8m7uo1k",
+      "slug": "radar-semanal-bagc",
+      "brand": "",
+      "category": "EDITORIAL",
+      "title": "Radar Semanal BAGC",
+      "excerpt": "Semana del 9 al 16 de noviembre de 2026.",
+      "date": "16 de Noviembre de 2026",
+      "cover": "assets/1794878631171-B897F54E-E3BE-49FD-8D83-BB9B06E772B2.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "smelz7c",
+          "content": "Esta semana, hay dos señales particularmente fuertes: Nike está empujando nuevamente el segmento de botines de firma/edición especial, mientras Adidas está convirtiendo la nostalgia Predator en una categoría comercial propia. "
+        },
+        {
+          "type": "text",
+          "id": "vdkkk44",
+          "content": "En Argentina, además, hay una brecha de precio importante entre canales que puede convertirse tanto en oportunidad como en riesgo competitivo."
+        },
+        {
+          "type": "text",
+          "id": "236i7no",
+          "content": "🔥 1. Nike × Kids of Immigrants — Tiempo Maestro"
+        },
+        {
+          "type": "text",
+          "id": "a07mg0y",
+          "content": "Estado: OFICIAL — 5 de noviembre"
+        },
+        {
+          "type": "text",
+          "id": "tf47s4d",
+          "content": "Nike confirmó el lanzamiento de su nueva colección junto a Kids of Immigrants, incluyendo el Tiempo Maestro Elite x Kids of Immigrants. Nike lo presenta como parte de una colección para cancha y calle; su disponibilidad figura en"
+        },
+        {
+          "type": "text",
+          "id": "3qz4gyj",
+          "content": "⚡ 2. Nike Mercurial Vapor 17 Vini Jr. “Baile Funk’"
+        },
+        {
+          "type": "text",
+          "id": "ysodbr9",
+          "content": "Estado: lanzamiento reportado — 12 de noviembre"
+        },
+        {
+          "type": "text",
+          "id": "y1ye8dl",
+          "content": "Nueva ‘signature’ de Mercurial, silo característico del jugador, por Nike para el crack brasileño."
+        },
+        {
+          "type": "text",
+          "id": "r7wabk7",
+          "content": "🐊 3. Adidas Predator 96 — la nostalgia sigue funcionando."
+        },
+        {
+          "type": "text",
+          "id": "pm2akiu",
+          "content": "Estado: OFICIAL — disponible desde el 5 de noviembre"
+        },
+        {
+          "type": "text",
+          "id": "wt8uu7w",
+          "content": "Adidas confirmó el Predator 96, una reedición de la tercera generación del Predator. La versión utiliza una construcción que mezcla herencia del modelo con tecnología moderna, incluyendo Primeknit y una capellada de cuero."
+        },
+        {
+          "type": "text",
+          "id": "5806eb9",
+          "content": "🧠 4. Adidas ya se prepara para el 2027."
+        },
+        {
+          "type": "text",
+          "id": "4kumgd1",
+          "content": "Estado: FILTRACIÓN / CALENDARIO NO OFICIAL"
+        },
+        {
+          "type": "text",
+          "id": "swc3qmr",
+          "content": "El calendario especializado en filtraciones sitúa para Diciembre los primeros teasers de Predator 27, AdiPure 2027 y F50 2027, con lanzamientos principales previstos posteriormente. "
+        },
+        {
+          "type": "text",
+          "id": "3zoe0tg",
+          "content": "🐆 5. PUMA: foco puesto al contexto, no solamente al producto."
+        },
+        {
+          "type": "text",
+          "id": "ju5s3i3",
+          "content": "Puma está teniendo una situación diferente esta semana a comparación con el resto de las marcas."
+        },
+        {
+          "type": "text",
+          "id": "ezpmk1j",
+          "content": "Su informe de para el tercer trimestre 2026 muestra que las ventas de calzado cayeron aproximadamente 5,1%, mientras la compañía señala un desempeño más débil en fútbol y algunas franquicias, compensado parcialmente por Running y Nitro. "
+        },
+        {
+          "type": "text",
+          "id": "sx593cq",
+          "content": "Aunque, al mismo tiempo, Puma mantiene al fútbol como uno de sus pilares estratégicos y sigue con su apuesta por Ultra, Future y King. "
+        },
+        {
+          "type": "text",
+          "id": "nzh7eu3",
+          "content": "🇦🇷 6. Argentina: el precio se está convirtiendo en un factor competitivo crítico, cambiando las decisiones de los consumidores."
+        },
+        {
+          "type": "text",
+          "id": "xw1wcna",
+          "content": "Acá aparece uno de los datos más importantes de esta edición:"
+        },
+        {
+          "type": "text",
+          "id": "27hpgg5",
+          "content": "Eso significa que BAGC no debería mirar solamente: “¿Cuánto cuesta oficialmente?”, sino: “¿Cuál es el precio real al que el mercado está dispuesto a comprar?”"
+        },
+        {
+          "type": "text",
+          "id": "1y9p1eo",
+          "content": "💰 7. Competencia argentina."
+        },
+        {
+          "type": "text",
+          "id": "o23auax",
+          "content": "Además, encontramos oferta local de productos importados con una estrategia muy agresiva de precio de dudosa procedencia y calidad."
+        },
+        {
+          "type": "text",
+          "id": "8hldelr",
+          "content": "📊 8. ¿Qué está pasando con el consumidor? Ya no es el mismo de antes…"
+        },
+        {
+          "type": "text",
+          "id": "ui86dbc",
+          "content": "La apertura comercial argentina está aumentando la competencia de productos importados y el comercio electrónico internacional. El Financial Times informó que las importaciones argentinas de bienes de consumo crecieron fuertemente en 2025 y que las compras mediante plataformas internacionales casi se triplicaron. "
+        },
+        {
+          "type": "text",
+          "id": "1wf2zhq",
+          "content": "🧪 9. Tecnología que merece seguimiento:"
+        },
+        {
+          "type": "text",
+          "id": "0np377a",
+          "content": "Puma Ultra Nitro 7:  trasladó por primera vez su tecnología Nitro desde running hacia el fútbol. La marca la presentó como una plataforma de innovación para su silo de velocidad."
+        },
+        {
+          "type": "text",
+          "id": "42vn6od",
+          "content": "👟 10. Otras marcas a vigilar."
+        },
+        {
+          "type": "text",
+          "id": "5szwrvg",
+          "content": "El calendario de lanzamientos muestra movimientos interesantes de Reebok, Skechers, New Balance, On, entre otras relevantes como Sokito y Decathlon."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "jemh4sc",
       "slug": "puma-future-181-remake-fg",
       "brand": "Puma",
