@@ -11,6 +11,153 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "vi99jsx",
+      "slug": "michael-olise-el-rey-no-oficial-de-nike-hypervenom",
+      "brand": "Nike",
+      "category": "EDITORIAL",
+      "title": "Michael Olise: el rey no oficial de Nike Hypervenom 🦂",
+      "excerpt": "",
+      "date": "17 de Noviembre de 2026",
+      "cover": "assets/1794937416310-IMG_4557.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "j3wle8z",
+          "content": "Cuando se trata de un partido, Michael Olise hace las cosas a su manera. Sin obligaciones, sin últimas lanzamientos. Sólo un amor genuino por Hypervenom."
+        },
+        {
+          "type": "text",
+          "id": "1cf6ouf",
+          "content": "Desde los raros colores hasta los ajustes perfectamente combinados, se ha convertido silenciosamente en el jugador cartel de este silo, años después de su lanzamiento oficial. Y tal vez eso es lo que lo hace tan diferente al resto…"
+        },
+        {
+          "type": "text",
+          "id": "b1aj7ki",
+          "content": "Todos los fines de semana suelo ver un partido del Bayern, o al menos los mejores momentos como resumen, no porque sea fanático necesariamente, sino simplemente para ver qué uso esta vez. Sí, por supuesto, para verlo salir como suele hacer. Pero también para ver qué botines ha decidido atarse ese día en particular."
+        },
+        {
+          "type": "text",
+          "id": "u8g4o1k",
+          "content": "Vivimos en un mundo futbolístico donde los últimos lanzamientos, colores y actualizaciones tecnológicas dictan gran parte de lo que vemos en el campo (un poco demasiado en mi opinión, aunque es entendible cuando hay contratos de por medio que unen las partes). Pero Olise ha estado haciendo las cosas un poco diferente. Y en algún momento del camino, de alguna manera, se ha convertido en el rey no oficial de Nike Hypervenom."
+        },
+        {
+          "type": "text",
+          "id": "x59ypmn",
+          "content": "Es gracioso, de verdad. La relación entre un jugador y sus botines siempre ha parecido importante dentro y fuera del campo de juego. Siempre recordas alguno en particular y que no podes olvidar."
+        },
+        {
+          "type": "text",
+          "id": "o1itz4f",
+          "content": "Pero parece que algo ha cambiado a lo largo de los años. Las ofertas de arranque han sido parte del juego desde que tengo uso de razón y, no me malinterpretes, cuando se hacen bien, tienen mucho sentido. Piensa en Neymar con Nike Hypervenom. Un talento joven e impredecible emparejado con una botín que llevaba exactamente la misma energía. Se sintió como un ajuste completamente natural. Una extensión del jugador en lugar de solo otra asociación comercial."
+        },
+        {
+          "type": "text",
+          "id": "dvmvku0",
+          "content": "Pero en los últimos años, la diversión de todo se ha sentido un poco diluida. Los jugadores están constantemente saliendo de los últimos lanzamientos, que son casi todas las semanas en este momento. No hay nada particularmente malo en eso, supongo que es el negocio del fútbol moderno, pero te deja preguntándote a dónde se ha ido la personalidad de todo."
+        },
+        {
+          "type": "text",
+          "id": "sgfh1ka",
+          "content": "Ahora, ahí es donde entra Olise."
+        },
+        {
+          "type": "text",
+          "id": "n25nxoh",
+          "content": "Por lo que he visto, no hay ninguna lealtad particular u obligación contractual que decida lo que se ata antes de un juego. Se pone lo que quiere, cuando quiere, como quiere. Y eso suele ser casi siempre un Hypervenom. Tampoco cualquiera. Estamos hablando de combinaciones de colores originales, lanzamientos olvidados hace mucho tiempo, pares que se han vuelto casi imposibles de conseguir o hasta ediciones customizadas. Es el sueño de todos los amantes de los botines de fútbol."
+        },
+        {
+          "type": "text",
+          "id": "vgbvu80",
+          "content": "Pero no se trata solo de elegir cualquiera, cuando ni cómo sea. Casi hay un método para ello, un patrón, un común denominador: Olise ha desarrollado el hábito de combinar sus botines con su vestimenta de juego del momento o hasta su ropa de entrenamiento, aportando un poco más de pensamiento a lo que de otro modo podría ser un detalle bastante insignificante. ¡Y se ve bastante limpio! Una semana es un color, la siguiente es otra, pero siempre hay algo que vale la pena mirar dos veces. En un mundo donde los jugadores a menudo están vestidos de pies a cabeza por sus respectivos patrocinadores, hay algo tan refrescante en un jugador que realmente quiere tomar esas decisiones por sí mismo. Eso lo hace tener un estilo único, auténtico de él."
+        },
+        {
+          "type": "text",
+          "id": "mnv50xb",
+          "content": "Por supuesto, ayuda que Olise sea el mismísimo Olise. Todos sabemos que hay una cierta indiferencia en todo lo que hace. Un fresco sin esfuerzo que se extiende más allá del tono. No es exactamente la personalidad más ruidosa de la habitación, pero hay una arrogancia seria y subestimada sobre él que parece llamar la atención de todos. El Hypervenom encaja perfectamente con eso. Hay algo en la estética cruda del botín y la actitud que llevaba cuando llegó por primera vez que se siente justo al lado del propio enfoque de Olise del juego. No es un emparejamiento forzado. Simplemente funciona."
+        },
+        {
+          "type": "text",
+          "id": "3cx53mk",
+          "content": "Y tal vez eso es lo que hace que todo esto sea tan interesante para mí. Los Hypervenom siempre tuvieron una cierta personalidad propia. Desde su llegada original como la nueva y perturbadora bota de ataque de Nike hasta las innumerables combinaciones de colores que siguieron, nunca se avergonzó de destacar. Y su exageración fue indignante. Neymar ayudó a darle esa identidad, pero ahora, años después de su apogeo, Olise le está dando un nuevo estilo de vida de una manera que se siente completamente orgánica."
+        },
+        {
+          "type": "text",
+          "id": "rnt7xnv",
+          "content": "Verlo parar en un color diferente cada semana me hizo pensar, es difícil ignorar la oportunidad sentado frente a Nike en este momento. Aquí tienes a uno de los jugadores más emocionantes del fútbol mundial, generando naturalmente conversación en torno a una de las siluetas más icónicas de la marca sin siquiera necesitar una gran campaña o impulso de marketing detrás de él. Hay una gran oportunidad para construir sobre esa relación, y tal vez incluso traer a Hypervenom de vuelta a través de un jugador que ya ha hecho lo suyo."
+        },
+        {
+          "type": "text",
+          "id": "eootpsm",
+          "content": "Pero luego viene la interesante pregunta. ¿Hacer un trato alrededor realmente lo haría mejor? ¿O quitaría lo mismo que lo hace tan atractivo en primer lugar?"
+        },
+        {
+          "type": "text",
+          "id": "6arxcdg",
+          "content": "Parte del encanto de todo esto es que Olise no parece tener que usarlos. Él elige. Y esa es una gran diferencia. No hay obligación de elegir el último color. Es simplemente un jugador con una preferencia, sacando pares del archivo que le gustan y haciéndolos parte de su propia identidad."
+        },
+        {
+          "type": "text",
+          "id": "p1hacmi",
+          "content": "Tal vez Nike debería dejarlo exactamente como está. O tal vez haya una oportunidad en forma de Hypervenom esperando ser explorada. Algo de eso se estaría cocinando… (Hypervenom 4)"
+        },
+        {
+          "type": "text",
+          "id": "264nurb",
+          "content": "De cualquier manera, Michael Olise simplemente usando lo que quiere es exactamente lo que el juego estaba desesperado."
+        },
+        {
+          "type": "image-pair",
+          "id": "y7t5utb",
+          "left": {
+            "src": "assets/1794937777563-IMG_4558.jpeg"
+          },
+          "right": {
+            "src": "assets/1794937783686-IMG_4559.jpeg"
+          }
+        },
+        {
+          "type": "image-pair",
+          "id": "n81anoa",
+          "left": {
+            "src": "assets/1794937842953-IMG_4563.jpeg"
+          },
+          "right": {
+            "src": "assets/1794937849645-IMG_4562.jpeg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "42tntsv",
+          "src": "assets/1794937857432-IMG_4565.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "image",
+          "id": "gun21qf",
+          "src": "assets/1794937874094-IMG_4566.jpeg",
+          "width": "",
+          "height": ""
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "5o4yfq7",
       "slug": "puma-celebra-una-nueva-era-con-el-future-10-totalmente-reinventado",
       "brand": "Puma",
