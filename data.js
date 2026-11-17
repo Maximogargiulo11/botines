@@ -1444,7 +1444,7 @@ window.BAG_DATA = {
       "title": "Radar semanal BAGC",
       "excerpt": "",
       "date": "19 de Octubre de 2026",
-      "cover": "assets/1792602018602-Sin_ti_tulo_-_19_de_junio_de_2026_a_las_14.35.11-2.png",
+      "cover": "assets/1794878744360-B897F54E-E3BE-49FD-8D83-BB9B06E772B2.jpeg",
       "coverWidth": "",
       "coverHeight": "",
       "imagenCard": "",
