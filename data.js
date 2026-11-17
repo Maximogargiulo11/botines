@@ -11,6 +11,136 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "5o4yfq7",
+      "slug": "puma-celebra-una-nueva-era-con-el-future-10-totalmente-reinventado",
+      "brand": "Puma",
+      "category": "LANZAMIENTO",
+      "title": "Puma celebra una nueva era con el Future 10 totalmente reinventado 😮",
+      "excerpt": "",
+      "date": "17 de Noviembre de 2026",
+      "cover": "assets/1794922394477-IMG_4547.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "hna6du5",
+          "content": "Después de burlarse de él el mes pasado, Puma ha presentado oficialmente el Future 10, marcando un hito importante para uno de los silos de botas más reconocibles del fútbol. Y para su décima generación, este silo no solo está recibiendo una actualización, más bien está recibiendo una revisión completa."
+        },
+        {
+          "type": "image-pair",
+          "id": "8v374se",
+          "left": {
+            "src": "assets/1794922652760-IMG_4548.jpeg"
+          },
+          "right": {
+            "src": "assets/1794922659206-IMG_4549.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "4gl0w9l",
+          "content": "El Future ha sido un elemento básico en las líneas de Puma durante un tiempo decente, y a lo largo de los años ha sido ajustado y refinado para garantizar que pueda mantenerse al día con las demandas del juego moderno, como lo hace cualquier silo de arranque de larga duración, evolucionando con los tiempos. "
+        },
+        {
+          "type": "image",
+          "id": "leumd52",
+          "src": "assets/1794922665711-IMG_4550.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "ipqhxkr",
+          "content": "Algunos han sido grandes diseños, fusionando innovación con comodidad y rendimiento, mientras que otros no han dado en el blanco. Y ahora nos acercamos a la décima generación, que ya se ha visto en acción a los pies de Neymar Jr, su principal cara. "
+        },
+        {
+          "type": "text",
+          "id": "lkz9dxs",
+          "content": "Construido en torno a la idea de que \"El futuro se mueve contigo\", el Future 10 ha sido rediseñado desde cero para jugadores que prosperan con la creatividad, la improvisación y la imprevisibilidad. Bueno, entonces vamos a entrar de lleno de lo que se trata este botín, ¿estás listo? Comencemos…"
+        },
+        {
+          "type": "text",
+          "id": "eaduqx6",
+          "content": "El mayor cambio viene en el ajuste: ha introducido una forma anatómica completamente nueva mientras elimina unos impresionantes 60 gramos del peso total. Un antepié más delgado, una puntera refinada, una longitud total más corta y una mayor curvatura del talón se combinan para crear un ajuste que se siente más seguro, más natural y notablemente más receptivo desde el momento."
+        },
+        {
+          "type": "image-pair",
+          "id": "97zm93m",
+          "left": {
+            "src": "assets/1794922478362-IMG_4551.jpeg"
+          },
+          "right": {
+            "src": "assets/1794922484435-IMG_4552.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "kwew0m9",
+          "content": "En el corazón se encuentra la última evolución de la tecnología FUZIONFIT: una construcción de punto diseñada rediseñada funciona junto con un nuevo sistema de cordones adaptativo para proporcionar un bloqueo donde lo necesita, al tiempo que permite la libertad de movimiento por lo que siempre ha sido conocido en este silo."
+        },
+        {
+          "type": "image-pair",
+          "id": "fyznwsw",
+          "left": {
+            "src": "assets/1794922518486-IMG_4553.jpeg"
+          },
+          "right": {
+            "src": "assets/1794922524479-IMG_4554.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "sgkfz6y",
+          "content": "La parte superior también ha recibido una atención significativa: una construcción de malla de ingeniería de longitud completa cuenta con zonas de agarre estratégicamente colocadas, mientras que las capas duales de textura 5D integrada mejoran el tacto y la sensación de la pelota en áreas de contacto clave, ayudando a los creadores a mantenerse conectados con la pelota durante esos momentos que cambian el juego."
+        },
+        {
+          "type": "text",
+          "id": "qtigflb",
+          "content": "Bajo el pie, una suela exterior completamente nueva combina una placa PEBA sensible con un marco de TPU de apoyo. Combinado con un diseño de espárragos en forma de Z y un espárrago de pivote central, está construido para ofrecer una tracción explosiva y cambios de dirección rápidos."
+        },
+        {
+          "type": "image-pair",
+          "id": "rrvbf88",
+          "left": {
+            "src": "assets/1794922576325-IMG_4555.jpeg"
+          },
+          "right": {
+            "src": "assets/1794922581684-IMG_4556.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "g52ifn9",
+          "content": "En diez generaciones, el Future sigue evolucionando. Pero con una construcción más ligera, un ajuste reelaborado y herramientas completamente nuevas."
+        },
+        {
+          "type": "text",
+          "id": "lib5eas",
+          "content": "Ahora se siente como algo más que el siguiente paso. Se siente como el comienzo de un nuevo capítulo."
+        },
+        {
+          "type": "text",
+          "id": "zxbu2bq",
+          "content": "🛒 Disponibles en Botines Alta Gama Córdoba."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "8m7uo1k",
       "slug": "radar-semanal-bagc",
       "brand": "",
