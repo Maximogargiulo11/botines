@@ -55,7 +55,7 @@ window.BAG_DATA = {
         {
           "type": "text",
           "id": "ktk0jwn",
-          "content": "El diseño actualizado aterriza tanto en Vapor 17 como en Superfly 11, dando a los jugadores dos tomas distintas de la bota de velocidad insignia de Nike. El Vapor 17 ofrece una sensación más ligera y ágil para cambios rápidos de dirección y movimientos bruscos en espacios reducidos; mientras que el Superfly 11 atiende a aquellos que prosperan con un ritmo explosivo y recto."
+          "content": "El diseño actualizado aterriza tanto en Vapor 17 como en Superfly 11, dando a los jugadores dos tomas distintas del silo de velocidad insignia de Nike. El Vapor 17 ofrece una sensación más ligera y ágil para cambios rápidos de dirección y movimientos bruscos en espacios reducidos; mientras que el Superfly 11 atiende a aquellos que prosperan con un ritmo explosivo y recto."
         },
         {
           "type": "image-pair",
