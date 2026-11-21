@@ -11,6 +11,116 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "ruslla9",
+      "slug": "nike-completa-el-circulo-de-mambacurial-con-el-lanzamiento-de-esta-edicion-especial",
+      "brand": "Nike",
+      "category": "LANZAMIENTO",
+      "title": "Nike completa el círculo de Mambacurial con el lanzamiento de esta edición especial 🐍",
+      "excerpt": "",
+      "date": "21 de Noviembre de 2026",
+      "cover": "assets/1795280396215-IMG_4639.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "z4alw4t",
+          "content": "La marca ‘Mamba’ de Kobe Bryant 🏀 ha tenido un gran impacto en el juego en los últimos dos años, pero ahora parece que el círculo está algo completo con el lanzamiento oficial de Mambacurial Vapor 17 y Superfly 11."
+        },
+        {
+          "type": "text",
+          "id": "dem53n9",
+          "content": "En 2013, Nike se inspiró en el Mercurial Vapor IX y tradujo su inconfundible aspecto “Fireberry” en una cancha de baloncesto con el lanzamiento de Kobe 8 ‘Mambacurial’ de Kobe Bryant. Fue una de las colaboraciones cross-deport más memorables de su tiempo, combinando la actitud impulsada por la velocidad del Mercurial con la implacable ventaja competitiva de Kobe, capturando perfectamente el amor profundamente arraigado de la superestrella del baloncesto por el fútbol. "
+        },
+        {
+          "type": "text",
+          "id": "gwmdn9u",
+          "content": "Ahora, trece años después, Nike ha cambiado el guión, trayendo esa identidad Mambacurial de vuelta al fútbol en un movimiento que se siente perfectamente cerrado."
+        },
+        {
+          "type": "text",
+          "id": "ui4bdf1",
+          "content": "Ya visto a los pies de Stephen Bergwijn en Septiembre, el nuevo Nike Mambacurial llega en el color oficial \"Hyper Pink/Electric Green/Red Plum\", tomando el espíritu del original y reinventándolo para el juego moderno. En lugar de servir un remake retro directo del Vapor IX, Nike ha utilizado la historia de Mambacurial como base para un nuevo lanzamiento de edición especial en sus últimas plataformas Mercurial."
+        },
+        {
+          "type": "text",
+          "id": "ktk0jwn",
+          "content": "El diseño actualizado aterriza tanto en Vapor 17 como en Superfly 11, dando a los jugadores dos tomas distintas de la bota de velocidad insignia de Nike. El Vapor 17 ofrece una sensación más ligera y ágil para cambios rápidos de dirección y movimientos bruscos en espacios reducidos; mientras que el Superfly 11 atiende a aquellos que prosperan con un ritmo explosivo y recto."
+        },
+        {
+          "type": "image-pair",
+          "id": "mflyobw",
+          "left": {
+            "src": "assets/1795280618863-IMG_4641.jpeg"
+          },
+          "right": {
+            "src": "assets/1795280624198-IMG_4640.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "l55n08u",
+          "content": "Visualmente, la conexión con el ‘Mambacurial’ original es inconfundible. El vibrante rosa inspirado en “Fireberry” sigue siendo el punto de foco, aunque se ha actualizado para 2026 con detalles innovados en la parte superior."
+        },
+        {
+          "type": "image",
+          "id": "m1julo6",
+          "src": "assets/1795280632302-IMG_4643.jpeg",
+          "width": "",
+          "height": ""
+        },
+        {
+          "type": "text",
+          "id": "jemx0y8",
+          "content": "Nike también ha cambiado la marca original inspirada en el empeine de Mercurial en favor de un logotipo de silueta de Kobe, fortaleciendo la conexión con el legado de Bryant mientras subraya el lugar único del botín entre dos deportes. "
+        },
+        {
+          "type": "image-pair",
+          "id": "pkazxhp",
+          "left": {
+            "src": "assets/1795280647825-IMG_4642.jpeg"
+          },
+          "right": {
+            "src": "assets/1795280653733-IMG_4644.jpeg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "z4hejod",
+          "content": "Bajo los pies, una placa de suela brillante añade otro toque premium, lo que deja claro que esto está lejos de ser un trabajo de pintura de edición especial estándar."
+        },
+        {
+          "type": "text",
+          "id": "frz95zu",
+          "content": "El resultado es un par que celebra uno de los momentos de crossover más icónicos de Nike sin simplemente mirar hacia atrás. En cambio, el ‘Mambacurial’ utiliza su historia como plataforma de lanzamiento, combinando la herencia del fútbol y el baloncesto en un lanzamiento que se siente tan relevante hoy como hace más de una década."
+        },
+        {
+          "type": "text",
+          "id": "ia4bfxu",
+          "content": "🛒 Disponibles a partir del Jueves 26 de Noviembre en Botines Alta Gama Córdoba."
+        },
+        {
+          "type": "text",
+          "id": "dw1pt59",
+          "content": "📲 Comprá en www.botinesaltagamacba.com"
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "vi99jsx",
       "slug": "michael-olise-el-rey-no-oficial-de-nike-hypervenom",
       "brand": "Nike",
@@ -305,7 +415,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -478,7 +588,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
@@ -555,7 +665,7 @@ window.BAG_DATA = {
       "imagenCarruselWidth": "",
       "imagenCarruselHeight": "",
       "coverVideo": "",
-      "featured": true,
+      "featured": false,
       "sizesUS": [],
       "sizesUK": [],
       "contentBlocks": [
