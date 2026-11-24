@@ -11,6 +11,59 @@ window.BAG_DATA = {
   },
   "articles": [
     {
+      "id": "vuxtttm",
+      "slug": "radar-semanal-bagc",
+      "brand": "",
+      "category": "EDITORIAL",
+      "title": "Radar Semanal BAGC",
+      "excerpt": "",
+      "date": "23 de Noviembre de 2026",
+      "cover": "assets/1795527606660-B897F54E-E3BE-49FD-8D83-BB9B06E772B2.jpeg",
+      "coverWidth": "",
+      "coverHeight": "",
+      "imagenCard": "",
+      "imagenCardWidth": "",
+      "imagenCardHeight": "",
+      "imagenCarrusel": "",
+      "imagenCarruselWidth": "",
+      "imagenCarruselHeight": "",
+      "coverVideo": "",
+      "featured": true,
+      "sizesUS": [],
+      "sizesUK": [],
+      "contentBlocks": [
+        {
+          "type": "text",
+          "id": "kmp6pjw",
+          "content": "Esta semana, el mercado de botines estuvo marcado por importantes novedades de Nike, Adidas y Puma. "
+        },
+        {
+          "type": "text",
+          "id": "90lkapv",
+          "content": "Puma presentó oficialmente la nueva generación Future 10, con mejoras enfocadas en ajuste, estabilidad y libertad de movimiento."
+        },
+        {
+          "type": "text",
+          "id": "94ch2s1",
+          "content": "Mientras que Nike lanzó la colaboración con Kobe Bryant en el silo Mercurial, con versiones tanto en Vapor 17 como Superfly 11."
+        },
+        {
+          "type": "text",
+          "id": "duvf5bt",
+          "content": "Por su parte, Adidas continúa apostando por la nostalgia y el coleccionismo con nuevas reediciones y, según filtraciones especializadas aún no confirmadas oficialmente, prepara para diciembre una nueva generación de Predator 27, nuevo color para F50 Hyperfast y el regreso icónico de AdiPure."
+        },
+        {
+          "type": "text",
+          "id": "qsfdlyw",
+          "content": "En Argentina, el mercado muestra una fuerte diferencia de precios entre lanzamientos recientes y generaciones anteriores en oferta, generando oportunidades para quienes buscan botines de alta gama a un precio más competitivo.\nPara BAGC, la tendencia confirma una estrategia clara: combinar lanzamientos exclusivos y ediciones limitadas con oportunidades puntuales de generaciones anteriores, reforzando además el contenido especializado para asesorar al cliente sobre tecnologías, rendimiento y elección del botín adecuado. La señal estratégica de la semana es clara: el lanzamiento atrae la atención, pero la generación anterior puede generar grandes oportunidades de margen y rotación."
+        }
+      ],
+      "relatedProduct": null,
+      "showFeaturedOnHome": false,
+      "showInHome": true,
+      "featuredWide": false
+    },
+    {
       "id": "ruslla9",
       "slug": "nike-completa-el-circulo-de-mambacurial-con-el-lanzamiento-de-esta-edicion-especial",
       "brand": "Nike",
