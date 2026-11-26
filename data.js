@@ -9146,6 +9146,72 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘Mambacurial’ x Kobe Bryant "
         }
+      },
+      {
+        "id": "ua9bn38",
+        "name": "Nike Mercurial Superfly 11 Elite FG SE ‘Mambacurial’",
+        "colorway": "Violeta",
+        "color": "#982abc",
+        "price": 799999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "8",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1795713082904-IMG_5897.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "‘Mambacurial’ x Kobe Bryant"
+        }
       }
     ],
     "nike/phantom": [
