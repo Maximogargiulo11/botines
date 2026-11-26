@@ -9014,6 +9014,72 @@ window.BAG_DATA = {
           "peso": "186 gr.",
           "coleccion": "‘United’ Chapter 4"
         }
+      },
+      {
+        "id": "ppr6vg5",
+        "name": "Nike Mercurial Vapor 17 Elite FG SE Vini Jr.",
+        "colorway": "Naranja",
+        "color": "#ff6a00",
+        "price": 65999,
+        "availableSizes": [],
+        "sizes": {
+          "eu": [
+            "38",
+            "38.5",
+            "39",
+            "39.5",
+            "40",
+            "40.5",
+            "41",
+            "42",
+            "42.5",
+            "43",
+            "44",
+            "44.5",
+            "45",
+            "46"
+          ],
+          "us": [
+            "8",
+            "7.5",
+            "7",
+            "8.5",
+            "9",
+            "9.5",
+            "10",
+            "10.5",
+            "11",
+            "11.5",
+            "12",
+            "12.5",
+            "13"
+          ],
+          "uk": [
+            "6",
+            "6.5",
+            "7",
+            "7.5",
+            "9",
+            "8.5",
+            "8",
+            "9.5",
+            "10",
+            "11.5",
+            "11",
+            "10.5",
+            "12"
+          ]
+        },
+        "images": [
+          "assets/1795712860257-IMG_5889.webp"
+        ],
+        "videos": [],
+        "spec": {
+          "suela": "FG",
+          "terreno": "Césped natural firme",
+          "peso": "186 gr.",
+          "coleccion": "Signature Vini Jr."
+        }
       }
     ],
     "nike/phantom": [
