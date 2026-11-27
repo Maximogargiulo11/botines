@@ -9020,7 +9020,7 @@ window.BAG_DATA = {
         "name": "Nike Mercurial Vapor 17 Elite FG SE Vini Jr.",
         "colorway": "Naranja",
         "color": "#ff6a00",
-        "price": 65999,
+        "price": 659999,
         "availableSizes": [],
         "sizes": {
           "eu": [
